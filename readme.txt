@@ -87,14 +87,14 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 **Version 1.0 (TBD)**
 
-* **Bugfixes**
-	* *None*
-* **Improvements**
-	* *None*
-* **New Features**
-	* *None*
-* **Developer Notes**
-	* *None*
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
 
 == Upgrade Notice ==
 
