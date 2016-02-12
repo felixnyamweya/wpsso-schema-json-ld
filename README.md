@@ -20,11 +20,55 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
+<p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
+
+<ul>
+<li>http://schema.org/Blog</li>
+<li>http://schema.org/WebPage</li>
+</ul>
+
+<p>Includes the Google / Schema item type attributes:</p>
+
+<ul>
+<li>URL</li>
+<li>Title</li>
+<li>Description</li>
+<li>DatePublished</li>
+<li>DateModified</li>
+<li>Author as http://schema.org/Person
+
+<ul>
+<li>Author URL</li>
+<li>Author Name</li>
+<li>Author Image as http://schema.org/ImageObject
+
+<ul>
+<li>Author Image URL</li>
+<li>Author Image Width</li>
+<li>Author Image Height</li>
+</ul></li>
+</ul></li>
+<li>Image(s) as http://schema.org/ImageObject
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
+</ul>
+
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
+
+<p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
+
+<ul>
+<li>http://schema.org/Article</li>
+<li>http://schema.org/Product</li>
+</ul>
 
 <h4>Uses the WPSSO Framework</h4>
 
-<p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> plugin as well. <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">Purchase the WPSSO Social Publisher (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> plugin as well. <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">Purchase the WPSSO Schema JSON-LD (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 
 
 <h2>Installation</h2>

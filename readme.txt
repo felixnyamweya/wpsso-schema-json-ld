@@ -22,11 +22,40 @@ WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the [WordPress Socia
 
 **WPSSO JSON Free / Basic Features**
 
+Adds Google / Schema JSON-LD markup for Post / Page item types:
+
+* http://schema.org/Blog
+* http://schema.org/WebPage
+
+Includes the Google / Schema item type attributes:
+
+* URL
+* Title
+* Description
+* DatePublished
+* DateModified
+* Author as http://schema.org/Person
+	* Author URL
+	* Author Name
+	* Author Image as http://schema.org/ImageObject
+		* Author Image URL
+		* Author Image Width
+		* Author Image Height
+* Image(s) as http://schema.org/ImageObject
+	* Image URL
+	* Image Width
+	* Image Height
+
 **WPSSO JSON Pro / Power-User Features**
+
+Adds Google / Schema JSON-LD markup for Post / Page item types:
+
+* http://schema.org/Article
+* http://schema.org/Product
 
 = Uses the WPSSO Framework =
 
-The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO, but [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) requires the use of the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) plugin as well. [Purchase the WPSSO Social Publisher (WPSSO JSON) Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) (includes a *No Risk 30 Day Refund Policy*).
+The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO, but [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) requires the use of the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) plugin as well. [Purchase the WPSSO Schema JSON-LD (WPSSO JSON) Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) (includes a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
