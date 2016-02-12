@@ -85,7 +85,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Changelog / Release Notes =
 
-** Version 1.0 (TBD) **
+**Version 1.0 (TBD)**
 
 * **Bugfixes**
 	* *None*
