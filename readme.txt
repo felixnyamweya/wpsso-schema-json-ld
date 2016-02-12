@@ -16,6 +16,8 @@ WPSSO extension to add Schema JSON-LD markup in webpage headers for Google, Pint
 
 == Description ==
 
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /></p>
+
 WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the [WordPress Social Sharing Optimization (WPSSO)](https://wordpress.org/plugins/wpsso/) plugin, extending its features with additional settings pages, tabs, and options to automatically publish content on social websites.
 
 = Quick List of Features =

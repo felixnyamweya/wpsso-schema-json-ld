@@ -14,6 +14,8 @@
 
 <h2>Description</h2>
 
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p></p>
+
 <p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings pages, tabs, and options to automatically publish content on social websites.</p>
 
 <h4>Quick List of Features</h4>
