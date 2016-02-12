@@ -25,8 +25,8 @@
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
 <ul>
-<li>http://schema.org/Blog</li>
-<li>http://schema.org/WebPage</li>
+<li>[http://schema.org/Blog]</li>
+<li>[http://schema.org/WebPage]</li>
 </ul>
 
 <p>Includes the Google / Schema item type attributes:</p>
@@ -37,12 +37,12 @@
 <li>Description</li>
 <li>DatePublished</li>
 <li>DateModified</li>
-<li>Author as http://schema.org/Person
+<li>Author as [http://schema.org/Person]
 
 <ul>
 <li>Author URL</li>
 <li>Author Name</li>
-<li>Author Image as http://schema.org/ImageObject
+<li>Author Image as [http://schema.org/ImageObject]
 
 <ul>
 <li>Author Image URL</li>
@@ -50,7 +50,7 @@
 <li>Author Image Height</li>
 </ul></li>
 </ul></li>
-<li>Image(s) as http://schema.org/ImageObject
+<li>Image(s) as [http://schema.org/ImageObject]
 
 <ul>
 <li>Image URL</li>
@@ -64,8 +64,8 @@
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
 <ul>
-<li>http://schema.org/Article</li>
-<li>http://schema.org/Product</li>
+<li>[http://schema.org/Article]</li>
+<li>[http://schema.org/Product]</li>
 </ul>
 
 <h4>Uses the WPSSO Framework</h4>
