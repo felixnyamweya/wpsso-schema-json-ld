@@ -26,8 +26,8 @@ WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the [WordPress Socia
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
-* [http://schema.org/Blog]
-* [http://schema.org/WebPage]
+* [schema.org/Blog](http://schema.org/Blog)
+* [schema.org/WebPage](http://schema.org/WebPage)
 
 Includes the Google / Schema item type attributes:
 
@@ -36,14 +36,14 @@ Includes the Google / Schema item type attributes:
 * Description
 * DatePublished
 * DateModified
-* Author as [http://schema.org/Person]
+* Author as [schema.org/Person](http://schema.org/Person)
 	* Author URL
 	* Author Name
-	* Author Image as [http://schema.org/ImageObject]
+	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 		* Author Image URL
 		* Author Image Width
 		* Author Image Height
-* Image(s) as [http://schema.org/ImageObject]
+* Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 	* Image URL
 	* Image Width
 	* Image Height
@@ -52,8 +52,8 @@ Includes the Google / Schema item type attributes:
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
-* [http://schema.org/Article]
-* [http://schema.org/Product]
+* [schema.org/Article](http://schema.org/Article)
+* [schema.org/Product](http://schema.org/Product)
 
 = Uses the WPSSO Framework =
 
