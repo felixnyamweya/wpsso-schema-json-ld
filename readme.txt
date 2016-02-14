@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD ===
+=== WPSSO Schema JSON-LD - Complete Markup for Google and Pinterest ===
 Plugin Name: WPSSO Schema JSON-LD (WPSSO JSON)
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
