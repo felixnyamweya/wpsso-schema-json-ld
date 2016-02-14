@@ -53,6 +53,7 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Article](http://schema.org/Article)
+	* *(Schema properties to be announced shortly)*
 * [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
 	* Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
 		* streetAddress
@@ -72,6 +73,7 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 		* worstrating
 		* bestrating
 		* reviewcount
+	* *(Schema properties to be announced shortly)*
 
 = Uses the WPSSO Framework =
 

@@ -67,7 +67,11 @@
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
 <ul>
-<li><a href="http://schema.org/Article">schema.org/Article</a></li>
+<li><a href="http://schema.org/Article">schema.org/Article</a>
+
+<ul>
+<li><em>(Schema properties to be announced shortly)</em></li>
+</ul></li>
 <li><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
 
 <ul>
@@ -101,6 +105,7 @@
 <li>bestrating</li>
 <li>reviewcount</li>
 </ul></li>
+<li><em>(Schema properties to be announced shortly)</em></li>
 </ul></li>
 </ul>
 
