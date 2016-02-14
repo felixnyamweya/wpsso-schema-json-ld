@@ -61,7 +61,7 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 		* elevation
 		* latitude
 		* longitude
-* [schema.org/Product](http://schema.org/Product) (an eCommerce plugin is required)
+* [schema.org/Product](http://schema.org/Product) (eCommerce plugin often required)
 	* Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
 		* ratingvalue
 		* ratingcount

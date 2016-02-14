@@ -83,7 +83,7 @@
 <li>longitude</li>
 </ul></li>
 </ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)
+<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin often required)
 
 <ul>
 <li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
