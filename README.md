@@ -25,8 +25,7 @@
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
 <ul>
-<li><a href="http://schema.org/Blog">schema.org/Blog</a></li>
-<li><a href="http://schema.org/WebPage">schema.org/WebPage</a>
+<li><a href="http://schema.org/Blog">schema.org/Blog</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a>
 
 <ul>
 <li>URL</li>
@@ -84,7 +83,19 @@
 <li>longitude</li>
 </ul></li>
 </ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)</li>
+<li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)
+
+<ul>
+<li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
+
+<ul>
+<li>ratingvalue</li>
+<li>ratingcount</li>
+<li>worstrating</li>
+<li>bestrating</li>
+<li>reviewcount</li>
+</ul></li>
+</ul></li>
 </ul>
 
 <h4>Uses the WPSSO Framework</h4>

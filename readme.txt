@@ -26,8 +26,7 @@ WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the [WordPress Socia
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
-* [schema.org/Blog](http://schema.org/Blog)
-* [schema.org/WebPage](http://schema.org/WebPage)
+* [schema.org/Blog](http://schema.org/Blog) and [schema.org/WebPage](http://schema.org/WebPage)
 	* URL
 	* Title
 	* Description
@@ -63,6 +62,12 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 		* latitude
 		* longitude
 * [schema.org/Product](http://schema.org/Product) (an eCommerce plugin is required)
+	* Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
+		* ratingvalue
+		* ratingcount
+		* worstrating
+		* bestrating
+		* reviewcount
 
 = Uses the WPSSO Framework =
 
