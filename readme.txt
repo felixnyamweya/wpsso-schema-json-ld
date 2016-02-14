@@ -40,7 +40,7 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 			* Author Image URL
 			* Author Image Width
 			* Author Image Height
-	* Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Post / Page Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 		* Image URL
 		* Image Width
 		* Image Height
@@ -50,9 +50,9 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Article](http://schema.org/Article)
-* [schema.org/Product](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
-	* Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
-	* Geo as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+* [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
+	* Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+	* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
 * [schema.org/Product](http://schema.org/Product) (an eCommerce plugin is required)
 
 = Uses the WPSSO Framework =

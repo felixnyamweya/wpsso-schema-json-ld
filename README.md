@@ -47,7 +47,7 @@
 <li>Author Image Height</li>
 </ul></li>
 </ul></li>
-<li>Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+<li>Post / Page Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
 
 <ul>
 <li>Image URL</li>
@@ -63,11 +63,11 @@
 
 <ul>
 <li><a href="http://schema.org/Article">schema.org/Article</a></li>
-<li><a href="http://schema.org/Place">schema.org/Product</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
+<li><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
 
 <ul>
-<li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a></li>
-<li>Geo as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
+<li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a></li>
+<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
 </ul></li>
 <li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)</li>
 </ul>
