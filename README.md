@@ -66,8 +66,23 @@
 <li><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
 
 <ul>
-<li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a></li>
-<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
+<li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+
+<ul>
+<li>streetAddress</li>
+<li>postOfficeBoxNumber</li>
+<li>addressLocality</li>
+<li>addressRegion</li>
+<li>postalCode</li>
+<li>addressCountry</li>
+</ul></li>
+<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+
+<ul>
+<li>elevation</li>
+<li>latitude</li>
+<li>longitude</li>
+</ul></li>
 </ul></li>
 <li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)</li>
 </ul>
