@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD (WPSSO JSON)</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add Schema JSON-LD markup in webpage headers for Google, Pinterest, etc.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add complete Schema JSON-LD markup in webpage headers for Google and Pinterest.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.4.2</td></tr>
@@ -14,9 +14,17 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p></p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>
+WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the [WordPress Social Sharing Optimization (WPSSO)](https://wordpress.org/plugins/wpsso/) plugin, extending its features with additional settings and options to include complete Schema JSON-LD markup in webpage headers.
+</p>
 
-<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings pages, tabs, and options to automatically publish content on social websites.</p>
+<h4>Available in Multiple Languages</h4>
+
+<ul>
+<li>English (US)</li>
+<li>French (France)</li>
+<li>More to come...</li>
+</ul>
 
 <h4>Quick List of Features</h4>
 
