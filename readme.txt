@@ -28,31 +28,30 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Blog](http://schema.org/Blog)
 * [schema.org/WebPage](http://schema.org/WebPage)
-
-Includes the Google / Schema item type attributes:
-
-* URL
-* Title
-* Description
-* DatePublished
-* DateModified
-* Author as [schema.org/Person](http://schema.org/Person)
-	* Author URL
-	* Author Name
-	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Author Image URL
-		* Author Image Width
-		* Author Image Height
-* Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
+	* URL
+	* Title
+	* Description
+	* DatePublished
+	* DateModified
+	* Author as [schema.org/Person](http://schema.org/Person)
+		* Author URL
+		* Author Name
+		* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+			* Author Image URL
+			* Author Image Width
+			* Author Image Height
+	* Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+		* Image URL
+		* Image Width
+		* Image Height
 
 **WPSSO JSON Pro / Power-User Features**
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Article](http://schema.org/Article)
+* [schema.org/Product](http://schema.org/Place) ([WPSSO PLM extension required](https://wordpress.org/plugins/wpsso-plm/))
+	* Address as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
 * [schema.org/Product](http://schema.org/Product)
 
 = Uses the WPSSO Framework =

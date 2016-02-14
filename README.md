@@ -26,10 +26,7 @@
 
 <ul>
 <li><a href="http://schema.org/Blog">schema.org/Blog</a></li>
-<li><a href="http://schema.org/WebPage">schema.org/WebPage</a></li>
-</ul>
-
-<p>Includes the Google / Schema item type attributes:</p>
+<li><a href="http://schema.org/WebPage">schema.org/WebPage</a>
 
 <ul>
 <li>URL</li>
@@ -57,6 +54,7 @@
 <li>Image Width</li>
 <li>Image Height</li>
 </ul></li>
+</ul></li>
 </ul>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
@@ -65,6 +63,11 @@
 
 <ul>
 <li><a href="http://schema.org/Article">schema.org/Article</a></li>
+<li><a href="http://schema.org/Place">schema.org/Product</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM extension required</a>)
+
+<ul>
+<li>Address as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
+</ul></li>
 <li><a href="http://schema.org/Product">schema.org/Product</a></li>
 </ul>
 
