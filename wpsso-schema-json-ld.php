@@ -55,9 +55,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 1 );
-			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 10 );
-			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 10 );
-			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 10 );
+			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 100 );
+			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 100 );
+			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 100 );
 		}
 
 		public function check_for_wpsso() {
@@ -97,6 +97,31 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				return;		// stop here
 
 			$this->p->is_avail['json'] = true;
+
+			foreach ( array( 'head', 'prop' ) as $sub ) {
+				foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib']['pro'][$sub] as $lib => $name ) {
+					switch ( $sub ) {
+						// check if the schema type is defined for a post type
+						// example: 'schema_type_for_article' => 'article'
+						case 'head':
+							foreach ( $this->p->util->get_post_types() as $post_type ) {
+								$opt_key = 'schema_type_for_'.$post_type->name;
+
+								if ( isset( $this->p->options[$opt_key] ) &&
+									$lib === $this->p->options[$opt_key] ) {
+
+									$this->p->is_avail[$sub][$lib] = true;
+									break 2;	// check the next library
+								}
+							}
+							break;
+						// load all schema property library files
+						case 'prop':
+							$this->p->is_avail[$sub][$lib] = true;
+							break;
+					}
+				}
+			}
 		}
 
 		public function wpsso_init_objects() {

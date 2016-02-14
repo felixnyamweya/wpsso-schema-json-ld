@@ -24,6 +24,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_meta_array' => '__return_false',
 				'data_http_schema_org_item_type' => 7,
 			), 5 );
+
+			if ( is_admin() ) {
+				$this->p->util->add_plugin_filters( $this, array(
+					'status_gpl_features' => 3,
+					'status_pro_features' => 3,
+				), 10, 'wpssojson' );
+			}
 		}
 
 		public function filter_add_schema_meta_array( $bool ) {
@@ -35,15 +42,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 
 			$lca = $this->p->cf['lca'];
-
-			if ( ! apply_filters( $lca.'_add_schema_item_type_json', true ) ) {
-				if ( $this->p->debug->enabled )
-					$this->p->debug->log( 'exiting early: item type schema data disabled' );
-				return $data;
-			}
-
 			$data = WpssoSchema::get_item_type_context( $head_type );
-			$og_type = $mt_og['og:type'];	// used to get product:rating:* values
 
 			if ( ! empty( $mt_og['og:url'] ) )
 				$data['url'] = $mt_og['og:url'];
@@ -68,31 +67,38 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					if ( isset( $mt_og['og:image'] ) && 
 						is_array( $mt_og['og:image'] ) )
-							WpssoSchema::add_image_list_data( $data, 'image', $mt_og['og:image'], 'og:image' );
+							WpssoSchema::add_image_list_data( $data, 'image',
+								$mt_og['og:image'], 'og:image' );
+
 					break;
 			}
 
-			if ( ! empty( $mt_og[$og_type.':rating:average'] ) &&
-				( ! empty( $mt_og[$og_type.':rating:count'] ) || 
-					! empty( $mt_og[$og_type.':review:count'] ) ) ) {
-
-				$data['aggregateRating'] = array(
-					'@context' => 'http://schema.org',
-					'@type' => 'AggregateRating',
-				);
-
-				foreach ( array(
-					'ratingvalue' => 'rating:average',
-					'ratingcount' => 'rating:count',
-					'worstrating' => 'rating:worst',
-					'bestrating' => 'rating:best',
-					'reviewcount' => 'review:count',
-				) as $ar_key => $og_key )
-					if ( isset( $mt_og[$og_type.':'.$og_key] ) )
-						$data['aggregateRating'][$ar_key] = $mt_og[$og_type.':'.$og_key];
-			}
-
 			return $data;
+		}
+
+		// hooked to 'wpssojson_status_gpl_features'
+		public function filter_status_gpl_features( $features, $lca, $info ) {
+			foreach ( array( 
+				'Item Type Blog',
+				'Item Type WebPage',
+			) as $key )
+				$features[$key]['status'] = 'on';
+			return $this->add_status_schema_tooltips( $features, $lca, $info );
+		}
+
+		// hooked to 'wpssojson_status_pro_features'
+		public function filter_status_pro_features( $features, $lca, $info ) {
+			return $this->add_status_schema_tooltips( $features, $lca, $info );
+		}
+
+		private function add_status_schema_tooltips( $features, $lca, $info ) {
+			foreach ( $features as $key => $arr ) {
+				if ( strpos( $key, 'Item Type ' ) === 0 )
+					$features[$key]['tooltip'] = 'Adds Schema JSON-LD markup for Posts, Pages, Media, and CPTs with a matching Schema item type.';
+				elseif ( strpos( $key, 'Property ' ) === 0 )
+					$features[$key]['tooltip'] = 'Adds Schema JSON-LD markup for matching item type properties.';
+			}
+			return $features;
 		}
 	}
 }

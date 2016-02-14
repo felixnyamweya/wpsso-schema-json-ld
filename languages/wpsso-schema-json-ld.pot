@@ -20,17 +20,28 @@ msgid ""
 "Pinterest, etc."
 msgstr ""
 
-#: lib/gpl/admin/post.php:26
+#: lib/gpl/admin/post.php:27
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
-#: lib/gpl/admin/post.php:33 lib/gpl/admin/post.php:37
-#: lib/pro/admin/post.php:44 lib/pro/admin/post.php:48
-msgctxt "option label"
-msgid "Google / Schema Headline"
+#: lib/gpl/admin/post.php:34 lib/pro/admin/post.php:50
+msgctxt "metabox title"
+msgid "Google / Schema JSON-LD"
 msgstr ""
 
-#: lib/pro/admin/post.php:37
+#: lib/gpl/admin/post.php:38 lib/gpl/admin/post.php:41
+#: lib/pro/admin/post.php:55 lib/pro/admin/post.php:59
+msgctxt "option label"
+msgid "Article Headline"
+msgstr ""
+
+#: lib/gpl/admin/post.php:47 lib/gpl/admin/post.php:50
+#: lib/pro/admin/post.php:67 lib/pro/admin/post.php:70
+msgctxt "option label"
+msgid "Description"
+msgstr ""
+
+#: lib/pro/admin/post.php:38
 msgid "Save a draft version or publish the %s to enable this option."
 msgstr ""
 
@@ -46,7 +57,7 @@ msgid ""
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:123
+#: wpsso-schema-json-ld.php:148
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."

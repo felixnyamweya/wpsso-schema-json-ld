@@ -54,6 +54,14 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							'admin' => array(
 								'post' => 'Post Settings',
 							),
+							'head' => array(
+								'article' => 'Item Type Article',
+								'place' => 'Item Type Place',
+								'product' => 'Item Type Product',
+							),
+							'prop' => array(
+								'rating' => 'Property AggregateRating',
+							),
 						),
 					),
 				),
