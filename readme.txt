@@ -50,10 +50,10 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Article](http://schema.org/Article)
-* [schema.org/Product](http://schema.org/Place) ([WPSSO PLM extension required](https://wordpress.org/plugins/wpsso-plm/))
+* [schema.org/Product](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
 	* Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
 	* Geo as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
-* [schema.org/Product](http://schema.org/Product) (eCommerce plugin required)
+* [schema.org/Product](http://schema.org/Product) (an eCommerce plugin is required)
 
 = Uses the WPSSO Framework =
 

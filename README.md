@@ -63,13 +63,13 @@
 
 <ul>
 <li><a href="http://schema.org/Article">schema.org/Article</a></li>
-<li><a href="http://schema.org/Place">schema.org/Product</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM extension required</a>)
+<li><a href="http://schema.org/Place">schema.org/Product</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
 
 <ul>
 <li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a></li>
 <li>Geo as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
 </ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin required)</li>
+<li><a href="http://schema.org/Product">schema.org/Product</a> (an eCommerce plugin is required)</li>
 </ul>
 
 <h4>Uses the WPSSO Framework</h4>
