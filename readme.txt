@@ -12,7 +12,7 @@ Requires At Least: 3.1
 Tested Up To: 4.4.2
 Stable Tag: 1.0.0
 
-WPSSO extension to add complete Schema JSON-LD markup in webpage headers for Google and Pinterest.
+WPSSO extension to add complete Schema JSON-LD markup (Article, Product, etc.) for Google and Pinterest.
 
 == Description ==
 
