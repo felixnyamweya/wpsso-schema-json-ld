@@ -51,8 +51,9 @@ Adds Google / Schema JSON-LD markup for Post / Page item types:
 
 * [schema.org/Article](http://schema.org/Article)
 * [schema.org/Product](http://schema.org/Place) ([WPSSO PLM extension required](https://wordpress.org/plugins/wpsso-plm/))
-	* Address as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
-* [schema.org/Product](http://schema.org/Product)
+	* Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+	* Geo as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+* [schema.org/Product](http://schema.org/Product) (eCommerce plugin required)
 
 = Uses the WPSSO Framework =
 
@@ -84,7 +85,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Changelog / Release Notes =
 
-**Version 1.0 (TBD)**
+**Version 1.0.0 (TBD)**
 
 * *New Features*
 	* None
@@ -97,7 +98,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0 =
 
 TBD - Initial release.
 

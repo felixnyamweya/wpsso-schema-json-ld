@@ -66,9 +66,10 @@
 <li><a href="http://schema.org/Place">schema.org/Product</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM extension required</a>)
 
 <ul>
-<li>Address as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
+<li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a></li>
+<li>Geo as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a></li>
 </ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a></li>
+<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin required)</li>
 </ul>
 
 <h4>Uses the WPSSO Framework</h4>
