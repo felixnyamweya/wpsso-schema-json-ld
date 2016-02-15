@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.0.0',	// plugin version
+					'version' => '1.0.1',	// plugin version
 					'short' => 'WPSSO JSON',
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
 					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (Article, Product, etc.) for Google and Pinterest.',

@@ -41,6 +41,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
+			if ( $this->p->debug->enabled )
+				$this->p->debug->log( 'head_type: '.$head_type );
+
 			$lca = $this->p->cf['lca'];
 			$data = WpssoSchema::get_item_type_context( $head_type );
 
@@ -63,11 +66,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					if ( ! empty( $mt_og['article:modified_time'] ) )
 						$data['datemodified'] = $mt_og['article:modified_time'];
 
-					WpssoSchema::add_single_person_data( $data, '', $author_id );
+					if ( $author_id > 0 )
+						WpssoSchema::add_single_person_data( $data['author'],
+							$author_id, true );	// list_element = true
 
 					if ( isset( $mt_og['og:image'] ) && 
 						is_array( $mt_og['og:image'] ) )
-							WpssoSchema::add_image_list_data( $data, 'image',
+							WpssoSchema::add_image_list_data( $data['image'],
 								$mt_og['og:image'], 'og:image' );
 
 					break;
