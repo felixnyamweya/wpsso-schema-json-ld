@@ -9,7 +9,7 @@
  * Author URI: http://surniaulula.com/
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Product, etc.) for Google and Pinterest.
+ * Description: WPSSO extension to add complete Schema JSON-LD markup (WebPage, Article, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
  * Tested Up To: 4.4.2
  * Version: 1.0.1
@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 		private static $wpsso_short = 'WPSSO';
 		private static $wpsso_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $wpsso_min_version = '3.24.1';
+		private static $wpsso_min_version = '3.24.2';
 		private static $wpsso_has_min_ver = true;
 		private static $opt_version_suffix = 'json1';
 
@@ -99,27 +99,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$this->p->is_avail['json'] = true;
 
 			foreach ( array( 'head', 'prop' ) as $sub ) {
-				foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib']['pro'][$sub] as $lib => $name ) {
-					switch ( $sub ) {
-						// check if the schema type is defined for a post type
-						// example: 'schema_type_for_article' => 'article'
-						case 'head':
-							foreach ( $this->p->util->get_post_types() as $post_type ) {
-								$opt_key = 'schema_type_for_'.$post_type->name;
-
-								if ( isset( $this->p->options[$opt_key] ) &&
-									$lib === $this->p->options[$opt_key] ) {
-
-									$this->p->is_avail[$sub][$lib] = true;
-									break 2;	// check the next library
-								}
-							}
-							break;
-						// load all schema property library files
-						case 'prop':
-							$this->p->is_avail[$sub][$lib] = true;
-							break;
-					}
+				foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib']['pro'][$sub] as $id_key => $label ) {
+					list( $id, $stub, $action ) = SucomUtil::get_id_stub_action( $id_key );
+					$this->p->is_avail[$sub][$id] = true;
 				}
 			}
 		}

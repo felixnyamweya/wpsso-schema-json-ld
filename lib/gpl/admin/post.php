@@ -34,14 +34,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				_x( 'Google / Schema JSON-LD',
 					'metabox title', 'wpsso-schema-json-ld' ).'</h4></td>';
 
+			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline', $head_info ).
 						$td_save_draft;
 			else $rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline', $head_info ). 
-				'<td class="blank">'.$this->p->webpage->get_title( $this->p->options['og_title_len'],
-					'...', true ).'</td>';
+				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len, '...', true ).'</td>';
 
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_desc'] = $this->p->util->get_th( _x( 'Description',

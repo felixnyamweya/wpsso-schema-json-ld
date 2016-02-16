@@ -56,6 +56,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'head' => array(
 								'article' => 'Item Type Article',
+								'article#news:no_load' => 'Item Type NewsArticle',
+								'article#tech:no_load' => 'Item Type TechArticle',
 								'place' => 'Item Type Place',
 								'product' => 'Item Type Product',
 							),
@@ -63,6 +65,13 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'rating' => 'Property AggregateRating',
 							),
 						),
+					),
+				),
+			),
+			'schema' => array(
+				'article' => array(
+					'headline' => array(
+						'max_len' => 110,
 					),
 				),
 			),

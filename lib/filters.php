@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
 				'data_http_schema_org_item_type' => 7,
-			), 5 );
+			), -100 );
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array(
@@ -37,6 +37,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return false;
 		}
 
+		// create basic JSON-LD markup for the item type (url, name, description)
 		public function filter_data_http_schema_org_item_type( $data, $use_post, $obj, $mt_og, $post_id, $author_id, $head_type ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -45,7 +46,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'head_type: '.$head_type );
 
 			$lca = $this->p->cf['lca'];
-			$data = WpssoSchema::get_item_type_context( $head_type );
+			$data = WpssoSchema::get_item_type_context( $head_type );	// init the JSON-LD data array
 
 			if ( ! empty( $mt_og['og:url'] ) )
 				$data['url'] = $mt_og['og:url'];
@@ -57,7 +58,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'...', $use_post, true, true, true, 'schema_desc' );	// custom meta = schema_desc
 
 			switch ( $head_type ) {
-				case 'http://schema.org/Blog':
+				case 'http://schema.org/BlogPosting':
 				case 'http://schema.org/WebPage':
 
 					if ( ! empty( $mt_og['article:published_time'] ) )
@@ -84,7 +85,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		// hooked to 'wpssojson_status_gpl_features'
 		public function filter_status_gpl_features( $features, $lca, $info ) {
 			foreach ( array( 
-				'Item Type Blog',
+				'Item Type BlogPosting',
 				'Item Type WebPage',
 			) as $key )
 				$features[$key]['status'] = 'on';
@@ -99,9 +100,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		private function add_status_schema_tooltips( $features, $lca, $info ) {
 			foreach ( $features as $key => $arr ) {
 				if ( strpos( $key, 'Item Type ' ) === 0 )
-					$features[$key]['tooltip'] = 'Adds Schema JSON-LD markup for Posts, Pages, Media, and CPTs with a matching Schema item type.';
+					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching Schema item type.', 'wpsso-schema-json-ld' );
 				elseif ( strpos( $key, 'Property ' ) === 0 )
-					$features[$key]['tooltip'] = 'Adds Schema JSON-LD markup for matching item type properties.';
+					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for matching item type properties.', 'wpsso-schema-json-ld' );
 			}
 			return $features;
 		}

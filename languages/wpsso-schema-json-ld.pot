@@ -20,6 +20,16 @@ msgid ""
 "etc.) for Google and Pinterest."
 msgstr ""
 
+#: lib/filters.php:103
+msgid ""
+"Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
+"with a matching Schema item type."
+msgstr ""
+
+#: lib/filters.php:105
+msgid "Adds Schema JSON-LD markup for matching item type properties."
+msgstr ""
+
 #: lib/gpl/admin/post.php:27
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
@@ -29,8 +39,8 @@ msgctxt "metabox title"
 msgid "Google / Schema JSON-LD"
 msgstr ""
 
-#: lib/gpl/admin/post.php:38 lib/gpl/admin/post.php:41
-#: lib/pro/admin/post.php:55 lib/pro/admin/post.php:59
+#: lib/gpl/admin/post.php:39 lib/gpl/admin/post.php:42
+#: lib/pro/admin/post.php:56 lib/pro/admin/post.php:60
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
@@ -57,7 +67,7 @@ msgid ""
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:148
+#: wpsso-schema-json-ld.php:130
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."
@@ -73,8 +83,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO extension to add complete Schema JSON-LD markup (Article, Product, "
-"etc.) for Google and Pinterest."
+"WPSSO extension to add complete Schema JSON-LD markup (WebPage, Article, "
+"Product, etc.) for Google and Pinterest."
 msgstr ""
 
 #. Author of the plugin/theme
