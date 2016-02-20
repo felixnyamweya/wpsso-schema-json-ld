@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings and options to include complete Schema JSON-LD / Rich Snippet markup in webpage headers for Google, Pinterest, and social / search engine crawlers.</p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings and options to include complete Schema JSON-LD / Rich Snippet markup in webpage headers for Google Search, Pinterest, and other social / search engine crawlers.</p>
 
 <h4>Available in Multiple Languages</h4>
 
