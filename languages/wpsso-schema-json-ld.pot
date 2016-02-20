@@ -39,19 +39,19 @@ msgctxt "metabox title"
 msgid "Google Structured Data / Schema JSON-LD"
 msgstr ""
 
-#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:56
+#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:58
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
 #: lib/gpl/admin/post.php:48 lib/gpl/admin/post.php:51
-#: lib/pro/admin/post.php:64 lib/pro/admin/post.php:68
+#: lib/pro/admin/post.php:66 lib/pro/admin/post.php:70
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
 #: lib/gpl/admin/post.php:56 lib/gpl/admin/post.php:59
-#: lib/pro/admin/post.php:75 lib/pro/admin/post.php:78
+#: lib/pro/admin/post.php:77 lib/pro/admin/post.php:80
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""

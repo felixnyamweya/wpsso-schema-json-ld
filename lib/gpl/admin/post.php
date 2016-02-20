@@ -40,7 +40,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$rows['schema_type'] = $this->p->util->get_th( _x( 'Schema Item Type',
 				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_type', $head_info ).
-			'<td class="blank">'.$this->p->schema->get_head_item_type( $head_info['post_id'] ).'</td>';
+			'<td class="blank">'.$this->p->schema->get_head_item_type( $head_info['post_id'], false, false, false ).'</td>';
 
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 
