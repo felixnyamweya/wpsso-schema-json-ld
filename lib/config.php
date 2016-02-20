@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'version' => '1.0.2',	// plugin version
 					'short' => 'WPSSO JSON',
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
-					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (Article, Product, etc.) for Google and Pinterest.',
+					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.',
 					'slug' => 'wpsso-schema-json-ld',
 					'base' => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
 					'update_auth' => 'tid',
