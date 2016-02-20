@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$this->p->util->add_plugin_filters( $this, array(
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
-				'data_http_schema_org_item_type' => 8,
+				'json_data_http_schema_org_item_type' => 8,
 			), -100 );	// make sure we run first
 
 			if ( is_admin() ) {
@@ -33,7 +33,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 		}
 
-		public function filter_data_http_schema_org_item_type( $data, 
+		public function filter_json_data_http_schema_org_item_type( $json_data, 
 			$use_post, $obj, $mt_og, $post_id, $author_id, $head_type, $main_entity ) {
 
 			if ( $this->p->debug->enabled )
@@ -51,7 +51,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'...', $use_post, true, true, true, 'schema_desc' );	// custom meta = schema_desc
 
 			if ( $main_entity )
-				WpssoSchema::add_main_entity( $ret, $ret['url'] );
+				WpssoSchema::add_main_entity_data( $ret, $ret['url'] );
 
 			switch ( $head_type ) {
 				case 'http://schema.org/BlogPosting':
@@ -78,14 +78,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					break;
 			}
 
-			/*
-			 * Sanitation check:
-			 *	- If data is an array, then merge the new values
-			 *	- If data is a boolean / string / integer, then return the value as-is
-			 */
-			return $data === null ?
-				$ret : ( is_array( $data ) ?
-					array_merge( $data, $ret ) : $data );
+			return WpssoSchema::return_data_from_filter( $json_data, $ret );
 		}
 
 		// hooked to 'wpssojson_status_gpl_features'

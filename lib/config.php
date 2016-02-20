@@ -58,8 +58,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'article' => 'Itemtype Article',
 								'article#news:no_load' => 'Itemtype NewsArticle',
 								'article#tech:no_load' => 'Itemtype TechArticle',
+								'organization' => 'Itemtype Organization',
 								'place' => 'Itemtype Place',
+								'person' => 'Itemtype Person',
 								'product' => 'Itemtype Product',
+								'website' => 'Itemtype Website',
 							),
 							'prop' => array(
 								'rating' => 'Property AggregateRating',
