@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD</h1><h3>Complete Schema Markup for Google and Pinterest</h3>
+<h1>WPSSO Schema JSON-LD</h1><h3>Complete Schema / Rich Snippet Markup for Google and Pinterest</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD (WPSSO JSON)</td></tr>
@@ -9,12 +9,12 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/">https://wpsso.com/</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, json</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product</td></tr>
 </table>
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings and options to include complete Schema JSON-LD markup in webpage headers.</p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings and options to include complete Schema JSON-LD / Rich Snippet markup in webpage headers.</p>
 
 <h4>Available in Multiple Languages</h4>
 
