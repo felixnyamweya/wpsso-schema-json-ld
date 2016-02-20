@@ -20,13 +20,13 @@ msgid ""
 "etc.) for Google and Pinterest."
 msgstr ""
 
-#: lib/filters.php:103
+#: lib/filters.php:109
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:105
+#: lib/filters.php:111
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
@@ -36,19 +36,24 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:34 lib/pro/admin/post.php:50
 msgctxt "metabox title"
-msgid "Google / Schema JSON-LD"
+msgid "Google Structured Data / Schema JSON-LD"
 msgstr ""
 
-#: lib/gpl/admin/post.php:39 lib/gpl/admin/post.php:42
-#: lib/pro/admin/post.php:56 lib/pro/admin/post.php:60
+#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:56
+msgctxt "option label"
+msgid "Schema Item Type"
+msgstr ""
+
+#: lib/gpl/admin/post.php:48 lib/gpl/admin/post.php:51
+#: lib/pro/admin/post.php:64 lib/pro/admin/post.php:68
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:47 lib/gpl/admin/post.php:50
-#: lib/pro/admin/post.php:67 lib/pro/admin/post.php:70
+#: lib/gpl/admin/post.php:56 lib/gpl/admin/post.php:59
+#: lib/pro/admin/post.php:75 lib/pro/admin/post.php:78
 msgctxt "option label"
-msgid "Description"
+msgid "Schema Description"
 msgstr ""
 
 #: lib/pro/admin/post.php:38

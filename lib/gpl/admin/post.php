@@ -31,10 +31,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			unset ( $rows['schema_desc'] );
 
 			$rows[] = '<td></td><td class="subsection top"><h4>'.
-				_x( 'Google / Schema JSON-LD',
+				_x( 'Google Structured Data / Schema JSON-LD',
 					'metabox title', 'wpsso-schema-json-ld' ).'</h4></td>';
 
+			$rows[] = '<td colspan="2">'.
+				$this->p->msgs->get( 'pro-feature-msg', 
+					array( 'lca' => 'wpssojson' ) ).'</td>';
+
+			$rows['schema_type'] = $this->p->util->get_th( _x( 'Schema Item Type',
+				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_type', $head_info ).
+			'<td class="blank">'.$this->p->schema->get_head_item_type( $head_info['post_id'] ).'</td>';
+
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline', $head_info ).
@@ -44,10 +53,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len, '...', true ).'</td>';
 
 			if ( $post_status == 'auto-draft' )
-				$rows['schema_desc'] = $this->p->util->get_th( _x( 'Description',
+				$rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc', $head_info ).
 						$td_save_draft;
-			else $rows['schema_desc'] = $this->p->util->get_th( _x( 'Description',
+			else $rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc', $head_info ).
 				'<td class="blank">'.$this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 					'...', true ).'</td>';

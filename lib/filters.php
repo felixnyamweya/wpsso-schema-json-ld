@@ -22,8 +22,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$this->p->util->add_plugin_filters( $this, array(
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
-				'data_http_schema_org_item_type' => 7,
-			), -100 );
+				'data_http_schema_org_item_type' => 8,
+			), -100 );	// make sure we run first
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array(
@@ -33,60 +33,66 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 		}
 
-		public function filter_add_schema_meta_array( $bool ) {
-			return false;
-		}
+		public function filter_data_http_schema_org_item_type( $data, 
+			$use_post, $obj, $mt_og, $post_id, $author_id, $head_type, $main_entity ) {
 
-		// create basic JSON-LD markup for the item type (url, name, description)
-		public function filter_data_http_schema_org_item_type( $data, $use_post, $obj, $mt_og, $post_id, $author_id, $head_type ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( $this->p->debug->enabled )
-				$this->p->debug->log( 'head_type: '.$head_type );
-
 			$lca = $this->p->cf['lca'];
-			$data = WpssoSchema::get_item_type_context( $head_type );	// init the JSON-LD data array
+			$ret = WpssoSchema::get_item_type_context( $head_type );
 
-			if ( ! empty( $mt_og['og:url'] ) )
-				$data['url'] = $mt_og['og:url'];
+			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
+				'url' => 'og:url',
+				'name' => 'og:title',
+			) );
 
-			if ( ! empty( $mt_og['og:title'] ) )
-				$data['name'] = $mt_og['og:title'];
-
-			$data['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
+			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 				'...', $use_post, true, true, true, 'schema_desc' );	// custom meta = schema_desc
+
+			if ( $main_entity )
+				WpssoSchema::add_main_entity( $ret, $ret['url'] );
 
 			switch ( $head_type ) {
 				case 'http://schema.org/BlogPosting':
 				case 'http://schema.org/WebPage':
 
-					if ( ! empty( $mt_og['article:published_time'] ) )
-						$data['datepublished'] = $mt_og['article:published_time'];
-
-					if ( ! empty( $mt_og['article:modified_time'] ) )
-						$data['datemodified'] = $mt_og['article:modified_time'];
+					WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
+						'datepublished' => 'article:published_time',
+						'datemodified' => 'article:modified_time',
+					) );
 
 					if ( $author_id > 0 )
-						WpssoSchema::add_single_person_data( $data['author'],
+						WpssoSchema::add_single_person_data( $ret['author'],
 							$author_id, true );	// list_element = true
 
-					if ( isset( $mt_og['og:image'] ) && 
-						is_array( $mt_og['og:image'] ) )
-							WpssoSchema::add_image_list_data( $data['image'],
-								$mt_og['og:image'], 'og:image' );
+					$size_name = $this->p->cf['lca'].'-schema';
+					$og_image = $this->p->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
+
+					if ( empty( $og_image ) && 
+						SucomUtil::is_post_page( $use_post ) )
+							$og_image = $this->p->media->get_default_image( 1, $size_name, true );
+
+					WpssoSchema::add_image_list_data( $ret['image'], $og_image, 'og:image' );
 
 					break;
 			}
 
-			return $data;
+			/*
+			 * Sanitation check:
+			 *	- If data is an array, then merge the new values
+			 *	- If data is a boolean / string / integer, then return the value as-is
+			 */
+			return $data === null ?
+				$ret : ( is_array( $data ) ?
+					array_merge( $data, $ret ) : $data );
 		}
 
 		// hooked to 'wpssojson_status_gpl_features'
 		public function filter_status_gpl_features( $features, $lca, $info ) {
 			foreach ( array( 
-				'Item Type BlogPosting',
-				'Item Type WebPage',
+				'Itemtype BlogPosting',
+				'Itemtype WebPage',
 			) as $key )
 				$features[$key]['status'] = 'on';
 			return $this->add_status_schema_tooltips( $features, $lca, $info );
@@ -99,7 +105,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		private function add_status_schema_tooltips( $features, $lca, $info ) {
 			foreach ( $features as $key => $arr ) {
-				if ( strpos( $key, 'Item Type ' ) === 0 )
+				if ( strpos( $key, 'Itemtype ' ) === 0 )
 					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching Schema item type.', 'wpsso-schema-json-ld' );
 				elseif ( strpos( $key, 'Property ' ) === 0 )
 					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for matching item type properties.', 'wpsso-schema-json-ld' );

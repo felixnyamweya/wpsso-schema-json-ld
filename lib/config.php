@@ -55,11 +55,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'post' => 'Post Settings',
 							),
 							'head' => array(
-								'article' => 'Item Type Article',
-								'article#news:no_load' => 'Item Type NewsArticle',
-								'article#tech:no_load' => 'Item Type TechArticle',
-								'place' => 'Item Type Place',
-								'product' => 'Item Type Product',
+								'article' => 'Itemtype Article',
+								'article#news:no_load' => 'Itemtype NewsArticle',
+								'article#tech:no_load' => 'Itemtype TechArticle',
+								'place' => 'Itemtype Place',
+								'product' => 'Itemtype Product',
 							),
 							'prop' => array(
 								'rating' => 'Property AggregateRating',
