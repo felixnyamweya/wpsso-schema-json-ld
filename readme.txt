@@ -16,7 +16,9 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional settings and options to include complete Schema JSON-LD / Rich Snippet markup in webpage headers for Google Search, Pinterest, and other social / search engine crawlers.</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Looking for better <em>Schema</em>, <em>Structured Data</em>, and <em>Rich Snippet</em> markup that your theme doesn't offer or doesn't do well?</strong></p>
+
+<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features with additional options to include complete Schema JSON-LD / Rich Snippet markup in webpage headers for Google Search, Pinterest, and other social / search engine crawlers.</p>
 
 = Available in Multiple Languages =
 
