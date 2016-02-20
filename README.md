@@ -31,11 +31,11 @@
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
 <ul>
-<li><a href="http://schema.org/Blog">schema.org/Blog</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a>
+<li><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a>
 
 <ul>
 <li>URL</li>
-<li>Title</li>
+<li>Name</li>
 <li>Description</li>
 <li>DatePublished</li>
 <li>DateModified</li>
@@ -70,11 +70,60 @@
 <li><a href="http://schema.org/Article">schema.org/Article</a>
 
 <ul>
-<li><em>(Schema properties to be announced shortly)</em></li>
+<li>URL</li>
+<li>Name</li>
+<li>Headline</li>
+<li>Description</li>
+<li>DatePublished</li>
+<li>DateModified</li>
+<li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
+
+<ul>
+<li>Author URL</li>
+<li>Author Name</li>
+<li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Author Image URL</li>
+<li>Author Image Width</li>
+<li>Author Image Height</li>
+</ul></li>
+</ul></li>
+<li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
+
+<ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
+</ul></li>
+<li>Article Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
 </ul></li>
 <li><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
 
 <ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+
+<ul>
+<li>elevation</li>
+<li>latitude</li>
+<li>longitude</li>
+</ul></li>
 <li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
 
 <ul>
@@ -85,27 +134,44 @@
 <li>postalCode</li>
 <li>addressCountry</li>
 </ul></li>
-<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+<li>Place Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
 
 <ul>
-<li>elevation</li>
-<li>latitude</li>
-<li>longitude</li>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
 </ul></li>
 </ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin often required)
+<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)
 
 <ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>SKU</li>
+<li>Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
+
+<ul>
+<li>Availability</li>
+<li>Price</li>
+<li>PriceCurrency</li>
+</ul></li>
 <li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
 
 <ul>
-<li>ratingvalue</li>
-<li>ratingcount</li>
-<li>worstrating</li>
-<li>bestrating</li>
-<li>reviewcount</li>
+<li>RatingValue</li>
+<li>RatingCount</li>
+<li>WorstRating</li>
+<li>BestRating</li>
+<li>ReviewCount</li>
 </ul></li>
-<li><em>(Schema properties to be announced shortly)</em></li>
+<li>Product Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
 </ul></li>
 </ul>
 
