@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 1.0.1
+Stable Tag: 1.0.2
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
 
@@ -40,7 +40,7 @@ Adds Google / Schema JSON-LD markup:
 > * DatePublished
 > * DateModified
 > * Author as [schema.org/Person](http://schema.org/Person)
-> 	* Author URL
+> 	* Author URL from Profile
 > 	* Author Name
 > 	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Author Image URL
@@ -64,7 +64,7 @@ Adds Google / Schema JSON-LD markup:
 > * DatePublished
 > * DateModified
 > * Author as [schema.org/Person](http://schema.org/Person)
-> 	* Author URL
+> 	* Author URL from Profile
 > 	* Author Name
 > 	* Author Description
 > 	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
@@ -98,7 +98,7 @@ Adds Google / Schema JSON-LD markup:
 
 *[schema.org/Person](http://schema.org/Person)*
  
-> * URL
+> * URL from Profile
 > * Name
 > * Description
 > * Image as [schema.org/ImageObject](http://schema.org/ImageObject)

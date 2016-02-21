@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD (WPSSO JSON)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.4.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
@@ -44,7 +44,7 @@
   <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
   
   <ul>
-  <li>Author URL</li>
+  <li>Author URL from Profile</li>
   <li>Author Name</li>
   <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -81,7 +81,7 @@
   <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
   
   <ul>
-  <li>Author URL</li>
+  <li>Author URL from Profile</li>
   <li>Author Name</li>
   <li>Author Description</li>
   <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
@@ -137,7 +137,7 @@
 
 <blockquote>
   <ul>
-  <li>URL</li>
+  <li>URL from Profile</li>
   <li>Name</li>
   <li>Description</li>
   <li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
