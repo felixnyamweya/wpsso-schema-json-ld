@@ -32,8 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup:
 
-> *Schema type [schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)*
-> 
+*Schema type [schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)*
+
 > * URL
 > * Name
 > * Description
@@ -46,7 +46,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
-> * Post / Page Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Post / Page Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
@@ -79,7 +79,7 @@ Adds Google / Schema JSON-LD markup:
 		* Image URL
 		* Image Width
 		* Image Height
-* Article Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+* Article Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 	* Image URL
 	* Image Width
 	* Image Height
@@ -120,7 +120,7 @@ Adds Google / Schema JSON-LD markup:
 	* addressRegion
 	* postalCode
 	* addressCountry
-* Place Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+* Place Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 	* Image URL
 	* Image Width
 	* Image Height

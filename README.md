@@ -32,9 +32,9 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
+<p><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
+
 <blockquote>
-  <p><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
-  
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -54,7 +54,7 @@
   <li>Author Image Height</li>
   </ul></li>
   </ul></li>
-  <li>Post / Page Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Post / Page Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -105,7 +105,7 @@
 <li>Image Height</li>
 </ul></li>
 </ul></li>
-<li>Article Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+<li>Article Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
 
 <ul>
 <li>Image URL</li>
@@ -167,7 +167,7 @@
 <li>postalCode</li>
 <li>addressCountry</li>
 </ul></li>
-<li>Place Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+<li>Place Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
 
 <ul>
 <li>Image URL</li>
