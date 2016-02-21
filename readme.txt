@@ -32,92 +32,98 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
-* [schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)
-	* URL
-	* Name
-	* Description
-	* DatePublished
-	* DateModified
-	* Author as [schema.org/Person](http://schema.org/Person)
-		* Author URL
-		* Author Name
-		* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-			* Author Image URL
-			* Author Image Width
-			* Author Image Height
-	* Post / Page Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Image URL
-		* Image Width
-		* Image Height
+*[schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)*
+
+* URL
+* Name
+* Description
+* DatePublished
+* DateModified
+* Author as [schema.org/Person](http://schema.org/Person)
+	* Author URL
+	* Author Name
+	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+		* Author Image URL
+		* Author Image Width
+		* Author Image Height
+* Post / Page Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Image URL
+	* Image Width
+	* Image Height
 
 **WPSSO JSON Pro / Power-User Features**
 
 Adds Google / Schema JSON-LD markup for Post / Page item types:
 
-* [schema.org/Article](http://schema.org/Article)
-	* URL
-	* Name
-	* Headline
-	* Description
-	* DatePublished
-	* DateModified
-	* Author as [schema.org/Person](http://schema.org/Person)
-		* Author URL
-		* Author Name
-		* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-			* Author Image URL
-			* Author Image Width
-			* Author Image Height
-	* Publisher as [schema.org/Organization](http://schema.org/Organization)
-		* URL
-		* Name
-		* Description
-		* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-			* Image URL
-			* Image Width
-			* Image Height
-	* Article Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Image URL
-		* Image Width
-		* Image Height
-* [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
+*[schema.org/Article](http://schema.org/Article)*
+
+* URL
+* Name
+* Headline
+* Description
+* DatePublished
+* DateModified
+* Author as [schema.org/Person](http://schema.org/Person)
+	* Author URL
+	* Author Name
+	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+		* Author Image URL
+		* Author Image Width
+		* Author Image Height
+* Publisher as [schema.org/Organization](http://schema.org/Organization)
 	* URL
 	* Name
 	* Description
-	* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
-		* elevation
-		* latitude
-		* longitude
-	* Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
-		* streetAddress
-		* postOfficeBoxNumber
-		* addressLocality
-		* addressRegion
-		* postalCode
-		* addressCountry
-	* Place Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 		* Image URL
 		* Image Width
 		* Image Height
-* [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)
-	* URL
-	* Name
-	* Description
-	* SKU
-	* Offers as [schema.org/Offer](http://schema.org/Offer)
-		* Availability
-		* Price
-		* PriceCurrency
-	* Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
-		* RatingValue
-		* RatingCount
-		* WorstRating
-		* BestRating
-		* ReviewCount
-	* Product Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Image URL
-		* Image Width
-		* Image Height
+* Article Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Image URL
+	* Image Width
+	* Image Height
+
+*[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
+
+* URL
+* Name
+* Description
+* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+	* elevation
+	* latitude
+	* longitude
+* Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+	* streetAddress
+	* postOfficeBoxNumber
+	* addressLocality
+	* addressRegion
+	* postalCode
+	* addressCountry
+* Place Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Image URL
+	* Image Width
+	* Image Height
+
+*[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
+
+* URL
+* Name
+* Description
+* SKU
+* Offers as [schema.org/Offer](http://schema.org/Offer)
+	* Availability
+	* Price
+	* PriceCurrency
+* Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
+	* RatingValue
+	* RatingCount
+	* WorstRating
+	* BestRating
+	* ReviewCount
+* Product Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+	* Image URL
+	* Image Width
+	* Image Height
 
 = Uses the WPSSO Framework =
 
@@ -164,24 +170,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 == Upgrade Notice ==
 
-**Version 1.0.1 (2016/02/15)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Modified the WpssoSchema::add_\* methods argument list (removed $item_type and added $list_element).
-
-== Upgrade Notice ==
-
 = 1.0.2 =
 
 2016/02/21 - Maintenance release for WordPress Social Sharing Optimization (WPSSO) v3.25.0.
-
-= 1.0.1 =
-
-2016/02/15 - Modified the WpssoSchema::add_* methods argument list (removed $item_type and added $list_element).
 

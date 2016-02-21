@@ -32,8 +32,7 @@
 
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
-<ul>
-<li><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a>
+<p><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
 
 <ul>
 <li>URL</li>
@@ -61,15 +60,13 @@
 <li>Image Width</li>
 <li>Image Height</li>
 </ul></li>
-</ul></li>
 </ul>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
 <p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
 
-<ul>
-<li><a href="http://schema.org/Article">schema.org/Article</a>
+<p><em><a href="http://schema.org/Article">schema.org/Article</a></em></p>
 
 <ul>
 <li>URL</li>
@@ -112,8 +109,9 @@
 <li>Image Width</li>
 <li>Image Height</li>
 </ul></li>
-</ul></li>
-<li><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
+</ul>
+
+<p><em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></p>
 
 <ul>
 <li>URL</li>
@@ -143,8 +141,9 @@
 <li>Image Width</li>
 <li>Image Height</li>
 </ul></li>
-</ul></li>
-<li><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)
+</ul>
+
+<p><em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></p>
 
 <ul>
 <li>URL</li>
@@ -173,7 +172,6 @@
 <li>Image URL</li>
 <li>Image Width</li>
 <li>Image Height</li>
-</ul></li>
 </ul></li>
 </ul>
 
