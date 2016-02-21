@@ -32,8 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup:
 
-> **[schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)**
-> 
+*[schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)*
+
 > * URL
 > * Name
 > * Description
@@ -55,8 +55,8 @@ Adds Google / Schema JSON-LD markup:
 
 Adds Google / Schema JSON-LD markup:
 
-> **[schema.org/Article](http://schema.org/Article)**
-> 
+*[schema.org/Article](http://schema.org/Article)*
+ 
 > * URL
 > * Name
 > * Headline
@@ -85,8 +85,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Height
 
 
-> **[schema.org/Organization](http://schema.org/Organization)**
-> 
+*[schema.org/Organization](http://schema.org/Organization)*
+ 
 > * URL
 > * Name
 > * Description
@@ -96,8 +96,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Height
 
 
-> **[schema.org/Person](http://schema.org/Person)**
-> 
+*[schema.org/Person](http://schema.org/Person)*
+ 
 > * URL
 > * Name
 > * Description
@@ -107,8 +107,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Height
 
 
-> **[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)**
->
+*[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
+
 > * URL
 > * Name
 > * Description
@@ -129,8 +129,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Height
 
 
-> **[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)**
-> 
+*[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
+ 
 > * URL
 > * Name
 > * Description
@@ -151,8 +151,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Height
 
 
-> **[schema.org/WebSite](http://schema.org/WebSite)**
-> 
+*[schema.org/WebSite](http://schema.org/WebSite)*
+ 
 > * URL
 > * Name
 > * Description

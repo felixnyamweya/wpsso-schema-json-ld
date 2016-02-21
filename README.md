@@ -32,9 +32,9 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
+<p><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
+
 <blockquote>
-  <p><strong><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></strong></p>
-  
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -68,9 +68,9 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
+<p><em><a href="http://schema.org/Article">schema.org/Article</a></em></p>
+
 <blockquote>
-  <p><strong><a href="http://schema.org/Article">schema.org/Article</a></strong></p>
-  
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -114,9 +114,11 @@
   <li>Image Height</li>
   </ul></li>
   </ul>
-  
-  <p><strong><a href="http://schema.org/Organization">schema.org/Organization</a></strong></p>
-  
+</blockquote>
+
+<p><em><a href="http://schema.org/Organization">schema.org/Organization</a></em></p>
+
+<blockquote>
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -129,9 +131,11 @@
   <li>Image Height</li>
   </ul></li>
   </ul>
-  
-  <p><strong><a href="http://schema.org/Person">schema.org/Person</a></strong></p>
-  
+</blockquote>
+
+<p><em><a href="http://schema.org/Person">schema.org/Person</a></em></p>
+
+<blockquote>
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -144,9 +148,11 @@
   <li>Image Height</li>
   </ul></li>
   </ul>
-  
-  <p><strong><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</strong></p>
-  
+</blockquote>
+
+<p><em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></p>
+
+<blockquote>
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -176,9 +182,11 @@
   <li>Image Height</li>
   </ul></li>
   </ul>
-  
-  <p><strong><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</strong></p>
-  
+</blockquote>
+
+<p><em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></p>
+
+<blockquote>
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -208,9 +216,11 @@
   <li>Image Height</li>
   </ul></li>
   </ul>
-  
-  <p><strong><a href="http://schema.org/WebSite">schema.org/WebSite</a></strong></p>
-  
+</blockquote>
+
+<p><em><a href="http://schema.org/WebSite">schema.org/WebSite</a></em></p>
+
+<blockquote>
   <ul>
   <li>URL</li>
   <li>Name</li>
