@@ -224,7 +224,7 @@
   </ul>
 </blockquote>
 
-<h4>Uses the WPSSO Framework</h4>
+<h4>Extends the WPSSO Social Plugin</h4>
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> plugin as well. <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">Purchase the WPSSO Schema JSON-LD (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 

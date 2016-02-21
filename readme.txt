@@ -83,7 +83,8 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
- 
+
+
 > **[schema.org/Organization](http://schema.org/Organization)**
 > 
 > * URL
@@ -94,6 +95,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
+
 > **[schema.org/Person](http://schema.org/Person)**
 > 
 > * URL
@@ -103,6 +105,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+
 
 > **[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)**
 >
@@ -125,6 +128,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
+
 > **[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)**
 > 
 > * URL
@@ -146,6 +150,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
+
 > **[schema.org/WebSite](http://schema.org/WebSite)**
 > 
 > * URL
@@ -155,7 +160,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Target
 > 	* Query-Input
 
-= Uses the WPSSO Framework =
+= Extends the WPSSO Social Plugin =
 
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension. You can use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO, but [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) requires the use of the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) plugin as well. [Purchase the WPSSO Schema JSON-LD (WPSSO JSON) Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) (includes a *No Risk 30 Day Refund Policy*).
 
