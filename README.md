@@ -32,7 +32,8 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
+<p><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></em>
+<em><a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
 
 <blockquote>
   <ul>
@@ -68,7 +69,9 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em><a href="http://schema.org/Article">schema.org/Article</a></em></p>
+<p><em><a href="http://schema.org/Article">schema.org/Article</a></em>
+<em><a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></em>
+<em><a href="http://schema.org/TechArticle">schema.org/TechArticle</a></em></p>
 
 <blockquote>
   <ul>
