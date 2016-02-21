@@ -190,12 +190,12 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 **Version 1.0.2 (2016/02/21)**
 
-2016/02/21 - Maintenance release for WordPress Social Sharing Optimization (WPSSO) v3.25.0.
+Official announcement: [WPSSO Update – New Google / Schema JSON-LD Extension](http://wpsso.com/2016/02/21/wpsso-update-new-google-schema-json-ld-extension/)
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Maintenance release for WordPress Social Sharing Optimization (WPSSO) v3.25.0.
 * *Bugfixes*
 	* None
 * *Developer Notes*
