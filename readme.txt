@@ -32,8 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup:
 
-*Schema type [schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)*
-
+> **[schema.org/BlogPosting](http://schema.org/BlogPosting) and [schema.org/WebPage](http://schema.org/WebPage)**
+> 
 > * URL
 > * Name
 > * Description
@@ -55,105 +55,105 @@ Adds Google / Schema JSON-LD markup:
 
 Adds Google / Schema JSON-LD markup:
 
-*Schema type [schema.org/Article](http://schema.org/Article)*
+> **[schema.org/Article](http://schema.org/Article)**
+> 
+> * URL
+> * Name
+> * Headline
+> * Description
+> * DatePublished
+> * DateModified
+> * Author as [schema.org/Person](http://schema.org/Person)
+> 	* Author URL
+> 	* Author Name
+> 	* Author Description
+> 	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Author Image URL
+> 		* Author Image Width
+> 		* Author Image Height
+> * Publisher as [schema.org/Organization](http://schema.org/Organization)
+> 	* URL
+> 	* Name
+> 	* Description
+> 	* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Image URL
+> 		* Image Width
+> 		* Image Height
+> * Article Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
+ 
+> **[schema.org/Organization](http://schema.org/Organization)**
+> 
+> * URL
+> * Name
+> * Description
+> * Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
 
-* URL
-* Name
-* Headline
-* Description
-* DatePublished
-* DateModified
-* Author as [schema.org/Person](http://schema.org/Person)
-	* Author URL
-	* Author Name
-	* Author Description
-	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Author Image URL
-		* Author Image Width
-		* Author Image Height
-* Publisher as [schema.org/Organization](http://schema.org/Organization)
-	* URL
-	* Name
-	* Description
-	* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-		* Image URL
-		* Image Width
-		* Image Height
-* Article Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
+> **[schema.org/Person](http://schema.org/Person)**
+> 
+> * URL
+> * Name
+> * Description
+> * Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
 
-*Schema type [schema.org/Organization](http://schema.org/Organization)*
+> **[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)**
+>
+> * URL
+> * Name
+> * Description
+> * Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+> 	* elevation
+> 	* latitude
+> 	* longitude
+> * Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+> 	* streetAddress
+> 	* postOfficeBoxNumber
+> 	* addressLocality
+> 	* addressRegion
+> 	* postalCode
+> 	* addressCountry
+> * Place Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
 
-* URL
-* Name
-* Description
-* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
+> **[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)**
+> 
+> * URL
+> * Name
+> * Description
+> * SKU
+> * Offers as [schema.org/Offer](http://schema.org/Offer)
+> 	* Availability
+> 	* Price
+> 	* PriceCurrency
+> * Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
+> 	* RatingValue
+> 	* RatingCount
+> 	* WorstRating
+> 	* BestRating
+> 	* ReviewCount
+> * Product Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
 
-*Schema type [schema.org/Person](http://schema.org/Person)*
-
-* URL
-* Name
-* Description
-* Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
-
-*Schema type [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
-
-* URL
-* Name
-* Description
-* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
-	* elevation
-	* latitude
-	* longitude
-* Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
-	* streetAddress
-	* postOfficeBoxNumber
-	* addressLocality
-	* addressRegion
-	* postalCode
-	* addressCountry
-* Place Image as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
-
-*Schema type [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
-
-* URL
-* Name
-* Description
-* SKU
-* Offers as [schema.org/Offer](http://schema.org/Offer)
-	* Availability
-	* Price
-	* PriceCurrency
-* Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
-	* RatingValue
-	* RatingCount
-	* WorstRating
-	* BestRating
-	* ReviewCount
-* Product Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-	* Image URL
-	* Image Width
-	* Image Height
-
-*Schema type [schema.org/WebSite](http://schema.org/WebSite)*
-
-* URL
-* Name
-* Description
-* PotentialAction as [schema.org/SearchAction](http://schema.org/SearchAction)
-	* Target
-	* Query-Input
+> **[schema.org/WebSite](http://schema.org/WebSite)**
+> 
+> * URL
+> * Name
+> * Description
+> * PotentialAction as [schema.org/SearchAction](http://schema.org/SearchAction)
+> 	* Target
+> 	* Query-Input
 
 = Uses the WPSSO Framework =
 

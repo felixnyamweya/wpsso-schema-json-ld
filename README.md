@@ -32,9 +32,9 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
-
 <blockquote>
+  <p><strong><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></strong></p>
+  
   <ul>
   <li>URL</li>
   <li>Name</li>
@@ -68,159 +68,161 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em>Schema type <a href="http://schema.org/Article">schema.org/Article</a></em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Headline</li>
-<li>Description</li>
-<li>DatePublished</li>
-<li>DateModified</li>
-<li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
-
-<ul>
-<li>Author URL</li>
-<li>Author Name</li>
-<li>Author Description</li>
-<li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Author Image URL</li>
-<li>Author Image Width</li>
-<li>Author Image Height</li>
-</ul></li>
-</ul></li>
-<li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul></li>
-<li>Article Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul>
-
-<p><em>Schema type <a href="http://schema.org/Organization">schema.org/Organization</a></em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul>
-
-<p><em>Schema type <a href="http://schema.org/Person">schema.org/Person</a></em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul>
-
-<p><em>Schema type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
-
-<ul>
-<li>elevation</li>
-<li>latitude</li>
-<li>longitude</li>
-</ul></li>
-<li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
-
-<ul>
-<li>streetAddress</li>
-<li>postOfficeBoxNumber</li>
-<li>addressLocality</li>
-<li>addressRegion</li>
-<li>postalCode</li>
-<li>addressCountry</li>
-</ul></li>
-<li>Place Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul>
-
-<p><em>Schema type <a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>SKU</li>
-<li>Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
-
-<ul>
-<li>Availability</li>
-<li>Price</li>
-<li>PriceCurrency</li>
-</ul></li>
-<li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
-
-<ul>
-<li>RatingValue</li>
-<li>RatingCount</li>
-<li>WorstRating</li>
-<li>BestRating</li>
-<li>ReviewCount</li>
-</ul></li>
-<li>Product Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-
-<ul>
-<li>Image URL</li>
-<li>Image Width</li>
-<li>Image Height</li>
-</ul></li>
-</ul>
-
-<p><em>Schema type <a href="http://schema.org/WebSite">schema.org/WebSite</a></em></p>
-
-<ul>
-<li>URL</li>
-<li>Name</li>
-<li>Description</li>
-<li>PotentialAction as <a href="http://schema.org/SearchAction">schema.org/SearchAction</a>
-
-<ul>
-<li>Target</li>
-<li>Query-Input</li>
-</ul></li>
-</ul>
+<blockquote>
+  <p><strong><a href="http://schema.org/Article">schema.org/Article</a></strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Headline</li>
+  <li>Description</li>
+  <li>DatePublished</li>
+  <li>DateModified</li>
+  <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
+  
+  <ul>
+  <li>Author URL</li>
+  <li>Author Name</li>
+  <li>Author Description</li>
+  <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Author Image URL</li>
+  <li>Author Image Width</li>
+  <li>Author Image Height</li>
+  </ul></li>
+  </ul></li>
+  <li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul></li>
+  <li>Article Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul>
+  
+  <p><strong><a href="http://schema.org/Organization">schema.org/Organization</a></strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul>
+  
+  <p><strong><a href="http://schema.org/Person">schema.org/Person</a></strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul>
+  
+  <p><strong><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+  
+  <ul>
+  <li>elevation</li>
+  <li>latitude</li>
+  <li>longitude</li>
+  </ul></li>
+  <li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+  
+  <ul>
+  <li>streetAddress</li>
+  <li>postOfficeBoxNumber</li>
+  <li>addressLocality</li>
+  <li>addressRegion</li>
+  <li>postalCode</li>
+  <li>addressCountry</li>
+  </ul></li>
+  <li>Place Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul>
+  
+  <p><strong><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>SKU</li>
+  <li>Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
+  
+  <ul>
+  <li>Availability</li>
+  <li>Price</li>
+  <li>PriceCurrency</li>
+  </ul></li>
+  <li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
+  
+  <ul>
+  <li>RatingValue</li>
+  <li>RatingCount</li>
+  <li>WorstRating</li>
+  <li>BestRating</li>
+  <li>ReviewCount</li>
+  </ul></li>
+  <li>Product Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul>
+  
+  <p><strong><a href="http://schema.org/WebSite">schema.org/WebSite</a></strong></p>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>PotentialAction as <a href="http://schema.org/SearchAction">schema.org/SearchAction</a>
+  
+  <ul>
+  <li>Target</li>
+  <li>Query-Input</li>
+  </ul></li>
+  </ul>
+</blockquote>
 
 <h4>Uses the WPSSO Framework</h4>
 
