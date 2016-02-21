@@ -30,9 +30,9 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
-<p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
+<p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
+<p><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
 
 <ul>
 <li>URL</li>
@@ -64,9 +64,9 @@
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
-<p>Adds Google / Schema JSON-LD markup for Post / Page item types:</p>
+<p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em><a href="http://schema.org/Article">schema.org/Article</a></em></p>
+<p><em>Schema type <a href="http://schema.org/Article">schema.org/Article</a></em></p>
 
 <ul>
 <li>URL</li>
@@ -80,6 +80,7 @@
 <ul>
 <li>Author URL</li>
 <li>Author Name</li>
+<li>Author Description</li>
 <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
 
 <ul>
@@ -111,7 +112,37 @@
 </ul></li>
 </ul>
 
-<p><em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></p>
+<p><em>Schema type <a href="http://schema.org/Organization">schema.org/Organization</a></em></p>
+
+<ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
+</ul>
+
+<p><em>Schema type <a href="http://schema.org/Person">schema.org/Person</a></em></p>
+
+<ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+
+<ul>
+<li>Image URL</li>
+<li>Image Width</li>
+<li>Image Height</li>
+</ul></li>
+</ul>
+
+<p><em>Schema type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></p>
 
 <ul>
 <li>URL</li>
@@ -143,7 +174,7 @@
 </ul></li>
 </ul>
 
-<p><em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></p>
+<p><em>Schema type <a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></p>
 
 <ul>
 <li>URL</li>
@@ -172,6 +203,20 @@
 <li>Image URL</li>
 <li>Image Width</li>
 <li>Image Height</li>
+</ul></li>
+</ul>
+
+<p><em>Schema type <a href="http://schema.org/WebSite">schema.org/WebSite</a></em></p>
+
+<ul>
+<li>URL</li>
+<li>Name</li>
+<li>Description</li>
+<li>PotentialAction as <a href="http://schema.org/SearchAction">schema.org/SearchAction</a>
+
+<ul>
+<li>Target</li>
+<li>Query-Input</li>
 </ul></li>
 </ul>
 
