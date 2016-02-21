@@ -32,37 +32,40 @@
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
-<p><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></p>
+<dl>
+<dt><em>Schema type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="http://schema.org/WebPage">schema.org/WebPage</a></em></dt>
+<dd>* URL</dd>
 
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>DatePublished</li>
-  <li>DateModified</li>
-  <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
-  
-  <ul>
-  <li>Author URL</li>
-  <li>Author Name</li>
-  <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Author Image URL</li>
-  <li>Author Image Width</li>
-  <li>Author Image Height</li>
-  </ul></li>
-  </ul></li>
-  <li>Post / Page Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  </ul>
-</blockquote>
+<dd>* Name</dd>
+
+<dd>* Description</dd>
+
+<dd>* DatePublished</dd>
+
+<dd>* DateModified</dd>
+
+<dd>* Author as <a href="http://schema.org/Person">schema.org/Person</a></dd>
+
+<dd>* Author URL</dd>
+
+<dd>* Author Name</dd>
+
+<dd>* Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a></dd>
+
+<dd>* Author Image URL</dd>
+
+<dd>* Author Image Width</dd>
+
+<dd>* Author Image Height</dd>
+
+<dd>* Post / Page Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a></dd>
+
+<dd>* Image URL</dd>
+
+<dd>* Image Width</dd>
+
+<dd>* Image Height</dd>
+</dl>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
