@@ -30,7 +30,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'status_gpl_features' => 3,
 					'status_pro_features' => 3,
 				), 10, 'wpssojson' );
+				$this->p->util->add_plugin_filters( $this, array(
+					'pub_google_rows' => 2,
+				) );
 			}
+		}
+
+		public function filter_pub_google_rows( $rows, $form ) {
+			unset ( $rows['schema_add_noscript'] );
+			return $rows;
 		}
 
 		public function filter_json_data_http_schema_org_item_type( $json_data, 
