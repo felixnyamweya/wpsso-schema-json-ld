@@ -72,7 +72,7 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 			$version = WpssoJsonConfig::$cf['plugin'][$lca]['version'];	// only our config
 			if ( class_exists( 'WpssoUtil' ) )
 				WpssoUtil::save_all_times( $lca, $version );
-			else WpssoAm::wpsso_missing_notice( true );			// $deactivate = true
+			else WpssoJson::wpsso_missing_notice( true );			// $deactivate = true
 		}
 
 		private function deactivate_plugin() {
