@@ -192,6 +192,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.0.3 (2016/02/22)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed a "Fatal error: Class 'WpssoAm' not found" error when activating WPSSO JSON without WPSSO.
+* *Developer Notes*
+	* None
+
 **Version 1.0.2 (2016/02/21)**
 
 Official announcement: [WPSSO Update – New Google / Schema JSON-LD Extension](http://wpsso.com/2016/02/21/wpsso-update-new-google-schema-json-ld-extension/)
@@ -206,6 +219,10 @@ Official announcement: [WPSSO Update – New Google / Schema JSON-LD Extension](
 	* None
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+
+2016/02/22 - Fixed a "Fatal error: Class 'WpssoAm' not found" error when activating WPSSO JSON without WPSSO.
 
 = 1.0.2 =
 
