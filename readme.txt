@@ -32,8 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup:
 
-* *[schema.org/BlogPosting](http://schema.org/BlogPosting)*
-* *[schema.org/WebPage](http://schema.org/WebPage)*
+* Schema Type *[schema.org/BlogPosting](http://schema.org/BlogPosting)*
+* Schema Type *[schema.org/WebPage](http://schema.org/WebPage)*
 
 > * URL
 > * Name
@@ -56,9 +56,9 @@ Adds Google / Schema JSON-LD markup:
 
 Adds Google / Schema JSON-LD markup:
 
-* *[schema.org/Article](http://schema.org/Article)*
-* *[schema.org/NewsArticle](http://schema.org/NewsArticle)*
-* *[schema.org/TechArticle](http://schema.org/TechArticle)*
+* Schema Type *[schema.org/Article](http://schema.org/Article)*
+* Schema Type *[schema.org/NewsArticle](http://schema.org/NewsArticle)*
+* Schema Type *[schema.org/TechArticle](http://schema.org/TechArticle)*
  
 > * URL
 > * Name
@@ -87,7 +87,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* *[schema.org/Organization](http://schema.org/Organization)*
+* Schema Type *[schema.org/Organization](http://schema.org/Organization)*
  
 > * URL
 > * Name
@@ -97,7 +97,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* *[schema.org/Person](http://schema.org/Person)*
+* Schema Type *[schema.org/Person](http://schema.org/Person)*
  
 > * URL from Profile
 > * Name
@@ -107,7 +107,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* *[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
+* Schema Type *[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
 
 > * URL
 > * Name
@@ -128,7 +128,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* *[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
+* Schema Type *[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
  
 > * URL
 > * Name
@@ -149,7 +149,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* *[schema.org/WebSite](http://schema.org/WebSite)*
+* Schema Type *[schema.org/WebSite](http://schema.org/WebSite)*
  
 > * URL
 > * Name

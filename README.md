@@ -33,8 +33,8 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
-<li><em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></em></li>
-<li><em><a href="http://schema.org/WebPage">schema.org/WebPage</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/WebPage">schema.org/WebPage</a></em></li>
 </ul>
 
 <blockquote>
@@ -72,9 +72,9 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
-<li><em><a href="http://schema.org/Article">schema.org/Article</a></em></li>
-<li><em><a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></em></li>
-<li><em><a href="http://schema.org/TechArticle">schema.org/TechArticle</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/Article">schema.org/Article</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/TechArticle">schema.org/TechArticle</a></em></li>
 </ul>
 
 <blockquote>
@@ -124,7 +124,7 @@
 </blockquote>
 
 <ul>
-<li><em><a href="http://schema.org/Organization">schema.org/Organization</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/Organization">schema.org/Organization</a></em></li>
 </ul>
 
 <blockquote>
@@ -143,7 +143,7 @@
 </blockquote>
 
 <ul>
-<li><em><a href="http://schema.org/Person">schema.org/Person</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/Person">schema.org/Person</a></em></li>
 </ul>
 
 <blockquote>
@@ -162,7 +162,7 @@
 </blockquote>
 
 <ul>
-<li><em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></li>
+<li>Schema Type <em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></li>
 </ul>
 
 <blockquote>
@@ -198,7 +198,7 @@
 </blockquote>
 
 <ul>
-<li><em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></li>
+<li>Schema Type <em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></li>
 </ul>
 
 <blockquote>
@@ -234,7 +234,7 @@
 </blockquote>
 
 <ul>
-<li><em><a href="http://schema.org/WebSite">schema.org/WebSite</a></em></li>
+<li>Schema Type <em><a href="http://schema.org/WebSite">schema.org/WebSite</a></em></li>
 </ul>
 
 <blockquote>
