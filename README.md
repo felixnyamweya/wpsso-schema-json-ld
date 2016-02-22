@@ -257,7 +257,7 @@
 
 <p>You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> version requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> version as well.</p>
 
-<p><a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">Purchase the WPSSO Schema JSON-LD (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p>Purchase the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD (WPSSO JSON) Pro</a> extension (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 
 
 <h2>Installation</h2>
