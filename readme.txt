@@ -192,6 +192,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.0.4 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a warning for Schema types without support (or custom filter hooks).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.0.3 (2016/02/22)**
 
 Official announcement: N/A
