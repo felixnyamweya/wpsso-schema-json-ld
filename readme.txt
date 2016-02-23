@@ -192,16 +192,17 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
-**Version 1.0.4 (TBD)**
+**Version 1.1.0 (2016/02/23)**
 
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added a new "Main Entity of Page" option in the Social Settings metabox.
+	* Added a warning for Schema types without custom support.
 * *Improvements*
-	* Added a warning for Schema types without support (or custom filter hooks).
-* *Bugfixes*
 	* None
+* *Bugfixes*
+	* Fixed the Schema Type default value in the Social Settings metabox.
 * *Developer Notes*
 	* None
 
@@ -218,26 +219,13 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.0.2 (2016/02/21)**
-
-Official announcement: [WPSSO Update – New Google / Schema JSON-LD Extension](http://wpsso.com/2016/02/21/wpsso-update-new-google-schema-json-ld-extension/)
-
-* *New Features*
-	* None
-* *Improvements*
-	* Maintenance release for WordPress Social Sharing Optimization (WPSSO) v3.25.0.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
+
+= 1.1.0 =
+
+2016/02/23 - Added a new "Main Entity of Page" option in the Social Settings metabox. Added a warning for Schema types without custom support. Fixed the Schema Type default value in the Social Settings metabox.
 
 = 1.0.3 =
 
 2016/02/22 - Fixed a "Fatal error: Class 'WpssoAm' not found" error when activating WPSSO JSON without WPSSO.
-
-= 1.0.2 =
-
-2016/02/21 - Maintenance release for WordPress Social Sharing Optimization (WPSSO) v3.25.0.
 
