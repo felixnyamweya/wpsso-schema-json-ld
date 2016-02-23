@@ -38,26 +38,30 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->msgs->get( 'pro-feature-msg', 
 					array( 'lca' => 'wpssojson' ) ).'</td>';
 
+			$rows['schema_is_main'] = $this->p->util->get_th( _x( 'Main Entity of Page',
+				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_is_main' ).
+			'<td class="blank"><input type="checkbox" disabled="disabled" checked /></td>';
+
 			$rows['schema_type'] = $this->p->util->get_th( _x( 'Schema Item Type',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_type', $head_info ).
+				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_type' ).
 			'<td class="blank">'.$this->p->schema->get_head_item_type( $head_info['post_id'], false, false, false ).'</td>';
 
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
-					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline', $head_info ).
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline' ).
 						$td_save_draft;
 			else $rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
-					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline', $head_info ). 
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline' ). 
 				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len, '...', true ).'</td>';
 
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
-					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc', $head_info ).
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc' ).
 						$td_save_draft;
 			else $rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
-					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc', $head_info ).
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc' ).
 				'<td class="blank">'.$this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 					'...', true ).'</td>';
 	

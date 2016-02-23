@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.0.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -20,13 +20,30 @@ msgid ""
 "Place, Product, etc.) for Google and Pinterest."
 msgstr ""
 
-#: lib/filters.php:110
+#: lib/filters.php:116
+msgid "This notice is only shown to users with Administrative privileges."
+msgstr ""
+
+#: lib/filters.php:116
+msgid ""
+"WPSSO JSON does not include specific / customized support for the Schema "
+"type <a href=\"%1$s\">%1$s</a> &mdash; the Schema type properties URL, Name, "
+"and Description will be added by default."
+msgstr ""
+
+#: lib/filters.php:116
+msgid ""
+"Developers may hook the '%1$s' filter to further customize the default JSON-"
+"LD data array."
+msgstr ""
+
+#: lib/filters.php:153
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:112
+#: lib/filters.php:155
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
@@ -39,19 +56,24 @@ msgctxt "metabox title"
 msgid "Google Structured Data / Schema JSON-LD"
 msgstr ""
 
-#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:58
+#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:53
+msgctxt "option label"
+msgid "Main Entity of Page"
+msgstr ""
+
+#: lib/gpl/admin/post.php:45 lib/pro/admin/post.php:59
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:48 lib/gpl/admin/post.php:51
-#: lib/pro/admin/post.php:66 lib/pro/admin/post.php:70
+#: lib/gpl/admin/post.php:52 lib/gpl/admin/post.php:55
+#: lib/pro/admin/post.php:67 lib/pro/admin/post.php:71
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:56 lib/gpl/admin/post.php:59
-#: lib/pro/admin/post.php:77 lib/pro/admin/post.php:80
+#: lib/gpl/admin/post.php:60 lib/gpl/admin/post.php:63
+#: lib/pro/admin/post.php:78 lib/pro/admin/post.php:81
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""

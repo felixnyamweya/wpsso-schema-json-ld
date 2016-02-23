@@ -23,26 +23,34 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
 				'json_data_http_schema_org_item_type' => 8,
+				'json_data_http_schema_org_webpage' => array( 		// method name to call
+					'json_data_http_schema_org_webpage' => 6,	// filter name to hook
+					'json_data_http_schema_org_blogposting' => 6,
+				),
 			), -100 );	// make sure we run first
 
 			if ( is_admin() ) {
+				$this->p->util->add_plugin_actions( $this, array(
+					'admin_post_header' => 3,
+				) );
+				$this->p->util->add_plugin_filters( $this, array(
+					'get_meta_defaults' => 2,
+					'pub_google_rows' => 2,
+				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_gpl_features' => 3,
 					'status_pro_features' => 3,
 				), 10, 'wpssojson' );
-				$this->p->util->add_plugin_filters( $this, array(
-					'pub_google_rows' => 2,
-				) );
 			}
 		}
 
-		public function filter_pub_google_rows( $rows, $form ) {
-			unset ( $rows['schema_add_noscript'] );
-			return $rows;
-		}
-
+		/*
+		 * Common filter for all Schema types.
+		 *
+		 * Adds the url, name, description, and if true, the main entity property. 
+		 */
 		public function filter_json_data_http_schema_org_item_type( $json_data, 
-			$use_post, $obj, $mt_og, $post_id, $author_id, $head_type, $main_entity ) {
+			$use_post, $post_obj, $mt_og, $post_id, $author_id, $head_type, $is_main ) {
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -58,35 +66,70 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 				'...', $use_post, true, true, true, 'schema_desc' );	// custom meta = schema_desc
 
-			if ( $main_entity )
+			if ( $is_main )
 				WpssoSchema::add_main_entity_data( $ret, $ret['url'] );
 
-			switch ( $head_type ) {
-				case 'http://schema.org/BlogPosting':
-				case 'http://schema.org/WebPage':
+			return WpssoSchema::return_data_from_filter( $json_data, $ret );
+		}
 
-					WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
-						'datepublished' => 'article:published_time',
-						'datemodified' => 'article:modified_time',
-					) );
+		/*
+		 * Common filter for WebPage and BlogPosting Schema types.
+		 * 
+		 * Adds the date published, date modified, author, and image properties.
+		 */
+		public function filter_json_data_http_schema_org_webpage( $json_data, 
+			$use_post, $post_obj, $mt_og, $post_id, $author_id ) {
 
-					if ( $author_id > 0 )
-						WpssoSchema::add_single_person_data( $ret['author'],
-							$author_id, true );	// list_element = true
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
-					$size_name = $this->p->cf['lca'].'-schema';
-					$og_image = $this->p->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
+			$ret = array();
+			$lca = $this->p->cf['lca'];
 
-					if ( empty( $og_image ) && 
-						SucomUtil::is_post_page( $use_post ) )
-							$og_image = $this->p->media->get_default_image( 1, $size_name, true );
+			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
+				'datepublished' => 'article:published_time',
+				'datemodified' => 'article:modified_time',
+			) );
 
-					WpssoSchema::add_image_list_data( $ret['image'], $og_image, 'og:image' );
+			if ( $author_id > 0 )
+				WpssoSchema::add_single_person_data( $ret['author'],
+					$author_id, true );	// list_element = true
 
-					break;
-			}
+			$size_name = $this->p->cf['lca'].'-schema';
+			$og_image = $this->p->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
+
+			if ( empty( $og_image ) && 
+				SucomUtil::is_post_page( $use_post ) )
+					$og_image = $this->p->media->get_default_image( 1, $size_name, true );
+
+			WpssoSchema::add_image_list_data( $ret['image'], $og_image, 'og:image' );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
+		}
+
+		public function action_admin_post_header( $post_id, $ptn, $post_obj ) {
+			if ( current_user_can( 'manage_options' ) ) {
+				$item_type = $this->p->schema->get_head_item_type( $post_id, $post_obj );
+				if ( ! $this->p->schema->has_json_data_filter( $item_type ) ) {
+					$filter_name = $this->p->schema->get_json_data_filter( $item_type );
+					$msg_id = 'no_filter_for_'.$filter_name;
+					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.sprintf( __( 'WPSSO JSON does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; the Schema type properties URL, Name, and Description will be added by default.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may hook the \'%1$s\' filter to further customize the default JSON-LD data array.', 'wpsso-schema-json-ld' ), $filter_name ), true, true, $msg_id, true );
+				}
+			}
+		}
+
+		public function filter_get_meta_defaults( $def_opts, $mod_name ) {
+			$def_opts = array_merge( $def_opts, array(
+				'schema_is_main' => 1,
+				'schema_headline' => '',
+				'schema_type' => $this->p->schema->get_head_item_type( false, false, true, false ),	// $ret_key = true, $use_mod = false
+			) );
+			return $def_opts;
+		}
+
+		public function filter_pub_google_rows( $rows, $form ) {
+			unset ( $rows['schema_add_noscript'] );
+			return $rows;
 		}
 
 		// hooked to 'wpssojson_status_gpl_features'
