@@ -27,8 +27,8 @@ msgstr ""
 #: lib/filters.php:116
 msgid ""
 "WPSSO JSON does not include specific / customized support for the Schema "
-"type <a href=\"%1$s\">%1$s</a> &mdash; the Schema type properties URL, Name, "
-"and Description will be added by default."
+"type <a href=\"%1$s\">%1$s</a> &mdash; the Schema properties URL, Name, and "
+"Description will be added by default."
 msgstr ""
 
 #: lib/filters.php:116

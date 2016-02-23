@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				if ( ! $this->p->schema->has_json_data_filter( $item_type ) ) {
 					$filter_name = $this->p->schema->get_json_data_filter( $item_type );
 					$msg_id = 'no_filter_for_'.$filter_name;
-					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.sprintf( __( 'WPSSO JSON does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; the Schema type properties URL, Name, and Description will be added by default.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may hook the \'%1$s\' filter to further customize the default JSON-LD data array.', 'wpsso-schema-json-ld' ), $filter_name ), true, true, $msg_id, true );
+					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.sprintf( __( 'WPSSO JSON does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; the Schema properties URL, Name, and Description will be added by default.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may hook the \'%1$s\' filter to further customize the default JSON-LD data array.', 'wpsso-schema-json-ld' ), $filter_name ), true, true, $msg_id, true );
 				}
 			}
 		}
