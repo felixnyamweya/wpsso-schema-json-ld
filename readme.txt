@@ -199,6 +199,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 1.2.0 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added a new "Schema Item Name" option in the Social Settings metabox.
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.0 (2016/02/23)**
 
 Official announcement: N/A
