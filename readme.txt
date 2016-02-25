@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 1.1.0
+Stable Tag: 1.2.0
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
 
@@ -199,7 +199,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.2.0 (TBD)**
+**Version 1.2.0 (2016/02/25)**
 
 Official announcement: N/A
 
@@ -240,6 +240,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+
+2016/02/25 - Added a new "Schema Item Name" option in the Social Settings metabox.
 
 = 1.1.0 =
 
