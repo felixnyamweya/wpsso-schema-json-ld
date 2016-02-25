@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.1.0',	// plugin version
+					'version' => '1.2.0',	// plugin version
 					'short' => 'WPSSO JSON',
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
 					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.',
@@ -92,6 +92,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 			require_once( WPSSOJSON_PLUGINDIR.'lib/register.php' );
 			require_once( WPSSOJSON_PLUGINDIR.'lib/filters.php' );
+			require_once( WPSSOJSON_PLUGINDIR.'lib/schema.php' );
 
 			add_filter( 'wpssojson_load_lib', array( 'WpssoJsonConfig', 'load_lib' ), 10, 3 );
 		}

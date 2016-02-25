@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.1.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -20,65 +20,71 @@ msgid ""
 "Place, Product, etc.) for Google and Pinterest."
 msgstr ""
 
-#: lib/filters.php:116
+#: lib/filters.php:128
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:116
+#: lib/filters.php:128
 msgid ""
 "WPSSO JSON does not include specific / customized support for the Schema "
 "type <a href=\"%1$s\">%1$s</a> &mdash; the Schema properties URL, Name, and "
 "Description will be added by default."
 msgstr ""
 
-#: lib/filters.php:116
+#: lib/filters.php:128
 msgid ""
 "Developers may hook the '%1$s' filter to further customize the default JSON-"
 "LD data array."
 msgstr ""
 
-#: lib/filters.php:153
+#: lib/filters.php:166
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:155
+#: lib/filters.php:168
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
-#: lib/gpl/admin/post.php:28
+#: lib/gpl/admin/post.php:31
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
-#: lib/gpl/admin/post.php:35 lib/pro/admin/post.php:52
+#: lib/gpl/admin/post.php:38 lib/pro/admin/post.php:56
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema JSON-LD"
 msgstr ""
 
-#: lib/gpl/admin/post.php:42 lib/pro/admin/post.php:55
+#: lib/gpl/admin/post.php:45 lib/pro/admin/post.php:59
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr ""
 
-#: lib/gpl/admin/post.php:46 lib/pro/admin/post.php:59
+#: lib/gpl/admin/post.php:49 lib/pro/admin/post.php:63
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:51 lib/gpl/admin/post.php:54
-#: lib/pro/admin/post.php:65 lib/pro/admin/post.php:69
+#: lib/gpl/admin/post.php:54 lib/gpl/admin/post.php:57
+#: lib/pro/admin/post.php:68 lib/pro/admin/post.php:71
+msgctxt "option label"
+msgid "Schema Item Name"
+msgstr ""
+
+#: lib/gpl/admin/post.php:63 lib/gpl/admin/post.php:66
+#: lib/pro/admin/post.php:79 lib/pro/admin/post.php:83
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:59 lib/gpl/admin/post.php:62
-#: lib/pro/admin/post.php:76 lib/pro/admin/post.php:79
+#: lib/gpl/admin/post.php:71 lib/gpl/admin/post.php:74
+#: lib/pro/admin/post.php:90 lib/pro/admin/post.php:93
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
 
-#: lib/pro/admin/post.php:40
+#: lib/pro/admin/post.php:43
 msgid "Save a draft version or publish the %s to enable this option."
 msgstr ""
 
@@ -94,7 +100,7 @@ msgid ""
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:130
+#: wpsso-schema-json-ld.php:131
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."

@@ -20,9 +20,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 		}
 
 		public function filter_post_header_rows( $rows, $form, $head_info ) {
+
 			$post_status = get_post_status( $head_info['post_id'] );
 			$post_type = get_post_type( $head_info['post_id'] );
+			$title_max_len = $this->p->options['og_title_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+			$desc_max_len = $this->p->options['schema_desc_len'];
 
 			$td_save_draft = '<td class="blank"><em>'.
 				sprintf( __( 'Save a draft version or publish the %s to update this value.',
@@ -48,12 +51,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			'<td class="blank">'.$this->p->schema->get_head_item_type( $head_info['post_id'], false, false, false ).'</td>';
 
 			if ( $post_status == 'auto-draft' )
+				$rows['schema_title'] = $this->p->util->get_th( _x( 'Schema Item Name',
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_title' ).
+						$td_save_draft;
+			else $rows['schema_title'] = $this->p->util->get_th( _x( 'Schema Item Name',
+					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_title' ). 
+				'<td class="blank">'.$this->p->webpage->get_title( $title_max_len,
+					'...', true ).'</td>';	// $use_post = true
+
+			if ( $post_status == 'auto-draft' )
 				$rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline' ).
 						$td_save_draft;
 			else $rows['schema_headline'] = $this->p->util->get_th( _x( 'Article Headline',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline' ). 
-				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len, '...', true ).'</td>';
+				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len, '...', true ).'</td>';	// $use_post = true
 
 			if ( $post_status == 'auto-draft' )
 				$rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
@@ -61,8 +73,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$td_save_draft;
 			else $rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
 					'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc' ).
-				'<td class="blank">'.$this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
-					'...', true ).'</td>';
+				'<td class="blank">'.$this->p->webpage->get_description( $desc_max_len, 
+					'...', true ).'</td>';	// $use_post = true
 	
 			return $rows;
 		}
