@@ -61,25 +61,26 @@ msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr ""
 
-#: lib/gpl/admin/post.php:49 lib/pro/admin/post.php:63
+#: lib/gpl/admin/post.php:49 lib/pro/admin/post.php:64
+#: lib/pro/admin/post.php:67
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
 #: lib/gpl/admin/post.php:54 lib/gpl/admin/post.php:57
-#: lib/pro/admin/post.php:68 lib/pro/admin/post.php:71
+#: lib/pro/admin/post.php:72 lib/pro/admin/post.php:75
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:63 lib/gpl/admin/post.php:66
-#: lib/pro/admin/post.php:79 lib/pro/admin/post.php:83
+#: lib/pro/admin/post.php:83 lib/pro/admin/post.php:87
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
 #: lib/gpl/admin/post.php:71 lib/gpl/admin/post.php:74
-#: lib/pro/admin/post.php:90 lib/pro/admin/post.php:93
+#: lib/pro/admin/post.php:94 lib/pro/admin/post.php:97
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
