@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.2.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -20,30 +20,30 @@ msgid ""
 "Place, Product, etc.) for Google and Pinterest."
 msgstr ""
 
-#: lib/filters.php:128
+#: lib/filters.php:113
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:128
+#: lib/filters.php:113
 msgid ""
 "WPSSO JSON does not include specific / customized support for the Schema "
 "type <a href=\"%1$s\">%1$s</a> &mdash; the Schema properties URL, Name, and "
 "Description will be added by default."
 msgstr ""
 
-#: lib/filters.php:128
+#: lib/filters.php:113
 msgid ""
 "Developers may hook the '%1$s' filter to further customize the default JSON-"
 "LD data array."
 msgstr ""
 
-#: lib/filters.php:166
+#: lib/filters.php:151
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:168
+#: lib/filters.php:153
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 

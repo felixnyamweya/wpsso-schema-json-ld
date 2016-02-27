@@ -48,6 +48,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Common filter for all Schema types.
 		 *
 		 * Adds the url, name, description, and if true, the main entity property. 
+		 * Does not add images, videos, author or organization markup since this will
+		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
 		public function filter_json_data_http_schema_org_item_type( $json_data, 
 			$use_post, $post_obj, $mt_og, $post_id, $author_id, $head_type, $is_main ) {
@@ -77,7 +79,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		/*
-		 * Common filter for WebPage and BlogPosting Schema types.
+		 * Common filter for WebPage and the BlogPosting Schema types.
 		 * 
 		 * Adds the date published, date modified, author, and image properties.
 		 */
@@ -95,26 +97,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'datemodified' => 'article:modified_time',
 			) );
 
-			WpssoJsonSchema::add_author_media_data( $ret, $use_post, $post_id, $author_id );
+			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $post_obj, $mt_og, $post_id, $author_id );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
-		}
-
-		public static function add_author_media_data( &$json_data, $use_post, $post_id, $author_id ) {
-
-			$wpsso = Wpsso::get_instance();
-
-			if ( $author_id > 0 )
-				WpssoSchema::add_single_person_data( $json_data['author'], $author_id, true );	// list_element = true
-
-			$size_name = $wpsso->cf['lca'].'-schema';
-			$og_image = $wpsso->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
-
-			if ( empty( $og_image ) && 
-				SucomUtil::is_post_page( $use_post ) )
-					$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
-
-			WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 		}
 
 		public function action_admin_post_header( $post_id, $ptn, $post_obj ) {
