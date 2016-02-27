@@ -36,7 +36,7 @@ Adds Google / Schema JSON-LD markup:
 * Schema Type *[schema.org/WebPage](http://schema.org/WebPage)*
 
 > * URL
-> * Name
+> * Name (Title)
 > * Description
 > * DatePublished
 > * DateModified
@@ -47,10 +47,22 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
-> * Post / Page Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
+> 	* Video URL
+> 	* Video Name (Title)
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video EmbedUrl
+> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Preview URL
+> 		* Preview Width
+> 		* Preview Height
 
 **WPSSO JSON Pro / Power-User Features**
 
@@ -61,7 +73,7 @@ Adds Google / Schema JSON-LD markup:
 * Schema Type *[schema.org/TechArticle](http://schema.org/TechArticle)*
  
 > * URL
-> * Name
+> * Name (Title)
 > * Headline
 > * Description
 > * DatePublished
@@ -86,6 +98,18 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> 	* Video URL
+> 	* Video Name (Title)
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video EmbedUrl
+> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Preview URL
+> 		* Preview Width
+> 		* Preview Height
 
 * Schema Type *[schema.org/Organization](http://schema.org/Organization)*
  
@@ -148,6 +172,18 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> 	* Video URL
+> 	* Video Name
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video EmbedUrl
+> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Preview URL
+> 		* Preview Width
+> 		* Preview Height
 
 * Schema Type *[schema.org/WebSite](http://schema.org/WebSite)*
  
@@ -198,6 +234,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/developers/)
 
 = Changelog / Release Notes =
+
+**Version 1.3.0 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
 
 **Version 1.2.0 (2016/02/25)**
 

@@ -40,7 +40,7 @@
 <blockquote>
   <ul>
   <li>URL</li>
-  <li>Name</li>
+  <li>Name (Title)</li>
   <li>Description</li>
   <li>DatePublished</li>
   <li>DateModified</li>
@@ -57,12 +57,30 @@
   <li>Author Image Height</li>
   </ul></li>
   </ul></li>
-  <li>Post / Page Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
+  </ul></li>
+  <li>Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name (Title)</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Preview URL</li>
+  <li>Preview Width</li>
+  <li>Preview Height</li>
+  </ul></li>
   </ul></li>
   </ul>
 </blockquote>
@@ -80,7 +98,7 @@
 <blockquote>
   <ul>
   <li>URL</li>
-  <li>Name</li>
+  <li>Name (Title)</li>
   <li>Headline</li>
   <li>Description</li>
   <li>DatePublished</li>
@@ -119,6 +137,24 @@
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
+  </ul></li>
+  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name (Title)</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Preview URL</li>
+  <li>Preview Width</li>
+  <li>Preview Height</li>
+  </ul></li>
   </ul></li>
   </ul>
 </blockquote>
@@ -229,6 +265,24 @@
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
+  </ul></li>
+  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Preview URL</li>
+  <li>Preview Width</li>
+  <li>Preview Height</li>
+  </ul></li>
   </ul></li>
   </ul>
 </blockquote>
