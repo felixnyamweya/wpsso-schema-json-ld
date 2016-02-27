@@ -235,18 +235,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.3.0 (TBD)**
+**Version 1.3.0 (2016/02/27)**
 
 Official announcement: N/A
 
 * *New Features*
-	* None
+	* Added support for http://schema.org/VideoObject Schema type properties.
 * *Improvements*
 	* None
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added video support to the WpssoJsonSchema `add_author_and_media_data()` method.
+	* Added new WpssoJsonSchema `add_video_list_data()` and `add_single_video_data()` methods.
 
 **Version 1.2.0 (2016/02/25)**
 
@@ -289,6 +290,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+
+2016/02/27 - Added support for http://schema.org/VideoObject properties.
 
 = 1.2.0 =
 
