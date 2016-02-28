@@ -98,7 +98,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -172,7 +172,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description

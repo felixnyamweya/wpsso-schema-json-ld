@@ -138,7 +138,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
   
   <ul>
   <li>Video URL</li>
@@ -266,7 +266,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
   
   <ul>
   <li>Video URL</li>
