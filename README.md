@@ -33,8 +33,8 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></em></li>
-<li>Schema Type <em><a href="http://schema.org/WebPage">schema.org/WebPage</a></em></li>
+<li>Schema Type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
+<li>Schema Type <a href="http://schema.org/WebPage">schema.org/WebPage</a></li>
 </ul>
 
 <blockquote>
@@ -64,7 +64,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
+  <li>Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
   
   <ul>
   <li>Video URL</li>
@@ -90,9 +90,9 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/Article">schema.org/Article</a></em></li>
-<li>Schema Type <em><a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></em></li>
-<li>Schema Type <em><a href="http://schema.org/TechArticle">schema.org/TechArticle</a></em></li>
+<li>Schema Type <a href="http://schema.org/Article">schema.org/Article</a></li>
+<li>Schema Type <a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
+<li>Schema Type <a href="http://schema.org/TechArticle">schema.org/TechArticle</a></li>
 </ul>
 
 <blockquote>
@@ -138,7 +138,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
+  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
   
   <ul>
   <li>Video URL</li>
@@ -160,7 +160,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/Organization">schema.org/Organization</a></em></li>
+<li>Schema Type <a href="http://schema.org/Organization">schema.org/Organization</a></li>
 </ul>
 
 <blockquote>
@@ -179,7 +179,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/Person">schema.org/Person</a></em></li>
+<li>Schema Type <a href="http://schema.org/Person">schema.org/Person</a></li>
 </ul>
 
 <blockquote>
@@ -198,7 +198,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</em></li>
+<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</li>
 </ul>
 
 <blockquote>
@@ -234,7 +234,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually mandatory)</em></li>
+<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually required)</li>
 </ul>
 
 <blockquote>
@@ -266,7 +266,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)*
+  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
   
   <ul>
   <li>Video URL</li>
@@ -288,7 +288,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <em><a href="http://schema.org/WebSite">schema.org/WebSite</a></em></li>
+<li>Schema Type <a href="http://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul>
 
 <blockquote>

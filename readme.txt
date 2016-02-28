@@ -32,8 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 Adds Google / Schema JSON-LD markup:
 
-* Schema Type *[schema.org/BlogPosting](http://schema.org/BlogPosting)*
-* Schema Type *[schema.org/WebPage](http://schema.org/WebPage)*
+* Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
+* Schema Type [schema.org/WebPage](http://schema.org/WebPage)
 
 > * URL
 > * Name (Title)
@@ -51,7 +51,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
+> * Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -68,9 +68,9 @@ Adds Google / Schema JSON-LD markup:
 
 Adds Google / Schema JSON-LD markup:
 
-* Schema Type *[schema.org/Article](http://schema.org/Article)*
-* Schema Type *[schema.org/NewsArticle](http://schema.org/NewsArticle)*
-* Schema Type *[schema.org/TechArticle](http://schema.org/TechArticle)*
+* Schema Type [schema.org/Article](http://schema.org/Article)
+* Schema Type [schema.org/NewsArticle](http://schema.org/NewsArticle)
+* Schema Type [schema.org/TechArticle](http://schema.org/TechArticle)
  
 > * URL
 > * Name (Title)
@@ -98,7 +98,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
+> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -111,7 +111,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Preview Width
 > 		* Preview Height
 
-* Schema Type *[schema.org/Organization](http://schema.org/Organization)*
+* Schema Type [schema.org/Organization](http://schema.org/Organization)
  
 > * URL
 > * Name
@@ -121,7 +121,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* Schema Type *[schema.org/Person](http://schema.org/Person)*
+* Schema Type [schema.org/Person](http://schema.org/Person)
  
 > * URL from Profile
 > * Name
@@ -131,7 +131,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* Schema Type *[schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)*
+* Schema Type [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
 
 > * URL
 > * Name
@@ -152,7 +152,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* Schema Type *[schema.org/Product](http://schema.org/Product) (eCommerce plugin usually mandatory)*
+* Schema Type [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually required)
  
 > * URL
 > * Name
@@ -172,7 +172,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)*
+> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -185,7 +185,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Preview Width
 > 		* Preview Height
 
-* Schema Type *[schema.org/WebSite](http://schema.org/WebSite)*
+* Schema Type [schema.org/WebSite](http://schema.org/WebSite)
  
 > * URL
 > * Name
