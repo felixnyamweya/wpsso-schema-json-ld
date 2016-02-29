@@ -235,12 +235,25 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 1.3.1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added the 'inLanguage' attribute.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.3.0 (2016/02/27)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Added support for http://schema.org/VideoObject Schema type properties.
+	* Added support for the http://schema.org/VideoObject Schema type.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -293,7 +306,7 @@ Official announcement: N/A
 
 = 1.3.0 =
 
-2016/02/27 - Added support for http://schema.org/VideoObject properties.
+2016/02/27 - Added support for the http://schema.org/VideoObject Schema type.
 
 = 1.2.0 =
 
