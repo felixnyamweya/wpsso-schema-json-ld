@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 1.3.0
+Stable Tag: 1.3.1
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
 
@@ -235,7 +235,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.3.1 (TBD)**
+**Version 1.3.1 (2016/02/29)**
 
 Official announcement: N/A
 
@@ -289,20 +289,11 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.0.3 (2016/02/22)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed a "Fatal error: Class 'WpssoAm' not found" error when activating WPSSO JSON without WPSSO.
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
+
+= 1.3.1 =
+
+2016/02/29 - Added the 'inLanguage' attribute.
 
 = 1.3.0 =
 
@@ -315,8 +306,4 @@ Official announcement: N/A
 = 1.1.0 =
 
 2016/02/23 - Added a new "Main Entity of Page" option in the Social Settings metabox. Added a warning for Schema types without custom support. Fixed the Schema Type default value in the Social Settings metabox.
-
-= 1.0.3 =
-
-2016/02/22 - Fixed a "Fatal error: Class 'WpssoAm' not found" error when activating WPSSO JSON without WPSSO.
 
