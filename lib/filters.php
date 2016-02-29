@@ -60,18 +60,42 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$lca = $this->p->cf['lca'];
 			$ret = WpssoSchema::get_item_type_context( $head_type );
 
+			/*
+			 * Property:
+			 *	url
+			 */
 			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array( 'url' => 'og:url' ) );
 
-			// get_title( $textlen = 70, $trailing = '', $use_post = false, $use_cache = true,
-			//	$add_hashtags = false, $encode = true, $md_idx = 'og_title', $src_id = '' ) {
+			/*
+			 * Property:
+			 *	name
+			 *
+			 * get_title( $textlen = 70, $trailing = '', $use_post = false, $use_cache = true,
+			 *	$add_hashtags = false, $encode = true, $md_idx = 'og_title', $src_id = '' ) {
+			 */
 			$ret['name'] = $this->p->webpage->get_title( $this->p->options['og_title_len'], 
 				'...', $use_post, true, false, true, 'schema_title' );
 
-			// get_description( $textlen = 156, $trailing = '...', $use_post = false, $use_cache = true,
-			//	$add_hashtags = true, $encode = true, $md_idx = 'og_desc', $src_id = '' )
+			/*
+			 * Property:
+			 *	description
+			 *
+			 * get_description( $textlen = 156, $trailing = '...', $use_post = false, $use_cache = true,
+			 *	$add_hashtags = true, $encode = true, $md_idx = 'og_desc', $src_id = '' )
+			 */
 			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 				'...', $use_post, true, false, true, 'schema_desc' );
 
+			/*
+			 * Property:
+			 *	inLanguage
+			 */
+			$ret['inLanguage'] = get_locale();
+
+			/*
+			 * Property:
+			 *	mainEntityOfPage as http://schema.org/WebPage
+			 */
 			if ( $is_main )
 				WpssoSchema::add_main_entity_data( $ret, $ret['url'] );
 
@@ -92,11 +116,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$ret = array();
 			$lca = $this->p->cf['lca'];
 
+			/*
+			 * Property:
+			 * 	datepublished
+			 * 	datemodified
+			 */
 			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
 				'datepublished' => 'article:published_time',
 				'datemodified' => 'article:modified_time',
 			) );
 
+			/*
+			 * Property:
+			 *	author as http://schema.org/Person
+			 *	image as http://schema.org/ImageObject
+			 *	video as http://schema.org/VideoObject
+			 */
 			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $post_obj, $mt_og, $post_id, $author_id );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );

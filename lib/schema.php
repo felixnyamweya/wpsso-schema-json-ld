@@ -23,16 +23,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		public static function add_author_and_media_data( &$json_data, &$use_post, &$post_obj, &$mt_og, &$post_id, &$author_id ) {
 
 			$wpsso = Wpsso::get_instance();
-
+			
 			/*
-			 * Properties:
+			 * Property:
 			 *	author as http://schema.org/Person
 			 */
 			if ( $author_id > 0 )
 				WpssoSchema::add_single_person_data( $json_data['author'], $author_id, true );
 
 			/*
-			 * Properties:
+			 * Property:
 			 *	image as http://schema.org/ImageObject
 			 */
 			$size_name = $wpsso->cf['lca'].'-schema';
@@ -46,7 +46,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 
 			/*
-			 * Properties:
+			 * Property:
 			 *	video as http://schema.org/VideoObject
 			 */
 			if ( ! empty( $mt_og['og:video'] ) )
