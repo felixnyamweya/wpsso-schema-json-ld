@@ -73,13 +73,16 @@
   <li>Video FileFormat</li>
   <li>Video Width</li>
   <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUril</li>
   <li>Video EmbedUrl</li>
-  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
-  <li>Preview URL</li>
-  <li>Preview Width</li>
-  <li>Preview Height</li>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
   </ul></li>
   </ul></li>
   </ul>
@@ -147,13 +150,16 @@
   <li>Video FileFormat</li>
   <li>Video Width</li>
   <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUril</li>
   <li>Video EmbedUrl</li>
-  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
-  <li>Preview URL</li>
-  <li>Preview Width</li>
-  <li>Preview Height</li>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
   </ul></li>
   </ul></li>
   </ul>
@@ -275,13 +281,16 @@
   <li>Video FileFormat</li>
   <li>Video Width</li>
   <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUril</li>
   <li>Video EmbedUrl</li>
-  <li>Video Preview as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
-  <li>Preview URL</li>
-  <li>Preview Width</li>
-  <li>Preview Height</li>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
   </ul></li>
   </ul></li>
   </ul>

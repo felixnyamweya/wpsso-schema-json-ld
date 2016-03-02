@@ -58,11 +58,14 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video FileFormat
 > 	* Video Width
 > 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUril
 > 	* Video EmbedUrl
-> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
-> 		* Preview URL
-> 		* Preview Width
-> 		* Preview Height
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
 
 **WPSSO JSON Pro / Power-User Features**
 
@@ -105,11 +108,14 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video FileFormat
 > 	* Video Width
 > 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUril
 > 	* Video EmbedUrl
-> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
-> 		* Preview URL
-> 		* Preview Width
-> 		* Preview Height
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
 
 * Schema Type [schema.org/Organization](http://schema.org/Organization)
  
@@ -179,11 +185,14 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video FileFormat
 > 	* Video Width
 > 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUril
 > 	* Video EmbedUrl
-> 	* Video Preview as [schema.org/ImageObject](http://schema.org/ImageObject)
-> 		* Preview URL
-> 		* Preview Width
-> 		* Preview Height
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
 
 * Schema Type [schema.org/WebSite](http://schema.org/WebSite)
  
@@ -235,6 +244,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
+**Version 1.3.2 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added the 'duration', 'uploadDate', and 'thumbnailUrl' attributes to the http://schema.org/VideoObject markup.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.3.1 (2016/02/29)**
 
 Official announcement: N/A
@@ -242,7 +264,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added the 'inLanguage' attribute.
+	* Added the 'inLanguage' attribute to all schema types.
 * *Bugfixes*
 	* None
 * *Developer Notes*
