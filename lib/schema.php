@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			) );
 
 			if ( $opts[$opt_pre.':has_image'] )
-				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) );	// list_element = false
+				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) )	// list_element = false
 					unset( $ret['image'] );
 
 			if ( empty( $list_element ) )
