@@ -244,7 +244,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.3.2 (TBD)**
+**Version 1.3.2 (2016/03/03)**
 
 Official announcement: N/A
 
@@ -312,6 +312,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.3.2 =
+
+2016/03/03 - Added the 'duration', 'uploadDate', and 'thumbnailUrl' attributes to the http://schema.org/VideoObject markup (WPSSO v3.26.1 required).
 
 = 1.3.1 =
 
