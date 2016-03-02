@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
-		public static function add_author_and_media_data( &$json_data, &$use_post, &$post_obj, &$mt_og, &$post_id, &$author_id ) {
+		public static function add_author_and_media_data( &$json_data, &$use_post, &$post_obj, &$mt_og, &$post_id, &$user_id ) {
 
 			$wpsso = Wpsso::get_instance();
 			
@@ -28,8 +28,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Property:
 			 *	author as http://schema.org/Person
 			 */
-			if ( $author_id > 0 )
-				WpssoSchema::add_single_person_data( $json_data['author'], $author_id, true );
+			if ( $user_id > 0 )
+				WpssoSchema::add_single_person_data( $json_data['author'], $user_id, true );
 
 			/*
 			 * Property:
@@ -116,11 +116,15 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'fileFormat' => $opt_pre.':type',
 				'width' => $opt_pre.':width',
 				'height' => $opt_pre.':height',
+				'duration' => $opt_pre.':duration',
+				'uploadDate' => $opt_pre.':upload_date',
+				'thumbnailUrl' => $opt_pre.':thumbnail_url',
 				'embedUrl' => $opt_pre.':embed_url',
 			) );
 
 			if ( $opts[$opt_pre.':has_image'] )
-				WpssoSchema::add_single_image_data( $ret['image'], $opts, 'og:image', false );	// list_element = false
+				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) );	// list_element = false
+					unset( $ret['image'] );
 
 			if ( empty( $list_element ) )
 				$json_data = $ret;

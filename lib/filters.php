@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
 		public function filter_json_data_http_schema_org_item_type( $json_data, 
-			$use_post, $post_obj, $mt_og, $post_id, $author_id, $head_type, $is_main ) {
+			$use_post, $post_obj, $mt_og, $post_id, $user_id, $head_type, $is_main ) {
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -108,7 +108,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Adds the date published, date modified, author, and image properties.
 		 */
 		public function filter_json_data_http_schema_org_webpage( $json_data, 
-			$use_post, $post_obj, $mt_og, $post_id, $author_id ) {
+			$use_post, $post_obj, $mt_og, $post_id, $user_id ) {
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -132,7 +132,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	image as http://schema.org/ImageObject
 			 *	video as http://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $post_obj, $mt_og, $post_id, $author_id );
+			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $post_obj, $mt_og, $post_id, $user_id );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
 		}
