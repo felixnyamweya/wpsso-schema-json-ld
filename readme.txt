@@ -132,7 +132,7 @@ Adds Google / Schema JSON-LD markup:
 > * URL from Profile
 > * Name
 > * Description
-> * Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Person Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height

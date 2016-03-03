@@ -193,7 +193,7 @@
   <li>URL from Profile</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Person Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
