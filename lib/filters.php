@@ -143,9 +143,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				if ( ! $this->p->schema->has_json_data_filter( $item_type ) ) {
 					$filter_name = $this->p->schema->get_json_data_filter( $item_type );
-					$msg_id = 'no_filter_for_'.$filter_name;
-
-					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.sprintf( __( 'WPSSO JSON does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; the Schema properties URL, Name, and Description will be added by default.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may hook the \'%1$s\' filter to further customize the default JSON-LD data array.', 'wpsso-schema-json-ld' ), $filter_name ), true, true, $msg_id, true );
+					if ( $this->p->check->aop( 'wpssojson', true, $this->p->is_avail['aop'] ) ) {
+						$msg_id = 'no_filter_for_pro_'.$filter_name;
+						$msg_txt = sprintf( __( 'WPSSO JSON Pro does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the Schema properties "url", "name", and "description" will be added to the Schema type markup.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may wish to hook the \'%1$s\' filter to further customize the default JSON-LD data array, and include additional author, image, video, etc. properties.', 'wpsso-schema-json-ld' ), $filter_name ).' '.sprintf( __( 'You are also invited to request the addition of Schema type <a href="%1$s">%1$s</a> for an upcoming release of WPSSO JSON Pro. ;-)', 'wpsso-schema-json-ld' ), $item_type );
+					} else {
+						$msg_id = 'no_filter_for_gpl_'.$filter_name;
+						$msg_txt = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties "url", "name", and "description" will be added to the Schema type markup.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( 'The Pro version of WPSSO JSON provides an evolving list of supported Schema types &mdash; you may want to check if <a href="%1$s">%1$s</a> is available in the Pro version. If it isn\'t supported yet, you can certainly request its addition. ;-)', $item_type );
+					}
+					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.$msg_txt, true, true, $msg_id, true );
 				}
 			}
 		}
