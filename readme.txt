@@ -244,15 +244,15 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.3.3 (TBD)**
+**Version 1.3.3 (ETA 2016/03/09)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added video preview images (if available) as http://schema.org/ImageObject.
-	* Added a feature for the Schema Type selector in the Social Settings metabox to hide/unhide related Schema type options (Pro version).
+	* Added a Schema Type selector feature in the Social Settings metabox to hide/unhide related Schema type options (Pro version).
+	* Added video preview images (if available) as http://schema.org/ImageObject to mirror the Open Graph meta tags.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -326,6 +326,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.3.3 =
+
+ETA 2016/03/09 - Added a Schema Type selector feature in Social Settings to hide/unhide related Schema type options (Pro version). Added video preview images (if available) as http://schema.org/ImageObject.
 
 = 1.3.2 =
 
