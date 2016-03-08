@@ -251,7 +251,8 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added video preview images (if available) as http://schema.org/ImageObject.
+	* Added a feature for the Schema Type selector in the Social Settings metabox to hide/unhide related Schema type options (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
