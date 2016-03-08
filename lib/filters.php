@@ -139,18 +139,28 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function action_admin_post_header( $post_id, $ptn, $post_obj ) {
 			if ( current_user_can( 'manage_options' ) ) {
-				$item_type = $this->p->schema->get_head_item_type( $post_id, $post_obj );
+				$type_id = $this->p->schema->get_head_item_type( $post_id, $post_obj, true );
+				$type_url = $this->p->schema->get_item_type_value( $type_id );
+				$has_filter = $this->p->schema->has_json_data_filter( $type_url );
 
-				if ( ! $this->p->schema->has_json_data_filter( $item_type ) ) {
-					$filter_name = $this->p->schema->get_json_data_filter( $item_type );
+				if ( ! $has_filter ) {
+					$filter_name = $this->p->schema->get_json_data_filter( $type_url );
+					// the period in the $type_id matches the pound sign in the lib name as well ;-)
+					$head_lib_count = count( SucomUtil::preg_grep_keys( '/^'.$type_id.'(:.*)?$/',
+						$this->p->cf['plugin']['wpssojson']['lib']['pro']['head'] ) );
+					$urls = $this->p->cf['plugin']['wpssojson']['url'];
+
 					if ( $this->p->check->aop( 'wpssojson', true, $this->p->is_avail['aop'] ) ) {
-						$msg_id = 'no_filter_for_pro_'.$filter_name;
-						$msg_txt = sprintf( __( 'WPSSO JSON Pro does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the Schema properties "url", "name", and "description" will be added to the Schema type markup.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( __( 'Developers may wish to hook the \'%1$s\' filter to further customize the default JSON-LD data array, and include additional author, image, video, etc. properties.', 'wpsso-schema-json-ld' ), $filter_name ).' '.sprintf( __( 'You are also invited to request the addition of Schema type <a href="%1$s">%1$s</a> for an upcoming release of WPSSO JSON Pro. ;-)', 'wpsso-schema-json-ld' ), $item_type );
+						$msg_id = 'no_filter_pro_'.$filter_name;
+						$msg_txt = sprintf( __( 'WPSSO JSON Pro does not include specific / customized support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $type_url ).' '.sprintf( __( 'Developers may wish to hook the \'%1$s\' filter to further customize the default JSON-LD data array, and include additional properties.', 'wpsso-schema-json-ld' ), $filter_name ).' '.sprintf( __( 'You are also invited to <a href="%1$s">request the addition of this Schema type</a> for a future release of WPSSO JSON Pro. ;-)', 'wpsso-schema-json-ld' ), $urls['pro_support'], $type_url );
+					} elseif ( $head_lib_count > 0 ) {
+						$msg_id = 'filter_in_pro_'.$filter_name;
+						$msg_txt = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $type_url ).' '.sprintf( 'The Pro version of WPSSO JSON provides an evolving list of supported Schema types, including the Schema type <a href="%1$s">%1$s</a>.', $type_url ).' '.sprintf( __( 'You may consider <a href="%1$s">purchasing the Pro version of WPSSO JSON</a> if the Schema type <a href="%2$s">%2$s</a> is an important classification for your content.', 'wpsso-schema-json-ld' ), $urls['purchase'], $type_url );
 					} else {
-						$msg_id = 'no_filter_for_gpl_'.$filter_name;
-						$msg_txt = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties "url", "name", and "description" will be added to the Schema type markup.', 'wpsso-schema-json-ld' ), $item_type ).' '.sprintf( 'The Pro version of WPSSO JSON provides an evolving list of supported Schema types &mdash; you may want to check if <a href="%1$s">%1$s</a> is available in the Pro version. If it isn\'t supported yet, you can certainly request its addition. ;-)', $item_type );
+						$msg_id = 'no_filter_gpl_'.$filter_name;
+						$msg_txt = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $type_url ).' '.sprintf( 'The <a href="%1$s">Pro version of WPSSO JSON</a> provides an evolving list of supported Schema types &mdash; you may want to check if Schema type <a href="%2$s">%2$s</a> is available with the Pro version. If it isn\'t supported yet, you are invited to <a href="%3$s">request its addition</a>. ;-)', $urls['purchase'], $type_url, $urls['pro_support'] );
 					}
-					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><br/><br/>'.$msg_txt, true, true, $msg_id, true );
+					$this->p->notice->err( '<em>'.__( 'This notice is only shown to users with Administrative privileges.', 'wpsso-schema-json-ld' ).'</em><p>'.$msg_txt.'</p>', true, true, $msg_id, true );
 				}
 			}
 		}
@@ -158,7 +168,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_get_meta_defaults( $def_opts, $mod_name ) {
 			$def_opts = array_merge( $def_opts, array(
 				'schema_is_main' => 1,
-				'schema_type' => $this->p->schema->get_head_item_type( false, false, true, false ),	// $ret_key = true, $use_mod = false
+				'schema_type' => $this->p->schema->get_head_item_type( false, false, true, false ),	// $ret_id = true, $use_mod = false
 				'schema_title' => '',
 				'schema_headline' => '',
 			) );
@@ -173,8 +183,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		// hooked to 'wpssojson_status_gpl_features'
 		public function filter_status_gpl_features( $features, $lca, $info ) {
 			foreach ( array( 
-				'Itemtype BlogPosting',
-				'Itemtype WebPage',
+				'Type BlogPosting',
+				'Type WebPage',
 			) as $key )
 				$features[$key]['status'] = 'on';
 			return $this->add_status_schema_tooltips( $features, $lca, $info );
@@ -187,7 +197,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		private function add_status_schema_tooltips( $features, $lca, $info ) {
 			foreach ( $features as $key => $arr ) {
-				if ( strpos( $key, 'Itemtype ' ) === 0 )
+				if ( strpos( $key, 'Type ' ) === 0 )
 					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching Schema item type.', 'wpsso-schema-json-ld' );
 				elseif ( strpos( $key, 'Property ' ) === 0 )
 					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for matching item type properties.', 'wpsso-schema-json-ld' );

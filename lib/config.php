@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.3.2',	// plugin version
+					'version' => '1.3.3',	// plugin version
 					'short' => 'WPSSO JSON',
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
 					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.',
@@ -55,14 +55,14 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'post' => 'Post Settings',
 							),
 							'head' => array(
-								'article' => 'Itemtype Article',
-								'article#news:no_load' => 'Itemtype NewsArticle',
-								'article#tech:no_load' => 'Itemtype TechArticle',
-								'organization' => 'Itemtype Organization',
-								'place' => 'Itemtype Place',
-								'person' => 'Itemtype Person',
-								'product' => 'Itemtype Product',
-								'website' => 'Itemtype Website',
+								'article' => 'Type Article',
+								'article#news:no_load' => 'Type NewsArticle',
+								'article#tech:no_load' => 'Type TechArticle',
+								'organization' => 'Type Organization',
+								'place' => 'Type Place',
+								'person' => 'Type Person',
+								'product' => 'Type Product',
+								'website' => 'Type Website',
 							),
 							'prop' => array(
 								'rating' => 'Property AggregateRating',

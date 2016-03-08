@@ -38,12 +38,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$size_name = $wpsso->cf['lca'].'-schema';
 			$og_image = $wpsso->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
 
-			if ( empty( $og_image ) && 
-				SucomUtil::is_post_page( $use_post ) )
-					$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
+			// include any video preview images first
+			if ( ! empty( $mt_og['og:video'] ) )
+				$og_image = array_merge( $mt_og['og:video'], $og_image );
 
 			if ( ! empty( $og_image ) )
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+			else $images_added = 0;
+
+			if ( $images_added === 0 && SucomUtil::is_post_page( $use_post ) ) {
+				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
 				WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+			}
 
 			/*
 			 * Property:
@@ -54,14 +60,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		// pass a single or two dimension video array in $og_video
-		public static function add_video_list_data( &$json_data, &$og_video, $opt_pre = 'og:video' ) {
-
-			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {				// 2 dimensional array
+		public static function add_video_list_data( &$json_data, &$og_video, $prefix = 'og:video' ) {
+			$videos_added = 0;
+			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
 				foreach ( $og_video as $video )
-					self::add_single_video_data( $json_data, $video, $opt_pre, true );	// list_element = true
-
+					$videos_added += self::add_single_video_data( $json_data, $video, $prefix, true );	// list_element = true
 			} elseif ( is_array( $og_video ) )
-				self::add_single_video_data( $json_data, $og_video, $opt_pre, true );		// list_element = true
+				$videos_added += self::add_single_video_data( $json_data, $og_video, $prefix, true );		// list_element = true
+			return $videos_added;	// return count of videos added
 		}
 
 		/* pass a single dimension video array in $opts
@@ -84,53 +90,50 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *		[og:image:height] => 544
 		 *	)
 		 */
-		public static function add_single_video_data( &$json_data, &$opts, $opt_pre = 'og:video', $list_element = true ) {
+		public static function add_single_video_data( &$json_data, &$opts, $prefix = 'og:video', $list_element = true ) {
 
 			$wpsso = Wpsso::get_instance();
-
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );
-				return false;
+				return 0;	// return count of videos added
 			}
 
-			if ( empty( $opts[$opt_pre] ) && empty( $opts[$opt_pre.':secure_url'] ) ) {
-				if ( $wpsso->debug->enabled )
-					$wpsso->debug->log( 'exiting early: '.$opt_pre.' and '.
-						$opt_pre.':secure_url values are empty' );
-				return false;
+			$media_url = SucomUtil::get_mt_media_url( $prefix, $opts );
+
+			if ( empty( $media_url ) ) {
+				if ( $ngfb->debug->enabled )
+					$ngfb->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
+				return 0;	// return count of videos added
 			}
 
 			$ret = array(
 				'@context' => 'http://schema.org',
 				'@type' => 'VideoObject',
-				'url' => esc_url( empty( $opts[$opt_pre.':secure_url'] ) ?	// prefer secure_url if available
-					$opts[$opt_pre] :
-					$opts[$opt_pre.':secure_url']
-				),
+				'url' => esc_url( $media_url ),
 			);
 
 			WpssoSchema::add_data_prop_from_og( $ret, $opts, array(
-				'name' => $opt_pre.':title',
-				'description' => $opt_pre.':description',
-				'fileFormat' => $opt_pre.':type',
-				'width' => $opt_pre.':width',
-				'height' => $opt_pre.':height',
-				'duration' => $opt_pre.':duration',
-				'uploadDate' => $opt_pre.':upload_date',
-				'thumbnailUrl' => $opt_pre.':thumbnail_url',
-				'embedUrl' => $opt_pre.':embed_url',
+				'name' => $prefix.':title',
+				'description' => $prefix.':description',
+				'fileFormat' => $prefix.':type',
+				'width' => $prefix.':width',
+				'height' => $prefix.':height',
+				'duration' => $prefix.':duration',
+				'uploadDate' => $prefix.':upload_date',
+				'thumbnailUrl' => $prefix.':thumbnail_url',
+				'embedUrl' => $prefix.':embed_url',
 			) );
 
-			if ( $opts[$opt_pre.':has_image'] )
+			if ( ! empty( $opts[$prefix.':has_image'] ) )
 				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) )	// list_element = false
-					unset( $ret['image'] );
+					unset( $ret['thumbnail'] );
 
 			if ( empty( $list_element ) )
 				$json_data = $ret;
 			else $json_data[] = $ret;	// add an item to the list
 
-			return true;
+			return 1;	// return count of videos added
 		}
 
 	}

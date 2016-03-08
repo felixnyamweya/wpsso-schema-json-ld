@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.3.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
-"POT-Creation-Date: 2016-03-03 18:48-0400\n"
-"PO-Revision-Date: 2016-03-03 18:58-0400\n"
+"POT-Creation-Date: 2016-03-08 05:37-0400\n"
+"PO-Revision-Date: 2016-03-08 05:37-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -87,41 +87,37 @@ msgstr ""
 msgid "Save a draft version or publish the %s to update this value."
 msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: lib/gpl/admin/post.php:38 lib/pro/admin/post.php:56
+#: lib/gpl/admin/post.php:43 lib/pro/admin/post.php:54
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema JSON-LD"
 msgstr "Données Structurées Google / Schéma JSON-LD"
 
-#: lib/gpl/admin/post.php:45 lib/pro/admin/post.php:59
+#: lib/gpl/admin/post.php:50 lib/pro/admin/post.php:57
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr "Entité principale de page"
 
-#: lib/gpl/admin/post.php:49 lib/pro/admin/post.php:64
-#: lib/pro/admin/post.php:67
+#: lib/gpl/admin/post.php:54 lib/pro/admin/post.php:61
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr "Type de Schéma"
 
-#: lib/gpl/admin/post.php:54 lib/gpl/admin/post.php:57
-#: lib/pro/admin/post.php:72 lib/pro/admin/post.php:75
+#: lib/gpl/admin/post.php:60 lib/pro/admin/post.php:67
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr "Nom / titre de l'item"
 
-#: lib/gpl/admin/post.php:63 lib/gpl/admin/post.php:66
-#: lib/pro/admin/post.php:83 lib/pro/admin/post.php:87
+#: lib/gpl/admin/post.php:67 lib/pro/admin/post.php:75
 msgctxt "option label"
 msgid "Article Headline"
 msgstr "Manchette d'Article"
 
-#: lib/gpl/admin/post.php:71 lib/gpl/admin/post.php:74
-#: lib/pro/admin/post.php:94 lib/pro/admin/post.php:97
+#: lib/gpl/admin/post.php:73 lib/pro/admin/post.php:82
 msgctxt "option label"
 msgid "Schema Description"
 msgstr "Description de l'item"
 
-#: lib/pro/admin/post.php:43
+#: lib/pro/admin/post.php:42
 msgid "Save a draft version or publish the %s to enable this option."
 msgstr "Enregistrer un brouillon ou publier pour activer cette option."
 
