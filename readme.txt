@@ -244,7 +244,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.3.3 (ETA 2016/03/09)**
+**Version 1.3.3 (2016/03/09)**
 
 Official announcement: N/A
 
@@ -329,7 +329,7 @@ Official announcement: N/A
 
 = 1.3.3 =
 
-ETA 2016/03/09 - Added a Schema Type selector feature in Social Settings to hide/unhide related Schema type options (Pro version). Added video preview images (if available) as http://schema.org/ImageObject.
+2016/03/09 - Added a Schema Type selector feature in Social Settings to hide/unhide related Schema type options (Pro version). Added video preview images (if available) as http://schema.org/ImageObject.
 
 = 1.3.2 =
 
