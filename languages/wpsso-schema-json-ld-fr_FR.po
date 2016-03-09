@@ -2,11 +2,11 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.3.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.3.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
-"POT-Creation-Date: 2016-03-08 05:37-0400\n"
-"PO-Revision-Date: 2016-03-08 05:37-0400\n"
+"POT-Creation-Date: 2016-03-09 03:54-0400\n"
+"PO-Revision-Date: 2016-03-09 04:31-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,52 +25,64 @@ msgstr ""
 "Une extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, "
 "Article, Place, Produit, etc.) pour Google et Pinterest."
 
-#: lib/filters.php:148
+#: lib/filters.php:155
 msgid ""
 "WPSSO JSON Pro does not include specific / customized support for the Schema "
-"type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties \"url\", "
-"\"name\", and \"description\" will be added to the Schema type markup."
+"type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties <em>url</"
+"em>, <em>name</em>, and <em>description</em> will be included in the Schema "
+"JSON-LD markup."
 msgstr ""
 "WPSSO JSON Pro n'inclut pas de support spécifique / personnalisé pour le "
 "type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de "
-"Schéma \"url\", \"nom\" et \"description\" seront ajoutées par défaut."
+"Schéma <em>url</em>, <em>name</em>, et <em>description</em> seront inclues "
+"dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:148
+#: lib/filters.php:155
 msgid ""
 "Developers may wish to hook the '%1$s' filter to further customize the "
-"default JSON-LD data array, and include additional author, image, video, "
-"etc. properties."
+"default JSON-LD data array, and include additional properties."
 msgstr ""
 "Les développeurs peuvent accrocher le filtre '%1$s' pour personnaliser "
-"davantage le tableau de données JSON-LD par défaut, pour ajouter des "
-"propriétés supplémentaire d'auteurs, images, videos, etc."
+"davantage le tableau de données JSON-LD par défaut, et y ajouter des "
+"propriétés supplémentaires."
 
-#: lib/filters.php:148
+#: lib/filters.php:155
 msgid ""
-"You are also invited to request the addition of Schema type <a href=\"%1$s\">"
-"%1$s</a> for an upcoming release of WPSSO JSON Pro. ;-)"
+"You are also invited to <a href=\"%1$s\">request the addition of this Schema "
+"type</a> for a future release of WPSSO JSON Pro. ;-)"
 msgstr ""
-"Vous êtes également invités à demander l'ajout du type de Schéma <a href="
-"\"%1$s\">%1$s</a> pour une prochaine version de WPSSO JSON Pro. ;-)"
+"Vous êtes également invités à <a href=\"%1$s\">demander l'ajout de ce type "
+"de Schéma</a> pour une version future de WPSSO JSON Pro. ;-)"
 
-#: lib/filters.php:151
+#: lib/filters.php:158 lib/filters.php:161
 msgid ""
 "The Free / Basic version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
-"properties \"url\", \"name\", and \"description\" will be added to the "
-"Schema type markup."
+"properties <em>url</em>, <em>name</em>, and <em>description</em> will be "
+"included in the Schema JSON-LD markup."
 msgstr ""
 "La version gratuite / de base WPSSO JSON n'inclut pas de support "
 "spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> "
-"&mdash; seulement les propriétés de Schéma de base \"url\", \"nom\" et "
-"\"description\" seront ajoutées."
+"&mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</"
+"em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-"
+"LD."
 
-#: lib/filters.php:153
+#: lib/filters.php:158
+msgid ""
+"You may consider <a href=\"%1$s\">purchasing the Pro version of WPSSO JSON</"
+"a> if the Schema type <a href=\"%2$s\">%2$s</a> is an important "
+"classification for your content."
+msgstr ""
+"Si le Schéma de type <a href=\"%2$s\">%2$s</a> est une classification "
+"importante pour votre contenu, vous devriez considérer <a href=\"%1$s"
+"\">l'achat de la version Pro de WPSSO JSON</a>."
+
+#: lib/filters.php:163
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:191
+#: lib/filters.php:201
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
@@ -78,7 +90,7 @@ msgstr ""
 "Ajoute des balises de Schéma JSON-LD pour les Articles, Pages, Médias, et "
 "Type d'Articles Personnalisé avec le type de Schéma correspondant."
 
-#: lib/filters.php:193
+#: lib/filters.php:203
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 "Ajoute des balises de Schéma JSON-LD pour les propriétés correspondant."
