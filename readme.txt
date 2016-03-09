@@ -298,33 +298,6 @@ Official announcement: N/A
 	* Added video support to the WpssoJsonSchema `add_author_and_media_data()` method.
 	* Added new WpssoJsonSchema `add_video_list_data()` and `add_single_video_data()` methods.
 
-**Version 1.2.0 (2016/02/25)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a new "Schema Item Name" option in the Social Settings metabox.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.1.0 (2016/02/23)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a new "Main Entity of Page" option in the Social Settings metabox.
-	* Added a warning for Schema types without custom support.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed the Schema Type default value in the Social Settings metabox.
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
 = 1.3.3 =
@@ -342,12 +315,4 @@ Official announcement: N/A
 = 1.3.0 =
 
 2016/02/27 - Added support for the http://schema.org/VideoObject Schema type.
-
-= 1.2.0 =
-
-2016/02/25 - Added a new "Schema Item Name" option in the Social Settings metabox.
-
-= 1.1.0 =
-
-2016/02/23 - Added a new "Main Entity of Page" option in the Social Settings metabox. Added a warning for Schema types without custom support. Fixed the Schema Type default value in the Social Settings metabox.
 
