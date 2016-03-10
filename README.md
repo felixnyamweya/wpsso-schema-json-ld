@@ -20,7 +20,7 @@
 
 <p><strong>Are you getting errors in Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>?</strong></p>
 
-<p><a href="http://json-ld.org/">JSON-LD includes Schema markup as a single block of information</a>, independant of any existing theme markup in your templates.</p>
+<p><a href="http://json-ld.org/">JSON-LD includes Schema markup as a single block of information</a> &mdash; independant of any theme markup in your templates.</p>
 
 <p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, extending its features and options to include <em>complete</em> Schema JSON-LD / Rich Snippet markup in webpage headers for Google Search, Pinterest, and others.</p>
 
