@@ -256,10 +256,14 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 Official announcement: N/A
 
+> Required update for WordPress Social Sharing Optimization (WPSSO) version 3.28.1.
+
 * *New Features*
 	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * *Improvements*
-	* None
+	* Include video preview images (if any) first.
+	* Moved the "inLanguage" to individual schema type modules.
+	* Improved the Social Settings options display (Free version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -320,6 +324,10 @@ Official announcement: N/A
 	* Added new WpssoJsonSchema `add_video_list_data()` and `add_single_video_data()` methods.
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+
+ETA 2016/03/20 - Required update for WPSSO v3.28.1. Improved the Social Settings options display (Free version). Added support for Automattic's AMP plugin.
 
 = 1.3.3 =
 
