@@ -36,6 +36,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 **WPSSO JSON Free / Basic Features**
 
+Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+
 Adds Google / Schema JSON-LD markup:
 
 * Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
@@ -250,7 +252,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.4.0 (TBD)**
+**Version 1.4.0 (ETA 2016/03/20)**
 
 Official announcement: N/A
 

@@ -36,6 +36,8 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
+<p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
+
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
