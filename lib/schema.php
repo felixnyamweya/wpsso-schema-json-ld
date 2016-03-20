@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
-		public static function add_author_and_media_data( &$json_data, &$use_post, &$post_obj, &$mt_og, &$post_id, &$user_id ) {
+		public static function add_author_and_media_data( &$json_data, &$use_post, &$mod, &$mt_og, &$user_id ) {
 
 			$wpsso = Wpsso::get_instance();
 			
@@ -36,17 +36,27 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 *	image as http://schema.org/ImageObject
 			 */
 			$size_name = $wpsso->cf['lca'].'-schema';
-			$og_image = $wpsso->og->get_all_images( 1, $size_name, $post_id, true, 'schema' );
+			$og_image = array();
 
 			// include any video preview images first
-			if ( ! empty( $mt_og['og:video'] ) )
-				$og_image = array_merge( $mt_og['og:video'], $og_image );
+			if ( ! empty( $mt_og['og:video'] ) ) {
+				// prevent duplicates - exclude text/html videos
+				foreach ( $mt_og['og:video'] as $og_video ) {
+					if ( isset( $og_video['og:video:type'] ) &&
+						$og_video['og:video:type'] !== 'text/html' )
+							$og_image[] = $og_video;
+				}
+			}
+
+			$og_image = array_merge( $og_image,
+				$wpsso->og->get_all_images( 1, $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_image ) )
 				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 			else $images_added = 0;
 
-			if ( $images_added === 0 && SucomUtil::is_post_page( $use_post ) ) {
+			if ( $images_added === 0 && 
+				SucomUtil::is_post_page( $use_post ) ) {
 				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
 				WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 			}

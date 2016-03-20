@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
  * Tested Up To: 4.4.2
- * Version: 1.3.3
+ * Version: 1.4.0
  * 
  * Copyright 2014-2016 Jean-Sebastien Morisset (http://surniaulula.com/)
  */
@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 		private static $wpsso_short = 'WPSSO';
 		private static $wpsso_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $wpsso_min_version = '3.27.0';
+		private static $wpsso_min_version = '3.28.1';
 		private static $wpsso_has_min_ver = true;
 		private static $opt_version_suffix = 'json2';
 
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			foreach ( array( 'head', 'prop' ) as $sub ) {
 				foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib']['pro'][$sub] as $id_key => $label ) {
-					list( $id, $stub, $action ) = SucomUtil::get_id_stub_action( $id_key );
+					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 					$this->p->is_avail[$sub][$id] = true;
 				}
 			}

@@ -16,32 +16,41 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
+
+			add_filter( 'amp_post_template_metadata', 
+				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
-				'json_data_http_schema_org_item_type' => 8,
-				'json_data_http_schema_org_webpage' => array( 		// method name to call
-					'json_data_http_schema_org_webpage' => 6,	// filter name to hook
-					'json_data_http_schema_org_blogposting' => 6,
+				'add_schema_noscript_array' => '__return_false',
+				'json_data_http_schema_org_item_type' => 7,		// $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main
+				'json_data_http_schema_org_webpage' => array( 
+					'json_data_http_schema_org_webpage' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
+					'json_data_http_schema_org_blogposting' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
 				),
 			), -100 );	// make sure we run first
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_actions( $this, array(
-					'admin_post_header' => 3,
+					'admin_post_header' => 1,			// $mod
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
-					'get_meta_defaults' => 2,
-					'pub_google_rows' => 2,
+					'get_md_defaults' => 2,				// $def_opts, $mod
+					'pub_google_rows' => 2,				// $table_rows, $form
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
-					'status_gpl_features' => 3,
-					'status_pro_features' => 3,
+					'status_gpl_features' => 3,			// $features, $lca, $info
+					'status_pro_features' => 3,			// $features, $lca, $info
 				), 10, 'wpssojson' );
 			}
+		}
+
+		public function filter_amp_post_template_metadata( $metadata, $post_obj ) {
+			return array();	// remove the AMP json data to prevent duplicate JSON-LD blocks
 		}
 
 		/*
@@ -51,9 +60,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Does not add images, videos, author or organization markup since this will
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
-		public function filter_json_data_http_schema_org_item_type( $json_data, 
-			$use_post, $post_obj, $mt_og, $post_id, $user_id, $head_type, $is_main ) {
-
+		public function filter_json_data_http_schema_org_item_type( $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -74,7 +81,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	$add_hashtags = false, $encode = true, $md_idx = 'og_title', $src_id = '' ) {
 			 */
 			$ret['name'] = $this->p->webpage->get_title( $this->p->options['og_title_len'], 
-				'...', $use_post, true, false, true, 'schema_title' );
+				'...', $mod['use_post'], true, false, true, 'schema_title' );
 
 			/*
 			 * Property:
@@ -84,13 +91,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	$add_hashtags = true, $encode = true, $md_idx = 'og_desc', $src_id = '' )
 			 */
 			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
-				'...', $use_post, true, false, true, 'schema_desc' );
-
-			/*
-			 * Property:
-			 *	inLanguage
-			 */
-			$ret['inLanguage'] = get_locale();
+				'...', $mod['use_post'], true, false, true, 'schema_desc' );
 
 			/*
 			 * Property:
@@ -107,9 +108,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * 
 		 * Adds the date published, date modified, author, and image properties.
 		 */
-		public function filter_json_data_http_schema_org_webpage( $json_data, 
-			$use_post, $post_obj, $mt_og, $post_id, $user_id ) {
-
+		public function filter_json_data_http_schema_org_webpage( $json_data, $use_post, $mod, $mt_og, $user_id ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -128,27 +127,40 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			/*
 			 * Property:
+			 *	inLanguage
+			 */
+			$ret['inLanguage'] = get_locale();
+
+			/*
+			 * Property:
+			 *	publisher as http://schema.org/Organization
+			 */
+			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, 'schema_logo_url', false );	// $list_element = false
+
+			/*
+			 * Property:
 			 *	author as http://schema.org/Person
 			 *	image as http://schema.org/ImageObject
 			 *	video as http://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $post_obj, $mt_og, $post_id, $user_id );
+			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $mod, $mt_og, $user_id );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
 		}
 
-		public function action_admin_post_header( $post_id, $ptn, $post_obj ) {
+		public function action_admin_post_header( $mod ) {
 			if ( current_user_can( 'manage_options' ) ) {
-				$type_id = $this->p->schema->get_head_item_type( $post_id, $post_obj, true );
+				$type_id = $this->p->schema->get_head_item_type( $mod, true );
 				$type_url = $this->p->schema->get_item_type_value( $type_id );
-				$has_filter = $this->p->schema->has_json_data_filter( $type_url );
+				$has_filter = $this->p->schema->has_json_data_filter( $mod, $type_url );
 
 				if ( ! $has_filter ) {
-					$filter_name = $this->p->schema->get_json_data_filter( $type_url );
+					$filter_name = $this->p->schema->get_json_data_filter( $mod, $type_url );
+					$urls = $this->p->cf['plugin']['wpssojson']['url'];
+
 					// the period in the $type_id matches the pound sign in the lib name as well ;-)
 					$head_lib_count = count( SucomUtil::preg_grep_keys( '/^'.$type_id.'(:.*)?$/',
 						$this->p->cf['plugin']['wpssojson']['lib']['pro']['head'] ) );
-					$urls = $this->p->cf['plugin']['wpssojson']['url'];
 
 					if ( $this->p->check->aop( 'wpssojson', true, $this->p->is_avail['aop'] ) ) {
 						$msg_id = 'no_filter_pro_'.$filter_name;
@@ -165,19 +177,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 		}
 
-		public function filter_get_meta_defaults( $def_opts, $mod_name ) {
-			$def_opts = array_merge( $def_opts, array(
+		public function filter_get_md_defaults( $def_opts, $mod ) {
+			return array_merge( $def_opts, array(
 				'schema_is_main' => 1,
-				'schema_type' => $this->p->schema->get_head_item_type( false, false, true, false ),	// $ret_id = true, $use_mod = false
+				'schema_type' => $this->p->schema->get_head_item_type( $mod, true, false ),	// $return_id = true, $use_mod_opts = false
 				'schema_title' => '',
 				'schema_headline' => '',
 			) );
-			return $def_opts;
 		}
 
-		public function filter_pub_google_rows( $rows, $form ) {
-			unset ( $rows['schema_add_noscript'] );
-			return $rows;
+		public function filter_pub_google_rows( $table_rows, $form ) {
+			unset ( $table_rows['schema_add_noscript'] );
+			return $table_rows;
 		}
 
 		// hooked to 'wpssojson_status_gpl_features'

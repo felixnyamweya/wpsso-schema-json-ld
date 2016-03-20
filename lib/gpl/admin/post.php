@@ -15,21 +15,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
 			$this->p->util->add_plugin_filters( $this, array( 
-				'post_header_rows' => 3,
+				'post_header_rows' => 4,	// $table_rows, $form, $head, $mod
 			) );
 		}
 
-		public function filter_post_header_rows( $rows, $form, $head_info ) {
+		public function filter_post_header_rows( $table_rows, $form, $head, $mod ) {
 
-			$post_status = get_post_status( $head_info['post_id'] );
-			$post_type = get_post_type( $head_info['post_id'] );
 			$schema_types = $this->p->schema->get_schema_types_select();
 			$title_max_len = $this->p->options['og_title_len'];
-			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
-			$td_save_draft = '<td class="blank"><em>'.
-				sprintf( __( 'Save a draft version or publish the %s to update this value.',
-					'wpsso-schema-json-ld' ), $head_info['ptn'] ).'</em></td>';
+			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 
 			// javascript hide/show classes for schema type rows
 			$tr_class = array(
@@ -37,46 +32,58 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			);
 
 			// move the schema description down
-			unset ( $rows['schema_desc'] );
+			unset ( $table_rows['schema_desc'] );
 
-			$rows[] = '<td></td><td class="subsection"><h4>'.
-				_x( 'Google Structured Data / Schema JSON-LD',
-					'metabox title', 'wpsso-schema-json-ld' ).'</h4></td>';
+			$form_rows = array(
+				'subsection_schema' => array(
+					'td_class' => 'subsection',
+					'header' => 'h4',
+					'label' => _x( 'Google Structured Data / Schema JSON-LD', 'metabox title', 'wpsso-schema-json-ld' )
+				),
+				'schema_is_main' => array(
+					'label' => _x( 'Main Entity of Page', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_is_main', 'td_class' => 'blank',
+					'content' => $form->get_no_checkbox( 'schema_is_main' ),
+				),
+				'schema_is_main' => array(
+					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_select( 'schema_type',
+						$schema_types, 'schema_type', '', true, true ),
+				),
+				'schema_title' => array(
+					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $title_max_len,
+						'...', $mod['use_post'] ), 'wide' ),
+				),
+				'schema_headline' => array(
+					'tr_class' => 'schema_type '.$tr_class['article'],
+					'label' => _x( 'Article Headline', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len,
+						'...', $mod['use_post'] ), 'wide' ),
+				),
+				'schema_desc' => array(
+					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_textarea_value( $this->p->webpage->get_description( $desc_max_len, 
+						'...', $mod['use_post'] ), '', '', $desc_max_len ),
+				),
+			);
 
-			$rows[] = '<td colspan="2">'.
-				$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'wpssojson' ) ).'</td>';
+			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
+				'wpsso-schema-json-ld' ), ucfirst( $mod['post_type'] ) );
 
-			$rows['schema_is_main'] = $this->p->util->get_th( _x( 'Main Entity of Page',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_is_main' ).
-			'<td class="blank"><input type="checkbox" disabled="disabled" checked /></td>';
+			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
 
-			$rows['schema_type'] = $this->p->util->get_th( _x( 'Schema Item Type',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_type' ).
-			( $post_status === 'auto-draft' ? $td_save_draft :
-			 	'<td class="blank">'.$form->get_select( 'schema_type', $schema_types, 'schema_type', 
-					'', true, true, true, 'unhide_rows' ).'</td>' );
-
-			$rows['schema_title'] = $this->p->util->get_th( _x( 'Schema Item Name',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_title' ). 
-			( $post_status === 'auto-draft' ? $td_save_draft :
-				'<td class="blank">'.$this->p->webpage->get_title( $title_max_len,
-					'...', true ).'</td>' );	// $use_post = true
-
-			$rows['schema_headline'] = '<tr class="schema_type '.$tr_class['article'].'">'.
-			$this->p->util->get_th( _x( 'Article Headline',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_headline' ). 
-			( $post_status === 'auto-draft' ? $td_save_draft :
-				'<td class="blank">'.$this->p->webpage->get_title( $headline_max_len,
-					'...', true ).'</td>' );	// $use_post = true
-
-			$rows['schema_desc'] = $this->p->util->get_th( _x( 'Schema Description',
-				'option label', 'wpsso-schema-json-ld' ), 'medium', 'meta-schema_desc' ).
-			( $post_status === 'auto-draft' ? $td_save_draft :
-				'<td class="blank">'.$this->p->webpage->get_description( $desc_max_len, 
-					'...', true ).'</td>' );	// $use_post = true
-	
-			return $rows;
+			return SucomUtil::insert_after_key( $table_rows, 'subsection_schema',
+				'', '<td colspan="2">'.$this->p->msgs->get( 'pro-feature-msg', 
+					array( 'lca' => 'wpssojson' ) ).'</td>' );
 		}
 	}
 }
