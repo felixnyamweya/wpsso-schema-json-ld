@@ -261,8 +261,8 @@ Official announcement: N/A
 * *New Features*
 	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 * *Improvements*
-	* Include video preview images (if any) first.
 	* Moved the "inLanguage" to individual schema type modules.
+	* Includes the video preview image first (if one is found).
 	* Improved the Social Settings options display (Free version).
 * *Bugfixes*
 	* None
