@@ -270,79 +270,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.3.3 (2016/03/09)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a Schema Type selector feature in the Social Settings metabox to hide/unhide related Schema type options (Pro version).
-	* Added video preview images (if available) as http://schema.org/ImageObject to mirror the Open Graph meta tags.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.3.2 (2016/03/03)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added the 'duration', 'uploadDate', and 'thumbnailUrl' attributes to the http://schema.org/VideoObject markup.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.3.1 (2016/02/29)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added the 'inLanguage' attribute to all schema types.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.3.0 (2016/02/27)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for the http://schema.org/VideoObject Schema type.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added video support to the WpssoJsonSchema `add_author_and_media_data()` method.
-	* Added new WpssoJsonSchema `add_video_list_data()` and `add_single_video_data()` methods.
-
 == Upgrade Notice ==
 
 = 1.4.0 =
 
 2016/03/20 - Required update for WPSSO v3.28.1. Improved the Social Settings options display (Free version). Added support for Automattic's AMP plugin.
-
-= 1.3.3 =
-
-2016/03/09 - Added a Schema Type selector feature in Social Settings to hide/unhide related Schema type options (Pro version). Added video preview images (if available) as http://schema.org/ImageObject.
-
-= 1.3.2 =
-
-2016/03/03 - Added the 'duration', 'uploadDate', and 'thumbnailUrl' attributes to the http://schema.org/VideoObject markup (WPSSO v3.26.1 required).
-
-= 1.3.1 =
-
-2016/02/29 - Added the 'inLanguage' attribute.
-
-= 1.3.0 =
-
-2016/02/27 - Added support for the http://schema.org/VideoObject Schema type.
 
