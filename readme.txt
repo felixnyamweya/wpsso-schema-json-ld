@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.4.2
-Stable Tag: 1.3.3
+Stable Tag: 1.4.0
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
 
@@ -252,7 +252,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.4.0 (ETA 2016/03/20)**
+**Version 1.4.0 (2016/03/20)**
 
 Official announcement: N/A
 
@@ -328,7 +328,7 @@ Official announcement: N/A
 
 = 1.4.0 =
 
-ETA 2016/03/20 - Required update for WPSSO v3.28.1. Improved the Social Settings options display (Free version). Added support for Automattic's AMP plugin.
+2016/03/20 - Required update for WPSSO v3.28.1. Improved the Social Settings options display (Free version). Added support for Automattic's AMP plugin.
 
 = 1.3.3 =
 
