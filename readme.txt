@@ -254,7 +254,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 **Version 1.4.0 (2016/03/20)**
 
-Official announcement: N/A
+Official announcement: [WPSSO Update - AMP Support and Several Core Changes](http://wpsso.com/2016/03/20/wpsso-update-amp-support-and-several-core-changes/)
 
 > Required update for WordPress Social Sharing Optimization (WPSSO) version 3.28.1.
 
