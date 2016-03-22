@@ -57,7 +57,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $title_max_len,
-						'...', $mod['use_post'] ), 'wide' ),
+						'...', $mod ), 'wide' ),
 				),
 				'schema_headline' => array(
 					'tr_class' => 'schema_type '.$tr_class['article'],
@@ -65,14 +65,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len,
-						'...', $mod['use_post'] ), 'wide' ),
+						'...', $mod ), 'wide' ),
 				),
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_textarea_value( $this->p->webpage->get_description( $desc_max_len, 
-						'...', $mod['use_post'] ), '', '', $desc_max_len ),
+						'...', $mod ), '', '', $desc_max_len ),
 				),
 			);
 
