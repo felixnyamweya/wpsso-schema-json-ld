@@ -2,11 +2,11 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.4.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
-"POT-Creation-Date: 2016-03-09 03:54-0400\n"
-"PO-Revision-Date: 2016-03-09 04:31-0400\n"
+"POT-Creation-Date: 2016-03-22 08:37-0400\n"
+"PO-Revision-Date: 2016-03-22 08:37-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Une extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, "
 "Article, Place, Produit, etc.) pour Google et Pinterest."
 
-#: lib/filters.php:155
+#: lib/filters.php:167
 msgid ""
 "WPSSO JSON Pro does not include specific / customized support for the Schema "
 "type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties <em>url</"
@@ -37,7 +37,7 @@ msgstr ""
 "Schéma <em>url</em>, <em>name</em>, et <em>description</em> seront inclues "
 "dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:155
+#: lib/filters.php:167
 msgid ""
 "Developers may wish to hook the '%1$s' filter to further customize the "
 "default JSON-LD data array, and include additional properties."
@@ -46,7 +46,7 @@ msgstr ""
 "davantage le tableau de données JSON-LD par défaut, et y ajouter des "
 "propriétés supplémentaires."
 
-#: lib/filters.php:155
+#: lib/filters.php:167
 msgid ""
 "You are also invited to <a href=\"%1$s\">request the addition of this Schema "
 "type</a> for a future release of WPSSO JSON Pro. ;-)"
@@ -54,7 +54,7 @@ msgstr ""
 "Vous êtes également invités à <a href=\"%1$s\">demander l'ajout de ce type "
 "de Schéma</a> pour une version future de WPSSO JSON Pro. ;-)"
 
-#: lib/filters.php:158 lib/filters.php:161
+#: lib/filters.php:170 lib/filters.php:173
 msgid ""
 "The Free / Basic version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
@@ -67,7 +67,7 @@ msgstr ""
 "em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-"
 "LD."
 
-#: lib/filters.php:158
+#: lib/filters.php:170
 msgid ""
 "You may consider <a href=\"%1$s\">purchasing the Pro version of WPSSO JSON</"
 "a> if the Schema type <a href=\"%2$s\">%2$s</a> is an important "
@@ -77,12 +77,12 @@ msgstr ""
 "importante pour votre contenu, vous devriez considérer <a href=\"%1$s"
 "\">l'achat de la version Pro de WPSSO JSON</a>."
 
-#: lib/filters.php:163
+#: lib/filters.php:175
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:201
+#: lib/filters.php:212
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
@@ -90,50 +90,46 @@ msgstr ""
 "Ajoute des balises de Schéma JSON-LD pour les Articles, Pages, Médias, et "
 "Type d'Articles Personnalisé avec le type de Schéma correspondant."
 
-#: lib/filters.php:203
+#: lib/filters.php:214
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 "Ajoute des balises de Schéma JSON-LD pour les propriétés correspondant."
 
-#: lib/gpl/admin/post.php:31
-msgid "Save a draft version or publish the %s to update this value."
-msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
-
-#: lib/gpl/admin/post.php:43 lib/pro/admin/post.php:54
+#: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:52
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema JSON-LD"
 msgstr "Données Structurées Google / Schéma JSON-LD"
 
-#: lib/gpl/admin/post.php:50 lib/pro/admin/post.php:57
+#: lib/gpl/admin/post.php:44 lib/pro/admin/post.php:55
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr "Entité principale de page"
 
-#: lib/gpl/admin/post.php:54 lib/pro/admin/post.php:61
+#: lib/gpl/admin/post.php:49 lib/pro/admin/post.php:60
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr "Type de Schéma"
 
-#: lib/gpl/admin/post.php:60 lib/pro/admin/post.php:67
+#: lib/gpl/admin/post.php:56 lib/pro/admin/post.php:67
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr "Nom / titre de l'item"
 
-#: lib/gpl/admin/post.php:67 lib/pro/admin/post.php:75
+#: lib/gpl/admin/post.php:64 lib/pro/admin/post.php:75
 msgctxt "option label"
 msgid "Article Headline"
 msgstr "Manchette d'Article"
 
-#: lib/gpl/admin/post.php:73 lib/pro/admin/post.php:82
+#: lib/gpl/admin/post.php:71 lib/pro/admin/post.php:82
 msgctxt "option label"
 msgid "Schema Description"
 msgstr "Description de l'item"
 
-#: lib/pro/admin/post.php:42
-msgid "Save a draft version or publish the %s to enable this option."
-msgstr "Enregistrer un brouillon ou publier pour activer cette option."
+#: lib/gpl/admin/post.php:79 lib/pro/admin/post.php:90
+msgid "Save a draft version or publish the %s to update this value."
+msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: wpsso-schema-json-ld.php:75
+#: wpsso-schema-json-ld.php:74
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin before trying to re-activate the %4$s extension."
@@ -141,7 +137,7 @@ msgstr ""
 "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer "
 "l'extension %3$s avant d'essayer de re-activer %4$s."
 
-#: wpsso-schema-json-ld.php:77
+#: wpsso-schema-json-ld.php:76
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
@@ -149,7 +145,7 @@ msgstr ""
 "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer "
 "l'extension %3$s."
 
-#: wpsso-schema-json-ld.php:131
+#: wpsso-schema-json-ld.php:127
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."
@@ -180,3 +176,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "http://surniaulula.com/"
 msgstr "http://surniaulula.com/"
+
+#~ msgid "Save a draft version or publish the %s to enable this option."
+#~ msgstr "Enregistrer un brouillon ou publier pour activer cette option."
