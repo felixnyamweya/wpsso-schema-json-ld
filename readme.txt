@@ -287,7 +287,7 @@ Official announcement: [WPSSO Update - AMP Support and Several Core Changes](htt
 
 = 1.4.1 =
 
-2016/03/23 - Modified several SucomWebage method arguments to use the new `$mod` array.
+2016/03/23 - Modified several SucomWebage method arguments to use the new $mod array.
 
 = 1.4.0 =
 
