@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.5
-Stable Tag: 1.4.1
+Stable Tag: 1.5.0
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
 
@@ -297,6 +297,10 @@ Official announcement: [WPSSO Update - AMP Support and Several Core Changes](htt
 	* None
 
 == Upgrade Notice ==
+
+= 1.5.0 =
+
+2016/03/25 - Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
 
 = 1.4.1 =
 
