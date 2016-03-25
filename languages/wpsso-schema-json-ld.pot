@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.4.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -14,6 +14,11 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: lib/config-gettext-extract.php:3
+msgctxt "lib file description"
+msgid "Schema JSON-LD"
+msgstr ""
+
+#: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
 "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, "
@@ -59,13 +64,13 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:212
+#: lib/filters.php:223
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:214
+#: lib/filters.php:225
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
@@ -101,6 +106,56 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:79 lib/pro/admin/post.php:90
 msgid "Save a draft version or publish the %s to update this value."
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:30
+msgctxt "metabox title"
+msgid "Schema JSON-LD Markup"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:49
+msgctxt "option label"
+msgid "Website Alternate Name"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:54
+msgctxt "option label"
+msgid "Business Logo Image URL"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:58
+msgctxt "option label"
+msgid "Business Banner (600x60) Image URL"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:62
+msgctxt "option label"
+msgid "Schema Image Dimensions"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:67
+msgctxt "option label"
+msgid "Maximum Description Length"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:70
+msgctxt "option comment"
+msgid "characters or less"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:73
+msgctxt "option label"
+msgid "Author / Person Name Format"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:85
+msgctxt "option label"
+msgid "Schema Item Type for Home Page"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:90
+msgctxt "option label"
+msgid "Schema Item Type by Post Type"
 msgstr ""
 
 #: wpsso-schema-json-ld.php:74

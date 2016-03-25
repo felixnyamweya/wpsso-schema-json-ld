@@ -183,11 +183,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_type' => $this->p->schema->get_head_item_type( $mod, true, false ),	// $return_id = true, $use_mod_opts = false
 				'schema_title' => '',
 				'schema_headline' => '',
+				'schema_desc' => '',
 			) );
 		}
 
 		public function filter_pub_google_rows( $table_rows, $form ) {
-			unset ( $table_rows['schema_add_noscript'] );
+			foreach ( array_keys( $table_rows ) as $key ) {
+				switch ( $key ) {
+					case 'schema_add_noscript':
+					case 'schema_social_json':
+						break;
+					case 'subsection_google_schema':
+					case ( strpos( $key, 'schema_' ) === 0 ? true : false ):
+						unset( $table_rows[$key] );
+						break;
+				}
+			}
 			return $table_rows;
 		}
 

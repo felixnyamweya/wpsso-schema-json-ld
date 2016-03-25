@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_is_main', 'td_class' => 'blank',
 					'content' => $form->get_no_checkbox( 'schema_is_main' ),
 				),
-				'schema_is_main' => array(
+				'schema_type' => array(
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'no_auto_draft' => true,

@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.4.1',		// plugin version
+					'version' => '1.5.0',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
@@ -46,6 +46,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'pro_support' => 'http://wpsso-schema-json-ld.support.wpsso.com/',
 					),
 					'lib' => array(
+						// submenu items must have unique keys
+						'submenu' => array (
+							//'wpssojson-separator-0' => 'JSON Extension',
+							'schema-json-ld' => 'Schema JSON-LD',
+						),
 						'gpl' => array(
 							'admin' => array(
 								'post' => 'Post Settings',
