@@ -9,7 +9,7 @@ Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, art
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.4.2
+Tested Up To: 4.5
 Stable Tag: 1.4.1
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
@@ -251,6 +251,19 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 * [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/developers/)
 
 = Changelog / Release Notes =
+
+**Version 1.5.0 (2016/03/25)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added a new "Schema JSON-LD" settings page under the SSO menu.
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Tested with WordPress v4.5-RC1-37079.
 
 **Version 1.4.1 (2016/03/23)**
 
