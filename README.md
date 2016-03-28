@@ -19,7 +19,7 @@
 <li><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></li>
 <li><strong>Corrects innacurate / incomplete Schema markup in theme templates.</strong></li>
 <li><strong>Validate your Schema with Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>.</strong></li>
-<li><strong>Includes more than just <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
+<li><strong>Choose another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
 </ul>
 </p>
 
