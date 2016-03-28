@@ -18,7 +18,7 @@
 <ul>
 <li><strong>Are you looking for better / complete Schema, Structured Data and Rich Snippet markup?</strong></li>
 <li><strong>Does your theme offer incorrect or incomplete Schema markup in its templates?</strong></li>
-<li><strong>Are you getting warnings in Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>?</li>
+<li><strong>Are you getting warnings in Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>?</strong></li>
 </ul>
 </p>
 
