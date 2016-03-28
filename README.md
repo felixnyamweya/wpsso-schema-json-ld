@@ -16,10 +16,10 @@
 
 <p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p>
 <ul>
-<li><strong>Are you looking for better / more complete Schema, Structured Data and Rich Snippet markup?</strong></li>
-<li><strong>Does your theme offer incorrect or incomplete Schema markup in its templates?</strong></li>
-<li><strong>Are you getting warnings in Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>?</strong></li>
-<li><strong>Need something better than just <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages?</strong></li>
+<li><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></li>
+<li><strong>Corrects innacurate / incomplete Schema markup in theme templates.</strong></li>
+<li><strong>Validate your Schema with Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>.</strong></li>
+<li><strong>Includes more than just <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
 </ul>
 </p>
 
