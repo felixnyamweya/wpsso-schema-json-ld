@@ -19,11 +19,11 @@
 <li><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></li>
 <li><strong>Corrects innacurate / incomplete Schema markup in theme templates.</strong></li>
 <li><strong>Validate your Schema with Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>.</strong></li>
-<li><strong>Choose another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
+<li><strong>Choose a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
 </ul>
 </p>
 
-<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include <em>complete</em> Schema JSON-LD / Rich Snippet markup (images, videos, author, publisher, product, etc.) in webpage headers for Google Search, Pinterest, and others. WPSSO JSON <a href="http://json-ld.org/">includes Schema JSON-LD markup as a stand-alone block of information</a> &mdash; independant of any Schema markup in your theme templates.</p>
+<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes <a href="http://json-ld.org/">Schema JSON-LD markup</a> in webpage headers, which is independent of existing markup in your theme templates.</p>
 
 <h4>Available in Multiple Languages</h4>
 
