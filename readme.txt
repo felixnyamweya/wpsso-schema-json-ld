@@ -237,6 +237,8 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 == Screenshots ==
 
+01. WPSSO Social Settings on Posts, Pages, Taxonomies, etc. &mdash; The Social Settings metabox allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
+
 == Changelog ==
 
 <blockquote id="changelog_top_info">
