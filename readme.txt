@@ -231,9 +231,13 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Frequently Asked Questions =
 
+* None
+
 == Other Notes ==
 
 = Additional Documentation =
+
+* None
 
 == Screenshots ==
 
