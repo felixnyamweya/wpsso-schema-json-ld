@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 		public static function add_author_and_media_data( &$json_data, &$use_post, &$mod, &$mt_og, &$user_id ) {
 
-			$wpsso = Wpsso::get_instance();
+			$wpsso =& Wpsso::get_instance();
 			
 			/*
 			 * Property:
@@ -102,7 +102,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 */
 		public static function add_single_video_data( &$json_data, &$opts, $prefix = 'og:video', $list_element = true ) {
 
-			$wpsso = Wpsso::get_instance();
+			$wpsso =& Wpsso::get_instance();
+
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );

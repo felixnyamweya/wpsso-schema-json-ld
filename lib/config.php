@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.5.0',		// plugin version
+					'version' => '1.5.0-1',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
@@ -48,7 +48,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
-							//'wpssojson-separator-0' => 'JSON Extension',
 							'schema-json-ld' => 'Schema JSON-LD',
 						),
 						'gpl' => array(
@@ -103,14 +102,13 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			add_filter( 'wpssojson_load_lib', array( 'WpssoJsonConfig', 'load_lib' ), 10, 3 );
 		}
 
-		// gpl / pro library loader
 		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
 			if ( $ret === false && ! empty( $filespec ) ) {
 				$filepath = WPSSOJSON_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
 					require_once( $filepath );
 					if ( empty( $classname ) )
-						return 'wpssojson'.str_replace( array( '/', '-' ), '', $filespec );
+						return SucomUtil::sanitize_classname( 'wpssojson'.$filespec );
 					else return $classname;
 				}
 			}
