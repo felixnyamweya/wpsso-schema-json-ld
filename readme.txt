@@ -260,7 +260,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.5.0 (2016/03/25)**
+**Version 1.5.0-1 (ETA 2016/03/31)**
 
 Official announcement: N/A
 
@@ -273,48 +273,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* Tested with WordPress v4.5-RC1-37079.
 
-**Version 1.4.1 (2016/03/23)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Modified the SucomWebpage `get_caption()`, `get_title()`, and `get_description()` method arguments to use the new `$mod` array.
-
-**Version 1.4.0 (2016/03/20)**
-
-Official announcement: [WPSSO Update - AMP Support and Several Core Changes](http://wpsso.com/2016/03/20/wpsso-update-amp-support-and-several-core-changes/)
-
-> Required update for WordPress Social Sharing Optimization (WPSSO) version 3.28.1.
-
-* *New Features*
-	* Added support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin. See [the AMP project README on GitHub](https://github.com/Automattic/amp-wp/blob/master/readme.md) for details on modifying AMP plugin settings with custom filters.
-* *Improvements*
-	* Added the "publisher" property to the WebPage and BlogPosting markup.
-	* Moved the "inLanguage" to individual schema type modules.
-	* Includes the video preview image first (if one is found).
-	* Improved the Social Settings options display (Free version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
-= 1.5.0 =
+= 1.5.0-1 =
 
-2016/03/25 - Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
-
-= 1.4.1 =
-
-2016/03/23 - Modified several SucomWebage method arguments to use the new $mod array.
-
-= 1.4.0 =
-
-2016/03/20 - Required update for WPSSO v3.28.1. Improved the Social Settings options display (Free version). Added support for Automattic's AMP plugin.
+1.5.0-1 2016/03/31 - Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
 
