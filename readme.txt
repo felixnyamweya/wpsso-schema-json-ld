@@ -280,4 +280,3 @@ Official announcement: N/A
 = 1.5.0-1 =
 
 (2016/03/31) Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
-
