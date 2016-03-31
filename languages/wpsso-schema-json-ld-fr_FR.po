@@ -2,11 +2,11 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.5.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.5.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
-"POT-Creation-Date: 2016-03-25 14:43-0400\n"
-"PO-Revision-Date: 2016-03-25 14:44-0400\n"
+"POT-Creation-Date: 2016-03-31 03:32-0400\n"
+"PO-Revision-Date: 2016-03-31 03:32-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -134,57 +134,57 @@ msgstr "Description de l'item"
 msgid "Save a draft version or publish the %s to update this value."
 msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: lib/submenu/schema-json-ld.php:30
+#: lib/submenu/schema-json-ld.php:29
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr "Balisage de Schéma JSON-LD"
 
-#: lib/submenu/schema-json-ld.php:49
+#: lib/submenu/schema-json-ld.php:48
 msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr "Autre nom du site Web"
 
-#: lib/submenu/schema-json-ld.php:54
+#: lib/submenu/schema-json-ld.php:53
 msgctxt "option label"
 msgid "Business Logo Image URL"
 msgstr "Logo de l'entreprise / site Web"
 
-#: lib/submenu/schema-json-ld.php:58
+#: lib/submenu/schema-json-ld.php:57
 msgctxt "option label"
 msgid "Business Banner (600x60) Image URL"
 msgstr "Image bannière (600x60) d'entreprise"
 
-#: lib/submenu/schema-json-ld.php:62
+#: lib/submenu/schema-json-ld.php:61
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr "Dimensions d'images Schéma"
 
-#: lib/submenu/schema-json-ld.php:67
+#: lib/submenu/schema-json-ld.php:66
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr "Longueur de description maximale"
 
-#: lib/submenu/schema-json-ld.php:70
+#: lib/submenu/schema-json-ld.php:69
 msgctxt "option comment"
 msgid "characters or less"
 msgstr "caractères ou moins"
 
-#: lib/submenu/schema-json-ld.php:73
+#: lib/submenu/schema-json-ld.php:72
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr "Format du nom d’auteur"
 
-#: lib/submenu/schema-json-ld.php:85
+#: lib/submenu/schema-json-ld.php:84
 msgctxt "option label"
 msgid "Schema Item Type for Home Page"
 msgstr "Type de schéma pour page d'accueil"
 
-#: lib/submenu/schema-json-ld.php:90
+#: lib/submenu/schema-json-ld.php:89
 msgctxt "option label"
 msgid "Schema Item Type by Post Type"
 msgstr "Type de schéma par type d'article"
 
-#: wpsso-schema-json-ld.php:74
+#: wpsso-schema-json-ld.php:80
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin before trying to re-activate the %4$s extension."
@@ -192,7 +192,7 @@ msgstr ""
 "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer "
 "l'extension %3$s avant d'essayer de re-activer %4$s."
 
-#: wpsso-schema-json-ld.php:76
+#: wpsso-schema-json-ld.php:82
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
@@ -200,7 +200,7 @@ msgstr ""
 "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer "
 "l'extension %3$s."
 
-#: wpsso-schema-json-ld.php:127
+#: wpsso-schema-json-ld.php:133
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."
