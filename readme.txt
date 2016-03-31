@@ -260,7 +260,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.5.0-1 (ETA 2016/03/31)**
+**Version 1.5.0-1 (2016/03/31)**
 
 Official announcement: N/A
 
@@ -272,10 +272,12 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Tested with WordPress v4.5-RC1-37079.
+	* Adopted a standard version numbering system:
+		* `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
 
 = 1.5.0-1 =
 
-1.5.0-1 2016/03/31 - Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
+(2016/03/31) Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
 
