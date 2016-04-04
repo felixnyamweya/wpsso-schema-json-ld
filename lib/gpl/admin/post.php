@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
 
-			return SucomUtil::insert_after_key( $table_rows, 'subsection_schema',
+			return SucomUtil::after_key( $table_rows, 'subsection_schema',
 				'', '<td colspan="2">'.$this->p->msgs->get( 'pro-feature-msg', 
 					array( 'lca' => 'wpssojson' ) ).'</td>' );
 		}

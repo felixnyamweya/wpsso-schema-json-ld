@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	name
 			 *
 			 * get_title( $textlen = 70, $trailing = '', $use_post = false, $use_cache = true,
-			 *	$add_hashtags = false, $encode = true, $md_idx = 'og_title', $src_id = '' ) {
+			 *	$add_hashtags = false, $encode = true, $md_idx = 'og_title' ) {
 			 */
 			$ret['name'] = $this->p->webpage->get_title( $this->p->options['og_title_len'], 
 				'...', $mod, true, false, true, 'schema_title' );
@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	description
 			 *
 			 * get_description( $textlen = 156, $trailing = '...', $use_post = false, $use_cache = true,
-			 *	$add_hashtags = true, $encode = true, $md_idx = 'og_desc', $src_id = '' )
+			 *	$add_hashtags = true, $encode = true, $md_idx = 'og_desc' )
 			 */
 			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 				'...', $mod, true, false, true, 'schema_desc' );
