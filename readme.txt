@@ -267,7 +267,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0-dev1).
+	* Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -292,7 +292,7 @@ Official announcement: N/A
 
 = 1.5.1-dev1 =
 
-(2016/04/02) Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0-dev1).
+(2016/04/02) Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0).
 
 = 1.5.0-1 =
 
