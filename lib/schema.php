@@ -55,11 +55,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 			else $images_added = 0;
 
-			if ( $images_added === 0 && 
-				SucomUtil::is_post_page( $use_post ) ) {
+			if ( ! $images_added && $mod['is_post'] ) {
 				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
-				WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 			}
+
+			if ( ! $images_added )
+				unset( $json_data['image'] );	// prevent null assignment
 
 			/*
 			 * Property:
@@ -72,11 +74,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		// pass a single or two dimension video array in $og_video
 		public static function add_video_list_data( &$json_data, &$og_video, $prefix = 'og:video' ) {
 			$videos_added = 0;
+
 			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
 				foreach ( $og_video as $video )
 					$videos_added += self::add_single_video_data( $json_data, $video, $prefix, true );	// list_element = true
 			} elseif ( is_array( $og_video ) )
 				$videos_added += self::add_single_video_data( $json_data, $og_video, $prefix, true );		// list_element = true
+
 			return $videos_added;	// return count of videos added
 		}
 

@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.5.1-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
-"POT-Creation-Date: 2016-03-31 03:32-0400\n"
-"PO-Revision-Date: 2016-03-31 03:32-0400\n"
+"POT-Creation-Date: 2016-04-05 17:05-0400\n"
+"PO-Revision-Date: 2016-04-05 17:05-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -156,30 +156,40 @@ msgstr "Image bannière (600x60) d'entreprise"
 
 #: lib/submenu/schema-json-ld.php:61
 msgctxt "option label"
+msgid "Maximum Images to Include"
+msgstr "Images maximum a inclure"
+
+#: lib/submenu/schema-json-ld.php:66
+msgctxt "option comment"
+msgid "<em>video preview images are enabled</em> (and included first)"
+msgstr "<em>images d'aperçu vidéo sont activés</em> (et inclus en premier)"
+
+#: lib/submenu/schema-json-ld.php:69
+msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr "Dimensions d'images Schéma"
 
-#: lib/submenu/schema-json-ld.php:66
+#: lib/submenu/schema-json-ld.php:74
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr "Longueur de description maximale"
 
-#: lib/submenu/schema-json-ld.php:69
+#: lib/submenu/schema-json-ld.php:77
 msgctxt "option comment"
 msgid "characters or less"
 msgstr "caractères ou moins"
 
-#: lib/submenu/schema-json-ld.php:72
+#: lib/submenu/schema-json-ld.php:80
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr "Format du nom d’auteur"
 
-#: lib/submenu/schema-json-ld.php:84
+#: lib/submenu/schema-json-ld.php:92
 msgctxt "option label"
 msgid "Schema Item Type for Home Page"
 msgstr "Type de schéma pour page d'accueil"
 
-#: lib/submenu/schema-json-ld.php:89
+#: lib/submenu/schema-json-ld.php:97
 msgctxt "option label"
 msgid "Schema Item Type by Post Type"
 msgstr "Type de schéma par type d'article"
