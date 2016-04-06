@@ -19,7 +19,7 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 <p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
 <ul>
 <li><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></li>
-<li><strong>Corrects innacurate / incomplete Schema markup in theme templates.</strong></li>
+<li><strong>Corrects incomplete / innacurate Schema markup in theme templates.</strong></li>
 <li><strong>Validate your Schema with Google's <a href="https://developers.google.com/structured-data/testing-tool/">Structured Data Testing Tool</a>.</strong></li>
 <li><strong>Choose a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
 </ul>
