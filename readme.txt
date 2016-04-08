@@ -260,7 +260,7 @@ This release schedule keeps the code stable and reliable, at the cost of more fr
 
 = Changelog / Release Notes =
 
-**Version 1.5.1-rc1 (2016/04/08)**
+**Version 1.5.1-1 (2016/04/08)**
 
 Official announcement: N/A
 
@@ -291,9 +291,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.5.1-rc1 =
+= 1.5.1-1 =
 
-(2016/04/08) Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0).
+(2016/04/08) Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page. Added notice for missing Schema Article, TechArticle, and NewsArticle images.
 
 = 1.5.0-1 =
 
