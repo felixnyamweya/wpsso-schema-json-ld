@@ -286,8 +286,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Tested with WordPress v4.5-RC1-37079.
-	* Adopted a standard version numbering system:
-		* `{major}.{minor}.{bugfix}-{stage}{level}`
+	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
 
