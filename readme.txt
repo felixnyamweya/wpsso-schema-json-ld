@@ -262,6 +262,19 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
+**Version 1.6.0-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added support for the Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required) (Pro version).
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.5.1-1 (2016/04/08)**
 
 Official announcement: N/A
