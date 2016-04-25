@@ -262,12 +262,12 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 1.6.0-dev1 (TBD)**
+**Version 1.6.0-dev3 (2016/04/25)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Added support for the Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required) (Pro version).
+	* Added support for Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required) (Pro version).
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -304,6 +304,10 @@ Official announcement: N/A
 	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
 
 == Upgrade Notice ==
+
+= 1.6.0-dev3 =
+
+(2016/04/25) Added support for Schema Type LocalBusiness (WPSSO PLM extension required) (Pro version).
 
 = 1.5.1-1 =
 
