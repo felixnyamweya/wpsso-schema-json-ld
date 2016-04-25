@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
 				'add_schema_noscript_array' => '__return_false',
-				'json_data_http_schema_org_item_type' => 7,		// $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main
+				'json_data_http_schema_org' => 7,			// $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main
 				'json_data_http_schema_org_webpage' => array( 
 					'json_data_http_schema_org_webpage' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
 					'json_data_http_schema_org_blogposting' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Does not add images, videos, author or organization markup since this will
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
-		public function filter_json_data_http_schema_org_item_type( $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main ) {
+		public function filter_json_data_http_schema_org( $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -140,10 +140,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/*
 			 * Property:
 			 *	author as http://schema.org/Person
+			 */
+			if ( $user_id > 0 )
+				WpssoSchema::add_single_person_data( $ret['author'], $user_id, true );
+
+			/*
+			 * Property:
 			 *	image as http://schema.org/ImageObject
 			 *	video as http://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_author_and_media_data( $ret, $use_post, $mod, $mt_og, $user_id );
+			WpssoJsonSchema::add_media_data( $ret, $use_post, $mod, $mt_og, $user_id );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
 		}

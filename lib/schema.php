@@ -20,36 +20,42 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
-		public static function add_author_and_media_data( &$json_data, &$use_post, &$mod, &$mt_og, &$user_id ) {
+		public static function add_media_data( &$json_data, &$use_post, &$mod, &$mt_og, &$user_id ) {
 
 			$wpsso =& Wpsso::get_instance();
 			
 			/*
 			 * Property:
-			 *	author as http://schema.org/Person
-			 */
-			if ( $user_id > 0 )
-				WpssoSchema::add_single_person_data( $json_data['author'], $user_id, true );
-
-			/*
-			 * Property:
 			 *	image as http://schema.org/ImageObject
 			 */
-			$size_name = $wpsso->cf['lca'].'-schema';
 			$og_image = array();
 
+			$prev_count = 0;
+			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
+			$size_name = $wpsso->cf['lca'].'-schema';
+
 			// include any video preview images first
-			if ( ! empty( $mt_og['og:video'] ) ) {
+			if ( ! empty( $mt_og['og:video'] ) && is_array( $og['og:video'] ) ) {
 				// prevent duplicates - exclude text/html videos
-				foreach ( $mt_og['og:video'] as $og_video ) {
+				foreach ( $mt_og['og:video'] as $num => $og_video ) {
 					if ( isset( $og_video['og:video:type'] ) &&
-						$og_video['og:video:type'] !== 'text/html' )
-							$og_image[] = $og_video;
+						$og_video['og:video:type'] !== 'text/html' ) {
+						if ( SucomUtil::get_mt_media_url( 'og:image', $og_video ) )
+							$prev_count++;
+						$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
+					}
+				}
+				if ( $prev_count > 0 ) {
+					$max['schema_img_max'] -= $prev_count;
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->log( $prev_count.
+							' video preview images found (og_img_max adjusted to '.
+								$max['schema_img_max'].')' );
 				}
 			}
 
-			$og_image = array_merge( $og_image,
-				$wpsso->og->get_all_images( 1, $size_name, $mod, true, 'schema' ) );
+			$og_image = array_merge( $og_image, $wpsso->og->get_all_images( $max['schema_img_max'],
+				$size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_image ) )
 				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
