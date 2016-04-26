@@ -262,7 +262,7 @@ frequent updates.</p>
 
 = Changelog / Release Notes =
 
-**Version 1.6.0-dev3 (2016/04/25)**
+**Version 1.6.0-rc1 (2016/04/25)**
 
 Official announcement: N/A
 
@@ -305,7 +305,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.6.0-dev3 =
+= 1.6.0-rc1 =
 
 (2016/04/25) Added support for Schema Type LocalBusiness (WPSSO PLM extension required) (Pro version). Added support for cascading JSON-LD filters to create the Schema markup.
 
