@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.6.0-dev3',		// plugin version
+					'version' => '1.6.0-rc1',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
@@ -61,8 +61,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'head' => array(
 								'article' => 'Type Article',
-								'foodestablishment' => 'Type FoodEstablishment',
-								'localbusiness' => 'Type LocalBusiness',
+								'foodestablishment' => 'Type Food Establishment',
+								'localbusiness' => 'Type Local Business',
 								'organization' => 'Type Organization',
 								'person' => 'Type Person',
 								'place' => 'Type Place',
@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'website' => 'Type Website',
 							),
 							'prop' => array(
-								'rating' => 'Property AggregateRating',
+								'rating' => 'Property Aggregate Rating',
 							),
 						),
 					),
@@ -81,6 +81,72 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'headline' => array(
 						'max_len' => 110,
 					),
+				),
+				// verified and fully supported schema types
+				// used by the WpssoJsonFilters action_admin_post_header() method
+				'supported' => array(
+					'article' => array( 
+						'article' => 'http://schema.org/Article',
+						'article.news' => 'http://schema.org/NewsArticle',
+						'article.tech' => 'http://schema.org/TechArticle',
+						'article.scholarly' => 'http://schema.org/ScholarlyArticle',
+					),
+					'blog.posting' => 'http://schema.org/BlogPosting',
+					'organization' => 'http://schema.org/Organization',
+					'person' => 'http://schema.org/Person',
+					'place' => array(
+						'administrative.area' => 'http://schema.org/AdministrativeArea',
+						'civic.structure' => 'http://schema.org/CivicStructure',
+						'landform' => 'http://schema.org/Landform',
+						'landmarks.or.historical.buildings' => 'http://schema.org/LandmarksOrHistoricalBuildings',
+						'local.business' => array( 
+							'animal.shelter' => 'http://schema.org/AnimalShelter',
+							'automotive.business' => 'http://schema.org/AutomotiveBusiness',
+							'child.care' => 'http://schema.org/ChildCare',
+							'dry.cleaning.or.laundry' => 'http://schema.org/DryCleaningOrLaundry',
+							'emergency.service' => 'http://schema.org/EmergencyService',
+							'employement.agency' => 'http://schema.org/EmploymentAgency',
+							'entertainment.business' => 'http://schema.org/EntertainmentBusiness',
+							'financial.service' => 'http://schema.org/FinancialService',
+							'food.establishment' => array( 
+								'bakery' => 'http://schema.org/Bakery',
+								'bar.or.pub' => 'http://schema.org/BarOrPub',
+								'brewery' => 'http://schema.org/Brewery',
+								'cafe.or.coffee.shop' => 'http://schema.org/CafeOrCoffeeShop',
+								'fast.food.restaurant' => 'http://schema.org/FastFoodRestaurant',
+								'food.establishment' => 'http://schema.org/FoodEstablishment',
+								'ice.cream.shop' => 'http://schema.org/IceCreamShop',
+								'restaurant' => 'http://schema.org/Restaurant',
+								'winery' => 'http://schema.org/Winery',
+							),
+							'government.office' => 'http://schema.org/GovernmentOffice',
+							'health.and.beauty.business' => 'http://schema.org/HealthAndBeautyBusiness',
+							'home.and.construction.business' => 'http://schema.org/HomeAndConstructionBusiness',
+							'internet.cafe' => 'http://schema.org/InternetCafe',
+							'legal.service' => 'http://schema.org/LegalService',
+							'library' => 'http://schema.org/Library',
+							'local.business' => 'http://schema.org/LocalBusiness',
+							'lodging.business' => 'http://schema.org/LodgingBusiness',
+							'medical.organization' => 'http://schema.org/MedicalOrganization',
+							'professional.service' => 'http://schema.org/ProfessionalService',
+							'radio.station' => 'http://schema.org/RadioStation',
+							'real.estate.agent' => 'http://schema.org/RealEstateAgent',
+							'recycling.center' => 'http://schema.org/RecyclingCenter',
+							'self.storage' => 'http://schema.org/SelfStorage',
+							'shopping.center' => 'http://schema.org/ShoppingCenter',
+							'sports.activity.location' => 'http://schema.org/SportsActivityLocation',
+							'store' => 'http://schema.org/Store',
+							'television.station' => 'http://schema.org/TelevisionStation',
+							'tourist.information.center' => 'http://schema.org/TouristInformationCenter',
+							'travel.agency' => 'http://schema.org/TravelAgency',
+						),
+						'place' => 'http://schema.org/Place',
+						'residence' => 'http://schema.org/Residence',
+						'tourist.attraction' => 'http://schema.org/TouristAttraction',
+					),
+					'product' => 'http://schema.org/Product',
+					'webpage' => 'http://schema.org/WebPage',
+					'website' => 'http://schema.org/WebSite',
 				),
 			),
 		);

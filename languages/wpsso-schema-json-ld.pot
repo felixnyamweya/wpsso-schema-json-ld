@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.6.0-dev3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.6.0-rc1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -25,27 +25,7 @@ msgid ""
 "Place, Product, etc.) for Google and Pinterest."
 msgstr ""
 
-#: lib/filters.php:173
-msgid ""
-"WPSSO JSON Pro does not include specific / customized support for the Schema "
-"type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties <em>url</"
-"em>, <em>name</em>, and <em>description</em> will be included in the Schema "
-"JSON-LD markup."
-msgstr ""
-
-#: lib/filters.php:173
-msgid ""
-"Developers may wish to hook the '%1$s' filter to further customize the "
-"default JSON-LD data array, and include additional properties."
-msgstr ""
-
-#: lib/filters.php:173
-msgid ""
-"You are also invited to <a href=\"%1$s\">request the addition of this Schema "
-"type</a> for a future release of WPSSO JSON Pro. ;-)"
-msgstr ""
-
-#: lib/filters.php:176 lib/filters.php:179
+#: lib/filters.php:177 lib/filters.php:185
 msgid ""
 "The Free / Basic version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
@@ -53,24 +33,58 @@ msgid ""
 "included in the Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters.php:176
+#: lib/filters.php:177
 msgid ""
-"You may consider <a href=\"%1$s\">purchasing the Pro version of WPSSO JSON</"
-"a> if the Schema type <a href=\"%2$s\">%2$s</a> is an important "
-"classification for your content."
+"The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
+"of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</"
+"a>."
 msgstr ""
 
-#: lib/filters.php:181
+#: lib/filters.php:177
+msgid ""
+"If this Schema is an important classification for your content, you should "
+"consider purchasing the Pro version."
+msgstr ""
+
+#: lib/filters.php:182
+msgid ""
+"WPSSO JSON Pro does not include specific / customized support for the Schema "
+"type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties <em>url</"
+"em>, <em>name</em>, and <em>description</em> will be included in the Schema "
+"JSON-LD markup."
+msgstr ""
+
+#: lib/filters.php:182
+msgid ""
+"Developers may wish to hook the '%1$s' filter to modify the default JSON-LD "
+"data array and include additional properties."
+msgstr ""
+
+#: lib/filters.php:182
+msgid ""
+"You are also invited to <a href=\"%1$s\">request the addition of this Schema "
+"type</a> in a future version of WPSSO JSON Pro. ;-)"
+msgstr ""
+
+#: lib/filters.php:185
+msgid ""
+"The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
+"of supported Schema types &mdash; you may want to check if the Schema type "
+"<a href=\"%2$s\">%2$s</a> is available in the Pro version (and if not, you "
+"can always <a href=\"%3$s\">request its addition</a>). ;-)"
+msgstr ""
+
+#: lib/filters.php:190
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:229
+#: lib/filters.php:237
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
 "with a matching Schema item type."
 msgstr ""
 
-#: lib/filters.php:231
+#: lib/filters.php:239
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
