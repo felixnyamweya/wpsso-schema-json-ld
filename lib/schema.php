@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$size_name = $wpsso->cf['lca'].'-schema';
 
 			// include any video preview images first
-			if ( ! empty( $mt_og['og:video'] ) && is_array( $og['og:video'] ) ) {
+			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
 				// prevent duplicates - exclude text/html videos
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
 					if ( isset( $og_video['og:video:type'] ) &&
