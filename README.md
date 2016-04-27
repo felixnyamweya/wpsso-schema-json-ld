@@ -102,9 +102,13 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Article">schema.org/Article</a></li>
+<li>Schema Type <a href="http://schema.org/Article">schema.org/Article</a>
+
+<ul>
 <li>Schema Type <a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
 <li>Schema Type <a href="http://schema.org/TechArticle">schema.org/TechArticle</a></li>
+<li>Schema Type <a href="http://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
+</ul></li>
 </ul>
 
 <blockquote>
@@ -213,7 +217,59 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)</li>
+<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required)
+
+<ul>
+<li>Schema Type <a href="http://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
+<li>Schema Type <a href="http://schema.org/CivicStructure">schema.org/CivicStructure</a></li>
+<li>Schema Type <a href="http://schema.org/Landform">schema.org/Landform</a></li>
+<li>Schema Type <a href="http://schema.org/LandmarksOrHistoricalBuildings">schema.org/LandmarksOrHistoricalBuildings</a></li>
+<li>Schema Type <a href="http://schema.org/LocalBusiness">schema.org/LocalBusiness</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/AnimalShelter">schema.org/AnimalShelter</a></li>
+<li>Schema Type <a href="http://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a></li>
+<li>Schema Type <a href="http://schema.org/ChildCare">schema.org/ChildCare</a></li>
+<li>Schema Type <a href="http://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
+<li>Schema Type <a href="http://schema.org/EmergencyService">schema.org/EmergencyService</a></li>
+<li>Schema Type <a href="http://schema.org/EmploymentAgency">schema.org/EmploymentAgency</a></li>
+<li>Schema Type <a href="http://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a></li>
+<li>Schema Type <a href="http://schema.org/FinancialService">schema.org/FinancialService</a></li>
+<li>Schema Type <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/Bakery">schema.org/Bakery</a></li>
+<li>Schema Type <a href="http://schema.org/BarOrPub">schema.org/BarOrPub</a></li>
+<li>Schema Type <a href="http://schema.org/Brewery">schema.org/Brewery</a></li>
+<li>Schema Type <a href="http://schema.org/CafeOrCoffeeShop">schema.org/CafeOrCoffeeShop</a></li>
+<li>Schema Type <a href="http://schema.org/FastFoodRestaurant">schema.org/FastFoodRestaurant</a></li>
+<li>Schema Type <a href="http://schema.org/IceCreamShop">schema.org/IceCreamShop</a></li>
+<li>Schema Type <a href="http://schema.org/Restaurant">schema.org/Restaurant</a></li>
+<li>Schema Type <a href="http://schema.org/Winery">schema.org/Winery</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/GovernmentOffice">schema.org/GovernmentOffice</a></li>
+<li>Schema Type <a href="http://schema.org/HealthAndBeautyBusiness">schema.org/HealthAndBeautyBusiness</a></li>
+<li>Schema Type <a href="http://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a></li>
+<li>Schema Type <a href="http://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
+<li>Schema Type <a href="http://schema.org/LegalService">schema.org/LegalService</a></li>
+<li>Schema Type <a href="http://schema.org/Library">schema.org/Library</a></li>
+<li>Schema Type <a href="http://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
+<li>Schema Type <a href="http://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a></li>
+<li>Schema Type <a href="http://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
+<li>Schema Type <a href="http://schema.org/RadioStation">schema.org/RadioStation</a></li>
+<li>Schema Type <a href="http://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
+<li>Schema Type <a href="http://schema.org/RecyclingCenter">schema.org/RecyclingCenter</a></li>
+<li>Schema Type <a href="http://schema.org/SelfStorage">schema.org/SelfStorage</a></li>
+<li>Schema Type <a href="http://schema.org/ShoppingCenter">schema.org/ShoppingCenter</a></li>
+<li>Schema Type <a href="http://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a></li>
+<li>Schema Type <a href="http://schema.org/Store">schema.org/Store</a></li>
+<li>Schema Type <a href="http://schema.org/TelevisionStation">schema.org/TelevisionStation</a></li>
+<li>Schema Type <a href="http://schema.org/TouristInformationCenter">schema.org/TouristInformationCenter</a></li>
+<li>Schema Type <a href="http://schema.org/TravelAgency">schema.org/TravelAgency</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/Residence">schema.org/Residence</a></li>
+<li>Schema Type <a href="http://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
+</ul></li>
 </ul>
 
 <blockquote>
