@@ -78,13 +78,26 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:237
+#: lib/filters.php:240
 msgid ""
 "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
-"with a matching Schema item type."
+"with a matching item type name."
 msgstr ""
 
-#: lib/filters.php:239
+#: lib/filters.php:240
+msgid ""
+"The item type properties cascade, so children inherit their parent's "
+"properties (for example, Restaurant inherits Food Establishment, which "
+"inherits Local Business, etc.)."
+msgstr ""
+
+#: lib/filters.php:240
+msgid ""
+"The number of children (including itself) is indicated next to the item "
+"type's name."
+msgstr ""
+
+#: lib/filters.php:242
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
