@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_head_attributes' => '__return_false',
 				'add_schema_meta_array' => '__return_false',
 				'add_schema_noscript_array' => '__return_false',
-				'json_data_http_schema_org' => 7,			// $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main
+				'json_data_http_schema_org' => 6,			// $json_data, $use_post, $mod, $mt_og, $user_id, $is_main
 				'json_data_http_schema_org_webpage' => array( 
 					'json_data_http_schema_org_webpage' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
 					'json_data_http_schema_org_blogposting' => 5,	// $json_data, $use_post, $mod, $mt_og, $user_id
@@ -60,12 +60,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Does not add images, videos, author or organization markup since this will
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
-		public function filter_json_data_http_schema_org( $json_data, $use_post, $mod, $mt_og, $user_id, $head_type, $is_main ) {
+		public function filter_json_data_http_schema_org( $json_data, $use_post, $mod, $mt_og, $user_id, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
 			$lca = $this->p->cf['lca'];
-			$ret = WpssoSchema::get_item_type_context( $head_type );
+			$ret = WpssoSchema::get_item_type_context( $mt_og['schema:type:url'] );
 
 			/*
 			 * Property:
@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$urls = $this->p->cf['plugin']['wpssojson']['url'];	// for purchase and pro_support urls
 			$type_id = $this->p->schema->get_head_item_type( $mod, true );
-			$type_url = $this->p->schema->get_item_type_url( $type_id );
+			$type_url = $this->p->schema->get_schema_type_url( $type_id );
 			$filter_name = $this->p->schema->get_json_data_filter( $mod, $type_url );
 
 			if ( has_filter( $filter_name ) )
