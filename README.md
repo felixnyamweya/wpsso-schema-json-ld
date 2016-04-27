@@ -84,7 +84,7 @@
   <li>Video Height</li>
   <li>Video Duration</li>
   <li>Video UploadDate</li>
-  <li>Video ThumbnailUril</li>
+  <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
   <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -165,7 +165,7 @@
   <li>Video Height</li>
   <li>Video Duration</li>
   <li>Video UploadDate</li>
-  <li>Video ThumbnailUril</li>
+  <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
   <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -277,6 +277,8 @@
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
+  <li>AcceptsReservations for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
+  <li>Menu (URL) for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
   <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
   
   <ul>
@@ -294,12 +296,41 @@
   <li>postalCode</li>
   <li>addressCountry</li>
   </ul></li>
+  <li>Opening Hours Specification as <a href="http://schema.org/openingHoursSpecification">schema.org/openingHoursSpecification</a>
+  
+  <ul>
+  <li>opens</li>
+  <li>closes</li>
+  <li>validFrom</li>
+  <li>validThrough</li>
+  </ul></li>
   <li>Place Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
+  </ul></li>
+  <li>Place Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUrl</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
+  </ul></li>
   </ul></li>
   </ul>
 </blockquote>
@@ -337,7 +368,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
+  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
   
   <ul>
   <li>Video URL</li>
@@ -348,7 +379,7 @@
   <li>Video Height</li>
   <li>Video Duration</li>
   <li>Video UploadDate</li>
-  <li>Video ThumbnailUril</li>
+  <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
   <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   

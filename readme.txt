@@ -69,7 +69,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video Height
 > 	* Video Duration
 > 	* Video UploadDate
-> 	* Video ThumbnailUril
+> 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
 > 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Thumbnail URL
@@ -120,7 +120,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video Height
 > 	* Video Duration
 > 	* Video UploadDate
-> 	* Video ThumbnailUril
+> 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
 > 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Thumbnail URL
@@ -195,6 +195,8 @@ Adds Google / Schema JSON-LD markup:
 > * URL
 > * Name
 > * Description
+> * AcceptsReservations for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
+> * Menu (URL) for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
 > * Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
 > 	* elevation
 > 	* latitude
@@ -206,10 +208,31 @@ Adds Google / Schema JSON-LD markup:
 > 	* addressRegion
 > 	* postalCode
 > 	* addressCountry
+> * Opening Hours Specification as [schema.org/openingHoursSpecification](http://schema.org/openingHoursSpecification)
+> 	* opens
+> 	* closes
+> 	* validFrom
+> 	* validThrough
 > * Place Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Place Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> 	* Video URL
+> 	* Video Name
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUrl
+> 	* Video EmbedUrl
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
+
 
 * Schema Type [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually required)
  
@@ -231,7 +254,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
+> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -240,7 +263,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Video Height
 > 	* Video Duration
 > 	* Video UploadDate
-> 	* Video ThumbnailUril
+> 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
 > 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Thumbnail URL
