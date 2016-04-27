@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.6.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-04-26 14:26-0400\n"
-"PO-Revision-Date: 2016-04-26 14:29-0400\n"
+"POT-Creation-Date: 2016-04-27 09:11-0400\n"
+"PO-Revision-Date: 2016-04-27 09:23-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -31,7 +31,7 @@ msgstr "La version gratuite / de base WPSSO JSON n'inclut pas de support spécif
 
 #: lib/filters.php:177
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
-msgstr ""
+msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma, y compris le type de Schéma <a href=\"%2$s\">%2$s</a>."
 
 #: lib/filters.php:177
 msgid "If this Schema is an important classification for your content, you should consider purchasing the Pro version."
@@ -51,17 +51,25 @@ msgstr "Vous êtes également invités à <a href=\"%1$s\">demander l'ajout de c
 
 #: lib/filters.php:185
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types &mdash; you may want to check if the Schema type <a href=\"%2$s\">%2$s</a> is available in the Pro version (and if not, you can always <a href=\"%3$s\">request its addition</a>). ;-)"
-msgstr ""
+msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma &mdash; vous pouvez vérifier si le type de schéma <a href=\"%2$s\">%2$s</a> est disponible dans la version Pro (et si non, vous pouvez toujours <a href=\"%3$s\">demander à son ajout</a>). ;-)"
 
 #: lib/filters.php:190
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:237
-msgid "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching Schema item type."
-msgstr "Ajoute des balises de Schéma JSON-LD pour les Articles, Pages, Médias, et Type d'Articles Personnalisé avec le type de Schéma correspondant."
+#: lib/filters.php:240
+msgid "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching item type name."
+msgstr "Ajoute des balises de Schéma JSON-LD pour les Articles, Pages, Médias, et Type d'Articles Personnalisé avec un type d'item correspondant."
 
-#: lib/filters.php:239
+#: lib/filters.php:240
+msgid "The item type properties cascade, so children inherit their parent's properties (for example, Restaurant inherits Food Establishment, which inherits Local Business, etc.)."
+msgstr "Les propriétés de type d'item cascade, de sorte que les enfants héritent des propriétés de leurs parents (par exemple, Restaurant hérite de l'Établissement alimentaire, qui hérite de l'Entreprise Locale, etc.)."
+
+#: lib/filters.php:240
+msgid "The number of children (including itself) is indicated next to the item type's name."
+msgstr "Le nombre d'enfants (y compris lui-même) est indiqué à côté du type d'item."
+
+#: lib/filters.php:242
 msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr "Ajoute des balises de Schéma JSON-LD pour les propriétés correspondant."
 
