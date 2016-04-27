@@ -269,7 +269,7 @@ Official announcement: N/A
 * *New Features*
 	* Added support for Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required) (Pro version).
 * *Improvements*
-	* Added support for cascading JSON-LD filters to create the Schema markup (for example: Place -&gt; LocalBusiness -&gt; FoodEstablishement -&gt; Restaurant).
+	* Added support for cascading JSON-LD filters to create the Schema markup (for example: Place -&gt; LocalBusiness -&gt; FoodEstablishment -&gt; Restaurant).
 * *Bugfixes*
 	* None
 * *Developer Notes*
