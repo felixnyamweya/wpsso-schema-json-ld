@@ -147,7 +147,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* Schema Type [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required)
+* Schema Type [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](http://schema.org/CivicStructure)
 	* Schema Type [schema.org/Landform](http://schema.org/Landform)
@@ -278,6 +278,100 @@ Adds Google / Schema JSON-LD markup:
 > * PotentialAction as [schema.org/SearchAction](http://schema.org/SearchAction)
 > 	* Target
 > 	* Query-Input
+
+= Examples =
+
+* Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, opening hours, menu URL, and accepts reservation values).
+
+`
+<head>
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "Restaurant",
+            "url": "http://restaurant.example.com/",
+            "name": "Restaurant Name",
+        "description": "A great family owned restaurant. ;-)",
+        "mainEntityOfPage": {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "@id": "http://restaurant.example.com/"
+        },
+        "image": [
+            {
+                "@context": "http://schema.org",
+                "@type": "ImageObject",
+                "url": "http://restaurant.example.com/wp-content/uploads/restaurant-image.jpg",
+                "width": 800,
+                "height": 663
+            }
+        ],
+        "video": [
+            {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "url": "https://www.youtube.com/v/xxxxxxxxxxx?version=3&#038;autohide=1",
+                "name": "Restaurant Walkthrough",
+                "description": "See our beautiful dining room.",
+                "fileFormat": "application/x-shockwave-flash",
+                "width": "1280",
+                "height": "720",
+                "uploadDate": "2013-10-03T00:00:00+00:00",
+                "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+                "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx",
+                "thumbnail": {
+                    "@context": "http://schema.org",
+                    "@type": "ImageObject",
+                    "url": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "url": "https://www.youtube.com/embed/xxxxxxxxxxx",
+                "name": "Restaurant Walkthrough",
+                "description": "See our beautiful dining room.",
+                "fileFormat": "text/html",
+                "width": "1280",
+                "height": "720",
+                "uploadDate": "2013-10-03T00:00:00+00:00",
+                "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+                "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx"
+            }
+        ]
+        "address": {
+            "@context": "http://schema.org",
+            "@type": "PostalAddress",
+            "streetAddress": "123 A Road",
+            "postOfficeBoxNumber": 7,
+            "addressLocality": "Cityname",
+            "addressRegion": "Somestate",
+            "postalCode": "123456",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@context": "http://schema.org",
+            "@type": "GeoCoordinates",
+            "latitude": 10,
+            "longitude": -10
+        },
+        "openingHoursSpecification": [
+            {
+                "@context": "http://schema.org",
+                "@type": "openingHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "12:00",
+                "closes": "22:00",
+                "validFrom": "2016-05-01",
+                "validThrough": "2016-09-01"
+            }
+        ],
+        "menu": "http://restaurant.example.com/restaurant-menu.html",
+        "acceptsReservations": "true"
+    }</script>
+</head>
+`
 
 = Extends the WPSSO Social Plugin =
 
