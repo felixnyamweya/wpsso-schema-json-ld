@@ -281,6 +281,62 @@ Adds Google / Schema JSON-LD markup:
 
 = Examples =
 
+* Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
+
+`
+<head>
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "TechArticle",
+        "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
+        "name": "PHP &ndash; Create an Array of Hours",
+        "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
+        "mainEntityOfPage": {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
+        },
+        "headline": "PHP &ndash; Create an Array of Hours",
+        "datepublished": "2016-04-15T14:30:02+00:00",
+        "datemodified": "2016-04-15T15:05:58+00:00",
+        "inLanguage": "en_US",
+        "publisher": {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "http://surniaulula.com",
+            "name": "Surnia Ulula",
+            "alternateName": "Surnia Ulula Ltd",
+            "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
+            "logo": {
+                "@context": "http://schema.org",
+                "@type": "ImageObject",
+                "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/surnia-ulula-text-banner-wide-600x60.png",
+                "width": 600,
+                "height": 60
+            }
+        },
+        "author": [
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "url": "http://surniaulula.com/",
+                "name": "JS Morisset",
+                "description": "Sr UNIX SysAdmin with over 25 years experience in small, medium, and large-scale production / e-commerce environments. #wordpress #unix #sysadmin #php #perl"
+            }
+        ],
+        "image": [
+            {
+                "@context": "http://schema.org",
+                "@type": "ImageObject",
+                "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/2014/03/php-logo-1200x1200.png",
+                "width": 1200,
+                "height": 1200
+            }
+        ]
+    }</script>
+</head>
+`
+
 * Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, opening hours, menu URL, and accepts reservation values).
 
 `
