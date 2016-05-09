@@ -494,12 +494,9 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 == Changelog ==
 
 <blockquote id="changelog_top_info">
-<p>New versions of the plugin are released approximately every week (more or
-less). New features are added, tested, and released incrementally, instead of
-grouping them together in a major version release. When minor bugs fixes
-and/or code improvements are applied, new versions are also released. This
-release schedule keeps the code stable and reliable, at the cost of more
-frequent updates.</p>
+<p>New versions of the plugin are released approximately every week (more or less). New features are added, tested, and released incrementally, instead of grouping them together in a major version release. When minor bugs fixes and/or code improvements are applied, new versions are also released. This release schedule keeps the code stable and reliable, at the cost of more frequent updates.</p>
+
+<p>See <a href="https://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often (RERO) software development philosophy</a> on Wikipedia for more information on the benifits of smaller / more frequent releases.</p>
 </blockquote>
 
 = Free / Basic Version Repository =
