@@ -219,8 +219,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		// hooked to 'wpssojson_status_gpl_features'
 		public function filter_status_gpl_features( $features, $lca, $info ) {
 			foreach ( array( 
-				'Type Blog Posting (blog.posting)',
-				'Type WebPage (webpage)',
+				'(code) Schema Type Blog Posting (blog.posting)',
+				'(code) Schema Type WebPage (webpage)',
 			) as $key )
 				$features[$key]['status'] = 'on';
 			return $this->filter_common_status_features( $features, $lca, $info );
@@ -232,15 +232,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		private function filter_common_status_features( $features, $lca, $info ) {
-			foreach ( $features as $key => $arr ) {
-				if ( strpos( $key, 'Type ' ) === 0 ) {
-					if ( preg_match( '/ \((.+)\)$/', $key, $match ) )
-						$features[$key]['label'] = preg_replace( '/ \((.+)\)$/',
-							' ('.$this->p->schema->count_schema_type_children( $match[1] ).')', $key );
-					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching item type name.', 'wpsso-schema-json-ld' ).' '.__( 'The item type properties cascade, so children inherit their parent\'s properties (for example, Restaurant inherits Food Establishment, which inherits Local Business, etc.).', 'wpsso-schema-json-ld' ).' '.__( 'The number of children (including itself) is indicated next to the item type\'s name.', 'wpsso-schema-json-ld' );
-				} elseif ( strpos( $key, 'Property ' ) === 0 )
-					$features[$key]['tooltip'] = __( 'Adds Schema JSON-LD markup for matching item type properties.', 'wpsso-schema-json-ld' );
-			}
+			foreach ( $features as $key => $arr )
+				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) )
+					$features[$key]['label'] = $match[2].' ('.$this->p->schema->count_schema_type_children( $match[3] ).')';
 			return $features;
 		}
 	}

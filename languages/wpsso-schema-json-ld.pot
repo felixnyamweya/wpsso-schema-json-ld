@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.6.0-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.7.0-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -76,29 +76,6 @@ msgstr ""
 
 #: lib/filters.php:190
 msgid "This notice is only shown to users with Administrative privileges."
-msgstr ""
-
-#: lib/filters.php:240
-msgid ""
-"Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types "
-"with a matching item type name."
-msgstr ""
-
-#: lib/filters.php:240
-msgid ""
-"The item type properties cascade, so children inherit their parent's "
-"properties (for example, Restaurant inherits Food Establishment, which "
-"inherits Local Business, etc.)."
-msgstr ""
-
-#: lib/filters.php:240
-msgid ""
-"The number of children (including itself) is indicated next to the item "
-"type's name."
-msgstr ""
-
-#: lib/filters.php:242
-msgid "Adds Schema JSON-LD markup for matching item type properties."
 msgstr ""
 
 #: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:52

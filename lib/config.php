@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.6.0-1',		// plugin version
+					'version' => '1.7.0-dev1',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
@@ -60,17 +60,20 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'post' => 'Post Settings',
 							),
 							'head' => array(
-								'article' => 'Type Article (article)',
-								'foodestablishment' => 'Type Food Establishment (food.establishement)',
-								'localbusiness' => 'Type Local Business (local.business)',
-								'organization' => 'Type Organization (organization)',
-								'person' => 'Type Person (person)',
-								'place' => 'Type Place (place)',
-								'product' => 'Type Product (product)',
-								'website' => 'Type Website (website)',
+								'article' => '(code) Schema Type Article (article)',
+								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishement)',
+								'localbusiness' => '(code) Schema Type Local Business (local.business)',
+								'organization' => '(code) Schema Type Organization (organization)',
+								'person' => '(code) Schema Type Person (person)',
+								'place' => '(code) Schema Type Place (place)',
+								'product' => '(code) Schema Type Product (product)',
+								'website' => '(code) Schema Type Website (website)',
 							),
 							'prop' => array(
-								'rating' => 'Property Aggregate Rating',
+								'rating' => '(code) Property Aggregate Rating',
+							),
+							'util' => array(
+								'coauthors' => '(plugin) Co-Authors Plus',
 							),
 						),
 					),
