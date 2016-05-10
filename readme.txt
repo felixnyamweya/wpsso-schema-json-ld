@@ -506,6 +506,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.7.0-dev1 (2016/05/10)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Categorized the display of Free / Pro features in the sidebar metabox.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.6.0-1 (2016/04/27)**
 
 Official announcement: N/A
@@ -519,45 +532,13 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.5.1-1 (2016/04/08)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page (new option in WPSSO v3.29.0).
-	* Added a notice for missing Schema Article, TechArticle, and NewsArticle images.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.5.0-1 (2016/03/31)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added a new "Schema JSON-LD" settings page under the SSO menu.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Tested with WordPress v4.5-RC1-37079.
-	* Adopted a new version numbering system: `{major}.{minor}.{bugfix}-{stage}{level}`
-
 == Upgrade Notice ==
+
+= 1.7.0-dev1 =
+
+(2016/05/10) Categorized the display of Free / Pro features in the sidebar metabox.
 
 = 1.6.0-1 =
 
 (2016/04/27) Added support for Schema Type LocalBusiness (WPSSO PLM extension required) (Pro version). Added support for cascading Schema filters to create the Schema JSON-LD markup.
-
-= 1.5.1-1 =
-
-(2016/04/08) Added a new "Maximum Images to Include" option in the Schema JSON-LD settings page. Added notice for missing Schema Article, TechArticle, and NewsArticle images.
-
-= 1.5.0-1 =
-
-(2016/03/31) Added a new "Schema JSON-LD" settings page under the SSO menu. Tested with WordPress v4.5-RC1-37079.
 
