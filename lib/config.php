@@ -72,9 +72,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							'prop' => array(
 								'rating' => '(code) Property Aggregate Rating',
 							),
-							'util' => array(
-								'coauthors' => '(plugin) Co-Authors Plus',
-							),
 						),
 					),
 				),
