@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.6.0-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.7.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-04-27 16:57-0400\n"
-"PO-Revision-Date: 2016-04-27 16:57-0400\n"
+"POT-Creation-Date: 2016-05-12 12:23-0400\n"
+"PO-Revision-Date: 2016-05-12 12:24-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -56,22 +56,6 @@ msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande s�
 #: lib/filters.php:190
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
-
-#: lib/filters.php:240
-msgid "Adds Schema JSON-LD markup for Posts, Pages, Media, and Custom Post Types with a matching item type name."
-msgstr "Ajoute des balises de Schéma JSON-LD pour les Articles, Pages, Médias, et Type d'Articles Personnalisé avec un type d'item correspondant."
-
-#: lib/filters.php:240
-msgid "The item type properties cascade, so children inherit their parent's properties (for example, Restaurant inherits Food Establishment, which inherits Local Business, etc.)."
-msgstr "Les propriétés de type d'item cascade, de sorte que les enfants héritent des propriétés de leurs parents (par exemple, Restaurant hérite de l'Établissement alimentaire, qui hérite de l'Entreprise Locale, etc.)."
-
-#: lib/filters.php:240
-msgid "The number of children (including itself) is indicated next to the item type's name."
-msgstr "Le nombre d'enfants (y compris lui-même) est indiqué à côté du type d'item."
-
-#: lib/filters.php:242
-msgid "Adds Schema JSON-LD markup for matching item type properties."
-msgstr "Ajoute des balises de Schéma JSON-LD pour les propriétés correspondant."
 
 #: lib/gpl/admin/post.php:41 lib/pro/admin/post.php:52
 msgctxt "metabox title"
