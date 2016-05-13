@@ -140,9 +140,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/*
 			 * Property:
 			 *	author as http://schema.org/Person
+			 *	contributor as http://schema.org/Person
 			 */
 			if ( $user_id > 0 )
-				WpssoSchema::add_single_person_data( $ret['author'], $user_id, true );
+				WpssoSchema::add_author_and_coauthor_data( $ret, $mod, $user_id );
 
 			/*
 			 * Property:
