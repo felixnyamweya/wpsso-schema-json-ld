@@ -507,7 +507,7 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
-**Version 1.7.0-rc1 (2016/05/13)**
+**Version 1.7.0-1 (2016/05/14)**
 
 Official announcement: N/A
 
@@ -535,9 +535,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.7.0-rc1 =
+= 1.7.0-1 =
 
-(2016/05/13) Categorized the display of Free / Pro features in the sidebar metabox. Added contributor markup for Co-Authors Plus authors and guest authors (requires WPSSO Pro).
+(2016/05/14) Categorized the display of Free / Pro features in the sidebar metabox. Added contributor markup for Co-Authors Plus authors and guest authors (requires WPSSO Pro).
 
 = 1.6.0-1 =
 
