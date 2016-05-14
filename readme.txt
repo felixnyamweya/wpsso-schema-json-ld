@@ -5,7 +5,7 @@ Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
 Contributors: jsmoriss
 Donate Link: https://wpsso.com/
-Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, pinterest, google, seo, news
+Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, pinterest, google, seo, news, amp, co-authors plus
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
@@ -71,6 +71,8 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
+
+= Quick List of Features (Continued) =
 
 **WPSSO JSON Pro / Power-User Features**
 
