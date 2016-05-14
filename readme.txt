@@ -32,6 +32,7 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 **WPSSO JSON Free / Basic Features**
 
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+
 Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/)).
 
 Adds Google / Schema JSON-LD markup:

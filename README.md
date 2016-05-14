@@ -29,8 +29,9 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
-<p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.
-Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a>).</p>
+<p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
+
+<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a>).</p>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
