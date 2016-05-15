@@ -512,7 +512,7 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 **Version 1.7.0-1 (2016/05/14)**
 
-Official announcement: N/A
+Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http://wpsso.com/2016/05/13/wpsso-update-adds-support-for-co-authors-plus/)
 
 * *New Features*
 	* Added contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/)).
