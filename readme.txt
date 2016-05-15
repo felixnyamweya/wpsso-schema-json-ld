@@ -523,26 +523,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.6.0-1 (2016/04/27)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required) (Pro version).
-* *Improvements*
-	* Added support for cascading Schema filters to create the Schema JSON-LS markup (for example: Place -&gt; LocalBusiness -&gt; FoodEstablishment -&gt; Restaurant).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
 = 1.7.0-1 =
 
 (2016/05/14) Categorized the display of Free / Pro features in the sidebar metabox. Added contributor markup for Co-Authors Plus authors and guest authors (requires WPSSO Pro).
-
-= 1.6.0-1 =
-
-(2016/04/27) Added support for Schema Type LocalBusiness (WPSSO PLM extension required) (Pro version). Added support for cascading Schema filters to create the Schema JSON-LD markup.
 
