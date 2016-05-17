@@ -397,7 +397,7 @@ Adds Google / Schema JSON-LD markup:
 </head>
 `
 
-* Example WPSSO JSON Pro markup for a WooCommerce product, including its variations.
+* Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.
 
 `
 <script type="application/ld+json">{

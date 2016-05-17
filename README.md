@@ -551,7 +551,7 @@
         ]
     }</script>
 </head></p></li>
-<li><p>Example WPSSO JSON Pro markup for a WooCommerce product, including its variations.</p>
+<li><p>Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.</p>
 
 <script type="application/ld+json">{
     "@context": "http://schema.org",
