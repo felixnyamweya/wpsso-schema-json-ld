@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.7.0-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.7.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-05-12 12:23-0400\n"
-"PO-Revision-Date: 2016-05-12 12:24-0400\n"
+"POT-Creation-Date: 2016-05-17 19:16-0400\n"
+"PO-Revision-Date: 2016-05-17 19:16-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,35 +25,35 @@ msgctxt "plugin description"
 msgid "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest."
 msgstr "Une extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, Article, Place, Produit, etc.) pour Google et Pinterest."
 
-#: lib/filters.php:177 lib/filters.php:185
+#: lib/filters.php:178 lib/filters.php:186
 msgid "The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
 msgstr "La version gratuite / de base WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:177
+#: lib/filters.php:178
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
 msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma, y compris le type de Schéma <a href=\"%2$s\">%2$s</a>."
 
-#: lib/filters.php:177
+#: lib/filters.php:178
 msgid "If this Schema is an important classification for your content, you should consider purchasing the Pro version."
 msgstr "Si ce Schéma est une classification importante pour votre contenu, vous devriez considérer l'achat de la version Pro."
 
-#: lib/filters.php:182
+#: lib/filters.php:183
 msgid "WPSSO JSON Pro does not include specific / customized support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
 msgstr "WPSSO JSON Pro n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:182
+#: lib/filters.php:183
 msgid "Developers may wish to hook the '%1$s' filter to modify the default JSON-LD data array and include additional properties."
 msgstr "Les développeurs peuvent accrocher le filtre '%1$s' pour modifier le tableau de données JSON-LD par défaut et y ajouter des propriétés supplémentaires."
 
-#: lib/filters.php:182
+#: lib/filters.php:183
 msgid "You are also invited to <a href=\"%1$s\">request the addition of this Schema type</a> in a future version of WPSSO JSON Pro. ;-)"
 msgstr "Vous êtes également invités à <a href=\"%1$s\">demander l'ajout de ce type de Schéma</a> pour une version future de WPSSO JSON Pro. ;-)"
 
-#: lib/filters.php:185
+#: lib/filters.php:186
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types &mdash; you may want to check if the Schema type <a href=\"%2$s\">%2$s</a> is available in the Pro version (and if not, you can always <a href=\"%3$s\">request its addition</a>). ;-)"
 msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma &mdash; vous pouvez vérifier si le type de schéma <a href=\"%2$s\">%2$s</a> est disponible dans la version Pro (et si non, vous pouvez toujours <a href=\"%3$s\">demander à son ajout</a>). ;-)"
 
-#: lib/filters.php:190
+#: lib/filters.php:191
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
