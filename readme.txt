@@ -300,7 +300,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Variation Weight as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
 > 			* Value
 > 			* UnitCode KGM
-> 		* Variation Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Variation Image as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 			* Image URL
 > 			* Image Width
 > 			* Image Height

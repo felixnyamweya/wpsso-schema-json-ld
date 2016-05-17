@@ -428,7 +428,7 @@
   <li>Value</li>
   <li>UnitCode KGM</li>
   </ul></li>
-  <li>Variation Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Variation Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
