@@ -71,7 +71,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	url
 			 */
-			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array( 'url' => 'og:url' ) );
+			WpssoSchema::add_data_itemprop_from_og( $ret, $mt_og, array( 'url' => 'og:url' ) );
 
 			/*
 			 * Property:
@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * 	datepublished
 			 * 	datemodified
 			 */
-			WpssoSchema::add_data_prop_from_og( $ret, $mt_og, array(
+			WpssoSchema::add_data_itemprop_from_og( $ret, $mt_og, array(
 				'datepublished' => 'article:published_time',
 				'datemodified' => 'article:modified_time',
 			) );
