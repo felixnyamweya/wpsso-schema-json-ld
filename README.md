@@ -52,7 +52,7 @@
   <ul>
   <li>Author URL from Profile</li>
   <li>Author Name</li>
-  <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Author Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Author Image URL</li>
@@ -60,14 +60,14 @@
   <li>Author Image Height</li>
   </ul></li>
   </ul></li>
-  <li>Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
+  <li>Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
   
   <ul>
   <li>Video URL</li>
@@ -121,7 +121,7 @@
   <li>Author URL from Profile</li>
   <li>Author Name</li>
   <li>Author Description</li>
-  <li>Author Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Author Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Author Image URL</li>
@@ -143,14 +143,14 @@
   <li>Image Height</li>
   </ul></li>
   </ul></li>
-  <li>Article Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Article Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Article Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
+  <li>Article Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
   
   <ul>
   <li>Video URL</li>
@@ -202,7 +202,7 @@
   <li>URL from Profile</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Person Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Person Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -333,14 +333,14 @@
   <li>validFrom</li>
   <li>validThrough</li>
   </ul></li>
-  <li>Place Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Place Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Place Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Place Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
   
   <ul>
   <li>Video URL</li>
@@ -453,7 +453,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Product Video as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Product Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
   
   <ul>
   <li>Video URL</li>

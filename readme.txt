@@ -48,15 +48,15 @@ Adds Google / Schema JSON-LD markup:
 > * Author as [schema.org/Person](http://schema.org/Person)
 > 	* Author URL from Profile
 > 	* Author Name
-> 	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
-> * Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
+> * Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -93,7 +93,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Author URL from Profile
 > 	* Author Name
 > 	* Author Description
-> 	* Author Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
@@ -105,11 +105,11 @@ Adds Google / Schema JSON-LD markup:
 > 		* Image URL
 > 		* Image Width
 > 		* Image Height
-> * Article Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Article Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Article Video as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
+> * Article Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -140,7 +140,7 @@ Adds Google / Schema JSON-LD markup:
 > * URL from Profile
 > * Name
 > * Description
-> * Person Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Person Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
@@ -241,11 +241,11 @@ Adds Google / Schema JSON-LD markup:
 > 	* closes
 > 	* validFrom
 > 	* validThrough
-> * Place Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Place Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Place Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Place Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -314,7 +314,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Video as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Product Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
