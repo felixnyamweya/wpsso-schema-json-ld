@@ -551,6 +551,229 @@
         ]
     }</script>
 </head></p></li>
+<li><p>Example WPSSO JSON Pro markup for a WooCommerce product, including its variations.</p>
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
+    "name": "A Colorful Pencil",
+    "description": "This is a short description for the colorful pencil.",
+    "mainEntityOfPage": {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "@id": "http://woo.surniaulula.com/product/a-colorful-pencil/"
+    },
+    "aggregateRating": {
+        "@context": "http://schema.org",
+        "@type": "AggregateRating",
+        "ratingvalue": "5",
+        "ratingcount": 1,
+        "worstrating": 1,
+        "bestrating": 5,
+        "reviewcount": "3"
+    },
+    "sku": "PENCIL",
+    "color": "Green | Blue | Orange | Red",
+    "category": "Pencils",
+    "width": {
+        "@context": "http://schema.org",
+        "@type": "QuantitativeValue",
+        "value": "0.5",
+        "unitCode": "CMT"
+    },
+    "height": {
+        "@context": "http://schema.org",
+        "@type": "QuantitativeValue",
+        "value": "12",
+        "unitCode": "CMT"
+    },
+    "weight": {
+        "@context": "http://schema.org",
+        "@type": "QuantitativeValue",
+        "value": "10",
+        "unitCode": "KGM"
+    },
+    "offers": [
+        {
+            "@context": "http://schema.org",
+            "@type": "Offer",
+            "price": "1.00",
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "itemOffered": {
+                "@context": "http://schema.org",
+                "@type": "IndividualProduct",
+                "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Green",
+                "sku": "PENCIL_GREEN",
+                "color": "Green",
+                "description": "A description for the green pencil.",
+                "width": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "0.5",
+                    "unitCode": "CMT"
+                },
+                "height": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "12",
+                    "unitCode": "CMT"
+                },
+                "weight": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "10",
+                    "unitCode": "KGM"
+                },
+                "image": [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "ImageObject",
+                        "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
+                        "width": 800,
+                        "height": 800
+                    }
+                ]
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Offer",
+            "price": "1.00",
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "itemOffered": {
+                "@context": "http://schema.org",
+                "@type": "IndividualProduct",
+                "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Blue",
+                "sku": "PENCIL_BLUE",
+                "color": "Blue",
+                "description": "A description for the blue pencil.",
+                "width": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "0.5",
+                    "unitCode": "CMT"
+                },
+                "height": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "12",
+                    "unitCode": "CMT"
+                },
+                "weight": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "10",
+                    "unitCode": "KGM"
+                },
+                "image": [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "ImageObject",
+                        "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_blue-800x800.png",
+                        "width": 800,
+                        "height": 800
+                    }
+                ]
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Offer",
+            "price": "1.00",
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "itemOffered": {
+                "@context": "http://schema.org",
+                "@type": "IndividualProduct",
+                "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Orange",
+                "sku": "PENCIL_ORANGE",
+                "color": "Orange",
+                "description": "A description for the orange pencil.",
+                "width": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "0.5",
+                    "unitCode": "CMT"
+                },
+                "height": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "12",
+                    "unitCode": "CMT"
+                },
+                "weight": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "10",
+                    "unitCode": "KGM"
+                },
+                "image": [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "ImageObject",
+                        "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_orange-800x800.png",
+                        "width": 800,
+                        "height": 800
+                    }
+                ]
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Offer",
+            "price": "1.10",
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "itemOffered": {
+                "@context": "http://schema.org",
+                "@type": "IndividualProduct",
+                "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Red",
+                "sku": "PENCIL_RED",
+                "color": "Red",
+                "description": "A description for the red pencil.",
+                "width": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "0.5",
+                    "unitCode": "CMT"
+                },
+                "height": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "12",
+                    "unitCode": "CMT"
+                },
+                "weight": {
+                    "@context": "http://schema.org",
+                    "@type": "QuantitativeValue",
+                    "value": "10",
+                    "unitCode": "KGM"
+                },
+                "image": [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "ImageObject",
+                        "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_red-800x800.png",
+                        "width": 800,
+                        "height": 800
+                    }
+                ]
+            }
+        }
+    ],
+    "image": [
+        {
+            "@context": "http://schema.org",
+            "@type": "ImageObject",
+            "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
+            "width": 800,
+            "height": 800
+        }
+    ]
+}</script></li>
 <li><p>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</p>
 
 <p><head>
