@@ -264,15 +264,47 @@ Adds Google / Schema JSON-LD markup:
 
 * Schema Type [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually required)
  
-> * URL
-> * Name
-> * Description
-> * SKU
-> * Offers as [schema.org/Offer](http://schema.org/Offer)
-> 	* Availability
-> 	* Price
-> 	* PriceCurrency
-> * Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
+> * Product URL
+> * Product Name
+> * Product Description
+> * Product SKU
+> * Product Color
+> * Product Category
+> * Product Width / Height as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 	* Value
+> 	* UnitCode CMT
+> * Product Length (AdditionalProperty) as [schema.org/PropertyValue](http://schema.org/PropertyValue)
+> 	* PropertyID length
+> 	* Value
+> 	* UnitCode CMT
+> * Product Weight as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 	* Value
+> 	* UnitCode KGM
+> * Product Offers as [schema.org/Offer](http://schema.org/Offer)
+> 	* Variation Price
+> 	* Variation PriceCurrency
+> 	* Variation Availability
+>	* Variation ItemOffered as [schema.org/IndividualProduct](http://schema.org/IndividualProduct)
+>		* Variation URL
+>		* Variation Name
+> 		* Variation SKU
+> 		* Variation Color
+>		* Variation Description
+> 		* Variation Width / Height as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 			* Value
+> 			* UnitCode CMT
+> 		* Variation Length (additionalProperty) as [schema.org/PropertyValue](http://schema.org/PropertyValue)
+> 			* PropertyID length
+> 			* Value
+> 			* UnitCode CMT
+> 		* Variation Weight as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 			* Value
+> 			* UnitCode KGM
+> 		* Variation Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 			* Image URL
+> 			* Image Width
+> 			* Image Height
+> * Product Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
 > 	* RatingValue
 > 	* RatingCount
 > 	* WorstRating

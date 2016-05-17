@@ -370,18 +370,74 @@
 
 <blockquote>
   <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>SKU</li>
-  <li>Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
+  <li>Product URL</li>
+  <li>Product Name</li>
+  <li>Product Description</li>
+  <li>Product SKU</li>
+  <li>Product Color</li>
+  <li>Product Category</li>
+  <li>Product Width / Height as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
   
   <ul>
-  <li>Availability</li>
-  <li>Price</li>
-  <li>PriceCurrency</li>
+  <li>Value</li>
+  <li>UnitCode CMT</li>
   </ul></li>
-  <li>Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
+  <li>Product Length (AdditionalProperty) as <a href="http://schema.org/PropertyValue">schema.org/PropertyValue</a>
+  
+  <ul>
+  <li>PropertyID length</li>
+  <li>Value</li>
+  <li>UnitCode CMT</li>
+  </ul></li>
+  <li>Product Weight as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  
+  <ul>
+  <li>Value</li>
+  <li>UnitCode KGM</li>
+  </ul></li>
+  <li>Product Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
+  
+  <ul>
+  <li>Variation Price</li>
+  <li>Variation PriceCurrency</li>
+  <li>Variation Availability</li>
+  <li>Variation ItemOffered as <a href="http://schema.org/IndividualProduct">schema.org/IndividualProduct</a>
+  
+  <ul>
+  <li>Variation URL</li>
+  <li>Variation Name</li>
+  <li>Variation SKU</li>
+  <li>Variation Color</li>
+  <li>Variation Description</li>
+  <li>Variation Width / Height as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  
+  <ul>
+  <li>Value</li>
+  <li>UnitCode CMT</li>
+  </ul></li>
+  <li>Variation Length (additionalProperty) as <a href="http://schema.org/PropertyValue">schema.org/PropertyValue</a>
+  
+  <ul>
+  <li>PropertyID length</li>
+  <li>Value</li>
+  <li>UnitCode CMT</li>
+  </ul></li>
+  <li>Variation Weight as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  
+  <ul>
+  <li>Value</li>
+  <li>UnitCode KGM</li>
+  </ul></li>
+  <li>Variation Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li>Product Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
   
   <ul>
   <li>RatingValue</li>
