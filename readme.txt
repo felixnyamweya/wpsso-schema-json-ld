@@ -510,6 +510,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.7.1-dev1 (2016/05/17)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for multiple product offers (price, currency, availability), including product variation details (url, name, sku, color, description, width, height, length, weight, and image) (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.7.0-1 (2016/05/14)**
 
 Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http://wpsso.com/2016/05/13/wpsso-update-adds-support-for-co-authors-plus/)
@@ -524,6 +537,10 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 	* None
 
 == Upgrade Notice ==
+
+= 1.7.1-dev1 =
+
+(2016/05/17) Added support for multiple product offers (price, currency, availability), including product variation details (url, name, sku, color, description, width, height, length, weight, and image) (Pro version).
 
 = 1.7.0-1 =
 
