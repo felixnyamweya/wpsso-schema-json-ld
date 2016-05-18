@@ -344,57 +344,55 @@ Adds Google / Schema JSON-LD markup:
 * Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
 
 `
-<head>
-    <script type="application/ld+json">{
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "TechArticle",
+    "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
+    "name": "PHP &ndash; Create an Array of Hours",
+    "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
+    "mainEntityOfPage": {
         "@context": "http://schema.org",
-        "@type": "TechArticle",
-        "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
-        "name": "PHP &ndash; Create an Array of Hours",
-        "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
-        "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
+    },
+    "headline": "PHP &ndash; Create an Array of Hours",
+    "datepublished": "2016-04-15T14:30:02+00:00",
+    "datemodified": "2016-04-15T15:05:58+00:00",
+    "inLanguage": "en_US",
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://surniaulula.com",
+        "name": "Surnia Ulula",
+        "alternateName": "Surnia Ulula Ltd",
+        "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
+        "logo": {
             "@context": "http://schema.org",
-            "@type": "WebPage",
-            "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
-        },
-        "headline": "PHP &ndash; Create an Array of Hours",
-        "datepublished": "2016-04-15T14:30:02+00:00",
-        "datemodified": "2016-04-15T15:05:58+00:00",
-        "inLanguage": "en_US",
-        "publisher": {
+            "@type": "ImageObject",
+            "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/surnia-ulula-text-banner-wide-600x60.png",
+            "width": 600,
+            "height": 60
+        }
+    },
+    "author": [
+        {
             "@context": "http://schema.org",
-            "@type": "Organization",
-            "url": "http://surniaulula.com",
-            "name": "Surnia Ulula",
-            "alternateName": "Surnia Ulula Ltd",
-            "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
-            "logo": {
-                "@context": "http://schema.org",
-                "@type": "ImageObject",
-                "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/surnia-ulula-text-banner-wide-600x60.png",
-                "width": 600,
-                "height": 60
-            }
-        },
-        "author": [
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "url": "http://surniaulula.com/",
-                "name": "JS Morisset",
-                "description": "Sr UNIX SysAdmin with over 25 years experience in small, medium, and large-scale production / e-commerce environments. #wordpress #unix #sysadmin #php #perl"
-            }
-        ],
-        "image": [
-            {
-                "@context": "http://schema.org",
-                "@type": "ImageObject",
-                "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/2014/03/php-logo-1200x1200.png",
-                "width": 1200,
-                "height": 1200
-            }
-        ]
-    }</script>
-</head>
+            "@type": "Person",
+            "url": "http://surniaulula.com/",
+            "name": "JS Morisset",
+            "description": "Sr UNIX SysAdmin with over 25 years experience in small, medium, and large-scale production / e-commerce environments. #wordpress #unix #sysadmin #php #perl"
+        }
+    ],
+    "image": [
+        {
+            "@context": "http://schema.org",
+            "@type": "ImageObject",
+            "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/2014/03/php-logo-1200x1200.png",
+            "width": 1200,
+            "height": 1200
+        }
+    ]
+}</script>
 `
 
 * Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.
@@ -453,6 +451,7 @@ Adds Google / Schema JSON-LD markup:
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Green",
                 "sku": "PENCIL_GREEN",
+                "name": "A Colorful Pencil",
                 "color": "Green",
                 "description": "A description for the green pencil.",
                 "width": {
@@ -495,6 +494,7 @@ Adds Google / Schema JSON-LD markup:
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Blue",
                 "sku": "PENCIL_BLUE",
+                "name": "A Colorful Pencil",
                 "color": "Blue",
                 "description": "A description for the blue pencil.",
                 "width": {
@@ -537,6 +537,7 @@ Adds Google / Schema JSON-LD markup:
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Orange",
                 "sku": "PENCIL_ORANGE",
+                "name": "A Colorful Pencil",
                 "color": "Orange",
                 "description": "A description for the orange pencil.",
                 "width": {
@@ -579,6 +580,7 @@ Adds Google / Schema JSON-LD markup:
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Red",
                 "sku": "PENCIL_RED",
+                "name": "A Colorful Pencil",
                 "color": "Red",
                 "description": "A description for the red pencil.",
                 "width": {
@@ -626,93 +628,91 @@ Adds Google / Schema JSON-LD markup:
 * Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).
 
 `
-<head>
-    <script type="application/ld+json">{
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Restaurant",
+        "url": "http://restaurant.example.com/",
+        "name": "Restaurant Name",
+    "description": "A great family owned restaurant. ;-)",
+    "mainEntityOfPage": {
         "@context": "http://schema.org",
-        "@type": "Restaurant",
-            "url": "http://restaurant.example.com/",
-            "name": "Restaurant Name",
-        "description": "A great family owned restaurant. ;-)",
-        "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://restaurant.example.com/"
+    },
+    "image": [
+        {
             "@context": "http://schema.org",
-            "@type": "WebPage",
-            "@id": "http://restaurant.example.com/"
-        },
-        "image": [
-            {
+            "@type": "ImageObject",
+            "url": "http://restaurant.example.com/wp-content/uploads/restaurant-image.jpg",
+            "width": 800,
+            "height": 663
+        }
+    ],
+    "video": [
+        {
+            "@context": "http://schema.org",
+            "@type": "VideoObject",
+            "url": "https://www.youtube.com/v/xxxxxxxxxxx?version=3&#038;autohide=1",
+            "name": "Restaurant Walkthrough",
+            "description": "See our beautiful dining room.",
+            "fileFormat": "application/x-shockwave-flash",
+            "width": "1280",
+            "height": "720",
+            "uploadDate": "2013-10-03T00:00:00+00:00",
+            "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+            "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx",
+            "thumbnail": {
                 "@context": "http://schema.org",
                 "@type": "ImageObject",
-                "url": "http://restaurant.example.com/wp-content/uploads/restaurant-image.jpg",
-                "width": 800,
-                "height": 663
+                "url": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+                "width": 1280,
+                "height": 720
             }
-        ],
-        "video": [
-            {
-                "@context": "http://schema.org",
-                "@type": "VideoObject",
-                "url": "https://www.youtube.com/v/xxxxxxxxxxx?version=3&#038;autohide=1",
-                "name": "Restaurant Walkthrough",
-                "description": "See our beautiful dining room.",
-                "fileFormat": "application/x-shockwave-flash",
-                "width": "1280",
-                "height": "720",
-                "uploadDate": "2013-10-03T00:00:00+00:00",
-                "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
-                "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx",
-                "thumbnail": {
-                    "@context": "http://schema.org",
-                    "@type": "ImageObject",
-                    "url": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
-                    "width": 1280,
-                    "height": 720
-                }
-            },
-            {
-                "@context": "http://schema.org",
-                "@type": "VideoObject",
-                "url": "https://www.youtube.com/embed/xxxxxxxxxxx",
-                "name": "Restaurant Walkthrough",
-                "description": "See our beautiful dining room.",
-                "fileFormat": "text/html",
-                "width": "1280",
-                "height": "720",
-                "uploadDate": "2013-10-03T00:00:00+00:00",
-                "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
-                "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx"
-            }
-        ]
-        "address": {
-            "@context": "http://schema.org",
-            "@type": "PostalAddress",
-            "streetAddress": "123 A Road",
-            "postOfficeBoxNumber": 7,
-            "addressLocality": "Cityname",
-            "addressRegion": "Somestate",
-            "postalCode": "123456",
-            "addressCountry": "US"
         },
-        "geo": {
+        {
             "@context": "http://schema.org",
-            "@type": "GeoCoordinates",
-            "latitude": 10,
-            "longitude": -10
-        },
-        "openingHoursSpecification": [
-            {
-                "@context": "http://schema.org",
-                "@type": "openingHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "12:00",
-                "closes": "22:00",
-                "validFrom": "2016-05-01",
-                "validThrough": "2016-09-01"
-            }
-        ],
-        "menu": "http://restaurant.example.com/restaurant-menu.html",
-        "acceptsReservations": "true"
-    }</script>
-</head>
+            "@type": "VideoObject",
+            "url": "https://www.youtube.com/embed/xxxxxxxxxxx",
+            "name": "Restaurant Walkthrough",
+            "description": "See our beautiful dining room.",
+            "fileFormat": "text/html",
+            "width": "1280",
+            "height": "720",
+            "uploadDate": "2013-10-03T00:00:00+00:00",
+            "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
+            "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx"
+        }
+    ]
+    "address": {
+        "@context": "http://schema.org",
+        "@type": "PostalAddress",
+        "streetAddress": "123 A Road",
+        "postOfficeBoxNumber": 7,
+        "addressLocality": "Cityname",
+        "addressRegion": "Somestate",
+        "postalCode": "123456",
+        "addressCountry": "US"
+    },
+    "geo": {
+        "@context": "http://schema.org",
+        "@type": "GeoCoordinates",
+        "latitude": 10,
+        "longitude": -10
+    },
+    "openingHoursSpecification": [
+        {
+            "@context": "http://schema.org",
+            "@type": "openingHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "12:00",
+            "closes": "22:00",
+            "validFrom": "2016-05-01",
+            "validThrough": "2016-09-01"
+        }
+    ],
+    "menu": "http://restaurant.example.com/restaurant-menu.html",
+    "acceptsReservations": "true"
+}</script>
 `
 
 = Available in Multiple Languages =
