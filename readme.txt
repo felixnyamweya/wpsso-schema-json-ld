@@ -343,8 +343,8 @@ Adds Google / Schema JSON-LD markup:
 
 * Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
 
-`
-<script type="application/ld+json">{
+<pre><code>
+&lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "TechArticle",
     "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
@@ -392,13 +392,13 @@ Adds Google / Schema JSON-LD markup:
             "height": 1200
         }
     ]
-}</script>
-`
+}&lt;/script&gt;
+</code></pre>
 
 * Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.
 
-`
-<script type="application/ld+json">{
+<pre><code>
+&lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "Product",
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
@@ -622,13 +622,13 @@ Adds Google / Schema JSON-LD markup:
             "height": 800
         }
     ]
-}</script>
-`
+}&lt;/script&gt;
+</code></pre>
 
 * Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).
 
-`
-<script type="application/ld+json">{
+<pre><code>
+&lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "Restaurant",
         "url": "http://restaurant.example.com/",
@@ -712,8 +712,8 @@ Adds Google / Schema JSON-LD markup:
     ],
     "menu": "http://restaurant.example.com/restaurant-menu.html",
     "acceptsReservations": "true"
-}</script>
-`
+}&lt;/script&gt;
+</code></pre>
 
 = Available in Multiple Languages =
 

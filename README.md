@@ -504,14 +504,14 @@
     "@context": "http://schema.org",
     "@type": "TechArticle",
     "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
-    "name": "PHP &ndash; Create an Array of Hours",
+    "name": "PHP – Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
     "mainEntityOfPage": {
         "@context": "http://schema.org",
         "@type": "WebPage",
         "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
     },
-    "headline": "PHP &ndash; Create an Array of Hours",
+    "headline": "PHP – Create an Array of Hours",
     "datepublished": "2016-04-15T14:30:02+00:00",
     "datemodified": "2016-04-15T15:05:58+00:00",
     "inLanguage": "en_US",
