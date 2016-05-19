@@ -498,22 +498,20 @@
 <h4>Examples</h4>
 
 <ul>
-<li>Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.</li>
-</ul>
+<li><p>Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.</p>
 
-<pre class="lang:default decode:true ">
-&lt;script type="application/ld+json"&gt;{
+<script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "TechArticle",
     "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
-    "name": "PHP &ndash; Create an Array of Hours",
+    "name": "PHP – Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
     "mainEntityOfPage": {
         "@context": "http://schema.org",
         "@type": "WebPage",
         "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
     },
-    "headline": "PHP &ndash; Create an Array of Hours",
+    "headline": "PHP – Create an Array of Hours",
     "datepublished": "2016-04-15T14:30:02+00:00",
     "datemodified": "2016-04-15T15:05:58+00:00",
     "inLanguage": "en_US",
@@ -550,15 +548,10 @@
             "height": 1200
         }
     ]
-}&lt;/script&gt;
-</pre>
+}</script></li>
+<li><p>Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.</p>
 
-<ul>
-<li>Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.</li>
-</ul>
-
-<pre class="lang:default decode:true ">
-&lt;script type="application/ld+json"&gt;{
+<script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "Product",
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
@@ -782,15 +775,10 @@
             "height": 800
         }
     ]
-}&lt;/script&gt;
-</pre>
+}</script></li>
+<li><p>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</p>
 
-<ul>
-<li>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</li>
-</ul>
-
-<pre class="lang:default decode:true ">
-&lt;script type="application/ld+json"&gt;{
+<script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "Restaurant",
         "url": "http://restaurant.example.com/",
@@ -874,8 +862,8 @@
     ],
     "menu": "http://restaurant.example.com/restaurant-menu.html",
     "acceptsReservations": "true"
-}&lt;/script&gt;
-</pre>
+}</script></li>
+</ul>
 
 <h4>Available in Multiple Languages</h4>
 
