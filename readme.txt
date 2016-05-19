@@ -343,7 +343,7 @@ Adds Google / Schema JSON-LD markup:
 
 * Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
 
-<pre><code>
+<pre class="lang:default decode:true ">
 &lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "TechArticle",
@@ -393,11 +393,11 @@ Adds Google / Schema JSON-LD markup:
         }
     ]
 }&lt;/script&gt;
-</code></pre>
+</pre>
 
 * Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.
 
-<pre><code>
+<pre class="lang:default decode:true ">
 &lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "Product",
@@ -623,11 +623,11 @@ Adds Google / Schema JSON-LD markup:
         }
     ]
 }&lt;/script&gt;
-</code></pre>
+</pre>
 
 * Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).
 
-<pre><code>
+<pre class="lang:default decode:true ">
 &lt;script type="application/ld+json"&gt;{
     "@context": "http://schema.org",
     "@type": "Restaurant",
@@ -713,7 +713,7 @@ Adds Google / Schema JSON-LD markup:
     "menu": "http://restaurant.example.com/restaurant-menu.html",
     "acceptsReservations": "true"
 }&lt;/script&gt;
-</code></pre>
+</pre>
 
 = Available in Multiple Languages =
 
