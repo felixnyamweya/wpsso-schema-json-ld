@@ -68,7 +68,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
+  <li>Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -151,7 +151,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Article Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required)
+  <li>Article Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -214,7 +214,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Business information)
+<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Business information</strong>)
 
 <ul>
 <li>Schema Type <a href="http://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
@@ -366,7 +366,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (eCommerce plugin usually required)</li>
+<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported eCommerce plugin usually required</strong>)</li>
 </ul>
 
 <blockquote>

@@ -57,7 +57,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
+> * Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -110,7 +110,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Article Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) ([WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required)
+> * Article Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -146,7 +146,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 
-* Schema Type [schema.org/Place](http://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information)
+* Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information**)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](http://schema.org/CivicStructure)
 	* Schema Type [schema.org/Landform](http://schema.org/Landform)
@@ -263,7 +263,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail Height
 
 
-* Schema Type [schema.org/Product](http://schema.org/Product) (eCommerce plugin usually required)
+* Schema Type [schema.org/Product](http://schema.org/Product) (**supported eCommerce plugin usually required**)
  
 > * Product URL
 > * Product Name
