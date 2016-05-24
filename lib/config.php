@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.7.2-dev1',		// plugin version
+					'version' => '1.7.2-dev2',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
@@ -66,6 +66,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'organization' => '(code) Schema Type Organization (organization)',
 								'person' => '(code) Schema Type Person (person)',
 								'place' => '(code) Schema Type Place (place)',
+								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'product' => '(code) Schema Type Product (product)',
 								'website' => '(code) Schema Type Website (website)',
 							),
@@ -145,6 +146,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'tourist.attraction' => 'http://schema.org/TouristAttraction',
 					),
 					'product' => 'http://schema.org/Product',
+					'recipe' => 'http://schema.org/Recipe',
 					'webpage' => 'http://schema.org/WebPage',
 					'website' => 'http://schema.org/WebSite',
 				),

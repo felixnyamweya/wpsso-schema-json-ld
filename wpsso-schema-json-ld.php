@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
  * Tested Up To: 4.5.2
- * Version: 1.7.2-dev1
+ * Version: 1.7.2-dev2
  * 
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
