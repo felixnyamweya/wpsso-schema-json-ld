@@ -769,6 +769,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.7.2-dev1 (2016/05/24)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Added a check in the Article schema for cases where the current page does not have a module object.
+* *Developer Notes*
+	* None
+
 **Version 1.7.1-1 (2016/05/18)**
 
 Official announcement: N/A
@@ -796,6 +809,10 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 	* None
 
 == Upgrade Notice ==
+
+= 1.7.2-dev1 =
+
+(2016/05/24) Added a check in the Article schema for cases where the current page does not have a module object.
 
 = 1.7.1-1 =
 
