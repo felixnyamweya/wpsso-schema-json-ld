@@ -60,6 +60,7 @@
   <li>Author Image Width</li>
   <li>Author Image Height</li>
   </ul></li>
+  <li>Author SameAs</li>
   </ul></li>
   <li>Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -99,12 +100,25 @@
 <p>Adds Google / Schema JSON-LD markup:</p>
 
 <ul>
+<li>Schema Type <a href="http://schema.org/CreativeWork">schema.org/CreativeWork</a>
+
+<ul>
 <li>Schema Type <a href="http://schema.org/Article">schema.org/Article</a>
 
 <ul>
+<li>Schema Type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
-<li>Schema Type <a href="http://schema.org/TechArticle">schema.org/TechArticle</a></li>
+<li>Schema Type <a href="http://schema.org/Report">schema.org/Report</a></li>
 <li>Schema Type <a href="http://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
+<li>Schema Type <a href="http://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a></li>
+<li>Schema Type <a href="http://schema.org/TechArticle">schema.org/TechArticle</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/Book">schema.org/Book</a></li>
+<li>Schema Type <a href="http://schema.org/Blog">schema.org/Blog</a></li>
+<li>Schema Type <a href="http://schema.org/Recipe">schema.org/Recipe</a></li>
+<li>Schema Type <a href="http://schema.org/Review">schema.org/Review</a></li>
+<li>Schema Type <a href="http://schema.org/WebPage">schema.org/WebPage</a></li>
+<li>Schema Type <a href="http://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
 </ul>
 
@@ -112,7 +126,7 @@
   <ul>
   <li>URL</li>
   <li>Name (Title)</li>
-  <li>Headline</li>
+  <li>Headline (for Article Sub-Types)</li>
   <li>Description</li>
   <li>DatePublished</li>
   <li>DateModified</li>
@@ -129,6 +143,7 @@
   <li>Author Image Width</li>
   <li>Author Image Height</li>
   </ul></li>
+  <li>Author SameAs</li>
   </ul></li>
   <li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
   
@@ -143,15 +158,16 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
+  <li>Publisher SameAs</li>
   </ul></li>
-  <li>Article Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>CreativeWork Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Article Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  <li>CreativeWork Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -191,6 +207,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
+  <li>Organization SameAs</li>
   </ul>
 </blockquote>
 
@@ -210,6 +227,7 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
+  <li>Person SameAs</li>
   </ul>
 </blockquote>
 

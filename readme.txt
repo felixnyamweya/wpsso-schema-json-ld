@@ -53,6 +53,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
+> 	* Author SameAs
 > * Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
@@ -79,14 +80,24 @@ Adds Google / Schema JSON-LD markup:
 
 Adds Google / Schema JSON-LD markup:
 
-* Schema Type [schema.org/Article](http://schema.org/Article)
-	* Schema Type [schema.org/NewsArticle](http://schema.org/NewsArticle)
-	* Schema Type [schema.org/TechArticle](http://schema.org/TechArticle)
-	* Schema Type [schema.org/ScholarlyArticle](http://schema.org/ScholarlyArticle)
+* Schema Type [schema.org/CreativeWork](http://schema.org/CreativeWork)
+	* Schema Type [schema.org/Article](http://schema.org/Article)
+		* Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
+		* Schema Type [schema.org/NewsArticle](http://schema.org/NewsArticle)
+		* Schema Type [schema.org/Report](http://schema.org/Report)
+		* Schema Type [schema.org/ScholarlyArticle](http://schema.org/ScholarlyArticle)
+		* Schema Type [schema.org/SocialMediaPosting](http://schema.org/SocialMediaPosting)
+		* Schema Type [schema.org/TechArticle](http://schema.org/TechArticle)
+	* Schema Type [schema.org/Book](http://schema.org/Book)
+	* Schema Type [schema.org/Blog](http://schema.org/Blog)
+	* Schema Type [schema.org/Recipe](http://schema.org/Recipe)
+	* Schema Type [schema.org/Review](http://schema.org/Review)
+	* Schema Type [schema.org/WebPage](http://schema.org/WebPage)
+	* Schema Type [schema.org/WebSite](http://schema.org/WebSite)
  
 > * URL
 > * Name (Title)
-> * Headline
+> * Headline (for Article Sub-Types)
 > * Description
 > * DatePublished
 > * DateModified
@@ -98,6 +109,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
+> 	* Author SameAs
 > * Publisher as [schema.org/Organization](http://schema.org/Organization)
 > 	* URL
 > 	* Name
@@ -106,11 +118,12 @@ Adds Google / Schema JSON-LD markup:
 > 		* Image URL
 > 		* Image Width
 > 		* Image Height
-> * Article Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Publisher SameAs
+> * CreativeWork Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Article Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * CreativeWork Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -135,6 +148,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Organization SameAs
 
 * Schema Type [schema.org/Person](http://schema.org/Person)
  
@@ -145,6 +159,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
+> * Person SameAs
 
 * Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information**)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
@@ -776,12 +791,11 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Moved the schema.org/BlogPosting and schema.org/WebPage support into a new head/webpage.php library file (Free version).
 	* Added support for the schema.org/CreativeWork top-level type, which includes the date published / modified, author (and contributors), image(s), video(s), and language (Pro version).
 * *Bugfixes*
 	* Added a check in the Article schema for cases where the current page does not have a module object (Pro version).
 * *Developer Notes*
-	* None
+	* Moved the schema.org/BlogPosting and schema.org/WebPage support into a new head/webpage.php library file (Free version).
 
 **Version 1.7.1-1 (2016/05/18)**
 
@@ -813,7 +827,7 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 = 1.7.2-dev3 =
 
-(2016/05/25) Added a check in the Article schema for cases where the current page does not have a module object (Pro version). Added support for the schema.org/Recipe type with basic schema properties (Pro version).
+(2016/05/25) Added a check in the Article schema for cases where the current page does not have a module object (Pro version). Added support for the schema.org/CreativeWork top-level type (Pro version).
 
 = 1.7.1-1 =
 
