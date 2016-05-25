@@ -32,6 +32,8 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 
 **WPSSO JSON Free / Basic Features**
 
+Extends the features of either the Free or Pro versions of WPSSO.
+
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
 Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/)).
@@ -77,6 +79,8 @@ Adds Google / Schema JSON-LD markup:
 = Quick List of Features (Continued) =
 
 **WPSSO JSON Pro / Power-User Features**
+
+Extends the features of WPSSO Pro (all WPSSO Pro extensions require a licensed and active WPSSO Pro plugin).
 
 Adds Google / Schema JSON-LD markup:
 
@@ -278,7 +282,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail Height
 
 
-* Schema Type [schema.org/Product](http://schema.org/Product) (**supported eCommerce plugin usually required**)
+* Schema Type [schema.org/Product](http://schema.org/Product) (**supported eCommerce plugin required**)
  
 > * Product URL
 > * Product Name
@@ -737,7 +741,7 @@ Adds Google / Schema JSON-LD markup:
 * French (France)
 * More to come...
 
-= Extends the WPSSO Social Plugin =
+= Extends the WPSSO Plugin =
 
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.
 

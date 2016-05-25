@@ -30,6 +30,8 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
+<p>Extends the features of either the Free or Pro versions of WPSSO.</p>
+
 <p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
 
 <p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a>).</p>
@@ -96,6 +98,8 @@
 <h4>Quick List of Features (Continued)</h4>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
+
+<p>Extends the features of WPSSO Pro (all WPSSO Pro extensions require a licensed and active WPSSO Pro plugin).</p>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
@@ -384,7 +388,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported eCommerce plugin usually required</strong>)</li>
+<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported eCommerce plugin required</strong>)</li>
 </ul>
 
 <blockquote>
@@ -904,7 +908,7 @@
 <li>More to come...</li>
 </ul>
 
-<h4>Extends the WPSSO Social Plugin</h4>
+<h4>Extends the WPSSO Plugin</h4>
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
 
