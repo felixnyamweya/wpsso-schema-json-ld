@@ -12,7 +12,7 @@
  * Description: WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
  * Tested Up To: 4.5.2
- * Version: 1.7.2-dev2
+ * Version: 1.7.2-dev3
  * 
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		private static $instance = null;
 		private static $wpsso_short = 'WPSSO';
 		private static $wpsso_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $wpsso_min_version = '3.31.1-1';
+		private static $wpsso_min_version = '3.32.1-dev3';
 		private static $wpsso_has_min_ver = true;
 
 		public static function &get_instance() {
@@ -100,10 +100,15 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$this->p->is_avail['json'] = true;
 
-			foreach ( array( 'head', 'prop' ) as $sub ) {
-				foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib']['pro'][$sub] as $id_key => $label ) {
-					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-					$this->p->is_avail[$sub][$id] = true;
+			foreach ( array( 'gpl', 'pro' ) as $lib ) {
+				foreach ( array( 'head', 'prop' ) as $sub ) {
+					if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
+						! is_array( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) )
+							continue;
+					foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] as $id_key => $label ) {
+						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
+						$this->p->is_avail[$sub][$id] = true;
+					}
 				}
 			}
 		}
