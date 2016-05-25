@@ -80,7 +80,7 @@ Adds Google / Schema JSON-LD markup:
 
 **WPSSO JSON Pro / Power-User Features**
 
-Extends the features of WPSSO Pro (all WPSSO Pro extensions require a licensed and active WPSSO Pro plugin).
+Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).
 
 Adds Google / Schema JSON-LD markup:
 
