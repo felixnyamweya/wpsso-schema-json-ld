@@ -769,14 +769,15 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
-**Version 1.7.2-dev2 (2016/05/24)**
+**Version 1.7.2-dev3 (2016/05/25)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for the schema.org/Recipe type, including support for the date published / modified, author (and contributors), image(s), video(s), and language (Pro version).
+	* Moved the schema.org/BlogPosting and schema.org/WebPage support into a new head/webpage.php library file (Free version).
+	* Added support for the schema.org/CreativeWork top-level type, which includes the date published / modified, author (and contributors), image(s), video(s), and language (Pro version).
 * *Bugfixes*
 	* Added a check in the Article schema for cases where the current page does not have a module object (Pro version).
 * *Developer Notes*
@@ -810,9 +811,9 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
-= 1.7.2-dev2 =
+= 1.7.2-dev3 =
 
-(2016/05/24) Added a check in the Article schema for cases where the current page does not have a module object (Pro version). Added support for the schema.org/Recipe type with basic schema properties (Pro version).
+(2016/05/25) Added a check in the Article schema for cases where the current page does not have a module object (Pro version). Added support for the schema.org/Recipe type with basic schema properties (Pro version).
 
 = 1.7.1-1 =
 
