@@ -36,7 +36,7 @@ Extends the features of either the Free or Pro versions of WPSSO.
 
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
-Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/)).
+Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/) to retrieve the co-author information).
 
 Adds Google / Schema JSON-LD markup:
 
