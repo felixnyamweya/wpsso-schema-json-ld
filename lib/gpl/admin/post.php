@@ -49,8 +49,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_select( 'schema_type',
-						$schema_types, 'schema_type', '', true, true ),
+					'content' => $form->get_no_select( 'schema_type', $schema_types,
+						'schema_type', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
 				),
 				'schema_title' => array(
 					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
