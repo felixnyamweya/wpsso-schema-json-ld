@@ -788,7 +788,7 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
-**Version 1.7.3-dev1 (2016/05/28)**
+**Version 1.7.3-1 (2016/05/29)**
 
 Official announcement: N/A
 
@@ -842,9 +842,9 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
-= 1.7.3-dev1 =
+= 1.7.3-1 =
 
-(2016/05/28) Added image and video properties to the Organization markup (Pro version).
+(2016/05/29) Added image and video properties to the Organization markup (Pro version).
 
 = 1.7.2-1 =
 
