@@ -788,6 +788,19 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
+**Version 1.7.4-dev1 (2016/06/01)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated some option labels and help texts.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.7.3-1 (2016/05/29)**
 
 Official announcement: N/A
@@ -842,19 +855,11 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
+= 1.7.4-dev1 =
+
+(2016/06/01) Updated a few option labels and help texts.
+
 = 1.7.3-1 =
 
 (2016/05/29) Added image and video properties to the Organization markup (Pro version).
-
-= 1.7.2-1 =
-
-(2016/05/27) Added a check in the Article schema for cases where the current page does not have a module object (Pro version). Added support for the schema.org/CreativeWork top-level type (Pro version).
-
-= 1.7.1-1 =
-
-(2016/05/18) Added support for multiple product offers (price, currency, availability), including product variation details (url, name, sku, color, description, width, height, length, weight, and image) (Pro version).
-
-= 1.7.0-1 =
-
-(2016/05/14) Categorized the display of Free / Pro features in the sidebar metabox. Added contributor markup for Co-Authors Plus authors and guest authors (requires WPSSO Pro).
 
