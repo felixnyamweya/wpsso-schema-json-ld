@@ -8,9 +8,9 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'WpssoJsonSubmenuSchemajsonld' ) && class_exists( 'WpssoAdmin' ) ) {
+if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdmin' ) ) {
 
-	class WpssoJsonSubmenuSchemajsonld extends WpssoAdmin {
+	class WpssoJsonSubmenuSchemaJsonLd extends WpssoAdmin {
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
 			$this->p =& $plugin;
@@ -50,11 +50,11 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemajsonld' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_input( 'schema_alt_name', 'wide' ).'</td>';
 
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( '<a href="https://developers.google.com/structured-data/customize/logos">'.
-						_x( 'Business Logo Image URL', 'option label', 'wpsso' ).'</a>', null, 'schema_logo_url' ).
+						_x( 'Business / Organization Logo URL', 'option label', 'wpsso' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
 					$table_rows['schema_banner_url'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Business Banner (600x60) Image URL',
+					$this->form->get_th_html( _x( 'Business Banner 600x60px Image URL',
 						'option label', 'wpsso' ), null, 'schema_banner_url' ).
 					'<td>'.$this->form->get_input( 'schema_banner_url', 'wide' ).'</td>';
 

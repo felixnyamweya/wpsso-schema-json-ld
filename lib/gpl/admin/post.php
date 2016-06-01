@@ -31,14 +31,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'article' => 'schema_type_article schema_type_article_news schema_type_article_tech',
 			);
 
-			// move the schema description down
-			unset ( $table_rows['schema_desc'] );
+			foreach ( array( 'schema_desc', 'subsection_schema' ) as $key )
+				if ( isset( $table_rows[$key] ) )
+					unset ( $table_rows[$key] );
 
 			$form_rows = array(
 				'subsection_schema' => array(
 					'td_class' => 'subsection',
 					'header' => 'h4',
-					'label' => _x( 'Google Structured Data / Schema JSON-LD', 'metabox title', 'wpsso-schema-json-ld' )
+					'label' => _x( 'Google Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
 				),
 				'schema_is_main' => array(
 					'label' => _x( 'Main Entity of Page', 'option label', 'wpsso-schema-json-ld' ),
