@@ -857,7 +857,7 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 = 1.7.4-dev1 =
 
-(2016/06/01) Updated a few option labels and help texts.
+(2016/06/01) Updated some option labels and help texts.
 
 = 1.7.3-1 =
 
