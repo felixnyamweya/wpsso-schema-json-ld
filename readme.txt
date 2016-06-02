@@ -788,7 +788,7 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 
 = Changelog / Release Notes =
 
-**Version 1.7.4-dev1 (2016/06/01)**
+**Version 1.7.4-1 (2016/06/02)**
 
 Official announcement: N/A
 
@@ -855,9 +855,9 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
-= 1.7.4-dev1 =
+= 1.7.4-1 =
 
-(2016/06/01) Updated some option labels and help texts.
+(2016/06/02) Updated some option labels and help texts.
 
 = 1.7.3-1 =
 
