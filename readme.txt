@@ -144,6 +144,28 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail Height
 
 * Schema Type [schema.org/Organization](http://schema.org/Organization)
+	* Schema Type [schema.org/Airline](http://schema.org/Airline)
+	* Schema Type [schema.org/Corporation](http://schema.org/Corporation)
+	* Schema Type [schema.org/EducationalOrganization](http://schema.org/EducationalOrganization)
+		* Schema Type [schema.org/CollegeOrUniversity](http://schema.org/CollegeOrUniversity)
+		* Schema Type [schema.org/ElementarySchool](http://schema.org/ElementarySchool)
+		* Schema Type [schema.org/MiddleSchool](http://schema.org/MiddleSchool)
+		* Schema Type [schema.org/Preschool](http://schema.org/Preschool)
+		* Schema Type [schema.org/School](http://schema.org/School)
+	* Schema Type [schema.org/GovernmentOrganization](http://schema.org/GovernmentOrganization)
+	* Schema Type [schema.org/MedicalOrganization](http://schema.org/MedicalOrganization)
+		* Schema Type [schema.org/Dentist](http://schema.org/Dentist)
+		* Schema Type [schema.org/Hospital](http://schema.org/Hospital)
+		* Schema Type [schema.org/Pharmacy](http://schema.org/Pharmacy)
+		* Schema Type [schema.org/Physician](http://schema.org/Physician)
+	* Schema Type [schema.org/NGO](http://schema.org/NGO)
+	* Schema Type [schema.org/PerformingGroup](http://schema.org/PerformingGroup)
+		* Schema Type [schema.org/DanceGroup](http://schema.org/DanceGroup)
+		* Schema Type [schema.org/MusicGroup](http://schema.org/MusicGroup)
+		* Schema Type [schema.org/PerformingGroup](http://schema.org/PerformingGroup)
+		* Schema Type [schema.org/TheaterGroup](http://schema.org/TheaterGroup)
+	* Schema Type [schema.org/SportsOrganization](http://schema.org/SportsOrganization)
+		* Schema Type [schema.org/SportsTeam](http://schema.org/SportsTeam)
  
 > * URL
 > * Name
@@ -153,6 +175,25 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 > * Organization SameAs
+> * Organization Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
+> * Organization Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> 	* Video URL
+> 	* Video Name (Title)
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUrl
+> 	* Video EmbedUrl
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
 
 * Schema Type [schema.org/Person](http://schema.org/Person)
  
@@ -164,6 +205,10 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 > * Person SameAs
+> * Person Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
 
 * Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information**)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
@@ -796,18 +841,6 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Updated some option labels and help texts.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.7.3-1 (2016/05/29)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
 	* Added image and video properties to the Organization markup (Pro version).
 * *Bugfixes*
 	* None

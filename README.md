@@ -196,7 +196,44 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Organization">schema.org/Organization</a></li>
+<li>Schema Type <a href="http://schema.org/Organization">schema.org/Organization</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/Airline">schema.org/Airline</a></li>
+<li>Schema Type <a href="http://schema.org/Corporation">schema.org/Corporation</a></li>
+<li>Schema Type <a href="http://schema.org/EducationalOrganization">schema.org/EducationalOrganization</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/CollegeOrUniversity">schema.org/CollegeOrUniversity</a></li>
+<li>Schema Type <a href="http://schema.org/ElementarySchool">schema.org/ElementarySchool</a></li>
+<li>Schema Type <a href="http://schema.org/MiddleSchool">schema.org/MiddleSchool</a></li>
+<li>Schema Type <a href="http://schema.org/Preschool">schema.org/Preschool</a></li>
+<li>Schema Type <a href="http://schema.org/School">schema.org/School</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/GovernmentOrganization">schema.org/GovernmentOrganization</a></li>
+<li>Schema Type <a href="http://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/Dentist">schema.org/Dentist</a></li>
+<li>Schema Type <a href="http://schema.org/Hospital">schema.org/Hospital</a></li>
+<li>Schema Type <a href="http://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
+<li>Schema Type <a href="http://schema.org/Physician">schema.org/Physician</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/NGO">schema.org/NGO</a></li>
+<li>Schema Type <a href="http://schema.org/PerformingGroup">schema.org/PerformingGroup</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/DanceGroup">schema.org/DanceGroup</a></li>
+<li>Schema Type <a href="http://schema.org/MusicGroup">schema.org/MusicGroup</a></li>
+<li>Schema Type <a href="http://schema.org/PerformingGroup">schema.org/PerformingGroup</a></li>
+<li>Schema Type <a href="http://schema.org/TheaterGroup">schema.org/TheaterGroup</a></li>
+</ul></li>
+<li>Schema Type <a href="http://schema.org/SportsOrganization">schema.org/SportsOrganization</a>
+
+<ul>
+<li>Schema Type <a href="http://schema.org/SportsTeam">schema.org/SportsTeam</a></li>
+</ul></li>
+</ul></li>
 </ul>
 
 <blockquote>
@@ -212,6 +249,34 @@
   <li>Image Height</li>
   </ul></li>
   <li>Organization SameAs</li>
+  <li>Organization Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  <li>Organization Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name (Title)</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUrl</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
+  </ul></li>
+  </ul></li>
   </ul>
 </blockquote>
 
@@ -232,6 +297,13 @@
   <li>Image Height</li>
   </ul></li>
   <li>Person SameAs</li>
+  <li>Person Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
   </ul>
 </blockquote>
 
