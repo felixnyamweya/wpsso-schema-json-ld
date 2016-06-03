@@ -156,10 +156,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				foreach ( $libs as $id_key => $label ) {
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id );
-					$off = $this->p->is_avail[$sub][$id] ? 'rec' : 'off';
-					$features[$label] = array(
-						'status' => class_exists( $classname ) ? 'on' : $off,
-					);
+					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}
 			return $this->filter_common_status_features( $features, $lca, $info );
