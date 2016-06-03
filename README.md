@@ -62,7 +62,20 @@
   <li>Author Image Width</li>
   <li>Author Image Height</li>
   </ul></li>
-  <li>Author SameAs</li>
+  <li>Author SameAs
+  
+  <ul>
+  <li>Facebook URL</li>
+  <li>Google+ URL</li>
+  <li>Instagram URL</li>
+  <li>LinkedIn URL</li>
+  <li>MySpace URL</li>
+  <li>Pinterest URL</li>
+  <li>Tumblr URL</li>
+  <li>Twitter URL</li>
+  <li>YouTube URL</li>
+  <li>Website URL</li>
+  </ul></li>
   </ul></li>
   <li>Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -147,7 +160,20 @@
   <li>Author Image Width</li>
   <li>Author Image Height</li>
   </ul></li>
-  <li>Author SameAs</li>
+  <li>Author SameAs
+  
+  <ul>
+  <li>Facebook URL</li>
+  <li>Google+ URL</li>
+  <li>Instagram URL</li>
+  <li>LinkedIn URL</li>
+  <li>MySpace URL</li>
+  <li>Pinterest URL</li>
+  <li>Tumblr URL</li>
+  <li>Twitter URL</li>
+  <li>YouTube URL</li>
+  <li>Website URL</li>
+  </ul></li>
   </ul></li>
   <li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
   
@@ -162,7 +188,17 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Publisher SameAs</li>
+  <li>Publisher SameAs
+  
+  <ul>
+  <li>Facebook Business Page URL</li>
+  <li>Google+ Business Page URL</li>
+  <li>Instagram Business URL</li>
+  <li>LinkedIn Company Page URL</li>
+  <li>MySpace Business Page URL</li>
+  <li>Pinterest Company Page URL</li>
+  <li>Twitter Business Page URL</li>
+  </ul></li>
   </ul></li>
   <li>CreativeWork Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
@@ -248,7 +284,17 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Organization SameAs</li>
+  <li>Organization SameAs
+  
+  <ul>
+  <li>Facebook Business Page URL</li>
+  <li>Google+ Business Page URL</li>
+  <li>Instagram Business URL</li>
+  <li>LinkedIn Company Page URL</li>
+  <li>MySpace Business Page URL</li>
+  <li>Pinterest Company Page URL</li>
+  <li>Twitter Business Page URL</li>
+  </ul></li>
   <li>Organization Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
@@ -296,13 +342,19 @@
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Person SameAs</li>
-  <li>Person Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Person SameAs
   
   <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
+  <li>Facebook URL</li>
+  <li>Google+ URL</li>
+  <li>Instagram URL</li>
+  <li>LinkedIn URL</li>
+  <li>MySpace URL</li>
+  <li>Pinterest URL</li>
+  <li>Tumblr URL</li>
+  <li>Twitter URL</li>
+  <li>YouTube URL</li>
+  <li>Website URL</li>
   </ul></li>
   </ul>
 </blockquote>

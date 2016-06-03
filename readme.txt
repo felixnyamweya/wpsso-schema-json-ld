@@ -56,6 +56,16 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image Width
 > 		* Author Image Height
 > 	* Author SameAs
+>		* Facebook URL
+>		* Google+ URL
+>		* Instagram URL
+>		* LinkedIn URL
+>		* MySpace URL
+>		* Pinterest URL
+>		* Tumblr URL
+>		* Twitter URL
+>		* YouTube URL
+>		* Website URL
 > * Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
@@ -114,6 +124,16 @@ Adds Google / Schema JSON-LD markup:
 > 		* Author Image Width
 > 		* Author Image Height
 > 	* Author SameAs
+>		* Facebook URL
+>		* Google+ URL
+>		* Instagram URL
+>		* LinkedIn URL
+>		* MySpace URL
+>		* Pinterest URL
+>		* Tumblr URL
+>		* Twitter URL
+>		* YouTube URL
+>		* Website URL
 > * Publisher as [schema.org/Organization](http://schema.org/Organization)
 > 	* URL
 > 	* Name
@@ -123,6 +143,13 @@ Adds Google / Schema JSON-LD markup:
 > 		* Image Width
 > 		* Image Height
 > 	* Publisher SameAs
+>		* Facebook Business Page URL
+>		* Google+ Business Page URL
+>		* Instagram Business URL
+>		* LinkedIn Company Page URL
+>		* MySpace Business Page URL
+>		* Pinterest Company Page URL
+>		* Twitter Business Page URL
 > * CreativeWork Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
@@ -175,6 +202,13 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 > * Organization SameAs
+>	* Facebook Business Page URL
+>	* Google+ Business Page URL
+>	* Instagram Business URL
+>	* LinkedIn Company Page URL
+>	* MySpace Business Page URL
+>	* Pinterest Company Page URL
+>	* Twitter Business Page URL
 > * Organization Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
@@ -205,10 +239,16 @@ Adds Google / Schema JSON-LD markup:
 > 	* Image Width
 > 	* Image Height
 > * Person SameAs
-> * Person Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
+>	* Facebook URL
+>	* Google+ URL
+>	* Instagram URL
+>	* LinkedIn URL
+>	* MySpace URL
+>	* Pinterest URL
+>	* Tumblr URL
+>	* Twitter URL
+>	* YouTube URL
+>	* Website URL
 
 * Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information**)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
