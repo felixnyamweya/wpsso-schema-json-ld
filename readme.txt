@@ -1,5 +1,5 @@
-=== WPSSO Schema JSON-LD - Complete Schema / Rich Snippet Markup for Google and Pinterest ===
-Plugin Name: WPSSO Schema JSON-LD (WPSSO JSON)
+=== WPSSO Schema JSON-LD Markup - Complete Schema / Rich Snippet for Google and Pinterest ===
+Plugin Name: WPSSO Schema JSON-LD Markup (WPSSO JSON)
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
@@ -26,7 +26,7 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Pla
 </ul>
 </p>
 
-<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes <a href="http://json-ld.org/">Schema JSON-LD markup</a> in webpage headers, which is independent of any existing markup in theme templates.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes <a href="http://json-ld.org/">Schema JSON-LD markup</a> in webpage headers, which is independent of any existing markup in theme templates.</p>
 
 = Quick List of Features =
 
@@ -832,7 +832,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 You can use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO, but the [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) version requires the use of the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) version as well (for its Video and Product information, along with more advanced features).
 
-Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (includes a *No Risk 30 Day Refund Policy*).
+Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (includes a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
@@ -856,7 +856,7 @@ Purchase the [WPSSO Schema JSON-LD (WPSSO JSON) Pro](http://wpsso.com/extend/plu
 == Screenshots ==
 
 01. WPSSO Social Settings on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; The Social Settings metabox allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. Google's Structured Data Testing Tool &mdash; Results for an example TechArticle webpage showing the WPSSO Schema JSON-LD markup.
+02. Google's Structured Data Testing Tool &mdash; Results for an example TechArticle webpage showing WPSSO Schema JSON-LD Markup.
 
 == Changelog ==
 

@@ -1,7 +1,7 @@
-<h1>WPSSO Schema JSON-LD</h1><h3>Complete Schema / Rich Snippet Markup for Google and Pinterest</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Complete Schema / Rich Snippet for Google and Pinterest</h3>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD (WPSSO JSON)</td></tr>
+<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.7.4-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
@@ -24,7 +24,7 @@
 </ul>
 </p>
 
-<p>WPSSO Schema JSON-LD (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes <a href="http://json-ld.org/">Schema JSON-LD markup</a> in webpage headers, which is independent of any existing markup in theme templates.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes <a href="http://json-ld.org/">Schema JSON-LD markup</a> in webpage headers, which is independent of any existing markup in theme templates.</p>
 
 <h4>Quick List of Features</h4>
 
@@ -1038,7 +1038,7 @@
 
 <p>You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> version requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> version as well (for its Video and Product information, along with more advanced features).</p>
 
-<p>Purchase the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD (WPSSO JSON) Pro</a> extension (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p>Purchase the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro</a> extension (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 
 
 <h2>Installation</h2>
