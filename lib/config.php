@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'version' => '1.7.4-1',		// plugin version
 					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
-					'name' => 'WPSSO Schema JSON-LD (WPSSO JSON)',
+					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
 					'desc' => 'WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.',
 					'slug' => 'wpsso-schema-json-ld',
 					'base' => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
-							'schema-json-ld' => 'Schema JSON-LD',
+							'schema-json-ld' => 'Schema Markup',
 						),
 						'gpl' => array(
 							'admin' => array(

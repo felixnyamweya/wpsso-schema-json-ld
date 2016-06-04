@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WPSSO Schema JSON-LD (WPSSO JSON)
+ * Plugin Name: WPSSO Schema JSON-LD Markup (WPSSO JSON)
  * Plugin Slug: wpsso-schema-json-ld
  * Text Domain: wpsso-schema-json-ld
  * Domain Path: /languages
