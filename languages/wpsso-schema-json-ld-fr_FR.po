@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD (WPSSO JSON) 1.7.4-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-06-02 07:09-0400\n"
-"PO-Revision-Date: 2016-06-02 07:11-0400\n"
+"POT-Creation-Date: 2016-06-04 08:24-0400\n"
+"PO-Revision-Date: 2016-06-04 08:24-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,8 +17,8 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
-msgid "Schema JSON-LD"
-msgstr "Schéma JSON-LD"
+msgid "Schema Markup"
+msgstr "Balises Schéma"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
@@ -148,8 +148,8 @@ msgid "The %1$s extension version %2$s requires the use of %3$s version %4$s or 
 msgstr "L'extension %1$s version %2$s requiert l'utilisation de %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Schema JSON-LD (WPSSO JSON)"
-msgstr "WPSSO Schema JSON-LD (WPSSO JSON)"
+msgid "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
+msgstr "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
 
 #. Plugin URI of the plugin/theme
 msgid "http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
