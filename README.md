@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Complete Schema / Rich Snippet for Google and Pinterest</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Rich Snippet Markup for Google / Pinterest</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>

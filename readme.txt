@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Complete Schema / Rich Snippet for Google and Pinterest ===
+=== WPSSO Schema JSON-LD Markup - Schema / Rich Snippet Markup for Google / Pinterest ===
 Plugin Name: WPSSO Schema JSON-LD Markup (WPSSO JSON)
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
