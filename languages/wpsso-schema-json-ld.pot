@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.7.4-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.7.5-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -94,52 +94,52 @@ msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:53
+#: lib/submenu/schema-json-ld.php:54
 msgctxt "option label"
-msgid "Business / Organization Logo URL"
+msgid "Website Logo Image URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:57
+#: lib/submenu/schema-json-ld.php:58
 msgctxt "option label"
-msgid "Business Banner 600x60px Image URL"
+msgid "Website Banner (600x60px) URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:61
+#: lib/submenu/schema-json-ld.php:62
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:66
+#: lib/submenu/schema-json-ld.php:67
 msgctxt "option comment"
 msgid "<em>video preview images are enabled</em> (and included first)"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:69
+#: lib/submenu/schema-json-ld.php:70
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:74
+#: lib/submenu/schema-json-ld.php:75
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:77
+#: lib/submenu/schema-json-ld.php:78
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:80
+#: lib/submenu/schema-json-ld.php:81
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:92
+#: lib/submenu/schema-json-ld.php:93
 msgctxt "option label"
 msgid "Default Item Type for Home Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:97
+#: lib/submenu/schema-json-ld.php:98
 msgctxt "option label"
 msgid "Default Item Type by Post Type"
 msgstr ""

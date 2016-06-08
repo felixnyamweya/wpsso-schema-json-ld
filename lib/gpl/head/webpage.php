@@ -51,7 +51,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * 	datepublished
 			 * 	datemodified
 			 */
-			WpssoSchema::add_data_itemprop_from_og( $ret, $mt_og, array(
+			WpssoSchema::add_data_itemprop_from_assoc( $ret, $mt_og, array(
 				'datepublished' => 'article:published_time',
 				'datemodified' => 'article:modified_time',
 			) );
@@ -66,7 +66,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *	publisher as http://schema.org/Organization
 			 */
-			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, 'schema_logo_url', false );	// $list_element = false
+			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, false, 'org_logo_url', false );	// $list_element = false
 
 			/*
 			 * Property:
