@@ -51,11 +51,11 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
 						'<a href="https://developers.google.com/structured-data/customize/logos">'.
-						_x( 'Website Logo Image URL', 'option label', 'wpsso' ).'</a>', null, 'schema_logo_url' ).
+						_x( 'Organization Logo Image URL', 'option label', 'wpsso' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
 					$table_rows['schema_banner_url'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Banner (600x60px) URL',
+					$this->form->get_th_html( _x( 'Organization Banner (600x60px) URL',
 						'option label', 'wpsso' ), null, 'schema_banner_url' ).
 					'<td>'.$this->form->get_input( 'schema_banner_url', 'wide' ).'</td>';
 

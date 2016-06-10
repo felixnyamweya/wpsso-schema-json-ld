@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			// javascript hide/show classes for schema type rows
 			$tr_class = array(
-				'article' => 'schema_type_article schema_type_article_news schema_type_article_tech',
+				'article' => $this->p->schema->get_schema_type_css_classes( 'article' ),
 			);
 
 			foreach ( array( 'schema_desc', 'subsection_schema' ) as $key )
@@ -68,6 +68,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len,
 						'...', $mod ), 'wide' ),
 				),
+				'schema_pub_org_id' => array(),	// placeholder
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
@@ -76,6 +77,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'...', $mod ), '', '', $desc_max_len ),
 				),
 			);
+
+			if ( ! empty( $this->p->is_avail['org'] ) ) {
+
+				$form_rows['schema_pub_org_id'] = array(
+					'tr_class' => 'schema_type '.$tr_class['article'],
+					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_select( 'schema_pub_org_id', 
+						array( 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) ), 'long_name' ),
+				);
+
+			} elseif ( isset( $this->p->cf['plugin']['wpssoorg'] ) ) {
+
+			} else unset( $form_rows['schema_pub_org_id'] );	// just in case
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), ucfirst( $mod['post_type'] ) );
