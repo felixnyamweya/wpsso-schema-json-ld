@@ -872,7 +872,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.7.5-dev1 (2016/06/08)**
+**Version 1.7.5-dev2 (2016/06/10)**
 
 Official announcement: N/A
 
@@ -940,9 +940,9 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
-= 1.7.5-dev1 =
+= 1.7.5-dev2 =
 
-(2016/06/08) Updated the add_single_organization_data() method arguments for WPSSO v3.32.4-1.
+(2016/06/10) Updated the add_single_organization_data() method arguments for WPSSO v3.32.4-1.
 
 = 1.7.4-1 =
 
