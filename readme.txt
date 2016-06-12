@@ -874,14 +874,14 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.7.5-dev2 (2016/06/10)**
+**Version 1.7.5-dev3 (2016/06/12)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -942,9 +942,9 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 == Upgrade Notice ==
 
-= 1.7.5-dev2 =
+= 1.7.5-dev3 =
 
-(2016/06/10) Updated the add_single_organization_data() method arguments for WPSSO v3.32.4-1.
+(2016/06/12) Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
 
 = 1.7.4-1 =
 
