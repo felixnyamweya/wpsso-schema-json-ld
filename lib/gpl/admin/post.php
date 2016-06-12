@@ -25,6 +25,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
+				'wpsso-schema-json-ld' ), ucfirst( $mod['post_type'] ) );
+
+			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
+				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
+
+				$info = $this->p->cf['plugin']['wpssoorg'];
+				$org_req_msg = ' <em><a href="'.$info['url']['download'].'" target="_blank">'.
+					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
+						$info['short'] ).'</a></em>';
+			} else $org_req_msg = '';
+
+			$org_names = array( 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) );
 
 			// javascript hide/show classes for schema type rows
 			$tr_class = array(
@@ -68,7 +81,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len,
 						'...', $mod ), 'wide' ),
 				),
-				'schema_pub_org_id' => array(),	// placeholder
+				'schema_pub_org_id' => array(
+					'tr_class' => 'schema_type '.$tr_class['article'],
+					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_select( 'schema_pub_org_id', $org_names, 'long_name' ).$org_req_msg,
+				),
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
@@ -77,24 +96,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'...', $mod ), '', '', $desc_max_len ),
 				),
 			);
-
-			if ( ! empty( $this->p->is_avail['org'] ) ) {
-
-				$form_rows['schema_pub_org_id'] = array(
-					'tr_class' => 'schema_type '.$tr_class['article'],
-					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
-					'no_auto_draft' => true,
-					'content' => $form->get_no_select( 'schema_pub_org_id', 
-						array( 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) ), 'long_name' ),
-				);
-
-			} elseif ( isset( $this->p->cf['plugin']['wpssoorg'] ) ) {
-
-			} else unset( $form_rows['schema_pub_org_id'] );	// just in case
-
-			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
-				'wpsso-schema-json-ld' ), ucfirst( $mod['post_type'] ) );
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
 
