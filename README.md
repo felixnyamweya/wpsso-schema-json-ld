@@ -1037,7 +1037,7 @@
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
 
-<p>You can use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO, but the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> version requires the use of the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> version as well (for its Video and Product information, along with more advanced features).</p>
+<p>Use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO. The <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro</a> extension (along with all WPSSO Pro extensions) requires the <a href="http://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> plugin as well.</p>
 
 <p>Purchase the <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro</a> extension (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 

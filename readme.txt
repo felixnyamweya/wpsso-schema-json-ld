@@ -831,7 +831,7 @@ Adds Google / Schema JSON-LD markup:
 
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.
 
-You can use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO, but the [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) version requires the use of the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) version as well (for its Video and Product information, along with more advanced features).
+Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO. The [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (along with all WPSSO Pro extensions) requires the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) plugin as well.
 
 Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (includes a *No Risk 30 Day Refund Policy*).
 
