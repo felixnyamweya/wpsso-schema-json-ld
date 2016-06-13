@@ -37,16 +37,19 @@
 
 <p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
 
-<p>Adds an additional "Schema Markup" settings page to the SSO menu:
-    * Website Alternate Name
-    * Organization Logo Image URL
-    * Organization Banner (600x60px) URL
-    * Maximum Images to Include
-    * Schema Image Dimensions
-    * Maximum Description Length
-    * Author / Person Name Format
-    * Default Item Type for Home Page
-    * Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).</p>
+<p>Adds an additional "Schema Markup" settings page to the SSO menu:</p>
+
+<ul>
+<li>Website Alternate Name</li>
+<li>Organization Logo Image URL</li>
+<li>Organization Banner (600x60px) URL</li>
+<li>Maximum Images to Include</li>
+<li>Schema Image Dimensions</li>
+<li>Maximum Description Length</li>
+<li>Author / Person Name Format</li>
+<li>Default Item Type for Home Page</li>
+<li>Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
+</ul>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
@@ -126,13 +129,16 @@
 
 <p>Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).</p>
 
-<p>Adds additional custom options in the Social Settings metabox:
-    * Main Entity of Page
-    * Schema Item Type
-    * Schema Item Name
-    * Article Headline
-    * Article Publisher
-    * Schema Description</p>
+<p>Adds additional custom options in the Social Settings metabox:</p>
+
+<ul>
+<li>Main Entity of Page</li>
+<li>Schema Item Type</li>
+<li>Schema Item Name</li>
+<li>Article Headline</li>
+<li>Article Publisher</li>
+<li>Schema Description</li>
+</ul>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
