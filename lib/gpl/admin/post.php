@@ -78,8 +78,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Article Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len,
-						'...', $mod ), 'wide' ),
+					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len, '...', $mod ), 'wide' ),
 				),
 				'schema_pub_org_id' => array(
 					'tr_class' => 'schema_type '.$tr_class['article'],

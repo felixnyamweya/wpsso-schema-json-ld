@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.7.5-dev3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.7.5-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -54,13 +54,13 @@ msgstr ""
 msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
-#: lib/gpl/admin/post.php:36 lib/pro/admin/post.php:47
+#: lib/gpl/admin/post.php:36 lib/pro/admin/post.php:48
 msgctxt "option comment"
 msgid "%s extension required"
 msgstr ""
 
-#: lib/gpl/admin/post.php:40 lib/pro/admin/post.php:49
-#: lib/pro/admin/post.php:53
+#: lib/gpl/admin/post.php:40 lib/pro/admin/post.php:46
+#: lib/pro/admin/post.php:52
 msgctxt "option value"
 msgid "Website"
 msgstr ""
@@ -90,12 +90,12 @@ msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:86 lib/pro/admin/post.php:101
+#: lib/gpl/admin/post.php:85 lib/pro/admin/post.php:101
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr ""
 
-#: lib/gpl/admin/post.php:92 lib/pro/admin/post.php:108
+#: lib/gpl/admin/post.php:91 lib/pro/admin/post.php:108
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
