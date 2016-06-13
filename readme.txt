@@ -37,7 +37,18 @@ Extends the features of either the Free or Pro versions of WPSSO.
 
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
-Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/) to retrieve the co-author information).
+Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/) to retrieve co-author information).
+
+Adds an additional "Schema Markup" settings page to the SSO menu:
+	* Website Alternate Name
+	* Organization Logo Image URL
+	* Organization Banner (600x60px) URL
+	* Maximum Images to Include
+	* Schema Image Dimensions
+	* Maximum Description Length
+	* Author / Person Name Format
+	* Default Item Type for Home Page
+	* Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).
 
 Adds Google / Schema JSON-LD markup:
 
@@ -92,6 +103,14 @@ Adds Google / Schema JSON-LD markup:
 **WPSSO JSON Pro / Power-User Features**
 
 Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).
+
+Adds additional custom options in the Social Settings metabox:
+	* Main Entity of Page
+	* Schema Item Type
+	* Schema Item Name
+	* Article Headline
+	* Article Publisher
+	* Schema Description
 
 Adds Google / Schema JSON-LD markup:
 

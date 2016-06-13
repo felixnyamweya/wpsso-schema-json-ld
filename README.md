@@ -35,7 +35,18 @@
 
 <p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
 
-<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a> to retrieve the co-author information).</p>
+<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
+
+<p>Adds an additional "Schema Markup" settings page to the SSO menu:
+    * Website Alternate Name
+    * Organization Logo Image URL
+    * Organization Banner (600x60px) URL
+    * Maximum Images to Include
+    * Schema Image Dimensions
+    * Maximum Description Length
+    * Author / Person Name Format
+    * Default Item Type for Home Page
+    * Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).</p>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
@@ -114,6 +125,14 @@
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
 <p>Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).</p>
+
+<p>Adds additional custom options in the Social Settings metabox:
+    * Main Entity of Page
+    * Schema Item Type
+    * Schema Item Name
+    * Article Headline
+    * Article Publisher
+    * Schema Description</p>
 
 <p>Adds Google / Schema JSON-LD markup:</p>
 
