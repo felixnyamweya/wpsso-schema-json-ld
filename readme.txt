@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.5.2
-Stable Tag: 1.7.4-1
+Stable Tag: 1.7.5-1
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Organization, Place, Product, etc.) for Google and Pinterest.
 
@@ -895,7 +895,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.7.5-1 (2016/06/13)**
+**Version 1.7.5-1 (2016/06/14)**
 
 Official announcement: N/A
 
@@ -965,7 +965,7 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 
 = 1.7.5-1 =
 
-(2016/06/13) Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
+(2016/06/14) Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
 
 = 1.7.4-1 =
 
