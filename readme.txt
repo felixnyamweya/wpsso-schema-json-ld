@@ -895,6 +895,19 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
+**Version 1.7.6-dev1 (2016/06/15)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added basic support for the http://schema.org/Event type and its sub-types (including event image and video media).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.7.5-1 (2016/06/14)**
 
 Official announcement: N/A
@@ -962,6 +975,10 @@ Official announcement: [WPSSO Update – Adds Support for Co-Authors Plus](http:
 	* None
 
 == Upgrade Notice ==
+
+= 1.7.6-dev1 =
+
+(2016/06/15) Added basic support for the http://schema.org/Event type and its sub-types (including event image and video media).
 
 = 1.7.5-1 =
 
