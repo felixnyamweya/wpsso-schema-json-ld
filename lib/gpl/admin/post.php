@@ -67,6 +67,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_select( 'schema_type', $schema_types,
 						'long_name', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
 				),
+				/*
+				 * Schema Article
+				 */
 				'schema_pub_org_id' => array(
 					'tr_class' => 'schema_type '.$tr_class['article'],
 					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
@@ -81,6 +84,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len, '...', $mod ), 'wide' ),
 				),
+				/*
+				 * Schema Event
+				 */
 				'schema_event_org_id' => array(
 					'tr_class' => 'schema_type '.$tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
@@ -88,6 +94,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'no_auto_draft' => true,
 					'content' => $form->get_no_select( 'schema_event_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
+				/*
+				 * All other Schema types
+				 */
 				'schema_title' => array(
 					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
