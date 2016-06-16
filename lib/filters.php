@@ -123,6 +123,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title' => '',
 				'schema_headline' => '',
 				'schema_pub_org_id' => 'site',
+				'schema_event_org_id' => 'none',
 				'schema_desc' => '',
 			) );
 		}
