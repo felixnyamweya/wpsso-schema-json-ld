@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					continue;
 				foreach ( $libs as $id_key => $label ) {
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id );
+					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id, false );	// $underscore = false
 					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}

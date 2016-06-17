@@ -87,13 +87,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Event
 				 */
-				'schema_event_org_id' => array(
+				'schema_event_org_id' => empty( $this->p->is_avail['event']['*'] ) ? array(
 					'tr_class' => 'schema_type '.$tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_org_id', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_select( 'schema_event_org_id', $org_names, 'long_name' ).$org_req_msg,
-				),
+				) : array(),
 				/*
 				 * All other Schema types
 				 */
