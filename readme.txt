@@ -876,7 +876,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 == Screenshots ==
 
-01. WPSSO Social Settings on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; The Social Settings metabox allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
+01. Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
 02. Google's Structured Data Testing Tool &mdash; Results for an example TechArticle webpage showing WPSSO Schema JSON-LD Markup.
 
 == Changelog ==
