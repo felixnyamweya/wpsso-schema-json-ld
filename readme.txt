@@ -16,14 +16,13 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Org
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
-<ul>
-<li><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></li>
-<li><strong>Corrects incomplete / innacurate Schema markup in theme templates.</strong></li>
-<li><strong>Choose a different Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></li>
-<li><strong>WooCommerce support available &mdash; adds all variations in your Product markup!</strong></li>
-</ul>
-</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></p>
+
+<p><strong>Corrects incomplete / innacurate Schema markup in theme templates.</strong></p>
+
+<p><strong>Choose a different Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for your <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> webpages.</strong></p>
+
+<p><strong>WooCommerce support available &mdash; adds all product variations to your Schema Product markup!</strong></p>
 
 <p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, publisher, place, product, etc.) for Google Search, Pinterest, and others.</p>
 
