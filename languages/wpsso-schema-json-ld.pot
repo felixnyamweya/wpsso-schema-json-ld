@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.7.6-dev2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.8.0-dev3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -65,42 +65,37 @@ msgctxt "option value"
 msgid "Website"
 msgstr ""
 
-#: lib/gpl/admin/post.php:56 lib/pro/admin/post.php:71
+#: lib/gpl/admin/post.php:55 lib/pro/admin/post.php:70
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema Markup"
 msgstr ""
 
-#: lib/gpl/admin/post.php:59 lib/pro/admin/post.php:74
+#: lib/gpl/admin/post.php:58 lib/pro/admin/post.php:73
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr ""
 
-#: lib/gpl/admin/post.php:64 lib/pro/admin/post.php:79
+#: lib/gpl/admin/post.php:63 lib/pro/admin/post.php:78
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:75 lib/pro/admin/post.php:90
+#: lib/gpl/admin/post.php:74 lib/pro/admin/post.php:89
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr ""
 
-#: lib/gpl/admin/post.php:82 lib/pro/admin/post.php:98
+#: lib/gpl/admin/post.php:81 lib/pro/admin/post.php:97
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:92 lib/pro/admin/post.php:109
-msgctxt "option label"
-msgid "Event Organizer"
-msgstr ""
-
-#: lib/gpl/admin/post.php:101 lib/pro/admin/post.php:119
+#: lib/gpl/admin/post.php:90 lib/pro/admin/post.php:107
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:108 lib/pro/admin/post.php:126
+#: lib/gpl/admin/post.php:97 lib/pro/admin/post.php:114
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
