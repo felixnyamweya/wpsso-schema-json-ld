@@ -37,6 +37,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->util->add_plugin_filters( $this, array(
 					'get_md_defaults' => 2,				// $def_opts, $mod
 					'pub_google_rows' => 2,				// $table_rows, $form
+					'messages_tooltip_meta' => 2,			// tooltip messages for post social settings
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_gpl_features' => 3,			// $features, $lca, $info
@@ -123,6 +124,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title' => '',
 				'schema_headline' => '',
 				'schema_pub_org_id' => 'site',
+				'schema_event_org_id' => 'none',
+				'schema_event_perf_id' => 'none',
 				'schema_desc' => '',
 			) );
 		}
@@ -154,6 +157,24 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 			return $this->filter_common_status_features( $features, $lca, $info );
+		}
+
+		public function filter_messages_tooltip_meta( $text, $idx ) {
+			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 )
+				return $text;
+
+			switch ( $idx ) {
+				case 'tooltip-meta-schema_pub_org_id':
+					$text = __( 'Select a publisher for the Schema Article item type and its sub-types (NewsArticle, TechArticle, etc).', 'nextgen-facebook' );
+				 	break;
+				case 'tooltip-meta-schema_event_org_id':
+					$text = __( 'Select an organizer for the Schema Event item type and its sub-types (Festival, MusicEvent, etc).', 'nextgen-facebook' );
+				 	break;
+				case 'tooltip-meta-schema_event_perf_id':
+					$text = __( 'Select a performer for the Schema Event item type and its sub-types (Festival, MusicEvent, etc).', 'nextgen-facebook' );
+				 	break;
+			}
+			return $text;
 		}
 
 		// hooked to 'wpssojson_status_pro_features'
