@@ -11,7 +11,7 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
- * Tested Up To: 4.5.2
+ * Tested Up To: 4.5.3
  * Version: 1.8.0-rc1
  * 
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
