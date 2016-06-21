@@ -257,6 +257,114 @@
 </blockquote>
 
 <ul>
+<li>Schema Type <a href="http://schema.org/Event">schema.org/Event</a> (<strong>supported Event / Calendar plugin required</strong>)
+
+<ul>
+<li>Schema Type <a href="http://schema.org/BusinessEvent">schema.org/BusinessEvent</a></li>
+<li>Schema Type <a href="http://schema.org/ChildrensEvent">schema.org/ChildrensEvent</a></li>
+<li>Schema Type <a href="http://schema.org/DanceEvent">schema.org/DanceEvent</a></li>
+<li>Schema Type <a href="http://schema.org/DeliveryEvent">schema.org/DeliveryEvent</a></li>
+<li>Schema Type <a href="http://schema.org/EducationEvent">schema.org/EducationEvent</a></li>
+<li>Schema Type <a href="http://schema.org/ExhibitionEvent">schema.org/ExhibitionEvent</a></li>
+<li>Schema Type <a href="http://schema.org/Festival">schema.org/Festival</a></li>
+<li>Schema Type <a href="http://schema.org/FoodEvent">schema.org/FoodEvent</a></li>
+<li>Schema Type <a href="http://schema.org/LiteraryEvent">schema.org/LiteraryEvent</a></li>
+<li>Schema Type <a href="http://schema.org/MusicEvent">schema.org/MusicEvent</a></li>
+<li>Schema Type <a href="http://schema.org/PublicationEvent">schema.org/PublicationEvent</a></li>
+<li>Schema Type <a href="http://schema.org/SaleEvent">schema.org/SaleEvent</a></li>
+<li>Schema Type <a href="http://schema.org/ScreeningEvent">schema.org/ScreeningEvent</a></li>
+<li>Schema Type <a href="http://schema.org/SocialEvent">schema.org/SocialEvent</a></li>
+<li>Schema Type <a href="http://schema.org/SportsEvent">schema.org/SportsEvent</a></li>
+<li>Schema Type <a href="http://schema.org/TheaterEvent">schema.org/TheaterEvent</a></li>
+<li>Schema Type <a href="http://schema.org/VisualArtsEvent">schema.org/VisualArtsEvent</a></li>
+</ul></li>
+</ul>
+
+<blockquote>
+  <ul>
+  <li>URL</li>
+  <li>Name (Title)</li>
+  <li>Description</li>
+  <li>StartDate</li>
+  <li>EndDate</li>
+  <li>Organizer as <a href="http://schema.org/Person">schema.org/Person</a> or <a href="http://schema.org/Organization">schema.org/Organization</a>
+  
+  <ul>
+  <li>URL</li>
+  <li>Name</li>
+  <li>Description</li>
+  <li>Organization Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  <li>Organization SameAs
+  
+  <ul>
+  <li>Facebook Business Page URL</li>
+  <li>Google+ Business Page URL</li>
+  <li>Instagram Business URL</li>
+  <li>LinkedIn Company Page URL</li>
+  <li>MySpace Business Page URL</li>
+  <li>Pinterest Company Page URL</li>
+  <li>Twitter Business Page URL</li>
+  </ul></li>
+  </ul></li>
+  <li>Event Location as <a href="http://schema.org/Place">schema.org/Place</a>
+  
+  <ul>
+  <li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+  
+  <ul>
+  <li>streetAddress</li>
+  <li>postOfficeBoxNumber</li>
+  <li>addressLocality</li>
+  <li>addressRegion</li>
+  <li>postalCode</li>
+  <li>addressCountry</li>
+  </ul></li>
+  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+  
+  <ul>
+  <li>elevation</li>
+  <li>latitude</li>
+  <li>longitude</li>
+  </ul></li>
+  </ul></li>
+  <li>Event Image(s) as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Image URL</li>
+  <li>Image Width</li>
+  <li>Image Height</li>
+  </ul></li>
+  <li>Event Video(s) as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  
+  <ul>
+  <li>Video URL</li>
+  <li>Video Name (Title)</li>
+  <li>Video Description</li>
+  <li>Video FileFormat</li>
+  <li>Video Width</li>
+  <li>Video Height</li>
+  <li>Video Duration</li>
+  <li>Video UploadDate</li>
+  <li>Video ThumbnailUrl</li>
+  <li>Video EmbedUrl</li>
+  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  
+  <ul>
+  <li>Thumbnail URL</li>
+  <li>Thumbnail Width</li>
+  <li>Thumbnail Height</li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</blockquote>
+
+<ul>
 <li>Schema Type <a href="http://schema.org/Organization">schema.org/Organization</a>
 
 <ul>
@@ -385,7 +493,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Business information</strong>)
+<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Location information</strong>)
 
 <ul>
 <li>Schema Type <a href="http://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
@@ -480,14 +588,7 @@
   <li>Description</li>
   <li>AcceptsReservations for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
   <li>Menu (URL) for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
-  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
-  
-  <ul>
-  <li>elevation</li>
-  <li>latitude</li>
-  <li>longitude</li>
-  </ul></li>
-  <li>Place Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+  <li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
   
   <ul>
   <li>streetAddress</li>
@@ -496,6 +597,13 @@
   <li>addressRegion</li>
   <li>postalCode</li>
   <li>addressCountry</li>
+  </ul></li>
+  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+  
+  <ul>
+  <li>elevation</li>
+  <li>latitude</li>
+  <li>longitude</li>
   </ul></li>
   <li>Opening Hours Specification as <a href="http://schema.org/openingHoursSpecification">schema.org/openingHoursSpecification</a>
   
@@ -537,7 +645,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported eCommerce plugin required</strong>)</li>
+<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported e-Commerce plugin required</strong>)</li>
 </ul>
 
 <blockquote>
@@ -958,7 +1066,7 @@
 </pre>
 
 <ul>
-<li>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</li>
+<li>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Location information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</li>
 </ul>
 
 <pre>

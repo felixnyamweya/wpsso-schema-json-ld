@@ -191,6 +191,78 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
+* Schema Type [schema.org/Event](http://schema.org/Event) (**supported Event / Calendar plugin required**)
+	* Schema Type [schema.org/BusinessEvent](http://schema.org/BusinessEvent)
+	* Schema Type [schema.org/ChildrensEvent](http://schema.org/ChildrensEvent)
+	* Schema Type [schema.org/DanceEvent](http://schema.org/DanceEvent)
+	* Schema Type [schema.org/DeliveryEvent](http://schema.org/DeliveryEvent)
+	* Schema Type [schema.org/EducationEvent](http://schema.org/EducationEvent)
+	* Schema Type [schema.org/ExhibitionEvent](http://schema.org/ExhibitionEvent)
+	* Schema Type [schema.org/Festival](http://schema.org/Festival)
+	* Schema Type [schema.org/FoodEvent](http://schema.org/FoodEvent)
+	* Schema Type [schema.org/LiteraryEvent](http://schema.org/LiteraryEvent)
+	* Schema Type [schema.org/MusicEvent](http://schema.org/MusicEvent)
+	* Schema Type [schema.org/PublicationEvent](http://schema.org/PublicationEvent)
+	* Schema Type [schema.org/SaleEvent](http://schema.org/SaleEvent)
+	* Schema Type [schema.org/ScreeningEvent](http://schema.org/ScreeningEvent)
+	* Schema Type [schema.org/SocialEvent](http://schema.org/SocialEvent)
+	* Schema Type [schema.org/SportsEvent](http://schema.org/SportsEvent)
+	* Schema Type [schema.org/TheaterEvent](http://schema.org/TheaterEvent)
+	* Schema Type [schema.org/VisualArtsEvent](http://schema.org/VisualArtsEvent)
+
+> * URL
+> * Name (Title)
+> * Description
+> * StartDate
+> * EndDate
+> * Organizer as [schema.org/Person](http://schema.org/Person) or [schema.org/Organization](http://schema.org/Organization)
+> 	* URL
+> 	* Name
+> 	* Description
+> 	* Organization Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Image URL
+> 		* Image Width
+> 		* Image Height
+> 	* Organization SameAs
+>		* Facebook Business Page URL
+>		* Google+ Business Page URL
+>		* Instagram Business URL
+>		* LinkedIn Company Page URL
+>		* MySpace Business Page URL
+>		* Pinterest Company Page URL
+>		* Twitter Business Page URL
+> * Event Location as [schema.org/Place](http://schema.org/Place)
+> 	* Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+> 		* streetAddress
+> 		* postOfficeBoxNumber
+> 		* addressLocality
+> 		* addressRegion
+> 		* postalCode
+> 		* addressCountry
+> 	* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+> 		* elevation
+> 		* latitude
+> 		* longitude
+> * Event Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Image URL
+> 	* Image Width
+> 	* Image Height
+> * Event Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> 	* Video URL
+> 	* Video Name (Title)
+> 	* Video Description
+> 	* Video FileFormat
+> 	* Video Width
+> 	* Video Height
+> 	* Video Duration
+> 	* Video UploadDate
+> 	* Video ThumbnailUrl
+> 	* Video EmbedUrl
+> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Thumbnail URL
+> 		* Thumbnail Width
+> 		* Thumbnail Height
+
 * Schema Type [schema.org/Organization](http://schema.org/Organization)
 	* Schema Type [schema.org/Airline](http://schema.org/Airline)
 	* Schema Type [schema.org/Corporation](http://schema.org/Corporation)
@@ -271,7 +343,7 @@ Adds Google / Schema JSON-LD markup:
 >	* YouTube URL
 >	* Website URL
 
-* Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Business information**)
+* Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information**)
 	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](http://schema.org/CivicStructure)
 	* Schema Type [schema.org/Landform](http://schema.org/Landform)
@@ -351,17 +423,17 @@ Adds Google / Schema JSON-LD markup:
 > * Description
 > * AcceptsReservations for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
 > * Menu (URL) for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
-> * Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
-> 	* elevation
-> 	* latitude
-> 	* longitude
-> * Place Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+> * Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
 > 	* streetAddress
 > 	* postOfficeBoxNumber
 > 	* addressLocality
 > 	* addressRegion
 > 	* postalCode
 > 	* addressCountry
+> * Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+> 	* elevation
+> 	* latitude
+> 	* longitude
 > * Opening Hours Specification as [schema.org/openingHoursSpecification](http://schema.org/openingHoursSpecification)
 > 	* opens
 > 	* closes
@@ -387,8 +459,7 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
-
-* Schema Type [schema.org/Product](http://schema.org/Product) (**supported eCommerce plugin required**)
+* Schema Type [schema.org/Product](http://schema.org/Product) (**supported e-Commerce plugin required**)
  
 > * Product URL
 > * Product Name
@@ -751,7 +822,7 @@ Adds Google / Schema JSON-LD markup:
 }&lt;/script&gt;
 </pre>
 
-* Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Business information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).
+* Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension to manage the Place / Location information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
