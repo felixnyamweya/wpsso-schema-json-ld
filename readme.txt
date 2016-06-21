@@ -965,7 +965,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.8.0-rc1 (2016/06/21)**
+**Version 1.8.0-1 (2016/06/21)**
 
 Official announcement: N/A
 
@@ -994,7 +994,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.8.0-rc1 =
+= 1.8.0-1 =
 
 (2016/06/21) Added support for the http://schema.org/Event type and its sub-types (including event image and video media).
 
