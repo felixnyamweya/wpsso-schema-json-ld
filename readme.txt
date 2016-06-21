@@ -9,7 +9,7 @@ Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, art
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.5.2
+Tested Up To: 4.5.3
 Stable Tag: 1.7.5-1
 
 WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Organization, Place, Product, etc.) for Google and Pinterest.
