@@ -126,7 +126,7 @@
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
-<p>Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).</p>
+<p>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</p>
 
 <p>Adds additional custom options in the Social Settings metabox:</p>
 

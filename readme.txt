@@ -102,7 +102,7 @@ Adds Google / Schema JSON-LD markup:
 
 **WPSSO JSON Pro / Power-User Features**
 
-Extends the features of WPSSO Pro (requires a licensed and active WPSSO Pro plugin).
+Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
 
 Adds additional custom options in the Social Settings metabox:
 
@@ -965,6 +965,19 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
+**Version 1.8.1-dev1 (2016/06/28)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
+
 **Version 1.8.0-1 (2016/06/21)**
 
 Official announcement: N/A
@@ -994,11 +1007,11 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
+= 1.8.1-dev1 =
+
+(2016/06/28) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
+
 = 1.8.0-1 =
 
 (2016/06/21) Added support for the http://schema.org/Event type and its sub-types (including event image and video media).
-
-= 1.7.5-1 =
-
-(2016/06/14) Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
 
