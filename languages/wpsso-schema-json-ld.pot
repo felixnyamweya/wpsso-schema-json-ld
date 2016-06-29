@@ -22,7 +22,7 @@ msgstr ""
 msgctxt "plugin description"
 msgid ""
 "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, "
-"Place, Product, etc.) for Google and Pinterest."
+"Organization, Place, Product, etc.) for Google and Pinterest."
 msgstr ""
 
 #: lib/filters.php:112
