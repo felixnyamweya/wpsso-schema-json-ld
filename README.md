@@ -775,9 +775,7 @@
 
 <h4>Examples</h4>
 
-<ul>
-<li>Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.</li>
-</ul>
+<p>Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.</p>
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
@@ -831,9 +829,7 @@
 }&lt;/script&gt;
 </pre>
 
-<ul>
-<li>Example WPSSO JSON Pro markup for a WooCommerce product, including all its variations.</li>
-</ul>
+<p>Example WPSSO JSON Pro markup for a WooCommerce product, including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</p>
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
@@ -1063,9 +1059,7 @@
 }&lt;/script&gt;
 </pre>
 
-<ul>
-<li>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Location information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</li>
-</ul>
+<p>Example WPSSO JSON Pro markup for a Restaurant using the <a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension to manage the Place / Location information (address, geo coordinates, business hours (daily and seasonal), restaurant menu URL, and accepts reservation values).</p>
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
