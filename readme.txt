@@ -965,7 +965,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.8.1-dev1 (2016/06/28)**
+**Version 1.8.1-b1 (2016/06/29)**
 
 Official announcement: N/A
 
@@ -1007,9 +1007,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.8.1-dev1 =
+= 1.8.1-b1 =
 
-(2016/06/28) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
+(2016/06/29) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
 
 = 1.8.0-1 =
 
