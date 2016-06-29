@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Offers complete Schema, Structured Data and Rich Snippet markup.</strong></p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Offers <em>complete</em> Schema, Structured Data and Rich Snippet markup.</strong></p>
 
 <p><strong>Corrects incomplete / innacurate Schema markup in theme templates.</strong></p>
 
