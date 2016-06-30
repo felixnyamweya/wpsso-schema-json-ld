@@ -4,7 +4,7 @@ Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
 Contributors: jsmoriss
-Donate Link: https://wpsso.com/
+Donate Link: https://wpsso.com/?utm_source=wpssojson-readme-donate
 Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, pinterest, google, seo, news, amp, co-authors, co-authors plus
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
