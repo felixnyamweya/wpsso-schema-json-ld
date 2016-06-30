@@ -920,9 +920,9 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
 
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.
 
-Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO. The [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (along with all WPSSO Pro extensions) requires the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/) plugin as well.
+Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO. The [WPSSO JSON Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends) extension (along with all WPSSO Pro extensions) requires the [WPSSO Pro](http://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends) plugin as well.
 
-Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/) extension (includes a *No Risk 30 Day Refund Policy*).
+[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (includes a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
@@ -963,7 +963,7 @@ Purchase the [WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro](http://wpsso.com/ext
 
 = Changelog / Release Notes =
 
-**Version 1.8.1-1 (2016/06/29)**
+**Version 1.8.1-1 (2016/06/30)**
 
 Official announcement: N/A
 
@@ -1007,7 +1007,7 @@ Official announcement: N/A
 
 = 1.8.1-1 =
 
-(2016/06/29) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
+(2016/06/30) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
 
 = 1.8.0-1 =
 
