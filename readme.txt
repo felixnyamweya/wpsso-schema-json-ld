@@ -990,26 +990,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.7.5-1 (2016/06/14)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a new "Article Publisher" option in the Social Settings metabox for posts and pages (WPSSO ORG extension required).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Updated the `add_single_organization_data()` method arguments for WPSSO v3.32.4-1.
-
 == Upgrade Notice ==
 
 = 1.8.1-1 =
 
 (2016/06/30) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
-
-= 1.8.0-1 =
-
-(2016/06/21) Added support for the http://schema.org/Event type and its sub-types (including event image and video media).
 
