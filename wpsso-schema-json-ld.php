@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		private static $instance = null;
 		private static $wpsso_short = 'WPSSO';
 		private static $wpsso_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $wpsso_min_version = '3.33.2-1';
+		private static $wpsso_min_version = '3.33.3-dev1';
 		private static $wpsso_has_min_ver = true;
 
 		public static function &get_instance() {
