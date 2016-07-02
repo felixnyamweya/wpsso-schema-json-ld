@@ -5,7 +5,7 @@ Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
 Contributors: jsmoriss
 Donate Link: https://wpsso.com/?utm_source=wpssojson-readme-donate
-Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, pinterest, google, seo, news, amp, co-authors, co-authors plus
+Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, event, review, rating, pinterest, google, seo, news, amp, co-authors, co-authors plus
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
@@ -188,6 +188,12 @@ Adds Google / Schema JSON-LD markup:
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
+> * CreativeWork ItemReviewed as Any Schema Type
+> 	* Item URL
+> * CreativeWork ReviewRating as [schema.org/Rating](http://schema.org/Rating)
+> 	* RatingValue
+> 	* WorstRating
+> 	* BestRating
 
 * Schema Type [schema.org/Event](http://schema.org/Event) (**supported Event / Calendar plugin required**)
 	* Schema Type [schema.org/BusinessEvent](http://schema.org/BusinessEvent)
