@@ -169,15 +169,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_get_md_defaults( $def_opts, $mod ) {
 
-			// allow 3rd-party plugins / themes to provide default values
-			$def_schema_event = apply_filters( $this->p->cf['lca'].'_get_md_defaults_schema_event', array(
-				'schema_review_item_type' => 'none',	// Reviewed Item Type
-				'schema_review_item_url' => '',		// Reviewed Item URL
-				'schema_review_rating' => '0.0',	// Reviewed Item Rating
-				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)
-				'schema_review_rating_to' => '5',	// Reviewed Item Rating (to)
-			$mod ) );
-
 			return array_merge( $def_opts, array(
 				'schema_is_main' => 1,
 				'schema_type' => $this->p->schema->get_head_item_type( $mod, true, false ),	// $return_id = true, $use_mod_opts = false
@@ -187,7 +178,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_headline' => '',		// Article Headline
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
-			), $def_schema_event );
+				'schema_review_item_type' => 'none',	// Reviewed Item Type
+				'schema_review_item_url' => '',		// Reviewed Item URL
+				'schema_review_rating' => '0.0',	// Reviewed Item Rating
+				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)
+				'schema_review_rating_to' => '5',	// Reviewed Item Rating (to)
+			) );
 		}
 
 		public function filter_pub_google_rows( $table_rows, $form ) {
