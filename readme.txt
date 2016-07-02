@@ -963,7 +963,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.9.0-dev1 (TBD)**
+**Version 1.9.0-dev1 (2016/07/02)**
 
 Official announcement: N/A
 
@@ -1010,7 +1010,7 @@ Official announcement: N/A
 
 = 1.9.0-dev1 =
 
-(TBD) Added new options to the Social Settings metabox for the http://schema.org/Review type.
+(2016/07/02) Added new options to the Social Settings metabox for the http://schema.org/Review type.
 
 = 1.8.1-1 =
 
