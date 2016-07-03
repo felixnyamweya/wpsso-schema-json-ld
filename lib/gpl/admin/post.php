@@ -135,8 +135,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Reviewed Item Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ).
-						' from '.$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ).
-						' to '.$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
+						' '._x( 'from', 'option comment', 'wpsso-schema-json-ld' ).' '.
+							$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ).
+						' '._x( 'to', 'option comment', 'wpsso-schema-json-ld' ).' '.
+							$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
 				),
 			);
 

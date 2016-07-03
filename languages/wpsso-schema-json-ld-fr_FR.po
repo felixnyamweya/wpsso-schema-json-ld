@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.9.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-07-02 09:03-0400\n"
-"PO-Revision-Date: 2016-07-02 09:04-0400\n"
+"POT-Creation-Date: 2016-07-03 09:54-0400\n"
+"PO-Revision-Date: 2016-07-03 09:59-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -41,41 +41,41 @@ msgstr "Si ce Schéma est une classification importante pour votre contenu, vous
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:228
+#: lib/filters.php:224
 msgid "Check this option if the Schema markup describes the main content (aka \"main entity\") of this webpage."
 msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
 
-#: lib/filters.php:231
+#: lib/filters.php:227
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr ""
 
-#: lib/filters.php:234
+#: lib/filters.php:230
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:237
+#: lib/filters.php:233
 msgid "A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types."
-msgstr ""
+msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d’élément Schéma Article et ses sous-types (NewsArticle, TechArticle, etc.)."
 
-#: lib/filters.php:240
+#: lib/filters.php:236
 msgid "Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:243
+#: lib/filters.php:239
 msgid "Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:246
+#: lib/filters.php:242
 msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr ""
 
-#: lib/filters.php:249
-msgid "A URL for the item being reviwed."
-msgstr ""
+#: lib/filters.php:245
+msgid "A URL for the item being reviewed."
+msgstr "Un URL pour l'article évalué."
 
-#: lib/filters.php:252
+#: lib/filters.php:248
 msgid "A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5)."
-msgstr ""
+msgstr "Une note pour l'article évalué, ainsi que la note min / max de l'échelle (1 à 5 par défaut)."
 
 #: lib/gpl/admin/post.php:28 lib/pro/admin/post.php:39
 msgctxt "option value"
@@ -139,17 +139,27 @@ msgstr "Interprète de l’événement"
 #: lib/gpl/admin/post.php:123 lib/pro/admin/post.php:143
 msgctxt "option label"
 msgid "Reviewed Item Type"
-msgstr ""
+msgstr "Type de l'article évalué"
 
 #: lib/gpl/admin/post.php:129 lib/pro/admin/post.php:149
 msgctxt "option label"
 msgid "Reviewed Item URL"
-msgstr ""
+msgstr "URL de l'article évalué"
 
 #: lib/gpl/admin/post.php:135 lib/pro/admin/post.php:155
 msgctxt "option label"
 msgid "Reviewed Item Rating"
-msgstr ""
+msgstr "Note de l'article évalué"
+
+#: lib/gpl/admin/post.php:138 lib/pro/admin/post.php:159
+msgctxt "option comment"
+msgid "from"
+msgstr "de"
+
+#: lib/gpl/admin/post.php:140 lib/pro/admin/post.php:162
+msgctxt "option comment"
+msgid "to"
+msgstr "à"
 
 #: lib/submenu/schema-json-ld.php:29
 msgctxt "metabox title"

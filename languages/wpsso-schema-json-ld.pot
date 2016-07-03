@@ -91,7 +91,7 @@ msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr ""
 
 #: lib/filters.php:245
-msgid "A URL for the item being reviwed."
+msgid "A URL for the item being reviewed."
 msgstr ""
 
 #: lib/filters.php:248
@@ -172,6 +172,16 @@ msgstr ""
 #: lib/gpl/admin/post.php:135 lib/pro/admin/post.php:155
 msgctxt "option label"
 msgid "Reviewed Item Rating"
+msgstr ""
+
+#: lib/gpl/admin/post.php:138 lib/pro/admin/post.php:159
+msgctxt "option comment"
+msgid "from"
+msgstr ""
+
+#: lib/gpl/admin/post.php:140 lib/pro/admin/post.php:162
+msgctxt "option comment"
+msgid "to"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:29
