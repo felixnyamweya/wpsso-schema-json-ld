@@ -969,7 +969,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.9.0-dev1 (2016/07/02)**
+**Version 1.9.0-dev2 (2016/07/03)**
 
 Official announcement: N/A
 
@@ -979,7 +979,7 @@ Official announcement: N/A
 		* Reviewed Item URL
 		* Reviewed Item Rating
 * *Improvements*
-	* None
+	* Added the 'wpsso-schema-article' image size for Schema Article sub-types (including BlogPosting).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -1014,9 +1014,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.9.0-dev1 =
+= 1.9.0-dev2 =
 
-(2016/07/02) Added new options to the Social Settings metabox for the http://schema.org/Review type.
+(2016/07/03) Added new options to the Social Settings metabox for the http://schema.org/Review type. Added support for the 'wpsso-schema-article' image size.
 
 = 1.8.1-1 =
 
