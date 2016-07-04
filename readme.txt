@@ -952,7 +952,8 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 == Screenshots ==
 
 01. Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. Google's Structured Data Testing Tool &mdash; Results for an example TechArticle webpage showing WPSSO Schema JSON-LD Markup.
+02. A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type http://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
+03. Google's Structured Data Testing Tool showing results for an example of the Schema Item Type http://schema.org/TechArticle.
 
 == Changelog ==
 
