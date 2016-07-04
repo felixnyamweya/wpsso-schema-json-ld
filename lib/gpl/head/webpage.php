@@ -89,7 +89,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *	contributor as http://schema.org/Person
 			 */
 			if ( $user_id > 0 )
-				WpssoSchema::add_author_and_coauthor_data( $ret, $mod, $user_id );
+				WpssoSchema::add_author_coauthor_data( $ret, $mod, $user_id );
 
 			/*
 			 * Property:
