@@ -970,6 +970,19 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.9.1-dev1 (2016/07/04)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the `WpssoSchema::add_author_and_coauthor_data()` method to `add_author_coauthor_data()`.
+
 **Version 1.9.0-1 (2016/07/03)**
 
 Official announcement: N/A
@@ -1014,6 +1027,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.9.1-dev1 =
+
+(2016/07/04) Renamed the WpssoSchema::add_author_and_coauthor_data() method.
 
 = 1.9.0-1 =
 
