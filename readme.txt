@@ -977,7 +977,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a "headline" attribute for the Schema BlogPosting type (Free version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
