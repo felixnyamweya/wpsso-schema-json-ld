@@ -47,8 +47,17 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			if ( isset( $mt_og['schema:type:id'] ) &&
 				$this->p->schema->schema_type_child_of( $mt_og['schema:type:id'], 'article' ) ) {
-					$org_logo_key = 'org_banner_url';		// use a banner for all article sub-types
+
+				$org_logo_key = 'org_banner_url';			// use a banner for all article sub-types
 				$size_name = $this->p->cf['lca'].'-schema-article';	// same size, but minimum width is 696px
+
+				/*
+				 * Property:
+				 * 	headline
+				 */
+				$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+				$ret['headline'] = $this->p->webpage->get_title( $headline_max_len, '...', $mod );
+
 			} else {
 				$org_logo_key = 'org_logo_url';
 				$size_name = $this->p->cf['lca'].'-schema';
