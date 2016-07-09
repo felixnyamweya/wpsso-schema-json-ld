@@ -267,7 +267,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Event">schema.org/Event</a> (<strong>supported Event / Calendar plugin required</strong>)
+<li>Schema Type <a href="http://schema.org/Event">schema.org/Event</a>
 
 <ul>
 <li>Schema Type <a href="http://schema.org/BusinessEvent">schema.org/BusinessEvent</a></li>

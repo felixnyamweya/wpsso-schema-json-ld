@@ -195,7 +195,7 @@ Adds Google / Schema JSON-LD markup:
 > 	* WorstRating
 > 	* BestRating
 
-* Schema Type [schema.org/Event](http://schema.org/Event) (**supported Event / Calendar plugin required**)
+* Schema Type [schema.org/Event](http://schema.org/Event)
 	* Schema Type [schema.org/BusinessEvent](http://schema.org/BusinessEvent)
 	* Schema Type [schema.org/ChildrensEvent](http://schema.org/ChildrensEvent)
 	* Schema Type [schema.org/DanceEvent](http://schema.org/DanceEvent)
