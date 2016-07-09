@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.9.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-07-05 18:34-0400\n"
-"PO-Revision-Date: 2016-07-05 18:35-0400\n"
+"POT-Creation-Date: 2016-07-09 15:43-0400\n"
+"PO-Revision-Date: 2016-07-09 15:49-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -47,11 +47,11 @@ msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal 
 
 #: lib/filters.php:227
 msgid "Select a Schema item type that best describes the main content of this webpage."
-msgstr ""
+msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
 #: lib/filters.php:230
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
-msgstr ""
+msgstr "Sélectionnez un éditeur pour le type de Schéma d'Article et / ou de son sous-type (NewsArticle, TechArticle, etc)."
 
 #: lib/filters.php:233
 msgid "A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types."
@@ -59,15 +59,15 @@ msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d�
 
 #: lib/filters.php:236
 msgid "Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
-msgstr ""
+msgstr "Sélectionnez un organisateur pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
 #: lib/filters.php:239
 msgid "Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
-msgstr ""
+msgstr "Sélectionner un artiste pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
 #: lib/filters.php:242
 msgid "Select a Schema item type that best describes the item being reviewed."
-msgstr ""
+msgstr "Sélectionnez le type de Schéma qui décrit l'article évalué."
 
 #: lib/filters.php:245
 msgid "A URL for the item being reviewed."
