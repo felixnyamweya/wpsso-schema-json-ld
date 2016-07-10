@@ -1003,5 +1003,5 @@ Official announcement: N/A
 
 = 1.9.1-1 =
 
-(2016/07/06) Renamed the WpssoSchema::add_author_and_coauthor_data() method.
+(2016/07/06) Renamed the WpssoSchema add_author_and_coauthor_data() method.
 
