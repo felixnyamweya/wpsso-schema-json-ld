@@ -999,44 +999,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* None
 
-**Version 1.8.1-1 (2016/06/30)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
-
-**Version 1.8.0-1 (2016/06/21)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added support for the http://schema.org/Event type and its sub-types (including event image and video media).
-	* Added the "Event Organizer" and "Event Performer" options in the Social Settings metabox (requires the WPSSO ORG extension).
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
 = 1.9.1-1 =
 
 (2016/07/06) Renamed the WpssoSchema::add_author_and_coauthor_data() method.
-
-= 1.9.0-1 =
-
-(2016/07/03) Added new options to the Social Settings metabox for the http://schema.org/Review type. Added support for the 'wpsso-schema-article' image size.
-
-= 1.8.1-1 =
-
-(2016/06/30) Adjusted notices for the new notice methods in WPSSO v3.33.2-1.
 
