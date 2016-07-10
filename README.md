@@ -22,7 +22,7 @@
 
 <p><strong>Include all WooCommerce product variations in the Schema markup!</strong> (Pro version)</p>
 
-<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, ratings, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema markup in theme templates.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, ratings, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data markup in theme templates.</p>
 
 <h4>Quick List of Features</h4>
 
@@ -48,7 +48,7 @@
 <li>Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
 </ul>
 
-<p>Adds Google / Schema JSON-LD markup:</p>
+<p>Adds Schema / Structured Data JSON-LD markup:</p>
 
 <ul>
 <li>Schema Type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
@@ -137,7 +137,7 @@
 <li>Schema Description</li>
 </ul>
 
-<p>Adds Google / Schema JSON-LD markup:</p>
+<p>Adds Schema / Structured Data JSON-LD markup:</p>
 
 <ul>
 <li>Schema Type <a href="http://schema.org/CreativeWork">schema.org/CreativeWork</a>

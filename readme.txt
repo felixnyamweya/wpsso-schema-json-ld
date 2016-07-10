@@ -24,7 +24,7 @@ WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Org
 
 <p><strong>Include all WooCommerce product variations in the Schema markup!</strong> (Pro version)</p>
 
-<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, ratings, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema markup in theme templates.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, ratings, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data markup in theme templates.</p>
 
 = Quick List of Features =
 
@@ -48,7 +48,7 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 * Default Item Type for Home Page
 * Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).
 
-Adds Google / Schema JSON-LD markup:
+Adds Schema / Structured Data JSON-LD markup:
 
 * Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
 * Schema Type [schema.org/WebPage](http://schema.org/WebPage)
@@ -111,7 +111,7 @@ Adds additional custom options in the Social Settings metabox:
 * Article Publisher
 * Schema Description
 
-Adds Google / Schema JSON-LD markup:
+Adds Schema / Structured Data JSON-LD markup:
 
 * Schema Type [schema.org/CreativeWork](http://schema.org/CreativeWork)
 	* Schema Type [schema.org/Article](http://schema.org/Article)
