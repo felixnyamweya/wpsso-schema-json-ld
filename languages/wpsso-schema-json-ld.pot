@@ -211,7 +211,7 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:67
 msgctxt "option comment"
-msgid "<em>video preview images are enabled</em> (and included first)"
+msgid "video preview images are enabled (and included first)"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:70

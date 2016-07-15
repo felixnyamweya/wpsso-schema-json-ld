@@ -64,8 +64,8 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_select( 'schema_img_max', 
 						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', null, true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
-						'' : ' '._x( '<em>video preview images are enabled</em> (and included first)',
-							'option comment', 'nextgen-facebook' ) ).'</td>';
+						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
+							'option comment', 'nextgen-facebook' ).'</em>' ).'</td>';
 
 					$table_rows['schema_img'] = $this->form->get_th_html( _x( 'Schema Image Dimensions',
 						'option label', 'wpsso' ), null, 'schema_img_dimensions' ).
