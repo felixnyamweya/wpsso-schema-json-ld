@@ -122,6 +122,8 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		}
 
 		public function wpsso_init_plugin() {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 			if ( self::$wpsso_has_min_ver === false )
 				return $this->warning_wpsso_version();
 		}
