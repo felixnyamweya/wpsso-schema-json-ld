@@ -1018,7 +1018,3 @@ Official announcement: N/A
 
 (2016/07/18) Updated the 'wpsso_get_config' filter to use the new version argument in WPSSO v3.33.5-1.
 
-= 1.9.1-1 =
-
-(2016/07/06) Renamed the WpssoSchema add_author_and_coauthor_data() method.
-
