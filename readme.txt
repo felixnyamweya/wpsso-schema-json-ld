@@ -970,6 +970,19 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.10.0-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* Added "Recipe Ingredients" input fields to the Social Settings metabox when the Schema Recipe type is selected (Pro version).
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.9.2-1 (2016/07/18)**
 
 Official announcement: N/A
@@ -1013,6 +1026,10 @@ Official announcement: N/A
 	* None
 
 == Upgrade Notice ==
+
+= 1.10.0-dev1 =
+
+(TBD) Added "Recipe Ingredients" input fields to the Social Settings metabox.
 
 = 1.9.2-1 =
 
