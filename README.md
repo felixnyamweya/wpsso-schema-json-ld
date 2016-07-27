@@ -17,7 +17,7 @@
 <p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p></p>
 
 <blockquote>
-<ul>
+<ul style="list-style:none;">
 <li>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization / publisher, person / author, product variations, ratings, etc.</li>
 <li>Overrides any missing or incomplete Schema markup in your theme templates.</li>
 <li>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</li>
