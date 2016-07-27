@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p style="margin-top:0;">
+<p style="margin:0;">
 <p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p>
 <blockquote class="top_info">
 <p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization / publisher, person / author, product variations, ratings, etc.</p>

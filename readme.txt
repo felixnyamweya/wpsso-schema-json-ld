@@ -16,7 +16,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 == Description ==
 
-<p style="margin-top:0;">
+<p style="margin:0;">
 <img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
 <blockquote class="top_info">
 <p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization / publisher, person / author, product variations, ratings, etc.</p>
