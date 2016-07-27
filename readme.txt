@@ -970,12 +970,13 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-dev1 (TBD)**
+**Version 1.10.0-dev1 (2016/07/27)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Added "Recipe Ingredients" input fields to the Social Settings metabox when the Schema Recipe type is selected (Pro version).
+	* Added "Recipe Total Time", "Recipe Quantity", and "Recipe Ingredients" input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).
+	* Added a new "Recipe Ingredients Custom Field" option in the Schema Markup settings page.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -1029,7 +1030,7 @@ Official announcement: N/A
 
 = 1.10.0-dev1 =
 
-(TBD) Added "Recipe Ingredients" input fields to the Social Settings metabox.
+(2016/07/27) Added new "Recipe Ingredients Custom Field", "Recipe Total Time", "Recipe Quantity", and "Recipe Ingredients" options.
 
 = 1.9.2-1 =
 
