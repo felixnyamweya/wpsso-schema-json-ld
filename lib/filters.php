@@ -30,6 +30,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'json_data_http_schema_org' => 6,			// $json_data, $use_post, $mod, $mt_og, $user_id, $is_main
 			), -100 );	// make sure we run first
 
+			$this->p->util->add_plugin_filters( $this, array(
+				'get_md_defaults' => 2,					// $def_opts, $mod
+			) );
+
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_actions( $this, array(
 					'admin_post_header' => 1,			// $mod
@@ -37,7 +41,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->util->add_plugin_filters( $this, array(
 					'option_type' => 2,
 					'save_post_options' => 4,			// $opts, $post_id, $rel_id, $mod
-					'get_md_defaults' => 2,				// $def_opts, $mod
 					'pub_google_rows' => 2,				// $table_rows, $form
 					'messages_tooltip_meta' => 2,			// tooltip messages for post social settings
 				) );
@@ -127,10 +130,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return $type;
 
 			switch ( $key ) {
+				case 'schema_recipe_ingredient':
+					return 'one_line';
+					break;
 				case 'schema_type':
 				case 'schema_review_item_type':
 					return 'not_blank';
 					break;
+				case 'schema_recipe_total_days':
+				case 'schema_recipe_total_hours':
+				case 'schema_recipe_total_mins':
+				case 'schema_recipe_total_secs':
 				case 'schema_review_rating':
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
@@ -145,7 +155,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_save_post_options( $opts, $post_id, $rel_id, $mod ) {
 
-			$defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema event options
+			$defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
+
+			// renumber recipe ingredients
+			$recipe_ingredients = array();
+			// use preg_grep_keys() to exclude the ':is' option suffix
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_ingredient_[0-9]+$/', $opts ) as $key => $value ) {
+				unset( $opts[$key] );
+				if ( ! empty( $value ) )
+					$recipe_ingredients[] = $value;
+			}
+			foreach ( $recipe_ingredients as $num => $value )
+				$opts['schema_recipe_ingredient_'.$num] = $value;
 
 			if ( empty( $opts['schema_review_rating'] ) ) {
 				foreach ( array( 
@@ -178,6 +199,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_headline' => '',		// Article Headline
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
+				'schema_recipe_total_days' => 0,	// Recipe Total Time (Days)
+				'schema_recipe_total_hours' => 0,	// Recipe Total Time (Hours)
+				'schema_recipe_total_mins' => 0,	// Recipe Total Time (Mins)
+				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
+				'schema_recipe_yield' => '',		// Recipe Yield
 				'schema_review_item_type' => 'none',	// Reviewed Item Type
 				'schema_review_item_url' => '',		// Reviewed Item URL
 				'schema_review_rating' => '0.0',	// Reviewed Item Rating
@@ -235,8 +261,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_event_org_id':
 					$text = __( 'Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_recipe_total_time':
+					$text = __( 'The total time it takes to cook and prepare this recipe.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_yield':
+					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_event_perf_id':
 					$text = __( 'Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_ingredients':
+					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_type':
 					$text = __( 'Select a Schema item type that best describes the item being reviewed.', 'wpsso-schema-json-ld' );

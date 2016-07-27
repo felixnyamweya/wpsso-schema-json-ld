@@ -99,6 +99,11 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'option label', 'wpsso' ), null, 'schema_type_for_ptn' ).
 					'<td>'.$schema_select.'</td>';
 
+					$table_rows[] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( _x( 'Recipe Ingredients Custom Field',
+						'option label', 'nextgen-facebook' ), null, 'plugin_cf_recipe_ingredients' ).
+					'<td>'.$this->form->get_input( 'plugin_cf_recipe_ingredients' ).'</td>';
+
 					break;
 			}
 			return $table_rows;
