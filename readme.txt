@@ -17,7 +17,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 == Description ==
 
 <img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
-<blockquote>
+<blockquote class="top_info">
 <p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization / publisher, person / author, product variations, ratings, etc.</p>
 <p>Overrides any missing or incomplete Schema markup in your theme templates.</p>
 <p>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</p>
@@ -957,7 +957,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 == Changelog ==
 
-<blockquote id="changelog_top_info">
+<blockquote class="top_info">
 <p>New versions of the plugin are released approximately every week (more or less). New features are added, tested, and released incrementally, instead of grouping them together in a major version release. When minor bugs fixes and/or code improvements are applied, new versions are also released. This release schedule keeps the code stable and reliable, at the cost of more frequent updates.</p>
 
 <p>See <a href="https://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often (RERO) software development philosophy</a> on Wikipedia for more information on the benefits of smaller / more frequent releases.</p>
