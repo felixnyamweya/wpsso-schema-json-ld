@@ -16,6 +16,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+			$crawler_name = SucomUtil::crawler_name();
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -23,30 +24,36 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
+			switch ( $crawler_name ) {
+				case 'pinterest':	// pinterest does not read schema json-ld
+					break;
+				default:
+					$this->p->util->add_plugin_filters( $this, array(
+						'add_schema_head_attributes' => '__return_false',
+						'add_schema_meta_array' => '__return_false',
+						'add_schema_noscript_array' => '__return_false',
+						'json_data_http_schema_org' => 6,
+					), -100 );	// make sure we run first
+					break;
+			}
+		
 			$this->p->util->add_plugin_filters( $this, array(
-				'add_schema_head_attributes' => '__return_false',
-				'add_schema_meta_array' => '__return_false',
-				'add_schema_noscript_array' => '__return_false',
-				'json_data_http_schema_org' => 6,			// $json_data, $use_post, $mod, $mt_og, $user_id, $is_main
-			), -100 );	// make sure we run first
-
-			$this->p->util->add_plugin_filters( $this, array(
-				'get_md_defaults' => 2,					// $def_opts, $mod
+				'get_md_defaults' => 2,
 			) );
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_actions( $this, array(
-					'admin_post_header' => 1,			// $mod
+					'admin_post_header' => 1,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'option_type' => 2,
-					'save_post_options' => 4,			// $opts, $post_id, $rel_id, $mod
-					'pub_google_rows' => 2,				// $table_rows, $form
-					'messages_tooltip_meta' => 2,			// tooltip messages for post social settings
+					'save_post_options' => 4,
+					'pub_google_rows' => 2,
+					'messages_tooltip_meta' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
-					'status_gpl_features' => 3,			// $features, $lca, $info
-					'status_pro_features' => 3,			// $features, $lca, $info
+					'status_gpl_features' => 3,
+					'status_pro_features' => 3,
 				), 10, 'wpssojson' );
 			}
 		}
