@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Rich Snippet Markup for Google / Pinterest</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet Markup</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>
@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/?utm_source=wpssojson-readme-donate">https://wpsso.com/?utm_source=wpssojson-readme-donate</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, event, review, rating, pinterest, google, seo, news, amp, co-authors, co-authors plus</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, article, product, event, rating, review, recipe, google, seo, news, amp, co-authors, co-authors plus</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -17,14 +17,14 @@
 <p style="margin:0;">
 <p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p>
 <blockquote class="top_info">
-<p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization / publisher, person / author, product variations, ratings, etc.</p>
+<p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, etc.</p>
 <p>Overrides any missing or incomplete Schema markup in your theme templates.</p>
 <p>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</p>
 <p>Include all WooCommerce product variations and their details in the Schema Product markup! (Pro version)</p>
 </blockquote>
 </p>
 
-<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Rich Snippet markup (images, videos, author, co-authors, ratings, publisher, place, product, etc.) for Google Search, Pinterest, and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data markup in theme templates.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Structured Data / Rich Snippet markup (images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, etc.) for Google Search and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data / Rich Snippet markup in theme templates.</p>
 
 <h4>Quick List of Features</h4>
 
