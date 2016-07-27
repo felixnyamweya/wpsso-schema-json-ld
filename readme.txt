@@ -972,7 +972,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-dev1 (2016/07/27)**
+**Version 1.10.0-dev2 (2016/07/27)**
 
 Official announcement: N/A
 
@@ -1030,7 +1030,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.10.0-dev1 =
+= 1.10.0-dev2 =
 
 (2016/07/27) Added new "Recipe Ingredients Custom Field", "Recipe Total Time", "Recipe Quantity", and "Recipe Ingredients" options.
 
