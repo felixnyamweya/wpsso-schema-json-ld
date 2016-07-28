@@ -957,9 +957,10 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 == Screenshots ==
 
-01. Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type http://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
-03. Google's Structured Data Testing Tool showing results for an example of the Schema Item Type http://schema.org/TechArticle.
+01. (Pro version) Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
+02. (Pro version) A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type http://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
+03. (Pro version) An example of WPSSO JSON's Schema Recipe markup on Pinterest.
+04. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type http://schema.org/TechArticle.
 
 == Changelog ==
 
@@ -1050,7 +1051,7 @@ Official announcement: N/A
 
 = 1.10.0-b1 =
 
-(2016/07/28) Added recipe input fields in the Social Settings metabox and "Recipe Ingredients Custom Field" option.
+(2016/07/28) Enhanced support for Schema Recipe markup for Pinterest and Google. Added new recipe input fields and recipe integration option in the WPSSO JSON settings page.
 
 = 1.9.2-1 =
 
