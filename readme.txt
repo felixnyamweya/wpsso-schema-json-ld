@@ -949,7 +949,10 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Additional Documentation =
 
-* None
+* [Developer Resources](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/)
+	* [Filters](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/)
+		* [Filter Examples](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
+			* [Modify the aggregateRating Property](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
 
 == Screenshots ==
 

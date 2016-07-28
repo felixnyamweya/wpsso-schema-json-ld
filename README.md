@@ -1205,6 +1205,18 @@
 <h4>Additional Documentation</h4>
 
 <ul>
-<li>None</li>
+<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
+
+<ul>
+<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/">Filters</a>
+
+<ul>
+<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/">Filter Examples</a>
+
+<ul>
+<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
 
