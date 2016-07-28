@@ -9,7 +9,7 @@ Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippets, art
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
-Tested Up To: 4.5.3
+Tested Up To: 4.6
 Stable Tag: 1.9.2-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
@@ -972,12 +972,18 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-dev4 (2016/07/27)**
+**Version 1.10.0-dev5 (2016/07/28)**
 
 Official announcement: N/A
 
 * *New Features*
-	* Added "Recipe Total Time", "Recipe Quantity", and "Recipe Ingredients" input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).
+	* Added new recipe input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).
+		* "Recipe Preperation Time"
+		* "Recipe Cook Time"
+		* "Recipe Total Time"
+		* "Recipe Total Calories"
+		* "Recipe Quantity"
+		* "Recipe Ingredients"
 	* Added a new "Recipe Ingredients Custom Field" option in the Schema Markup settings page.
 * *Improvements*
 	* None
@@ -1030,9 +1036,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.10.0-dev4 =
+= 1.10.0-dev5 =
 
-(2016/07/27) Added new "Recipe Ingredients Custom Field", "Recipe Total Time", "Recipe Quantity", and "Recipe Ingredients" options.
+(2016/07/28) Added recipe input fields in the Social Settings metabox and "Recipe Ingredients Custom Field" option.
 
 = 1.9.2-1 =
 
