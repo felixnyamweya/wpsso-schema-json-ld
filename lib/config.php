@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'website' => '(code) Schema Type Website (website)',
 							),
 							'prop' => array(
-								'rating' => '(code) Property Aggregate Rating',
+								'aggregaterating' => '(code) Property Aggregate Rating',
 							),
 						),
 					),
