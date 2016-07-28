@@ -19,7 +19,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 <p style="margin:0;">
 <img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
 <blockquote class="top_info">
-<p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, etc.</p>
+<p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc.</p>
 <p>Overrides any missing or incomplete Schema markup in your theme templates.</p>
 <p>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</p>
 <p>Include all WooCommerce product variations and their details in the Schema Product markup! (Pro version)</p>
