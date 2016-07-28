@@ -975,7 +975,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-dev6 (2016/07/28)**
+**Version 1.10.0-b1 (2016/07/28)**
 
 Official announcement: N/A
 
@@ -1040,7 +1040,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.10.0-dev6 =
+= 1.10.0-b1 =
 
 (2016/07/28) Added recipe input fields in the Social Settings metabox and "Recipe Ingredients Custom Field" option.
 
