@@ -972,7 +972,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-dev5 (2016/07/28)**
+**Version 1.10.0-dev6 (2016/07/28)**
 
 Official announcement: N/A
 
@@ -990,7 +990,8 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added a new filter to include 3rd party aggregate ratings:
+		* apply_filters( 'wpsso_json_prop_http_schema_org_aggregaterating', $rating, $mod );
 
 **Version 1.9.2-1 (2016/07/18)**
 
@@ -1036,7 +1037,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.10.0-dev5 =
+= 1.10.0-dev6 =
 
 (2016/07/28) Added recipe input fields in the Social Settings metabox and "Recipe Ingredients Custom Field" option.
 
