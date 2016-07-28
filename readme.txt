@@ -23,7 +23,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 <p>Overrides any missing or incomplete Schema markup in your theme templates.</p>
 <p>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</p>
 <p>Include all WooCommerce product variations and their details in the Schema Product markup! (Pro version)</p>
-<p><strong>Special markup for Pinterest</strong> &mdash; Pinterest does not (presently) read the popular JSON-LD format. The WPSSO plugin and WPSSO JSON extension include special provisions for Pinterest to provide Schema markup using meta tags instead.</p>
+<p><strong>Specific Schema markup for Pinterest</strong> &mdash; Pinterest does not (presently) read the popular JSON-LD format. The WPSSO plugin and WPSSO JSON extension include provisions for Pinterest to provide Schema markup using meta tags instead.</p>
 </blockquote>
 </p>
 
