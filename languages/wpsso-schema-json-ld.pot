@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.0-dev4\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.0-dev5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -50,67 +50,79 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:257
+#: lib/filters.php:276
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:260
+#: lib/filters.php:279
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:263
+#: lib/filters.php:282
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:266
+#: lib/filters.php:285
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:269
+#: lib/filters.php:288
 msgid ""
 "Select an organizer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:272
-msgid "The total time it takes to cook and prepare this recipe."
+#: lib/filters.php:291
+msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:275
+#: lib/filters.php:294
+msgid "The total time it takes to cook this recipe."
+msgstr ""
+
+#: lib/filters.php:297
+msgid "The total time it takes to prepare and cook this recipe."
+msgstr ""
+
+#: lib/filters.php:300
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:278
+#: lib/filters.php:303
+msgid "The total number of calories for this recipe (all servings)."
+msgstr ""
+
+#: lib/filters.php:306
 msgid ""
 "Select a performer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:281
+#: lib/filters.php:309
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:284
+#: lib/filters.php:312
 msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr ""
 
-#: lib/filters.php:287
+#: lib/filters.php:315
 msgid "A URL for the item being reviewed."
 msgstr ""
 
-#: lib/filters.php:290
+#: lib/filters.php:318
 msgid ""
 "A rating for the item being reviewed, along with the low / high rating scale "
 "(defaults are 1 to 5)."
@@ -177,40 +189,55 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:124 lib/pro/admin/post.php:144
 msgctxt "option label"
-msgid "Recipe Total Time"
+msgid "Recipe Preperation Time"
 msgstr ""
 
 #: lib/gpl/admin/post.php:133 lib/pro/admin/post.php:153
 msgctxt "option label"
+msgid "Recipe Cooking Time"
+msgstr ""
+
+#: lib/gpl/admin/post.php:142 lib/pro/admin/post.php:162
+msgctxt "option label"
+msgid "Recipe Total Time"
+msgstr ""
+
+#: lib/gpl/admin/post.php:151 lib/pro/admin/post.php:171
+msgctxt "option label"
+msgid "Recipe Total Calories"
+msgstr ""
+
+#: lib/gpl/admin/post.php:157 lib/pro/admin/post.php:177
+msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr ""
 
-#: lib/gpl/admin/post.php:139 lib/pro/admin/post.php:159
+#: lib/gpl/admin/post.php:163 lib/pro/admin/post.php:183
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr ""
 
-#: lib/gpl/admin/post.php:148 lib/pro/admin/post.php:168
+#: lib/gpl/admin/post.php:172 lib/pro/admin/post.php:192
 msgctxt "option label"
 msgid "Reviewed Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:154 lib/pro/admin/post.php:174
+#: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:198
 msgctxt "option label"
 msgid "Reviewed Item URL"
 msgstr ""
 
-#: lib/gpl/admin/post.php:160 lib/pro/admin/post.php:180
+#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:204
 msgctxt "option label"
 msgid "Reviewed Item Rating"
 msgstr ""
 
-#: lib/gpl/admin/post.php:163 lib/pro/admin/post.php:184
+#: lib/gpl/admin/post.php:187 lib/pro/admin/post.php:208
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
-#: lib/gpl/admin/post.php:165 lib/pro/admin/post.php:187
+#: lib/gpl/admin/post.php:189 lib/pro/admin/post.php:211
 msgctxt "option comment"
 msgid "to"
 msgstr ""

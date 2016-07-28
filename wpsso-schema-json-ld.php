@@ -11,8 +11,8 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest.
  * Requires At Least: 3.1
- * Tested Up To: 4.5.3
- * Version: 1.10.0-dev4
+ * Tested Up To: 4.6
+ * Version: 1.10.0-dev5
  * 
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		private static $instance = null;
 		private static $req_short = 'WPSSO';
 		private static $req_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $req_min_version = '3.33.8-dev4';
+		private static $req_min_version = '3.33.8-dev5';
 		private static $req_has_min_ver = true;
 
 		public static function &get_instance() {

@@ -119,6 +119,24 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Recipe
 				 */
+				'schema_recipe_prep_time' => array(
+					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time',
+					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
+						$form->get_no_input_value( '0', 'short' ).' hours, '.
+						$form->get_no_input_value( '0', 'short' ).' mins, '.
+						$form->get_no_input_value( '0', 'short' ).' secs',
+				),
+				'schema_recipe_cook_time' => array(
+					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time',
+					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
+						$form->get_no_input_value( '0', 'short' ).' hours, '.
+						$form->get_no_input_value( '0', 'short' ).' mins, '.
+						$form->get_no_input_value( '0', 'short' ).' secs',
+				),
 				'schema_recipe_total_time' => array(
 					'tr_class' => 'schema_type '.$tr_class['recipe'],
 					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
@@ -127,6 +145,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ).' hours, '.
 						$form->get_no_input_value( '0', 'short' ).' mins, '.
 						$form->get_no_input_value( '0', 'short' ).' secs',
+				),
+				'schema_recipe_calories' => array(
+					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'label' => _x( 'Recipe Total Calories', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_calories',
+					'content' => $form->get_no_input_value( '', 'medium' ),
 				),
 				'schema_recipe_yield' => array(
 					'tr_class' => 'schema_type '.$tr_class['recipe'],

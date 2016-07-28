@@ -137,6 +137,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return $type;
 
 			switch ( $key ) {
+				case 'schema_recipe_yield':
 				case 'schema_recipe_ingredient':
 					return 'one_line';
 					break;
@@ -144,10 +145,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_review_item_type':
 					return 'not_blank';
 					break;
+				case 'schema_recipe_prep_days':
+				case 'schema_recipe_prep_hours':
+				case 'schema_recipe_prep_mins':
+				case 'schema_recipe_prep_secs':
+				case 'schema_recipe_cook_days':
+				case 'schema_recipe_cook_hours':
+				case 'schema_recipe_cook_mins':
+				case 'schema_recipe_cook_secs':
 				case 'schema_recipe_total_days':
 				case 'schema_recipe_total_hours':
 				case 'schema_recipe_total_mins':
 				case 'schema_recipe_total_secs':
+				case 'schema_recipe_calories':
 				case 'schema_review_rating':
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
@@ -206,11 +216,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_headline' => '',		// Article Headline
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
+				'schema_recipe_prep_days' => 0,		// Recipe Preperation Time (Days)
+				'schema_recipe_prep_hours' => 0,	// Recipe Preperation Time (Hours)
+				'schema_recipe_prep_mins' => 0,		// Recipe Preperation Time (Mins)
+				'schema_recipe_prep_secs' => 0,		// Recipe Preperation Time (Secs)
+				'schema_recipe_cook_days' => 0,		// Recipe Cooking Time (Days)
+				'schema_recipe_cook_hours' => 0,	// Recipe Cooking Time (Hours)
+				'schema_recipe_cook_mins' => 0,		// Recipe Cooking Time (Mins)
+				'schema_recipe_cook_secs' => 0,		// Recipe Cooking Time (Secs)
 				'schema_recipe_total_days' => 0,	// Recipe Total Time (Days)
 				'schema_recipe_total_hours' => 0,	// Recipe Total Time (Hours)
 				'schema_recipe_total_mins' => 0,	// Recipe Total Time (Mins)
 				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
 				'schema_recipe_yield' => '',		// Recipe Yield
+				'schema_recipe_calories' => 0,		// Recipe Total Calories
 				'schema_review_item_type' => 'none',	// Reviewed Item Type
 				'schema_review_item_url' => '',		// Reviewed Item URL
 				'schema_review_rating' => '0.0',	// Reviewed Item Rating
@@ -268,11 +287,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_event_org_id':
 					$text = __( 'Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_recipe_prep_time':
+					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_cook_time':
+					$text = __( 'The total time it takes to cook this recipe.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_recipe_total_time':
-					$text = __( 'The total time it takes to cook and prepare this recipe.', 'wpsso-schema-json-ld' );
+					$text = __( 'The total time it takes to prepare and cook this recipe.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_yield':
 					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_calories':
+					$text = __( 'The total number of calories for this recipe (all servings).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_perf_id':
 					$text = __( 'Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
