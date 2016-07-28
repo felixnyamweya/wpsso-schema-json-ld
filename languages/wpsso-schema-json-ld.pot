@@ -220,62 +220,62 @@ msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:48
+#: lib/submenu/schema-json-ld.php:44
 msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:54
+#: lib/submenu/schema-json-ld.php:50
 msgctxt "option label"
 msgid "Organization Logo Image URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:58
+#: lib/submenu/schema-json-ld.php:53
 msgctxt "option label"
 msgid "Organization Banner (600x60px) URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:62
+#: lib/submenu/schema-json-ld.php:57
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:67
+#: lib/submenu/schema-json-ld.php:62
 msgctxt "option comment"
 msgid "video preview images are enabled (and included first)"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:70
+#: lib/submenu/schema-json-ld.php:65
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:75
+#: lib/submenu/schema-json-ld.php:70
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:78
+#: lib/submenu/schema-json-ld.php:73
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:81
+#: lib/submenu/schema-json-ld.php:76
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:93
+#: lib/submenu/schema-json-ld.php:87
 msgctxt "option label"
 msgid "Default Item Type for Home Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:98
+#: lib/submenu/schema-json-ld.php:91
 msgctxt "option label"
 msgid "Default Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:103
+#: lib/submenu/schema-json-ld.php:96
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""
