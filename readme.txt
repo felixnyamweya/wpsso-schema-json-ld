@@ -10,7 +10,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.1
 Tested Up To: 4.6
-Stable Tag: 1.9.2-1
+Stable Tag: 1.10.0-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -1005,55 +1005,9 @@ Official announcement: N/A
 	* Added a new filter to include 3rd party aggregate ratings:
 		* apply_filters( 'wpsso_json_prop_http_schema_org_aggregaterating', $rating, $mod );
 
-**Version 1.9.2-1 (2016/07/18)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Updated the 'wpsso_get_config' filter to use the new version argument in WPSSO v3.33.5-1.
-
-**Version 1.9.1-1 (2016/07/06)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a "headline" attribute for the Schema BlogPosting type (Free version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the `WpssoSchema::add_author_and_coauthor_data()` method to `add_author_coauthor_data()`.
-
-**Version 1.9.0-1 (2016/07/03)**
-
-Official announcement: N/A
-
-* *New Features*
-	* Added new options to the Social Settings metabox for the http://schema.org/Review type:
-		* Reviewed Item Type
-		* Reviewed Item URL
-		* Reviewed Item Rating
-* *Improvements*
-	* Added the 'wpsso-schema-article' image size for Schema Article sub-types (including BlogPosting).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
 = 1.10.0-1 =
 
 (2016/07/29) Enhanced support for Schema Recipe markup for Pinterest and Google. Added new recipe input fields and recipe integration option in the WPSSO JSON settings page.
-
-= 1.9.2-1 =
-
-(2016/07/18) Updated the 'wpsso_get_config' filter to use the new version argument in WPSSO v3.33.5-1.
 
