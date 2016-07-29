@@ -977,7 +977,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.0-b2 (2016/07/28)**
+**Version 1.10.0-1 (2016/07/29)**
 
 Official announcement: N/A
 
@@ -1049,9 +1049,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.10.0-b2 =
+= 1.10.0-1 =
 
-(2016/07/28) Enhanced support for Schema Recipe markup for Pinterest and Google. Added new recipe input fields and recipe integration option in the WPSSO JSON settings page.
+(2016/07/29) Enhanced support for Schema Recipe markup for Pinterest and Google. Added new recipe input fields and recipe integration option in the WPSSO JSON settings page.
 
 = 1.9.2-1 =
 
