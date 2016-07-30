@@ -979,7 +979,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 **Version 1.10.0-1 (2016/07/29)**
 
-Official announcement: N/A
+Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pinterest-recipe-markup/
 
 * *New Features*
 	* Added new recipe input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).
