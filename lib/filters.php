@@ -172,11 +172,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_save_post_options( $opts, $post_id, $rel_id, $mod ) {
 
-			$defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
+			$def_opts = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
+
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_((prep|cook|total)_(days|hours|mins|secs)|calories)$/', $opts ) as $key => $value ) {
+				$opts[$key] = (int) $value;
+				if ( $opts[$key] === $def_opts[$key] )
+					unset( $opts[$key] );
+			}
 
 			// renumber recipe ingredients
 			$recipe_ingredients = array();
-			// use preg_grep_keys() to exclude the ':is' option suffix
 			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_ingredient_[0-9]+$/', $opts ) as $key => $value ) {
 				unset( $opts[$key] );
 				if ( ! empty( $value ) )
@@ -198,8 +203,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'schema_review_rating_to',
 				) as $key )
 					if ( empty( $opts[$key] ) && 
-						isset( $defs[$key] ) )
-							$opts[$key] = $defs[$key];
+						isset( $def_opts[$key] ) )
+							$opts[$key] = $def_opts[$key];
 			}
 
 			return $opts;
