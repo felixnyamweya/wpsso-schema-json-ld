@@ -5,6 +5,7 @@
  * Text Domain: wpsso-schema-json-ld
  * Domain Path: /languages
  * Plugin URI: http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/
+ * Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
  * Author: JS Morisset
  * Author URI: http://surniaulula.com/
  * License: GPLv3
