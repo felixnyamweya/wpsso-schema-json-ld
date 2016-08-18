@@ -11,7 +11,7 @@ Tags: wpsso, schema, structured data, json, json-ld, ld+json, rich snippet, arti
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6
-Stable Tag: 1.10.0-1
+Stable Tag: 1.10.1-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -1019,8 +1019,4 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 = 1.10.1-1 =
 
 (2016/08/18) Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema Local Business markup (Pro version).
-
-= 1.10.0-1 =
-
-(2016/07/29) Enhanced support for Schema Recipe markup for Pinterest and Google. Added new recipe input fields and recipe integration option in the WPSSO JSON settings page.
 
