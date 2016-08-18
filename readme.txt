@@ -973,7 +973,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.1-rc2 (2016/08/17)**
+**Version 1.10.1-1 (2016/08/18)**
 
 Official announcement: N/A
 
@@ -1016,9 +1016,9 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.1-rc2 =
+= 1.10.1-1 =
 
-(2016/08/17) Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema Local Business markup (Pro version).
+(2016/08/18) Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema Local Business markup (Pro version).
 
 = 1.10.0-1 =
 
