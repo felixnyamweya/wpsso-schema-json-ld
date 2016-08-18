@@ -65,7 +65,7 @@ Adds Schema / Structured Data JSON-LD markup:
 > * Author as [schema.org/Person](http://schema.org/Person)
 > 	* Author URL from Profile
 > 	* Author Name
-> 	* Author Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
@@ -80,11 +80,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* Twitter URL
 >		* YouTube URL
 >		* Website URL
-> * Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -142,7 +142,7 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Author URL from Profile
 > 	* Author Name
 > 	* Author Description
-> 	* Author Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
@@ -173,11 +173,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* MySpace Business Page URL
 >		* Pinterest Company Page URL
 >		* Twitter Business Page URL
-> * CreativeWork Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * CreativeWork Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * CreativeWork Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * CreativeWork Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -251,11 +251,11 @@ Adds Schema / Structured Data JSON-LD markup:
 > 		* elevation
 > 		* latitude
 > 		* longitude
-> * Event Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Event Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Event Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Event Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -310,11 +310,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >	* MySpace Business Page URL
 >	* Pinterest Company Page URL
 >	* Twitter Business Page URL
-> * Organization Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Organization Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Organization Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Organization Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -335,7 +335,7 @@ Adds Schema / Structured Data JSON-LD markup:
 > * URL from Profile
 > * Name
 > * Description
-> * Person Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Person Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
@@ -447,11 +447,11 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* closes
 > 	* validFrom
 > 	* validThrough
-> * Place Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Place Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Place Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Place Videos as [schema.org/VideoObject](http://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -515,11 +515,11 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* WorstRating
 > 	* BestRating
 > 	* ReviewCount
-> * Product Image(s) as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Product Images as [schema.org/ImageObject](http://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Video(s) as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Product Videos as [schema.org/VideoObject](http://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
