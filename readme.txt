@@ -956,6 +956,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 		* [Filter Examples](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
 			* [Assign a Custom Field Value to a Schema Property](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
 			* [Modify the aggregateRating Property](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
+			* [Modify the VideoObject Name and Description](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
 
 == Screenshots ==
 
