@@ -17,16 +17,15 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 == Description ==
 
-<p style="margin:0;">
-<img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />
-<blockquote class="top_info">
-<p>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc.</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" />Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup, including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc.</p>
+
 <p>Overrides any missing or incomplete Schema markup in your theme templates.</p>
+
 <p>Choose another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</p>
+
 <p>Include all WooCommerce product variations and their details in the Schema Product markup! (Pro version)</p>
+
 <p><strong>Specific Schema markup for Pinterest</strong> &mdash; Pinterest does not (presently) read the popular JSON-LD format. The WPSSO plugin and its WPSSO JSON extension include provisions for Pinterest to provide Schema markup using meta tags instead.</p>
-</blockquote>
-</p>
 
 <p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Structured Data / Rich Snippet markup (images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, etc.) for Google Search and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data / Rich Snippet markup in theme templates.</p>
 
