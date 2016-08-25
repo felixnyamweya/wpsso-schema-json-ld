@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-08-18 12:00-0400\n"
-"PO-Revision-Date: 2016-08-18 12:00-0400\n"
+"POT-Creation-Date: 2016-08-25 18:56-0400\n"
+"PO-Revision-Date: 2016-08-25 18:57-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,8 +22,8 @@ msgstr "Balises Schéma"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Organization, Place, Product, etc.) for Google and Pinterest."
-msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, Article, Organization, Place, Produit, etc.) pour Google et Pinterest."
+msgid "WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more)."
+msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (Article, Event, Organization, Place / Business, Product, Recipe, et plus)."
 
 #: lib/filters.php:120
 msgid "The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
@@ -301,8 +301,8 @@ msgid "http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
 msgstr "http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
 
 #. Description of the plugin/theme
-msgid "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest."
-msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, Article, Place, Produit, etc.) pour Google et Pinterest."
+msgid "WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more)."
+msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (Article, Event, Organization, Place / Business, Product, Recipe, et plus)."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
@@ -311,3 +311,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "http://surniaulula.com/"
 msgstr "http://surniaulula.com/"
+
+#~ msgid "WPSSO extension to add complete Schema JSON-LD markup (BlogPosting, Article, Place, Product, etc.) for Google and Pinterest."
+#~ msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (BlogPosting, Article, Place, Produit, etc.) pour Google et Pinterest."

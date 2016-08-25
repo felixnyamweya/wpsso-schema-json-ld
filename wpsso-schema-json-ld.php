@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			require_once ( dirname( __FILE__ ).'/lib/config.php' );
 			WpssoJsonConfig::set_constants( __FILE__ );
-			WpssoJsonConfig::require_libs( __FILE__ );
+			WpssoJsonConfig::require_libs( __FILE__ );	// includes the register.php class library
 			$this->reg = new WpssoJsonRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
