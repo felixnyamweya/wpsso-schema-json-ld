@@ -27,7 +27,9 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 <p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
-<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin to include complete Schema JSON-LD / Structured Data / Rich Snippet markup (images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, etc.) for Google Search and others. WPSSO JSON includes Schema <a href="http://json-ld.org/">JSON-LD markup</a> in webpage headers, which is independent of any existing Schema / Structured Data / Rich Snippet markup in theme templates.</p>
+<blockquote>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin &mdash; the WPSSO plugin is required to use the WPSSO JSON extension.</p>
+</blockquote>
 
 = Quick List of Features =
 
