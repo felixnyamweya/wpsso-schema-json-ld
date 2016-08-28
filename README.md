@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/?utm_source=wpssojson-readme-donate">https://wpsso.com/?utm_source=wpssojson-readme-donate</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, schema.org, structured data, json, json-ld, ld+json, rich snippets, article, product, event, rating, review, recipe, google, seo, news, amp, co-authors, co-authors plus, pinterest, video object, video schema, search engine optimization, news, optimize, knowledge graph</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, schema.org, structured data, json, json-ld, ld+json, rich snippets, article, product, event, rating, review, recipe, google, seo, news, amp, co-authors, co-authors plus, pinterest, video object, video schema, search engine optimization, news, optimize, knowledge graph, aggregate rating</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -25,7 +25,7 @@
 <p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <blockquote>
-<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin &mdash; the WPSSO plugin is required to use the WPSSO JSON extension.</p>
+<p>WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin &mdash; the WPSSO plugin is required for the WPSSO JSON extension.</p>
 </blockquote>
 
 <h4>Quick List of Features</h4>
