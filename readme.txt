@@ -28,7 +28,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 <p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; the WPSSO Schema JSON-LD Markup (WPSSO JSON) plugin is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin.</p>
 </blockquote>
 
 = Quick List of Features =
