@@ -975,6 +975,19 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.10.2-1 (2016/08/30)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Removed an extra argument in a `filter_json_data_http_schema_org_recipe()` method call (Pro version).
+* *Developer Notes*
+	* None
+
 **Version 1.10.1-1 (2016/08/18)**
 
 Official announcement: N/A
@@ -1017,6 +1030,10 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 		* apply_filters( 'wpsso_json_prop_http_schema_org_aggregaterating', $rating, $mod );
 
 == Upgrade Notice ==
+
+= 1.10.2-1 =
+
+(2016/08/30) Removed an extra argument in a `filter_json_data_http_schema_org_recipe()` method call (Pro version).
 
 = 1.10.1-1 =
 
