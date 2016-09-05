@@ -975,7 +975,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.3-dev1 (2016/09/04)**
+**Version 1.10.3-rc1 (2016/09/05)**
 
 Official announcement: N/A
 
@@ -1044,9 +1044,9 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.3-dev1 =
+= 1.10.3-rc1 =
 
-(2016/09/04) Updated the SucomNotice method calls for WPSSO v3.35.0-1.
+(2016/09/05) Updated the SucomNotice method calls for WPSSO v3.35.0-1.
 
 = 1.10.2-1 =
 
