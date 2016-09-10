@@ -1048,7 +1048,3 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 (2016/09/10) Updated the SucomNotice method calls for WPSSO v3.35.0-1.
 
-= 1.10.2-1 =
-
-(2016/08/30) Removed an extra argument in a `filter_json_data_http_schema_org_recipe()` method call (Pro version).
-
