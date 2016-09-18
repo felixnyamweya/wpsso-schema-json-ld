@@ -10,7 +10,7 @@ Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: wpsso, schema, schema.org, structured data, json, json-ld, ld+json, rich snippets, article, product, event, rating, review, recipe, google, seo, news, amp, co-authors, co-authors plus, pinterest, video object, video schema, search engine optimization, news, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
 Requires At Least: 3.1
-Tested Up To: 4.6
+Tested Up To: 4.6.1
 Stable Tag: 1.10.3-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
