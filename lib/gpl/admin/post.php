@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
-				'wpsso-schema-json-ld' ), SucomUtil::title_words( $mod['post_type'] ) );
+				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 
 			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
 				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
