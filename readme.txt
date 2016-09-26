@@ -975,6 +975,19 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.10.4-dev1 (2016/09/25)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a SucomUtil::titleize() method call to format post type names for display.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.10.3-1 (2016/09/10)**
 
 Official announcement: N/A
@@ -1043,6 +1056,10 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 		* apply_filters( 'wpsso_json_prop_http_schema_org_aggregaterating', $rating, $mod );
 
 == Upgrade Notice ==
+
+= 1.10.4-dev1 =
+
+(2016/09/25) Added a SucomUtil::titleize() method call to format post type names for display.
 
 = 1.10.3-1 =
 
