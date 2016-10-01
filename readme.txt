@@ -11,7 +11,7 @@ Tags: wpsso, schema, schema.org, structured data, json, json-ld, ld+json, rich s
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
-Stable Tag: 1.10.3-1
+Stable Tag: 1.10.4-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -1060,8 +1060,4 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 = 1.10.4-1 =
 
 (2016/10/01) Added a SucomUtil::titleize() method call to format post type names for display.
-
-= 1.10.3-1 =
-
-(2016/09/10) Updated the SucomNotice method calls for WPSSO v3.35.0-1.
 
