@@ -975,7 +975,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.4-b1 (2016/09/29)**
+**Version 1.10.4-1 (2016/10/01)**
 
 Official announcement: N/A
 
@@ -1057,9 +1057,9 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.4-b1 =
+= 1.10.4-1 =
 
-(2016/09/29) Added a SucomUtil::titleize() method call to format post type names for display.
+(2016/10/01) Added a SucomUtil::titleize() method call to format post type names for display.
 
 = 1.10.3-1 =
 
