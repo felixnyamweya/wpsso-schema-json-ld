@@ -79,14 +79,21 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
 					$schema_types = $this->p->schema->get_schema_types_select();
+
+					foreach ( array( 
+						'home_page' => 'Home Page',
+						'archive_page' => 'Archive Page',
+						'search_page' => 'Search Results Page',
+					) as $type_name => $type_label ) {
+						$table_rows['schema_type_for_'.$type_name] = $this->form->get_th_html( _x( 'Item Type for '.$type_label,
+							'option label', 'nextgen-facebook' ), null, 'schema_type_for_'.$type_name ).
+						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'long_name' ).'</td>';
+					}
+
 					$schema_select = '';
 					foreach ( $this->p->util->get_post_types() as $post_type )
 						$schema_select .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
 							$schema_types, 'long_name' ).' for '.$post_type->label.'</p>'."\n";
-
-					$table_rows['schema_type_for_home_page'] = $this->form->get_th_html( _x( 'Default Item Type for Home Page',
-						'option label', 'wpsso' ), null, 'schema_home_page' ).
-					'<td>'.$this->form->get_select( 'schema_type_for_home_page', $schema_types, 'long_name' ).'</td>';
 
 					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Default Item Type by Post Type',
 						'option label', 'wpsso' ), null, 'schema_type_for_ptn' ).
