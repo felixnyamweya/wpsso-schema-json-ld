@@ -45,7 +45,7 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 
 * Website Alternate Name
 * Organization Logo Image URL
-* Organization Banner (600x60px) URL
+* Organization Banner (600x60) URL
 * Maximum Images to Include
 * Schema Image Dimensions
 * Maximum Description Length

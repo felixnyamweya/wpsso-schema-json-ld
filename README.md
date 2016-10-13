@@ -43,7 +43,7 @@
 <ul>
 <li>Website Alternate Name</li>
 <li>Organization Logo Image URL</li>
-<li>Organization Banner (600x60px) URL</li>
+<li>Organization Banner (600x60) URL</li>
 <li>Maximum Images to Include</li>
 <li>Schema Image Dimensions</li>
 <li>Maximum Description Length</li>
