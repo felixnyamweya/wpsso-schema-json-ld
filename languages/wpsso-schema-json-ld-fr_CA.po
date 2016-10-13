@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.3-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.5-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-09-05 09:20-0400\n"
-"PO-Revision-Date: 2016-09-05 09:20-0400\n"
+"POT-Creation-Date: 2016-10-13 09:56-0700\n"
+"PO-Revision-Date: 2016-10-13 09:56-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -232,8 +232,8 @@ msgstr "URL de l'image logo de l'organisation"
 
 #: lib/submenu/schema-json-ld.php:53
 msgctxt "option label"
-msgid "Organization Banner (600x60px) URL"
-msgstr "URL bannière (600x60px) de l'organisation"
+msgid "Organization Banner (600x60) URL"
+msgstr "URL bannière (600x60) de l'organisation"
 
 #: lib/submenu/schema-json-ld.php:57
 msgctxt "option label"
@@ -267,15 +267,30 @@ msgstr "Format du nom d’auteur"
 
 #: lib/submenu/schema-json-ld.php:87
 msgctxt "option label"
-msgid "Default Item Type for Home Page"
-msgstr "Type de schéma pour page d'accueil"
-
-#: lib/submenu/schema-json-ld.php:91
-msgctxt "option label"
 msgid "Default Item Type by Post Type"
 msgstr "Type de schéma par type d'article"
 
-#: lib/submenu/schema-json-ld.php:96
+#: lib/submenu/schema-json-ld.php:92
+msgctxt "option label"
+msgid "Item Type for Home Page"
+msgstr "Type d’élément pour page d’accueil"
+
+#: lib/submenu/schema-json-ld.php:93
+msgctxt "option label"
+msgid "Item Type for Archive Page"
+msgstr "Type d’élément pour page d'archive"
+
+#: lib/submenu/schema-json-ld.php:94
+msgctxt "option label"
+msgid "Item Type for User / Author Page"
+msgstr "Type d’élément pour page d'utilisateur / auteur"
+
+#: lib/submenu/schema-json-ld.php:95
+msgctxt "option label"
+msgid "Item Type for Search Results Page"
+msgstr "Type d’élément pour page résultats de recherche"
+
+#: lib/submenu/schema-json-ld.php:102
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr "Champ pers. d'ingrédients de recette"
