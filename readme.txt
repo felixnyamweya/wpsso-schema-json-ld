@@ -982,7 +982,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added the Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
+	* Added the new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
 		* Item Type for Archive Page (default is http://schema.org/CollectionPage)
 		* Item Type for User / Author Page (default is http://schema.org/ProfilePage)
 		* Item Type for Search Results Page (default is http://schema.org/SearchResultsPage)
@@ -1075,7 +1075,7 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 = 1.10.5-dev1 =
 
-(2016/10/13) Added the Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page.
+(2016/10/13) Added the new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page.
 
 = 1.10.4-1 =
 
