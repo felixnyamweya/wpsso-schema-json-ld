@@ -297,7 +297,27 @@ msgctxt "option label"
 msgid "Default Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:102
+#: lib/submenu/schema-json-ld.php:92
+msgctxt "option label"
+msgid "Item Type for Home Page"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:93
+msgctxt "option label"
+msgid "Item Type for Archive Page"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:94
+msgctxt "option label"
+msgid "Item Type for User / Author Page"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:95
+msgctxt "option label"
+msgid "Item Type for Search Result Page"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:103
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""
