@@ -259,7 +259,7 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:53
 msgctxt "option label"
-msgid "Organization Banner (600x60px) URL"
+msgid "Organization Banner (600x60) URL"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:57
@@ -292,12 +292,12 @@ msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:98
+#: lib/submenu/schema-json-ld.php:87
 msgctxt "option label"
 msgid "Default Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:103
+#: lib/submenu/schema-json-ld.php:102
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""

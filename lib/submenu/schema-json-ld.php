@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						_x( 'Organization Logo Image URL', 'option label', 'wpsso' ).'</a>', null, 'schema_logo_url' ).
 					'<td>'.$this->form->get_input( 'schema_logo_url', 'wide' ).'</td>';
 
-					$table_rows['schema_banner_url'] = $this->form->get_th_html( _x( 'Organization Banner (600x60px) URL',
+					$table_rows['schema_banner_url'] = $this->form->get_th_html( _x( 'Organization Banner (600x60) URL',
 						'option label', 'wpsso' ), null, 'schema_banner_url' ).
 					'<td>'.$this->form->get_input( 'schema_banner_url', 'wide' ).'</td>';
 
@@ -79,6 +79,14 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
 					$schema_types = $this->p->schema->get_schema_types_select();
+					$schema_select = '';
+					foreach ( $this->p->util->get_post_types() as $post_type )
+						$schema_select .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
+							$schema_types, 'long_name' ).' for '.$post_type->label.'</p>'."\n";
+
+					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Default Item Type by Post Type',
+						'option label', 'wpsso' ), null, 'schema_type_for_ptn' ).
+					'<td>'.$schema_select.'</td>';
 
 					foreach ( array( 
 						'home_page' => 'Home Page',
@@ -89,15 +97,6 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 							'option label', 'nextgen-facebook' ), null, 'schema_type_for_'.$type_name ).
 						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'long_name' ).'</td>';
 					}
-
-					$schema_select = '';
-					foreach ( $this->p->util->get_post_types() as $post_type )
-						$schema_select .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
-							$schema_types, 'long_name' ).' for '.$post_type->label.'</p>'."\n";
-
-					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Default Item Type by Post Type',
-						'option label', 'wpsso' ), null, 'schema_type_for_ptn' ).
-					'<td>'.$schema_select.'</td>';
 
 					$table_rows['plugin_cf_recipe_ingredients'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Recipe Ingredients Custom Field',
