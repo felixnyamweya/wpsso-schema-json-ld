@@ -92,10 +92,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'home_page' => _x( 'Item Type for Home Page', 'option label', 'nextgen-facebook' ),
 						'archive_page' => _x( 'Item Type for Archive Page', 'option label', 'nextgen-facebook' ),
 						'user_page' => _x( 'Item Type for User / Author Page', 'option label', 'nextgen-facebook' ),
-						'search_page' => _x( 'Item Type for Search Result Page', 'option label', 'nextgen-facebook' ),
+						'search_page' => _x( 'Item Type for Search Results Page', 'option label', 'nextgen-facebook' ),
 					) as $type_name => $type_label ) {
-						$table_rows['schema_type_for_'.$type_name] = '<tr class="hide_in_basic">'.
-						$this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
+						$table_rows['schema_type_for_'.$type_name] = $this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
 						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'long_name' ).'</td>';
 					}
 

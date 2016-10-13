@@ -314,10 +314,10 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:95
 msgctxt "option label"
-msgid "Item Type for Search Result Page"
+msgid "Item Type for Search Results Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:103
+#: lib/submenu/schema-json-ld.php:102
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""
