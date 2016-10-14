@@ -975,17 +975,21 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.5-1 (2016/10/13)**
+**Version 1.10.5-rc2 (2016/10/14)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added the new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
+	* Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
 		* Item Type for Archive Page (default is http://schema.org/CollectionPage)
 		* Item Type for User / Author Page (default is http://schema.org/ProfilePage)
 		* Item Type for Search Results Page (default is http://schema.org/SearchResultsPage)
+	* Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business:
+		* currenciesAccepted
+		* paymentAccepted
+		* priceRange
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -1073,9 +1077,9 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.5-rc1 =
+= 1.10.5-rc2 =
 
-(2016/10/13) Added the new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page.
+(2016/10/13) Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page. Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business.
 
 = 1.10.4-1 =
 
