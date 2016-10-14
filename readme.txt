@@ -1073,7 +1073,7 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.5-dev1 =
+= 1.10.5-rc1 =
 
 (2016/10/13) Added the new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page.
 
