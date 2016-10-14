@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
  * Requires At Least: 3.1
  * Tested Up To: 4.6.1
- * Version: 1.10.5-dev1
+ * Version: 1.10.5-rc1
  * 
  * Version Numbers: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		private static $instance = null;
 		private static $req_short = 'WPSSO';
 		private static $req_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $req_min_version = '3.36.0-dev1';
+		private static $req_min_version = '3.36.0-rc1';
 		private static $req_has_min_ver = true;
 
 		public static function &get_instance() {
