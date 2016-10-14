@@ -55,8 +55,8 @@
 <p>Adds Schema / Structured Data JSON-LD markup:</p>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
-<li>Schema Type <a href="http://schema.org/WebPage">schema.org/WebPage</a></li>
+<li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
+<li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a></li>
 </ul>
 
 <blockquote>
@@ -66,12 +66,12 @@
   <li>Description</li>
   <li>DatePublished</li>
   <li>DateModified</li>
-  <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
+  <li>Author as <a href="https://schema.org/Person">schema.org/Person</a>
   
   <ul>
   <li>Author URL from Profile</li>
   <li>Author Name</li>
-  <li>Author Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Author Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Author Image URL</li>
@@ -93,14 +93,14 @@
   <li>Website URL</li>
   </ul></li>
   </ul></li>
-  <li>Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  <li>Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -113,7 +113,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -144,25 +144,36 @@
 <p>Adds Schema / Structured Data JSON-LD markup:</p>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/CreativeWork">schema.org/CreativeWork</a>
+<li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Article">schema.org/Article</a>
+<li>Schema Type <a href="https://schema.org/Article">schema.org/Article</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
-<li>Schema Type <a href="http://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
-<li>Schema Type <a href="http://schema.org/Report">schema.org/Report</a></li>
-<li>Schema Type <a href="http://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
-<li>Schema Type <a href="http://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a></li>
-<li>Schema Type <a href="http://schema.org/TechArticle">schema.org/TechArticle</a></li>
+<li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
+<li>Schema Type <a href="https://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
+<li>Schema Type <a href="https://schema.org/Report">schema.org/Report</a></li>
+<li>Schema Type <a href="https://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
+<li>Schema Type <a href="https://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a></li>
+<li>Schema Type <a href="https://schema.org/TechArticle">schema.org/TechArticle</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/Book">schema.org/Book</a></li>
-<li>Schema Type <a href="http://schema.org/Blog">schema.org/Blog</a></li>
-<li>Schema Type <a href="http://schema.org/Recipe">schema.org/Recipe</a></li>
-<li>Schema Type <a href="http://schema.org/Review">schema.org/Review</a></li>
-<li>Schema Type <a href="http://schema.org/WebPage">schema.org/WebPage</a></li>
-<li>Schema Type <a href="http://schema.org/WebSite">schema.org/WebSite</a></li>
+<li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
+<li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a></li>
+<li>Schema Type <a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
+<li>Schema Type <a href="https://schema.org/Review">schema.org/Review</a></li>
+<li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/AboutPage">schema.org/AboutPage</a></li>
+<li>Schema Type <a href="https://schema.org/CheckoutPage">schema.org/CheckoutPage</a></li>
+<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a></li>
+<li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
+<li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
+<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
+<li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
+<li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
+</ul></li>
+<li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
 </ul>
 
@@ -174,13 +185,13 @@
   <li>Description</li>
   <li>DatePublished</li>
   <li>DateModified</li>
-  <li>Author as <a href="http://schema.org/Person">schema.org/Person</a>
+  <li>Author as <a href="https://schema.org/Person">schema.org/Person</a>
   
   <ul>
   <li>Author URL from Profile</li>
   <li>Author Name</li>
   <li>Author Description</li>
-  <li>Author Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Author Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Author Image URL</li>
@@ -202,13 +213,13 @@
   <li>Website URL</li>
   </ul></li>
   </ul></li>
-  <li>Publisher as <a href="http://schema.org/Organization">schema.org/Organization</a>
+  <li>Publisher as <a href="https://schema.org/Organization">schema.org/Organization</a>
   
   <ul>
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -227,14 +238,14 @@
   <li>Twitter Business Page URL</li>
   </ul></li>
   </ul></li>
-  <li>CreativeWork Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>CreativeWork Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>CreativeWork Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  <li>CreativeWork Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -247,7 +258,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -260,7 +271,7 @@
   <ul>
   <li>Item URL</li>
   </ul></li>
-  <li>CreativeWork ReviewRating as <a href="http://schema.org/Rating">schema.org/Rating</a>
+  <li>CreativeWork ReviewRating as <a href="https://schema.org/Rating">schema.org/Rating</a>
   
   <ul>
   <li>RatingValue</li>
@@ -271,26 +282,26 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Event">schema.org/Event</a>
+<li>Schema Type <a href="https://schema.org/Event">schema.org/Event</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/BusinessEvent">schema.org/BusinessEvent</a></li>
-<li>Schema Type <a href="http://schema.org/ChildrensEvent">schema.org/ChildrensEvent</a></li>
-<li>Schema Type <a href="http://schema.org/DanceEvent">schema.org/DanceEvent</a></li>
-<li>Schema Type <a href="http://schema.org/DeliveryEvent">schema.org/DeliveryEvent</a></li>
-<li>Schema Type <a href="http://schema.org/EducationEvent">schema.org/EducationEvent</a></li>
-<li>Schema Type <a href="http://schema.org/ExhibitionEvent">schema.org/ExhibitionEvent</a></li>
-<li>Schema Type <a href="http://schema.org/Festival">schema.org/Festival</a></li>
-<li>Schema Type <a href="http://schema.org/FoodEvent">schema.org/FoodEvent</a></li>
-<li>Schema Type <a href="http://schema.org/LiteraryEvent">schema.org/LiteraryEvent</a></li>
-<li>Schema Type <a href="http://schema.org/MusicEvent">schema.org/MusicEvent</a></li>
-<li>Schema Type <a href="http://schema.org/PublicationEvent">schema.org/PublicationEvent</a></li>
-<li>Schema Type <a href="http://schema.org/SaleEvent">schema.org/SaleEvent</a></li>
-<li>Schema Type <a href="http://schema.org/ScreeningEvent">schema.org/ScreeningEvent</a></li>
-<li>Schema Type <a href="http://schema.org/SocialEvent">schema.org/SocialEvent</a></li>
-<li>Schema Type <a href="http://schema.org/SportsEvent">schema.org/SportsEvent</a></li>
-<li>Schema Type <a href="http://schema.org/TheaterEvent">schema.org/TheaterEvent</a></li>
-<li>Schema Type <a href="http://schema.org/VisualArtsEvent">schema.org/VisualArtsEvent</a></li>
+<li>Schema Type <a href="https://schema.org/BusinessEvent">schema.org/BusinessEvent</a></li>
+<li>Schema Type <a href="https://schema.org/ChildrensEvent">schema.org/ChildrensEvent</a></li>
+<li>Schema Type <a href="https://schema.org/DanceEvent">schema.org/DanceEvent</a></li>
+<li>Schema Type <a href="https://schema.org/DeliveryEvent">schema.org/DeliveryEvent</a></li>
+<li>Schema Type <a href="https://schema.org/EducationEvent">schema.org/EducationEvent</a></li>
+<li>Schema Type <a href="https://schema.org/ExhibitionEvent">schema.org/ExhibitionEvent</a></li>
+<li>Schema Type <a href="https://schema.org/Festival">schema.org/Festival</a></li>
+<li>Schema Type <a href="https://schema.org/FoodEvent">schema.org/FoodEvent</a></li>
+<li>Schema Type <a href="https://schema.org/LiteraryEvent">schema.org/LiteraryEvent</a></li>
+<li>Schema Type <a href="https://schema.org/MusicEvent">schema.org/MusicEvent</a></li>
+<li>Schema Type <a href="https://schema.org/PublicationEvent">schema.org/PublicationEvent</a></li>
+<li>Schema Type <a href="https://schema.org/SaleEvent">schema.org/SaleEvent</a></li>
+<li>Schema Type <a href="https://schema.org/ScreeningEvent">schema.org/ScreeningEvent</a></li>
+<li>Schema Type <a href="https://schema.org/SocialEvent">schema.org/SocialEvent</a></li>
+<li>Schema Type <a href="https://schema.org/SportsEvent">schema.org/SportsEvent</a></li>
+<li>Schema Type <a href="https://schema.org/TheaterEvent">schema.org/TheaterEvent</a></li>
+<li>Schema Type <a href="https://schema.org/VisualArtsEvent">schema.org/VisualArtsEvent</a></li>
 </ul></li>
 </ul>
 
@@ -301,13 +312,13 @@
   <li>Description</li>
   <li>StartDate</li>
   <li>EndDate</li>
-  <li>Organizer as <a href="http://schema.org/Person">schema.org/Person</a> or <a href="http://schema.org/Organization">schema.org/Organization</a>
+  <li>Organizer as <a href="https://schema.org/Person">schema.org/Person</a> or <a href="https://schema.org/Organization">schema.org/Organization</a>
   
   <ul>
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Organization Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Organization Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -326,10 +337,10 @@
   <li>Twitter Business Page URL</li>
   </ul></li>
   </ul></li>
-  <li>Event Location as <a href="http://schema.org/Place">schema.org/Place</a>
+  <li>Event Location as <a href="https://schema.org/Place">schema.org/Place</a>
   
   <ul>
-  <li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+  <li>Address as <a href="https://schema.org/PostalAddress">schema.org/PostalAddress</a>
   
   <ul>
   <li>streetAddress</li>
@@ -339,7 +350,7 @@
   <li>postalCode</li>
   <li>addressCountry</li>
   </ul></li>
-  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+  <li>Geo Location as <a href="https://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
   
   <ul>
   <li>elevation</li>
@@ -347,14 +358,14 @@
   <li>longitude</li>
   </ul></li>
   </ul></li>
-  <li>Event Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Event Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Event Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  <li>Event Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -367,7 +378,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -379,42 +390,42 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Organization">schema.org/Organization</a>
+<li>Schema Type <a href="https://schema.org/Organization">schema.org/Organization</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Airline">schema.org/Airline</a></li>
-<li>Schema Type <a href="http://schema.org/Corporation">schema.org/Corporation</a></li>
-<li>Schema Type <a href="http://schema.org/EducationalOrganization">schema.org/EducationalOrganization</a>
+<li>Schema Type <a href="https://schema.org/Airline">schema.org/Airline</a></li>
+<li>Schema Type <a href="https://schema.org/Corporation">schema.org/Corporation</a></li>
+<li>Schema Type <a href="https://schema.org/EducationalOrganization">schema.org/EducationalOrganization</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/CollegeOrUniversity">schema.org/CollegeOrUniversity</a></li>
-<li>Schema Type <a href="http://schema.org/ElementarySchool">schema.org/ElementarySchool</a></li>
-<li>Schema Type <a href="http://schema.org/MiddleSchool">schema.org/MiddleSchool</a></li>
-<li>Schema Type <a href="http://schema.org/Preschool">schema.org/Preschool</a></li>
-<li>Schema Type <a href="http://schema.org/School">schema.org/School</a></li>
+<li>Schema Type <a href="https://schema.org/CollegeOrUniversity">schema.org/CollegeOrUniversity</a></li>
+<li>Schema Type <a href="https://schema.org/ElementarySchool">schema.org/ElementarySchool</a></li>
+<li>Schema Type <a href="https://schema.org/MiddleSchool">schema.org/MiddleSchool</a></li>
+<li>Schema Type <a href="https://schema.org/Preschool">schema.org/Preschool</a></li>
+<li>Schema Type <a href="https://schema.org/School">schema.org/School</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/GovernmentOrganization">schema.org/GovernmentOrganization</a></li>
-<li>Schema Type <a href="http://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
+<li>Schema Type <a href="https://schema.org/GovernmentOrganization">schema.org/GovernmentOrganization</a></li>
+<li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Dentist">schema.org/Dentist</a></li>
-<li>Schema Type <a href="http://schema.org/Hospital">schema.org/Hospital</a></li>
-<li>Schema Type <a href="http://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
-<li>Schema Type <a href="http://schema.org/Physician">schema.org/Physician</a></li>
+<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
+<li>Schema Type <a href="https://schema.org/Hospital">schema.org/Hospital</a></li>
+<li>Schema Type <a href="https://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
+<li>Schema Type <a href="https://schema.org/Physician">schema.org/Physician</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/NGO">schema.org/NGO</a></li>
-<li>Schema Type <a href="http://schema.org/PerformingGroup">schema.org/PerformingGroup</a>
+<li>Schema Type <a href="https://schema.org/NGO">schema.org/NGO</a></li>
+<li>Schema Type <a href="https://schema.org/PerformingGroup">schema.org/PerformingGroup</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/DanceGroup">schema.org/DanceGroup</a></li>
-<li>Schema Type <a href="http://schema.org/MusicGroup">schema.org/MusicGroup</a></li>
-<li>Schema Type <a href="http://schema.org/PerformingGroup">schema.org/PerformingGroup</a></li>
-<li>Schema Type <a href="http://schema.org/TheaterGroup">schema.org/TheaterGroup</a></li>
+<li>Schema Type <a href="https://schema.org/DanceGroup">schema.org/DanceGroup</a></li>
+<li>Schema Type <a href="https://schema.org/MusicGroup">schema.org/MusicGroup</a></li>
+<li>Schema Type <a href="https://schema.org/PerformingGroup">schema.org/PerformingGroup</a></li>
+<li>Schema Type <a href="https://schema.org/TheaterGroup">schema.org/TheaterGroup</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/SportsOrganization">schema.org/SportsOrganization</a>
+<li>Schema Type <a href="https://schema.org/SportsOrganization">schema.org/SportsOrganization</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/SportsTeam">schema.org/SportsTeam</a></li>
+<li>Schema Type <a href="https://schema.org/SportsTeam">schema.org/SportsTeam</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -424,7 +435,7 @@
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Logo Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -442,14 +453,14 @@
   <li>Pinterest Company Page URL</li>
   <li>Twitter Business Page URL</li>
   </ul></li>
-  <li>Organization Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Organization Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Organization Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
+  <li>Organization Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
   
   <ul>
   <li>Video URL</li>
@@ -462,7 +473,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -474,7 +485,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Person">schema.org/Person</a></li>
+<li>Schema Type <a href="https://schema.org/Person">schema.org/Person</a></li>
 </ul>
 
 <blockquote>
@@ -482,7 +493,7 @@
   <li>URL from Profile</li>
   <li>Name</li>
   <li>Description</li>
-  <li>Person Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Person Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -507,91 +518,91 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Location information</strong>)
+<li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Location information</strong>)
 
 <ul>
-<li>Schema Type <a href="http://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
-<li>Schema Type <a href="http://schema.org/CivicStructure">schema.org/CivicStructure</a></li>
-<li>Schema Type <a href="http://schema.org/Landform">schema.org/Landform</a></li>
-<li>Schema Type <a href="http://schema.org/LandmarksOrHistoricalBuildings">schema.org/LandmarksOrHistoricalBuildings</a></li>
-<li>Schema Type <a href="http://schema.org/LocalBusiness">schema.org/LocalBusiness</a>
+<li>Schema Type <a href="https://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
+<li>Schema Type <a href="https://schema.org/CivicStructure">schema.org/CivicStructure</a></li>
+<li>Schema Type <a href="https://schema.org/Landform">schema.org/Landform</a></li>
+<li>Schema Type <a href="https://schema.org/LandmarksOrHistoricalBuildings">schema.org/LandmarksOrHistoricalBuildings</a></li>
+<li>Schema Type <a href="https://schema.org/LocalBusiness">schema.org/LocalBusiness</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/AnimalShelter">schema.org/AnimalShelter</a></li>
-<li>Schema Type <a href="http://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a></li>
-<li>Schema Type <a href="http://schema.org/ChildCare">schema.org/ChildCare</a></li>
-<li>Schema Type <a href="http://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
-<li>Schema Type <a href="http://schema.org/EmergencyService">schema.org/EmergencyService</a></li>
-<li>Schema Type <a href="http://schema.org/EmploymentAgency">schema.org/EmploymentAgency</a></li>
-<li>Schema Type <a href="http://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a></li>
-<li>Schema Type <a href="http://schema.org/FinancialService">schema.org/FinancialService</a></li>
-<li>Schema Type <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
+<li>Schema Type <a href="https://schema.org/AnimalShelter">schema.org/AnimalShelter</a></li>
+<li>Schema Type <a href="https://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/ChildCare">schema.org/ChildCare</a></li>
+<li>Schema Type <a href="https://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
+<li>Schema Type <a href="https://schema.org/EmergencyService">schema.org/EmergencyService</a></li>
+<li>Schema Type <a href="https://schema.org/EmploymentAgency">schema.org/EmploymentAgency</a></li>
+<li>Schema Type <a href="https://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/FinancialService">schema.org/FinancialService</a></li>
+<li>Schema Type <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Bakery">schema.org/Bakery</a></li>
-<li>Schema Type <a href="http://schema.org/BarOrPub">schema.org/BarOrPub</a></li>
-<li>Schema Type <a href="http://schema.org/Brewery">schema.org/Brewery</a></li>
-<li>Schema Type <a href="http://schema.org/CafeOrCoffeeShop">schema.org/CafeOrCoffeeShop</a></li>
-<li>Schema Type <a href="http://schema.org/FastFoodRestaurant">schema.org/FastFoodRestaurant</a></li>
-<li>Schema Type <a href="http://schema.org/IceCreamShop">schema.org/IceCreamShop</a></li>
-<li>Schema Type <a href="http://schema.org/Restaurant">schema.org/Restaurant</a></li>
-<li>Schema Type <a href="http://schema.org/Winery">schema.org/Winery</a></li>
+<li>Schema Type <a href="https://schema.org/Bakery">schema.org/Bakery</a></li>
+<li>Schema Type <a href="https://schema.org/BarOrPub">schema.org/BarOrPub</a></li>
+<li>Schema Type <a href="https://schema.org/Brewery">schema.org/Brewery</a></li>
+<li>Schema Type <a href="https://schema.org/CafeOrCoffeeShop">schema.org/CafeOrCoffeeShop</a></li>
+<li>Schema Type <a href="https://schema.org/FastFoodRestaurant">schema.org/FastFoodRestaurant</a></li>
+<li>Schema Type <a href="https://schema.org/IceCreamShop">schema.org/IceCreamShop</a></li>
+<li>Schema Type <a href="https://schema.org/Restaurant">schema.org/Restaurant</a></li>
+<li>Schema Type <a href="https://schema.org/Winery">schema.org/Winery</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/GovernmentOffice">schema.org/GovernmentOffice</a></li>
-<li>Schema Type <a href="http://schema.org/HealthAndBeautyBusiness">schema.org/HealthAndBeautyBusiness</a></li>
-<li>Schema Type <a href="http://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a></li>
-<li>Schema Type <a href="http://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
-<li>Schema Type <a href="http://schema.org/LegalService">schema.org/LegalService</a></li>
-<li>Schema Type <a href="http://schema.org/Library">schema.org/Library</a></li>
-<li>Schema Type <a href="http://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
-<li>Schema Type <a href="http://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a></li>
-<li>Schema Type <a href="http://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
-<li>Schema Type <a href="http://schema.org/RadioStation">schema.org/RadioStation</a></li>
-<li>Schema Type <a href="http://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
-<li>Schema Type <a href="http://schema.org/RecyclingCenter">schema.org/RecyclingCenter</a></li>
-<li>Schema Type <a href="http://schema.org/SelfStorage">schema.org/SelfStorage</a></li>
-<li>Schema Type <a href="http://schema.org/ShoppingCenter">schema.org/ShoppingCenter</a></li>
-<li>Schema Type <a href="http://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a></li>
-<li>Schema Type <a href="http://schema.org/Store">schema.org/Store</a>
+<li>Schema Type <a href="https://schema.org/GovernmentOffice">schema.org/GovernmentOffice</a></li>
+<li>Schema Type <a href="https://schema.org/HealthAndBeautyBusiness">schema.org/HealthAndBeautyBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
+<li>Schema Type <a href="https://schema.org/LegalService">schema.org/LegalService</a></li>
+<li>Schema Type <a href="https://schema.org/Library">schema.org/Library</a></li>
+<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a></li>
+<li>Schema Type <a href="https://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
+<li>Schema Type <a href="https://schema.org/RadioStation">schema.org/RadioStation</a></li>
+<li>Schema Type <a href="https://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
+<li>Schema Type <a href="https://schema.org/RecyclingCenter">schema.org/RecyclingCenter</a></li>
+<li>Schema Type <a href="https://schema.org/SelfStorage">schema.org/SelfStorage</a></li>
+<li>Schema Type <a href="https://schema.org/ShoppingCenter">schema.org/ShoppingCenter</a></li>
+<li>Schema Type <a href="https://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a></li>
+<li>Schema Type <a href="https://schema.org/Store">schema.org/Store</a>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/AutoPartsStore">schema.org/AutoPartsStore</a></li>
-<li>Schema Type <a href="http://schema.org/BikeStore">schema.org/BikeStore</a></li>
-<li>Schema Type <a href="http://schema.org/BookStore">schema.org/BookStore</a></li>
-<li>Schema Type <a href="http://schema.org/ClothingStore">schema.org/ClothingStore</a></li>
-<li>Schema Type <a href="http://schema.org/ComputerStore">schema.org/ComputerStore</a></li>
-<li>Schema Type <a href="http://schema.org/ConvenienceStore">schema.org/ConvenienceStore</a></li>
-<li>Schema Type <a href="http://schema.org/DepartmentStore">schema.org/DepartmentStore</a></li>
-<li>Schema Type <a href="http://schema.org/ElectronicsStore">schema.org/ElectronicsStore</a></li>
-<li>Schema Type <a href="http://schema.org/Florist">schema.org/Florist</a></li>
-<li>Schema Type <a href="http://schema.org/FurnitureStore">schema.org/FurnitureStore</a></li>
-<li>Schema Type <a href="http://schema.org/GardenStore">schema.org/GardenStore</a></li>
-<li>Schema Type <a href="http://schema.org/GroceryStore">schema.org/GroceryStore</a></li>
-<li>Schema Type <a href="http://schema.org/HardwareStore">schema.org/HardwareStore</a></li>
-<li>Schema Type <a href="http://schema.org/HobbyShop">schema.org/HobbyShop</a></li>
-<li>Schema Type <a href="http://schema.org/HomeGoodsStore">schema.org/HomeGoodsStore</a></li>
-<li>Schema Type <a href="http://schema.org/JewelryStore">schema.org/JewelryStore</a></li>
-<li>Schema Type <a href="http://schema.org/LiquorStore">schema.org/LiquorStore</a></li>
-<li>Schema Type <a href="http://schema.org/MensClothingStore">schema.org/MensClothingStore</a></li>
-<li>Schema Type <a href="http://schema.org/MobilePhoneStore">schema.org/MobilePhoneStore</a></li>
-<li>Schema Type <a href="http://schema.org/MovieRentalStore">schema.org/MovieRentalStore</a></li>
-<li>Schema Type <a href="http://schema.org/MusicStore">schema.org/MusicStore</a></li>
-<li>Schema Type <a href="http://schema.org/OfficeEquipmentStore">schema.org/OfficeEquipmentStore</a></li>
-<li>Schema Type <a href="http://schema.org/OutletStore">schema.org/OutletStore</a></li>
-<li>Schema Type <a href="http://schema.org/PawnShop">schema.org/PawnShop</a></li>
-<li>Schema Type <a href="http://schema.org/PetStore">schema.org/PetStore</a></li>
-<li>Schema Type <a href="http://schema.org/ShoeStore">schema.org/ShoeStore</a></li>
-<li>Schema Type <a href="http://schema.org/SportingGoodsStore">schema.org/SportingGoodsStore</a></li>
-<li>Schema Type <a href="http://schema.org/TireShop">schema.org/TireShop</a></li>
-<li>Schema Type <a href="http://schema.org/ToyStore">schema.org/ToyStore</a></li>
-<li>Schema Type <a href="http://schema.org/WholesaleStore">schema.org/WholesaleStore</a></li>
+<li>Schema Type <a href="https://schema.org/AutoPartsStore">schema.org/AutoPartsStore</a></li>
+<li>Schema Type <a href="https://schema.org/BikeStore">schema.org/BikeStore</a></li>
+<li>Schema Type <a href="https://schema.org/BookStore">schema.org/BookStore</a></li>
+<li>Schema Type <a href="https://schema.org/ClothingStore">schema.org/ClothingStore</a></li>
+<li>Schema Type <a href="https://schema.org/ComputerStore">schema.org/ComputerStore</a></li>
+<li>Schema Type <a href="https://schema.org/ConvenienceStore">schema.org/ConvenienceStore</a></li>
+<li>Schema Type <a href="https://schema.org/DepartmentStore">schema.org/DepartmentStore</a></li>
+<li>Schema Type <a href="https://schema.org/ElectronicsStore">schema.org/ElectronicsStore</a></li>
+<li>Schema Type <a href="https://schema.org/Florist">schema.org/Florist</a></li>
+<li>Schema Type <a href="https://schema.org/FurnitureStore">schema.org/FurnitureStore</a></li>
+<li>Schema Type <a href="https://schema.org/GardenStore">schema.org/GardenStore</a></li>
+<li>Schema Type <a href="https://schema.org/GroceryStore">schema.org/GroceryStore</a></li>
+<li>Schema Type <a href="https://schema.org/HardwareStore">schema.org/HardwareStore</a></li>
+<li>Schema Type <a href="https://schema.org/HobbyShop">schema.org/HobbyShop</a></li>
+<li>Schema Type <a href="https://schema.org/HomeGoodsStore">schema.org/HomeGoodsStore</a></li>
+<li>Schema Type <a href="https://schema.org/JewelryStore">schema.org/JewelryStore</a></li>
+<li>Schema Type <a href="https://schema.org/LiquorStore">schema.org/LiquorStore</a></li>
+<li>Schema Type <a href="https://schema.org/MensClothingStore">schema.org/MensClothingStore</a></li>
+<li>Schema Type <a href="https://schema.org/MobilePhoneStore">schema.org/MobilePhoneStore</a></li>
+<li>Schema Type <a href="https://schema.org/MovieRentalStore">schema.org/MovieRentalStore</a></li>
+<li>Schema Type <a href="https://schema.org/MusicStore">schema.org/MusicStore</a></li>
+<li>Schema Type <a href="https://schema.org/OfficeEquipmentStore">schema.org/OfficeEquipmentStore</a></li>
+<li>Schema Type <a href="https://schema.org/OutletStore">schema.org/OutletStore</a></li>
+<li>Schema Type <a href="https://schema.org/PawnShop">schema.org/PawnShop</a></li>
+<li>Schema Type <a href="https://schema.org/PetStore">schema.org/PetStore</a></li>
+<li>Schema Type <a href="https://schema.org/ShoeStore">schema.org/ShoeStore</a></li>
+<li>Schema Type <a href="https://schema.org/SportingGoodsStore">schema.org/SportingGoodsStore</a></li>
+<li>Schema Type <a href="https://schema.org/TireShop">schema.org/TireShop</a></li>
+<li>Schema Type <a href="https://schema.org/ToyStore">schema.org/ToyStore</a></li>
+<li>Schema Type <a href="https://schema.org/WholesaleStore">schema.org/WholesaleStore</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/TelevisionStation">schema.org/TelevisionStation</a></li>
-<li>Schema Type <a href="http://schema.org/TouristInformationCenter">schema.org/TouristInformationCenter</a></li>
-<li>Schema Type <a href="http://schema.org/TravelAgency">schema.org/TravelAgency</a></li>
+<li>Schema Type <a href="https://schema.org/TelevisionStation">schema.org/TelevisionStation</a></li>
+<li>Schema Type <a href="https://schema.org/TouristInformationCenter">schema.org/TouristInformationCenter</a></li>
+<li>Schema Type <a href="https://schema.org/TravelAgency">schema.org/TravelAgency</a></li>
 </ul></li>
-<li>Schema Type <a href="http://schema.org/Residence">schema.org/Residence</a></li>
-<li>Schema Type <a href="http://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
+<li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a></li>
+<li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
 </ul></li>
 </ul>
 
@@ -600,9 +611,13 @@
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
-  <li>AcceptsReservations for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
-  <li>Menu (URL) for <a href="http://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
-  <li>Address as <a href="http://schema.org/PostalAddress">schema.org/PostalAddress</a>
+  <li>AreaServed as <a href="https://schema.org/GeoShape">schema.org/GeoShape</a></li>
+  <li>CurrencyAccepted</li>
+  <li>PaymentAccepted</li>
+  <li>PriceRange</li>
+  <li>Menu (URL) for <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
+  <li>AcceptsReservations for <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
+  <li>Address as <a href="https://schema.org/PostalAddress">schema.org/PostalAddress</a>
   
   <ul>
   <li>streetAddress</li>
@@ -612,14 +627,14 @@
   <li>postalCode</li>
   <li>addressCountry</li>
   </ul></li>
-  <li>Geo Location as <a href="http://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
+  <li>Geo Location as <a href="https://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
   
   <ul>
   <li>elevation</li>
   <li>latitude</li>
   <li>longitude</li>
   </ul></li>
-  <li>Opening Hours Specification as <a href="http://schema.org/openingHoursSpecification">schema.org/openingHoursSpecification</a>
+  <li>Opening Hours Specification as <a href="https://schema.org/openingHoursSpecification">schema.org/openingHoursSpecification</a>
   
   <ul>
   <li>opens</li>
@@ -627,14 +642,14 @@
   <li>validFrom</li>
   <li>validThrough</li>
   </ul></li>
-  <li>Place Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Place Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Place Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Place Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a>
   
   <ul>
   <li>Video URL</li>
@@ -647,7 +662,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -659,7 +674,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/Product">schema.org/Product</a> (<strong>supported e-Commerce plugin required</strong>)</li>
+<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (<strong>supported e-Commerce plugin required</strong>)</li>
 </ul>
 
 <blockquote>
@@ -670,32 +685,32 @@
   <li>Product SKU</li>
   <li>Product Color</li>
   <li>Product Category</li>
-  <li>Product Width / Height as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  <li>Product Width / Height as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
   
   <ul>
   <li>Value</li>
   <li>UnitCode CMT</li>
   </ul></li>
-  <li>Product Length (AdditionalProperty) as <a href="http://schema.org/PropertyValue">schema.org/PropertyValue</a>
+  <li>Product Length (AdditionalProperty) as <a href="https://schema.org/PropertyValue">schema.org/PropertyValue</a>
   
   <ul>
   <li>PropertyID length</li>
   <li>Value</li>
   <li>UnitCode CMT</li>
   </ul></li>
-  <li>Product Weight as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  <li>Product Weight as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
   
   <ul>
   <li>Value</li>
   <li>UnitCode KGM</li>
   </ul></li>
-  <li>Product Offers as <a href="http://schema.org/Offer">schema.org/Offer</a>
+  <li>Product Offers as <a href="https://schema.org/Offer">schema.org/Offer</a>
   
   <ul>
   <li>Variation Price</li>
   <li>Variation PriceCurrency</li>
   <li>Variation Availability</li>
-  <li>Variation ItemOffered as <a href="http://schema.org/IndividualProduct">schema.org/IndividualProduct</a>
+  <li>Variation ItemOffered as <a href="https://schema.org/IndividualProduct">schema.org/IndividualProduct</a>
   
   <ul>
   <li>Variation URL</li>
@@ -703,26 +718,26 @@
   <li>Variation SKU</li>
   <li>Variation Color</li>
   <li>Variation Description</li>
-  <li>Variation Width / Height as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  <li>Variation Width / Height as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
   
   <ul>
   <li>Value</li>
   <li>UnitCode CMT</li>
   </ul></li>
-  <li>Variation Length (additionalProperty) as <a href="http://schema.org/PropertyValue">schema.org/PropertyValue</a>
+  <li>Variation Length (additionalProperty) as <a href="https://schema.org/PropertyValue">schema.org/PropertyValue</a>
   
   <ul>
   <li>PropertyID length</li>
   <li>Value</li>
   <li>UnitCode CMT</li>
   </ul></li>
-  <li>Variation Weight as <a href="http://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
+  <li>Variation Weight as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
   
   <ul>
   <li>Value</li>
   <li>UnitCode KGM</li>
   </ul></li>
-  <li>Variation Image as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Variation Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
@@ -731,7 +746,7 @@
   </ul></li>
   </ul></li>
   </ul></li>
-  <li>Product Rating as <a href="http://schema.org/AggregateRating">schema.org/AggregateRating</a>
+  <li>Product Rating as <a href="https://schema.org/AggregateRating">schema.org/AggregateRating</a>
   
   <ul>
   <li>RatingValue</li>
@@ -740,14 +755,14 @@
   <li>BestRating</li>
   <li>ReviewCount</li>
   </ul></li>
-  <li>Product Images as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Product Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Image URL</li>
   <li>Image Width</li>
   <li>Image Height</li>
   </ul></li>
-  <li>Product Videos as <a href="http://schema.org/VideoObject">schema.org/VideoObject</a>
+  <li>Product Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a>
   
   <ul>
   <li>Video URL</li>
@@ -760,7 +775,7 @@
   <li>Video UploadDate</li>
   <li>Video ThumbnailUrl</li>
   <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="http://schema.org/ImageObject">schema.org/ImageObject</a>
+  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
   
   <ul>
   <li>Thumbnail URL</li>
@@ -772,7 +787,7 @@
 </blockquote>
 
 <ul>
-<li>Schema Type <a href="http://schema.org/WebSite">schema.org/WebSite</a></li>
+<li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul>
 
 <blockquote>
@@ -780,7 +795,7 @@
   <li>URL</li>
   <li>Name</li>
   <li>Description</li>
-  <li>PotentialAction as <a href="http://schema.org/SearchAction">schema.org/SearchAction</a>
+  <li>PotentialAction as <a href="https://schema.org/SearchAction">schema.org/SearchAction</a>
   
   <ul>
   <li>Target</li>
@@ -795,13 +810,13 @@
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "TechArticle",
     "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "name": "PHP &amp;ndash; Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
     },
@@ -810,14 +825,14 @@
     "datemodified": "2016-04-15T15:05:58+00:00",
     "inLanguage": "en_US",
     "publisher": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Organization",
         "url": "http://surniaulula.com",
         "name": "Surnia Ulula",
         "alternateName": "Surnia Ulula Ltd",
         "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
         "logo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/surnia-ulula-text-banner-wide-600x60.png",
             "width": 600,
@@ -826,7 +841,7 @@
     },
     "author": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Person",
             "url": "http://surniaulula.com/",
             "name": "JS Morisset",
@@ -835,7 +850,7 @@
     ],
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/2014/03/php-logo-1200x1200.png",
             "width": 1200,
@@ -849,18 +864,18 @@
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Product",
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "name": "A Colorful Pencil",
     "description": "This is a short description for the colorful pencil.",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://woo.surniaulula.com/product/a-colorful-pencil/"
     },
     "aggregateRating": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "AggregateRating",
         "ratingvalue": "5",
         "ratingcount": 1,
@@ -872,32 +887,32 @@
     "color": "Green | Blue | Orange | Red",
     "category": "Pencils",
     "width": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "0.5",
         "unitCode": "CMT"
     },
     "height": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "12",
         "unitCode": "CMT"
     },
     "weight": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "10",
         "unitCode": "KGM"
     },
     "offers": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Green",
                 "sku": "PENCIL_GREEN",
@@ -905,26 +920,26 @@
                 "color": "Green",
                 "description": "A description for the green pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
                         "width": 800,
@@ -934,13 +949,13 @@
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Blue",
                 "sku": "PENCIL_BLUE",
@@ -948,26 +963,26 @@
                 "color": "Blue",
                 "description": "A description for the blue pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_blue-800x800.png",
                         "width": 800,
@@ -977,13 +992,13 @@
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Orange",
                 "sku": "PENCIL_ORANGE",
@@ -991,26 +1006,26 @@
                 "color": "Orange",
                 "description": "A description for the orange pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_orange-800x800.png",
                         "width": 800,
@@ -1020,13 +1035,13 @@
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.10",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Red",
                 "sku": "PENCIL_RED",
@@ -1034,26 +1049,26 @@
                 "color": "Red",
                 "description": "A description for the red pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_red-800x800.png",
                         "width": 800,
@@ -1065,7 +1080,7 @@
     ],
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
             "width": 800,
@@ -1079,19 +1094,19 @@
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Restaurant",
         "url": "http://restaurant.example.com/",
         "name": "Restaurant Name",
     "description": "A great family owned restaurant. ;-)",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://restaurant.example.com/"
     },
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://restaurant.example.com/wp-content/uploads/restaurant-image.jpg",
             "width": 800,
@@ -1100,7 +1115,7 @@
     ],
     "video": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "VideoObject",
             "url": "https://www.youtube.com/v/xxxxxxxxxxx?version=3&amp;#038;autohide=1",
             "name": "Restaurant Walkthrough",
@@ -1112,7 +1127,7 @@
             "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
             "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx",
             "thumbnail": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "ImageObject",
                 "url": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
                 "width": 1280,
@@ -1120,7 +1135,7 @@
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "VideoObject",
             "url": "https://www.youtube.com/embed/xxxxxxxxxxx",
             "name": "Restaurant Walkthrough",
@@ -1134,7 +1149,7 @@
         }
     ]
     "address": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "PostalAddress",
         "streetAddress": "123 A Road",
         "postOfficeBoxNumber": 7,
@@ -1144,14 +1159,14 @@
         "addressCountry": "US"
     },
     "geo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "GeoCoordinates",
         "latitude": 10,
         "longitude": -10
     },
     "openingHoursSpecification": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "openingHoursSpecification",
             "dayOfWeek": "Saturday",
             "opens": "12:00",

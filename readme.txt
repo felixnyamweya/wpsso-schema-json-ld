@@ -55,18 +55,18 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 
 Adds Schema / Structured Data JSON-LD markup:
 
-* Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
-* Schema Type [schema.org/WebPage](http://schema.org/WebPage)
+* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
+* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 
 > * URL
 > * Name (Title)
 > * Description
 > * DatePublished
 > * DateModified
-> * Author as [schema.org/Person](http://schema.org/Person)
+> * Author as [schema.org/Person](https://schema.org/Person)
 > 	* Author URL from Profile
 > 	* Author Name
-> 	* Author Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
@@ -81,11 +81,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* Twitter URL
 >		* YouTube URL
 >		* Website URL
-> * Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -96,7 +96,7 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
@@ -118,20 +118,28 @@ Adds additional custom options in the Social Settings metabox:
 
 Adds Schema / Structured Data JSON-LD markup:
 
-* Schema Type [schema.org/CreativeWork](http://schema.org/CreativeWork)
-	* Schema Type [schema.org/Article](http://schema.org/Article)
-		* Schema Type [schema.org/BlogPosting](http://schema.org/BlogPosting)
-		* Schema Type [schema.org/NewsArticle](http://schema.org/NewsArticle)
-		* Schema Type [schema.org/Report](http://schema.org/Report)
-		* Schema Type [schema.org/ScholarlyArticle](http://schema.org/ScholarlyArticle)
-		* Schema Type [schema.org/SocialMediaPosting](http://schema.org/SocialMediaPosting)
-		* Schema Type [schema.org/TechArticle](http://schema.org/TechArticle)
-	* Schema Type [schema.org/Book](http://schema.org/Book)
-	* Schema Type [schema.org/Blog](http://schema.org/Blog)
-	* Schema Type [schema.org/Recipe](http://schema.org/Recipe)
-	* Schema Type [schema.org/Review](http://schema.org/Review)
-	* Schema Type [schema.org/WebPage](http://schema.org/WebPage)
-	* Schema Type [schema.org/WebSite](http://schema.org/WebSite)
+* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
+	* Schema Type [schema.org/Article](https://schema.org/Article)
+		* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
+		* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
+		* Schema Type [schema.org/Report](https://schema.org/Report)
+		* Schema Type [schema.org/ScholarlyArticle](https://schema.org/ScholarlyArticle)
+		* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
+		* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
+	* Schema Type [schema.org/Book](https://schema.org/Book)
+	* Schema Type [schema.org/Blog](https://schema.org/Blog)
+	* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
+	* Schema Type [schema.org/Review](https://schema.org/Review)
+	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
+		* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
+		* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
+		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage)
+		* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
+		* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
+		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage)
+		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
+		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
+	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
  
 > * URL
 > * Name (Title)
@@ -139,11 +147,11 @@ Adds Schema / Structured Data JSON-LD markup:
 > * Description
 > * DatePublished
 > * DateModified
-> * Author as [schema.org/Person](http://schema.org/Person)
+> * Author as [schema.org/Person](https://schema.org/Person)
 > 	* Author URL from Profile
 > 	* Author Name
 > 	* Author Description
-> 	* Author Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Author Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Author Image URL
 > 		* Author Image Width
 > 		* Author Image Height
@@ -158,11 +166,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* Twitter URL
 >		* YouTube URL
 >		* Website URL
-> * Publisher as [schema.org/Organization](http://schema.org/Organization)
+> * Publisher as [schema.org/Organization](https://schema.org/Organization)
 > 	* URL
 > 	* Name
 > 	* Description
-> 	* Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Image URL
 > 		* Image Width
 > 		* Image Height
@@ -174,11 +182,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* MySpace Business Page URL
 >		* Pinterest Company Page URL
 >		* Twitter Business Page URL
-> * CreativeWork Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * CreativeWork Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * CreativeWork Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * CreativeWork Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -189,46 +197,46 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 > * CreativeWork ItemReviewed as Any Schema Type
 > 	* Item URL
-> * CreativeWork ReviewRating as [schema.org/Rating](http://schema.org/Rating)
+> * CreativeWork ReviewRating as [schema.org/Rating](https://schema.org/Rating)
 > 	* RatingValue
 > 	* WorstRating
 > 	* BestRating
 
-* Schema Type [schema.org/Event](http://schema.org/Event)
-	* Schema Type [schema.org/BusinessEvent](http://schema.org/BusinessEvent)
-	* Schema Type [schema.org/ChildrensEvent](http://schema.org/ChildrensEvent)
-	* Schema Type [schema.org/DanceEvent](http://schema.org/DanceEvent)
-	* Schema Type [schema.org/DeliveryEvent](http://schema.org/DeliveryEvent)
-	* Schema Type [schema.org/EducationEvent](http://schema.org/EducationEvent)
-	* Schema Type [schema.org/ExhibitionEvent](http://schema.org/ExhibitionEvent)
-	* Schema Type [schema.org/Festival](http://schema.org/Festival)
-	* Schema Type [schema.org/FoodEvent](http://schema.org/FoodEvent)
-	* Schema Type [schema.org/LiteraryEvent](http://schema.org/LiteraryEvent)
-	* Schema Type [schema.org/MusicEvent](http://schema.org/MusicEvent)
-	* Schema Type [schema.org/PublicationEvent](http://schema.org/PublicationEvent)
-	* Schema Type [schema.org/SaleEvent](http://schema.org/SaleEvent)
-	* Schema Type [schema.org/ScreeningEvent](http://schema.org/ScreeningEvent)
-	* Schema Type [schema.org/SocialEvent](http://schema.org/SocialEvent)
-	* Schema Type [schema.org/SportsEvent](http://schema.org/SportsEvent)
-	* Schema Type [schema.org/TheaterEvent](http://schema.org/TheaterEvent)
-	* Schema Type [schema.org/VisualArtsEvent](http://schema.org/VisualArtsEvent)
+* Schema Type [schema.org/Event](https://schema.org/Event)
+	* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
+	* Schema Type [schema.org/ChildrensEvent](https://schema.org/ChildrensEvent)
+	* Schema Type [schema.org/DanceEvent](https://schema.org/DanceEvent)
+	* Schema Type [schema.org/DeliveryEvent](https://schema.org/DeliveryEvent)
+	* Schema Type [schema.org/EducationEvent](https://schema.org/EducationEvent)
+	* Schema Type [schema.org/ExhibitionEvent](https://schema.org/ExhibitionEvent)
+	* Schema Type [schema.org/Festival](https://schema.org/Festival)
+	* Schema Type [schema.org/FoodEvent](https://schema.org/FoodEvent)
+	* Schema Type [schema.org/LiteraryEvent](https://schema.org/LiteraryEvent)
+	* Schema Type [schema.org/MusicEvent](https://schema.org/MusicEvent)
+	* Schema Type [schema.org/PublicationEvent](https://schema.org/PublicationEvent)
+	* Schema Type [schema.org/SaleEvent](https://schema.org/SaleEvent)
+	* Schema Type [schema.org/ScreeningEvent](https://schema.org/ScreeningEvent)
+	* Schema Type [schema.org/SocialEvent](https://schema.org/SocialEvent)
+	* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
+	* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
+	* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
 
 > * URL
 > * Name (Title)
 > * Description
 > * StartDate
 > * EndDate
-> * Organizer as [schema.org/Person](http://schema.org/Person) or [schema.org/Organization](http://schema.org/Organization)
+> * Organizer as [schema.org/Person](https://schema.org/Person) or [schema.org/Organization](https://schema.org/Organization)
 > 	* URL
 > 	* Name
 > 	* Description
-> 	* Organization Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Organization Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Image URL
 > 		* Image Width
 > 		* Image Height
@@ -240,23 +248,23 @@ Adds Schema / Structured Data JSON-LD markup:
 >		* MySpace Business Page URL
 >		* Pinterest Company Page URL
 >		* Twitter Business Page URL
-> * Event Location as [schema.org/Place](http://schema.org/Place)
-> 	* Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+> * Event Location as [schema.org/Place](https://schema.org/Place)
+> 	* Address as [schema.org/PostalAddress](https://schema.org/PostalAddress)
 > 		* streetAddress
 > 		* postOfficeBoxNumber
 > 		* addressLocality
 > 		* addressRegion
 > 		* postalCode
 > 		* addressCountry
-> 	* Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+> 	* Geo Location as [schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)
 > 		* elevation
 > 		* latitude
 > 		* longitude
-> * Event Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Event Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Event Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Event Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -267,39 +275,39 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
-* Schema Type [schema.org/Organization](http://schema.org/Organization)
-	* Schema Type [schema.org/Airline](http://schema.org/Airline)
-	* Schema Type [schema.org/Corporation](http://schema.org/Corporation)
-	* Schema Type [schema.org/EducationalOrganization](http://schema.org/EducationalOrganization)
-		* Schema Type [schema.org/CollegeOrUniversity](http://schema.org/CollegeOrUniversity)
-		* Schema Type [schema.org/ElementarySchool](http://schema.org/ElementarySchool)
-		* Schema Type [schema.org/MiddleSchool](http://schema.org/MiddleSchool)
-		* Schema Type [schema.org/Preschool](http://schema.org/Preschool)
-		* Schema Type [schema.org/School](http://schema.org/School)
-	* Schema Type [schema.org/GovernmentOrganization](http://schema.org/GovernmentOrganization)
-	* Schema Type [schema.org/MedicalOrganization](http://schema.org/MedicalOrganization)
-		* Schema Type [schema.org/Dentist](http://schema.org/Dentist)
-		* Schema Type [schema.org/Hospital](http://schema.org/Hospital)
-		* Schema Type [schema.org/Pharmacy](http://schema.org/Pharmacy)
-		* Schema Type [schema.org/Physician](http://schema.org/Physician)
-	* Schema Type [schema.org/NGO](http://schema.org/NGO)
-	* Schema Type [schema.org/PerformingGroup](http://schema.org/PerformingGroup)
-		* Schema Type [schema.org/DanceGroup](http://schema.org/DanceGroup)
-		* Schema Type [schema.org/MusicGroup](http://schema.org/MusicGroup)
-		* Schema Type [schema.org/PerformingGroup](http://schema.org/PerformingGroup)
-		* Schema Type [schema.org/TheaterGroup](http://schema.org/TheaterGroup)
-	* Schema Type [schema.org/SportsOrganization](http://schema.org/SportsOrganization)
-		* Schema Type [schema.org/SportsTeam](http://schema.org/SportsTeam)
+* Schema Type [schema.org/Organization](https://schema.org/Organization)
+	* Schema Type [schema.org/Airline](https://schema.org/Airline)
+	* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
+	* Schema Type [schema.org/EducationalOrganization](https://schema.org/EducationalOrganization)
+		* Schema Type [schema.org/CollegeOrUniversity](https://schema.org/CollegeOrUniversity)
+		* Schema Type [schema.org/ElementarySchool](https://schema.org/ElementarySchool)
+		* Schema Type [schema.org/MiddleSchool](https://schema.org/MiddleSchool)
+		* Schema Type [schema.org/Preschool](https://schema.org/Preschool)
+		* Schema Type [schema.org/School](https://schema.org/School)
+	* Schema Type [schema.org/GovernmentOrganization](https://schema.org/GovernmentOrganization)
+	* Schema Type [schema.org/MedicalOrganization](https://schema.org/MedicalOrganization)
+		* Schema Type [schema.org/Dentist](https://schema.org/Dentist)
+		* Schema Type [schema.org/Hospital](https://schema.org/Hospital)
+		* Schema Type [schema.org/Pharmacy](https://schema.org/Pharmacy)
+		* Schema Type [schema.org/Physician](https://schema.org/Physician)
+	* Schema Type [schema.org/NGO](https://schema.org/NGO)
+	* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
+		* Schema Type [schema.org/DanceGroup](https://schema.org/DanceGroup)
+		* Schema Type [schema.org/MusicGroup](https://schema.org/MusicGroup)
+		* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
+		* Schema Type [schema.org/TheaterGroup](https://schema.org/TheaterGroup)
+	* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
+		* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
  
 > * URL
 > * Name
 > * Description
-> * Logo Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
@@ -311,11 +319,11 @@ Adds Schema / Structured Data JSON-LD markup:
 >	* MySpace Business Page URL
 >	* Pinterest Company Page URL
 >	* Twitter Business Page URL
-> * Organization Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Organization Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Organization Videos as [schema.org/VideoObject](http://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
+> * Organization Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
 > 	* Video URL
 > 	* Video Name (Title)
 > 	* Video Description
@@ -326,17 +334,17 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
-* Schema Type [schema.org/Person](http://schema.org/Person)
+* Schema Type [schema.org/Person](https://schema.org/Person)
  
 > * URL from Profile
 > * Name
 > * Description
-> * Person Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Person Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
@@ -352,107 +360,111 @@ Adds Schema / Structured Data JSON-LD markup:
 >	* YouTube URL
 >	* Website URL
 
-* Schema Type [schema.org/Place](http://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information**)
-	* Schema Type [schema.org/AdministrativeArea](http://schema.org/AdministrativeArea)
-	* Schema Type [schema.org/CivicStructure](http://schema.org/CivicStructure)
-	* Schema Type [schema.org/Landform](http://schema.org/Landform)
-	* Schema Type [schema.org/LandmarksOrHistoricalBuildings](http://schema.org/LandmarksOrHistoricalBuildings)
-	* Schema Type [schema.org/LocalBusiness](http://schema.org/LocalBusiness)
-		* Schema Type [schema.org/AnimalShelter](http://schema.org/AnimalShelter)
-		* Schema Type [schema.org/AutomotiveBusiness](http://schema.org/AutomotiveBusiness)
-		* Schema Type [schema.org/ChildCare](http://schema.org/ChildCare)
-		* Schema Type [schema.org/DryCleaningOrLaundry](http://schema.org/DryCleaningOrLaundry)
-		* Schema Type [schema.org/EmergencyService](http://schema.org/EmergencyService)
-		* Schema Type [schema.org/EmploymentAgency](http://schema.org/EmploymentAgency)
-		* Schema Type [schema.org/EntertainmentBusiness](http://schema.org/EntertainmentBusiness)
-		* Schema Type [schema.org/FinancialService](http://schema.org/FinancialService)
-		* Schema Type [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
-			* Schema Type [schema.org/Bakery](http://schema.org/Bakery)
-			* Schema Type [schema.org/BarOrPub](http://schema.org/BarOrPub)
-			* Schema Type [schema.org/Brewery](http://schema.org/Brewery)
-			* Schema Type [schema.org/CafeOrCoffeeShop](http://schema.org/CafeOrCoffeeShop)
-			* Schema Type [schema.org/FastFoodRestaurant](http://schema.org/FastFoodRestaurant)
-			* Schema Type [schema.org/IceCreamShop](http://schema.org/IceCreamShop)
-			* Schema Type [schema.org/Restaurant](http://schema.org/Restaurant)
-			* Schema Type [schema.org/Winery](http://schema.org/Winery)
-		* Schema Type [schema.org/GovernmentOffice](http://schema.org/GovernmentOffice)
-		* Schema Type [schema.org/HealthAndBeautyBusiness](http://schema.org/HealthAndBeautyBusiness)
-		* Schema Type [schema.org/HomeAndConstructionBusiness](http://schema.org/HomeAndConstructionBusiness)
-		* Schema Type [schema.org/InternetCafe](http://schema.org/InternetCafe)
-		* Schema Type [schema.org/LegalService](http://schema.org/LegalService)
-		* Schema Type [schema.org/Library](http://schema.org/Library)
-		* Schema Type [schema.org/LodgingBusiness](http://schema.org/LodgingBusiness)
-		* Schema Type [schema.org/MedicalOrganization](http://schema.org/MedicalOrganization)
-		* Schema Type [schema.org/ProfessionalService](http://schema.org/ProfessionalService)
-		* Schema Type [schema.org/RadioStation](http://schema.org/RadioStation)
-		* Schema Type [schema.org/RealEstateAgent](http://schema.org/RealEstateAgent)
-		* Schema Type [schema.org/RecyclingCenter](http://schema.org/RecyclingCenter)
-		* Schema Type [schema.org/SelfStorage](http://schema.org/SelfStorage)
-		* Schema Type [schema.org/ShoppingCenter](http://schema.org/ShoppingCenter)
-		* Schema Type [schema.org/SportsActivityLocation](http://schema.org/SportsActivityLocation)
-		* Schema Type [schema.org/Store](http://schema.org/Store)
-			* Schema Type [schema.org/AutoPartsStore](http://schema.org/AutoPartsStore)
-			* Schema Type [schema.org/BikeStore](http://schema.org/BikeStore)
-			* Schema Type [schema.org/BookStore](http://schema.org/BookStore)
-			* Schema Type [schema.org/ClothingStore](http://schema.org/ClothingStore)
-			* Schema Type [schema.org/ComputerStore](http://schema.org/ComputerStore)
-			* Schema Type [schema.org/ConvenienceStore](http://schema.org/ConvenienceStore)
-			* Schema Type [schema.org/DepartmentStore](http://schema.org/DepartmentStore)
-			* Schema Type [schema.org/ElectronicsStore](http://schema.org/ElectronicsStore)
-			* Schema Type [schema.org/Florist](http://schema.org/Florist)
-			* Schema Type [schema.org/FurnitureStore](http://schema.org/FurnitureStore)
-			* Schema Type [schema.org/GardenStore](http://schema.org/GardenStore)
-			* Schema Type [schema.org/GroceryStore](http://schema.org/GroceryStore)
-			* Schema Type [schema.org/HardwareStore](http://schema.org/HardwareStore)
-			* Schema Type [schema.org/HobbyShop](http://schema.org/HobbyShop)
-			* Schema Type [schema.org/HomeGoodsStore](http://schema.org/HomeGoodsStore)
-			* Schema Type [schema.org/JewelryStore](http://schema.org/JewelryStore)
-			* Schema Type [schema.org/LiquorStore](http://schema.org/LiquorStore)
-			* Schema Type [schema.org/MensClothingStore](http://schema.org/MensClothingStore)
-			* Schema Type [schema.org/MobilePhoneStore](http://schema.org/MobilePhoneStore)
-			* Schema Type [schema.org/MovieRentalStore](http://schema.org/MovieRentalStore)
-			* Schema Type [schema.org/MusicStore](http://schema.org/MusicStore)
-			* Schema Type [schema.org/OfficeEquipmentStore](http://schema.org/OfficeEquipmentStore)
-			* Schema Type [schema.org/OutletStore](http://schema.org/OutletStore)
-			* Schema Type [schema.org/PawnShop](http://schema.org/PawnShop)
-			* Schema Type [schema.org/PetStore](http://schema.org/PetStore)
-			* Schema Type [schema.org/ShoeStore](http://schema.org/ShoeStore)
-			* Schema Type [schema.org/SportingGoodsStore](http://schema.org/SportingGoodsStore)
-			* Schema Type [schema.org/TireShop](http://schema.org/TireShop)
-			* Schema Type [schema.org/ToyStore](http://schema.org/ToyStore)
-			* Schema Type [schema.org/WholesaleStore](http://schema.org/WholesaleStore)
-		* Schema Type [schema.org/TelevisionStation](http://schema.org/TelevisionStation)
-		* Schema Type [schema.org/TouristInformationCenter](http://schema.org/TouristInformationCenter)
-		* Schema Type [schema.org/TravelAgency](http://schema.org/TravelAgency)
-	* Schema Type [schema.org/Residence](http://schema.org/Residence)
-	* Schema Type [schema.org/TouristAttraction](http://schema.org/TouristAttraction)
+* Schema Type [schema.org/Place](https://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information**)
+	* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
+	* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
+	* Schema Type [schema.org/Landform](https://schema.org/Landform)
+	* Schema Type [schema.org/LandmarksOrHistoricalBuildings](https://schema.org/LandmarksOrHistoricalBuildings)
+	* Schema Type [schema.org/LocalBusiness](https://schema.org/LocalBusiness)
+		* Schema Type [schema.org/AnimalShelter](https://schema.org/AnimalShelter)
+		* Schema Type [schema.org/AutomotiveBusiness](https://schema.org/AutomotiveBusiness)
+		* Schema Type [schema.org/ChildCare](https://schema.org/ChildCare)
+		* Schema Type [schema.org/DryCleaningOrLaundry](https://schema.org/DryCleaningOrLaundry)
+		* Schema Type [schema.org/EmergencyService](https://schema.org/EmergencyService)
+		* Schema Type [schema.org/EmploymentAgency](https://schema.org/EmploymentAgency)
+		* Schema Type [schema.org/EntertainmentBusiness](https://schema.org/EntertainmentBusiness)
+		* Schema Type [schema.org/FinancialService](https://schema.org/FinancialService)
+		* Schema Type [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
+			* Schema Type [schema.org/Bakery](https://schema.org/Bakery)
+			* Schema Type [schema.org/BarOrPub](https://schema.org/BarOrPub)
+			* Schema Type [schema.org/Brewery](https://schema.org/Brewery)
+			* Schema Type [schema.org/CafeOrCoffeeShop](https://schema.org/CafeOrCoffeeShop)
+			* Schema Type [schema.org/FastFoodRestaurant](https://schema.org/FastFoodRestaurant)
+			* Schema Type [schema.org/IceCreamShop](https://schema.org/IceCreamShop)
+			* Schema Type [schema.org/Restaurant](https://schema.org/Restaurant)
+			* Schema Type [schema.org/Winery](https://schema.org/Winery)
+		* Schema Type [schema.org/GovernmentOffice](https://schema.org/GovernmentOffice)
+		* Schema Type [schema.org/HealthAndBeautyBusiness](https://schema.org/HealthAndBeautyBusiness)
+		* Schema Type [schema.org/HomeAndConstructionBusiness](https://schema.org/HomeAndConstructionBusiness)
+		* Schema Type [schema.org/InternetCafe](https://schema.org/InternetCafe)
+		* Schema Type [schema.org/LegalService](https://schema.org/LegalService)
+		* Schema Type [schema.org/Library](https://schema.org/Library)
+		* Schema Type [schema.org/LodgingBusiness](https://schema.org/LodgingBusiness)
+		* Schema Type [schema.org/MedicalOrganization](https://schema.org/MedicalOrganization)
+		* Schema Type [schema.org/ProfessionalService](https://schema.org/ProfessionalService)
+		* Schema Type [schema.org/RadioStation](https://schema.org/RadioStation)
+		* Schema Type [schema.org/RealEstateAgent](https://schema.org/RealEstateAgent)
+		* Schema Type [schema.org/RecyclingCenter](https://schema.org/RecyclingCenter)
+		* Schema Type [schema.org/SelfStorage](https://schema.org/SelfStorage)
+		* Schema Type [schema.org/ShoppingCenter](https://schema.org/ShoppingCenter)
+		* Schema Type [schema.org/SportsActivityLocation](https://schema.org/SportsActivityLocation)
+		* Schema Type [schema.org/Store](https://schema.org/Store)
+			* Schema Type [schema.org/AutoPartsStore](https://schema.org/AutoPartsStore)
+			* Schema Type [schema.org/BikeStore](https://schema.org/BikeStore)
+			* Schema Type [schema.org/BookStore](https://schema.org/BookStore)
+			* Schema Type [schema.org/ClothingStore](https://schema.org/ClothingStore)
+			* Schema Type [schema.org/ComputerStore](https://schema.org/ComputerStore)
+			* Schema Type [schema.org/ConvenienceStore](https://schema.org/ConvenienceStore)
+			* Schema Type [schema.org/DepartmentStore](https://schema.org/DepartmentStore)
+			* Schema Type [schema.org/ElectronicsStore](https://schema.org/ElectronicsStore)
+			* Schema Type [schema.org/Florist](https://schema.org/Florist)
+			* Schema Type [schema.org/FurnitureStore](https://schema.org/FurnitureStore)
+			* Schema Type [schema.org/GardenStore](https://schema.org/GardenStore)
+			* Schema Type [schema.org/GroceryStore](https://schema.org/GroceryStore)
+			* Schema Type [schema.org/HardwareStore](https://schema.org/HardwareStore)
+			* Schema Type [schema.org/HobbyShop](https://schema.org/HobbyShop)
+			* Schema Type [schema.org/HomeGoodsStore](https://schema.org/HomeGoodsStore)
+			* Schema Type [schema.org/JewelryStore](https://schema.org/JewelryStore)
+			* Schema Type [schema.org/LiquorStore](https://schema.org/LiquorStore)
+			* Schema Type [schema.org/MensClothingStore](https://schema.org/MensClothingStore)
+			* Schema Type [schema.org/MobilePhoneStore](https://schema.org/MobilePhoneStore)
+			* Schema Type [schema.org/MovieRentalStore](https://schema.org/MovieRentalStore)
+			* Schema Type [schema.org/MusicStore](https://schema.org/MusicStore)
+			* Schema Type [schema.org/OfficeEquipmentStore](https://schema.org/OfficeEquipmentStore)
+			* Schema Type [schema.org/OutletStore](https://schema.org/OutletStore)
+			* Schema Type [schema.org/PawnShop](https://schema.org/PawnShop)
+			* Schema Type [schema.org/PetStore](https://schema.org/PetStore)
+			* Schema Type [schema.org/ShoeStore](https://schema.org/ShoeStore)
+			* Schema Type [schema.org/SportingGoodsStore](https://schema.org/SportingGoodsStore)
+			* Schema Type [schema.org/TireShop](https://schema.org/TireShop)
+			* Schema Type [schema.org/ToyStore](https://schema.org/ToyStore)
+			* Schema Type [schema.org/WholesaleStore](https://schema.org/WholesaleStore)
+		* Schema Type [schema.org/TelevisionStation](https://schema.org/TelevisionStation)
+		* Schema Type [schema.org/TouristInformationCenter](https://schema.org/TouristInformationCenter)
+		* Schema Type [schema.org/TravelAgency](https://schema.org/TravelAgency)
+	* Schema Type [schema.org/Residence](https://schema.org/Residence)
+	* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
 
 > * URL
 > * Name
 > * Description
-> * AcceptsReservations for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
-> * Menu (URL) for [schema.org/FoodEstablishment](http://schema.org/FoodEstablishment)
-> * Address as [schema.org/PostalAddress](http://schema.org/PostalAddress)
+> * AreaServed as [schema.org/GeoShape](https://schema.org/GeoShape)
+> * CurrencyAccepted
+> * PaymentAccepted
+> * PriceRange
+> * Menu (URL) for [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
+> * AcceptsReservations for [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
+> * Address as [schema.org/PostalAddress](https://schema.org/PostalAddress)
 > 	* streetAddress
 > 	* postOfficeBoxNumber
 > 	* addressLocality
 > 	* addressRegion
 > 	* postalCode
 > 	* addressCountry
-> * Geo Location as [schema.org/GeoCoordinates](http://schema.org/GeoCoordinates)
+> * Geo Location as [schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)
 > 	* elevation
 > 	* latitude
 > 	* longitude
-> * Opening Hours Specification as [schema.org/openingHoursSpecification](http://schema.org/openingHoursSpecification)
+> * Opening Hours Specification as [schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)
 > 	* opens
 > 	* closes
 > 	* validFrom
 > 	* validThrough
-> * Place Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Place Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Place Videos as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Place Videos as [schema.org/VideoObject](https://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -463,12 +475,12 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
-* Schema Type [schema.org/Product](http://schema.org/Product) (**supported e-Commerce plugin required**)
+* Schema Type [schema.org/Product](https://schema.org/Product) (**supported e-Commerce plugin required**)
  
 > * Product URL
 > * Product Name
@@ -476,51 +488,51 @@ Adds Schema / Structured Data JSON-LD markup:
 > * Product SKU
 > * Product Color
 > * Product Category
-> * Product Width / Height as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> * Product Width / Height as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
 > 	* Value
 > 	* UnitCode CMT
-> * Product Length (AdditionalProperty) as [schema.org/PropertyValue](http://schema.org/PropertyValue)
+> * Product Length (AdditionalProperty) as [schema.org/PropertyValue](https://schema.org/PropertyValue)
 > 	* PropertyID length
 > 	* Value
 > 	* UnitCode CMT
-> * Product Weight as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> * Product Weight as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
 > 	* Value
 > 	* UnitCode KGM
-> * Product Offers as [schema.org/Offer](http://schema.org/Offer)
+> * Product Offers as [schema.org/Offer](https://schema.org/Offer)
 > 	* Variation Price
 > 	* Variation PriceCurrency
 > 	* Variation Availability
->	* Variation ItemOffered as [schema.org/IndividualProduct](http://schema.org/IndividualProduct)
+>	* Variation ItemOffered as [schema.org/IndividualProduct](https://schema.org/IndividualProduct)
 >		* Variation URL
 >		* Variation Name
 > 		* Variation SKU
 > 		* Variation Color
 >		* Variation Description
-> 		* Variation Width / Height as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 		* Variation Width / Height as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
 > 			* Value
 > 			* UnitCode CMT
-> 		* Variation Length (additionalProperty) as [schema.org/PropertyValue](http://schema.org/PropertyValue)
+> 		* Variation Length (additionalProperty) as [schema.org/PropertyValue](https://schema.org/PropertyValue)
 > 			* PropertyID length
 > 			* Value
 > 			* UnitCode CMT
-> 		* Variation Weight as [schema.org/QuantitativeValue](http://schema.org/QuantitativeValue)
+> 		* Variation Weight as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
 > 			* Value
 > 			* UnitCode KGM
-> 		* Variation Image as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 		* Variation Image as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 			* Image URL
 > 			* Image Width
 > 			* Image Height
-> * Product Rating as [schema.org/AggregateRating](http://schema.org/AggregateRating)
+> * Product Rating as [schema.org/AggregateRating](https://schema.org/AggregateRating)
 > 	* RatingValue
 > 	* RatingCount
 > 	* WorstRating
 > 	* BestRating
 > 	* ReviewCount
-> * Product Images as [schema.org/ImageObject](http://schema.org/ImageObject)
+> * Product Images as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 	* Image URL
 > 	* Image Width
 > 	* Image Height
-> * Product Videos as [schema.org/VideoObject](http://schema.org/VideoObject)
+> * Product Videos as [schema.org/VideoObject](https://schema.org/VideoObject)
 > 	* Video URL
 > 	* Video Name
 > 	* Video Description
@@ -531,17 +543,17 @@ Adds Schema / Structured Data JSON-LD markup:
 > 	* Video UploadDate
 > 	* Video ThumbnailUrl
 > 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](http://schema.org/ImageObject)
+> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
 > 		* Thumbnail URL
 > 		* Thumbnail Width
 > 		* Thumbnail Height
 
-* Schema Type [schema.org/WebSite](http://schema.org/WebSite)
+* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
  
 > * URL
 > * Name
 > * Description
-> * PotentialAction as [schema.org/SearchAction](http://schema.org/SearchAction)
+> * PotentialAction as [schema.org/SearchAction](https://schema.org/SearchAction)
 > 	* Target
 > 	* Query-Input
 
@@ -551,13 +563,13 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "TechArticle",
     "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "name": "PHP &amp;ndash; Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
     },
@@ -566,14 +578,14 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
     "datemodified": "2016-04-15T15:05:58+00:00",
     "inLanguage": "en_US",
     "publisher": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Organization",
         "url": "http://surniaulula.com",
         "name": "Surnia Ulula",
         "alternateName": "Surnia Ulula Ltd",
         "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
         "logo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/surnia-ulula-text-banner-wide-600x60.png",
             "width": 600,
@@ -582,7 +594,7 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
     },
     "author": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Person",
             "url": "http://surniaulula.com/",
             "name": "JS Morisset",
@@ -591,7 +603,7 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
     ],
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://cdn1.static.surniaulula.com/wp-content/uploads/2014/03/php-logo-1200x1200.png",
             "width": 1200,
@@ -605,18 +617,18 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Product",
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "name": "A Colorful Pencil",
     "description": "This is a short description for the colorful pencil.",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://woo.surniaulula.com/product/a-colorful-pencil/"
     },
     "aggregateRating": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "AggregateRating",
         "ratingvalue": "5",
         "ratingcount": 1,
@@ -628,32 +640,32 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
     "color": "Green | Blue | Orange | Red",
     "category": "Pencils",
     "width": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "0.5",
         "unitCode": "CMT"
     },
     "height": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "12",
         "unitCode": "CMT"
     },
     "weight": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "QuantitativeValue",
         "value": "10",
         "unitCode": "KGM"
     },
     "offers": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Green",
                 "sku": "PENCIL_GREEN",
@@ -661,26 +673,26 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
                 "color": "Green",
                 "description": "A description for the green pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
                         "width": 800,
@@ -690,13 +702,13 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Blue",
                 "sku": "PENCIL_BLUE",
@@ -704,26 +716,26 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
                 "color": "Blue",
                 "description": "A description for the blue pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_blue-800x800.png",
                         "width": 800,
@@ -733,13 +745,13 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.00",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Orange",
                 "sku": "PENCIL_ORANGE",
@@ -747,26 +759,26 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
                 "color": "Orange",
                 "description": "A description for the orange pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_orange-800x800.png",
                         "width": 800,
@@ -776,13 +788,13 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Offer",
             "price": "1.10",
             "priceCurrency": "USD",
             "availability": "InStock",
             "itemOffered": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "IndividualProduct",
                 "url": "http://woo.surniaulula.com/product/a-colorful-pencil/?attribute_color=Red",
                 "sku": "PENCIL_RED",
@@ -790,26 +802,26 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
                 "color": "Red",
                 "description": "A description for the red pencil.",
                 "width": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "0.5",
                     "unitCode": "CMT"
                 },
                 "height": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "12",
                     "unitCode": "CMT"
                 },
                 "weight": {
-                    "@context": "http://schema.org",
+                    "@context": "https://schema.org",
                     "@type": "QuantitativeValue",
                     "value": "10",
                     "unitCode": "KGM"
                 },
                 "image": [
                     {
-                        "@context": "http://schema.org",
+                        "@context": "https://schema.org",
                         "@type": "ImageObject",
                         "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_red-800x800.png",
                         "width": 800,
@@ -821,7 +833,7 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
     ],
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://woo.surniaulula.com/wp-content/uploads/2014/04/Bina_pencil_green-800x800.png",
             "width": 800,
@@ -835,19 +847,19 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
 
 <pre>
 &lt;script type="application/ld+json"&gt;{
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Restaurant",
         "url": "http://restaurant.example.com/",
         "name": "Restaurant Name",
     "description": "A great family owned restaurant. ;-)",
     "mainEntityOfPage": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "http://restaurant.example.com/"
     },
     "image": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "ImageObject",
             "url": "http://restaurant.example.com/wp-content/uploads/restaurant-image.jpg",
             "width": 800,
@@ -856,7 +868,7 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
     ],
     "video": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "VideoObject",
             "url": "https://www.youtube.com/v/xxxxxxxxxxx?version=3&amp;#038;autohide=1",
             "name": "Restaurant Walkthrough",
@@ -868,7 +880,7 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
             "thumbnailUrl": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
             "embedUrl": "https://www.youtube.com/embed/xxxxxxxxxxx",
             "thumbnail": {
-                "@context": "http://schema.org",
+                "@context": "https://schema.org",
                 "@type": "ImageObject",
                 "url": "https://i.ytimg.com/vi/xxxxxxxxxxx/maxresdefault.jpg",
                 "width": 1280,
@@ -876,7 +888,7 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
             }
         },
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "VideoObject",
             "url": "https://www.youtube.com/embed/xxxxxxxxxxx",
             "name": "Restaurant Walkthrough",
@@ -890,7 +902,7 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
         }
     ]
     "address": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "PostalAddress",
         "streetAddress": "123 A Road",
         "postOfficeBoxNumber": 7,
@@ -900,14 +912,14 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
         "addressCountry": "US"
     },
     "geo": {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "GeoCoordinates",
         "latitude": 10,
         "longitude": -10
     },
     "openingHoursSpecification": [
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "openingHoursSpecification",
             "dayOfWeek": "Saturday",
             "opens": "12:00",
@@ -962,9 +974,9 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 == Screenshots ==
 
 01. (Pro version) Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. (Pro version) A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type http://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
+02. (Pro version) A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type https://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
 03. (Pro version) An example of WPSSO JSON's Schema Recipe markup on Pinterest.
-04. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type http://schema.org/TechArticle.
+04. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type https://schema.org/TechArticle.
 
 == Changelog ==
 
@@ -983,9 +995,9 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
-		* Item Type for Archive Page (default is http://schema.org/CollectionPage)
-		* Item Type for User / Author Page (default is http://schema.org/ProfilePage)
-		* Item Type for Search Results Page (default is http://schema.org/SearchResultsPage)
+		* Item Type for Archive Page (default is https://schema.org/CollectionPage)
+		* Item Type for User / Author Page (default is https://schema.org/ProfilePage)
+		* Item Type for Search Results Page (default is https://schema.org/SearchResultsPage)
 	* Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business:
 		* currenciesAccepted
 		* paymentAccepted
@@ -1030,7 +1042,7 @@ Official announcement: N/A
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Removed an extra argument in a `filter_json_data_http_schema_org_recipe()` method call (Pro version).
+	* Removed an extra argument in a `filter_json_data_https_schema_org_recipe()` method call (Pro version).
 * *Developer Notes*
 	* None
 
@@ -1041,7 +1053,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema http://schema.org/LocalBusiness markup (Pro version).
+	* Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema https://schema.org/LocalBusiness markup (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -1073,7 +1085,7 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 	* None
 * *Developer Notes*
 	* Added a new filter to include 3rd party aggregate ratings:
-		* apply_filters( 'wpsso_json_prop_http_schema_org_aggregaterating', $rating, $mod );
+		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod );
 
 == Upgrade Notice ==
 
