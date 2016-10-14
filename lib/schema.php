@@ -26,7 +26,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			
 			/*
 			 * Property:
-			 *	image as http://schema.org/ImageObject
+			 *	image as https://schema.org/ImageObject
 			 */
 			$og_image = array();
 
@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			/*
 			 * Property:
-			 *	video as http://schema.org/VideoObject
+			 *	video as https://schema.org/VideoObject
 			 */
 			if ( ! empty( $mt_og['og:video'] ) )
 				WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
@@ -131,7 +131,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			$ret = array(
-				'@context' => 'http://schema.org',
+				'@context' => 'https://schema.org',
 				'@type' => 'VideoObject',
 				'url' => esc_url( $media_url ),
 			);

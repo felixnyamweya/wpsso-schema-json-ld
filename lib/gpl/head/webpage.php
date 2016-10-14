@@ -31,14 +31,14 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->mark();
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'json_data_http_schema_org_webpage' => array(
-					'json_data_http_schema_org_blogposting' => 4,	// $json_data, $mod, $mt_og, $user_id
-					'json_data_http_schema_org_webpage' => 4,	// $json_data, $mod, $mt_og, $user_id
+				'json_data_https_schema_org_webpage' => array(
+					'json_data_https_schema_org_blogposting' => 4,	// $json_data, $mod, $mt_og, $user_id
+					'json_data_https_schema_org_webpage' => 4,	// $json_data, $mod, $mt_og, $user_id
 				),
 			) );
 		}
 
-		public function filter_json_data_http_schema_org_webpage( $json_data, $mod, $mt_og, $user_id ) {
+		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $user_id ) {
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/*
 			 * Property:
-			 *	publisher as http://schema.org/Organization
+			 *	publisher as https://schema.org/Organization
 			 */
 			$org_id = is_object( $mod['obj'] ) ?
 				$mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' ) : false;	// null, false, 'none', 'site', or number (including 0)
@@ -94,16 +94,16 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/*
 			 * Property:
-			 *	author as http://schema.org/Person
-			 *	contributor as http://schema.org/Person
+			 *	author as https://schema.org/Person
+			 *	contributor as https://schema.org/Person
 			 */
 			if ( $user_id > 0 )
 				WpssoSchema::add_author_coauthor_data( $ret, $mod, $user_id );
 
 			/*
 			 * Property:
-			 *	image as http://schema.org/ImageObject
-			 *	video as http://schema.org/VideoObject
+			 *	image as https://schema.org/ImageObject
+			 *	video as https://schema.org/VideoObject
 			 */
 			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $user_id, $size_name );
 

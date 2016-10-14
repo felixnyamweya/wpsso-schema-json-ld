@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						'add_schema_head_attributes' => '__return_false',
 						'add_schema_meta_array' => '__return_false',
 						'add_schema_noscript_array' => '__return_false',
-						'json_data_http_schema_org' => 6,
+						'json_data_https_schema_org' => 6,
 					), -100 );	// make sure we run first
 					break;
 			}
@@ -69,7 +69,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Does not add images, videos, author or organization markup since this will
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
-		public function filter_json_data_http_schema_org( $json_data, $mod, $mt_og, $user_id, $is_main ) {
+		public function filter_json_data_https_schema_org( $json_data, $mod, $mt_og, $user_id, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
