@@ -7,7 +7,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Donate Link: https://wpsso.com/?utm_source=wpssojson-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: wpsso, schema, schema.org, structured data, json, json-ld, ld+json, rich snippets, news, seo, pinterest, article, product, event, rating, review, recipe, google, amp, co-authors, co-authors plus, video object, video schema, search engine optimization, optimize, knowledge graph, aggregate rating
+Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news, seo, local business, pinterest, article, product, event, rating, review, recipe, google, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
