@@ -987,7 +987,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.5-rc3 (2016/10/14)**
+**Version 1.10.5-1 (2016/10/15)**
 
 Official announcement: N/A
 
@@ -1089,9 +1089,9 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 
 == Upgrade Notice ==
 
-= 1.10.5-rc3 =
+= 1.10.5-1 =
 
-(2016/10/14) Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page. Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business.
+(2016/10/15) Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page. Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business.
 
 = 1.10.4-1 =
 
