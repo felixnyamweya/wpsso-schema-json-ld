@@ -3,12 +3,12 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.10.4-1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.10.5-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.6.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/?utm_source=wpssojson-readme-donate">https://wpsso.com/?utm_source=wpssojson-readme-donate</a></td></tr>
-<tr><th align="right" valign="top" nowrap>License</th><td><a href="http://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
+<tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news, seo, local business, pinterest, article, product, event, rating, review, recipe, google, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating</td></tr>
 </table>
 

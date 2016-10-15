@@ -4,14 +4,14 @@ Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.txt
+License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://wpsso.com/?utm_source=wpssojson-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news, seo, local business, pinterest, article, product, event, rating, review, recipe, google, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
-Stable Tag: 1.10.4-1
+Stable Tag: 1.10.5-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -1092,8 +1092,4 @@ Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pint
 = 1.10.5-1 =
 
 (2016/10/15) Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page. Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business.
-
-= 1.10.4-1 =
-
-(2016/10/01) Added a SucomUtil::titleize() method call to format post type names for display.
 
