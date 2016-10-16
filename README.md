@@ -25,7 +25,7 @@
 <p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
 </blockquote>
 
 <h4>Quick List of Features</h4>
@@ -1192,7 +1192,7 @@
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
 
-<p>Use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO. The <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro</a> extension (along with all WPSSO Pro extensions) requires the <a href="http://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro</a> plugin as well.</p>
+<p>Use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO. The <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="http://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
 
 <p><a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 
