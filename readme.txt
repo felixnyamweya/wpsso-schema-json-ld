@@ -39,7 +39,7 @@ Extends the features of either the Free or Pro versions of WPSSO.
 
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
-Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](http://wpsso.com/) to retrieve co-author information).
+Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](https://wpsso.com/) to retrieve co-author information).
 
 Adds an additional "Schema Markup" settings page to the SSO menu:
 
@@ -943,16 +943,16 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
 
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.
 
-Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO. The [WPSSO JSON Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends) (along with all WPSSO Pro extensions) requires the [WPSSO Pro plugin](http://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends) as well.
+Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSSO. The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends) (along with all WPSSO Pro extensions) requires the [WPSSO Pro plugin](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends) as well.
 
-[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension](http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (includes a *No Risk 30 Day Refund Policy*).
+[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (includes a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
 = Install and Uninstall =
 
-* [Install the Plugin](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
-* [Uninstall the Plugin](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
+* [Install the Plugin](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Uninstall the Plugin](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -964,12 +964,12 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Additional Documentation =
 
-* [Developer Resources](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/)
-	* [Filters](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/)
-		* [Filter Examples](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
-			* [Assign a Custom Field Value to a Schema Property](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
-			* [Modify the aggregateRating Property](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
-			* [Modify the VideoObject Name and Description](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
+* [Developer Resources](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/)
+	* [Filters](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/)
+		* [Filter Examples](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
+			* [Assign a Custom Field Value to a Schema Property](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
+			* [Modify the aggregateRating Property](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
+			* [Modify the VideoObject Name and Description](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
 
 == Screenshots ==
 
@@ -1061,7 +1061,7 @@ Official announcement: N/A
 
 **Version 1.10.0-1 (2016/07/29)**
 
-Official announcement: http://wpsso.com/2016/07/29/wpsso-json-update-google-pinterest-recipe-markup/
+Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe Markup](https://wpsso.com/2016/07/29/wpsso-json-update-google-pinterest-recipe-markup/)
 
 * *New Features*
 	* Added new recipe input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).

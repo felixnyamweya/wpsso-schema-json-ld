@@ -36,7 +36,7 @@
 
 <p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
 
-<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="http://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
+<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="https://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
 
 <p>Adds an additional "Schema Markup" settings page to the SSO menu:</p>
 
@@ -1192,9 +1192,9 @@
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
 
-<p>Use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO. The <a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="http://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
+<p>Use the Free version of WPSSO JSON with <em>both</em> the Free and Pro versions of WPSSO. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
 
-<p><a href="http://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension</a> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
 
 
 <h2>Installation</h2>
@@ -1202,8 +1202,8 @@
 <h4>Install and Uninstall</h4>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the Plugin</a></li>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the Plugin</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
 </ul>
 
 
@@ -1222,18 +1222,18 @@
 <h4>Additional Documentation</h4>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/">Filters</a>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/">Filters</a>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/">Filter Examples</a>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/">Filter Examples</a>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/">Assign a Custom Field Value to a Schema Property</a></li>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/">Assign a Custom Field Value to a Schema Property</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
