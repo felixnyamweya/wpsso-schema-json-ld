@@ -345,7 +345,7 @@ msgid "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
+msgid "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -359,5 +359,5 @@ msgid "JS Morisset"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://surniaulula.com/"
+msgid "https://surniaulula.com/"
 msgstr ""

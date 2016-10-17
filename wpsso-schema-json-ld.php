@@ -4,10 +4,10 @@
  * Plugin Slug: wpsso-schema-json-ld
  * Text Domain: wpsso-schema-json-ld
  * Domain Path: /languages
- * Plugin URI: http://surniaulula.com/extend/plugins/wpsso-schema-json-ld/
+ * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/
  * Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
  * Author: JS Morisset
- * Author URI: http://surniaulula.com/
+ * Author URI: https://surniaulula.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
@@ -22,7 +22,7 @@
  *	{bugfix}	Bugfixes and/or very minor improvements.
  *	{stage}{level}	dev# (development), rc# (release candidate), # (production release)
  * 
- * Copyright 2014-2016 Jean-Sebastien Morisset (http://surniaulula.com/)
+ * Copyright 2014-2016 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) 
