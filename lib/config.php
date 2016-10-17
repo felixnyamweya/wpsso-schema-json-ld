@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/',
 						'faq' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/faq/',
 						'notes' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/',
-						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-schema-json-ld/feed/',
+						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-json/feed/',
 						'pro_support' => 'http://wpsso-schema-json-ld.support.wpsso.com/',
 					),
 					'lib' => array(
