@@ -565,13 +565,13 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
 &lt;script type="application/ld+json"&gt;{
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "url": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
+    "url": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "name": "PHP &amp;ndash; Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
     "mainEntityOfPage": {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "http://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
+        "@id": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
     },
     "headline": "PHP &amp;ndash; Create an Array of Hours",
     "datepublished": "2016-04-15T14:30:02+00:00",
@@ -580,7 +580,7 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
     "publisher": {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "url": "http://surniaulula.com",
+        "url": "https://surniaulula.com",
         "name": "Surnia Ulula",
         "alternateName": "Surnia Ulula Ltd",
         "description": "UNIX and WordPress related articles, Bash, Perl and PHP scripts, along with a selection of Free and Premium WordPress plugins.",
@@ -596,7 +596,7 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
         {
             "@context": "https://schema.org",
             "@type": "Person",
-            "url": "http://surniaulula.com/",
+            "url": "https://surniaulula.com/",
             "name": "JS Morisset",
             "description": "Sr UNIX SysAdmin with over 25 years experience in small, medium, and large-scale production / e-commerce environments. #wordpress #unix #sysadmin #php #perl"
         }
