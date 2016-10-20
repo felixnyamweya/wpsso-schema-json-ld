@@ -24,9 +24,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
-			// both bing and pinterest do not (currently) read json markup
+			// pinterest does not (currently) read json markup
 			switch ( $crawler_name ) {
-				case 'bing':
 				case 'pinterest':
 					break;
 				default:
