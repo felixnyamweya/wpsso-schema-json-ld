@@ -987,6 +987,21 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.10.6-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Changes for WPSSO v3.36-3-1:
+		* Renamed the Social Settings 'header' index name to 'text'.
+		* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
+
 **Version 1.10.5-1 (2016/10/15)**
 
 Official announcement: N/A
