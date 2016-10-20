@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_actions( $this, array(
-					'admin_post_header' => 1,
+					'admin_post_head' => 1,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'option_type' => 2,
@@ -102,7 +102,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
 
-		public function action_admin_post_header( $mod ) {
+		public function action_admin_post_head( $mod ) {
 
 			if ( ! current_user_can( 'manage_options' ) )
 				return;
