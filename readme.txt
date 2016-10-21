@@ -987,7 +987,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.6-rc1 (2016/10/20)**
+**Version 1.10.6-rc1 (2016/10/21)**
 
 Official announcement: N/A
 
@@ -1106,7 +1106,7 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 = 1.10.6-rc1 =
 
-(2016/10/20) Minor code changes required for WPSSO v3.36-3-1.
+(2016/10/21) Minor code changes required for WPSSO v3.36-3-1.
 
 = 1.10.5-1 =
 
