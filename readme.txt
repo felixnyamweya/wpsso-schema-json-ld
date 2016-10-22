@@ -1109,7 +1109,3 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 (2016/10/22) Minor code changes required for WPSSO v3.36-3-1.
 
-= 1.10.5-1 =
-
-(2016/10/15) Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page. Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business.
-
