@@ -1101,7 +1101,7 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 	* None
 * *Developer Notes*
 	* Added a new filter to include 3rd party aggregate ratings:
-		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod );
+		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $user_id, $is_main );
 
 == Upgrade Notice ==
 
