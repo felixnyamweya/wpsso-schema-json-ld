@@ -33,7 +33,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						'add_schema_head_attributes' => '__return_false',
 						'add_schema_meta_array' => '__return_false',
 						'add_schema_noscript_array' => '__return_false',
-						'json_data_https_schema_org' => 6,
+						'json_data_https_schema_org' => 5,
 					), -100 );	// make sure we run first
 					break;
 			}
