@@ -14,12 +14,17 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
+
 			$this->p->util->add_plugin_filters( $this, array( 
 				'post_text_rows' => 4,	// $table_rows, $form, $head, $mod
 			) );
 		}
 
 		public function filter_post_text_rows( $table_rows, $form, $head, $mod ) {
+			if ( $this->p->debug->enabled )
+				$this->p->debug->mark();
 
 			$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
 			$title_max_len = $this->p->options['og_title_len'];
