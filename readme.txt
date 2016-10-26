@@ -987,6 +987,20 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
+**Version 1.10.7-dev1 (TBD)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor code changes required for WPSSO v3.36.4-1:
+		* Renamed the 'wpsso_json_data_https_schema_org' filter to 'wpsso_json_data_https_schema_org_thing'.
+
 **Version 1.10.6-1 (2016/10/22)**
 
 Official announcement: N/A
@@ -999,7 +1013,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Minimum requirements updated to WP v3.5 and PHP v5.4.
-	* Minor code changes required for WPSSO v3.36-3-1:
+	* Minor code changes required for WPSSO v3.36.3-1:
 		* Renamed the Social Settings 'header' index name to 'text'.
 		* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
 
@@ -1107,5 +1121,5 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 = 1.10.6-1 =
 
-(2016/10/22) Minor code changes required for WPSSO v3.36-3-1.
+(2016/10/22) Minor code changes required for WPSSO v3.36.3-1.
 
