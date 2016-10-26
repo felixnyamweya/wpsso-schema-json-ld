@@ -998,7 +998,7 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Minor code changes required for WPSSO v3.36.4-1:
+	* Minor code changes required for WPSSO v3.37.0-1:
 		* Renamed the 'wpsso_json_data_https_schema_org' filter to 'wpsso_json_data_https_schema_org_thing'.
 
 **Version 1.10.6-1 (2016/10/22)**
@@ -1115,7 +1115,7 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 	* None
 * *Developer Notes*
 	* Added a new filter to include 3rd party aggregate ratings:
-		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $user_id, $is_main );
+		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $type_id, $is_main );
 
 == Upgrade Notice ==
 
