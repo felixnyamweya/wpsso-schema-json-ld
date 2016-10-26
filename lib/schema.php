@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
-		public static function add_media_data( &$json_data, $mod, $mt_og, $user_id, $size_name = false ) {
+		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 			

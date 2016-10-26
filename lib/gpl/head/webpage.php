@@ -32,14 +32,13 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'json_data_https_schema_org_webpage' => array(
-					'json_data_https_schema_org_blogposting' => 4,	// $json_data, $mod, $mt_og, $user_id
-					'json_data_https_schema_org_webpage' => 4,	// $json_data, $mod, $mt_og, $user_id
+					'json_data_https_schema_org_blogposting' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
+					'json_data_https_schema_org_webpage' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
 				),
 			) );
 		}
 
-		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $user_id ) {
-
+		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $type_id, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
@@ -97,15 +96,14 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *	author as https://schema.org/Person
 			 *	contributor as https://schema.org/Person
 			 */
-			if ( $user_id > 0 )
-				WpssoSchema::add_author_coauthor_data( $ret, $mod, $user_id );
+			WpssoSchema::add_author_coauthor_data( $ret, $mod );
 
 			/*
 			 * Property:
 			 *	image as https://schema.org/ImageObject
 			 *	video as https://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $user_id, $size_name );
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
 
 			if ( empty( $ret['image'] ) ) {
 				if ( $this->p->debug->enabled )
