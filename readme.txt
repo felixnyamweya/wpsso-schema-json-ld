@@ -1000,6 +1000,7 @@ Official announcement: N/A
 * *Developer Notes*
 	* Minor code changes required for WPSSO v3.37.0-1:
 		* Renamed the 'wpsso_json_data_https_schema_org' filter to 'wpsso_json_data_https_schema_org_thing'.
+		* Renamed the SucomUtil::after_key() method to SucomUtil::get_after_key().
 
 **Version 1.10.6-1 (2016/10/22)**
 
