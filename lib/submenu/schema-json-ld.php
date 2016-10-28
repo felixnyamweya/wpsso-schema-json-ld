@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_select( 'schema_author_name', 
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
-					$schema_types = $this->p->schema->get_schema_types_select();
+					$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
 					$schema_select = '';
 					foreach ( $this->p->util->get_post_types() as $post_type )
 						$schema_select .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
