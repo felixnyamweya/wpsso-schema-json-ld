@@ -987,7 +987,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 = Changelog / Release Notes =
 
-**Version 1.10.7-dev1 (TBD)**
+**Version 1.10.7-dev1 (2016/10/29)**
 
 Official announcement: N/A
 
@@ -1120,6 +1120,10 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $type_id, $is_main );
 
 == Upgrade Notice ==
+
+= 1.10.7-dev1 =
+
+(2016/10/29) Minor code changes required for WPSSO v3.37.0-1.
 
 = 1.10.6-1 =
 
