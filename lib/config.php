@@ -32,18 +32,18 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'url' => array(
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/wpsso-schema-json-ld/',
+						'forum' => 'https://wordpress.org/support/plugin/wpsso-schema-json-ld',
 						'review' => 'https://wordpress.org/support/view/plugin-reviews/wpsso-schema-json-ld?filter=5&rate=5#postform',
-						'readme' => 'https://plugins.svn.wordpress.org/wpsso-schema-json-ld/trunk/readme.txt',
-						'wp_support' => 'https://wordpress.org/support/plugin/wpsso-schema-json-ld',
-						// surniaulula
+						// github
+						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-schema-json-ld/master/readme.txt',
+						// wpsso
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/update/',
 						'purchase' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/',
 						'faq' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/faq/',
 						'notes' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/',
-						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-json/feed/',
-						'pro_support' => 'http://wpsso-schema-json-ld.support.wpsso.com/',
+						'support' => 'http://wpsso-schema-json-ld.support.wpsso.com/',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
