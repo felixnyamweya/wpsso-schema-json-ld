@@ -998,6 +998,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.10.8-1 (2016/11/08)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed a get_schema_type_url() error in the Recipe class (Pro version).
+* *Developer Notes*
+	* None
+
 **Version 1.10.7-1 (2016/11/03)**
 
 Official announcement: N/A
@@ -1131,6 +1144,10 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $type_id, $is_main );
 
 == Upgrade Notice ==
+
+= 1.10.8-1 =
+
+(2016/11/08) Fixed a get_schema_type_url() error in the Recipe class (Pro version).
 
 = 1.10.7-1 =
 
