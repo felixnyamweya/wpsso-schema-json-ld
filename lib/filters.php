@@ -43,16 +43,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			) );
 
 			if ( is_admin() ) {
-				$this->p->util->add_plugin_actions( $this, array(
+				$this->p->util->add_plugin_actions( $this, array(	// admin actions
 					'admin_post_head' => 1,
 				) );
-				$this->p->util->add_plugin_filters( $this, array(
+				$this->p->util->add_plugin_filters( $this, array(	// admin filters
 					'option_type' => 2,
 					'save_post_options' => 4,
+					'post_cache_transients' => 4,	// clear transients on post save
 					'pub_google_rows' => 2,
-					'messages_tooltip_meta' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
+					'messages_tooltip_meta' => 2,
 					'status_gpl_features' => 3,
 					'status_pro_features' => 3,
 				), 10, 'wpssojson' );
@@ -206,6 +207,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			return $opts;
+		}
+
+		public function filter_post_cache_transients( $transients, $post_id, $locale, $sharing_url ) {
+
+			// clear term archive page meta tags (and json markup)
+			$terms = wp_get_post_terms( $post_id );
+			foreach ( $terms as $term )
+				$transients['WpssoHead::get_head_array'][] = $locale_salt = 'locale:'.$locale.'_term:'.$term->term_id;
+
+			// clear author archive page meta tags (and json markup)
+			$author_id = get_post_field( 'post_author', $post_id );
+			$transients['WpssoHead::get_head_array'][] = $locale_salt = 'locale:'.$locale.'_user:'.$author_id;
+
+			return $transients;
 		}
 
 		public function filter_get_md_defaults( $def_opts, $mod ) {
