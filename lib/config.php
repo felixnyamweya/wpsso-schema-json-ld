@@ -74,6 +74,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'person' => '(code) Schema Type Person (person)',
 								'place' => '(code) Schema Type Place (place)',
 								'product' => '(code) Schema Type Product (product)',
+								'profilepage' => '(code) Schema Type ProfilePage (webpage.profile)',
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
 								'website' => '(code) Schema Type Website (website)',

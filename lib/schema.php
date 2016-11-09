@@ -20,6 +20,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
+		public static function add_parts_data( &$json_data, $mod ) {
+			
+			$wpsso =& Wpsso::get_instance();
+			$parts_added = 0;
+
+			if ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {	// just in case
+				$posts_mods = $mod['obj']->get_posts_mods( $mod );
+				if ( ! empty( $posts_mods ) ) {
+					foreach ( $posts_mods as $post_mod ) {
+						$post_mt_og = $this->p->og->get_array( true, $post_mod );	// $use_post = true
+						$json_data['hasPart'][] = $this->p->schema->get_json_data( $post_mod, $post_mt_og );
+						$parts_added++;
+					}
+				}
+			}
+
+			return $parts_added;
+		}
+
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = false ) {
 
 			$wpsso =& Wpsso::get_instance();
@@ -158,7 +177,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			return 1;	// return count of videos added
 		}
-
 	}
 }
 
