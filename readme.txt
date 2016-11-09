@@ -1009,7 +1009,9 @@ Official announcement: N/A
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the WpssoSchema::get_head_item_type() method to WpssoSchema::get_mod_schema_type().
+	* Renamed the WpssoSchema::get_item_type_context() method to WpssoSchema::get_schema_type_context().
+	* Added a filter to 'wpsso_post_cache_transients' in order to clear the term transient cache on post update. 
 
 **Version 1.10.8-1 (2016/11/08)**
 
