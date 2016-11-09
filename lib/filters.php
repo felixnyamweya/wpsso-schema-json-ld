@@ -75,7 +75,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 
 			$lca = $this->p->cf['lca'];
-			$ret = WpssoSchema::get_item_type_context( $mt_og['schema:type:url'] );
+			$type_url = $this->p->schema->get_schema_type_url( $type_id );
+			$ret = WpssoSchema::get_schema_type_context( $type_url );
 
 			/*
 			 * Property:
@@ -107,8 +108,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( ! current_user_can( 'manage_options' ) )
 				return;
 
-			$urls = $this->p->cf['plugin']['wpssojson']['url'];	// for purchase and pro_support urls
-			$type_id = $this->p->schema->get_head_item_type( $mod, true );
+			$urls = $this->p->cf['plugin']['wpssojson']['url'];		// for purchase and pro_support urls
+			$type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $get_id = true;
 			$type_url = $this->p->schema->get_schema_type_url( $type_id );
 			$filter_name = $this->p->schema->get_json_data_filter( $mod, $type_url );
 			$message = '';
@@ -211,7 +212,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			return array_merge( $def_opts, array(
 				'schema_is_main' => 1,
-				'schema_type' => $this->p->schema->get_head_item_type( $mod, true, false ),	// $return_id = true, $use_mod_opts = false
+				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
 				'schema_title' => '',
 				'schema_desc' => '',
 				'schema_pub_org_id' => 'site',		// Article Publisher

@@ -43,10 +43,9 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->mark();
 
 			$ret = array();
+			$lca = $this->p->cf['lca'];
 
-			if ( isset( $mt_og['schema:type:id'] ) &&
-				$this->p->schema->schema_type_child_of( $mt_og['schema:type:id'], 'article' ) ) {
-
+			if ( $this->p->schema->is_schema_type_child_of( $type_id, 'article' ) ) {
 				$org_logo_key = 'org_banner_url';			// use a banner for all article sub-types
 				$size_name = $this->p->cf['lca'].'-schema-article';	// same size, but minimum width is 696px
 
