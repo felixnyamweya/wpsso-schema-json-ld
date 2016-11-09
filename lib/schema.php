@@ -29,8 +29,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
 				if ( ! empty( $posts_mods ) ) {
 					foreach ( $posts_mods as $post_mod ) {
-						$post_mt_og = $this->p->og->get_array( true, $post_mod );	// $use_post = true
-						$json_data['hasPart'][] = $this->p->schema->get_json_data( $post_mod, $post_mt_og );
+						$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
+						$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og );
 						$parts_added++;
 					}
 				}
