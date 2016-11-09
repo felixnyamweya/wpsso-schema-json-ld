@@ -998,6 +998,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.0-dev1 (2016/11/09)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.10.8-1 (2016/11/08)**
 
 Official announcement: N/A
@@ -1145,11 +1158,11 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 == Upgrade Notice ==
 
+= 1.11.0-dev1 =
+
+(2016/11/09) Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
+
 = 1.10.8-1 =
 
 (2016/11/08) Fixed a get_schema_type_url() error in the Recipe class (Pro version).
-
-= 1.10.7-1 =
-
-(2016/11/03) Minor code changes required for WPSSO v3.37.0-1.
 
