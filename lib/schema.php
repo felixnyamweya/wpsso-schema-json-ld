@@ -30,7 +30,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( ! empty( $posts_mods ) ) {
 					foreach ( $posts_mods as $post_mod ) {
 						$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
-						$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og );
+						$post_part = $wpsso->schema->get_json_data( $post_mod, $post_mt_og );
+						WpssoSchema::add_main_entity_data( $post_part, $post_mt_og['og:url'] );
+						$json_data['hasPart'][] = $post_part;
 						$parts_added++;
 					}
 				}
