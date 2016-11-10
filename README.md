@@ -16,9 +16,9 @@
 
 <p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc (see complete examples bellow).</p>
 
-<p><strong>Overrides missing or incomplete Schema markup in your theme templates.</strong></p>
+<p><strong>Completes missing or innaccurate Schema markup in your theme templates.</strong></p>
 
-<p><strong>Select another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
 <p><strong>Include all WooCommerce product images and variations the Schema Product markup!</strong> (Pro version)</p>
 
@@ -166,10 +166,10 @@
 <ul>
 <li>Schema Type <a href="https://schema.org/AboutPage">schema.org/AboutPage</a></li>
 <li>Schema Type <a href="https://schema.org/CheckoutPage">schema.org/CheckoutPage</a></li>
-<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a></li>
+<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a> (includes all posts in archive page)</li>
 <li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
 <li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
-<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
+<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a> (includes all posts for author archive page)</li>
 <li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
 <li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
 </ul></li>

@@ -19,9 +19,9 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 <p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc (see complete examples bellow).</p>
 
-<p><strong>Overrides missing or incomplete Schema markup in your theme templates.</strong></p>
+<p><strong>Completes missing or innaccurate Schema markup in your theme templates.</strong></p>
 
-<p><strong>Select another Schema type than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
 <p><strong>Include all WooCommerce product images and variations the Schema Product markup!</strong> (Pro version)</p>
 
@@ -133,10 +133,10 @@ Adds Schema / Structured Data JSON-LD markup:
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 		* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
 		* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
-		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage)
+		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes all posts in archive page)
 		* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
 		* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
-		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage)
+		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes all posts for author archive page)
 		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
 		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
 	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
