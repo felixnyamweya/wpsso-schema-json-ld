@@ -166,10 +166,10 @@
 <ul>
 <li>Schema Type <a href="https://schema.org/AboutPage">schema.org/AboutPage</a></li>
 <li>Schema Type <a href="https://schema.org/CheckoutPage">schema.org/CheckoutPage</a></li>
-<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a> (includes all posts in archive page)</li>
+<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a> (includes all posts for term archive)</li>
 <li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
 <li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
-<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a> (includes all posts for author archive page)</li>
+<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a> (includes all posts for author archive)</li>
 <li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
 <li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
 </ul></li>
