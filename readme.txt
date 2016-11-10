@@ -998,7 +998,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.0-b1 (2016/11/09)**
+**Version 1.11.0-b1 (2016/11/10)**
 
 Official announcement: N/A
 
@@ -1163,7 +1163,7 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 = 1.11.0-b1 =
 
-(2016/11/09) Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
+(2016/11/10) Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
 
 = 1.10.8-1 =
 
