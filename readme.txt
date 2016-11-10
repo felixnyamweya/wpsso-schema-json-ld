@@ -1005,10 +1005,11 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
+	* Added a new 'hasPart' property with a list of posts for the Schema CollectionPage and ProfilePage markup.
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Added a new WpssoJsonSchema::add_parts_data() method to fetch posts for the current term / user archive page.
 	* Renamed the WpssoSchema::get_head_item_type() method to WpssoSchema::get_mod_schema_type().
 	* Renamed the WpssoSchema::get_item_type_context() method to WpssoSchema::get_schema_type_context().
 	* Added a filter to 'wpsso_post_cache_transients' in order to clear the term transient cache on post update. 
