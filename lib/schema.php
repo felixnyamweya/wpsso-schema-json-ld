@@ -20,11 +20,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
+		// called by CollectionPage and ProfilePage
 		public static function add_parts_data( &$json_data, $mod ) {
-			
 			$wpsso =& Wpsso::get_instance();
 			$parts_added = 0;
 
+			// get $mod for all posts in this term / user archive page 
 			if ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {	// just in case
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
 				if ( ! empty( $posts_mods ) ) {
@@ -40,7 +41,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = false ) {
-
 			$wpsso =& Wpsso::get_instance();
 			
 			/*
@@ -132,7 +132,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *	)
 		 */
 		public static function add_single_video_data( &$json_data, $opts, $prefix = 'og:video', $list_element = true ) {
-
 			$wpsso =& Wpsso::get_instance();
 
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
