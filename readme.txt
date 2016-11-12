@@ -50,8 +50,12 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 * Schema Image Dimensions
 * Maximum Description Length
 * Author / Person Name Format
-* Default Item Type for Home Page
-* Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).
+* Item Type for Blog Home Page
+* Item Type for Static Home Page
+* Item Type for Archive Page
+* Item Type for User / Author Page
+* Item Type for Search Results Page
+* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
 
 Adds Schema / Structured Data JSON-LD markup:
 
@@ -568,11 +572,7 @@ Example WPSSO JSON Pro markup for a Tech Article published on surniaulula.com.
     "url": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "name": "PHP &amp;ndash; Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
-    },
+    "mainEntityOfPage": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "headline": "PHP &amp;ndash; Create an Array of Hours",
     "datepublished": "2016-04-15T14:30:02+00:00",
     "datemodified": "2016-04-15T15:05:58+00:00",
@@ -622,11 +622,7 @@ Example WPSSO JSON Pro markup for a WooCommerce product, including its name, des
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "name": "A Colorful Pencil",
     "description": "This is a short description for the colorful pencil.",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "http://woo.surniaulula.com/product/a-colorful-pencil/"
-    },
+    "mainEntityOfPage": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "aggregateRating": {
         "@context": "https://schema.org",
         "@type": "AggregateRating",
@@ -852,11 +848,7 @@ Example WPSSO JSON Pro markup for a Restaurant using the [WPSSO PLM](https://wor
         "url": "http://restaurant.example.com/",
         "name": "Restaurant Name",
     "description": "A great family owned restaurant. ;-)",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "http://restaurant.example.com/"
-    },
+    "mainEntityOfPage": "http://restaurant.example.com/",
     "image": [
         {
             "@context": "https://schema.org",
@@ -998,13 +990,14 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.0-b1 (2016/11/10)**
+**Version 1.11.0-rc1 (2016/11/10)**
 
 Official announcement: N/A
 
 * *New Features*
 	* None
 * *Improvements*
+	* Added a "Item Type for Blog Home Page" option for non-static home pages.
 	* Added a new 'hasPart' property with a list of posts for the Schema CollectionPage and ProfilePage markup.
 * *Bugfixes*
 	* None
@@ -1161,7 +1154,7 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 == Upgrade Notice ==
 
-= 1.11.0-b1 =
+= 1.11.0-rc1 =
 
 (2016/11/10) Added a new 'hasPart' property to the Schema Type CollectionPage markup to include posts in the current archive page.
 

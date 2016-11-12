@@ -48,8 +48,12 @@
 <li>Schema Image Dimensions</li>
 <li>Maximum Description Length</li>
 <li>Author / Person Name Format</li>
-<li>Default Item Type for Home Page</li>
-<li>Default Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
+<li>Item Type for Blog Home Page</li>
+<li>Item Type for Static Home Page</li>
+<li>Item Type for Archive Page</li>
+<li>Item Type for User / Author Page</li>
+<li>Item Type for Search Results Page</li>
+<li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
 </ul>
 
 <p>Adds Schema / Structured Data JSON-LD markup:</p>
@@ -815,11 +819,7 @@
     "url": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "name": "PHP &amp;ndash; Create an Array of Hours",
     "description": "Create an array of store hours easily in PHP -- this function generates an array of values quickly, with hours formatted and stepped as you wish.",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/"
-    },
+    "mainEntityOfPage": "https://surniaulula.com/2016/04/15/php-create-an-array-of-hours/",
     "headline": "PHP &amp;ndash; Create an Array of Hours",
     "datepublished": "2016-04-15T14:30:02+00:00",
     "datemodified": "2016-04-15T15:05:58+00:00",
@@ -869,11 +869,7 @@
     "url": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "name": "A Colorful Pencil",
     "description": "This is a short description for the colorful pencil.",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "http://woo.surniaulula.com/product/a-colorful-pencil/"
-    },
+    "mainEntityOfPage": "http://woo.surniaulula.com/product/a-colorful-pencil/",
     "aggregateRating": {
         "@context": "https://schema.org",
         "@type": "AggregateRating",
@@ -1099,11 +1095,7 @@
         "url": "http://restaurant.example.com/",
         "name": "Restaurant Name",
     "description": "A great family owned restaurant. ;-)",
-    "mainEntityOfPage": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "http://restaurant.example.com/"
-    },
+    "mainEntityOfPage": "http://restaurant.example.com/",
     "image": [
         {
             "@context": "https://schema.org",
