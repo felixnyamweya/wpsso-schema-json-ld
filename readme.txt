@@ -11,7 +11,7 @@ Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich s
 Contributors: jsmoriss
 Requires At Least: 3.5
 Tested Up To: 4.6.1
-Stable Tag: 1.10.8-1
+Stable Tag: 1.11.0-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -1157,8 +1157,4 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 = 1.11.0-1 =
 
 (2016/11/12) Added an "Item Type for Blog Home Page" option for non-static home pages. Added a new 'hasPart' property with a list of posts for the Schema CollectionPage, ProfilePage, and SearchResultsPage markup.
-
-= 1.10.8-1 =
-
-(2016/11/08) Fixed a get_schema_type_url() error in the Recipe class (Pro version).
 
