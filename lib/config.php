@@ -77,6 +77,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'profilepage' => '(code) Schema Type Profile Page (webpage.profile)',
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
+								'searchresultspage' => '(code) Schema Type Search Results Page (webpage.search.results)',
 								'website' => '(code) Schema Type Website (website)',
 							),
 							'prop' => array(

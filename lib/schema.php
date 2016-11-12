@@ -21,20 +21,36 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		// called by CollectionPage and ProfilePage
-		public static function add_parts_data( &$json_data, $mod ) {
+		public static function add_parts_data( &$json_data, $mod, $mt_og, $type_id, $is_main ) {
 			$wpsso =& Wpsso::get_instance();
 			$parts_added = 0;
 			$posts_mods = array();
-
-			// get $mod for all posts in this term / user archive page 
-			if ( method_exists( $mod['obj'], 'get_posts_mods' ) )
+			
+			// $type_id is false for parts to prevent recursion of main loop posts
+			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
+				if ( $wpsso->debug->enabled )
+					$wpsso->debug->log( 'using query loop to get posts' );
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post();
+						global $post;
+						$posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
+					}
+					wp_reset_postdata();
+				}
+			// get first page of posts for this term / user archive page 
+			// if the module is a post, then return all children of that post
+			} elseif ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {
+				if ( $wpsso->debug->enabled )
+					$wpsso->debug->log( 'using module object to get posts' );
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
-			else $posts_mods = $wpsso->m['util']['post']->get_posts_mods( $mod );
+			}
 
 			if ( ! empty( $posts_mods ) ) {
 				foreach ( $posts_mods as $post_mod ) {
 					$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
-					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, false, true );	// $is_main = true
+					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og,
+						false, true );	// $type_id = false, $is_main = true
 					$parts_added++;
 				}
 			}
