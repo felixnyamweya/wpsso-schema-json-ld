@@ -65,6 +65,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'head' => array(
 								'article' => '(code) Schema Type Article (article)',
+								'blog' => '(code) Schema Type Blog (blog)',
 								'collectionpage' => '(code) Schema Type Collection Page (webpage.collection)',
 								'creativework' => '(code) Schema Type Creative Work (creative.work)',
 								'event' => '(code) Schema Type Event (event)',
