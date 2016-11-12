@@ -24,16 +24,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		public static function add_parts_data( &$json_data, $mod ) {
 			$wpsso =& Wpsso::get_instance();
 			$parts_added = 0;
+			$posts_mods = array();
 
 			// get $mod for all posts in this term / user archive page 
-			if ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {	// just in case
+			if ( method_exists( $mod['obj'], 'get_posts_mods' ) )
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
-				if ( ! empty( $posts_mods ) ) {
-					foreach ( $posts_mods as $post_mod ) {
-						$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
-						$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, false, true );	// $is_main = true
-						$parts_added++;
-					}
+			else $posts_mods = $wpsso->m['util']['post']->get_posts_mods( $mod );
+
+			if ( ! empty( $posts_mods ) ) {
+				foreach ( $posts_mods as $post_mod ) {
+					$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
+					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, false, true );	// $is_main = true
+					$parts_added++;
 				}
 			}
 
