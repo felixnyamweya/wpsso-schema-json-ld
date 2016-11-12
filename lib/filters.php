@@ -259,10 +259,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_pub_google_rows( $table_rows, $form ) {
 			foreach ( array_keys( $table_rows ) as $key ) {
 				switch ( $key ) {
-					case 'schema_add_noscript':
+					case 'schema_add_noscript':	// keep these rows
 					case 'schema_social_json':
 						break;
-					case 'subsection_google_schema':
+					case 'subsection_google_schema':	// remove these rows
 					case ( strpos( $key, 'schema_' ) === 0 ? true : false ):
 						unset( $table_rows[$key] );
 						break;
