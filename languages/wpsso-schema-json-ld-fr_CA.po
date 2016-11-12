@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.10.7-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2016-10-31 17:27-0700\n"
-"PO-Revision-Date: 2016-10-31 17:27-0700\n"
+"POT-Creation-Date: 2016-11-12 13:12-0800\n"
+"PO-Revision-Date: 2016-11-12 13:13-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -25,79 +25,79 @@ msgctxt "plugin description"
 msgid "WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more)."
 msgstr "Extension WPSSO pour ajouter des balises de Schéma JSON-LD (Article, Event, Organization, Place / Business, Product, Recipe, et plus)."
 
-#: lib/filters.php:121
+#: lib/filters.php:123
 msgid "The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
 msgstr "La version gratuite / de base WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:121
+#: lib/filters.php:123
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
 msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma, y compris le type de Schéma <a href=\"%2$s\">%2$s</a>."
 
-#: lib/filters.php:121
+#: lib/filters.php:123
 msgid "If this Schema is an important classification for your content, you should consider purchasing the Pro version."
 msgstr "Si ce Schéma est une classification importante pour votre contenu, vous devriez considérer l'achat de la version Pro."
 
-#: lib/filters.php:125
+#: lib/filters.php:127
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:278
+#: lib/filters.php:294
 msgid "Check this option if the Schema markup describes the main content (aka \"main entity\") of this webpage."
 msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
 
-#: lib/filters.php:281
+#: lib/filters.php:297
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
-#: lib/filters.php:284
+#: lib/filters.php:300
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
 msgstr "Sélectionnez un éditeur pour le type de Schéma d'Article et / ou de son sous-type (NewsArticle, TechArticle, etc)."
 
-#: lib/filters.php:287
+#: lib/filters.php:303
 msgid "A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types."
 msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d’élément Schéma Article et ses sous-types (NewsArticle, TechArticle, etc.)."
 
-#: lib/filters.php:290
+#: lib/filters.php:306
 msgid "Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionnez un organisateur pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:293
+#: lib/filters.php:309
 msgid "The total time it takes to prepare this recipe."
 msgstr "Le temps total qu’il faut pour la préparation cette recette."
 
-#: lib/filters.php:296
+#: lib/filters.php:312
 msgid "The total time it takes to cook this recipe."
 msgstr "Le temps total qu’il faut pour la cuisson de cette recette."
 
-#: lib/filters.php:299
+#: lib/filters.php:315
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr "Le temps total qu’il faut pour la préparation et la cuisson cette recette."
 
-#: lib/filters.php:302
+#: lib/filters.php:318
 msgid "The quantity or servings made by this recipe (example: \"5 servings\", \"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr "La quantité ou les portions fournie par cette recette (exemple : \"5 portions\", \"10 burgers\", etc.)."
 
-#: lib/filters.php:305
+#: lib/filters.php:321
 msgid "The total number of calories for this recipe (all servings)."
 msgstr "Le nombre total de calories pour cette recette (toutes les portions)."
 
-#: lib/filters.php:308
+#: lib/filters.php:324
 msgid "Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionner un artiste pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:311
+#: lib/filters.php:327
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:314
+#: lib/filters.php:330
 msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr "Sélectionnez le type de Schéma qui décrit l'article évalué."
 
-#: lib/filters.php:317
+#: lib/filters.php:333
 msgid "A URL for the item being reviewed."
 msgstr "Un URL pour l'article évalué."
 
-#: lib/filters.php:320
+#: lib/filters.php:336
 msgid "A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5)."
 msgstr "Une note pour l'article évalué, ainsi que la note min / max de l'échelle (1 à 5 par défaut)."
 
@@ -230,80 +230,85 @@ msgctxt "option label"
 msgid "Organization Logo Image URL"
 msgstr "URL de l'image logo de l'organisation"
 
-#: lib/submenu/schema-json-ld.php:53
+#: lib/submenu/schema-json-ld.php:54
 msgctxt "option label"
 msgid "Organization Banner (600x60) URL"
 msgstr "URL bannière (600x60) de l'organisation"
 
-#: lib/submenu/schema-json-ld.php:57
+#: lib/submenu/schema-json-ld.php:58
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr "Images maximum a inclure"
 
-#: lib/submenu/schema-json-ld.php:62
+#: lib/submenu/schema-json-ld.php:63
 msgctxt "option comment"
 msgid "video preview images are enabled (and included first)"
 msgstr "images d'aperçu vidéo sont activés (et inclus en premier)"
 
-#: lib/submenu/schema-json-ld.php:65
+#: lib/submenu/schema-json-ld.php:66
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr "Dimensions d'images Schéma"
 
-#: lib/submenu/schema-json-ld.php:70
+#: lib/submenu/schema-json-ld.php:71
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr "Longueur de description maximale"
 
-#: lib/submenu/schema-json-ld.php:73
+#: lib/submenu/schema-json-ld.php:74
 msgctxt "option comment"
 msgid "characters or less"
 msgstr "caractères ou moins"
 
-#: lib/submenu/schema-json-ld.php:76
+#: lib/submenu/schema-json-ld.php:77
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr "Format du nom d’auteur"
 
+#: lib/submenu/schema-json-ld.php:85
+msgctxt "option label"
+msgid "Item Type for Blog Home Page"
+msgstr "Type d'élément pour page d'accueil blog"
+
+#: lib/submenu/schema-json-ld.php:86
+msgctxt "option label"
+msgid "Item Type for Static Home Page"
+msgstr "Type d'élément pour page d'accueil statique"
+
 #: lib/submenu/schema-json-ld.php:87
-msgctxt "option label"
-msgid "Default Item Type by Post Type"
-msgstr "Type de schéma par type d'article"
-
-#: lib/submenu/schema-json-ld.php:92
-msgctxt "option label"
-msgid "Item Type for Home Page"
-msgstr "Type d’élément pour page d’accueil"
-
-#: lib/submenu/schema-json-ld.php:93
 msgctxt "option label"
 msgid "Item Type for Archive Page"
 msgstr "Type d’élément pour page d'archive"
 
-#: lib/submenu/schema-json-ld.php:94
+#: lib/submenu/schema-json-ld.php:88
 msgctxt "option label"
 msgid "Item Type for User / Author Page"
 msgstr "Type d’élément pour page d'utilisateur / auteur"
 
-#: lib/submenu/schema-json-ld.php:95
+#: lib/submenu/schema-json-ld.php:89
 msgctxt "option label"
 msgid "Item Type for Search Results Page"
 msgstr "Type d’élément pour page résultats de recherche"
 
-#: lib/submenu/schema-json-ld.php:102
+#: lib/submenu/schema-json-ld.php:100
+msgctxt "option label"
+msgid "Item Type by Post Type"
+msgstr "Type d'élément par type d'article"
+
+#: lib/submenu/schema-json-ld.php:105
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr "Champ pers. d'ingrédients de recette"
 
-#: wpsso-schema-json-ld.php:81
+#: wpsso-schema-json-ld.php:83
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin before trying to re-activate the %4$s extension."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s avant d'essayer de re-activer %4$s."
 
-#: wpsso-schema-json-ld.php:83
+#: wpsso-schema-json-ld.php:85
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-schema-json-ld.php:148
+#: wpsso-schema-json-ld.php:150
 msgid "The %1$s extension version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'extension %1$s version %2$s requiert l'utilisation de %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
