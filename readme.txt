@@ -998,7 +998,7 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added a "Item Type for Blog Home Page" option for non-static home pages.
-	* Added a new 'hasPart' property with a list of posts for the Schema CollectionPage and ProfilePage markup.
+	* Added a new 'hasPart' property with a list of posts for the Schema CollectionPage, ProfilePage, and SearchResultsPage markup.
 * *Bugfixes*
 	* None
 * *Developer Notes*
