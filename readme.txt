@@ -11,7 +11,7 @@ Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich s
 Contributors: jsmoriss
 Requires At Least: 3.5
 Tested Up To: 4.6.1
-Stable Tag: 1.11.0-1
+Stable Tag: 1.11.1-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
