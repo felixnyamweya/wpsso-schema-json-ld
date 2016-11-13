@@ -1005,7 +1005,7 @@ Official announcement: N/A
 	* Added a new WpssoJsonSchema::add_parts_data() method to fetch posts for the current term / user archive page.
 	* Renamed the WpssoSchema::get_head_item_type() method to WpssoSchema::get_mod_schema_type().
 	* Renamed the WpssoSchema::get_item_type_context() method to WpssoSchema::get_schema_type_context().
-	* Added a filter to 'wpsso_post_cache_transients' in order to clear the term transient cache on post update. 
+	* Added a hook to the 'wpsso_post_cache_transients' filter in order to clear the term transient cache on post update. 
 
 **Version 1.10.8-1 (2016/11/08)**
 
