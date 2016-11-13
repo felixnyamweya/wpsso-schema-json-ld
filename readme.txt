@@ -990,7 +990,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.0-1 (2016/11/12)**
+**Version 1.11.1-1 (2016/11/12)**
 
 Official announcement: N/A
 
@@ -1006,155 +1006,11 @@ Official announcement: N/A
 	* Renamed the WpssoSchema::get_head_item_type() method to WpssoSchema::get_mod_schema_type().
 	* Renamed the WpssoSchema::get_item_type_context() method to WpssoSchema::get_schema_type_context().
 	* Added a hook to the 'wpsso_post_cache_transients' filter in order to clear the term transient cache on post update. 
-
-**Version 1.10.8-1 (2016/11/08)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed a get_schema_type_url() error in the Recipe class (Pro version).
-* *Developer Notes*
-	* None
-
-**Version 1.10.7-1 (2016/11/03)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minor code changes required for WPSSO v3.37.0-1:
-		* Renamed the SucomUtil::after_key() method to SucomUtil::get_after_key().
-		* Replaced the $user_id argument in all JSON data and property filters by the Schema $type_id.
-		* Renamed the 'wpsso_json_data_https_schema_org' filter to 'wpsso_json_data_https_schema_org_thing'.
-
-**Version 1.10.6-1 (2016/10/22)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Minimum requirements updated to WP v3.5 and PHP v5.4.
-	* Minor code changes required for WPSSO v3.36.3-1:
-		* Renamed the Social Settings 'header' index name to 'text'.
-		* Renamed the 'wpsso_admin_post_header' filter to 'wpsso_admin_post_head'.
-
-**Version 1.10.5-1 (2016/10/15)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added new Item Type options from WPSSO v3.36.0-1 to the Schema Markup settings page:
-		* Item Type for Archive Page (default is https://schema.org/CollectionPage)
-		* Item Type for User / Author Page (default is https://schema.org/ProfilePage)
-		* Item Type for Search Results Page (default is https://schema.org/SearchResultsPage)
-	* Added new Schema properties from WPSSO PLM v2.2.0-1 for Local Business:
-		* currenciesAccepted
-		* paymentAccepted
-		* priceRange
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed all http://schema.org URLs to https://schema.org and all http_schema_org filters to https_schema_org.
-
-**Version 1.10.4-1 (2016/10/01)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a SucomUtil::titleize() method call to format post type names for display.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.10.3-1 (2016/09/10)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Updated the SucomNotice method calls for WPSSO v3.35.0-1.
-
-**Version 1.10.2-1 (2016/08/30)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Removed an extra argument in a `filter_json_data_https_schema_org_recipe()` method call (Pro version).
-* *Developer Notes*
-	* None
-
-**Version 1.10.1-1 (2016/08/18)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added support for an "areaServed" property (as a "circle" GeoShape) in the Schema https://schema.org/LocalBusiness markup (Pro version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Removed the '$use_post' argument in the json data filters.
-
-**Version 1.10.0-1 (2016/07/29)**
-
-Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe Markup](https://wpsso.com/2016/07/29/wpsso-json-update-google-pinterest-recipe-markup/)
-
-* *New Features*
-	* Added new recipe input fields to the Social Settings metabox, shown when the Schema Recipe type is selected (Pro version).
-		* "Recipe Preperation Time"
-		* "Recipe Cook Time"
-		* "Recipe Total Time"
-		* "Recipe Total Calories"
-		* "Recipe Quantity"
-		* "Recipe Ingredients"
-	* Added a new "Recipe Ingredients Custom Field" option in the Schema Markup settings page.
-	* Added new properties for the schema.org/Recipe type:
-		* 'prepTime'
-		* 'cookTime'
-		* 'totalTime'
-		* 'nutrition'
-		* 'recipeYield'
-		* 'ingredients'
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new filter to include 3rd party aggregate ratings:
-		* apply_filters( 'wpsso_json_prop_https_schema_org_aggregaterating', $rating, $mod, $mt_og, $type_id, $is_main );
+	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
 
-= 1.11.0-1 =
+= 1.11.1-1 =
 
 (2016/11/12) Added an "Item Type for Blog Home Page" option for non-static home pages. Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
 
