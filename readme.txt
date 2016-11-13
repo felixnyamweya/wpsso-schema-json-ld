@@ -131,18 +131,18 @@ Adds Schema / Structured Data JSON-LD markup:
 		* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 		* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
 	* Schema Type [schema.org/Book](https://schema.org/Book)
-	* Schema Type [schema.org/Blog](https://schema.org/Blog)
+	* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes hasPart property with posts)
 	* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
 	* Schema Type [schema.org/Review](https://schema.org/Review)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 		* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
 		* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
-		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes all posts for term archive)
+		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes hasPart property with posts)
 		* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
 		* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
-		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes all posts for author archive)
+		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes hasPart property with posts)
 		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
-		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
+		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes hasPart property with posts)
 	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
  
 > * URL
@@ -998,7 +998,7 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added an "Item Type for Blog Home Page" option for non-static home pages.
-	* Added a new 'hasPart' property with a list of posts for the Schema CollectionPage, ProfilePage, and SearchResultsPage markup.
+	* Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -1156,5 +1156,5 @@ Official announcement: [WPSSO JSON Update &mdash; Google &amp; Pinterest Recipe 
 
 = 1.11.0-1 =
 
-(2016/11/12) Added an "Item Type for Blog Home Page" option for non-static home pages. Added a new 'hasPart' property with a list of posts for the Schema CollectionPage, ProfilePage, and SearchResultsPage markup.
+(2016/11/12) Added an "Item Type for Blog Home Page" option for non-static home pages. Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
 
