@@ -209,16 +209,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $opts;
 		}
 
-		public function filter_post_cache_transients( $transients, $post_id, $locale, $sharing_url ) {
+		public function filter_post_cache_transients( $transients, $mod, $locale, $sharing_url ) {
+
+			// clear blog home page
+			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_url:'.home_url( '/' );
 
 			// clear term archive page meta tags (and json markup)
-			$terms = wp_get_post_terms( $post_id );
-			foreach ( $terms as $term )
-				$transients['WpssoHead::get_head_array'][] = $locale_salt = 'locale:'.$locale.'_term:'.$term->term_id;
+			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
+				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
+					$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_term:'.$term->term_id.'_tax:'.$tax_name;
+				}
+			}
 
 			// clear author archive page meta tags (and json markup)
-			$author_id = get_post_field( 'post_author', $post_id );
-			$transients['WpssoHead::get_head_array'][] = $locale_salt = 'locale:'.$locale.'_user:'.$author_id;
+			$author_id = get_post_field( 'post_author', $mod['id'] );
+			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_user:'.$author_id;
 
 			return $transients;
 		}

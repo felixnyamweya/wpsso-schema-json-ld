@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.0-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -50,79 +50,79 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:294
+#: lib/filters.php:299
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:297
+#: lib/filters.php:302
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:300
+#: lib/filters.php:305
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:303
+#: lib/filters.php:308
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:306
+#: lib/filters.php:311
 msgid ""
 "Select an organizer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:309
+#: lib/filters.php:314
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:312
+#: lib/filters.php:317
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:315
+#: lib/filters.php:320
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:318
+#: lib/filters.php:323
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:321
+#: lib/filters.php:326
 msgid "The total number of calories for this recipe (all servings)."
 msgstr ""
 
-#: lib/filters.php:324
+#: lib/filters.php:329
 msgid ""
 "Select a performer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:327
+#: lib/filters.php:332
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:330
+#: lib/filters.php:335
 msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr ""
 
-#: lib/filters.php:333
+#: lib/filters.php:338
 msgid "A URL for the item being reviewed."
 msgstr ""
 
-#: lib/filters.php:336
+#: lib/filters.php:341
 msgid ""
 "A rating for the item being reviewed, along with the low / high rating scale "
 "(defaults are 1 to 5)."
