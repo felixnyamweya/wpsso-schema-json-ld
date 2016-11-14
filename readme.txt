@@ -990,6 +990,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.2-dev1 (2016/11/14)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added date based archive URLs when clearing the post cache.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.11.1-1 (2016/11/12)**
 
 Official announcement: N/A
@@ -1009,6 +1022,10 @@ Official announcement: N/A
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.2-dev1 =
+
+(2016/11/14) Added date based archive URLs when clearing the post cache.
 
 = 1.11.1-1 =
 
