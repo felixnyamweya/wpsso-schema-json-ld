@@ -990,7 +990,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.2-dev1 (2016/11/14)**
+**Version 1.11.2-dev2 (2016/11/15)**
 
 Official announcement: N/A
 
@@ -1023,9 +1023,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.11.2-dev1 =
+= 1.11.2-dev2 =
 
-(2016/11/14) Added date based archive URLs when clearing the post cache.
+(2016/11/15) Added date based archive URLs when clearing the post cache.
 
 = 1.11.1-1 =
 
