@@ -89,7 +89,7 @@ Adds additional custom options in the Social Settings metabox:
 * Reviewed Item URL 
 * Reviewed Item Rating 
 
-Adds Schema / Structured Data JSON-LD markup:
+Adds Schema / Structured Data JSON-LD markup for:
 
 * Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
 	* Schema Type [schema.org/Article](https://schema.org/Article)

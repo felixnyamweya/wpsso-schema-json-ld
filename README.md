@@ -92,7 +92,7 @@
 <li>Reviewed Item Rating </li>
 </ul>
 
-<p>Adds Schema / Structured Data JSON-LD markup:</p>
+<p>Adds Schema / Structured Data JSON-LD markup for:</p>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>
