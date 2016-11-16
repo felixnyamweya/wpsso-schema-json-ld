@@ -17,9 +17,9 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Features <em>accurate</em> and <em>comprehensive</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, etc.</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Features <em>accurate</em> and <em>comprehensive</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
-<p><strong>Completes missing or innaccurate Schema markup in your theme templates.</strong></p>
+<p><strong>Override missing or innaccurate Schema markup in your theme templates.</strong></p>
 
 <p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
@@ -155,7 +155,7 @@ Adds Schema / Structured Data JSON-LD markup:
 	* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
 		* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
 * Schema Type [schema.org/Person](https://schema.org/Person)
-* Schema Type [schema.org/Place](https://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information**)
+* Schema Type [schema.org/Place](https://schema.org/Place) ([WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information)
 	* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
 	* Schema Type [schema.org/Landform](https://schema.org/Landform)
