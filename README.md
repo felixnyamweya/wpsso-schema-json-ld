@@ -272,7 +272,7 @@
 <li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a></li>
 <li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
 </ul></li>
-<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (<strong>supported e-Commerce plugin required</strong>)</li>
+<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)</li>
 </ul>
 
 <h4>Examples</h4>

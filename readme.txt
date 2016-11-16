@@ -229,7 +229,7 @@ Adds Schema / Structured Data JSON-LD markup:
 		* Schema Type [schema.org/TravelAgency](https://schema.org/TravelAgency)
 	* Schema Type [schema.org/Residence](https://schema.org/Residence)
 	* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
-* Schema Type [schema.org/Product](https://schema.org/Product) (**supported e-Commerce plugin required**)
+* Schema Type [schema.org/Product](https://schema.org/Product) (supported e-Commerce plugin required)
 
 = Examples =
 
