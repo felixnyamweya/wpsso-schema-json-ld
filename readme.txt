@@ -233,9 +233,9 @@ Adds Schema / Structured Data JSON-LD markup:
 
 = Markup Examples =
 
-* [Markup Example for a Restaurant](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/).
-* [Markup Example for a Tech Article](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/).
-* [Markup Example for a WooCommerce Product](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/).
+* [Markup Example for a Restaurant](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
+* [Markup Example for a Tech Article](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
+* [Markup Example for a WooCommerce Product](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
 
 = Available in Multiple Languages =
 
