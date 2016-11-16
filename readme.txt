@@ -9,7 +9,7 @@ Donate Link: https://wpsso.com/?utm_source=wpssojson-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news, seo, local business, pinterest, article, product, event, rating, review, recipe, google, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
-Requires At Least: 3.5
+Requires At Least: 3.7
 Tested Up To: 4.6.1
 Stable Tag: 1.11.1-1
 
