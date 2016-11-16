@@ -17,25 +17,25 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc (see complete examples bellow).</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Features <em>accurate</em> and <em>comprehensive</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, etc.</p>
 
 <p><strong>Completes missing or innaccurate Schema markup in your theme templates.</strong></p>
 
-<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
 <p><strong>Include all WooCommerce product images and variations the Schema Product markup!</strong> (Pro version)</p>
 
-<p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
+<p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 = Quick List of Features =
 
 **WPSSO JSON Free / Basic Features**
 
-Extends the features of either the Free or Pro versions of WPSSO.
+Extends the features of WPSSO Free or Pro.
 
 Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
@@ -56,69 +56,38 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 * Item Type for User / Author Page
 * Item Type for Search Results Page
 * Item Type by Post Type (for Posts, Pages, Media, and custom post types).
+* Recipe Ingredients Custom Field
 
-Adds Schema / Structured Data JSON-LD markup:
+Adds Schema / Structured Data JSON-LD markup for:
 
 * Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 * Schema Type [schema.org/WebPage](https://schema.org/WebPage)
-
-> * URL
-> * Name (Title)
-> * Description
-> * DatePublished
-> * DateModified
-> * Author as [schema.org/Person](https://schema.org/Person)
-> 	* Author URL from Profile
-> 	* Author Name
-> 	* Author Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Author Image URL
-> 		* Author Image Width
-> 		* Author Image Height
-> 	* Author SameAs
->		* Facebook URL
->		* Google+ URL
->		* Instagram URL
->		* LinkedIn URL
->		* MySpace URL
->		* Pinterest URL
->		* Tumblr URL
->		* Twitter URL
->		* YouTube URL
->		* Website URL
-> * Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
-> 	* Video URL
-> 	* Video Name (Title)
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
 
 = Quick List of Features (Continued) =
 
 **WPSSO JSON Pro / Power-User Features**
 
-Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
+Extends the features of WPSSO Pro.
 
 Adds additional custom options in the Social Settings metabox:
 
+* Schema Item Name (aka Title)
+* Schema Description
 * Main Entity of Page
 * Schema Item Type
-* Schema Item Name
-* Article Headline
 * Article Publisher
-* Schema Description
+* Article Headline
+* Event Organizer
+* Event Performer
+* Recipe Preparation Time 
+* Recipe Cooking Time 
+* Recipe Total Time 
+* Recipe Total Calories 
+* Recipe Quantity 
+* Recipe Ingredients 
+* Reviewed Item Type 
+* Reviewed Item URL 
+* Reviewed Item Rating 
 
 Adds Schema / Structured Data JSON-LD markup:
 
@@ -144,74 +113,6 @@ Adds Schema / Structured Data JSON-LD markup:
 		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
 		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes hasPart property with posts)
 	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
- 
-> * URL
-> * Name (Title)
-> * Headline (for Article Sub-Types)
-> * Description
-> * DatePublished
-> * DateModified
-> * Author as [schema.org/Person](https://schema.org/Person)
-> 	* Author URL from Profile
-> 	* Author Name
-> 	* Author Description
-> 	* Author Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Author Image URL
-> 		* Author Image Width
-> 		* Author Image Height
-> 	* Author SameAs
->		* Facebook URL
->		* Google+ URL
->		* Instagram URL
->		* LinkedIn URL
->		* MySpace URL
->		* Pinterest URL
->		* Tumblr URL
->		* Twitter URL
->		* YouTube URL
->		* Website URL
-> * Publisher as [schema.org/Organization](https://schema.org/Organization)
-> 	* URL
-> 	* Name
-> 	* Description
-> 	* Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Image URL
-> 		* Image Width
-> 		* Image Height
-> 	* Publisher SameAs
->		* Facebook Business Page URL
->		* Google+ Business Page URL
->		* Instagram Business URL
->		* LinkedIn Company Page URL
->		* MySpace Business Page URL
->		* Pinterest Company Page URL
->		* Twitter Business Page URL
-> * CreativeWork Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * CreativeWork Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
-> 	* Video URL
-> 	* Video Name (Title)
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
-> * CreativeWork ItemReviewed as Any Schema Type
-> 	* Item URL
-> * CreativeWork ReviewRating as [schema.org/Rating](https://schema.org/Rating)
-> 	* RatingValue
-> 	* WorstRating
-> 	* BestRating
-
 * Schema Type [schema.org/Event](https://schema.org/Event)
 	* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
 	* Schema Type [schema.org/ChildrensEvent](https://schema.org/ChildrensEvent)
@@ -230,60 +131,6 @@ Adds Schema / Structured Data JSON-LD markup:
 	* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
 	* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
 	* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
-
-> * URL
-> * Name (Title)
-> * Description
-> * StartDate
-> * EndDate
-> * Organizer as [schema.org/Person](https://schema.org/Person) or [schema.org/Organization](https://schema.org/Organization)
-> 	* URL
-> 	* Name
-> 	* Description
-> 	* Organization Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Image URL
-> 		* Image Width
-> 		* Image Height
-> 	* Organization SameAs
->		* Facebook Business Page URL
->		* Google+ Business Page URL
->		* Instagram Business URL
->		* LinkedIn Company Page URL
->		* MySpace Business Page URL
->		* Pinterest Company Page URL
->		* Twitter Business Page URL
-> * Event Location as [schema.org/Place](https://schema.org/Place)
-> 	* Address as [schema.org/PostalAddress](https://schema.org/PostalAddress)
-> 		* streetAddress
-> 		* postOfficeBoxNumber
-> 		* addressLocality
-> 		* addressRegion
-> 		* postalCode
-> 		* addressCountry
-> 	* Geo Location as [schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)
-> 		* elevation
-> 		* latitude
-> 		* longitude
-> * Event Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Event Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
-> 	* Video URL
-> 	* Video Name (Title)
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
-
 * Schema Type [schema.org/Organization](https://schema.org/Organization)
 	* Schema Type [schema.org/Airline](https://schema.org/Airline)
 	* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
@@ -307,63 +154,7 @@ Adds Schema / Structured Data JSON-LD markup:
 		* Schema Type [schema.org/TheaterGroup](https://schema.org/TheaterGroup)
 	* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
 		* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
- 
-> * URL
-> * Name
-> * Description
-> * Logo Image as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Organization SameAs
->	* Facebook Business Page URL
->	* Google+ Business Page URL
->	* Instagram Business URL
->	* LinkedIn Company Page URL
->	* MySpace Business Page URL
->	* Pinterest Company Page URL
->	* Twitter Business Page URL
-> * Organization Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Organization Videos as [schema.org/VideoObject](https://schema.org/VideoObject) (**[WPSSO Pro](https://wpsso.com/extend/plugins/wpsso/) required**)
-> 	* Video URL
-> 	* Video Name (Title)
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
-
 * Schema Type [schema.org/Person](https://schema.org/Person)
- 
-> * URL from Profile
-> * Name
-> * Description
-> * Person Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Person SameAs
->	* Facebook URL
->	* Google+ URL
->	* Instagram URL
->	* LinkedIn URL
->	* MySpace URL
->	* Pinterest URL
->	* Tumblr URL
->	* Twitter URL
->	* YouTube URL
->	* Website URL
-
 * Schema Type [schema.org/Place](https://schema.org/Place) (**[WPSSO PLM](https://wordpress.org/plugins/wpsso-plm/) extension required to manage Place / Location information**)
 	* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
@@ -438,128 +229,7 @@ Adds Schema / Structured Data JSON-LD markup:
 		* Schema Type [schema.org/TravelAgency](https://schema.org/TravelAgency)
 	* Schema Type [schema.org/Residence](https://schema.org/Residence)
 	* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
-
-> * URL
-> * Name
-> * Description
-> * AreaServed as [schema.org/GeoShape](https://schema.org/GeoShape)
-> * CurrencyAccepted
-> * PaymentAccepted
-> * PriceRange
-> * Menu (URL) for [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
-> * AcceptsReservations for [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
-> * Address as [schema.org/PostalAddress](https://schema.org/PostalAddress)
-> 	* streetAddress
-> 	* postOfficeBoxNumber
-> 	* addressLocality
-> 	* addressRegion
-> 	* postalCode
-> 	* addressCountry
-> * Geo Location as [schema.org/GeoCoordinates](https://schema.org/GeoCoordinates)
-> 	* elevation
-> 	* latitude
-> 	* longitude
-> * Opening Hours Specification as [schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)
-> 	* opens
-> 	* closes
-> 	* validFrom
-> 	* validThrough
-> * Place Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Place Videos as [schema.org/VideoObject](https://schema.org/VideoObject)
-> 	* Video URL
-> 	* Video Name
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
-
 * Schema Type [schema.org/Product](https://schema.org/Product) (**supported e-Commerce plugin required**)
- 
-> * Product URL
-> * Product Name
-> * Product Description
-> * Product SKU
-> * Product Color
-> * Product Category
-> * Product Width / Height as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
-> 	* Value
-> 	* UnitCode CMT
-> * Product Length (AdditionalProperty) as [schema.org/PropertyValue](https://schema.org/PropertyValue)
-> 	* PropertyID length
-> 	* Value
-> 	* UnitCode CMT
-> * Product Weight as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
-> 	* Value
-> 	* UnitCode KGM
-> * Product Offers as [schema.org/Offer](https://schema.org/Offer)
-> 	* Variation Price
-> 	* Variation PriceCurrency
-> 	* Variation Availability
->	* Variation ItemOffered as [schema.org/IndividualProduct](https://schema.org/IndividualProduct)
->		* Variation URL
->		* Variation Name
-> 		* Variation SKU
-> 		* Variation Color
->		* Variation Description
-> 		* Variation Width / Height as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
-> 			* Value
-> 			* UnitCode CMT
-> 		* Variation Length (additionalProperty) as [schema.org/PropertyValue](https://schema.org/PropertyValue)
-> 			* PropertyID length
-> 			* Value
-> 			* UnitCode CMT
-> 		* Variation Weight as [schema.org/QuantitativeValue](https://schema.org/QuantitativeValue)
-> 			* Value
-> 			* UnitCode KGM
-> 		* Variation Image as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 			* Image URL
-> 			* Image Width
-> 			* Image Height
-> * Product Rating as [schema.org/AggregateRating](https://schema.org/AggregateRating)
-> 	* RatingValue
-> 	* RatingCount
-> 	* WorstRating
-> 	* BestRating
-> 	* ReviewCount
-> * Product Images as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 	* Image URL
-> 	* Image Width
-> 	* Image Height
-> * Product Videos as [schema.org/VideoObject](https://schema.org/VideoObject)
-> 	* Video URL
-> 	* Video Name
-> 	* Video Description
-> 	* Video FileFormat
-> 	* Video Width
-> 	* Video Height
-> 	* Video Duration
-> 	* Video UploadDate
-> 	* Video ThumbnailUrl
-> 	* Video EmbedUrl
-> 	* Video Thumbnail as [schema.org/ImageObject](https://schema.org/ImageObject)
-> 		* Thumbnail URL
-> 		* Thumbnail Width
-> 		* Thumbnail Height
-
-* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
- 
-> * URL
-> * Name
-> * Description
-> * PotentialAction as [schema.org/SearchAction](https://schema.org/SearchAction)
-> 	* Target
-> 	* Query-Input
 
 = Examples =
 

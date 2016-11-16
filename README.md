@@ -14,25 +14,25 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Offers <em>complete</em> Schema / Structured Data / Rich Snippet markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, etc (see complete examples bellow).</p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Features <em>accurate</em> and <em>comprehensive</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, etc.</p>
 
 <p><strong>Completes missing or innaccurate Schema markup in your theme templates.</strong></p>
 
-<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
 <p><strong>Include all WooCommerce product images and variations the Schema Product markup!</strong> (Pro version)</p>
 
-<p><strong>Provides specific Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema markup using meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
+<p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 <h4>Quick List of Features</h4>
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
-<p>Extends the features of either the Free or Pro versions of WPSSO.</p>
+<p>Extends the features of WPSSO Free or Pro.</p>
 
 <p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
 
@@ -54,95 +54,42 @@
 <li>Item Type for User / Author Page</li>
 <li>Item Type for Search Results Page</li>
 <li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
+<li>Recipe Ingredients Custom Field</li>
 </ul>
 
-<p>Adds Schema / Structured Data JSON-LD markup:</p>
+<p>Adds Schema / Structured Data JSON-LD markup for:</p>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a></li>
 </ul>
 
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name (Title)</li>
-  <li>Description</li>
-  <li>DatePublished</li>
-  <li>DateModified</li>
-  <li>Author as <a href="https://schema.org/Person">schema.org/Person</a>
-  
-  <ul>
-  <li>Author URL from Profile</li>
-  <li>Author Name</li>
-  <li>Author Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Author Image URL</li>
-  <li>Author Image Width</li>
-  <li>Author Image Height</li>
-  </ul></li>
-  <li>Author SameAs
-  
-  <ul>
-  <li>Facebook URL</li>
-  <li>Google+ URL</li>
-  <li>Instagram URL</li>
-  <li>LinkedIn URL</li>
-  <li>MySpace URL</li>
-  <li>Pinterest URL</li>
-  <li>Tumblr URL</li>
-  <li>Twitter URL</li>
-  <li>YouTube URL</li>
-  <li>Website URL</li>
-  </ul></li>
-  </ul></li>
-  <li>Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name (Title)</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</blockquote>
-
 <h4>Quick List of Features (Continued)</h4>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
-<p>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</p>
+<p>Extends the features of WPSSO Pro.</p>
 
 <p>Adds additional custom options in the Social Settings metabox:</p>
 
 <ul>
+<li>Schema Item Name (aka Title)</li>
+<li>Schema Description</li>
 <li>Main Entity of Page</li>
 <li>Schema Item Type</li>
-<li>Schema Item Name</li>
-<li>Article Headline</li>
 <li>Article Publisher</li>
-<li>Schema Description</li>
+<li>Article Headline</li>
+<li>Event Organizer</li>
+<li>Event Performer</li>
+<li>Recipe Preparation Time </li>
+<li>Recipe Cooking Time </li>
+<li>Recipe Total Time </li>
+<li>Recipe Total Calories </li>
+<li>Recipe Quantity </li>
+<li>Recipe Ingredients </li>
+<li>Reviewed Item Type </li>
+<li>Reviewed Item URL </li>
+<li>Reviewed Item Rating </li>
 </ul>
 
 <p>Adds Schema / Structured Data JSON-LD markup:</p>
@@ -179,113 +126,6 @@
 </ul></li>
 <li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name (Title)</li>
-  <li>Headline (for Article Sub-Types)</li>
-  <li>Description</li>
-  <li>DatePublished</li>
-  <li>DateModified</li>
-  <li>Author as <a href="https://schema.org/Person">schema.org/Person</a>
-  
-  <ul>
-  <li>Author URL from Profile</li>
-  <li>Author Name</li>
-  <li>Author Description</li>
-  <li>Author Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Author Image URL</li>
-  <li>Author Image Width</li>
-  <li>Author Image Height</li>
-  </ul></li>
-  <li>Author SameAs
-  
-  <ul>
-  <li>Facebook URL</li>
-  <li>Google+ URL</li>
-  <li>Instagram URL</li>
-  <li>LinkedIn URL</li>
-  <li>MySpace URL</li>
-  <li>Pinterest URL</li>
-  <li>Tumblr URL</li>
-  <li>Twitter URL</li>
-  <li>YouTube URL</li>
-  <li>Website URL</li>
-  </ul></li>
-  </ul></li>
-  <li>Publisher as <a href="https://schema.org/Organization">schema.org/Organization</a>
-  
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Publisher SameAs
-  
-  <ul>
-  <li>Facebook Business Page URL</li>
-  <li>Google+ Business Page URL</li>
-  <li>Instagram Business URL</li>
-  <li>LinkedIn Company Page URL</li>
-  <li>MySpace Business Page URL</li>
-  <li>Pinterest Company Page URL</li>
-  <li>Twitter Business Page URL</li>
-  </ul></li>
-  </ul></li>
-  <li>CreativeWork Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>CreativeWork Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name (Title)</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  <li>CreativeWork ItemReviewed as Any Schema Type
-  
-  <ul>
-  <li>Item URL</li>
-  </ul></li>
-  <li>CreativeWork ReviewRating as <a href="https://schema.org/Rating">schema.org/Rating</a>
-  
-  <ul>
-  <li>RatingValue</li>
-  <li>WorstRating</li>
-  <li>BestRating</li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
 <li>Schema Type <a href="https://schema.org/Event">schema.org/Event</a>
 
 <ul>
@@ -307,93 +147,6 @@
 <li>Schema Type <a href="https://schema.org/TheaterEvent">schema.org/TheaterEvent</a></li>
 <li>Schema Type <a href="https://schema.org/VisualArtsEvent">schema.org/VisualArtsEvent</a></li>
 </ul></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name (Title)</li>
-  <li>Description</li>
-  <li>StartDate</li>
-  <li>EndDate</li>
-  <li>Organizer as <a href="https://schema.org/Person">schema.org/Person</a> or <a href="https://schema.org/Organization">schema.org/Organization</a>
-  
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>Organization Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Organization SameAs
-  
-  <ul>
-  <li>Facebook Business Page URL</li>
-  <li>Google+ Business Page URL</li>
-  <li>Instagram Business URL</li>
-  <li>LinkedIn Company Page URL</li>
-  <li>MySpace Business Page URL</li>
-  <li>Pinterest Company Page URL</li>
-  <li>Twitter Business Page URL</li>
-  </ul></li>
-  </ul></li>
-  <li>Event Location as <a href="https://schema.org/Place">schema.org/Place</a>
-  
-  <ul>
-  <li>Address as <a href="https://schema.org/PostalAddress">schema.org/PostalAddress</a>
-  
-  <ul>
-  <li>streetAddress</li>
-  <li>postOfficeBoxNumber</li>
-  <li>addressLocality</li>
-  <li>addressRegion</li>
-  <li>postalCode</li>
-  <li>addressCountry</li>
-  </ul></li>
-  <li>Geo Location as <a href="https://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
-  
-  <ul>
-  <li>elevation</li>
-  <li>latitude</li>
-  <li>longitude</li>
-  </ul></li>
-  </ul></li>
-  <li>Event Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Event Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name (Title)</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
 <li>Schema Type <a href="https://schema.org/Organization">schema.org/Organization</a>
 
 <ul>
@@ -432,96 +185,7 @@
 <li>Schema Type <a href="https://schema.org/SportsTeam">schema.org/SportsTeam</a></li>
 </ul></li>
 </ul></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>Logo Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Organization SameAs
-  
-  <ul>
-  <li>Facebook Business Page URL</li>
-  <li>Google+ Business Page URL</li>
-  <li>Instagram Business URL</li>
-  <li>LinkedIn Company Page URL</li>
-  <li>MySpace Business Page URL</li>
-  <li>Pinterest Company Page URL</li>
-  <li>Twitter Business Page URL</li>
-  </ul></li>
-  <li>Organization Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Organization Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a> (<strong><a href="https://wpsso.com/extend/plugins/wpsso/">WPSSO Pro</a> required</strong>)
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name (Title)</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
 <li>Schema Type <a href="https://schema.org/Person">schema.org/Person</a></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL from Profile</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>Person Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Person SameAs
-  
-  <ul>
-  <li>Facebook URL</li>
-  <li>Google+ URL</li>
-  <li>Instagram URL</li>
-  <li>LinkedIn URL</li>
-  <li>MySpace URL</li>
-  <li>Pinterest URL</li>
-  <li>Tumblr URL</li>
-  <li>Twitter URL</li>
-  <li>YouTube URL</li>
-  <li>Website URL</li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
 <li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a> (<strong><a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Location information</strong>)
 
 <ul>
@@ -608,205 +272,8 @@
 <li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a></li>
 <li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
 </ul></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>AreaServed as <a href="https://schema.org/GeoShape">schema.org/GeoShape</a></li>
-  <li>CurrencyAccepted</li>
-  <li>PaymentAccepted</li>
-  <li>PriceRange</li>
-  <li>Menu (URL) for <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
-  <li>AcceptsReservations for <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a></li>
-  <li>Address as <a href="https://schema.org/PostalAddress">schema.org/PostalAddress</a>
-  
-  <ul>
-  <li>streetAddress</li>
-  <li>postOfficeBoxNumber</li>
-  <li>addressLocality</li>
-  <li>addressRegion</li>
-  <li>postalCode</li>
-  <li>addressCountry</li>
-  </ul></li>
-  <li>Geo Location as <a href="https://schema.org/GeoCoordinates">schema.org/GeoCoordinates</a>
-  
-  <ul>
-  <li>elevation</li>
-  <li>latitude</li>
-  <li>longitude</li>
-  </ul></li>
-  <li>Opening Hours Specification as <a href="https://schema.org/openingHoursSpecification">schema.org/openingHoursSpecification</a>
-  
-  <ul>
-  <li>opens</li>
-  <li>closes</li>
-  <li>validFrom</li>
-  <li>validThrough</li>
-  </ul></li>
-  <li>Place Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Place Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a>
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
 <li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (<strong>supported e-Commerce plugin required</strong>)</li>
 </ul>
-
-<blockquote>
-  <ul>
-  <li>Product URL</li>
-  <li>Product Name</li>
-  <li>Product Description</li>
-  <li>Product SKU</li>
-  <li>Product Color</li>
-  <li>Product Category</li>
-  <li>Product Width / Height as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
-  
-  <ul>
-  <li>Value</li>
-  <li>UnitCode CMT</li>
-  </ul></li>
-  <li>Product Length (AdditionalProperty) as <a href="https://schema.org/PropertyValue">schema.org/PropertyValue</a>
-  
-  <ul>
-  <li>PropertyID length</li>
-  <li>Value</li>
-  <li>UnitCode CMT</li>
-  </ul></li>
-  <li>Product Weight as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
-  
-  <ul>
-  <li>Value</li>
-  <li>UnitCode KGM</li>
-  </ul></li>
-  <li>Product Offers as <a href="https://schema.org/Offer">schema.org/Offer</a>
-  
-  <ul>
-  <li>Variation Price</li>
-  <li>Variation PriceCurrency</li>
-  <li>Variation Availability</li>
-  <li>Variation ItemOffered as <a href="https://schema.org/IndividualProduct">schema.org/IndividualProduct</a>
-  
-  <ul>
-  <li>Variation URL</li>
-  <li>Variation Name</li>
-  <li>Variation SKU</li>
-  <li>Variation Color</li>
-  <li>Variation Description</li>
-  <li>Variation Width / Height as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
-  
-  <ul>
-  <li>Value</li>
-  <li>UnitCode CMT</li>
-  </ul></li>
-  <li>Variation Length (additionalProperty) as <a href="https://schema.org/PropertyValue">schema.org/PropertyValue</a>
-  
-  <ul>
-  <li>PropertyID length</li>
-  <li>Value</li>
-  <li>UnitCode CMT</li>
-  </ul></li>
-  <li>Variation Weight as <a href="https://schema.org/QuantitativeValue">schema.org/QuantitativeValue</a>
-  
-  <ul>
-  <li>Value</li>
-  <li>UnitCode KGM</li>
-  </ul></li>
-  <li>Variation Image as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-  <li>Product Rating as <a href="https://schema.org/AggregateRating">schema.org/AggregateRating</a>
-  
-  <ul>
-  <li>RatingValue</li>
-  <li>RatingCount</li>
-  <li>WorstRating</li>
-  <li>BestRating</li>
-  <li>ReviewCount</li>
-  </ul></li>
-  <li>Product Images as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Image URL</li>
-  <li>Image Width</li>
-  <li>Image Height</li>
-  </ul></li>
-  <li>Product Videos as <a href="https://schema.org/VideoObject">schema.org/VideoObject</a>
-  
-  <ul>
-  <li>Video URL</li>
-  <li>Video Name</li>
-  <li>Video Description</li>
-  <li>Video FileFormat</li>
-  <li>Video Width</li>
-  <li>Video Height</li>
-  <li>Video Duration</li>
-  <li>Video UploadDate</li>
-  <li>Video ThumbnailUrl</li>
-  <li>Video EmbedUrl</li>
-  <li>Video Thumbnail as <a href="https://schema.org/ImageObject">schema.org/ImageObject</a>
-  
-  <ul>
-  <li>Thumbnail URL</li>
-  <li>Thumbnail Width</li>
-  <li>Thumbnail Height</li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</blockquote>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
-</ul>
-
-<blockquote>
-  <ul>
-  <li>URL</li>
-  <li>Name</li>
-  <li>Description</li>
-  <li>PotentialAction as <a href="https://schema.org/SearchAction">schema.org/SearchAction</a>
-  
-  <ul>
-  <li>Target</li>
-  <li>Query-Input</li>
-  </ul></li>
-  </ul>
-</blockquote>
 
 <h4>Examples</h4>
 
