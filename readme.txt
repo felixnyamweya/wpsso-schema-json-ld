@@ -11,7 +11,7 @@ Tags: wpsso, json, json-ld, ld+json, schema, schema.org, structured data, rich s
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.6.1
-Stable Tag: 1.11.1-1
+Stable Tag: 1.11.2-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -310,6 +310,7 @@ Official announcement: N/A
 	* None
 * *Improvements*
 	* Added date based archive URLs when clearing the post cache.
+	* Added a "Reference URL" link to notice messages when generating JSON-LD for archive pages (users and terms).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -337,9 +338,5 @@ Official announcement: N/A
 
 = 1.11.2-1 =
 
-(2016/11/17) Added date based archive URLs when clearing the post cache.
-
-= 1.11.1-1 =
-
-(2016/11/12) Added an "Item Type for Blog Home Page" option for non-static home pages. Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
+(2016/11/17) Added date based archive URLs when clearing the post cache. Added a "Reference URL" link to notice messages when generating JSON-LD for archive pages (users and terms).
 
