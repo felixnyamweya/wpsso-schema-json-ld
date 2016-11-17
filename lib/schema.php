@@ -48,9 +48,22 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( ! empty( $posts_mods ) ) {
 				foreach ( $posts_mods as $post_mod ) {
-					$post_mt_og = $wpsso->og->get_array( true, $post_mod );	// $use_post = true
-					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod, $post_mt_og,
-						false, true );	// $type_id = false, $is_main = true
+
+					// set the reference url for admin notices
+					if ( is_admin() ) {
+						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
+						$wpsso->notice->set_reference_url( $sharing_url );
+					}
+
+					$post_mt_og = array();
+					$post_mt_og = $wpsso->og->get_array( $post_mod, $post_mt_og );
+					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod,
+						$post_mt_og, false, true );	// $type_id = false, $is_main = true
+
+					// reset the reference url for admin notices
+					if ( is_admin() )
+						$wpsso->notice->set_reference_url( null );
+
 					$parts_added++;
 				}
 			}
