@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.2-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.3-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2016-MO-DA HO:MI+ZONE\n"
@@ -327,22 +327,22 @@ msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""
 
-#: wpsso-schema-json-ld.php:83
+#: wpsso-schema-json-ld.php:79
 msgid ""
-"The %1$s extension requires the %2$s plugin &mdash; please install and "
-"activate the %3$s plugin before trying to re-activate the %4$s extension."
+"%1$s is an extension for the %2$s plugin &mdash; please install and activate "
+"the %3$s plugin before activating the %4$s extension."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:85
+#: wpsso-schema-json-ld.php:81
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:150
+#: wpsso-schema-json-ld.php:151
 msgid ""
-"The %1$s extension version %2$s requires the use of %3$s version %4$s or "
-"newer (version %5$s is currently installed)."
+"The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
+"installed)."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
