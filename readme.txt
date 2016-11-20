@@ -302,6 +302,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.3-dev1 (2016/11/20)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the min_version_notice() method and moved variables to config class.
+
 **Version 1.11.2-1 (2016/11/17)**
 
 Official announcement: N/A
@@ -335,6 +348,10 @@ Official announcement: N/A
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.3-dev1 =
+
+(2016/11/20) Refactored the min_version_notice() method.
 
 = 1.11.2-1 =
 
