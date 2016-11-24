@@ -218,7 +218,17 @@
 </ul></li>
 <li>Schema Type <a href="https://schema.org/GovernmentOffice">schema.org/GovernmentOffice</a></li>
 <li>Schema Type <a href="https://schema.org/HealthAndBeautyBusiness">schema.org/HealthAndBeautyBusiness</a></li>
-<li>Schema Type <a href="https://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/GeneralContractor">schema.org/GeneralContractor</a></li>
+<li>Schema Type <a href="https://schema.org/HVACBusiness">schema.org/HVACBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/HousePainter">schema.org/HousePainter</a></li>
+<li>Schema Type <a href="https://schema.org/Locksmith">schema.org/Locksmith</a></li>
+<li>Schema Type <a href="https://schema.org/MovingCompany">schema.org/MovingCompany</a></li>
+<li>Schema Type <a href="https://schema.org/Plumber">schema.org/Plumber</a></li>
+<li>Schema Type <a href="https://schema.org/RoofingContractor">schema.org/RoofingContractor</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
 <li>Schema Type <a href="https://schema.org/LegalService">schema.org/LegalService</a></li>
 <li>Schema Type <a href="https://schema.org/Library">schema.org/Library</a></li>
