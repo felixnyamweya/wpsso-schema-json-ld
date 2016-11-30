@@ -52,8 +52,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					// set the reference url for admin notices
 					if ( is_admin() ) {
 						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
-						$pre_ref_url = $wpsso->notice->get_reference_url();	// just in case
-						$wpsso->notice->set_reference_url( $sharing_url );
+						$previous_url = $wpsso->notice->set_reference_url( $sharing_url );
 					}
 
 					$post_mt_og = array();
@@ -63,7 +62,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					// reset the reference url for admin notices
 					if ( is_admin() )
-						$wpsso->notice->set_reference_url( $pre_ref_url );
+						$wpsso->notice->set_reference_url( $previous_url );
 
 					$parts_added++;
 				}
