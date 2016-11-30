@@ -309,6 +309,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.4-dev1 (2016/12/01)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added the product variation URL to notices when checking for product variation images.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.11.3-1 (2016/11/25)**
 
 Official announcement: N/A
@@ -355,6 +368,10 @@ Official announcement: N/A
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.4-dev1 =
+
+(2016/12/01) Added the product variation URL to notices when checking for product variation images.
 
 = 1.11.3-1 =
 
