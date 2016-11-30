@@ -226,13 +226,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_term:'.$term->term_id.'_tax:'.$tax_name;
+					$transients['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name.'_locale:'.$locale;
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_user:'.$author_id;
+			$transients['WpssoHead::get_head_array'][] = 'user:'.$author_id.'_locale:'.$locale;
 
 			return $transients;
 		}
