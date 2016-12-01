@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod,
 						$post_mt_og, false, true );	// $type_id = false, $is_main = true
 
-					// reset the reference url for admin notices
+					// restore the previous reference url for admin notices
 					if ( is_admin() )
 						$wpsso->notice->set_reference_url( $previous_url );
 
