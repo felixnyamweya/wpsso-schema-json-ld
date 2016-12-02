@@ -212,27 +212,27 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_post_cache_transients( $transients, $mod, $locale, $sharing_url ) {
 
 			// clear blog home page
-			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_url:'.home_url( '/' );
+			$transients['WpssoHead::get_head_array'][] = 'locale:none_url:'.home_url( '/' );
 
 			// clear date based archive pages
 			$year = get_the_time( 'Y', $mod['id'] );
 			$month = get_the_time( 'm', $mod['id'] );
 			$day = get_the_time( 'd', $mod['id'] );
 
-			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_url:'.get_year_link( $year );
-			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_url:'.get_month_link( $year, $month );
-			$transients['WpssoHead::get_head_array'][] = 'locale:'.$locale.'_url:'.get_day_link( $year, $month, $day );
+			$transients['WpssoHead::get_head_array'][] = 'locale:none_url:'.get_year_link( $year );
+			$transients['WpssoHead::get_head_array'][] = 'locale:none_url:'.get_month_link( $year, $month );
+			$transients['WpssoHead::get_head_array'][] = 'locale:none_url:'.get_day_link( $year, $month, $day );
 
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transients['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name.'_locale:'.$locale;
+					$transients['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name.'_locale:none';
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transients['WpssoHead::get_head_array'][] = 'user:'.$author_id.'_locale:'.$locale;
+			$transients['WpssoHead::get_head_array'][] = 'user:'.$author_id.'_locale:none';
 
 			return $transients;
 		}
