@@ -309,7 +309,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.4-dev4 (2016/12/03)**
+**Version 1.11.4-rc1 (2016/12/03)**
 
 Official announcement: N/A
 
@@ -369,7 +369,7 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.11.4-dev4 =
+= 1.11.4-rc1 =
 
 (2016/12/03) Added the product variation URL to notices when checking for product variation images.
 
