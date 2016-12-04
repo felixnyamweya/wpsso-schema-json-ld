@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
 					'option_type' => 2,
 					'save_post_options' => 4,
-					'post_cache_transients' => 4,	// clear transients on post save
+					'post_cache_transients' => 3,	// clear transients on post save
 					'pub_google_rows' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
@@ -209,7 +209,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $opts;
 		}
 
-		public function filter_post_cache_transients( $transients, $mod, $locale, $sharing_url ) {
+		public function filter_post_cache_transients( $transients, $mod, $sharing_url ) {
 
 			// clear blog home page
 			$transients['WpssoHead::get_head_array'][] = 'url:'.home_url( '/' );
