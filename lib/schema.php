@@ -49,6 +49,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( ! empty( $posts_mods ) ) {
+				if ( $wpsso->debug->enabled )
+					$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
 				foreach ( $posts_mods as $post_mod ) {
 
 					// set the reference url for admin notices
@@ -68,7 +70,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$parts_added++;
 				}
-			}
+			} elseif ( $wpsso->debug->enabled )
+				$wpsso->debug->log( 'posts_mods array is empty' );
 
 			return $parts_added;
 		}
