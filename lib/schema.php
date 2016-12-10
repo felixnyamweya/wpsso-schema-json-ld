@@ -30,6 +30,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'using query loop to get posts' );
+
 				if ( have_posts() ) {
 					while ( have_posts() ) {
 						the_post();
@@ -40,19 +41,31 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					}
 					wp_reset_postdata();
 				}
+
+				$posts_per_page = apply_filters( $wpsso->cf['lca'].'_posts_per_page', 
+					get_option( 'posts_per_page' ), $mod );
+
+				if ( count( $posts_mods ) > $posts_per_page ) {
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->log( 'slicing posts_mods array from '.
+							count( $posts_mods ).' to '.$posts_per_page.' elements' );
+					$posts_mods = array_slice( $posts_mods, 0, $posts_per_page );
+				}
+
 			// get first page of posts for this term / user archive page 
 			// if the module is a post, then return all children of that post
 			} elseif ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'using module object to get posts' );
+
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
 			}
 
 			if ( ! empty( $posts_mods ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
-				foreach ( $posts_mods as $post_mod ) {
 
+				foreach ( $posts_mods as $post_mod ) {
 					// set the reference url for admin notices
 					if ( is_admin() ) {
 						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
