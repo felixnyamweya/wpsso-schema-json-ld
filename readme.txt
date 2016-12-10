@@ -309,6 +309,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.5-dev1 (2016/12/11)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
+
 **Version 1.11.4-3 (2016/12/05)**
 
 Official announcement: N/A
@@ -368,6 +381,10 @@ Official announcement: N/A
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.5-dev1 =
+
+(2016/12/11) Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
 
 = 1.11.4-3 =
 
