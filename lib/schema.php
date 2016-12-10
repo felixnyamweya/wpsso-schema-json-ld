@@ -34,6 +34,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					while ( have_posts() ) {
 						the_post();
 						global $post;
+						if ( $wpsso->debug->enabled )
+							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
 						$posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
 					}
 					wp_reset_postdata();
