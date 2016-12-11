@@ -321,6 +321,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
+	* Added the 'wpsso_json_prop_https_schema_org_potentialaction' filter to https://schema.org/Thing.
 
 **Version 1.11.4-3 (2016/12/05)**
 
