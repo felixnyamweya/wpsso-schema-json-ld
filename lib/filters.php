@@ -33,7 +33,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						'add_schema_head_attributes' => '__return_false',
 						'add_schema_meta_array' => '__return_false',
 						'add_schema_noscript_array' => '__return_false',
-						'json_data_https_schema_org_thing' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
+						'json_data_https_schema_org_thing' => 5,	// $json_data, $mod, $mt_og, $page_type_id, $is_main
 					), -100 );	// make sure we run first
 					break;
 			}
@@ -71,13 +71,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Does not add images, videos, author or organization markup since this will
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
-		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $type_id, $is_main ) {
+		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
 			$lca = $this->p->cf['lca'];
-			$type_url = $this->p->schema->get_schema_type_url( $type_id );
-			$ret = WpssoSchema::get_schema_type_context( $type_url );
+			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
+			$ret = WpssoSchema::get_schema_type_context( $page_type_url );
 
 			/*
 			 * Property:
@@ -115,10 +115,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( ! current_user_can( 'manage_options' ) )
 				return;
 
-			$urls = $this->p->cf['plugin']['wpssojson']['url'];		// for purchase and pro_support urls
-			$type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $get_id = true;
-			$type_url = $this->p->schema->get_schema_type_url( $type_id );
-			$filter_name = $this->p->schema->get_json_data_filter( $mod, $type_url );
+			$urls = $this->p->cf['plugin']['wpssojson']['url'];
+			$page_type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $get_id = true;
+			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
+			$filter_name = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
 			$message = '';
 
 			if ( has_filter( $filter_name ) )
@@ -126,7 +126,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( ! $this->p->check->aop( 'wpssojson', true, $this->p->is_avail['aop'] ) ) {
 				$dismiss_id = 'filter_in_pro_'.$filter_name.'_'.$mod['name'].'_'.$mod['id'];
-				$message = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $type_url ).' '.sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $type_url ).' '.sprintf( __( 'If this Schema is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $type_url );
+				$message = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ).' '.sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ).' '.sprintf( __( 'If this Schema is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
 			}
 
 			if ( ! empty( $message ) )
