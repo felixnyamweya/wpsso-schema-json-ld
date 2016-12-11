@@ -309,7 +309,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.5-dev1 (2016/12/11)**
+**Version 1.11.5-dev2 (2016/12/11)**
 
 Official announcement: N/A
 
@@ -321,7 +321,7 @@ Official announcement: N/A
 	* None
 * *Developer Notes*
 	* Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
-	* Added the 'wpsso_json_prop_https_schema_org_potentialaction' filter to https://schema.org/Thing.
+	* Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
 
 **Version 1.11.4-3 (2016/12/05)**
 
@@ -383,9 +383,9 @@ Official announcement: N/A
 
 == Upgrade Notice ==
 
-= 1.11.5-dev1 =
+= 1.11.5-dev2 =
 
-(2016/12/11) Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
+(2016/12/11) Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included. Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
 
 = 1.11.4-3 =
 
