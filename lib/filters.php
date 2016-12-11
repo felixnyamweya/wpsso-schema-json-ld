@@ -101,6 +101,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
 				'...', $mod, true, false, true, 'schema_desc' );
 
+			$action_data = (array) apply_filters( $lca.'_json_prop_https_schema_org_potentialaction',
+				array(), $mod, $mt_og, $page_type_id, $is_main );
+
+			if ( ! empty( $action_data ) )
+				$ret['potentialAction'] = $action_data;
+
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
 
