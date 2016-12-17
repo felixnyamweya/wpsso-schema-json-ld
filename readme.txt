@@ -311,8 +311,6 @@ Note that the production stage level can be incremented on occasion for simple t
 
 **Version 1.11.5-1 (2016/12/12)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -325,8 +323,6 @@ Official announcement: N/A
 
 **Version 1.11.4-3 (2016/12/05)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -337,8 +333,6 @@ Official announcement: N/A
 	* None
 
 **Version 1.11.3-1 (2016/11/25)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
@@ -351,8 +345,6 @@ Official announcement: N/A
 
 **Version 1.11.2-1 (2016/11/17)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
@@ -364,8 +356,6 @@ Official announcement: N/A
 	* None
 
 **Version 1.11.1-1 (2016/11/12)**
-
-Official announcement: N/A
 
 * *New Features*
 	* None
