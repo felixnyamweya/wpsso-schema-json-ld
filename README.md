@@ -293,14 +293,6 @@
 <li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/">Markup Example for a WooCommerce Product</a>, including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</li>
 </ul>
 
-<h4>Available in Multiple Languages</h4>
-
-<ul>
-<li>English (US)</li>
-<li>French (France)</li>
-<li>More to come...</li>
-</ul>
-
 <h4>Extends the WPSSO Plugin</h4>
 
 <p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
