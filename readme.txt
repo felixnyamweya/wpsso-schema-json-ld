@@ -312,7 +312,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included.
+	* Added a check for maximum posts per page in WpssoJsonSchema add_parts_data() to limit the number of posts included.
 	* Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
 
 **Version 1.11.4-3 (2016/12/05)**
@@ -359,9 +359,9 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a new WpssoJsonSchema::add_parts_data() method to fetch posts for the current term / user archive page.
-	* Renamed the WpssoSchema::get_head_item_type() method to WpssoSchema::get_mod_schema_type().
-	* Renamed the WpssoSchema::get_item_type_context() method to WpssoSchema::get_schema_type_context().
+	* Added a new WpssoJsonSchema add_parts_data() method to fetch posts for the current term / user archive page.
+	* Renamed the WpssoSchema get_head_item_type() method to get_mod_schema_type().
+	* Renamed the WpssoSchema get_item_type_context() method to get_schema_type_context().
 	* Added a hook to the 'wpsso_post_cache_transients' filter in order to clear the term transient cache on post update. 
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
@@ -369,7 +369,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.11.5-1 =
 
-(2016/12/12) Added a check for maximum posts per page in WpssoJsonSchema::add_parts_data() to limit the number of posts included. Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
+(2016/12/12) Added a check for maximum posts per page in WpssoJsonSchema add_parts_data() to limit the number of posts included. Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
 
 = 1.11.4-3 =
 
