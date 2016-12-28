@@ -54,8 +54,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'messages_tooltip_meta' => 2,
-					'status_gpl_features' => 3,
-					'status_pro_features' => 3,
+					'status_gpl_features' => 4,
+					'status_pro_features' => 4,
 				), 10, 'wpssojson' );
 			}
 		}
@@ -291,20 +291,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $table_rows;
 		}
 
-		// hooked to 'wpssojson_status_gpl_features'
-		public function filter_status_gpl_features( $features, $lca, $info ) {
-			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
-				if ( $sub === 'admin' ) // skip status for admin menus and tabs
-					continue;
-				foreach ( $libs as $id_key => $label ) {
-					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id, false );	// $underscore = false
-					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
-				}
-			}
-			return $this->filter_common_status_features( $features, $lca, $info );
-		}
-
 		public function filter_messages_tooltip_meta( $text, $idx ) {
 			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 )
 				return $text;
@@ -359,12 +345,26 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $text;
 		}
 
-		// hooked to 'wpssojson_status_pro_features'
-		public function filter_status_pro_features( $features, $lca, $info ) {
-			return $this->filter_common_status_features( $features, $lca, $info );
+		// hooked to 'wpssojson_status_gpl_features'
+		public function filter_status_gpl_features( $features, $lca, $info, $pkg ) {
+			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
+				if ( $sub === 'admin' ) // skip status for admin menus and tabs
+					continue;
+				foreach ( $libs as $id_key => $label ) {
+					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
+					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id, false );	// $underscore = false
+					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
+				}
+			}
+			return $this->filter_common_status_features( $features, $lca, $info, $pkg );
 		}
 
-		private function filter_common_status_features( $features, $lca, $info ) {
+		// hooked to 'wpssojson_status_pro_features'
+		public function filter_status_pro_features( $features, $lca, $info, $pkg ) {
+			return $this->filter_common_status_features( $features, $lca, $info, $pkg );
+		}
+
+		private function filter_common_status_features( $features, $lca, $info, $pkg ) {
 			foreach ( $features as $key => $arr )
 				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) )
 					$features[$key]['label'] = $match[2].' ('.$this->p->schema->count_schema_type_children( $match[3] ).')';
