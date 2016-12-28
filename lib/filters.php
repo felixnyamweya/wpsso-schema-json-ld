@@ -16,10 +16,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			$crawler_name = SucomUtil::crawler_name();
-
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
+
+			$crawler_name = SucomUtil::crawler_name();
 
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
