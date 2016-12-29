@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/?utm_source=wpssojson-readme-donate">https://wpsso.com/?utm_source=wpssojson-readme-donate</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, event, rating, review, recipe, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating</td></tr>
 </table>
 
 <h2>Description</h2>
