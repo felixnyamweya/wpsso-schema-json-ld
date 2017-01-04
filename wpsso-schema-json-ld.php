@@ -24,7 +24,7 @@
  *
  * See PHP's version_compare() documentation at http://php.net/manual/en/function.version-compare.php.
  * 
- * Copyright 2014-2016 Jean-Sebastien Morisset (https://surniaulula.com/)
+ * Copyright 2014-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) 
@@ -41,12 +41,6 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		private static $instance;
 		private static $have_min = true;
 
-		public static function &get_instance() {
-			if ( ! isset( self::$instance ) )
-				self::$instance = new self;
-			return self::$instance;
-		}
-
 		public function __construct() {
 
 			require_once ( dirname( __FILE__ ).'/lib/config.php' );
@@ -56,7 +50,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			if ( is_admin() ) {
 				load_plugin_textdomain( 'wpsso-schema-json-ld', false, 'wpsso-schema-json-ld/languages/' );
-				add_action( 'admin_init', array( &$this, 'required_check' ) );
+				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
 			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 2 );
@@ -65,9 +59,15 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 100 );
 		}
 
-		public function required_check() {
+		public static function &get_instance() {
+			if ( ! isset( self::$instance ) )
+				self::$instance = new self;
+			return self::$instance;
+		}
+
+		public static function required_check() {
 			if ( ! class_exists( 'Wpsso' ) )
-				add_action( 'all_admin_notices', array( &$this, 'required_notice' ) );
+				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
 		}
 
 		public static function required_notice( $deactivate = false ) {
