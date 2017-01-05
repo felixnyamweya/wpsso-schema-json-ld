@@ -13,7 +13,6 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 	class WpssoJsonRegister {
 
 		public function __construct() {
-
 			register_activation_hook( WPSSOJSON_FILEPATH, array( &$this, 'network_activate' ) );
 			//register_deactivation_hook( WPSSOJSON_FILEPATH, array( &$this, 'network_deactivate' ) );	// nothing to do
 
