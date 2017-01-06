@@ -340,6 +340,7 @@
 <li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
 <li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
 </ul></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/">Filters by Name</a></li>
 </ul></li>
 </ul></li>
 </ul>
