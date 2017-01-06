@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public $filters;		// WpssoJsonFilters
 
 		private static $instance;
-		private static $have_min = true;
+		private static $have_req_min = true;	// have at least minimum wpsso version
 
 		public function __construct() {
 
@@ -90,7 +90,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
-				self::$have_min = false;
+				self::$have_req_min = false;
 				return $cf;
 			}
 
@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$have_min === false )
+			if ( self::$have_req_min === false )
 				return;		// stop here
 
 			$this->p->is_avail['json'] = true;
@@ -127,7 +127,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$have_min === false )
+			if ( self::$have_req_min === false )
 				return;		// stop here
 
 			$this->filters = new WpssoJsonFilters( $this->p );
@@ -138,7 +138,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$have_min === false )
+			if ( self::$have_req_min === false )
 				return $this->min_version_notice();
 		}
 
