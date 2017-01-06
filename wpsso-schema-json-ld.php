@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
  * Requires At Least: 3.7
  * Tested Up To: 4.7
- * Version: 1.11.5-1
+ * Version: 1.11.6-dev1
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$this->reg = new WpssoJsonRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
-				load_plugin_textdomain( 'wpsso-schema-json-ld', false, 'wpsso-schema-json-ld/languages/' );
+				add_action( 'plugins_loaded', array( __CLASS__, 'load_textdomain' ) );
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
@@ -63,6 +63,10 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			if ( ! isset( self::$instance ) )
 				self::$instance = new self;
 			return self::$instance;
+		}
+
+		public static function load_textdomain() {
+			load_plugin_textdomain( 'wpsso-schema-json-ld', false, 'wpsso-schema-json-ld/languages/' );
 		}
 
 		public static function required_check() {
