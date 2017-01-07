@@ -11,7 +11,7 @@ Tags: seo, json, json-ld, ld+json, schema, schema.org, structured data, rich sni
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
-Stable Tag: 1.11.5-1
+Stable Tag: 1.11.6-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
