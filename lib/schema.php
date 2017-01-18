@@ -90,13 +90,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$parts_added++;
 
 					if ( $wpsso->debug->enabled )
-						$wpsso->debug->mark( 'part for post id '.$post_mod['id'] );	// end timer
+						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// end timer
 				}
 			} elseif ( $wpsso->debug->enabled )
 				$wpsso->debug->log( 'posts_mods array is empty' );
 
 			if ( $wpsso->debug->enabled )
-				$wpsso->debug->mark( 'adding parts data' );	// begin timer
+				$wpsso->debug->mark( 'adding parts data' );	// end timer
 
 			return $parts_added;
 		}
