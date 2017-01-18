@@ -26,6 +26,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$parts_added = 0;
 			$posts_mods = array();
 			
+			if ( $wpsso->debug->enabled )
+				$wpsso->debug->mark( 'adding parts data' );	// begin timer
+
 			// $type_id is false for parts to prevent recursion of main loop posts
 			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
 				if ( $wpsso->debug->enabled )
@@ -66,6 +69,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
 
 				foreach ( $posts_mods as $post_mod ) {
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// begin timer
+
 					// set the reference url for admin notices
 					if ( is_admin() ) {
 						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
@@ -82,9 +88,15 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->notice->set_reference_url( $previous_url );
 
 					$parts_added++;
+
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->mark( 'part for post id '.$post_mod['id'] );	// end timer
 				}
 			} elseif ( $wpsso->debug->enabled )
 				$wpsso->debug->log( 'posts_mods array is empty' );
+
+			if ( $wpsso->debug->enabled )
+				$wpsso->debug->mark( 'adding parts data' );	// begin timer
 
 			return $parts_added;
 		}
