@@ -9,7 +9,7 @@
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>Website URL</th><td><a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-donate">https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-donate</a></td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -54,6 +54,7 @@
 <li>Item Type for User / Author Page</li>
 <li>Item Type for Search Results Page</li>
 <li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
+<li>Default Reviewed Item Type</li>
 <li>Recipe Ingredients Custom Field</li>
 </ul>
 
@@ -282,7 +283,15 @@
 <li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a></li>
 <li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
 </ul></li>
-<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)</li>
+<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)
+
+<ul>
+<li>Schema Type <a href="https://auto.schema.org/BusOrCoach">auto.schema.org/BusOrCoach</a></li>
+<li>Schema Type <a href="https://auto.schema.org/Car">auto.schema.org/Car</a></li>
+<li>Schema Type <a href="https://auto.schema.org/Motorcycle">auto.schema.org/Motorcycle</a></li>
+<li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
+<li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a></li>
+</ul></li>
 </ul>
 
 <h4>Markup Examples</h4>

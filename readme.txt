@@ -7,7 +7,7 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Donate Link: https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: seo, json, json-ld, ld+json, schema, schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
+Tags: seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.2
@@ -56,6 +56,7 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 * Item Type for User / Author Page
 * Item Type for Search Results Page
 * Item Type by Post Type (for Posts, Pages, Media, and custom post types).
+* Default Reviewed Item Type
 * Recipe Ingredients Custom Field
 
 Adds Schema / Structured Data JSON-LD markup for:
@@ -237,6 +238,11 @@ Adds Schema / Structured Data JSON-LD markup for:
 	* Schema Type [schema.org/Residence](https://schema.org/Residence)
 	* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
 * Schema Type [schema.org/Product](https://schema.org/Product) (supported e-Commerce plugin required)
+	* Schema Type [auto.schema.org/BusOrCoach](https://auto.schema.org/BusOrCoach)
+	* Schema Type [auto.schema.org/Car](https://auto.schema.org/Car)
+	* Schema Type [auto.schema.org/Motorcycle](https://auto.schema.org/Motorcycle)
+	* Schema Type [auto.schema.org/MotorizedBicycle](https://auto.schema.org/MotorizedBicycle)
+	* Schema Type [auto.schema.org/Vehicle](https://auto.schema.org/Vehicle)
 
 = Markup Examples =
 
@@ -303,6 +309,17 @@ Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 Note that the production stage level can be incremented on occasion for simple text revisions and/or translation updates. See [PHP's version_compare()](http://php.net/manual/en/function.version-compare.php) documentation for additional information on "PHP-standardized" version numbering.
 
 = Changelog / Release Notes =
+
+**Version 1.11.7-dev1 (2017/02/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Default Reviewed Item Type" option to the settings page.
+* *Bugfixes*
+	* Fixed the missing help popups in the Social Settings metabox.
+* *Developer Notes*
+	* None
 
 **Version 1.11.6-1 (2017/01/08)**
 
@@ -378,6 +395,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.7-dev1 =
+
+(2017/02/01) Added a new "Default Reviewed Item Type" option to the settings page. Fixed the missing help popups in the Social Settings metabox.
 
 = 1.11.6-1 =
 
