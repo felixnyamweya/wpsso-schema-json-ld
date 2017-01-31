@@ -47,16 +47,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'admin_post_head' => 1,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
+					'messages_tooltip_meta' => 2,
 					'option_type' => 2,
-					'save_post_options' => 4,
 					'post_cache_transients' => 3,	// clear transients on post save
 					'pub_google_rows' => 2,
+					'save_post_options' => 4,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
-					'messages_tooltip_meta' => 2,
 					'status_gpl_features' => 4,
 					'status_pro_features' => 4,
-				), 10, 'wpssojson' );
+				), 10, 'wpssojson' );	// hook to wpssojson filters
 			}
 		}
 
@@ -268,7 +268,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
 				'schema_recipe_yield' => '',		// Recipe Yield
 				'schema_recipe_calories' => 0,		// Recipe Total Calories
-				'schema_review_item_type' => 'none',	// Reviewed Item Type
+				'schema_review_item_type' => (		// Reviewed Item Type
+					empty( $this->p->options['schema_review_item_type'] ) ?
+						'none' : $this->p->options['schema_review_item_type']
+				),
 				'schema_review_item_url' => '',		// Reviewed Item URL
 				'schema_review_rating' => '0.0',	// Reviewed Item Rating
 				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)

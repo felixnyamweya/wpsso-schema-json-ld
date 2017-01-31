@@ -88,7 +88,18 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'user_page' => _x( 'Item Type for User / Author Page', 'option label', 'wpsso-schema-json-ld' ),
 						'search_page' => _x( 'Item Type for Search Results Page', 'option label', 'wpsso-schema-json-ld' ),
 					) as $type_name => $type_label ) {
-						$table_rows['schema_type_for_'.$type_name] = $this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
+						switch ( $type_name ) {
+							case 'archive_page':
+							case 'user_page':
+							case 'search_page':
+								$tr = '<tr class="hide_in_basic">';
+								break;
+							default:
+								$tr = '';
+								break;
+						}
+						$table_rows['schema_type_for_'.$type_name] = $tr.
+						$this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
 						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'long_name' ).'</td>';
 					}
 
@@ -100,6 +111,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Item Type by Post Type',
 						'option label', 'wpsso-schema-json-ld' ), null, 'schema_type_for_ptn' ).
 					'<td>'.$schema_by_ptn.'</td>';
+
+					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( 'Default Reviewed Item Type', null, 'schema_review_item_type' ).
+					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'long_name' ).'</td>';
 
 					$table_rows['plugin_cf_recipe_ingredients'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Recipe Ingredients Custom Field',
