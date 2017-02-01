@@ -113,7 +113,8 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$schema_by_ptn.'</td>';
 
 					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( 'Default Reviewed Item Type', null, 'schema_review_item_type' ).
+					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 
+						'option label', 'wpsso-schema-json-ld' ), null, 'schema_review_item_type' ).
 					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'long_name' ).'</td>';
 
 					$table_rows['plugin_cf_recipe_ingredients'] = '<tr class="hide_in_basic">'.
