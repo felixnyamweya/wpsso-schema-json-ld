@@ -48,8 +48,8 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			// blogposting is a child of article
 			// use the article image size and add the headline property
 			if ( $this->p->schema->is_schema_type_child_of( $type_id, 'article' ) ) {
-				$org_logo_key = 'org_banner_url';			// use a banner for all article sub-types
-				$size_name = $this->p->cf['lca'].'-schema-article';	// same size, but minimum width is 696px
+				$org_logo_key = 'org_banner_url';		// use a banner for all article sub-types
+				$size_name = $lca.'-schema-article';		// same size, but minimum width is 696px
 
 				/*
 				 * Property:
