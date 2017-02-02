@@ -310,7 +310,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.7-dev1 (2017/02/01)**
+**Version 1.11.7-rc1 (2017/02/02)**
 
 * *New Features*
 	* None
@@ -396,9 +396,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.11.7-dev1 =
+= 1.11.7-rc1 =
 
-(2017/02/01) Added a new "Default Reviewed Item Type" option to the settings page. Fixed the missing help popups in the Social Settings metabox.
+(2017/02/02) Added a new "Default Reviewed Item Type" option to the settings page. Fixed the missing help popups in the Social Settings metabox.
 
 = 1.11.6-1 =
 
