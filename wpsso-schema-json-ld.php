@@ -11,7 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
- * Requires At Least: 3.7
+ * Requires At Least: 3.8
  * Tested Up To: 4.7.2
  * Version: 1.11.7-rc1
  * 
