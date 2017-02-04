@@ -310,6 +310,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.11.8-1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new Schema reviews property module to include WooCommerce product reviews (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.11.7-1 (2017/02/04)**
 
 * *New Features*
@@ -395,6 +406,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.11.8-dev1 =
+
+(TBD) Added a new Schema reviews property module to include WooCommerce product reviews (Pro version).
 
 = 1.11.7-1 =
 
