@@ -82,8 +82,8 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
 
 					foreach ( array( 
-						'home_index' => _x( 'Item Type for Blog Home Page', 'option label', 'wpsso-schema-json-ld' ),
-						'home_page' => _x( 'Item Type for Static Home Page', 'option label', 'wpsso-schema-json-ld' ),
+						'home_index' => _x( 'Item Type for Blog Front Page', 'option label', 'wpsso-schema-json-ld' ),
+						'home_page' => _x( 'Item Type for Static Front Page', 'option label', 'wpsso-schema-json-ld' ),
 						'archive_page' => _x( 'Item Type for Archive Page', 'option label', 'wpsso-schema-json-ld' ),
 						'user_page' => _x( 'Item Type for User / Author Page', 'option label', 'wpsso-schema-json-ld' ),
 						'search_page' => _x( 'Item Type for Search Results Page', 'option label', 'wpsso-schema-json-ld' ),
