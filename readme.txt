@@ -23,6 +23,8 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 <p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
+<p><strong>Adds comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).</strong></p>
+
 <p><strong>Includes all WooCommerce product images, variations, and reviews in the Schema Product markup!</strong> (Pro version)</p>
 
 <p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
@@ -310,16 +312,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.8-dev1 (TBD)**
+**Version 1.12.0-dev1 (2017/02/06)**
 
 * *New Features*
-	* None
+	* Added comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).
 * *Improvements*
 	* Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added new add_comment_list_data() and add_single_comment_data() methods in the WpssoJsonSchema class.
+	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 **Version 1.11.7-1 (2017/02/04)**
 
@@ -407,9 +410,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.11.8-dev1 =
+= 1.12.0-dev1 =
 
-(TBD) Added a new Schema review property module to include WooCommerce product reviews (Pro version).
+(2017/02/06) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
 = 1.11.7-1 =
 
