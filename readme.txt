@@ -23,7 +23,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 <p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
-<p><strong>Include all WooCommerce product images and variations the Schema Product markup!</strong> (Pro version)</p>
+<p><strong>Includes all WooCommerce product images, variations, and reviews in the Schema Product markup!</strong> (Pro version)</p>
 
 <p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
@@ -310,12 +310,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.11.8-1 (TBD)**
+**Version 1.11.8-dev1 (TBD)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new Schema reviews property module to include WooCommerce product reviews (Pro version).
+	* Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -409,7 +409,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.11.8-dev1 =
 
-(TBD) Added a new Schema reviews property module to include WooCommerce product reviews (Pro version).
+(TBD) Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
 = 1.11.7-1 =
 
