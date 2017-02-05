@@ -50,8 +50,8 @@ Adds an additional "Schema Markup" settings page to the SSO menu:
 * Schema Image Dimensions
 * Maximum Description Length
 * Author / Person Name Format
-* Item Type for Blog Home Page
-* Item Type for Static Home Page
+* Item Type for Blog Front Page
+* Item Type for Static Front Page
 * Item Type for Archive Page
 * Item Type for User / Author Page
 * Item Type for Search Results Page
@@ -394,7 +394,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* Added an "Item Type for Blog Home Page" option for non-static home pages.
+	* Added an "Item Type for Blog Front Page" option for blog (non-static) front pages.
 	* Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
 * *Bugfixes*
 	* None

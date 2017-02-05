@@ -48,8 +48,8 @@
 <li>Schema Image Dimensions</li>
 <li>Maximum Description Length</li>
 <li>Author / Person Name Format</li>
-<li>Item Type for Blog Home Page</li>
-<li>Item Type for Static Home Page</li>
+<li>Item Type for Blog Front Page</li>
+<li>Item Type for Static Front Page</li>
 <li>Item Type for Archive Page</li>
 <li>Item Type for User / Author Page</li>
 <li>Item Type for Search Results Page</li>
