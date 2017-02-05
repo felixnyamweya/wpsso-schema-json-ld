@@ -101,6 +101,71 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $parts_added;
 		}
 
+		public static function add_comment_list_data( &$json_data, $mod ) {
+			if ( ! $mod['is_post'] || ! $mod['id'] || ! comments_open( $mod['id'] ) )
+				return;
+
+			$json_data['commentCount'] = get_comments_number( $mod['id'] );
+
+			/*
+			 * Only get parent comments. The add_single_comment_data() method 
+			 * will recurse and add the children.
+			 */
+			$comments = get_comments( array(
+				'post_id' => $mod['id'],
+				'status' => 'approve',
+				'parent' => 0,	// don't get replies
+				'order' => 'DESC',
+				'number' => get_option( 'page_comments' ),	// limit number of comments
+			) );
+
+			if ( is_array( $comments ) ) {
+				foreach( $comments as $num => $cmt ) {
+					$comments_added = self::add_single_comment_data( $json_data['comment'], $mod, $cmt->comment_ID );
+					if ( ! $comments_added )
+						unset( $json_data['comment'] );
+				}
+			}
+		}
+
+		public static function add_single_comment_data( &$json_data, $mod, $comment_id, $list_element = true ) {
+			$comments_added = 0;
+
+			if ( $comment_id && $cmt = get_comment( $comment_id ) ) {
+				$comments_added++;
+				$ret = WpssoSchema::get_schema_type_context( 'https://schema.org/Comment', array(
+					'url' => get_comment_link( $cmt->comment_ID ),
+					'dateCreated' => mysql2date( 'c', $cmt->comment_date_gmt ),
+					'description' => get_comment_excerpt( $cmt->comment_ID ),
+					'author' => WpssoSchema::get_schema_type_context( 'https://schema.org/Person', array(
+						'name' => $cmt->comment_author,
+					) ),
+				) );
+
+				$children = get_comments( array(
+					'post_id' => $mod['id'],
+					'status' => 'approve',
+					'parent' => $cmt->comment_ID,	// get the children
+					'order' => 'DESC',
+					'number' => get_option( 'page_comments' ),	// limit number of comments
+				) );
+
+				if ( is_array( $children ) ) {
+					foreach( $children as $num => $child ) {
+						$children_added = self::add_single_comment_data( $ret['comment'], $mod, $child->comment_ID );
+						if ( ! $children_added )
+							unset( $ret['comment'] );
+						else $comments_added += $children_added;
+					}
+				}
+
+				if ( empty( $list_element ) )
+					$json_data = $ret;
+				else $json_data[] = $ret;	// add an item to the list
+			}	
+			return $comments_added;	// return count of comments added
+		}
+
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = false ) {
 			$wpsso =& Wpsso::get_instance();
 			

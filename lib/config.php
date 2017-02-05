@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.11.8-dev1',	// plugin version
+					'version' => '1.12.0-dev1',	// plugin version
 					'opt_version' => '8',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'prop' => array(
 								'aggregaterating' => '(code) Property Aggregate Rating',
-								'reviews' => '(code) Property Reviews',
+								'review' => '(code) Property Reviews',
 							),
 						),
 					),

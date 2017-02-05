@@ -32,8 +32,8 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'json_data_https_schema_org_webpage' => array(
-					'json_data_https_schema_org_blogposting' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
 					'json_data_https_schema_org_webpage' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
+					'json_data_https_schema_org_blogposting' => 5,	// $json_data, $mod, $mt_og, $type_id, $is_main
 				),
 			) );
 		}
@@ -112,6 +112,13 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				if ( is_admin() && ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) )
 					$this->p->notice->err( $this->p->msgs->get( 'notice-missing-schema-image' ) );
 			}
+
+			/*
+			 * Property:
+			 *	commentCount
+			 *	comment as https://schema.org/Comment
+			 */
+			WpssoJsonSchema::add_comment_list_data( $ret, $mod );
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret );
 		}
