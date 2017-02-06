@@ -24,7 +24,6 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 		}
 
 		protected function add_meta_boxes() {
-			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
 			add_meta_box( $this->pagehook.'_schema_json_ld', 
 				_x( 'Schema JSON-LD Markup', 'metabox title', 'wpsso-schema-json-ld' ),
 				array( &$this, 'show_metabox_schema_json_ld' ), $this->pagehook, 'normal' );
