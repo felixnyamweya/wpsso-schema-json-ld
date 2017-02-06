@@ -312,7 +312,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.0-dev1 (2017/02/06)**
+**Version 1.12.0-rc1 (2017/02/07)**
 
 * *New Features*
 	* Added comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).
@@ -410,9 +410,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.0-dev1 =
+= 1.12.0-rc1 =
 
-(2017/02/06) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
+(2017/02/07) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
 = 1.11.7-1 =
 
