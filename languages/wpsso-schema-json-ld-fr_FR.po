@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.11.7-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-02-04 08:17+0800\n"
-"PO-Revision-Date: 2017-02-04 08:17+0800\n"
+"POT-Creation-Date: 2017-02-06 09:31+0800\n"
+"PO-Revision-Date: 2017-02-06 09:31+0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -268,13 +268,13 @@ msgstr "Format du nom d’auteur"
 
 #: lib/submenu/schema-json-ld.php:85
 msgctxt "option label"
-msgid "Item Type for Blog Home Page"
-msgstr "Type d'élément pour page d'accueil blog"
+msgid "Item Type for Blog Front Page"
+msgstr "Type d'élément pour page blog d'avant"
 
 #: lib/submenu/schema-json-ld.php:86
 msgctxt "option label"
-msgid "Item Type for Static Home Page"
-msgstr "Type d'élément pour page d'accueil statique"
+msgid "Item Type for Static Front Page"
+msgstr "Type d'élément pour page statique d'avant"
 
 #: lib/submenu/schema-json-ld.php:87
 msgctxt "option label"
