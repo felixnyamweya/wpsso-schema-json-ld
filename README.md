@@ -20,7 +20,7 @@
 
 <p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
-<p><strong>Adds comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).</strong></p>
+<p><strong>Adds comments and threaded replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).</strong></p>
 
 <p><strong>Includes all WooCommerce product images, variations, and reviews in the Schema Product markup!</strong> (Pro version)</p>
 

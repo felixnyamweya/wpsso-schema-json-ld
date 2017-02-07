@@ -23,7 +23,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organizat
 
 <p><strong>Select a another Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
-<p><strong>Adds comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).</strong></p>
+<p><strong>Adds comments and threaded replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).</strong></p>
 
 <p><strong>Includes all WooCommerce product images, variations, and reviews in the Schema Product markup!</strong> (Pro version)</p>
 
@@ -312,7 +312,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.0-rc1 (2017/02/07)**
+**Version 1.12.0-1 (2017/02/08)**
 
 * *New Features*
 	* Added comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).
@@ -410,9 +410,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.0-rc1 =
+= 1.12.0-1 =
 
-(2017/02/07) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
+(2017/02/08) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
 = 1.11.7-1 =
 
