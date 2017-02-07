@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.12.0-rc1',	// plugin version
+					'version' => '1.12.0-1',	// plugin version
 					'opt_version' => '8',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.39.7-rc1',
+						'min_version' => '3.39.7-1',
 					),
 					'img' => array(
 						'icon_small' => 'images/icon-128x128.png',
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/',
 						'faq' => '',
 						'notes' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/',
-						'support' => 'http://wpsso-schema-json-ld.support.wpsso.com/',
+						'support' => 'http://wpsso-schema-json-ld.support.wpsso.com/support/tickets/new',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
