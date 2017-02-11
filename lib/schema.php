@@ -181,25 +181,23 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( empty( $size_name ) )
 				$size_name = $wpsso->cf['lca'].'-schema';
 
-			if ( $add_video ) {
-				// include any video preview images first
-				if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
-					// prevent duplicates - exclude text/html videos
-					foreach ( $mt_og['og:video'] as $num => $og_video ) {
-						if ( isset( $og_video['og:video:type'] ) &&
-							$og_video['og:video:type'] !== 'text/html' ) {
-							if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) )
-								$prev_count++;
-							$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
-						}
+			// include any video preview images first
+			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
+				// prevent duplicates - exclude text/html videos
+				foreach ( $mt_og['og:video'] as $num => $og_video ) {
+					if ( isset( $og_video['og:video:type'] ) &&
+						$og_video['og:video:type'] !== 'text/html' ) {
+						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) )
+							$prev_count++;
+						$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
 					}
-					if ( $prev_count > 0 ) {
-						$max['schema_img_max'] -= $prev_count;
-						if ( $wpsso->debug->enabled )
-							$wpsso->debug->log( $prev_count.
-								' video preview images found (og_img_max adjusted to '.
-									$max['schema_img_max'].')' );
-					}
+				}
+				if ( $prev_count > 0 ) {
+					$max['schema_img_max'] -= $prev_count;
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->log( $prev_count.
+							' video preview images found (og_img_max adjusted to '.
+								$max['schema_img_max'].')' );
 				}
 			}
 
@@ -221,6 +219,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/*
 			 * Property:
 			 *	video as https://schema.org/VideoObject
+			 *
+			 * Allow the video property to be skipped -- some schema types (organization, 
+			 * for example) do not include the video property.
 			 */
 			if ( $add_video ) {
 				if ( ! empty( $mt_og['og:video'] ) )
