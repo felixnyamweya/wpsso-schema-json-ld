@@ -160,6 +160,7 @@
 <ul>
 <li>Schema Type <a href="https://schema.org/CollegeOrUniversity">schema.org/CollegeOrUniversity</a></li>
 <li>Schema Type <a href="https://schema.org/ElementarySchool">schema.org/ElementarySchool</a></li>
+<li>Schema Type <a href="https://schema.org/HighSchool">schema.org/HighSchool</a></li>
 <li>Schema Type <a href="https://schema.org/MiddleSchool">schema.org/MiddleSchool</a></li>
 <li>Schema Type <a href="https://schema.org/Preschool">schema.org/Preschool</a></li>
 <li>Schema Type <a href="https://schema.org/School">schema.org/School</a></li>

@@ -140,6 +140,7 @@ Adds Schema / Structured Data JSON-LD markup for:
 	* Schema Type [schema.org/EducationalOrganization](https://schema.org/EducationalOrganization)
 		* Schema Type [schema.org/CollegeOrUniversity](https://schema.org/CollegeOrUniversity)
 		* Schema Type [schema.org/ElementarySchool](https://schema.org/ElementarySchool)
+		* Schema Type [schema.org/HighSchool](https://schema.org/HighSchool)
 		* Schema Type [schema.org/MiddleSchool](https://schema.org/MiddleSchool)
 		* Schema Type [schema.org/Preschool](https://schema.org/Preschool)
 		* Schema Type [schema.org/School](https://schema.org/School)
@@ -312,14 +313,14 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.1-dev2 (2017/02/11)**
+**Version 1.12.1-rc1 (2017/02/12)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Removed the VideoObject property from the Schema Organization markup.
+	* Removed the unsupported video property from the Schema Organization markup.
 * *Developer Notes*
 	* None
 
@@ -421,9 +422,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.1-dev2 =
+= 1.12.1-rc1 =
 
-(2017/02/11) Removed the VideoObject property from the Schema Organization markup.
+(2017/02/12) Removed the unsupported video property from the Schema Organization markup.
 
 = 1.12.0-1 =
 
