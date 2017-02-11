@@ -84,7 +84,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *	publisher as https://schema.org/Organization
 			 */
 			$org_id = is_object( $mod['obj'] ) ?
-				$mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' ) : false;	// null, false, 'none', 'site', or number (including 0)
+				$mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' ) : 'site';	// 'none', 'site', or number (including 0)
 
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'publisher / organization id is '.
