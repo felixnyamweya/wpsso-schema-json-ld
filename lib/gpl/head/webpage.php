@@ -104,7 +104,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *	image as https://schema.org/ImageObject
 			 *	video as https://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_media_list_data( $ret, $mod, $mt_og, $size_name );
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
 
 			if ( empty( $ret['image'] ) ) {
 				if ( $this->p->debug->enabled )

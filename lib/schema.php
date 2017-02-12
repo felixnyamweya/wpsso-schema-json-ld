@@ -20,7 +20,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$this->p->debug->mark();
 		}
 
-		// called by CollectionPage and ProfilePage
+		/*
+		 * Called by CollectionPage and ProfilePage
+		 */
 		public static function add_parts_data( &$json_data, $mod, $mt_og, $type_id, $is_main ) {
 			$wpsso =& Wpsso::get_instance();
 			$parts_added = 0;
@@ -29,7 +31,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $wpsso->debug->enabled )
 				$wpsso->debug->mark( 'adding parts data' );	// begin timer
 
-			// $type_id is false for parts to prevent recursion of main loop posts
+			/*
+			 * $type_id is false for parts to prevent recursion of main loop posts.
+			 */
 			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'using query loop to get posts' );
@@ -55,8 +59,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$posts_mods = array_slice( $posts_mods, 0, $posts_per_page );
 				}
 
-			// get first page of posts for this term / user archive page 
-			// if the module is a post, then return all children of that post
+			/*
+			 * Get first page of posts for this term / user archive page.
+			 * If the module is a post, then return all children of that post.
+			 */
 			} elseif ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {
 				if ( $wpsso->debug->enabled )
 					$wpsso->debug->log( 'using module object to get posts' );
@@ -99,6 +105,69 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->mark( 'adding parts data' );	// end timer
 
 			return $parts_added;
+		}
+
+		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = null, $add_video = true ) {
+			$wpsso =& Wpsso::get_instance();
+			
+			/*
+			 * Property:
+			 *	image as https://schema.org/ImageObject
+			 */
+			$og_image = array();
+
+			$prev_count = 0;
+			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
+
+			if ( empty( $size_name ) )
+				$size_name = $wpsso->cf['lca'].'-schema';
+
+			/*
+			 * Include video preview images first.
+			 */
+			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
+				// prevent duplicates - exclude text/html videos
+				foreach ( $mt_og['og:video'] as $num => $og_video ) {
+					if ( isset( $og_video['og:video:type'] ) &&
+						$og_video['og:video:type'] !== 'text/html' ) {
+						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) )
+							$prev_count++;
+						$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
+					}
+				}
+				if ( $prev_count > 0 ) {
+					$max['schema_img_max'] -= $prev_count;
+					if ( $wpsso->debug->enabled )
+						$wpsso->debug->log( $prev_count.
+							' video preview images found (og_img_max adjusted to '.
+								$max['schema_img_max'].')' );
+				}
+			}
+
+			$og_image = array_merge( $og_image, $wpsso->og->get_all_images( $max['schema_img_max'],
+				$size_name, $mod, true, 'schema' ) );
+
+			if ( ! empty( $og_image ) )
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+			else $images_added = 0;
+
+			if ( ! $images_added && $mod['is_post'] ) {
+				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+			}
+
+			if ( ! $images_added )
+				unset( $json_data['image'] );	// prevent null assignment
+
+			/*
+			 * Property:
+			 *	video as https://schema.org/VideoObject
+			 *
+			 * Allow the video property to be skipped -- some schema types (organization, 
+			 * for example) do not include a video property.
+			 */
+			if ( $add_video && ! empty( $mt_og['og:video'] ) )
+				WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
 		}
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
@@ -166,70 +235,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $comments_added;	// return count of comments added
 		}
 
-		public static function add_media_list_data( &$json_data, $mod, $mt_og, $size_name = false, $add_video = true ) {
-			$wpsso =& Wpsso::get_instance();
-			
-			/*
-			 * Property:
-			 *	image as https://schema.org/ImageObject
-			 */
-			$og_image = array();
-
-			$prev_count = 0;
-			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
-
-			if ( empty( $size_name ) )
-				$size_name = $wpsso->cf['lca'].'-schema';
-
-			// include any video preview images first
-			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
-				// prevent duplicates - exclude text/html videos
-				foreach ( $mt_og['og:video'] as $num => $og_video ) {
-					if ( isset( $og_video['og:video:type'] ) &&
-						$og_video['og:video:type'] !== 'text/html' ) {
-						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) )
-							$prev_count++;
-						$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
-					}
-				}
-				if ( $prev_count > 0 ) {
-					$max['schema_img_max'] -= $prev_count;
-					if ( $wpsso->debug->enabled )
-						$wpsso->debug->log( $prev_count.
-							' video preview images found (og_img_max adjusted to '.
-								$max['schema_img_max'].')' );
-				}
-			}
-
-			$og_image = array_merge( $og_image, $wpsso->og->get_all_images( $max['schema_img_max'],
-				$size_name, $mod, true, 'schema' ) );
-
-			if ( ! empty( $og_image ) )
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
-			else $images_added = 0;
-
-			if ( ! $images_added && $mod['is_post'] ) {
-				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
-			}
-
-			if ( ! $images_added )
-				unset( $json_data['image'] );	// prevent null assignment
-
-			/*
-			 * Property:
-			 *	video as https://schema.org/VideoObject
-			 *
-			 * Allow the video property to be skipped -- some schema types (organization, 
-			 * for example) do not include the video property.
-			 */
-			if ( $add_video ) {
-				if ( ! empty( $mt_og['og:video'] ) )
-					WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
-			}
-		}
-
-		// pass a single or two dimension video array in $og_video
+		/*
+		 * Provide a single or two-dimension video array in $og_video.
+		 */
 		public static function add_video_list_data( &$json_data, $og_video, $prefix = 'og:video' ) {
 			$videos_added = 0;
 
