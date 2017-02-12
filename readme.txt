@@ -11,7 +11,7 @@ Tags: seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structur
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 4.7.2
-Stable Tag: 1.12.0-1
+Stable Tag: 1.12.1-1
 
 WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
 
@@ -313,7 +313,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.1-1 (2017/02/12)**
+**Version 1.12.1-1 (2017/02/13)**
 
 * *New Features*
 	* None
@@ -424,7 +424,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.12.1-1 =
 
-(2017/02/12) Removed the unsupported video property from the Schema Organization markup.
+(2017/02/13) Removed the unsupported video property from the Schema Organization markup.
 
 = 1.12.0-1 =
 
