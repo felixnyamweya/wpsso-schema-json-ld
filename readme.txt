@@ -313,6 +313,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.12.2-dev1 (2017/02/16)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed a few site related option keys for WPSSO v3.39.9-1:
+		* 'og_site_name' =&gt; 'site_name'
+		* 'og_site_description' =&gt; 'site_desc'
+
 **Version 1.12.1-1 (2017/02/13)**
 
 * *New Features*
@@ -421,6 +434,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.12.2-dev1 =
+
+(2017/02/16) Renamed a few site related option keys for WPSSO v3.39.9-1.
 
 = 1.12.1-1 =
 
