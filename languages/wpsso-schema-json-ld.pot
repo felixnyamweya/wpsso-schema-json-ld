@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.1-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.2-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -254,90 +254,90 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:50
 msgctxt "option label"
-msgid "Website Description"
+msgid "Website Alternate Name"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:56
 msgctxt "option label"
-msgid "Website Alternate Name"
+msgid "Website Description"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:62
+#: lib/submenu/schema-json-ld.php:63
 msgctxt "option label"
 msgid "Organization Logo Image URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:66
+#: lib/submenu/schema-json-ld.php:67
 msgctxt "option label"
 msgid "Organization Banner (600x60) URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:70
+#: lib/submenu/schema-json-ld.php:71
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:75
+#: lib/submenu/schema-json-ld.php:76
 msgctxt "option comment"
 msgid "video preview images are enabled (and included first)"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:78
+#: lib/submenu/schema-json-ld.php:79
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:83
+#: lib/submenu/schema-json-ld.php:84
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:86
+#: lib/submenu/schema-json-ld.php:87
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:89
+#: lib/submenu/schema-json-ld.php:90
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:97
+#: lib/submenu/schema-json-ld.php:98
 msgctxt "option label"
 msgid "Item Type for Blog Front Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:98
+#: lib/submenu/schema-json-ld.php:99
 msgctxt "option label"
 msgid "Item Type for Static Front Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:99
+#: lib/submenu/schema-json-ld.php:100
 msgctxt "option label"
 msgid "Item Type for Archive Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:100
+#: lib/submenu/schema-json-ld.php:101
 msgctxt "option label"
 msgid "Item Type for User / Author Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:101
+#: lib/submenu/schema-json-ld.php:102
 msgctxt "option label"
 msgid "Item Type for Search Results Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:123
+#: lib/submenu/schema-json-ld.php:124
 msgctxt "option label"
 msgid "Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:128
+#: lib/submenu/schema-json-ld.php:129
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:133
+#: lib/submenu/schema-json-ld.php:134
 msgctxt "option label"
 msgid "Recipe Ingredients Custom Field"
 msgstr ""

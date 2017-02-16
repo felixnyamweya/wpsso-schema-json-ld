@@ -40,22 +40,23 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 			switch ( $metabox.'-'.$key ) {
 				case 'schema_json_ld-general':
 
-					$table_rows['og_site_name'] = '<tr class="hide_in_basic">'.
+					$table_rows['site_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Name',
-						'option label', 'wpsso-schema-json-ld' ), null, 'og_site_name', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'og_site_name', $this->p->options ),
+						'option label', 'wpsso-schema-json-ld' ), null, 'site_name', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name', $this->p->options ),
 						'long_name', null, null, get_bloginfo( 'name', 'display' ) ).'</td>';
-
-					$table_rows['og_site_description'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Description',
-						'option label', 'wpsso-schema-json-ld' ), null, 'og_site_description', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'og_site_description', $this->p->options ),
-						null, null, null, get_bloginfo( 'description', 'display' ) ).'</td>';
 
 					$table_rows['schema_alt_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Alternate Name',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_alt_name' ).
-					'<td>'.$this->form->get_input( 'schema_alt_name', 'wide' ).'</td>';
+						'option label', 'wpsso-schema-json-ld' ), null, 'schema_alt_name', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_alt_name', $this->p->options ),
+						'long_name' ).'</td>';
+
+					$table_rows['site_desc'] = '<tr class="hide_in_basic">'.
+					$this->form->get_th_html( _x( 'Website Description',
+						'option label', 'wpsso-schema-json-ld' ), null, 'site_desc', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'site_desc', $this->p->options ),
+						null, null, null, get_bloginfo( 'description', 'display' ) ).'</td>';
 
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
 						'<a href="https://developers.google.com/structured-data/customize/logos">'.
