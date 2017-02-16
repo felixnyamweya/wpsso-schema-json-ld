@@ -10,7 +10,7 @@
  * Author URI: https://surniaulula.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
+ * Description: WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Business, Product, Recipe, Review, and much more).
  * Requires At Least: 3.8
  * Tested Up To: 4.7.2
  * Version: 1.12.2-dev1
