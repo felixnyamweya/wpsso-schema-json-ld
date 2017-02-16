@@ -13,7 +13,7 @@ Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 1.12.1-1
 
-WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Organization, Place / Business, Product, Recipe, and more).
+WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Business, Product, Recipe, Review, and more).
 
 == Description ==
 
