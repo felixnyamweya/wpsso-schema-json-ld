@@ -313,7 +313,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.2-rc1 (2017/02/18)**
+**Version 1.12.2-1 (2017/02/19)**
 
 * *New Features*
 	* None
@@ -435,9 +435,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.2-rc1 =
+= 1.12.2-1 =
 
-(2017/02/18) Renamed a few site related option keys for WPSSO v3.39.9-1.
+(2017/02/19) Renamed a few site related option keys for WPSSO v3.39.9-1.
 
 = 1.12.1-1 =
 
