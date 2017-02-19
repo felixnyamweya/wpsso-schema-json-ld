@@ -71,7 +71,7 @@
 
 <ul>
 <li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
-<li>WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. WPSSO JSON Pro includes additional 3rd party integration modules to extended its Schema markup:
+<li>WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. WPSSO JSON Pro includes additional 3rd party integration modules specifically to extended its Schema markup:
 
 <ul>
 <li>WP Product Review</li>
