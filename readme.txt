@@ -65,8 +65,40 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 **WPSSO JSON Pro / Power-User Features**
 
 * Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
-* WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. WPSSO JSON Pro includes additional 3rd party integration modules specifically to extended its Schema markup:
-	* WP Product Review
+* WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+	* **WPSSO Pro Integrated 3rd Party Plugins**
+		* All in One SEO Pack
+		* bbPress
+		* BuddyPress (including Group Forum Topics)
+		* Co-Authors Plus (including Guest Authors)
+		* Easy Digital Downloads
+		* HeadSpace2 SEO
+		* NextGEN Gallery
+		* MarketPress - WordPress eCommerce
+		* Polylang
+		* rtMedia for WordPress, BuddyPress and bbPress
+		* The Events Calendar
+		* The SEO Framework
+		* WooCommerce (version 1 and 2)
+		* WP eCommerce
+		* WordPress REST API (version 2)
+		* Yoast SEO (aka WordPress SEO)
+		* Yotpo Social Reviews for WooCommerce
+	* **WPSSO Pro Integrated Service APIs**
+		* Bitly
+		* Facebook Embedded Videos
+		* Google URL Shortener
+		* Gravatar (Author Image)
+		* Ow.ly
+		* Slideshare Presentations
+		* TinyURL
+		* Vimeo Videos
+		* Wistia Videos
+		* Your Own URL Shortener (YOURLS)
+		* YouTube Videos and Playlists
+* WPSSO JSON Pro includes additional 3rd party integration modules to extend its Schema markup:
+	* **WPSSO JSON Pro Integrated 3rd Party Plugins**
+		* WP Product Review
 * Adds additional custom options in the Social Settings metabox:
 	* Schema Item Name (aka Title)
 	* Schema Description

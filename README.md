@@ -71,10 +71,54 @@
 
 <ul>
 <li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
-<li>WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. WPSSO JSON Pro includes additional 3rd party integration modules specifically to extended its Schema markup:
+<li>WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+
+<ul>
+<li><strong>WPSSO Pro Integrated 3rd Party Plugins</strong>
+
+<ul>
+<li>All in One SEO Pack</li>
+<li>bbPress</li>
+<li>BuddyPress (including Group Forum Topics)</li>
+<li>Co-Authors Plus (including Guest Authors)</li>
+<li>Easy Digital Downloads</li>
+<li>HeadSpace2 SEO</li>
+<li>NextGEN Gallery</li>
+<li>MarketPress - WordPress eCommerce</li>
+<li>Polylang</li>
+<li>rtMedia for WordPress, BuddyPress and bbPress</li>
+<li>The Events Calendar</li>
+<li>The SEO Framework</li>
+<li>WooCommerce (version 1 and 2)</li>
+<li>WP eCommerce</li>
+<li>WordPress REST API (version 2)</li>
+<li>Yoast SEO (aka WordPress SEO)</li>
+<li>Yotpo Social Reviews for WooCommerce</li>
+</ul></li>
+<li><strong>WPSSO Pro Integrated Service APIs</strong>
+
+<ul>
+<li>Bitly</li>
+<li>Facebook Embedded Videos</li>
+<li>Google URL Shortener</li>
+<li>Gravatar (Author Image)</li>
+<li>Ow.ly</li>
+<li>Slideshare Presentations</li>
+<li>TinyURL</li>
+<li>Vimeo Videos</li>
+<li>Wistia Videos</li>
+<li>Your Own URL Shortener (YOURLS)</li>
+<li>YouTube Videos and Playlists</li>
+</ul></li>
+</ul></li>
+<li>WPSSO JSON Pro includes additional 3rd party integration modules to extend its Schema markup:
+
+<ul>
+<li><strong>WPSSO JSON Pro Integrated 3rd Party Plugins</strong>
 
 <ul>
 <li>WP Product Review</li>
+</ul></li>
 </ul></li>
 <li>Adds additional custom options in the Social Settings metabox:
 
