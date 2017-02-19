@@ -34,13 +34,11 @@
 
 <p><strong>WPSSO JSON Free / Basic Features</strong></p>
 
-<p>Extends the features of WPSSO Free or Pro.</p>
-
-<p>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
-
-<p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="https://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
-
-<p>Adds an additional "Schema Markup" settings page to the SSO menu:</p>
+<ul>
+<li>Extends the features of WPSSO Free or Pro.</li>
+<li>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</li>
+<li>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="https://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</li>
+<li>Adds an additional "Schema Markup" settings page to the SSO menu:
 
 <ul>
 <li>Website Alternate Name</li>
@@ -58,22 +56,27 @@
 <li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
 <li>Default Reviewed Item Type</li>
 <li>Recipe Ingredients Custom Field</li>
-</ul>
-
-<p>Adds Schema / Structured Data JSON-LD markup for:</p>
+</ul></li>
+<li>Adds Schema / Structured Data JSON-LD markup for:
 
 <ul>
 <li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a></li>
+</ul></li>
 </ul>
 
 <h4>Quick List of Features (Continued)</h4>
 
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
-<p>Extends the features of WPSSO Pro.</p>
+<ul>
+<li>Extends the features of WPSSO Pro.</li>
+<li>Includes additional 3rd party plugin integration:
 
-<p>Adds additional custom options in the Social Settings metabox:</p>
+<ul>
+<li>WP Product Review</li>
+</ul></li>
+<li>Adds additional custom options in the Social Settings metabox:
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
@@ -93,9 +96,8 @@
 <li>Reviewed Item Type </li>
 <li>Reviewed Item URL </li>
 <li>Reviewed Item Rating </li>
-</ul>
-
-<p>Adds Schema / Structured Data JSON-LD markup for:</p>
+</ul></li>
+<li>Adds Schema / Structured Data JSON-LD markup for:
 
 <ul>
 <li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>
@@ -294,6 +296,7 @@
 <li>Schema Type <a href="https://auto.schema.org/Motorcycle">auto.schema.org/Motorcycle</a></li>
 <li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
