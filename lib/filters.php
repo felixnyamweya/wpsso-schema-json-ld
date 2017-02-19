@@ -144,6 +144,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			switch ( $key ) {
 				case 'schema_recipe_yield':
 				case 'schema_recipe_ingredient':
+				case 'schema_review_item_name':
 					return 'one_line';
 					break;
 				case 'schema_type':
@@ -169,6 +170,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'blank_num';	// must be numeric (blank or zero is ok)
 					break;
 				case 'schema_review_item_url':
+				case 'schema_review_item_image_url':
 					return 'url';
 					break;
 			}
@@ -272,7 +274,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					empty( $this->p->options['schema_review_item_type'] ) ?
 						'none' : $this->p->options['schema_review_item_type']
 				),
+				'schema_review_item_name' => '',	// Reviewed Item Name
 				'schema_review_item_url' => '',		// Reviewed Item URL
+				'schema_review_item_image_url' => '',	// Reviewed Item Image URL
 				'schema_review_rating' => '0.0',	// Reviewed Item Rating
 				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)
 				'schema_review_rating_to' => '5',	// Reviewed Item Rating (to)
@@ -338,8 +342,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_item_type':
 					$text = __( 'Select a Schema item type that best describes the item being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_review_item_name':
+					$text = __( 'The official name of the item being reviewed.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_review_item_url':
 					$text = __( 'A URL for the item being reviewed.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_review_item_image_url':
+					$text = __( 'The URL to an image representing the item being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_rating':
 					$text = __( 'A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5).', 'wpsso-schema-json-ld' );

@@ -179,10 +179,22 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'long_name' ),
 				),
+				'schema_review_item_name' => array(
+					'tr_class' => 'schema_type '.$tr_class['review'],
+					'label' => _x( 'Reviewed Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_name', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'wide' ),
+				),
 				'schema_review_item_url' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Reviewed Item Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'wide' ),
+				),
+				'schema_review_item_image_url' => array(
+					'tr_class' => 'schema_type '.$tr_class['review'],
+					'label' => _x( 'Reviewed Item Image URL', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_image_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_rating' => array(

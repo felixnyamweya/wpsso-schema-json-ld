@@ -130,11 +130,6 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'option label', 'wpsso-schema-json-ld' ), null, 'schema_review_item_type' ).
 					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'long_name' ).'</td>';
 
-					$table_rows['plugin_cf_recipe_ingredients'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Recipe Ingredients Custom Field',
-						'option label', 'wpsso-schema-json-ld' ), null, 'plugin_cf_recipe_ingredients' ).
-					'<td>'.$this->form->get_input( 'plugin_cf_recipe_ingredients' ).'</td>';
-
 					break;
 			}
 			return $table_rows;
