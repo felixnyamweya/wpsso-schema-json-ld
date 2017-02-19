@@ -65,7 +65,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 **WPSSO JSON Pro / Power-User Features**
 
 * Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
-* Includes additional 3rd party plugin integration:
+* WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. WPSSO JSON includes additional 3rd party integration modules to extended its Schema markup:
 	* WP Product Review
 * Adds additional custom options in the Social Settings metabox:
 	* Schema Item Name (aka Title)
