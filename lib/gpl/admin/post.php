@@ -30,6 +30,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+			$org_req_msg = '';
 			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
@@ -42,7 +43,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$org_req_msg = ' <em><a href="'.$info['url']['download'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
 						$info['short'] ).'</a></em>';
-			} else $org_req_msg = '';
+			}
 
 			// javascript hide/show classes for schema type rows
 			$tr_class = array(
