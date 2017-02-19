@@ -70,7 +70,7 @@
 <p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
 
 <ul>
-<li>Extends the features of WPSSO Pro.</li>
+<li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
 <li>Includes additional 3rd party plugin integration:
 
 <ul>
