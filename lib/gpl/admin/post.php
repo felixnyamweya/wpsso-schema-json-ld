@@ -94,6 +94,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Article
 				 */
+				'subsection_article' => array(
+					'tr_class' => 'schema_type '.$tr_class['article'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Article Information', 'metabox title', 'nextgen-facebook' ),
+				),
 				'schema_pub_org_id' => array(
 					'tr_class' => 'schema_type '.$tr_class['article'],
 					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
@@ -110,6 +115,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Event
 				 */
+				'subsection_event' => array(
+					'tr_class' => 'schema_type '.$tr_class['event'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Event Information', 'metabox title', 'nextgen-facebook' ),
+				),
 				'schema_event_org_id' => array(
 					'tr_class' => 'schema_type '.$tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
@@ -125,6 +135,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Recipe
 				 */
+				'subsection_recipe' => array(
+					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Recipe Information', 'metabox title', 'nextgen-facebook' ),
+				),
 				'schema_recipe_prep_time' => array(
 					'tr_class' => 'schema_type '.$tr_class['recipe'],
 					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
@@ -173,33 +188,39 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				/*
 				 * Schema Review
 				 */
+				'subsection_review' => array(
+					'tr_class' => 'schema_type '.$tr_class['review'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Review Information', 'metabox title', 'nextgen-facebook' ),
+				),
 				'schema_review_item_type' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item Type', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Subject Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'long_name' ),
 				),
 				'schema_review_item_name' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Subject Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_name', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_item_url' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_item_image_url' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item Image URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Subject Image URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_image_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
+				// included as schema.org/Rating, not schema.org/aggregateRating
 				'schema_review_rating' => array(
 					'tr_class' => 'schema_type '.$tr_class['review'],
-					'label' => _x( 'Reviewed Item Rating', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ).
 						' '._x( 'from', 'option comment', 'wpsso-schema-json-ld' ).' '.
