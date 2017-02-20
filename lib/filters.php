@@ -340,19 +340,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_type':
-					$text = __( 'Select a Schema item type that best describes the item being reviewed.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a Schema type that best describes the subject being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_name':
-					$text = __( 'The official name of the item being reviewed.', 'wpsso-schema-json-ld' );
+					$text = __( 'The official and/or model name for the subject being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_url':
-					$text = __( 'A URL for the item being reviewed.', 'wpsso-schema-json-ld' );
+					$text = __( 'A webpage URL for the subject being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_image_url':
-					$text = __( 'The URL to an image representing the item being reviewed.', 'wpsso-schema-json-ld' );
+					$text = __( 'An image URL showing the subject being reviewed.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_rating':
-					$text = __( 'A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5).', 'wpsso-schema-json-ld' );
+					$text = __( 'A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5).', 'wpsso-schema-json-ld' );
 				 	break;
 			}
 			return $text;

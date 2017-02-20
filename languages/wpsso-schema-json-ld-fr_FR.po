@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.2-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.3-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-02-18 15:35+0700\n"
-"PO-Revision-Date: 2017-02-18 15:36+0700\n"
+"POT-Creation-Date: 2017-02-20 11:58+0700\n"
+"PO-Revision-Date: 2017-02-20 12:05+0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -41,177 +41,217 @@ msgstr "Si ce Schéma est une classification importante pour votre contenu, vous
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:303
+#: lib/filters.php:307
 msgid "Check this option if the Schema markup describes the main content (aka \"main entity\") of this webpage."
 msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
 
-#: lib/filters.php:306
+#: lib/filters.php:310
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
-#: lib/filters.php:309
+#: lib/filters.php:313
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
 msgstr "Sélectionnez un éditeur pour le type de Schéma d'Article et / ou de son sous-type (NewsArticle, TechArticle, etc)."
 
-#: lib/filters.php:312
+#: lib/filters.php:316
 msgid "A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types."
 msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d’élément Schéma Article et ses sous-types (NewsArticle, TechArticle, etc.)."
 
-#: lib/filters.php:315
+#: lib/filters.php:319
 msgid "Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionnez un organisateur pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:318
+#: lib/filters.php:322
 msgid "The total time it takes to prepare this recipe."
 msgstr "Le temps total qu’il faut pour la préparation cette recette."
 
-#: lib/filters.php:321
+#: lib/filters.php:325
 msgid "The total time it takes to cook this recipe."
 msgstr "Le temps total qu’il faut pour la cuisson de cette recette."
 
-#: lib/filters.php:324
+#: lib/filters.php:328
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr "Le temps total qu’il faut pour la préparation et la cuisson cette recette."
 
-#: lib/filters.php:327
+#: lib/filters.php:331
 msgid "The quantity or servings made by this recipe (example: \"5 servings\", \"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr "La quantité ou les portions fournie par cette recette (exemple : \"5 portions\", \"10 burgers\", etc.)."
 
-#: lib/filters.php:330
+#: lib/filters.php:334
 msgid "The total number of calories for this recipe (all servings)."
 msgstr "Le nombre total de calories pour cette recette (toutes les portions)."
 
-#: lib/filters.php:333
+#: lib/filters.php:337
 msgid "Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionner un artiste pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:336
+#: lib/filters.php:340
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:339
+#: lib/filters.php:343
 msgid "Select a Schema item type that best describes the item being reviewed."
 msgstr "Sélectionnez le type de Schéma qui décrit l'article évalué."
 
-#: lib/filters.php:342
+#: lib/filters.php:346
+#, fuzzy
+msgid "The official name of the item being reviewed."
+msgstr "Un URL pour l'article évalué."
+
+#: lib/filters.php:349
 msgid "A URL for the item being reviewed."
 msgstr "Un URL pour l'article évalué."
 
-#: lib/filters.php:345
+#: lib/filters.php:352
+#, fuzzy
+msgid "The URL to an image representing the item being reviewed."
+msgstr "Un URL pour l'article évalué."
+
+#: lib/filters.php:355
 msgid "A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5)."
 msgstr "Une note pour l'article évalué, ainsi que la note min / max de l'échelle (1 à 5 par défaut)."
 
-#: lib/gpl/admin/post.php:33 lib/pro/admin/post.php:44
+#: lib/gpl/admin/post.php:34 lib/pro/admin/post.php:45
 msgctxt "option value"
 msgid "Website"
 msgstr "Site Web"
 
 # Ignore the post type to avoid gender issues in the French translation.
-#: lib/gpl/admin/post.php:35 lib/pro/admin/post.php:46
+#: lib/gpl/admin/post.php:36 lib/pro/admin/post.php:47
 msgid "Save a draft version or publish the %s to update this value."
 msgstr "Enregistrer un brouillon ou publiez pour mettre à jour cette valeur."
 
-#: lib/gpl/admin/post.php:43 lib/pro/admin/post.php:54
+#: lib/gpl/admin/post.php:44 lib/pro/admin/post.php:55
 msgctxt "option comment"
 msgid "%s extension required"
 msgstr "%s extension requise"
 
-#: lib/gpl/admin/post.php:63 lib/pro/admin/post.php:79
+#: lib/gpl/admin/post.php:64 lib/pro/admin/post.php:78
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema Markup"
 msgstr "Données Structurées Google / Balises de Schéma"
 
-#: lib/gpl/admin/post.php:69 lib/pro/admin/post.php:85
+#: lib/gpl/admin/post.php:70 lib/pro/admin/post.php:84
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr "Nom / titre de l'item"
 
-#: lib/gpl/admin/post.php:76 lib/pro/admin/post.php:92
+#: lib/gpl/admin/post.php:77 lib/pro/admin/post.php:91
 msgctxt "option label"
 msgid "Schema Description"
 msgstr "Description de l'item"
 
-#: lib/gpl/admin/post.php:83 lib/pro/admin/post.php:99
+#: lib/gpl/admin/post.php:84 lib/pro/admin/post.php:98
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr "Entité principale de page"
 
-#: lib/gpl/admin/post.php:88 lib/pro/admin/post.php:104
+#: lib/gpl/admin/post.php:89 lib/pro/admin/post.php:103
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr "Type de Schéma"
 
-#: lib/gpl/admin/post.php:98 lib/pro/admin/post.php:114
+#: lib/gpl/admin/post.php:100 lib/pro/admin/post.php:114
+msgctxt "metabox title"
+msgid "Article Information"
+msgstr "Informations sur l'article"
+
+#: lib/gpl/admin/post.php:104 lib/pro/admin/post.php:118
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr "Éditeur de l'article"
 
-#: lib/gpl/admin/post.php:104 lib/pro/admin/post.php:121
+#: lib/gpl/admin/post.php:110 lib/pro/admin/post.php:125
 msgctxt "option label"
 msgid "Article Headline"
 msgstr "Manchette d'article"
 
-#: lib/gpl/admin/post.php:114 lib/pro/admin/post.php:132
+#: lib/gpl/admin/post.php:121 lib/pro/admin/post.php:137
+msgctxt "metabox title"
+msgid "Event Information"
+msgstr "Informations sur l'événement"
+
+#: lib/gpl/admin/post.php:125 lib/pro/admin/post.php:141
 msgctxt "option label"
 msgid "Event Organizer"
 msgstr "Organisateur de l’événement"
 
-#: lib/gpl/admin/post.php:120 lib/pro/admin/post.php:139
+#: lib/gpl/admin/post.php:131 lib/pro/admin/post.php:148
 msgctxt "option label"
 msgid "Event Performer"
 msgstr "Interprète de l’événement"
 
-#: lib/gpl/admin/post.php:129 lib/pro/admin/post.php:149
+#: lib/gpl/admin/post.php:141 lib/pro/admin/post.php:159
+msgctxt "metabox title"
+msgid "Recipe Information"
+msgstr "Informations sur la recette"
+
+#: lib/gpl/admin/post.php:145 lib/pro/admin/post.php:163
 msgctxt "option label"
 msgid "Recipe Preperation Time"
 msgstr "Temps de préparation"
 
-#: lib/gpl/admin/post.php:138 lib/pro/admin/post.php:158
+#: lib/gpl/admin/post.php:154 lib/pro/admin/post.php:172
 msgctxt "option label"
 msgid "Recipe Cooking Time"
 msgstr "Temps de cuisson"
 
-#: lib/gpl/admin/post.php:147 lib/pro/admin/post.php:167
+#: lib/gpl/admin/post.php:163 lib/pro/admin/post.php:181
 msgctxt "option label"
 msgid "Recipe Total Time"
 msgstr "Temps total pour recette"
 
-#: lib/gpl/admin/post.php:156 lib/pro/admin/post.php:176
+#: lib/gpl/admin/post.php:172 lib/pro/admin/post.php:190
 msgctxt "option label"
 msgid "Recipe Total Calories"
 msgstr "Calories totales pour recette"
 
-#: lib/gpl/admin/post.php:162 lib/pro/admin/post.php:182
+#: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:196
 msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr "Quantité pour recette"
 
-#: lib/gpl/admin/post.php:168 lib/pro/admin/post.php:188
+#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:202
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr "Ingrédients de recette"
 
-#: lib/gpl/admin/post.php:177 lib/pro/admin/post.php:197
-msgctxt "option label"
-msgid "Reviewed Item Type"
-msgstr "Type de l'article évalué"
+#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:212
+msgctxt "metabox title"
+msgid "Review Information"
+msgstr "Informations sur l'évaluation"
 
-#: lib/gpl/admin/post.php:183 lib/pro/admin/post.php:203
+#: lib/gpl/admin/post.php:198 lib/pro/admin/post.php:216
 msgctxt "option label"
-msgid "Reviewed Item URL"
-msgstr "URL de l'article évalué"
+msgid "Subject Type"
+msgstr "Type du sujet"
 
-#: lib/gpl/admin/post.php:189 lib/pro/admin/post.php:210
+#: lib/gpl/admin/post.php:204 lib/pro/admin/post.php:222
 msgctxt "option label"
-msgid "Reviewed Item Rating"
-msgstr "Note de l'article évalué"
+msgid "Subject Name"
+msgstr "Nom du sujet"
 
-#: lib/gpl/admin/post.php:192 lib/pro/admin/post.php:214
+#: lib/gpl/admin/post.php:210 lib/pro/admin/post.php:228
+msgctxt "option label"
+msgid "Subject Webpage URL"
+msgstr "URL de la page Web du sujet"
+
+#: lib/gpl/admin/post.php:216 lib/pro/admin/post.php:234
+msgctxt "option label"
+msgid "Subject Image URL"
+msgstr "URL de l'image du sujet"
+
+#: lib/gpl/admin/post.php:223 lib/pro/admin/post.php:241
+msgctxt "option label"
+msgid "Review Rating"
+msgstr "Note de l'évaluation"
+
+#: lib/gpl/admin/post.php:226 lib/pro/admin/post.php:245
 msgctxt "option comment"
 msgid "from"
 msgstr "de"
 
-#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:217
+#: lib/gpl/admin/post.php:228 lib/pro/admin/post.php:248
 msgctxt "option comment"
 msgid "to"
 msgstr "à"
@@ -311,11 +351,6 @@ msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr "Type par défaut de l'article évalué"
 
-#: lib/submenu/schema-json-ld.php:134
-msgctxt "option label"
-msgid "Recipe Ingredients Custom Field"
-msgstr "Champ pers. d'ingrédients de recette"
-
 #: wpsso-schema-json-ld.php:83
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating the %4$s extension."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'essayer de re-activer l'extension %4$s."
@@ -347,3 +382,15 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgctxt "option label"
+#~ msgid "Reviewed Item Type"
+#~ msgstr "Type de l'article évalué"
+
+#~ msgctxt "option label"
+#~ msgid "Reviewed Item URL"
+#~ msgstr "URL de l'article évalué"
+
+#~ msgctxt "option label"
+#~ msgid "Recipe Ingredients Custom Field"
+#~ msgstr "Champ pers. d'ingrédients de recette"
