@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.3-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-02-20 11:58+0700\n"
-"PO-Revision-Date: 2017-02-20 12:05+0700\n"
+"POT-Creation-Date: 2017-02-20 12:15+0700\n"
+"PO-Revision-Date: 2017-02-20 12:18+0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -90,26 +90,24 @@ msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp 
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
 #: lib/filters.php:343
-msgid "Select a Schema item type that best describes the item being reviewed."
-msgstr "Sélectionnez le type de Schéma qui décrit l'article évalué."
+msgid "Select a Schema type that best describes the subject being reviewed."
+msgstr "Sélectionnez le type de Schéma qui décrit le sujet de l'évaluation."
 
 #: lib/filters.php:346
-#, fuzzy
-msgid "The official name of the item being reviewed."
-msgstr "Un URL pour l'article évalué."
+msgid "The official and/or model name for the subject being reviewed."
+msgstr "Le nom officiel et/ou de modèle pour le sujet de l'évaluation."
 
 #: lib/filters.php:349
-msgid "A URL for the item being reviewed."
-msgstr "Un URL pour l'article évalué."
+msgid "A webpage URL for the subject being reviewed."
+msgstr "L'URL de la page Web pour le sujet de l'évaluation."
 
 #: lib/filters.php:352
-#, fuzzy
-msgid "The URL to an image representing the item being reviewed."
-msgstr "Un URL pour l'article évalué."
+msgid "An image URL showing the subject being reviewed."
+msgstr "L'URL d'une image montrant le sujet de l'évaluation."
 
 #: lib/filters.php:355
-msgid "A rating for the item being reviewed, along with the low / high rating scale (defaults are 1 to 5)."
-msgstr "Une note pour l'article évalué, ainsi que la note min / max de l'échelle (1 à 5 par défaut)."
+msgid "A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5)."
+msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min/max de l'échelle (1 à 5 par défaut)."
 
 #: lib/gpl/admin/post.php:34 lib/pro/admin/post.php:45
 msgctxt "option value"
@@ -382,15 +380,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
-
-#~ msgctxt "option label"
-#~ msgid "Reviewed Item Type"
-#~ msgstr "Type de l'article évalué"
-
-#~ msgctxt "option label"
-#~ msgid "Reviewed Item URL"
-#~ msgstr "URL de l'article évalué"
-
-#~ msgctxt "option label"
-#~ msgid "Recipe Ingredients Custom Field"
-#~ msgstr "Champ pers. d'ingrédients de recette"
