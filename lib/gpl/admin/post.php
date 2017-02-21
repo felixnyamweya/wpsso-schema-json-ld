@@ -46,11 +46,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			}
 
 			// javascript hide/show classes for schema type rows
-			$tr_class = array(
-				'article' => $this->p->schema->get_schema_type_css_classes( 'article' ),
-				'event' => $this->p->schema->get_schema_type_css_classes( 'event' ),
-				'recipe' => $this->p->schema->get_schema_type_css_classes( 'recipe' ),
-				'review' => $this->p->schema->get_schema_type_css_classes( 'review' ),
+			$schema_type_tr_class = array(
+				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
+				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
+				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
 
 			foreach ( array( 'schema_desc', 'subsection_schema' ) as $key )
@@ -95,18 +95,18 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Article
 				 */
 				'subsection_article' => array(
-					'tr_class' => 'schema_type '.$tr_class['article'],
+					'tr_class' => $schema_type_tr_class['article'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Article Information', 'metabox title', 'nextgen-facebook' ),
 				),
 				'schema_pub_org_id' => array(
-					'tr_class' => 'schema_type '.$tr_class['article'],
+					'tr_class' => $schema_type_tr_class['article'],
 					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_pub_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_headline' => array(
-					'tr_class' => 'schema_type '.$tr_class['article'],
+					'tr_class' => $schema_type_tr_class['article'],
 					'label' => _x( 'Article Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
@@ -116,18 +116,18 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Event
 				 */
 				'subsection_event' => array(
-					'tr_class' => 'schema_type '.$tr_class['event'],
+					'tr_class' => $schema_type_tr_class['event'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Event Information', 'metabox title', 'nextgen-facebook' ),
 				),
 				'schema_event_org_id' => array(
-					'tr_class' => 'schema_type '.$tr_class['event'],
+					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_event_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_event_perf_id' => array(
-					'tr_class' => 'schema_type '.$tr_class['event'],
+					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_event_perf_id', $perf_names, 'long_name' ).$org_req_msg,
@@ -136,12 +136,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Recipe
 				 */
 				'subsection_recipe' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Recipe Information', 'metabox title', 'nextgen-facebook' ),
 				),
 				'schema_recipe_prep_time' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ).' secs',
 				),
 				'schema_recipe_cook_time' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
@@ -159,7 +159,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ).' secs',
 				),
 				'schema_recipe_total_time' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
@@ -168,19 +168,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ).' secs',
 				),
 				'schema_recipe_calories' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Total Calories', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_calories',
 					'content' => $form->get_no_input_value( '', 'medium' ),
 				),
 				'schema_recipe_yield' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Quantity', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_recipe_ingredients' => array(
-					'tr_class' => 'schema_type '.$tr_class['recipe'],
+					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
@@ -189,37 +189,37 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Review
 				 */
 				'subsection_review' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Review Information', 'metabox title', 'nextgen-facebook' ),
 				),
 				'schema_review_item_type' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'long_name' ),
 				),
 				'schema_review_item_name' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_name', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_item_url' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_item_image_url' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Image URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_image_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				// included as schema.org/Rating, not schema.org/aggregateRating
 				'schema_review_rating' => array(
-					'tr_class' => 'schema_type '.$tr_class['review'],
+					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ).
