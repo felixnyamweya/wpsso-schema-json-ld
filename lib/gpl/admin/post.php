@@ -49,6 +49,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$schema_type_tr_class = array(
 				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'product' => $this->p->schema->get_children_css_class( 'product', 'hide_schema_type' ),
 				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
@@ -133,6 +134,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_select( 'schema_event_perf_id', $perf_names, 'long_name' ).$org_req_msg,
 				),
 				/*
+				 * Schema Product
+				 */
+				'subsection_product' => array(
+					'tr_class' => $schema_type_tr_class['product'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Product Information', 'metabox title', 'nextgen-facebook' ),
+				),
+				'schema_product_avail' => array(
+					'tr_class' => $schema_type_tr_class['product'],
+					'label' => _x( 'Product Availability', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_product_avail', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'product_avail',
+						$this->p->cf['form']['product_availability'], 'long_name' ),
+				),
+				/*
 				 * Schema Recipe
 				 */
 				'subsection_recipe' => array(
@@ -179,10 +195,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
-				'schema_recipe_ingredients' => array(
+				'schema_recipe_ingredient' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredient',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				/*

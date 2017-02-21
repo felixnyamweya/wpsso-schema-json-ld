@@ -336,7 +336,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_event_perf_id':
 					$text = __( 'Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
 				 	break;
-				case 'tooltip-meta-schema_recipe_ingredients':
+				case 'tooltip-meta-schema_recipe_ingredient':
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_type':
