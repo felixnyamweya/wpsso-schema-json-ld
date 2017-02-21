@@ -114,9 +114,11 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 	* Recipe Total Calories 
 	* Recipe Quantity 
 	* Recipe Ingredients 
-	* Reviewed Item Type 
-	* Reviewed Item URL 
-	* Reviewed Item Rating 
+	* (Review) Subject Type 
+	* (Review) Subject Name 
+	* (Review) Subject Webpage URL 
+	* (Review) Subject Image URL 
+	* Review Rating 
 * Adds Schema / Structured Data JSON-LD markup for:
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
 		* Schema Type [schema.org/Article](https://schema.org/Article)
@@ -337,14 +339,14 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.3-dev4 (2017/02/21)**
+**Version 1.12.3-dev5 (2017/02/22)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added new options for Reviewed Items (Pro version):
-		* Reviewed Item Name
-		* Reviewed Item Image URL
+	* Added new options for the Schema type Review (Pro version):
+		* (Review) Subject Name
+		* (Review) Subject Image URL
 	* Added support for the WP Product Review plugin (Pro version).
 * *Bugfixes*
 	* None
@@ -473,9 +475,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.3-dev4 =
+= 1.12.3-dev5 =
 
-(2017/02/21) Added new options for Reviewed Items (Pro version). Added support for the WP Product Review plugin (Pro version).
+(2017/02/22) Added new options for the Schema type Review (Pro version). Added support for the WP Product Review plugin (Pro version).
 
 = 1.12.2-1 =
 

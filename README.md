@@ -137,9 +137,11 @@
 <li>Recipe Total Calories </li>
 <li>Recipe Quantity </li>
 <li>Recipe Ingredients </li>
-<li>Reviewed Item Type </li>
-<li>Reviewed Item URL </li>
-<li>Reviewed Item Rating </li>
+<li>(Review) Subject Type </li>
+<li>(Review) Subject Name </li>
+<li>(Review) Subject Webpage URL </li>
+<li>(Review) Subject Image URL </li>
+<li>Review Rating </li>
 </ul></li>
 <li>Adds Schema / Structured Data JSON-LD markup for:
 
