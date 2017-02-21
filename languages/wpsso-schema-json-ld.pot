@@ -150,142 +150,132 @@ msgctxt "option comment"
 msgid "%s extension required"
 msgstr ""
 
-#: lib/gpl/admin/post.php:65 lib/pro/admin/post.php:79
+#: lib/gpl/admin/post.php:64 lib/pro/admin/post.php:81
 msgctxt "metabox title"
 msgid "Google Structured Data / Schema Markup"
 msgstr ""
 
-#: lib/gpl/admin/post.php:71 lib/pro/admin/post.php:85
+#: lib/gpl/admin/post.php:70 lib/pro/admin/post.php:84
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:78 lib/pro/admin/post.php:92
+#: lib/gpl/admin/post.php:77 lib/pro/admin/post.php:91
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
 
-#: lib/gpl/admin/post.php:85 lib/pro/admin/post.php:99
+#: lib/gpl/admin/post.php:84 lib/pro/admin/post.php:98
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr ""
 
-#: lib/gpl/admin/post.php:90 lib/pro/admin/post.php:104
+#: lib/gpl/admin/post.php:89 lib/pro/admin/post.php:103
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:101 lib/pro/admin/post.php:115
+#: lib/gpl/admin/post.php:100 lib/pro/admin/post.php:114
 msgctxt "metabox title"
 msgid "Article Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:105 lib/pro/admin/post.php:119
+#: lib/gpl/admin/post.php:104 lib/pro/admin/post.php:118
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr ""
 
-#: lib/gpl/admin/post.php:111 lib/pro/admin/post.php:126
+#: lib/gpl/admin/post.php:110 lib/pro/admin/post.php:125
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:122 lib/pro/admin/post.php:138
+#: lib/gpl/admin/post.php:121 lib/pro/admin/post.php:137
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:126 lib/pro/admin/post.php:142
+#: lib/gpl/admin/post.php:125 lib/pro/admin/post.php:141
 msgctxt "option label"
 msgid "Event Organizer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:132 lib/pro/admin/post.php:149
+#: lib/gpl/admin/post.php:131 lib/pro/admin/post.php:148
 msgctxt "option label"
 msgid "Event Performer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:142 lib/pro/admin/post.php:160
-msgctxt "metabox title"
-msgid "Product Information"
-msgstr ""
-
-#: lib/gpl/admin/post.php:146 lib/pro/admin/post.php:164
-msgctxt "option label"
-msgid "Product Availability"
-msgstr ""
-
-#: lib/gpl/admin/post.php:157 lib/pro/admin/post.php:175
+#: lib/gpl/admin/post.php:141 lib/pro/admin/post.php:159
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:161 lib/pro/admin/post.php:179
+#: lib/gpl/admin/post.php:145 lib/pro/admin/post.php:163
 msgctxt "option label"
 msgid "Recipe Preperation Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:170 lib/pro/admin/post.php:188
+#: lib/gpl/admin/post.php:154 lib/pro/admin/post.php:172
 msgctxt "option label"
 msgid "Recipe Cooking Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:179 lib/pro/admin/post.php:197
+#: lib/gpl/admin/post.php:163 lib/pro/admin/post.php:181
 msgctxt "option label"
 msgid "Recipe Total Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:188 lib/pro/admin/post.php:206
+#: lib/gpl/admin/post.php:172 lib/pro/admin/post.php:190
 msgctxt "option label"
 msgid "Recipe Total Calories"
 msgstr ""
 
-#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:212
+#: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:196
 msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr ""
 
-#: lib/gpl/admin/post.php:200 lib/pro/admin/post.php:218
+#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:202
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr ""
 
-#: lib/gpl/admin/post.php:210 lib/pro/admin/post.php:228
+#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:212
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:214 lib/pro/admin/post.php:232
+#: lib/gpl/admin/post.php:198 lib/pro/admin/post.php:216
 msgctxt "option label"
 msgid "Subject Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:220 lib/pro/admin/post.php:238
+#: lib/gpl/admin/post.php:204 lib/pro/admin/post.php:222
 msgctxt "option label"
 msgid "Subject Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:226 lib/pro/admin/post.php:244
+#: lib/gpl/admin/post.php:210 lib/pro/admin/post.php:228
 msgctxt "option label"
 msgid "Subject Webpage URL"
 msgstr ""
 
-#: lib/gpl/admin/post.php:232 lib/pro/admin/post.php:250
+#: lib/gpl/admin/post.php:216 lib/pro/admin/post.php:234
 msgctxt "option label"
 msgid "Subject Image URL"
 msgstr ""
 
-#: lib/gpl/admin/post.php:239 lib/pro/admin/post.php:257
+#: lib/gpl/admin/post.php:223 lib/pro/admin/post.php:241
 msgctxt "option label"
 msgid "Review Rating"
 msgstr ""
 
-#: lib/gpl/admin/post.php:242 lib/pro/admin/post.php:261
+#: lib/gpl/admin/post.php:226 lib/pro/admin/post.php:245
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
-#: lib/gpl/admin/post.php:244 lib/pro/admin/post.php:264
+#: lib/gpl/admin/post.php:228 lib/pro/admin/post.php:248
 msgctxt "option comment"
 msgid "to"
 msgstr ""
