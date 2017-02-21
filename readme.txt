@@ -337,7 +337,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.12.3-dev3 (2017/02/21)**
+**Version 1.12.3-dev4 (2017/02/21)**
 
 * *New Features*
 	* None
@@ -473,7 +473,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.12.3-dev3 =
+= 1.12.3-dev4 =
 
 (2017/02/21) Added new options for Reviewed Items (Pro version). Added support for the WP Product Review plugin (Pro version).
 
