@@ -375,13 +375,13 @@ msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""
 
-#: wpsso-schema-json-ld.php:81
+#: wpsso-schema-json-ld.php:77
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:83
+#: wpsso-schema-json-ld.php:79
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
