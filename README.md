@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet Markup</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / SEO Markup</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>
@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
 <p><strong>Adds comments and threaded replies to the Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.).</p>
 
@@ -57,7 +57,7 @@
 <li>Default Reviewed Item Type</li>
 <li>Recipe Ingredients Custom Field</li>
 </ul></li>
-<li>Adds Schema / Structured Data JSON-LD markup for:
+<li>Adds Schema / Structured Data / SEO JSON-LD markup for:
 
 <ul>
 <li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
@@ -143,7 +143,7 @@
 <li>(Review) Subject Image URL </li>
 <li>Review Rating </li>
 </ul></li>
-<li>Adds Schema / Structured Data JSON-LD markup for:
+<li>Adds Schema / Structured Data / SEO JSON-LD markup for:
 
 <ul>
 <li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>

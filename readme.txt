@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet Markup ===
+=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup ===
 Plugin Name: WPSSO Schema JSON-LD Markup (WPSSO JSON)
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -17,7 +17,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 
 == Description ==
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
 <p><strong>Adds comments and threaded replies to the Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.).</p>
 
@@ -56,7 +56,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 	* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
 	* Default Reviewed Item Type
 	* Recipe Ingredients Custom Field
-* Adds Schema / Structured Data JSON-LD markup for:
+* Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 
@@ -119,7 +119,7 @@ WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Bus
 	* (Review) Subject Webpage URL 
 	* (Review) Subject Image URL 
 	* Review Rating 
-* Adds Schema / Structured Data JSON-LD markup for:
+* Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
 		* Schema Type [schema.org/Article](https://schema.org/Article)
 			* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
@@ -315,7 +315,7 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 == Screenshots ==
 
 01. (Pro version) Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. (Pro version) A selection of Google Structured Data / Schema Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type https://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
+02. (Pro version) A selection of Google Schema / Structured Data / SEO Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type https://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
 03. (Pro version) An example of WPSSO JSON's Schema Recipe markup on Pinterest.
 04. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type https://schema.org/TechArticle.
 
