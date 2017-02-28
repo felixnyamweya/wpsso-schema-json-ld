@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup (WPSSO JSON)</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add complete Schema JSON-LD / SEO markup (Article, Event, Local Business, Product, Recipe, Review, and much more).</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.12.3-1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.7.2</td></tr>
