@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'opt_version' => '8',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
-					'desc' => 'WPSSO extension to add complete Schema JSON-LD / SEO markup (Article, Event, Local Business, Product, Recipe, Review, and much more).',
+					'desc' => 'WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.',
 					'slug' => 'wpsso-schema-json-ld',
 					'base' => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
 					'update_auth' => 'tid',
