@@ -179,11 +179,17 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
-				'schema_recipe_ingredient' => array(
+				'schema_recipe_ingredients' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredient',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
+				),
+				'schema_recipe_instructions' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Recipe Instructions', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_instructions',
+					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				/*
 				 * Schema Review
