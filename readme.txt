@@ -339,7 +339,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.0-dev2 (TBD)**
+**Version 1.13.0-dev3 (2017/03/02)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
@@ -485,6 +485,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.0-dev3 =
+
+(2017/02/26) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
 = 1.12.3-1 =
 
