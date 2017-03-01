@@ -55,7 +55,6 @@
 <li>Item Type for Search Results Page</li>
 <li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
 <li>Default Reviewed Item Type</li>
-<li>Recipe Ingredients Custom Field</li>
 </ul></li>
 <li>Adds Schema / Structured Data / SEO JSON-LD markup for:
 
@@ -137,6 +136,7 @@
 <li>Recipe Total Calories </li>
 <li>Recipe Quantity </li>
 <li>Recipe Ingredients </li>
+<li>Recipe Instructions </li>
 <li>(Review) Subject Type </li>
 <li>(Review) Subject Name </li>
 <li>(Review) Subject Webpage URL </li>

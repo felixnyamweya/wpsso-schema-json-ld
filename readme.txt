@@ -55,7 +55,6 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Item Type for Search Results Page
 	* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
 	* Default Reviewed Item Type
-	* Recipe Ingredients Custom Field
 * Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
@@ -114,6 +113,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Recipe Total Calories 
 	* Recipe Quantity 
 	* Recipe Ingredients 
+	* Recipe Instructions 
 	* (Review) Subject Type 
 	* (Review) Subject Name 
 	* (Review) Subject Webpage URL 
