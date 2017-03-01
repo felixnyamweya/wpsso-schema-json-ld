@@ -339,15 +339,26 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.13.0-dev2 (TBD)**
+
+* *New Features*
+	* Added support for the WP Recipe Maker plugin (Pro version).
+	* Added support for the WP Ultimate Recipe plugin (Pro version).
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.12.3-1 (2017/02/26)**
 
 * *New Features*
-	* None
+	* Added support for the WP Product Review plugin (Pro version).
 * *Improvements*
 	* Added new options for the Schema type Review (Pro version):
 		* (Review) Subject Name
 		* (Review) Subject Image URL
-	* Added support for the WP Product Review plugin (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
