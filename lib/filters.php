@@ -275,17 +275,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
 				'schema_recipe_yield' => '',		// Recipe Yield
 				'schema_recipe_nutri_serv' => '',	// Serving Size
-				'schema_recipe_nutri_cal' => 0,		// Calories
-				'schema_recipe_nutri_prot' => 0,	// Protein
-				'schema_recipe_nutri_fib' => 0,		// Fiber
-				'schema_recipe_nutri_carb' => 0,	// Carbohydrates
-				'schema_recipe_nutri_sugar' => 0,	// Sugar
-				'schema_recipe_nutri_sod' => 0,		// Sodium
-				'schema_recipe_nutri_fat' => 0,		// Fat
-				'schema_recipe_nutri_trans_fat' => 0,	// Trans Fat
-				'schema_recipe_nutri_sat_fat' => 0,	// Saturated Fat
-				'schema_recipe_nutri_unsat_fat' => 0,	// Unsaturated Fat
-				'schema_recipe_nutri_chol' => 0,	// Cholesterol
+				'schema_recipe_nutri_cal' => '',	// Calories
+				'schema_recipe_nutri_prot' => '',	// Protein
+				'schema_recipe_nutri_fib' => '',	// Fiber
+				'schema_recipe_nutri_carb' => '',	// Carbohydrates
+				'schema_recipe_nutri_sugar' => '',	// Sugar
+				'schema_recipe_nutri_sod' => '',	// Sodium
+				'schema_recipe_nutri_fat' => '',	// Fat
+				'schema_recipe_nutri_trans_fat' => '',	// Trans Fat
+				'schema_recipe_nutri_sat_fat' => '',	// Saturated Fat
+				'schema_recipe_nutri_unsat_fat' => '',	// Unsaturated Fat
+				'schema_recipe_nutri_chol' => '',	// Cholesterol
 				'schema_review_item_type' => (		// Reviewed Item Type
 					empty( $this->p->options['schema_review_item_type'] ) ?
 						'none' : $this->p->options['schema_review_item_type']

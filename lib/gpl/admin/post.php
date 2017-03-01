@@ -200,77 +200,77 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Calories', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_cal', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'calories', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_prot' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Protein', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_prot', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of protein', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_fib' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Fiber', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fib', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of fiber', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_carb' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Carbohydrates', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_carb', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of carbohydrates', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sugar' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Sugar', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sugar', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of sugar', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sod' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Sodium', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sod', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'milligrams of sodium', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sat_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Saturated Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sat_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of saturated fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_unsat_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Unsaturated Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_unsat_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of unsaturated fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_trans_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Trans Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_trans_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'grams of trans fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_chol' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Cholesterol', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_chol', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'milligrams of cholesterol', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				/*
