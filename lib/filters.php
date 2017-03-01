@@ -181,22 +181,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$def_opts = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
 
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_((prep|cook|total)_(days|hours|mins|secs)|calories)$/', $opts ) as $key => $value ) {
+			// check for default recipe values
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_((prep|cook|total)_(days|hours|mins|secs)|calories)$/', 
+				$opts ) as $key => $value ) {
 				$opts[$key] = (int) $value;
 				if ( $opts[$key] === $def_opts[$key] )
 					unset( $opts[$key] );
 			}
 
-			// renumber recipe ingredients
-			$recipe_ingredients = array();
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_ingredient_[0-9]+$/', $opts ) as $key => $value ) {
-				unset( $opts[$key] );
-				if ( ! empty( $value ) )
-					$recipe_ingredients[] = $value;
-			}
-			foreach ( $recipe_ingredients as $num => $value )
-				$opts['schema_recipe_ingredient_'.$num] = $value;
-
+			// if the review rating is 0, remove the review rating options
 			if ( empty( $opts['schema_review_rating'] ) ) {
 				foreach ( array( 
 					'schema_review_rating',
@@ -204,6 +197,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'schema_review_rating_to',
 				) as $key )
 					unset( $opts[$key] );
+			// if we have a review rating, then make sure we have a from/to as well
 			} else {
 				foreach ( array( 
 					'schema_review_rating_from',
@@ -338,6 +332,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_recipe_ingredient':
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_instruction':
+					$text = __( 'A list of instructions for this recipe (example: "beat eggs", "add and mix flour", etc.).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_review_item_type':
 					$text = __( 'Select a Schema type that best describes the subject being reviewed.', 'wpsso-schema-json-ld' );

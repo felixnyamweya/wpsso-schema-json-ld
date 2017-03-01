@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.12.3-1',	// plugin version
+					'version' => '1.13.0-dev3',	// plugin version
 					'opt_version' => '8',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.40.0-1',
+						'min_version' => '3.40.2-dev3',
 					),
 					'img' => array(
 						'icon_small' => 'images/icon-128x128.png',
@@ -90,8 +90,12 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'aggregaterating' => '(code) Property Aggregate Rating',
 								'review' => '(code) Property Reviews',
 							),
+							'recipe' => array(
+								'wprecipemaker' => '(plugin) WP Recipe Maker',
+								'wpultimaterecipe' => '(plugin) WP Ultimate Recipe',
+							),
 							'review' => array(
-								'wppr' => '(plugin) WP Product Review',
+								'wpproductreview' => '(plugin) WP Product Review',
 							),
 						),
 					),
