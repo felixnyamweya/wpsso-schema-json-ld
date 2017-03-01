@@ -45,6 +45,7 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 			self::do_multisite( $sitewide, array( &$this, 'deactivate_plugin' ) );
 		}
 
+		// called from uninstall.php for network or single site
 		public static function network_uninstall() {
 			$sitewide = true;
 
@@ -66,17 +67,20 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 		}
 
 		private function activate_plugin() {
-			$lca = 'wpssojson';
-			$version = WpssoJsonConfig::$cf['plugin'][$lca]['version'];	// only our config
+			$version = WpssoJsonConfig::$cf['plugin']['wpssojson']['version'];	// only our config
 			if ( class_exists( 'WpssoUtil' ) )
-				WpssoUtil::save_all_times( $lca, $version );
+				WpssoUtil::save_all_times( 'wpssojson', $version );
 			else WpssoJson::required_notice( true );			// $deactivate = true
 		}
 
 		private function deactivate_plugin() {
+			// nothing to do
 		}
 
 		private static function uninstall_plugin() {
+			delete_post_meta_by_key( '_wpsso_wpproductreview' );	// re-created automatically
+			delete_post_meta_by_key( '_wpsso_wprecipemaker' );	// re-created automatically
+			delete_post_meta_by_key( '_wpsso_wpultimaterecipe' );	// re-created automatically
 		}
 	}
 }
