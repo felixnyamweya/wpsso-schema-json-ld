@@ -146,6 +146,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_ingredient':
 				case 'schema_recipe_instruction':
 				case 'schema_review_item_name':
+				case 'schema_recipe_nutri_serv':
 					return 'one_line';
 					break;
 				case 'schema_type':
@@ -164,7 +165,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_total_hours':
 				case 'schema_recipe_total_mins':
 				case 'schema_recipe_total_secs':
-				case 'schema_recipe_calories':
+				case 'schema_recipe_nutri_cal':
+				case 'schema_recipe_nutri_prot':
+				case 'schema_recipe_nutri_fib':
+				case 'schema_recipe_nutri_carb':
+				case 'schema_recipe_nutri_sugar':
+				case 'schema_recipe_nutri_sod':
+				case 'schema_recipe_nutri_fat':
+				case 'schema_recipe_nutri_sat_fat':
+				case 'schema_recipe_nutri_unsat_fat':
+				case 'schema_recipe_nutri_chol':
 				case 'schema_review_rating':
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
@@ -264,7 +274,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_total_mins' => 0,	// Recipe Total Time (Mins)
 				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
 				'schema_recipe_yield' => '',		// Recipe Yield
-				'schema_recipe_calories' => 0,		// Recipe Total Calories
+				'schema_recipe_nutri_serv' => '',	// Serving Size
+				'schema_recipe_nutri_cal' => 0,		// Calories
+				'schema_recipe_nutri_prot' => 0,	// Protein
+				'schema_recipe_nutri_fib' => 0,		// Fiber
+				'schema_recipe_nutri_carb' => 0,	// Carbohydrates
+				'schema_recipe_nutri_sugar' => 0,	// Sugar
+				'schema_recipe_nutri_sod' => 0,		// Sodium
+				'schema_recipe_nutri_fat' => 0,		// Fat
+				'schema_recipe_nutri_trans_fat' => 0,	// Trans Fat
+				'schema_recipe_nutri_sat_fat' => 0,	// Saturated Fat
+				'schema_recipe_nutri_unsat_fat' => 0,	// Unsaturated Fat
+				'schema_recipe_nutri_chol' => 0,	// Cholesterol
 				'schema_review_item_type' => (		// Reviewed Item Type
 					empty( $this->p->options['schema_review_item_type'] ) ?
 						'none' : $this->p->options['schema_review_item_type']
@@ -325,8 +346,41 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_yield':
 					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
 				 	break;
-				case 'tooltip-meta-schema_recipe_calories':
-					$text = __( 'The total number of calories for this recipe (all servings).', 'wpsso-schema-json-ld' );
+				case 'tooltip-meta-schema_recipe_nutri_serv':
+					$text = __( 'The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_cal':
+					$text = __( 'The number of calories per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_prot':
+					$text = __( 'The number of grams of protein per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_fib':
+					$text = __( 'The number of grams of fiber per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_carb':
+					$text = __( 'The number of grams of carbohydrates per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_sugar':
+					$text = __( 'The number of grams of sugar per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_sod':
+					$text = __( 'The number of milligrams of sodium per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_fat':
+					$text = __( 'The number of grams of fat per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_trans_fat':
+					$text = __( 'The number of grams of trans fat per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_sat_fat':
+					$text = __( 'The number of grams of saturated fat per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_unsat_fat':
+					$text = __( 'The number of grams of unsaturated fat per serving.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_nutri_chol':
+					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_perf_id':
 					$text = __( 'Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );

@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_article' => array(
 					'tr_class' => $schema_type_tr_class['article'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Article Information', 'metabox title', 'nextgen-facebook' ),
+					'label' => _x( 'Article Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_pub_org_id' => array(
 					'tr_class' => $schema_type_tr_class['article'],
@@ -118,7 +118,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_event' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Event Information', 'metabox title', 'nextgen-facebook' ),
+					'label' => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_event_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -138,12 +138,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_recipe' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Recipe Information', 'metabox title', 'nextgen-facebook' ),
+					'label' => _x( 'Recipe Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_prep_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
 						$form->get_no_input_value( '0', 'short' ).' hours, '.
 						$form->get_no_input_value( '0', 'short' ).' mins, '.
@@ -152,7 +152,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_recipe_cook_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
 						$form->get_no_input_value( '0', 'short' ).' hours, '.
 						$form->get_no_input_value( '0', 'short' ).' mins, '.
@@ -161,35 +161,117 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_recipe_total_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
 						$form->get_no_input_value( '0', 'short' ).' hours, '.
 						$form->get_no_input_value( '0', 'short' ).' mins, '.
 						$form->get_no_input_value( '0', 'short' ).' secs',
 				),
-				'schema_recipe_calories' => array(
-					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Total Calories', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_calories',
-					'content' => $form->get_no_input_value( '', 'medium' ),
-				),
 				'schema_recipe_yield' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Quantity', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_recipe_ingredients' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_recipe_instructions' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Instructions', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_instructions',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_instructions', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
+				),
+				'subsection_recipe_nutrition' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Nutrition Information per Serving', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_serv' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Serving Size', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_serv', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name required' ),
+				),
+				'schema_recipe_nutri_cal' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Calories', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_cal', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'calories', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_prot' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Protein', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_prot', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of protein', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_fib' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Fiber', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fib', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of fiber', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_carb' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Carbohydrates', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_carb', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of carbohydrates', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_sugar' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Sugar', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sugar', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of sugar', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_sod' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Sodium', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sod', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'milligrams of sodium', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_fat' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Fat', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fat', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of fat', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_sat_fat' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Saturated Fat', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sat_fat', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of saturated fat', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_unsat_fat' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Unsaturated Fat', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_unsat_fat', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of unsaturated fat', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_trans_fat' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Trans Fat', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_trans_fat', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'grams of trans fat', 'option comment', 'wpsso-schema-json-ld' ),
+				),
+				'schema_recipe_nutri_chol' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Cholesterol', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_chol', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( 0, 'medium' ).' '.
+						_x( 'milligrams of cholesterol', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				/*
 				 * Schema Review
@@ -197,7 +279,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_review' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Review Information', 'metabox title', 'nextgen-facebook' ),
+					'label' => _x( 'Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_review_item_type' => array(
 					'tr_class' => $schema_type_tr_class['review'],
