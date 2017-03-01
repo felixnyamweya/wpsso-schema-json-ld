@@ -339,15 +339,28 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.0-dev3 (2017/03/02)**
+**Version 1.13.0-dev4 (2017/03/02)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
 	* Added support for the WP Ultimate Recipe plugin (Pro version).
+	* Added Nutrition Information per Serving options for the Schema Recipe type (Pro version):
+		* Serving Size
+		* Calories
+		* Protein
+		* Fiber
+		* Carbohydrates
+		* Sugar
+		* Sodium
+		* Fat
+		* Saturated Fat
+		* Unsaturated Fat
+		* Trans Fat
+		* Cholesterol
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed an incorrect textdomain value for a few option labels.
 * *Developer Notes*
 	* None
 
@@ -486,7 +499,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.0-dev3 =
+= 1.13.0-dev4 =
 
 (2017/02/26) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
