@@ -139,6 +139,22 @@
 <li>Recipe Quantity </li>
 <li>Recipe Ingredients </li>
 <li>Recipe Instructions </li>
+<li>Recipe Nutrition Information per Serving 
+
+<ul>
+<li>Serving Size</li>
+<li>Calories</li>
+<li>Protein</li>
+<li>Fiber</li>
+<li>Carbohydrates</li>
+<li>Sugar</li>
+<li>Sodium</li>
+<li>Fat</li>
+<li>Saturated Fat</li>
+<li>Unsaturated Fat</li>
+<li>Trans Fat</li>
+<li>Cholesterol</li>
+</ul></li>
 <li>(Review) Subject Type </li>
 <li>(Review) Subject Name </li>
 <li>(Review) Subject Webpage URL </li>

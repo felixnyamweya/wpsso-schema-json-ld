@@ -116,6 +116,19 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Recipe Quantity 
 	* Recipe Ingredients 
 	* Recipe Instructions 
+	* Recipe Nutrition Information per Serving 
+		* Serving Size
+		* Calories
+		* Protein
+		* Fiber
+		* Carbohydrates
+		* Sugar
+		* Sodium
+		* Fat
+		* Saturated Fat
+		* Unsaturated Fat
+		* Trans Fat
+		* Cholesterol
 	* (Review) Subject Type 
 	* (Review) Subject Name 
 	* (Review) Subject Webpage URL 
