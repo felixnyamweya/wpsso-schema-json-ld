@@ -98,6 +98,8 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 * WPSSO JSON Pro includes additional 3rd party integration modules to extend its Schema markup:
 	* **WPSSO JSON Pro Integrated 3rd Party Plugins**
 		* WP Product Review
+		* WP Recipe Maker
+		* WP Ultimate Recipe
 * Adds additional custom options in the Social Settings metabox:
 	* Schema Item Name (aka Title)
 	* Schema Description
@@ -339,11 +341,12 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.0-dev5 (2017/03/02)**
+**Version 1.13.0-rc1 (2017/03/02)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
 	* Added support for the WP Ultimate Recipe plugin (Pro version).
+	* Added a Recipe Instructions list in the Social Settings metabox (Pro version).
 	* Added Nutrition Information per Serving options for the Schema Recipe type (Pro version):
 		* Serving Size
 		* Calories
@@ -499,7 +502,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.0-dev5 =
+= 1.13.0-rc1 =
 
 (2017/03/02) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 

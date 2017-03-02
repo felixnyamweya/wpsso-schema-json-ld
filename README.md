@@ -117,6 +117,8 @@
 
 <ul>
 <li>WP Product Review</li>
+<li>WP Recipe Maker</li>
+<li>WP Ultimate Recipe</li>
 </ul></li>
 </ul></li>
 <li>Adds additional custom options in the Social Settings metabox:
