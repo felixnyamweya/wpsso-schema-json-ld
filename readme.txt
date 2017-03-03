@@ -354,7 +354,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.0-rc1 (2017/03/02)**
+**Version 1.13.0-rc2 (2017/03/03)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
@@ -515,9 +515,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.0-rc1 =
+= 1.13.0-rc2 =
 
-(2017/03/02) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
+(2017/03/03) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
 = 1.12.3-1 =
 
