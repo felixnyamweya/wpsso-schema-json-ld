@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.12.3-1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.13.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-02-24 17:05+0700\n"
-"PO-Revision-Date: 2017-02-24 17:05+0700\n"
+"POT-Creation-Date: 2017-03-02 15:52+0700\n"
+"PO-Revision-Date: 2017-03-02 16:01+0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,8 +22,8 @@ msgstr "Balises Schéma"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
-msgid "WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Business, Product, Recipe, Review, and much more)."
-msgstr "Extension WPSSO pour ajouter des balises Schéma JSON-LD (article, événement, entreprise locale, produit, recette, critique, et bien plus)."
+msgid "WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
+msgstr "Extension WPSSO pour balisage de Schéma JSON-LD pour articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
 
 #: lib/filters.php:129
 msgid "The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
@@ -41,71 +41,119 @@ msgstr "Si ce Schéma est une classification importante pour votre contenu, vous
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:307
+#: lib/filters.php:323
 msgid "Check this option if the Schema markup describes the main content (aka \"main entity\") of this webpage."
 msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
 
-#: lib/filters.php:310
+#: lib/filters.php:326
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
-#: lib/filters.php:313
+#: lib/filters.php:329
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
 msgstr "Sélectionnez un éditeur pour le type de Schéma d'Article et / ou de son sous-type (NewsArticle, TechArticle, etc)."
 
-#: lib/filters.php:316
+#: lib/filters.php:332
 msgid "A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types."
 msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d’élément Schéma Article et ses sous-types (NewsArticle, TechArticle, etc.)."
 
-#: lib/filters.php:319
+#: lib/filters.php:335
 msgid "Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionnez un organisateur pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:322
+#: lib/filters.php:338
 msgid "The total time it takes to prepare this recipe."
 msgstr "Le temps total qu’il faut pour la préparation cette recette."
 
-#: lib/filters.php:325
+#: lib/filters.php:341
 msgid "The total time it takes to cook this recipe."
 msgstr "Le temps total qu’il faut pour la cuisson de cette recette."
 
-#: lib/filters.php:328
+#: lib/filters.php:344
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr "Le temps total qu’il faut pour la préparation et la cuisson cette recette."
 
-#: lib/filters.php:331
+#: lib/filters.php:347
 msgid "The quantity or servings made by this recipe (example: \"5 servings\", \"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr "La quantité ou les portions fournie par cette recette (exemple : \"5 portions\", \"10 burgers\", etc.)."
 
-#: lib/filters.php:334
-msgid "The total number of calories for this recipe (all servings)."
-msgstr "Le nombre total de calories pour cette recette (toutes les portions)."
+#: lib/filters.php:350
+msgid "The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup."
+msgstr "La taille de portion en volume ou en masse. Une taille de portion est requise pour inclure les informations nutritionnelles dans le balisage Schéma de la recette."
 
-#: lib/filters.php:337
+#: lib/filters.php:353
+msgid "The number of calories per serving."
+msgstr "Le nombre de calories par portion."
+
+#: lib/filters.php:356
+msgid "The number of grams of protein per serving."
+msgstr "Le nombre de grammes de protéines par portion."
+
+#: lib/filters.php:359
+msgid "The number of grams of fiber per serving."
+msgstr "Le nombre de grammes de fibres par portion."
+
+#: lib/filters.php:362
+msgid "The number of grams of carbohydrates per serving."
+msgstr "Le nombre de grammes de glucides par portion."
+
+#: lib/filters.php:365
+msgid "The number of grams of sugar per serving."
+msgstr "Le nombre de grammes de sucre par portion."
+
+#: lib/filters.php:368
+msgid "The number of milligrams of sodium per serving."
+msgstr "Le nombre de milligrammes de sodium par portion."
+
+#: lib/filters.php:371
+msgid "The number of grams of fat per serving."
+msgstr "Le nombre de grammes de matières grasses par portion."
+
+#: lib/filters.php:374
+msgid "The number of grams of trans fat per serving."
+msgstr "Le nombre de grammes de gras trans par portion."
+
+#: lib/filters.php:377
+msgid "The number of grams of saturated fat per serving."
+msgstr "Le nombre de grammes de gras saturés par portion."
+
+#: lib/filters.php:380
+msgid "The number of grams of unsaturated fat per serving."
+msgstr "Le nombre de grammes de gras insaturée par portion."
+
+#: lib/filters.php:383
+msgid "The number of milligrams of cholesterol per serving."
+msgstr "Le nombre de milligrammes de cholestérol par portion."
+
+#: lib/filters.php:386
 msgid "Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc)."
 msgstr "Sélectionner un artiste pour le type de Schéma Événement et/ou son sous-type (Festival, MusicEvent, etc.)."
 
-#: lib/filters.php:340
+#: lib/filters.php:389
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:343
+#: lib/filters.php:392
+msgid "A list of instructions for this recipe (example: \"beat eggs\", \"add and mix flour\", etc.)."
+msgstr "Une liste d'instructions pour cette recette (exemple: \"battre les oeufs\", \"ajouter et mélanger la farine\", etc.)."
+
+#: lib/filters.php:395
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr "Sélectionnez le type de Schéma qui décrit le sujet de l'évaluation."
 
-#: lib/filters.php:346
+#: lib/filters.php:398
 msgid "The official and/or model name for the subject being reviewed."
 msgstr "Le nom officiel et/ou de modèle pour le sujet de l'évaluation."
 
-#: lib/filters.php:349
+#: lib/filters.php:401
 msgid "A webpage URL for the subject being reviewed."
 msgstr "L'URL de la page Web pour le sujet de l'évaluation."
 
-#: lib/filters.php:352
+#: lib/filters.php:404
 msgid "An image URL showing the subject being reviewed."
 msgstr "L'URL d'une image montrant le sujet de l'évaluation."
 
-#: lib/filters.php:355
+#: lib/filters.php:407
 msgid "A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5)."
 msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min/max de l'échelle (1 à 5 par défaut)."
 
@@ -201,55 +249,175 @@ msgstr "Temps total pour recette"
 
 #: lib/gpl/admin/post.php:172 lib/pro/admin/post.php:190
 msgctxt "option label"
-msgid "Recipe Total Calories"
-msgstr "Calories totales pour recette"
-
-#: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:196
-msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr "Quantité pour recette"
 
-#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:202
+#: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:196
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr "Ingrédients de recette"
 
-#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:212
+#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:202
+msgctxt "option label"
+msgid "Recipe Instructions"
+msgstr "Instructions pour la recette"
+
+#: lib/gpl/admin/post.php:191 lib/pro/admin/post.php:209
+msgctxt "metabox title"
+msgid "Nutrition Information per Serving"
+msgstr "Information nutritionnelle par portion"
+
+#: lib/gpl/admin/post.php:195 lib/pro/admin/post.php:213
+msgctxt "option label"
+msgid "Serving Size"
+msgstr "Taille de portion"
+
+#: lib/gpl/admin/post.php:201 lib/pro/admin/post.php:219
+msgctxt "option label"
+msgid "Calories"
+msgstr "Calories"
+
+#: lib/gpl/admin/post.php:204 lib/pro/admin/post.php:222
+msgctxt "option comment"
+msgid "calories"
+msgstr "calories"
+
+#: lib/gpl/admin/post.php:208 lib/pro/admin/post.php:226
+msgctxt "option label"
+msgid "Protein"
+msgstr "Protéine"
+
+#: lib/gpl/admin/post.php:211 lib/pro/admin/post.php:229
+msgctxt "option comment"
+msgid "grams of protein"
+msgstr "grammes de protéines"
+
+#: lib/gpl/admin/post.php:215 lib/pro/admin/post.php:233
+msgctxt "option label"
+msgid "Fiber"
+msgstr "Fibre"
+
+#: lib/gpl/admin/post.php:218 lib/pro/admin/post.php:236
+msgctxt "option comment"
+msgid "grams of fiber"
+msgstr "grammes de fibres"
+
+#: lib/gpl/admin/post.php:222 lib/pro/admin/post.php:240
+msgctxt "option label"
+msgid "Carbohydrates"
+msgstr "Glucides"
+
+#: lib/gpl/admin/post.php:225 lib/pro/admin/post.php:243
+msgctxt "option comment"
+msgid "grams of carbohydrates"
+msgstr "grammes de glucides"
+
+#: lib/gpl/admin/post.php:229 lib/pro/admin/post.php:247
+msgctxt "option label"
+msgid "Sugar"
+msgstr "Sucre"
+
+#: lib/gpl/admin/post.php:232 lib/pro/admin/post.php:250
+msgctxt "option comment"
+msgid "grams of sugar"
+msgstr "grammes de sucre"
+
+#: lib/gpl/admin/post.php:236 lib/pro/admin/post.php:254
+msgctxt "option label"
+msgid "Sodium"
+msgstr "Sodium"
+
+#: lib/gpl/admin/post.php:239 lib/pro/admin/post.php:257
+msgctxt "option comment"
+msgid "milligrams of sodium"
+msgstr "milligrammes de sodium"
+
+#: lib/gpl/admin/post.php:243 lib/pro/admin/post.php:261
+msgctxt "option label"
+msgid "Fat"
+msgstr "Gras"
+
+#: lib/gpl/admin/post.php:246 lib/pro/admin/post.php:264
+msgctxt "option comment"
+msgid "grams of fat"
+msgstr "grammes de matières grasses"
+
+#: lib/gpl/admin/post.php:250 lib/pro/admin/post.php:268
+msgctxt "option label"
+msgid "Saturated Fat"
+msgstr "Gras saturée"
+
+#: lib/gpl/admin/post.php:253 lib/pro/admin/post.php:271
+msgctxt "option comment"
+msgid "grams of saturated fat"
+msgstr "grammes de gras saturés"
+
+#: lib/gpl/admin/post.php:257 lib/pro/admin/post.php:275
+msgctxt "option label"
+msgid "Unsaturated Fat"
+msgstr "Grais insaturées"
+
+#: lib/gpl/admin/post.php:260 lib/pro/admin/post.php:278
+msgctxt "option comment"
+msgid "grams of unsaturated fat"
+msgstr "grammes de gras insaturés"
+
+#: lib/gpl/admin/post.php:264 lib/pro/admin/post.php:282
+msgctxt "option label"
+msgid "Trans Fat"
+msgstr "Gras trans"
+
+#: lib/gpl/admin/post.php:267 lib/pro/admin/post.php:285
+msgctxt "option comment"
+msgid "grams of trans fat"
+msgstr "grammes de gras trans"
+
+#: lib/gpl/admin/post.php:271 lib/pro/admin/post.php:289
+msgctxt "option label"
+msgid "Cholesterol"
+msgstr "Cholestérol"
+
+#: lib/gpl/admin/post.php:274 lib/pro/admin/post.php:292
+msgctxt "option comment"
+msgid "milligrams of cholesterol"
+msgstr "milligrammes de cholestérol"
+
+#: lib/gpl/admin/post.php:282 lib/pro/admin/post.php:300
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr "Informations sur l'évaluation"
 
-#: lib/gpl/admin/post.php:198 lib/pro/admin/post.php:216
+#: lib/gpl/admin/post.php:286 lib/pro/admin/post.php:304
 msgctxt "option label"
 msgid "Subject Type"
 msgstr "Type du sujet"
 
-#: lib/gpl/admin/post.php:204 lib/pro/admin/post.php:222
+#: lib/gpl/admin/post.php:292 lib/pro/admin/post.php:310
 msgctxt "option label"
 msgid "Subject Name"
 msgstr "Nom du sujet"
 
-#: lib/gpl/admin/post.php:210 lib/pro/admin/post.php:228
+#: lib/gpl/admin/post.php:298 lib/pro/admin/post.php:316
 msgctxt "option label"
 msgid "Subject Webpage URL"
 msgstr "URL de la page Web du sujet"
 
-#: lib/gpl/admin/post.php:216 lib/pro/admin/post.php:234
+#: lib/gpl/admin/post.php:304 lib/pro/admin/post.php:322
 msgctxt "option label"
 msgid "Subject Image URL"
 msgstr "URL de l'image du sujet"
 
-#: lib/gpl/admin/post.php:223 lib/pro/admin/post.php:241
+#: lib/gpl/admin/post.php:311 lib/pro/admin/post.php:329
 msgctxt "option label"
 msgid "Review Rating"
 msgstr "Note de l'évaluation"
 
-#: lib/gpl/admin/post.php:226 lib/pro/admin/post.php:245
+#: lib/gpl/admin/post.php:314 lib/pro/admin/post.php:333
 msgctxt "option comment"
 msgid "from"
 msgstr "de"
 
-#: lib/gpl/admin/post.php:228 lib/pro/admin/post.php:248
+#: lib/gpl/admin/post.php:316 lib/pro/admin/post.php:336
 msgctxt "option comment"
 msgid "to"
 msgstr "à"
@@ -349,11 +517,11 @@ msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr "Type par défaut de l'article évalué"
 
-#: wpsso-schema-json-ld.php:81
+#: wpsso-schema-json-ld.php:77
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'activer l'extension %4$s."
 
-#: wpsso-schema-json-ld.php:83
+#: wpsso-schema-json-ld.php:79
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
@@ -370,8 +538,8 @@ msgid "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
 msgstr "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
 
 #. Description of the plugin/theme
-msgid "WPSSO extension to add complete Schema JSON-LD markup (Article, Event, Local Business, Product, Recipe, Review, and much more)."
-msgstr "Extension WPSSO pour ajouter des balises Schéma JSON-LD (article, événement, entreprise locale, produit, recette, critique, et bien plus)."
+msgid "WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
+msgstr "Extension WPSSO pour balisage de Schéma JSON-LD pour articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
