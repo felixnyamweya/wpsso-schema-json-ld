@@ -142,6 +142,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return $type;
 
 			switch ( $key ) {
+				case 'schema_recipe_course':
+				case 'schema_recipe_cuisine':
 				case 'schema_recipe_yield':
 				case 'schema_recipe_ingredient':
 				case 'schema_recipe_instruction':
@@ -273,6 +275,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_total_hours' => 0,	// Recipe Total Time (Hours)
 				'schema_recipe_total_mins' => 0,	// Recipe Total Time (Mins)
 				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
+				'schema_recipe_course' => '',		// Recipe Course
+				'schema_recipe_cuisine' => '',		// Recipe Cuisine
 				'schema_recipe_yield' => '',		// Recipe Yield
 				'schema_recipe_nutri_serv' => '',	// Serving Size
 				'schema_recipe_nutri_cal' => '',	// Calories
@@ -342,6 +346,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_recipe_total_time':
 					$text = __( 'The total time it takes to prepare and cook this recipe.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_course':
+					$text = __( 'The course name for this recipe (example: Appetizer, Entr&eacute;e, Main Course / Main Dish, Dessert, Side-dish, etc.).', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_recipe_cuisine':
+					$text = __( 'The type of cuisine for this recipe (example: French, Indian, Italian, Japanese, Thai, etc.).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_yield':
 					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );

@@ -35,6 +35,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$perf_names = array( 'none' => '[None]' );
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
+			$days_sep = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
+			$hours_sep = ' '._x( 'hours', 'option comment', 'wpsso-schema-json-ld' ).', ';
+			$mins_sep = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
+			$secs_sep = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
 
 			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
 				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
@@ -140,38 +144,50 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Recipe Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_recipe_prep_time' => array(
+				'schema_recipe_course' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
-						$form->get_no_input_value( '0', 'short' ).' hours, '.
-						$form->get_no_input_value( '0', 'short' ).' mins, '.
-						$form->get_no_input_value( '0', 'short' ).' secs',
+					'label' => _x( 'Recipe Course', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_course', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
-				'schema_recipe_cook_time' => array(
+				'schema_recipe_cuisine' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
-						$form->get_no_input_value( '0', 'short' ).' hours, '.
-						$form->get_no_input_value( '0', 'short' ).' mins, '.
-						$form->get_no_input_value( '0', 'short' ).' secs',
-				),
-				'schema_recipe_total_time' => array(
-					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).' days, '.
-						$form->get_no_input_value( '0', 'short' ).' hours, '.
-						$form->get_no_input_value( '0', 'short' ).' mins, '.
-						$form->get_no_input_value( '0', 'short' ).' secs',
+					'label' => _x( 'Recipe Cuisine', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cuisine', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_recipe_yield' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Quantity', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
+				),
+				'schema_recipe_prep_time' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
+						$form->get_no_input_value( '0', 'short' ).$hours_sep.
+						$form->get_no_input_value( '0', 'short' ).$mins_sep.
+						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+				),
+				'schema_recipe_cook_time' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
+						$form->get_no_input_value( '0', 'short' ).$hours_sep.
+						$form->get_no_input_value( '0', 'short' ).$mins_sep.
+						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+				),
+				'schema_recipe_total_time' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
+						$form->get_no_input_value( '0', 'short' ).$hours_sep.
+						$form->get_no_input_value( '0', 'short' ).$mins_sep.
+						$form->get_no_input_value( '0', 'short' ).$secs_sep,
 				),
 				'schema_recipe_ingredients' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
