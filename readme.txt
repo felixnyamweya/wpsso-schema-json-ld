@@ -359,7 +359,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
 	* Added support for the WP Ultimate Recipe plugin (Pro version).
-	* Added two new recipe information options (Pro version):
+	* Added two new Recipe Information options (Pro version):
 		* Recipe Course
 		* Recipe Cuisine
 	* Added a Recipe Instructions list in the Social Settings metabox (Pro version).
