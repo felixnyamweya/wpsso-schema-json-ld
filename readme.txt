@@ -354,7 +354,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.0-rc3 (2017/03/04)**
+**Version 1.13.0-rc4 (2017/03/04)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
@@ -518,7 +518,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.0-rc3 =
+= 1.13.0-rc4 =
 
 (2017/03/04) Added several new recipe options in the Social Settings metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
