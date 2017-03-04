@@ -359,6 +359,9 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
 	* Added support for the WP Ultimate Recipe plugin (Pro version).
+	* Added two new recipe information options (Pro version):
+		* Recipe Course
+		* Recipe Cuisine
 	* Added a Recipe Instructions list in the Social Settings metabox (Pro version).
 	* Added Nutrition Information per Serving options for the Schema Recipe type (Pro version):
 		* Serving Size
@@ -517,7 +520,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.13.0-rc3 =
 
-(2017/03/04) Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
+(2017/03/04) Added several new recipe options in the Social Settings metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
 = 1.12.3-1 =
 
