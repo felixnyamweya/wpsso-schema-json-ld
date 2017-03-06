@@ -329,10 +329,12 @@ Use the Free version of WPSSO JSON with *both* the Free and Pro versions of WPSS
 
 == Screenshots ==
 
-01. (Pro version) Social Settings metabox on Posts, Pages, Taxonomy / Terms, and User editing pages &mdash; Allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage markup with online tools.
-02. (Pro version) A selection of Schema / Structured Data / SEO Markup options are shown based on the Schema Item Type. This example shows the Schema Item Type https://schema.org/Review, along with its reviewed item type (product, restaurant, book, etc.), the item URL, and the item rating.
-03. (Pro version) An example of WPSSO JSON's Schema Recipe markup on Pinterest.
-04. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type https://schema.org/TechArticle.
+01. (Pro version) The Social Settings metabox on posts, pages, taxonomy / terms, and user editing pages &mdash; The Social Settings metabox allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage with online tools.
+02. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Article.
+03. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Recipe.
+04. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Review.
+05. (Pro version) An example of the Schema Recipe markup on Pinterest.
+06. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type https://schema.org/TechArticle.
 
 == Changelog ==
 
