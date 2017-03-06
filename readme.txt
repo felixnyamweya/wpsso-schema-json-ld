@@ -383,7 +383,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* Fixed an incorrect textdomain value for a few option labels.
 * *Developer Notes*
-	* Refactored the WP Product Review plugin to standardize the code / methods with the two new recipe modules included in this version.
+	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
 **Version 1.12.3-1 (2017/02/26)**
 
