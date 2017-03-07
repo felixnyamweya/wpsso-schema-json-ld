@@ -10,7 +10,7 @@ Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
 Requires At Least: 3.8
-Tested Up To: 4.7.2
+Tested Up To: 4.7.3
 Stable Tag: 1.13.0-1
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
@@ -356,6 +356,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.13.1-dev1 (2017/03/07)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for the "itemCondition" property in the https://schema.org/Product markup (Pro version).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.13.0-1 (2017/03/06)**
 
 * *New Features*
@@ -519,6 +530,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.1-dev1 =
+
+(2017/03/07) Added support for the "itemCondition" property in the https://schema.org/Product markup (Pro version).
 
 = 1.13.0-1 =
 
