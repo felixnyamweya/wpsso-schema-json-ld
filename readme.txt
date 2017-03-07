@@ -356,7 +356,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.1-dev1 (2017/03/07)**
+**Version 1.13.1-dev2 (2017/03/07)**
 
 * *New Features*
 	* None
@@ -531,7 +531,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.1-dev1 =
+= 1.13.1-dev2 =
 
 (2017/03/07) Added support for the "itemCondition" property in the https://schema.org/Product markup (Pro version).
 
