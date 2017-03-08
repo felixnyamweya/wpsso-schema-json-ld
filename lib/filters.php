@@ -190,38 +190,43 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $type;
 		}
 
-		public function filter_save_post_options( $opts, $post_id, $rel_id, $mod ) {
+		public function filter_save_post_options( $md_opts, $post_id, $rel_id, $mod ) {
 
-			$def_opts = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
+			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
 
 			// check for default recipe values
 			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_'.
-				'(prep|cook|total)_(days|hours|mins|secs)$/', $opts ) as $key => $value ) {
-				$opts[$key] = (int) $value;
-				if ( $opts[$key] === $def_opts[$key] )
-					unset( $opts[$key] );
+				'(prep|cook|total)_(days|hours|mins|secs)$/',
+					$md_opts ) as $md_idx => $value ) {
+				$md_opts[$md_idx] = (int) $value;
+				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
+					unset( $md_opts[$md_idx] );
+				}
 			}
 
 			// if the review rating is 0, remove the review rating options
-			if ( empty( $opts['schema_review_rating'] ) ) {
+			if ( empty( $md_opts['schema_review_rating'] ) ) {
 				foreach ( array( 
 					'schema_review_rating',
 					'schema_review_rating_from',
 					'schema_review_rating_to',
-				) as $key )
-					unset( $opts[$key] );
+				) as $md_idx ) {
+					unset( $md_opts[$md_idx] );
+				}
 			// if we have a review rating, then make sure we have a from/to as well
 			} else {
 				foreach ( array( 
 					'schema_review_rating_from',
 					'schema_review_rating_to',
-				) as $key )
-					if ( empty( $opts[$key] ) && 
-						isset( $def_opts[$key] ) )
-							$opts[$key] = $def_opts[$key];
+				) as $md_idx ) {
+					if ( empty( $md_opts[$md_idx] ) && 
+						isset( $md_defs[$md_idx] ) ) {
+						$md_opts[$md_idx] = $md_defs[$md_idx];
+					}
+				}
 			}
 
-			return $opts;
+			return $md_opts;
 		}
 
 		public function filter_post_cache_transients( $transients, $mod, $sharing_url ) {
@@ -252,9 +257,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $transients;
 		}
 
-		public function filter_get_md_defaults( $def_opts, $mod ) {
+		public function filter_get_md_defaults( $md_defs, $mod ) {
 
-			return array_merge( $def_opts, array(
+			return array_merge( $md_defs, array(
 				'schema_is_main' => 1,
 				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
 				'schema_title' => '',
