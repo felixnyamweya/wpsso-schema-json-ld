@@ -32,7 +32,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 
-<p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> requires <em>either</em> the WPSSO Free or Pro plugin.<br/>
+<p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> requires the WPSSO Free or Pro plugin.<br/>
 The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-requires">WPSSO JSON Pro extension</a> requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-requires">WPSSO Pro plugin</a> as well.</p>
 </blockquote>
 
