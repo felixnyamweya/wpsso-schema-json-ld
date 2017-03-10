@@ -57,9 +57,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
 
-			foreach ( array( 'schema_desc', 'subsection_schema' ) as $key )
-				if ( isset( $table_rows[$key] ) )
+			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
+				if ( isset( $table_rows[$key] ) ) {
 					unset ( $table_rows[$key] );
+				}
+			}
 
 			$form_rows = array(
 				'subsection_schema' => array(
