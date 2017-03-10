@@ -302,10 +302,10 @@ The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=w
 The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.
 
 <blockquote>
-<p>The Free version of WPSSO JSON requires <em>either</em> the Free or Pro versions of WPSSO. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
+<p>The WPSSO JSON Free extension requires either the WPSSO Free or Pro plugin. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
 </blockquote>
 
-[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (includes a *No Risk 30 Day Refund Policy*).
+[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension here](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (all purchases include a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
