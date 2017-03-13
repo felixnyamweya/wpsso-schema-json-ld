@@ -191,8 +191,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( is_array( $comments ) ) {
 				foreach( $comments as $num => $cmt ) {
 					$comments_added = self::add_single_comment_data( $json_data['comment'], $mod, $cmt->comment_ID );
-					if ( ! $comments_added )
+					if ( ! $comments_added ) {
 						unset( $json_data['comment'] );
+					}
 				}
 			}
 		}
