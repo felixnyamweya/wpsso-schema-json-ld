@@ -361,6 +361,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.13.2-dev3 (2017/03/13)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added comments / replies for each review to the Schema Review markup.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.13.1-1 (2017/03/10)**
 
 * *New Features*
@@ -535,6 +546,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.2-dev3 =
+
+(2017/03/13) Added comments / replies for each review to the Schema Review markup.
 
 = 1.13.1-1 =
 
