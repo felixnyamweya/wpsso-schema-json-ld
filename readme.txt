@@ -361,7 +361,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.2-dev3 (2017/03/13)**
+**Version 1.13.2-rc1 (2017/03/13)**
 
 * *New Features*
 	* None
@@ -547,7 +547,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.2-dev3 =
+= 1.13.2-rc1 =
 
 (2017/03/13) Added comments / replies for each review to the Schema Review markup.
 
