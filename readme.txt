@@ -333,7 +333,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 == Screenshots ==
 
-01. (Pro version) The Social Settings metabox on posts, pages, taxonomy / terms, and user editing pages &mdash; The Social Settings metabox allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage with online tools.
+01. (Pro version) The Social Settings metabox on posts, pages, taxonomy / terms, and user editing pages &mdash; allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage with online tools.
 02. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Article.
 03. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Recipe.
 04. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Review.
