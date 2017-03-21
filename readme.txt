@@ -360,6 +360,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.13.3-dev1 (2017/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Organization" selector when the Schema Item Type is an Organization.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.13.2-1 (2017/03/15)**
 
 * *New Features*
@@ -545,6 +556,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.3-dev1 =
+
+(2017/03/21) Added a new "Organization" selector when the Schema Item Type is an Organization.
 
 = 1.13.2-1 =
 
