@@ -268,6 +268,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_headline' => '',		// Article Headline
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
+				'schema_org_org_id' => 'site',		// Organization
 				'schema_recipe_prep_days' => 0,		// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,	// Recipe Preperation Time (Hours)
 				'schema_recipe_prep_mins' => 0,		// Recipe Preperation Time (Mins)
@@ -342,6 +343,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_event_org_id':
 					$text = __( 'Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_org_org_id':
+					$text = __( 'Select an organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_prep_time':
 					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );

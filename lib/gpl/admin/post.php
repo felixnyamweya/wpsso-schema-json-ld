@@ -42,7 +42,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
 				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
-
 				$info = $this->p->cf['plugin']['wpssoorg'];
 				$org_req_msg = ' <em><a href="'.$info['url']['download'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
@@ -53,6 +52,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$schema_type_tr_class = array(
 				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'organization' => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
@@ -137,6 +137,20 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_event_perf_id', $perf_names, 'long_name' ).$org_req_msg,
+				),
+				/*
+				 * Schema Organization
+				 */
+				'subsection_organization' => array(
+					'tr_class' => $schema_type_tr_class['organization'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_org_org_id' => array(
+					'tr_class' => $schema_type_tr_class['organization'],
+					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_org_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
 				/*
 				 * Schema Recipe
