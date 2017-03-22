@@ -72,8 +72,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * depend on the Schema type (Article, Product, Place, etc.).
 		 */
 		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark( 'common json data filter' );
+			}
 
 			$lca = $this->p->cf['lca'];
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
@@ -104,8 +106,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$action_data = (array) apply_filters( $lca.'_json_prop_https_schema_org_potentialaction',
 				array(), $mod, $mt_og, $page_type_id, $is_main );
 
-			if ( ! empty( $action_data ) )
+			if ( ! empty( $action_data ) ) {
 				$ret['potentialAction'] = $action_data;
+			}
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark( 'common json data filter' );
+			}
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
@@ -268,7 +275,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_headline' => '',		// Article Headline
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
-				'schema_org_org_id' => 'site',		// Organization
+				'schema_org_org_id' => 'none',		// Organization
 				'schema_recipe_prep_days' => 0,		// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,	// Recipe Preperation Time (Hours)
 				'schema_recipe_prep_mins' => 0,		// Recipe Preperation Time (Mins)

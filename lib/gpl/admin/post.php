@@ -25,16 +25,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 		}
 
 		public function filter_post_text_rows( $table_rows, $form, $head, $mod ) {
-			if ( $this->p->debug->enabled )
-				$this->p->debug->mark();
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark( 'setup post form variables' );	// timer begin
+			}
 
 			$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
-			$org_req_msg = '';
-			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website', 'option value', 'wpsso-schema-json-ld' ) );
-			$perf_names = array( 'none' => '[None]' );
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 			$days_sep = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
@@ -42,27 +41,46 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$mins_sep = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
 			$secs_sep = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
 
+			/*
+			 * Organization variables.
+			 */
+			$org_req_msg = '';
+			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization',
+				'option value', 'wpsso-schema-json-ld' ) );
+			$perf_names = array( 'none' => '[None]' );
+
 			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
 				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
+
 				$info = $this->p->cf['plugin']['wpssoorg'];
 				$org_req_msg = ' <em><a href="'.$info['url']['download'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
 						$info['short'] ).'</a></em>';
 			}
 
-			// javascript hide/show classes for schema type rows
+			/*
+			 * Javascript classes to hide/show rows by selected schema type.
+			 */
 			$schema_type_tr_class = array(
 				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'local.business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization' => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
 
+			/*
+			 * Remove the default schema rows so we can append a whole new set.
+			 */
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
 				if ( isset( $table_rows[$key] ) ) {
 					unset ( $table_rows[$key] );
 				}
+			}
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark( 'setup post form variables' );	// timer end
 			}
 
 			$form_rows = array(
@@ -144,12 +162,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Organization
 				 */
 				'subsection_organization' => array(
-					'tr_class' => $schema_type_tr_class['organization'],
+					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local.business'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_org_org_id' => array(
-					'tr_class' => $schema_type_tr_class['organization'],
+					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local.business'],
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_org_org_id', $org_names, 'long_name' ).$org_req_msg,

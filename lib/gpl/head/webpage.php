@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			WpssoJsonSchema::add_comment_list_data( $ret, $mod );
 
-			return WpssoSchema::return_data_from_filter( $json_data, $ret );
+			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
 	}
 }
