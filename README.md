@@ -181,8 +181,15 @@
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
 <li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a> (includes hasPart property with posts)</li>
+<li>Schema Type <a href="https://schema.org/Game">schema.org/Game</a></li>
+<li>Schema Type <a href="https://schema.org/Movie">schema.org/Movie</a></li>
+<li>Schema Type <a href="https://schema.org/Painting">schema.org/Painting</a></li>
+<li>Schema Type <a href="https://schema.org/Photograph">schema.org/Photograph</a></li>
 <li>Schema Type <a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
 <li>Schema Type <a href="https://schema.org/Review">schema.org/Review</a></li>
+<li>Schema Type <a href="https://schema.org/Sculpture">schema.org/Sculpture</a></li>
+<li>Schema Type <a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a></li>
+<li>Schema Type <a href="https://schema.org/VisualArtwork">schema.org/VisualArtwork</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a>
 
 <ul>
@@ -237,12 +244,11 @@
 <li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
 
 <ul>
-<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
-<li>Schema Type <a href="https://schema.org/Hospital">schema.org/Hospital</a></li>
 <li>Schema Type <a href="https://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
 <li>Schema Type <a href="https://schema.org/Physician">schema.org/Physician</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/NGO">schema.org/NGO</a></li>
+<li>Schema Type <a href="https://schema.org/Organization">schema.org/Organization</a></li>
 <li>Schema Type <a href="https://schema.org/PerformingGroup">schema.org/PerformingGroup</a>
 
 <ul>
@@ -258,23 +264,68 @@
 </ul></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Person">schema.org/Person</a></li>
-<li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a> (<a href="https://wordpress.org/plugins/wpsso-plm/">WPSSO PLM</a> extension required to manage Place / Location information)
+<li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
-<li>Schema Type <a href="https://schema.org/CivicStructure">schema.org/CivicStructure</a></li>
+<li>Schema Type <a href="https://schema.org/CivicStructure">schema.org/CivicStructure</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/Airport">schema.org/Airport</a></li>
+<li>Schema Type <a href="https://schema.org/Aquarium">schema.org/Aquarium</a></li>
+<li>Schema Type <a href="https://schema.org/Beach">schema.org/Beach</a></li>
+<li>Schema Type <a href="https://schema.org/Bridge">schema.org/Bridge</a></li>
+<li>Schema Type <a href="https://schema.org/BusStation">schema.org/BusStation</a></li>
+<li>Schema Type <a href="https://schema.org/BusStop">schema.org/BusStop</a></li>
+<li>Schema Type <a href="https://schema.org/Cemetary">schema.org/Cemetary</a></li>
+<li>Schema Type <a href="https://schema.org/Crematorium">schema.org/Crematorium</a></li>
+<li>Schema Type <a href="https://schema.org/EventVenu">schema.org/EventVenu</a></li>
+<li>Schema Type <a href="https://schema.org/Park">schema.org/Park</a></li>
+<li>Schema Type <a href="https://schema.org/ParkingFacility">schema.org/ParkingFacility</a></li>
+<li>Schema Type <a href="https://schema.org/PerformingArtsTheater">schema.org/PerformingArtsTheater</a></li>
+<li>Schema Type <a href="https://schema.org/PlaceOfWorship">schema.org/PlaceOfWorship</a></li>
+<li>Schema Type <a href="https://schema.org/Playground">schema.org/Playground</a></li>
+<li>Schema Type <a href="https://schema.org/RVPark">schema.org/RVPark</a></li>
+<li>Schema Type <a href="https://schema.org/SubwayStation">schema.org/SubwayStation</a></li>
+<li>Schema Type <a href="https://schema.org/TaxiStand">schema.org/TaxiStand</a></li>
+<li>Schema Type <a href="https://schema.org/TrainStation">schema.org/TrainStation</a></li>
+<li>Schema Type <a href="https://schema.org/Zoo">schema.org/Zoo</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/Landform">schema.org/Landform</a></li>
 <li>Schema Type <a href="https://schema.org/LandmarksOrHistoricalBuildings">schema.org/LandmarksOrHistoricalBuildings</a></li>
 <li>Schema Type <a href="https://schema.org/LocalBusiness">schema.org/LocalBusiness</a>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/AnimalShelter">schema.org/AnimalShelter</a></li>
-<li>Schema Type <a href="https://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/AutoBodyShop">schema.org/AutoBodyShop</a></li>
+<li>Schema Type <a href="https://schema.org/AutoDealer">schema.org/AutoDealer</a></li>
+<li>Schema Type <a href="https://schema.org/AutoPartsStore">schema.org/AutoPartsStore</a></li>
+<li>Schema Type <a href="https://schema.org/AutoRental">schema.org/AutoRental</a></li>
+<li>Schema Type <a href="https://schema.org/AutoRepair">schema.org/AutoRepair</a></li>
+<li>Schema Type <a href="https://schema.org/AutoWash">schema.org/AutoWash</a></li>
+<li>Schema Type <a href="https://schema.org/GasStation">schema.org/GasStation</a></li>
+<li>Schema Type <a href="https://schema.org/MotorcycleDealer">schema.org/MotorcycleDealer</a></li>
+<li>Schema Type <a href="https://schema.org/MotorcycleRepair">schema.org/MotorcycleRepair</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/ChildCare">schema.org/ChildCare</a></li>
+<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
 <li>Schema Type <a href="https://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
-<li>Schema Type <a href="https://schema.org/EmergencyService">schema.org/EmergencyService</a></li>
+<li>Schema Type <a href="https://schema.org/EmergencyService">schema.org/EmergencyService</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/FireStation">schema.org/FireStation</a></li>
+<li>Schema Type <a href="https://schema.org/Hospital">schema.org/Hospital</a></li>
+<li>Schema Type <a href="https://schema.org/PoliceStation">schema.org/PoliceStation</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/EmploymentAgency">schema.org/EmploymentAgency</a></li>
-<li>Schema Type <a href="https://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a></li>
+<li>Schema Type <a href="https://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/MovieTheatre">schema.org/MovieTheatre</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/FinancialService">schema.org/FinancialService</a></li>
 <li>Schema Type <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
 
@@ -293,6 +344,7 @@
 <li>Schema Type <a href="https://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a>
 
 <ul>
+<li>Schema Type <a href="https://schema.org/Electrician">schema.org/Electrician</a></li>
 <li>Schema Type <a href="https://schema.org/GeneralContractor">schema.org/GeneralContractor</a></li>
 <li>Schema Type <a href="https://schema.org/HVACBusiness">schema.org/HVACBusiness</a></li>
 <li>Schema Type <a href="https://schema.org/HousePainter">schema.org/HousePainter</a></li>
@@ -304,15 +356,22 @@
 <li>Schema Type <a href="https://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
 <li>Schema Type <a href="https://schema.org/LegalService">schema.org/LegalService</a></li>
 <li>Schema Type <a href="https://schema.org/Library">schema.org/Library</a></li>
-<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
-<li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a></li>
+<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/Campground">schema.org/Campground</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
 <li>Schema Type <a href="https://schema.org/RadioStation">schema.org/RadioStation</a></li>
 <li>Schema Type <a href="https://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
 <li>Schema Type <a href="https://schema.org/RecyclingCenter">schema.org/RecyclingCenter</a></li>
 <li>Schema Type <a href="https://schema.org/SelfStorage">schema.org/SelfStorage</a></li>
 <li>Schema Type <a href="https://schema.org/ShoppingCenter">schema.org/ShoppingCenter</a></li>
-<li>Schema Type <a href="https://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a></li>
+<li>Schema Type <a href="https://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/StadiumOrArena">schema.org/StadiumOrArena</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/Store">schema.org/Store</a>
 
 <ul>
@@ -357,11 +416,15 @@
 <li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)
 
 <ul>
+<li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a>
+
+<ul>
 <li>Schema Type <a href="https://auto.schema.org/BusOrCoach">auto.schema.org/BusOrCoach</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Car">auto.schema.org/Car</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Motorcycle">auto.schema.org/Motorcycle</a></li>
 <li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
