@@ -360,12 +360,13 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.3-dev1 (2017/03/21)**
+**Version 1.13.3-dev2 (2017/03/22)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new "Organization" selector when the Schema Item Type is an Organization.
+	* Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
+	* Added the organization filter to the local business filter (local businesses are both places and organizations).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -557,9 +558,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.3-dev1 =
+= 1.13.3-dev2 =
 
-(2017/03/21) Added a new "Organization" selector when the Schema Item Type is an Organization.
+(2017/03/22) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
 
 = 1.13.2-1 =
 
