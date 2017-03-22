@@ -16,34 +16,40 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 		}
 
 		/*
 		 * Called by CollectionPage and ProfilePage
 		 */
 		public static function add_parts_data( &$json_data, $mod, $mt_og, $type_id, $is_main ) {
+
 			$wpsso =& Wpsso::get_instance();
 			$parts_added = 0;
 			$posts_mods = array();
 			
-			if ( $wpsso->debug->enabled )
+			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding parts data' );	// begin timer
+			}
 
 			/*
 			 * $type_id is false for parts to prevent recursion of main loop posts.
 			 */
 			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
-				if ( $wpsso->debug->enabled )
+				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts' );
+				}
 
 				if ( have_posts() ) {
 					while ( have_posts() ) {
 						the_post();
 						global $post;
-						if ( $wpsso->debug->enabled )
+						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
+						}
 						$posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
 					}
 					wp_reset_postdata();
@@ -53,30 +59,32 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					get_option( 'posts_per_page' ), $mod );
 
 				if ( count( $posts_mods ) > $posts_per_page ) {
-					if ( $wpsso->debug->enabled )
+					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'slicing posts_mods array from '.
 							count( $posts_mods ).' to '.$posts_per_page.' elements' );
+					}
 					$posts_mods = array_slice( $posts_mods, 0, $posts_per_page );
 				}
-
 			/*
 			 * Get first page of posts for this term / user archive page.
 			 * If the module is a post, then return all children of that post.
 			 */
 			} elseif ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {
-				if ( $wpsso->debug->enabled )
+				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts' );
-
+				}
 				$posts_mods = $mod['obj']->get_posts_mods( $mod );
 			}
 
 			if ( ! empty( $posts_mods ) ) {
-				if ( $wpsso->debug->enabled )
+				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
+				}
 
 				foreach ( $posts_mods as $post_mod ) {
-					if ( $wpsso->debug->enabled )
+					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// begin timer
+					}
 
 					// set the reference url for admin notices
 					if ( is_admin() ) {
@@ -87,22 +95,26 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$post_mt_og = array();
 					$post_mt_og = $wpsso->og->get_array( $post_mod, $post_mt_og );
 					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod,
-						$post_mt_og, false, true );	// $type_id = false, $is_main = true
+						$post_mt_og, false, true );	// $page_type_id = false, $is_main = true
 
 					// restore the previous reference url for admin notices
-					if ( is_admin() )
+					if ( is_admin() ) {
 						$wpsso->notice->set_reference_url( $previous_url );
+					}
 
 					$parts_added++;
 
-					if ( $wpsso->debug->enabled )
+					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// end timer
+					}
 				}
-			} elseif ( $wpsso->debug->enabled )
+			} elseif ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'posts_mods array is empty' );
+			}
 
-			if ( $wpsso->debug->enabled )
+			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding parts data' );	// end timer
+			}
 
 			return $parts_added;
 		}
@@ -137,10 +149,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 				if ( $prev_count > 0 ) {
 					$max['schema_img_max'] -= $prev_count;
-					if ( $wpsso->debug->enabled )
+					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( $prev_count.
 							' video preview images found (og_img_max adjusted to '.
 								$max['schema_img_max'].')' );
+					}
 				}
 			}
 
@@ -275,16 +288,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
-				if ( $wpsso->debug->enabled )
+				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );
+				}
 				return 0;	// return count of videos added
 			}
 
 			$media_url = SucomUtil::get_mt_media_url( $opts, $prefix );
 
 			if ( empty( $media_url ) ) {
-				if ( $ngfb->debug->enabled )
+				if ( $ngfb->debug->enabled ) {
 					$ngfb->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
+				}
 				return 0;	// return count of videos added
 			}
 
