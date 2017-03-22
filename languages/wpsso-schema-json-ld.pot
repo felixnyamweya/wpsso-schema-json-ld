@@ -82,8 +82,10 @@ msgstr ""
 
 #: lib/filters.php:355
 msgid ""
-"Select an organization for the Schema Organization item type and/or its sub-"
-"type (Airline, Corporation, School, etc)."
+"Select an <em>optional</em> organization for the Schema Organization item "
+"type and/or its sub-type (Airline, Corporation, School, etc). Select "
+"\"[None]\" if you prefer to use the current Social Settings for the "
+"organization details."
 msgstr ""
 
 #: lib/filters.php:358

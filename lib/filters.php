@@ -352,7 +352,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_org_org_id':
-					$text = __( 'Select an organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select an <em>optional</em> organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" if you prefer to use the current Social Settings for the organization details.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_prep_time':
 					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );
