@@ -402,7 +402,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.3-dev3 (2017/03/23)**
+**Version 1.13.3-b1 (2017/03/23)**
 
 * *New Features*
 	* None
@@ -600,7 +600,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.3-dev3 =
+= 1.13.3-b1 =
 
 (2017/03/23) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
 
