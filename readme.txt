@@ -5,7 +5,6 @@ Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
-Donate Link: https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-donate
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
