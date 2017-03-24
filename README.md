@@ -129,7 +129,16 @@
 <li>WP Ultimate Recipe</li>
 </ul></li>
 </ul></li>
-<li>Adds additional custom options in the Social Settings metabox:
+</ul>
+
+<div style="clear:both;"></div>
+
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
+</div>
+
+<ul>
+<li>Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
