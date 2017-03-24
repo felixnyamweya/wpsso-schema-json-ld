@@ -61,6 +61,11 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 
+<div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
+<p><img src="https://surniaulula.github.io/wpsso/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" width="100%" height="100%"/></p>
+</div>
+
 = Quick List of Features (Continued) =
 
 **WPSSO JSON Pro / Power-User Features**
@@ -402,7 +407,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.3-b1 (2017/03/23)**
+**Version 1.13.3-rc1 (2017/03/24)**
 
 * *New Features*
 	* None
@@ -600,9 +605,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.3-b1 =
+= 1.13.3-rc1 =
 
-(2017/03/23) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
+(2017/03/24) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
 
 = 1.13.2-1 =
 
