@@ -63,7 +63,9 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" 
+	width="100%" height="100%" alt="An example of the Schema Recipe markup
+	on Pinterest." /></p>
 </div>
 
 = Quick List of Features (Continued) =
@@ -110,7 +112,12 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"
+	width="100%" height="100%" alt="The Social Settings metabox on posts,
+	pages, taxonomy / terms, and user editing pages - allows you to modify
+	the default Schema type, title, headline (for Articles), description,
+	image, video, preview an example share, preview the meta tags, and
+	validate the webpage with online tools." /></p>
 </div>
 
 * Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
@@ -147,6 +154,15 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* (Review) Subject Webpage URL 
 	* (Review) Subject Image URL 
 	* Review Rating 
+
+<div style="clear:both;"></div>
+<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png" 
+	width="100%" height="100%" alt="Google's Structured Data Testing Tool
+	showing results for an example of the Schema Item Type
+	https://schema.org/TechArticle." /></p>
+</div>
+
 * Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
 		* Schema Type [schema.org/Article](https://schema.org/Article)

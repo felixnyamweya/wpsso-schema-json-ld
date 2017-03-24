@@ -69,7 +69,9 @@
 <div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" 
+    width="100%" height="100%" alt="An example of the Schema Recipe markup
+    on Pinterest." /></p>
 </div>
 
 <h4>Quick List of Features (Continued)</h4>
@@ -134,7 +136,12 @@
 <div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"
+    width="100%" height="100%" alt="The Social Settings metabox on posts,
+    pages, taxonomy / terms, and user editing pages - allows you to modify
+    the default Schema type, title, headline (for Articles), description,
+    image, video, preview an example share, preview the meta tags, and
+    validate the webpage with online tools." /></p>
 </div>
 
 <ul>
@@ -178,6 +185,18 @@
 <li>(Review) Subject Image URL </li>
 <li>Review Rating </li>
 </ul></li>
+</ul>
+
+<div style="clear:both;"></div>
+
+<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png" 
+    width="100%" height="100%" alt="Google's Structured Data Testing Tool
+    showing results for an example of the Schema Item Type
+    https://schema.org/TechArticle." /></p>
+</div>
+
+<ul>
 <li>Adds Schema / Structured Data / SEO JSON-LD markup for:
 
 <ul>
