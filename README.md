@@ -134,7 +134,7 @@
 <div style="clear:both;"></div>
 
 <div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
 </div>
 
 <ul>

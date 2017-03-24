@@ -110,7 +110,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <div style="clear:both;"></div>
 <div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png" width="100%" height="100%"/></p>
 </div>
 
 * Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
