@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: seo, json, json-ld, ld+json, schema, schema.org, auto.schema.org, structured data, rich snippets, news seo, local seo, local business, pinterest, article, product, products, event, events, rating, ratings, review, recipe, recipes, amp, co-authors, co-authors plus, video object, video schema, video seo, search engine optimization, optimize, knowledge graph, aggregate rating
 Contributors: jsmoriss
-Requires At Least: 3.8
+Requires At Least: 3.7
 Tested Up To: 4.7.3
 Stable Tag: 1.13.2-1
 
@@ -428,7 +428,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.3-rc1 (2017/03/24)**
+**Version 1.13.3-rc2 (2017/03/25)**
 
 * *New Features*
 	* None
@@ -626,9 +626,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.3-rc1 =
+= 1.13.3-rc2 =
 
-(2017/03/24) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
+(2017/03/25) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
 
 = 1.13.2-1 =
 
