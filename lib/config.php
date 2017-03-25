@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.13.3-rc1',	// plugin version
+					'version' => '1.13.3-rc2',	// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -124,9 +124,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once( WPSSOJSON_PLUGINDIR.'lib/register.php' );
-			require_once( WPSSOJSON_PLUGINDIR.'lib/filters.php' );
-			require_once( WPSSOJSON_PLUGINDIR.'lib/schema.php' );
+			require_once WPSSOJSON_PLUGINDIR.'lib/register.php';
+			require_once WPSSOJSON_PLUGINDIR.'lib/filters.php';
+			require_once WPSSOJSON_PLUGINDIR.'lib/schema.php';
 
 			add_filter( 'wpssojson_load_lib', array( 'WpssoJsonConfig', 'load_lib' ), 10, 3 );
 		}
@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			if ( $ret === false && ! empty( $filespec ) ) {
 				$filepath = WPSSOJSON_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
-					require_once( $filepath );
+					require_once $filepath;
 					if ( empty( $classname ) )
 						return SucomUtil::sanitize_classname( 'wpssojson'.$filespec, false );	// $underscore = false
 					else return $classname;
