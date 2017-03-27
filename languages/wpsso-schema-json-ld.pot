@@ -597,12 +597,12 @@ msgctxt "option label"
 msgid "Item Type for Search Results Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:124
+#: lib/submenu/schema-json-ld.php:125
 msgctxt "option label"
 msgid "Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:129
+#: lib/submenu/schema-json-ld.php:130
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""

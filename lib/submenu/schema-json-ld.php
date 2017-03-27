@@ -117,9 +117,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					}
 
 					$schema_by_ptn = '';
-					foreach ( $this->p->util->get_post_types() as $post_type )
+					foreach ( $this->p->util->get_post_types() as $post_type ) {
 						$schema_by_ptn .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
 							$schema_types, 'long_name' ).' for '.$post_type->label.'</p>'."\n";
+					}
 
 					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Item Type by Post Type',
 						'option label', 'wpsso-schema-json-ld' ), null, 'schema_type_for_ptn' ).
