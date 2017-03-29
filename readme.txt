@@ -428,6 +428,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.13.4-dev5 (2017/03/29)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a 'wpsso_og_add_product_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+
 **Version 1.13.3-1 (2017/03/25)**
 
 * *New Features*
@@ -625,6 +636,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.4-dev5 =
+
+(2017/03/29) Added a 'wpsso_og_add_product_mt_reviews' filter to return true for WPSSO v3.40.7-1.
 
 = 1.13.3-1 =
 
