@@ -437,7 +437,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a 'wpsso_og_add_product_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+	* Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
 
 **Version 1.13.3-1 (2017/03/25)**
 
@@ -639,7 +639,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.13.4-dev5 =
 
-(2017/03/29) Added a 'wpsso_og_add_product_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+(2017/03/29) Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
 
 = 1.13.3-1 =
 
