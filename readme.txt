@@ -72,7 +72,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 **WPSSO JSON Pro / Power-User Features**
 
 * Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
-* WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, ecommerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+* WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
 	* **WPSSO Pro Integrated 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
