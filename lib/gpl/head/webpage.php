@@ -106,13 +106,16 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
 
-			if ( empty( $ret['image'] ) ) {
-				if ( ! $mod['is_post'] || $mod['post_status'] === 'publish' ) {
-					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'creativework image value is empty and required' );
-					}
-					if ( $this->p->notice->is_admin_pre_notices() ) {	// skip if notices already shown
-						$this->p->notice->err( $this->p->msgs->get( 'notice-missing-schema-image' ) );
+			// check only published posts or other non-post objects
+			if ( $mod['post_status'] === 'publish' || ! $mod['is_post'] ) {
+				foreach ( array( 'image' ) as $prop_name ) {
+					if ( empty( $ret[$prop_name] ) ) {
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'creativework '.$prop_name.' value is empty and required' );
+						}
+						if ( $this->p->notice->is_admin_pre_notices() ) {	// skip if notices already shown
+							$this->p->notice->err( $this->p->msgs->get( 'notice-missing-schema-'.$prop_name ) );
+						}
 					}
 				}
 			}
