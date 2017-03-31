@@ -428,7 +428,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.13.4-rc1 (2017/03/30)**
+**Version 1.13.4-1 (2017/03/31)**
 
 * *New Features*
 	* None
@@ -637,9 +637,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.13.4-rc1 =
+= 1.13.4-1 =
 
-(2017/03/30) Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+(2017/03/31) Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
 
 = 1.13.3-1 =
 
