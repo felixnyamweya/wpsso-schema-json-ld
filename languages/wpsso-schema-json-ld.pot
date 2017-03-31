@@ -50,37 +50,37 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:340
+#: lib/filters.php:339
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:343
+#: lib/filters.php:342
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:346
+#: lib/filters.php:345
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:349
+#: lib/filters.php:348
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:352
+#: lib/filters.php:351
 msgid ""
 "Select an organizer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:355
+#: lib/filters.php:354
 msgid ""
 "Select an <em>optional</em> organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
@@ -88,121 +88,121 @@ msgid ""
 "organization details."
 msgstr ""
 
-#: lib/filters.php:358
+#: lib/filters.php:357
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:361
+#: lib/filters.php:360
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:364
+#: lib/filters.php:363
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:367
+#: lib/filters.php:366
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:370
+#: lib/filters.php:369
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:373
+#: lib/filters.php:372
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:376
+#: lib/filters.php:375
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:379
+#: lib/filters.php:378
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:382
+#: lib/filters.php:381
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:385
+#: lib/filters.php:384
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:388
+#: lib/filters.php:387
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:391
+#: lib/filters.php:390
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:394
+#: lib/filters.php:393
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:397
+#: lib/filters.php:396
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:400
+#: lib/filters.php:399
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:403
+#: lib/filters.php:402
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:406
+#: lib/filters.php:405
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:409
+#: lib/filters.php:408
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:412
+#: lib/filters.php:411
 msgid ""
 "Select a performer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:415
+#: lib/filters.php:414
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:418
+#: lib/filters.php:417
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:421
+#: lib/filters.php:420
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:424
+#: lib/filters.php:423
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:427
+#: lib/filters.php:426
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:430
+#: lib/filters.php:429
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:433
+#: lib/filters.php:432
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."

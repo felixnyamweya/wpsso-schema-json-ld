@@ -142,12 +142,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		public function filter_option_type( $type, $key ) {
-
-			if ( ! empty( $type ) )
+			if ( ! empty( $type ) ) {
 				return $type;
-			elseif ( strpos( $key, 'schema_' ) !== 0 )
+			} elseif ( strpos( $key, 'schema_' ) !== 0 ) {
 				return $type;
-
+			}
 			switch ( $key ) {
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
