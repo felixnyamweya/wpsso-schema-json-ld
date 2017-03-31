@@ -401,12 +401,12 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 == Screenshots ==
 
-01. (Pro version) The Social Settings metabox on posts, pages, taxonomy / terms, and user editing pages &mdash; allows you to modify the default Schema type, title, headline (for Articles), description, image, video, preview an example share, preview the meta tags, and validate the webpage with online tools.
-02. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Article.
-03. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Recipe.
-04. (Pro version) The available options in the Social Settings metabox for the Schema type https://schema.org/Review.
-05. (Pro version) An example of the Schema Recipe markup on Pinterest.
-06. (Pro version) Google's Structured Data Testing Tool showing results for an example of the Schema Item Type https://schema.org/TechArticle.
+01. WPSSO JSON Schema Markup settings page includes options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
+02. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Article (Pro version).
+03. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Recipe (Pro version).
+04. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Review (Pro version).
+05. WPSSO JSON example for the Schema type https://schema.org/Recipe on Pinterest (Pro version).
+06. WPSSO JSON example for the Schema type https://schema.org/TechArticle in Google's Structured Data Testing Tool (Pro version).
 
 == Changelog ==
 
