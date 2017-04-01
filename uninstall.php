@@ -15,7 +15,6 @@ require_once dirname( __FILE__ ).'/lib/config.php';
 
 WpssoJsonConfig::set_constants( $plugin_filepath );
 WpssoJsonConfig::require_libs( $plugin_filepath );	// includes the register.php class library
-
 WpssoJsonRegister::network_uninstall();
 
 ?>

@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 			self::do_multisite( $sitewide, array( &$this, 'deactivate_plugin' ) );
 		}
 
-		// called from uninstall.php for network or single site
+		// uninstall.php defines constants before calling network_uninstall()
 		public static function network_uninstall() {
 			$sitewide = true;
 
@@ -79,6 +79,7 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 			// nothing to do
 		}
 
+		// uninstall.php defines constants before calling network_uninstall()
 		private static function uninstall_plugin() {
 			delete_post_meta_by_key( '_wpsso_wpproductreview' );	// re-created automatically
 			delete_post_meta_by_key( '_wpsso_wprecipemaker' );	// re-created automatically
