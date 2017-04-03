@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.13.4-1',	// plugin version
+					'version' => '1.13.5-dev1',	// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -45,9 +45,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/update/',
 						'purchase' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-schema-json-ld/changelog/',
-						'codex' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/',
+						'docs' => 'https://wpsso.com/docs/plugins/wpsso-schema-json-ld/',
 						'faqs' => '',
-						'notes' => 'https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/',
+						'notes' => 'https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/',
 						'support' => 'http://wpsso-schema-json-ld.support.wpsso.com/support/tickets/new',
 					),
 					'lib' => array(
