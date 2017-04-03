@@ -360,9 +360,9 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 = Markup Examples =
 
-* [Markup Example for a Restaurant](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
-* [Markup Example for a Tech Article](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
-* [Markup Example for a WooCommerce Product](http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
+* [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
+* [Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
+* [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
 
 = Extends the WPSSO Plugin =
 
@@ -378,8 +378,8 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
+* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -391,13 +391,13 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Additional Documentation =
 
-* [Developer Resources](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/)
-	* [Filters](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/)
-		* [Filter Examples](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
-			* [Assign a Custom Field Value to a Schema Property](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
-			* [Modify the aggregateRating Property](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
-			* [Modify the VideoObject Name and Description](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
-		* [Filters by Name](https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/)
+* [Developer Resources](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/)
+	* [Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/)
+		* [Filter Examples](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
+			* [Assign a Custom Field Value to a Schema Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
+			* [Modify the aggregateRating Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
+			* [Modify the VideoObject Name and Description](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
+		* [Filters by Name](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/)
 
 == Screenshots ==
 
@@ -427,6 +427,17 @@ Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 Note that the production stage level can be incremented on occasion for simple text revisions and/or translation updates. See [PHP's version_compare()](http://php.net/manual/en/function.version-compare.php) documentation for additional information on "PHP-standardized" version numbering.
 
 = Changelog / Release Notes =
+
+**Version 1.13.5-dev1 (2017/04/03)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Updated the plugin documentation and FAQ URLs.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
 
 **Version 1.13.4-1 (2017/03/31)**
 
@@ -636,6 +647,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
 
 == Upgrade Notice ==
+
+= 1.13.5-dev1 =
+
+(2017/04/03) Updated the plugin documentation and FAQ URLs.
 
 = 1.13.4-1 =
 

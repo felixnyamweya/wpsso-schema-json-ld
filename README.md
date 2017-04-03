@@ -465,9 +465,9 @@
 <h4>Markup Examples</h4>
 
 <ul>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/">Markup Example for a Restaurant</a> using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).</li>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/">Markup Example for a Tech Article</a> published on surniaulula.com.</li>
-<li><a href="http://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/">Markup Example for a WooCommerce Product</a>, including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</li>
+<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/">Markup Example for a Restaurant</a> using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).</li>
+<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/">Markup Example for a Tech Article</a> published on surniaulula.com.</li>
+<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/">Markup Example for a WooCommerce Product</a>, including its name, description, images, videos, sku, price, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</li>
 </ul>
 
 <h4>Extends the WPSSO Plugin</h4>
@@ -486,8 +486,8 @@
 <h4>Install and Uninstall</h4>
 
 <ul>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the Plugin</a></li>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the Plugin</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
 </ul>
 
 
@@ -506,20 +506,20 @@
 <h4>Additional Documentation</h4>
 
 <ul>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
 
 <ul>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/">Filters</a>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/">Filters</a>
 
 <ul>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/">Filter Examples</a>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/">Filter Examples</a>
 
 <ul>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/">Assign a Custom Field Value to a Schema Property</a></li>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/">Assign a Custom Field Value to a Schema Property</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
 </ul></li>
-<li><a href="https://wpsso.com/codex/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/">Filters by Name</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/">Filters by Name</a></li>
 </ul></li>
 </ul></li>
 </ul>
