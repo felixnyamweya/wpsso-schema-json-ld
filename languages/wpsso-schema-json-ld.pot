@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.13.5-dev1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.13.5-dev2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -512,97 +512,97 @@ msgctxt "option comment"
 msgid "to"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:28
+#: lib/submenu/schema-json-ld.php:30
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:44
+#: lib/submenu/schema-json-ld.php:46
 msgctxt "option label"
 msgid "Website Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:50
+#: lib/submenu/schema-json-ld.php:52
 msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:56
+#: lib/submenu/schema-json-ld.php:58
 msgctxt "option label"
 msgid "Website Description"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:63
+#: lib/submenu/schema-json-ld.php:65
 msgctxt "option label"
 msgid "Organization Logo Image URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:67
+#: lib/submenu/schema-json-ld.php:69
 msgctxt "option label"
 msgid "Organization Banner (600x60) URL"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:71
+#: lib/submenu/schema-json-ld.php:73
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:76
+#: lib/submenu/schema-json-ld.php:78
 msgctxt "option comment"
 msgid "video preview images are enabled (and included first)"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:79
+#: lib/submenu/schema-json-ld.php:81
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:84
+#: lib/submenu/schema-json-ld.php:86
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:87
+#: lib/submenu/schema-json-ld.php:89
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:90
+#: lib/submenu/schema-json-ld.php:92
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:98
+#: lib/submenu/schema-json-ld.php:100
 msgctxt "option label"
 msgid "Item Type for Blog Front Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:99
+#: lib/submenu/schema-json-ld.php:101
 msgctxt "option label"
 msgid "Item Type for Static Front Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:100
+#: lib/submenu/schema-json-ld.php:102
 msgctxt "option label"
 msgid "Item Type for Archive Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:101
+#: lib/submenu/schema-json-ld.php:103
 msgctxt "option label"
 msgid "Item Type for User / Author Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:102
+#: lib/submenu/schema-json-ld.php:104
 msgctxt "option label"
 msgid "Item Type for Search Results Page"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:125
+#: lib/submenu/schema-json-ld.php:127
 msgctxt "option label"
 msgid "Item Type by Post Type"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:130
+#: lib/submenu/schema-json-ld.php:132
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""
