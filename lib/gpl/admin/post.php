@@ -44,18 +44,17 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/*
 			 * Organization variables.
 			 */
-			$org_req_msg = '';
 			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization',
 				'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 
-			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) &&
-				empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
-
-				$info = $this->p->cf['plugin']['wpssoorg'];
-				$org_req_msg = ' <em><a href="'.$info['url']['download'].'" target="_blank">'.
+			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) && empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
+				$org_info = $this->p->cf['plugin']['wpssoorg'];
+				$org_req_msg = ' <em><a href="'.$org_info['url']['about'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
-						$info['short'] ).'</a></em>';
+						$org_info['short'] ).'</a></em>';
+			} else {
+				$org_req_msg = '';
 			}
 
 			/*
