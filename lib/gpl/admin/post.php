@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			if ( ! empty( $this->p->cf['plugin']['wpssoorg'] ) && empty( $this->p->cf['plugin']['wpssoorg']['version'] ) ) {
 				$org_info = $this->p->cf['plugin']['wpssoorg'];
-				$org_req_msg = ' <em><a href="'.$org_info['url']['about'].'" target="_blank">'.
+				$org_req_msg = ' <em><a href="'.$org_info['url']['home'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
 						$org_info['short'] ).'</a></em>';
 			} else {
