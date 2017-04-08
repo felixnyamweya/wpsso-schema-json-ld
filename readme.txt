@@ -426,6 +426,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.13.6 (2017/04/08)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor revision to move URLs in the extension config to the main WPSSO plugin config.
+	* Dropped the package number from the production version string.
+
 **Version 1.13.5-1 (2017/04/05)**
 
 * *New Features*
@@ -560,91 +572,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added new add_comment_list_data() and add_single_comment_data() methods in the WpssoJsonSchema class.
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
-**Version 1.11.7-1 (2017/02/04)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a new "Default Reviewed Item Type" option to the settings page.
-* *Bugfixes*
-	* Fixed the missing help popups in the Social Settings metabox.
-* *Developer Notes*
-	* None
-
-**Version 1.11.6-1 (2017/01/08)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-**Version 1.11.5-1 (2016/12/12)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a check for maximum posts per page in WpssoJsonSchema add_parts_data() to limit the number of posts included.
-	* Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
-
-**Version 1.11.4-3 (2016/12/05)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added the product variation URL to notices when checking for product variation images.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.11.3-1 (2016/11/25)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the min_version_notice() method and moved variables to config class.
-
-**Version 1.11.2-1 (2016/11/17)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added date based archive URLs when clearing the post cache.
-	* Added a "Reference URL" link to notice messages when generating JSON-LD for archive pages (users and terms).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.11.1-1 (2016/11/12)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added an "Item Type for Blog Front Page" option for blog (non-static) front pages.
-	* Added a new 'hasPart' property with a list of posts for the Schema Blog, CollectionPage, ProfilePage, and SearchResultsPage markup.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a new WpssoJsonSchema add_parts_data() method to fetch posts for the current term / user archive page.
-	* Renamed the WpssoSchema get_head_item_type() method to get_mod_schema_type().
-	* Renamed the WpssoSchema get_item_type_context() method to get_schema_type_context().
-	* Added a hook to the 'wpsso_post_cache_transients' filter in order to clear the term transient cache on post update. 
-	* Updated 'wpsso_post_cache_transients' filter arguments for WPSSO v3.37.2-1.
-
 == Upgrade Notice ==
+
+= 1.13.6 =
+
+(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO plugin config.
 
 = 1.13.5-1 =
 
@@ -685,20 +617,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.12.0-1 =
 
 (2017/02/08) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
-
-= 1.11.7-1 =
-
-(2017/02/04) Added a new "Default Reviewed Item Type" option to the settings page. Fixed the missing help popups in the Social Settings metabox.
-
-= 1.11.6-1 =
-
-(2017/01/08) Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-= 1.11.5-1 =
-
-(2016/12/12) Added a check for maximum posts per page in WpssoJsonSchema add_parts_data() to limit the number of posts included. Added a potentialAction property and filter to the Schema for https://schema.org/Thing.
-
-= 1.11.4-3 =
-
-(2016/12/05) Added the product variation URL to notices when checking for product variation images.
 
