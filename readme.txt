@@ -16,7 +16,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 == Description ==
 
-<img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="128" height="128" class="plugin_icon">
+<img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="128" height="128" class="plugin-icon">
 
 <p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
