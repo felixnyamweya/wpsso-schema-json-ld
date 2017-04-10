@@ -13,7 +13,7 @@
 
 <h2>Description</h2>
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="128" height="128" class="readme-plugin-icon"></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
 <p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
@@ -65,13 +65,7 @@
 </ul></li>
 </ul>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" 
-    width="100%" height="100%" alt="An example of the Schema Recipe markup
-    on Pinterest." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png"></p>
 
 <h4>Quick List of Features (Continued)</h4>
 
@@ -132,16 +126,7 @@
 </ul></li>
 </ul>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"
-    width="100%" height="100%" alt="The Social Settings metabox on posts,
-    pages, taxonomy / terms, and user editing pages - allows you to modify
-    the default Schema type, title, headline (for Articles), description,
-    image, video, preview an example share, preview the meta tags, and
-    validate the webpage with online tools." /></p>
-</div>
+<p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"></p>
 
 <ul>
 <li>Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
@@ -186,14 +171,7 @@
 </ul></li>
 </ul>
 
-<div style="clear:both;"></div>
-
-<div style="text-align:center;width=100%;max-width:1200px;height:auto;margin:0 0 20px 0;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png" 
-    width="100%" height="100%" alt="Google's Structured Data Testing Tool
-    showing results for an example of the Schema Item Type
-    https://schema.org/TechArticle." /></p>
-</div>
+<p><img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png"></p>
 
 <ul>
 <li>Adds Schema / Structured Data / SEO JSON-LD markup for:

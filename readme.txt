@@ -16,7 +16,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 == Description ==
 
-<img src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png" width="128" height="128" class="readme-plugin-icon">
+<img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
 <p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
@@ -60,12 +60,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 
-<div style="clear:both;"></div>
-<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png" 
-	width="100%" height="100%" alt="An example of the Schema Recipe markup
-	on Pinterest." /></p>
-</div>
+<img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
 = Quick List of Features (Continued) =
 
@@ -109,15 +104,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 		* WP Recipe Maker
 		* WP Ultimate Recipe
 
-<div style="clear:both;"></div>
-<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"
-	width="100%" height="100%" alt="The Social Settings metabox on posts,
-	pages, taxonomy / terms, and user editing pages - allows you to modify
-	the default Schema type, title, headline (for Articles), description,
-	image, video, preview an example share, preview the meta tags, and
-	validate the webpage with online tools." /></p>
-</div>
+<img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png">
 
 * Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
 	* Schema Item Name (aka Title)
@@ -154,13 +141,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* (Review) Subject Image URL 
 	* Review Rating 
 
-<div style="clear:both;"></div>
-<div style="width:40%;min-width:256px;max-width:1200px;height:auto;float:right;margin:10px 0 40px 60px;">
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png" 
-	width="100%" height="100%" alt="Google's Structured Data Testing Tool
-	showing results for an example of the Schema Item Type
-	https://schema.org/TechArticle." /></p>
-</div>
+<img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 
 * Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
