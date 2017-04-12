@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.13.6
+ * Version: 1.13.7-a.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public $filters;		// WpssoJsonFilters
 
 		private static $instance;
-		private static $have_req_min = true;	// have at least minimum wpsso version
+		private static $have_req_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -105,48 +105,54 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		}
 
 		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) )
+			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
 				$this->p =& Wpsso::get_instance();
-			else $this->p =& $GLOBALS['wpsso'];
+			} else {
+				$this->p =& $GLOBALS['wpsso'];
+			}
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return;		// stop here
-
-			$this->p->is_avail['json'] = true;
-
-			foreach ( array( 'gpl', 'pro' ) as $lib ) {
-				foreach ( array( 'head', 'prop' ) as $sub ) {
-					if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
-						! is_array( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) )
+			if ( self::$have_req_min ) {
+				$this->p->is_avail['p_ext']['json'] = true;
+				foreach ( array( 'gpl', 'pro' ) as $lib ) {
+					foreach ( array( 'head', 'prop' ) as $sub ) {
+						if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
+							! is_array( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ) {
 							continue;
-					foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] as $id_key => $label ) {
-						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-						$this->p->is_avail[$sub][$id] = true;
+						}
+						foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] as $id_key => $label ) {
+							list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
+							$this->p->is_avail[$sub][$id] = true;
+						}
 					}
 				}
+			} else {
+				$this->p->is_avail['p_ext']['json'] = false;	// just in case
 			}
 		}
 
 		public function wpsso_init_objects() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return;		// stop here
-
-			$this->filters = new WpssoJsonFilters( $this->p );
-			$this->schema = new WpssoJsonSchema( $this->p );
+			if ( self::$have_req_min ) {
+				$this->filters = new WpssoJsonFilters( $this->p );
+				$this->schema = new WpssoJsonSchema( $this->p );
+			}
 		}
 
 		public function wpsso_init_plugin() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
-				return $this->min_version_notice();
+			if ( ! self::$have_req_min ) {
+				return $this->min_version_notice();	// stop here
+			}
 		}
 
 		private function min_version_notice() {
