@@ -630,7 +630,7 @@ msgid "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
+msgid "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
 msgstr ""
 
 #. Description of the plugin/theme

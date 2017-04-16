@@ -4,7 +4,7 @@
  * Plugin Slug: wpsso-schema-json-ld
  * Text Domain: wpsso-schema-json-ld
  * Domain Path: /languages
- * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/
+ * Plugin URI: https://wpsso.com/extend/plugins/wpsso-schema-json-ld/
  * Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
  * Author: JS Morisset
  * Author URI: https://surniaulula.com/
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public $filters;		// WpssoJsonFilters
 
 		private static $instance;
-		private static $have_req_min = true;	// have minimum wpsso version
+		private static $have_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
-				self::$have_req_min = false;
+				self::$have_min = false;
 				return $cf;
 			}
 
@@ -115,7 +115,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->p->is_avail['p_ext']['json'] = true;
 				foreach ( array( 'gpl', 'pro' ) as $lib ) {
 					foreach ( array( 'head', 'prop' ) as $sub ) {
@@ -139,7 +139,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->filters = new WpssoJsonFilters( $this->p );
 				$this->schema = new WpssoJsonSchema( $this->p );
 			}
@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! self::$have_req_min ) {
+			if ( ! self::$have_min ) {
 				return $this->min_version_notice();	// stop here
 			}
 		}
