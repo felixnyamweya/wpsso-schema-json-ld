@@ -407,6 +407,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.13.8-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
+
 **Version 1.13.7 (2017/04/16)**
 
 * *New Features*
