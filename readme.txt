@@ -407,7 +407,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.13.8-dev.1 (TBD)**
+**Version 1.13.8-dev.1 (2017/04/17)**
 
 * *New Features*
 	* None
@@ -416,7 +416,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
+	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.40.14.
 
 **Version 1.13.7 (2017/04/16)**
 
@@ -576,6 +576,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.13.8-dev.1 =
+
+(2017/04/17) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.40.14.
 
 = 1.13.7 =
 
