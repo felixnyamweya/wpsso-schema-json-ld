@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.13.8-dev.3',		// plugin version
+					'version' => '1.13.8-dev.4',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup (WPSSO JSON)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.40.14-dev.3',
+						'min_version' => '3.41.0-dev.4',
 					),
 					'img' => array(
 						'icons' => array(
