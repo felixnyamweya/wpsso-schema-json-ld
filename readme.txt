@@ -18,17 +18,17 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-<p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema / Structured Data / SEO markup</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+<p><strong>Provides comprehensive and <em>accurate</em> Schema / Structured Data / SEO markup for Google</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
-<p><strong>Adds comments and threaded replies to the Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.).</p>
-
-<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the preferred JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
 
 <p><strong>Override missing or innaccurate Schema markup in your theme templates.</strong></p>
 
-<p><strong>Includes all WooCommerce product images, variations, reviews, and ratings in the Schema Product markup!</strong> (Pro version)</p>
+<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
-<p><strong>Provides unique Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the standard JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
+<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.) to improve SEO ranking.</p>
+
+<p><strong>Include all WooCommerce product images, variations, reviews, and ratings in the Schema Product markup!</strong> (Pro version)</p>
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
