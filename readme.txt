@@ -416,7 +416,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.40.14.
+	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
 
 **Version 1.13.7 (2017/04/16)**
 
@@ -579,7 +579,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.13.8-dev.3 =
 
-(2017/04/18) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.40.14.
+(2017/04/18) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
 
 = 1.13.7 =
 
