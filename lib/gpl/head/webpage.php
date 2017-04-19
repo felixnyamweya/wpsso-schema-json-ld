@@ -83,11 +83,17 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *	publisher as https://schema.org/Organization
 			 */
-			$org_id = is_object( $mod['obj'] ) ?
-				$mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' ) : 'site';	// 'none', 'site', or number (including 0)
+			if ( is_object( $mod['obj'] ) ) {
+				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' );	// null, 'none', 'site', or number (including 0)
+				if ( $org_id === null ) {
+					$org_id = 'site';	// default
+				}
+			} else {
+				$org_id = 'site';	// default
+			}
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( 'publisher / organization id is '.( empty( $org_id ) ? 'empty' : $org_id ) );
+				$this->p->debug->log( 'publisher / organization id is '.$org_id );
 			}
 
 			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, $org_id, $org_logo_key, false );	// $list_element = false
