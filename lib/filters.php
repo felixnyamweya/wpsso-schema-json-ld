@@ -26,18 +26,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
-			// pinterest does not (currently) read json markup
-			switch ( $crawler_name ) {
-				case 'pinterest':
-					break;
-				default:
-					$this->p->util->add_plugin_filters( $this, array(
-						'add_schema_head_attributes' => '__return_false',
-						'add_schema_meta_array' => '__return_false',
-						'add_schema_noscript_array' => '__return_false',
-						'json_data_https_schema_org_thing' => 5,	// $json_data, $mod, $mt_og, $page_type_id, $is_main
-					), -100 );	// make sure we run first
-					break;
+			if ( $crawler_name === 'pinterest' && 
+				! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
+				// pinterest does not read json markup
+			} else {
+				$this->p->util->add_plugin_filters( $this, array(
+					'add_schema_head_attributes' => '__return_false',
+					'add_schema_meta_array' => '__return_false',
+					'add_schema_noscript_array' => '__return_false',
+					'json_data_https_schema_org_thing' => 5,
+				), -1000 );	// make sure we run first
 			}
 		
 			$this->p->util->add_plugin_filters( $this, array(
