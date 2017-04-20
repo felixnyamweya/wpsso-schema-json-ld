@@ -407,7 +407,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.13.8-b.1 (2017/04/20)**
+**Version 1.13.8-a.1 (2017/04/21)**
 
 * *New Features*
 	* None
@@ -577,9 +577,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.13.8-b.1 =
+= 1.13.8-a.1 =
 
-(2017/04/20) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
+(2017/04/21) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
 
 = 1.13.7 =
 
