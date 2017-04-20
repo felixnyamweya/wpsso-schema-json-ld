@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.13.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-04-15 11:23+0200\n"
-"PO-Revision-Date: 2017-04-15 11:23+0200\n"
+"POT-Creation-Date: 2017-04-20 10:16+0200\n"
+"PO-Revision-Date: 2017-04-20 10:16+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -586,8 +586,8 @@ msgid "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
 msgstr "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
 
 #. Plugin URI of the plugin/theme
-msgid "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
-msgstr "https://surniaulula.com/extend/plugins/wpsso-schema-json-ld/"
+msgid "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
+msgstr "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
 
 #. Description of the plugin/theme
 msgid "WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
