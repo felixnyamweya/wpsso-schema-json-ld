@@ -83,7 +83,8 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *	publisher as https://schema.org/Organization
 			 */
-			if ( is_object( $mod['obj'] ) ) {
+			if ( ! empty( $mod['obj'] ) ) {
+				// get_options() returns null if an index key is not found
 				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' );	// null, 'none', 'site', or number (including 0)
 				if ( $org_id === null ) {
 					$org_id = 'site';	// default
