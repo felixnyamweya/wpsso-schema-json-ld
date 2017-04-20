@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: article seo, local seo, news seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, pinterest, aggregate rating, rating, review, recipe, event, product, video schema, knowledge graph, search engine optimization, rich snippets
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.7.3
+Tested Up To: 4.7.4
 Stable Tag: 1.13.7
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
@@ -414,7 +414,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
 * *Developer Notes*
 	* Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
 
@@ -579,7 +579,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.13.8-rc.1 =
 
-(2017/04/21) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0.
+(2017/04/21) Renamed the SucomUtil crawler_name() calls to get_crawler_name() for WPSSO v3.41.0. Fixed a null value for the default publisher ID in Schema WebPage and BlogPosting markup.
 
 = 1.13.7 =
 
