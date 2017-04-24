@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	name
 			 *
 			 */
-			$ret['name'] = $this->p->webpage->get_title( $this->p->options['og_title_len'], 
+			$ret['name'] = $this->p->page->get_title( $this->p->options['og_title_len'], 
 				'...', $mod, true, false, true, 'schema_title' );
 
 			/*
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	description
 			 *
 			 */
-			$ret['description'] = $this->p->webpage->get_description( $this->p->options['schema_desc_len'], 
+			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], 
 				'...', $mod, true, false, true, 'schema_desc' );
 
 			$action_data = (array) apply_filters( $lca.'_json_prop_https_schema_org_potentialaction',
@@ -133,7 +133,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			if ( ! $this->p->check->aop( 'wpssojson', true, $this->p->is_avail['aop'] ) ) {
+			if ( ! $this->p->check->aop( 'wpssojson', true, $this->p->avail['*']['p_dir'] ) ) {
 				$warn_msg = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ).' '.sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ).' '.sprintf( __( 'If this Schema is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
 				$dis_key = 'no_filter_'.$filter_name.'_'.$mod['name'].'_'.$mod['id'];
 			}

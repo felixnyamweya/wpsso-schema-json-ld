@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 
-			if ( empty( $this->p->is_avail['p_ext']['org'] ) ) {
+			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
 				$org_req_msg = ' <em><a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
 						$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em>';
@@ -94,14 +94,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $title_max_len,
+					'content' => $form->get_no_input_value( $this->p->page->get_title( $title_max_len,
 						'...', $mod ), 'wide' ),
 				),
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_textarea_value( $this->p->webpage->get_description( $desc_max_len, 
+					'content' => $form->get_no_textarea_value( $this->p->page->get_description( $desc_max_len, 
 						'...', $mod ), '', '', $desc_max_len ),
 				),
 				'schema_is_main' => array(
@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Article Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->webpage->get_title( $headline_max_len, '...', $mod ), 'wide' ),
+					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
 				),
 				/*
 				 * Schema Event

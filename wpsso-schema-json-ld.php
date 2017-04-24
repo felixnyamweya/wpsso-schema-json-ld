@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.4
- * Version: 1.13.8
+ * Version: 1.13.9-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -116,7 +116,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			if ( self::$have_min ) {
-				$this->p->is_avail['p_ext']['json'] = true;
+				$this->p->avail['p_ext']['json'] = true;
 				foreach ( array( 'gpl', 'pro' ) as $lib ) {
 					foreach ( array( 'head', 'prop' ) as $sub ) {
 						if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
@@ -125,12 +125,12 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 						}
 						foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] as $id_key => $label ) {
 							list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-							$this->p->is_avail[$sub][$id] = true;
+							$this->p->avail[$sub][$id] = true;
 						}
 					}
 				}
 			} else {
-				$this->p->is_avail['p_ext']['json'] = false;	// just in case
+				$this->p->avail['p_ext']['json'] = false;	// just in case
 			}
 		}
 

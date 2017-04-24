@@ -56,7 +56,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				 * 	headline
 				 */
 				$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
-				$ret['headline'] = $this->p->webpage->get_title( $headline_max_len, '...', $mod );
+				$ret['headline'] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
 			} else {
 				$org_logo_key = 'org_logo_url';
