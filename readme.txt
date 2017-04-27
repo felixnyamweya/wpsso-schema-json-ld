@@ -407,16 +407,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.13.9-dev.1 (2017/04/24)**
+**Version 1.13.9-dev.2 (2017/04/27)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed inheritance of Schema sub-types when adding Organization markup.
 * *Developer Notes*
 	* Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
+	* Added a Schema type inheritance feature when adding markup for single Schema elements.
 
 **Version 1.13.8 (2017/04/22)**
 
@@ -588,9 +589,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.13.9-dev.1 =
+= 1.13.9-dev.2 =
 
-(2017/04/24) Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
+(2017/04/27) Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array.
 
 = 1.13.8 =
 
