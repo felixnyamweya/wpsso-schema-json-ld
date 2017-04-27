@@ -329,7 +329,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$video_type_url = 'https://schema.org/VideoObject';
 			}
 
-			$ret = self::get_schema_type_context( $video_type_url, 
+			$ret = WpssoSchema::get_schema_type_context( $video_type_url, 
 				array( 'url' => esc_url( $media_url ),
 			) );
 
