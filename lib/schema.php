@@ -215,8 +215,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$comments_added = 0;
 
 			if ( $comment_id && $cmt = get_comment( $comment_id ) ) {
+
 				$comments_added++;
-				$ret = WpssoSchema::get_schema_type_context( 'https://schema.org/Comment', array(
+
+				// if not adding a list element, inherit the existing schema type url (if one exists)
+				if ( ! $list_element && ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
+					if ( $ngfb->debug->enabled ) {
+						$ngfb->debug->log( 'using inherited schema type url = '.$comment_type_url );
+					}
+				} else {
+					$comment_type_url = 'https://schema.org/Comment';
+				}
+
+				$ret = WpssoSchema::get_schema_type_context( $comment_type_url, array(
 					'url' => get_comment_link( $cmt->comment_ID ),
 					'dateCreated' => mysql2date( 'c', $cmt->comment_date_gmt ),
 					'description' => get_comment_excerpt( $cmt->comment_ID ),
@@ -236,16 +247,21 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( is_array( $children ) ) {
 					foreach( $children as $num => $child ) {
 						$children_added = self::add_single_comment_data( $ret['comment'], $mod, $child->comment_ID );
-						if ( ! $children_added )
+						if ( ! $children_added ) {
 							unset( $ret['comment'] );
-						else $comments_added += $children_added;
+						} else {
+							$comments_added += $children_added;
+						}
 					}
 				}
 
-				if ( empty( $list_element ) )
+				if ( empty( $list_element ) ) {
 					$json_data = $ret;
-				else $json_data[] = $ret;	// add an item to the list
-			}	
+				} else {
+					$json_data[] = $ret;	// add an item to the list
+				}
+			}
+
 			return $comments_added;	// return count of comments added
 		}
 
@@ -285,6 +301,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *	)
 		 */
 		public static function add_single_video_data( &$json_data, $opts, $prefix = 'og:video', $list_element = true ) {
+
 			$wpsso =& Wpsso::get_instance();
 
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
@@ -303,11 +320,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return 0;	// return count of videos added
 			}
 
-			$ret = array(
-				'@context' => 'https://schema.org',
-				'@type' => 'VideoObject',
-				'url' => esc_url( $media_url ),
-			);
+			// if not adding a list element, inherit the existing schema type url (if one exists)
+			if ( ! $list_element && ( $video_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
+				if ( $ngfb->debug->enabled ) {
+					$ngfb->debug->log( 'using inherited schema type url = '.$video_type_url );
+				}
+			} else {
+				$video_type_url = 'https://schema.org/VideoObject';
+			}
+
+			$ret = self::get_schema_type_context( $video_type_url, 
+				array( 'url' => esc_url( $media_url ),
+			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
 				'name' => $prefix.':title',
@@ -325,9 +349,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) )	// list_element = false
 					unset( $ret['thumbnail'] );
 
-			if ( empty( $list_element ) )
+			if ( empty( $list_element ) ) {
 				$json_data = $ret;
-			else $json_data[] = $ret;	// add an item to the list
+			} else {
+				$json_data[] = $ret;	// add an item to the list
+			}
 
 			return 1;	// return count of videos added
 		}
