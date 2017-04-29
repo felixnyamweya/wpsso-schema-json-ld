@@ -407,7 +407,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.13.9-dev.4 (2017/04/28)**
+**Version 1.13.9-b.1 (2017/04/29)**
 
 * *New Features*
 	* None
@@ -590,9 +590,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.13.9-dev.4 =
+= 1.13.9-b.1 =
 
-(2017/04/28) Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array.
+(2017/04/29) Fixed inheritance of Schema sub-types when adding Organization markup. Code refactoring to rename the $is_avail array.
 
 = 1.13.8 =
 
