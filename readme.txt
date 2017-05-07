@@ -359,7 +359,7 @@ The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the 
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Install the Plugin (Free and Pro version)](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
 * [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
