@@ -33,7 +33,7 @@
 
 <h4>Quick List of Features</h4>
 
-<p><strong>WPSSO JSON Free / Basic Features</strong></p>
+<p><strong>WPSSO JSON Free / Core Features</strong></p>
 
 <ul>
 <li>Extends the features of WPSSO Free or Pro.</li>

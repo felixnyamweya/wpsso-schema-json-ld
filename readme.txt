@@ -36,7 +36,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 = Quick List of Features =
 
-**WPSSO JSON Free / Basic Features**
+**WPSSO JSON Free / Core Features**
 
 * Extends the features of WPSSO Free or Pro.
 * Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
