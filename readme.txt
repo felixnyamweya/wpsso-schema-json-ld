@@ -408,7 +408,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.14.0-dev.1 (2017/05/15)**
+**Version 1.14.0 (2017/05/15)**
 
 * *New Features*
 	* None
@@ -602,7 +602,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.14.0-dev.1 =
+= 1.14.0 =
 
 (2017/05/15) Added a new "Additional Type URL" option in the Social Settings metabox for posts, pages, and custom post types.
 
