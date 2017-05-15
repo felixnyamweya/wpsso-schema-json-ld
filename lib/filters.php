@@ -83,6 +83,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			/*
 			 * Property:
+			 *	additionalType
+			 */
+			if ( is_object( $mod['obj'] ) ) {
+				$add_type_url = $mod['obj']->get_options( $mod['id'], 'schema_add_type_url' );
+				if ( strpos( $add_type_url, '://' ) ) {	// just in case
+					$ret['additionalType'] = $add_type_url;
+				}
+			}
+
+			/*
+			 * Property:
 			 *	url
 			 */
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $mt_og, array( 'url' => 'og:url' ) );
@@ -343,6 +354,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_type':
 					$text = __( 'Select a Schema item type that best describes the main content of this webpage.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_add_type_url':
+					$text = sprintf( __( 'An additional type URL for the item, typically used to specify a more precise type from an external vocabulary in microdata syntax. For example, an additional type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/" target="_blank">http://www.productontology.org/</a>' );
 				 	break;
 				case 'tooltip-meta-schema_pub_org_id':
 					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );

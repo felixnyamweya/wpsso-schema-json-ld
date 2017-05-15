@@ -113,7 +113,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_type', $schema_types,
-						'long_name', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
+						'schema_type', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
+				),
+				'schema_add_type_url' => array(
+					'label' => _x( 'Additional Type URL', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_add_type_url', 'td_class' => 'blank',
+					'content' => $form->get_no_input( 'schema_add_type_url', 'schema_type' ),
 				),
 				/*
 				 * Schema Article
@@ -335,7 +340,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'long_name' ),
+					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'schema_type' ),
 				),
 				'schema_review_item_name' => array(
 					'tr_class' => $schema_type_tr_class['review'],

@@ -115,13 +115,13 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						}
 						$table_rows['schema_type_for_'.$type_name] = $tr.
 						$this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
-						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'long_name' ).'</td>';
+						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'schema_type' ).'</td>';
 					}
 
 					$schema_by_ptn = '';
 					foreach ( $this->p->util->get_post_types() as $post_type ) {
 						$schema_by_ptn .= '<p>'.$this->form->get_select( 'schema_type_for_'.$post_type->name,
-							$schema_types, 'long_name' ).' for '.$post_type->label.'</p>'."\n";
+							$schema_types, 'schema_type' ).' for '.$post_type->label.'</p>'."\n";
 					}
 
 					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Item Type by Post Type',
@@ -131,7 +131,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 
 						'option label', 'wpsso-schema-json-ld' ), null, 'schema_review_item_type' ).
-					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'long_name' ).'</td>';
+					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'schema_type' ).'</td>';
 
 					break;
 			}
