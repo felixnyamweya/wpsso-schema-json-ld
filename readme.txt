@@ -111,6 +111,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Schema Description
 	* Main Entity of Page
 	* Schema Item Type
+	* Additional Type URL
 	* Article Publisher
 	* Article Headline
 	* Event Organizer
@@ -407,6 +408,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.14.0-dev.1 (2017/05/15)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Additional Type URL" option in the Social Settings metabox for posts, pages, and custom post types.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.13.9 (2017/04/30)**
 
 * *New Features*
@@ -589,6 +601,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.14.0-dev.1 =
+
+(2017/05/15) Added a new "Additional Type URL" option in the Social Settings metabox for posts, pages, and custom post types.
 
 = 1.13.9 =
 

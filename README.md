@@ -136,6 +136,7 @@
 <li>Schema Description</li>
 <li>Main Entity of Page</li>
 <li>Schema Item Type</li>
+<li>Additional Type URL</li>
 <li>Article Publisher</li>
 <li>Article Headline</li>
 <li>Event Organizer</li>
