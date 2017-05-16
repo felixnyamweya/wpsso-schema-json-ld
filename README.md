@@ -28,7 +28,7 @@
 <p><strong>Include all WooCommerce product images, variations, reviews, and ratings in the Schema Product markup!</strong> (Pro version)</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 <h4>Quick List of Features</h4>
@@ -451,7 +451,7 @@
 
 <h4>Extends the WPSSO Plugin</h4>
 
-<p>The WordPress Social Sharing Optimization (WPSSO) plugin is required to use the WPSSO JSON extension.</p>
+<p>The WPSSO (WordPress Social Sharing Optimization) plugin is required to use the WPSSO JSON extension.</p>
 
 <blockquote>
 <p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> works with the WPSSO Free or Pro plugin. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
