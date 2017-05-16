@@ -348,7 +348,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 = Extends the WPSSO Plugin =
 
-The WPSSO (WordPress Social Sharing Optimization) plugin is required to use the WPSSO JSON extension.
+The WPSSO (Social Sharing Optimization) plugin is required to use the WPSSO JSON extension.
 
 <blockquote>
 <p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> works with the WPSSO Free or Pro plugin. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>

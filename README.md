@@ -451,7 +451,7 @@
 
 <h4>Extends the WPSSO Plugin</h4>
 
-<p>The WPSSO (WordPress Social Sharing Optimization) plugin is required to use the WPSSO JSON extension.</p>
+<p>The WPSSO (Social Sharing Optimization) plugin is required to use the WPSSO JSON extension.</p>
 
 <blockquote>
 <p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> works with the WPSSO Free or Pro plugin. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
