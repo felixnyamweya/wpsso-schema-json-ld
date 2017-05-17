@@ -83,9 +83,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$form_rows = array(
 				'subsection_schema' => array(
-					'td_class' => 'subsection',
-					'header' => 'h4',
-					'label' => _x( 'Google Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
 				),
 				/*
 				 * All Schema Types

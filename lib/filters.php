@@ -26,8 +26,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
-			if ( $crawler_name === 'pinterest' && 
-				! SucomUtil::get_const( 'NGFB_RICH_PIN_DISABLE' ) ) {
+			if ( $crawler_name === 'pinterest' ) {
 				// pinterest does not read json markup
 			} else {
 				$this->p->util->add_plugin_filters( $this, array(
