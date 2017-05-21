@@ -21,7 +21,7 @@
 
 <p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
 
-<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.) to improve SEO ranking.</p>
+<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.) for better Google SEO ranking.</p>
 
 <p><strong>Include JSON-LD markup for WooCommerce products</strong> &mdash; including images, variations (weight, size, color, etc), reviews, ratings, and more (Pro version).</p>
 
