@@ -1,8 +1,8 @@
-# Copyright (C) 2017 WPSSO Schema JSON-LD Markup (WPSSO JSON)
-# This file is distributed under the same license as the WPSSO Schema JSON-LD Markup (WPSSO JSON) package.
+# Copyright (C) 2017 WPSSO Schema JSON-LD Markup
+# This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup (WPSSO JSON) 1.14.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.14.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -639,7 +639,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Schema JSON-LD Markup (WPSSO JSON)"
+msgid "WPSSO Schema JSON-LD Markup"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
