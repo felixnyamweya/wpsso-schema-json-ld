@@ -31,7 +31,7 @@
 
 <h4>Quick List of Features</h4>
 
-<p><strong>WPSSO JSON Free / Basic Features</strong></p>
+<p><strong>WPSSO JSON Free / Standard Features</strong></p>
 
 <ul>
 <li>Extends the features of WPSSO Free or Pro.</li>
@@ -67,7 +67,7 @@
 
 <h4>Quick List of Features (Continued)</h4>
 
-<p><strong>WPSSO JSON Pro / Power-User Features</strong></p>
+<p><strong>WPSSO JSON Pro / Additional Features</strong></p>
 
 <ul>
 <li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
