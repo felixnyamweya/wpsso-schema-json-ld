@@ -1,5 +1,5 @@
 === WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup ===
-Plugin Name: WPSSO Schema JSON-LD Markup (WPSSO JSON)
+Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
@@ -29,7 +29,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 <p><strong>Include JSON-LD markup for WooCommerce products</strong> &mdash; including images, variations (weight, size, color, etc), reviews, ratings, and more (Pro version).</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup (WPSSO JSON) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 = Quick List of Features =
@@ -348,7 +348,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO JSON Free extension</a> works with the WPSSO Free or Pro plugin. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> (along with all WPSSO Pro extensions) requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro plugin</a> as well.</p>
 
-[Purchase the WPSSO Schema JSON-LD Markup (WPSSO JSON) Pro extension here](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (all purchases include a *No Risk 30 Day Refund Policy*).
+[Purchase the WPSSO Schema JSON-LD Markup Pro extension here](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (all purchases include a *No Risk 30 Day Refund Policy*).
 
 == Installation ==
 
