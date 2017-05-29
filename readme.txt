@@ -10,7 +10,7 @@ Tags: article seo, local seo, news seo, video seo, local business, json, json-ld
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.5
-Stable Tag: 1.14.0
+Stable Tag: 1.14.1-rc.1
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -402,6 +402,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.14.1-rc.1 (2017/05/29)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed detection of weight, width, height attributes for product variations (Pro version).
+* *Developer Notes*
+	* None
+
 **Version 1.14.0 (2017/05/15)**
 
 * *New Features*
@@ -595,6 +606,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.14.1-rc.1 =
+
+(2017/05/29) Fixed detection of weight, width, height attributes for product variations (Pro version).
 
 = 1.14.0 =
 
