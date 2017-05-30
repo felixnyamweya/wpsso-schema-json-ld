@@ -402,7 +402,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.14.1-rc.1 (2017/05/29)**
+**Version 1.14.1 (2017/05/29)**
 
 * *New Features*
 	* None
@@ -607,7 +607,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.14.1-rc.1 =
+= 1.14.1 =
 
 (2017/05/29) Fixed detection of weight, width, height attributes for product variations (Pro version).
 
