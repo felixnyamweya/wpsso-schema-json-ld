@@ -39,8 +39,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 		}
 
 		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $type_id, $is_main ) {
-			if ( $this->p->debug->enabled )
+
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
 			$ret = array();
 			$lca = $this->p->cf['lca'];

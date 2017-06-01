@@ -120,6 +120,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = null, $add_video = true ) {
+
 			$wpsso =& Wpsso::get_instance();
 			
 			/*
@@ -131,8 +132,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$prev_count = 0;
 			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
 
-			if ( empty( $size_name ) )
+			if ( empty( $size_name ) ) {
 				$size_name = $wpsso->cf['lca'].'-schema';
+			}
 
 			/*
 			 * Include video preview images first.
