@@ -402,7 +402,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.14.2-dev.1 (2017/05/31)**
+**Version 1.14.2-dev.2 (2017/06/02)**
 
 * *New Features*
 	* None
@@ -618,9 +618,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.14.2-dev.1 =
+= 1.14.2-dev.2 =
 
-(2017/05/31) Fixed an error from the Google validator by removing the 'video' property for Schema Products.
+(2017/06/02) Fixed an error from the Google validator by removing the 'video' property for Schema Products.
 
 = 1.14.1 =
 
