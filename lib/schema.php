@@ -347,9 +347,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'embedUrl' => $prefix.':embed_url',
 			) );
 
-			if ( ! empty( $opts[$prefix.':has_image'] ) )
-				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) )	// list_element = false
+			if ( ! empty( $opts[$prefix.':has_image'] ) ) {
+				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) ) {	// list_element = false
 					unset( $ret['thumbnail'] );
+				}
+			}
 
 			if ( empty( $list_element ) ) {
 				$json_data = $ret;

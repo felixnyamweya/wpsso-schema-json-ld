@@ -86,7 +86,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			if ( is_object( $mod['obj'] ) ) {
 				$add_type_url = $mod['obj']->get_options( $mod['id'], 'schema_add_type_url' );
-				if ( strpos( $add_type_url, '://' ) ) {	// just in case
+				if ( filter_var( $add_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
 					$ret['additionalType'] = $add_type_url;
 				}
 			}
