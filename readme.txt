@@ -41,8 +41,8 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 * Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](https://wpsso.com/) to retrieve co-author information).
 * Adds an additional "Schema Markup" settings page to the SSO menu:
 	* Website Alternate Name
-	* Organization Logo Image URL
-	* Organization Banner (600x60) URL
+	* Organization Logo URL
+	* Organization Banner URL
 	* Maximum Images to Include
 	* Schema Image Dimensions
 	* Maximum Description Length
@@ -401,6 +401,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
 = Changelog / Release Notes =
+
+**Version 1.15.0-dev.1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Localized the "Organization Logo URL" and "Organization Banner URL" option values.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
 
 **Version 1.14.3 (2017/06/07)**
 
