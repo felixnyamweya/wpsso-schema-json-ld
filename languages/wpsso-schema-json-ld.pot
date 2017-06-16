@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.14.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.15.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -547,12 +547,12 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:65
 msgctxt "option label"
-msgid "Organization Logo Image URL"
+msgid "Organization Logo URL"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:69
 msgctxt "option label"
-msgid "Organization Banner (600x60) URL"
+msgid "Organization Banner URL"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:73
