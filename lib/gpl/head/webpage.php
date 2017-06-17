@@ -99,6 +99,11 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->log( 'publisher / organization id is '.$org_id );
 			}
 
+		 	/*
+			 * $org_id can be 'none', 'site', or a number (including 0).
+		 	 * $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles.
+			 * do not provide localized option names - the method will fetch the localized values.
+			 */
 			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, $org_id, $org_logo_key, false );	// $list_element = false
 
 			/*
