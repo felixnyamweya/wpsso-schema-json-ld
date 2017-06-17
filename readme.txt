@@ -402,7 +402,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.0-dev.1 (TBD)**
+**Version 1.15.0-dev.1 (2017/06/17)**
 
 * *New Features*
 	* None
@@ -639,6 +639,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.15.0-dev.1 =
+
+(2017/06/17) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
 = 1.14.3 =
 
