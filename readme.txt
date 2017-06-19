@@ -402,7 +402,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.0-b.1 (2017/06/18)**
+**Version 1.15.0-rc.1 (2017/06/19)**
 
 * *New Features*
 	* None
@@ -640,9 +640,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.15.0-b.1 =
+= 1.15.0-rc.1 =
 
-(2017/06/18) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
+(2017/06/19) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
 = 1.14.3 =
 
