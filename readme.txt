@@ -10,7 +10,7 @@ Tags: article seo, local seo, news seo, video seo, local business, json, json-ld
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8
-Stable Tag: 1.14.3
+Stable Tag: 1.15.0
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -402,7 +402,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.0 (2017/06/19)**
+**Version 1.15.0 (2017/06/21)**
 
 * *New Features*
 	* None
@@ -642,7 +642,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.15.0 =
 
-(2017/06/19) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
+(2017/06/21) Localized the "Organization Logo URL" and "Organization Banner URL" option values.
 
 = 1.14.3 =
 
