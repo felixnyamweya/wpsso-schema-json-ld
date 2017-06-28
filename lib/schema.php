@@ -25,20 +25,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		/*
 		 * Called by CollectionPage and ProfilePage
 		 */
-		public static function add_parts_data( &$json_data, $mod, $mt_og, $type_id, $is_main ) {
+		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $prop_name = 'mentions' ) {
 
 			$wpsso =& Wpsso::get_instance();
-			$parts_added = 0;
+			$posts_added = 0;
 			$posts_mods = array();
 			
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->mark( 'adding parts data' );	// begin timer
+				$wpsso->debug->mark( 'adding posts data' );	// begin timer
 			}
 
 			/*
-			 * $type_id is false for parts to prevent recursion of main loop posts.
+			 * $page_type_id can be false to prevent recursion.
 			 */
-			if ( $type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
+			if ( $page_type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts' );
 				}
@@ -94,7 +94,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$post_mt_og = array();
 					$post_mt_og = $wpsso->og->get_array( $post_mod, $post_mt_og );
-					$json_data['hasPart'][] = $wpsso->schema->get_json_data( $post_mod,
+					$json_data[$prop_name][] = $wpsso->schema->get_json_data( $post_mod,
 						$post_mt_og, false, true );	// $page_type_id = false, $is_main = true
 
 					// restore the previous reference url for admin notices
@@ -102,7 +102,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->notice->set_reference_url( $previous_url );
 					}
 
-					$parts_added++;
+					$posts_added++;
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// end timer
@@ -113,10 +113,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->mark( 'adding parts data' );	// end timer
+				$wpsso->debug->mark( 'adding posts data' );	// end timer
 			}
 
-			return $parts_added;
+			return $posts_added;
 		}
 
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = null, $add_video = true ) {
@@ -181,8 +181,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Allow the video property to be skipped -- some schema types (organization, 
 			 * for example) do not include a video property.
 			 */
-			if ( $add_video && ! empty( $mt_og['og:video'] ) )
+			if ( $add_video && ! empty( $mt_og['og:video'] ) ) {
 				WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
+			}
 		}
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
