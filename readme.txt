@@ -152,7 +152,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 			* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 			* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
 		* Schema Type [schema.org/Book](https://schema.org/Book)
-		* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes hasPart property with posts)
+		* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
 		* Schema Type [schema.org/Game](https://schema.org/Game)
 		* Schema Type [schema.org/Movie](https://schema.org/Movie)
 		* Schema Type [schema.org/Painting](https://schema.org/Painting)
@@ -165,12 +165,12 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 		* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 			* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
 			* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
-			* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes hasPart property with posts)
+			* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes mentions property with posts)
 			* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
 			* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
-			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes hasPart property with posts)
+			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes mentions property with posts)
 			* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
-			* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes hasPart property with posts)
+			* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes mentions property with posts)
 		* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
 	* Schema Type [schema.org/Event](https://schema.org/Event)
 		* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
@@ -436,14 +436,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed the "hasPart" property for collection / profile / search / blog pages to "mentions".
+	* Renamed the "hasPart" property for collection / profile / search pages to "mentions" and for blog pages to "blogPost".
 	* Renamed the WpssoJsonSchema::add_parts_data() method to add_posts_data().
-	* Replaced the fifth argument to WpssoJsonSchema::add_posts_data() from $is_main to $prop_name (defaults to 'mentions').
+	* Replaced the fifth argument to WpssoJsonSchema::add_posts_data() from $is_main to $prop_name (defaults to "mentions").
 	* Renamed the following filters:
-		* 'wpsso_json_add_https_schema_org_collectionpage_parts' to 'wpsso_json_add_https_schema_org_collectionpage_posts'
-		* 'wpsso_json_add_https_schema_org_searchresultspage_parts' to 'wpsso_json_add_https_schema_org_searchresultspage_posts'
-		* 'wpsso_json_add_https_schema_org_profilepage_parts' to 'wpsso_json_add_https_schema_org_profilepage_posts'
-		* 'wpsso_json_add_https_schema_org_blog_parts' to 'wpsso_json_add_https_schema_org_blog_posts'
+		* 'wpsso_json_add_https_schema_org_collectionpage_parts' to 'wpsso_json_add_https_schema_org_collectionpage_mentions'
+		* 'wpsso_json_add_https_schema_org_searchresultspage_parts' to 'wpsso_json_add_https_schema_org_searchresultspage_mentions'
+		* 'wpsso_json_add_https_schema_org_profilepage_parts' to 'wpsso_json_add_https_schema_org_profilepage_mentions'
+		* 'wpsso_json_add_https_schema_org_blog_parts' to 'wpsso_json_add_https_schema_org_blog_blogpost'
 
 **Version 1.15.0 (2017/06/21)**
 
@@ -685,7 +685,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.15.1-dev.5 =
 
-(2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel. Renamed the "hasPart" property for collection / profile / search / blog pages to "mentions".
+(2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel. Renamed the "hasPart" property for collection / profile / search pages to "mentions" and for blog pages to "blogPost".
 
 = 1.15.0 =
 
