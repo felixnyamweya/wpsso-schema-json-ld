@@ -432,8 +432,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Renamed the schema.org 'product' filter to 'individualproduct'. 
-	* Renamed the Schema for product offers from IndividualProduct to ProductModel.
+	* Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -679,7 +678,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.15.1-dev.4 =
 
-(2017/06/28) Renamed the schema.org 'product' filter to 'individualproduct'. Renamed the Schema for product offers from IndividualProduct to ProductModel.
+(2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel.
 
 = 1.15.0 =
 
