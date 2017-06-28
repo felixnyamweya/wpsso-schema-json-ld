@@ -65,7 +65,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'organization' => '(code) Schema Type Organization (organization)',
 								'person' => '(code) Schema Type Person (person)',
 								'place' => '(code) Schema Type Place (place)',
-								'individualproduct' => '(code) Schema Type Individual Product (individual.product)',
+								'product' => '(code) Schema Type Individual Product (product)',
 								'profilepage' => '(code) Schema Type Profile Page (webpage.profile)',
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
