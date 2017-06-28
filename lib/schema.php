@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		/*
-		 * Called by CollectionPage and ProfilePage
+		 * Called by Blog ($prop_name = 'blogPost'), CollectionPage, ProfilePage, and SearchResultsPage.
 		 */
 		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $prop_name = 'mentions' ) {
 
