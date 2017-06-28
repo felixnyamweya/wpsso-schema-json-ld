@@ -427,7 +427,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.1-dev.4 (2017/06/28)**
+**Version 1.15.1-dev.5 (2017/06/28)**
 
 * *New Features*
 	* None
@@ -436,7 +436,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Renamed the "hasPart" property for collection / profile / search / blog pages to "mentions".
+	* Renamed the WpssoJsonSchema::add_parts_data() method to add_posts_data().
+	* Replaced the fifth argument to WpssoJsonSchema::add_posts_data() from $is_main to $prop_name (defaults to 'mentions').
+	* Renamed the following filters:
+		* 'wpsso_json_add_https_schema_org_collectionpage_parts' to 'wpsso_json_add_https_schema_org_collectionpage_posts'
+		* 'wpsso_json_add_https_schema_org_searchresultspage_parts' to 'wpsso_json_add_https_schema_org_searchresultspage_posts'
+		* 'wpsso_json_add_https_schema_org_profilepage_parts' to 'wpsso_json_add_https_schema_org_profilepage_posts'
+		* 'wpsso_json_add_https_schema_org_blog_parts' to 'wpsso_json_add_https_schema_org_blog_posts'
 
 **Version 1.15.0 (2017/06/21)**
 
@@ -676,9 +683,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.15.1-dev.4 =
+= 1.15.1-dev.5 =
 
-(2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel.
+(2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel. Renamed the "hasPart" property for collection / profile / search / blog pages to "mentions".
 
 = 1.15.0 =
 
