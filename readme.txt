@@ -427,6 +427,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.15.1-dev.4 (2017/06/28)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Renamed the schema.org 'product' filter to 'individualproduct'. 
+	* Renamed the Schema for product offers from IndividualProduct to ProductModel.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.15.0 (2017/06/21)**
 
 * *New Features*
@@ -664,6 +676,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.15.1-dev.4 =
+
+(2017/06/28) Renamed the schema.org 'product' filter to 'individualproduct'. Renamed the Schema for product offers from IndividualProduct to ProductModel.
 
 = 1.15.0 =
 
