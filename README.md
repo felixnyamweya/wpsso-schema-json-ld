@@ -371,6 +371,34 @@
 <ul>
 <li>Schema Type <a href="https://schema.org/Campground">schema.org/Campground</a></li>
 </ul></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalBusiness">health-lifesci.schema.org/MedicalBusiness</a>
+
+<ul>
+<li>Schema Type <a href="https://health-lifesci.schema.org/CommunityHealth">health-lifesci.schema.org/CommunityHealth</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Dentist">health-lifesci.schema.org/Dentist</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Dermatology">health-lifesci.schema.org/Dermatology</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/DietNutrition">health-lifesci.schema.org/DietNutrition</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Emergency">health-lifesci.schema.org/Emergency</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Geriatric">health-lifesci.schema.org/Geriatric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Gynecologic">health-lifesci.schema.org/Gynecologic</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalClinic">health-lifesci.schema.org/MedicalClinic</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Midwifery">health-lifesci.schema.org/Midwifery</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Nursing">health-lifesci.schema.org/Nursing</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Obstetric">health-lifesci.schema.org/Obstetric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Oncologic">health-lifesci.schema.org/Oncologic</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Optician">health-lifesci.schema.org/Optician</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Optometric">health-lifesci.schema.org/Optometric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Otolaryngologic">health-lifesci.schema.org/Otolaryngologic</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Pediatric">health-lifesci.schema.org/Pediatric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Pharmacy">health-lifesci.schema.org/Pharmacy</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Physician">health-lifesci.schema.org/Physician</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Physiotherapy">health-lifesci.schema.org/Physiotherapy</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/PlasticSurgery">health-lifesci.schema.org/PlasticSurgery</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Podiatric">health-lifesci.schema.org/Podiatric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/PrimaryCare">health-lifesci.schema.org/PrimaryCare</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/Psychiatric">health-lifesci.schema.org/Psychiatric</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/PublicHealth">health-lifesci.schema.org/PublicHealth</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
 <li>Schema Type <a href="https://schema.org/RadioStation">schema.org/RadioStation</a></li>
 <li>Schema Type <a href="https://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
