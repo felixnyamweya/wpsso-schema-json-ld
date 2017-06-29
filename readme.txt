@@ -427,7 +427,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.1-dev.5 (2017/06/28)**
+**Version 1.15.1-dev.6 (2017/06/28)**
 
 * *New Features*
 	* None
@@ -683,7 +683,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.15.1-dev.5 =
+= 1.15.1-dev.6 =
 
 (2017/06/28) Renamed the Schema type for the Product itemOffered property from IndividualProduct to ProductModel. Renamed the "hasPart" property for collection / profile / search pages to "mentions" and for blog pages to "blogPost".
 
