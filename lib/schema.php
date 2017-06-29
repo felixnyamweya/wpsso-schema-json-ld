@@ -86,10 +86,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// begin timer
 					}
 
-					// set the reference url for admin notices
+					// set reference values for admin notices
 					if ( is_admin() ) {
 						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
-						$wpsso->notice->set_ref_url( $sharing_url );
+						$wpsso->notice->set_ref( $sharing_url, $post_mod );
 					}
 
 					$post_mt_og = array();
@@ -97,9 +97,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$json_data[$prop_name][] = $wpsso->schema->get_json_data( $post_mod,
 						$post_mt_og, false, true );	// $page_type_id = false, $is_main = true
 
-					// restore the previous reference url for admin notices
+					// restore previous reference values for admin notices
 					if ( is_admin() ) {
-						$wpsso->notice->unset_ref_url( $sharing_url );
+						$wpsso->notice->unset_ref( $sharing_url );
 					}
 
 					$posts_added++;
