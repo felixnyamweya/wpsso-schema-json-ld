@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.14.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.15.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-05-23 07:51-0400\n"
-"PO-Revision-Date: 2017-05-31 21:43-0700\n"
+"POT-Creation-Date: 2017-06-30 12:18-0500\n"
+"PO-Revision-Date: 2017-06-30 12:18-0500\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -505,13 +505,13 @@ msgstr "Description du site Web"
 
 #: lib/submenu/schema-json-ld.php:65
 msgctxt "option label"
-msgid "Organization Logo Image URL"
-msgstr "URL de l'image logo de l'organisation"
+msgid "Organization Logo URL"
+msgstr "URL logo de organisation"
 
 #: lib/submenu/schema-json-ld.php:69
 msgctxt "option label"
-msgid "Organization Banner (600x60) URL"
-msgstr "URL bannière (600x60) de l'organisation"
+msgid "Organization Banner URL"
+msgstr "URL bannière de l'organisation"
 
 #: lib/submenu/schema-json-ld.php:73
 msgctxt "option label"
