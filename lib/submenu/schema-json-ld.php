@@ -44,21 +44,21 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$table_rows['site_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Name',
-						'option label', 'wpsso-schema-json-ld' ), null, 'site_name', array( 'is_locale' => true ) ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_name', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name', $this->p->options ),
-						'long_name', null, null, get_bloginfo( 'name', 'display' ) ).'</td>';
+						'long_name', '', 0, get_bloginfo( 'name', 'display' ) ).'</td>';
 
 					$table_rows['schema_alt_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Alternate Name',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_alt_name', array( 'is_locale' => true ) ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_alt_name', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_alt_name', $this->p->options ),
 						'long_name' ).'</td>';
 
 					$table_rows['site_desc'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Description',
-						'option label', 'wpsso-schema-json-ld' ), null, 'site_desc', array( 'is_locale' => true ) ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'site_desc', $this->p->options ),
-						null, null, null, get_bloginfo( 'description', 'display' ) ).'</td>';
+						'', '', 0, get_bloginfo( 'description', 'display' ) ).'</td>';
 
 					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
 						'<a href="https://developers.google.com/structured-data/customize/logos">'.
@@ -71,30 +71,30 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_banner_url', $this->p->options ), 'wide' ).'</td>';
 
 					$table_rows['schema_img_max'] = $this->form->get_th_html( _x( 'Maximum Images to Include',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_img_max' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_img_max' ).
 					'<td>'.$this->form->get_select( 'schema_img_max', 
-						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', null, true ).
+						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', '', true ).
 					( empty( $this->form->options['og_vid_prev_img'] ) ?
 						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
 							'option comment', 'wpsso-schema-json-ld' ).'</em>' ).'</td>';
 
 					$table_rows['schema_img'] = $this->form->get_th_html( _x( 'Schema Image Dimensions',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_img_dimensions' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_img_dimensions' ).
 					'<td>'.$this->form->get_image_dimensions_input( 'schema_img' ).'</td>';	// $use_opts = false
 
 					$table_rows['schema_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Description Length',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_desc_len' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_desc_len' ).
 					'<td>'.$this->form->get_input( 'schema_desc_len', 'short' ).' '.
 						_x( 'characters or less', 'option comment', 'wpsso-schema-json-ld' ).'</td>';
 
 					$table_rows['schema_author_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Author / Person Name Format',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_author_name' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_author_name' ).
 					'<td>'.$this->form->get_select( 'schema_author_name', 
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
 
-					$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
+					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 
 					foreach ( array( 
 						'home_index' => _x( 'Item Type for Blog Front Page', 'option label', 'wpsso-schema-json-ld' ),
@@ -114,7 +114,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 								break;
 						}
 						$table_rows['schema_type_for_'.$type_name] = $tr.
-						$this->form->get_th_html( $type_label, null, 'schema_type_for_'.$type_name ).
+						$this->form->get_th_html( $type_label, '', 'schema_type_for_'.$type_name ).
 						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'schema_type' ).'</td>';
 					}
 
@@ -125,12 +125,12 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					}
 
 					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Item Type by Post Type',
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_type_for_ptn' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_type_for_ptn' ).
 					'<td>'.$schema_by_ptn.'</td>';
 
 					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 
-						'option label', 'wpsso-schema-json-ld' ), null, 'schema_review_item_type' ).
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_review_item_type' ).
 					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'schema_type' ).'</td>';
 
 					break;

@@ -30,7 +30,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// timer begin
 			}
 
-			$schema_types = $this->p->schema->get_schema_types_select();	// $add_none = true
+			$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
