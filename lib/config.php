@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.15.1-b.1',		// plugin version
+					'version' => '1.15.1-rc.1',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.45.1-b.1',
+						'min_version' => '3.45.1-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
