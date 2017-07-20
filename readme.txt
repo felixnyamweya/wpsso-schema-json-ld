@@ -427,7 +427,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.15.2-dev.5 (TBD)**
+**Version 1.15.2-dev.6 (TBD)**
 
 * *New Features*
 	* None
