@@ -277,6 +277,24 @@
 <li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a>
 
 <ul>
+<li>Schema Type <a href="https://schema.org/Accommodation">schema.org/Accommodation</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/Apartment">schema.org/Apartment</a></li>
+<li>Schema Type <a href="https://schema.org/CampingPitch">schema.org/CampingPitch</a></li>
+<li>Schema Type <a href="https://schema.org/House">schema.org/House</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/SingleFamilyResidence">schema.org/SingleFamilyResidence</a></li>
+</ul></li>
+<li>Schema Type <a href="https://schema.org/Room">schema.org/Room</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/HotelRoom">schema.org/HotelRoom</a></li>
+<li>Schema Type <a href="https://schema.org/MeetingRoom">schema.org/MeetingRoom</a></li>
+</ul></li>
+<li>Schema Type <a href="https://schema.org/Suite">schema.org/Room</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
 <li>Schema Type <a href="https://schema.org/CivicStructure">schema.org/CivicStructure</a>
 
@@ -448,12 +466,20 @@
 <li>Schema Type <a href="https://schema.org/TouristInformationCenter">schema.org/TouristInformationCenter</a></li>
 <li>Schema Type <a href="https://schema.org/TravelAgency">schema.org/TravelAgency</a></li>
 </ul></li>
-<li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a></li>
+<li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/ApartmentComplex">schema.org/ApartmentComplex</a></li>
+<li>Schema Type <a href="https://schema.org/GatedResidenceCommunity">schema.org/GatedResidenceCommunity</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)
 
 <ul>
+<li>Schema Type <a href="https://schema.org/IndividualProduct">schema.org/IndividualProduct</a></li>
+<li>Schema Type <a href="https://schema.org/ProductModel">schema.org/ProductModel</a></li>
+<li>Schema Type <a href="https://schema.org/SomeProducts">schema.org/SomeProducts</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a>
 
 <ul>
@@ -461,7 +487,6 @@
 <li>Schema Type <a href="https://auto.schema.org/Car">auto.schema.org/Car</a></li>
 <li>Schema Type <a href="https://auto.schema.org/Motorcycle">auto.schema.org/Motorcycle</a></li>
 <li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
-<li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
