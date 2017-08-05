@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.15.1',		// plugin version
+					'version' => '1.16.0-dev.1',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.45.4',
+						'min_version' => '3.45.5-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -41,6 +41,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						// submenu items must have unique keys
 						'submenu' => array (
 							'schema-json-ld' => 'Schema Markup',
+						),
+						'shortcode' => array(
+							'schema' => 'Schema Shortcode',
 						),
 						'gpl' => array(
 							'admin' => array(
@@ -102,11 +105,39 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			define( 'WPSSOJSON_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOJSON_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOJSON_PLUGINSLUG', self::$cf['plugin']['wpssojson']['slug'] );		// wpsso-sp
 			define( 'WPSSOJSON_PLUGINBASE', self::$cf['plugin']['wpssojson']['base'] );		// wpsso-sp/wpsso-sp.php
 			define( 'WPSSOJSON_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+
+			self::set_variable_constants();
+		}
+
+		public static function set_variable_constants( $var_const = null ) {
+			if ( $var_const === null ) {
+				$var_const = self::get_variable_constants();
+			}
+			foreach ( $var_const as $name => $value ) {
+				if ( ! defined( $name ) ) {
+					define( $name, $value );
+				}
+			}
+		}
+
+		public static function get_variable_constants() {
+			$var_const = array();
+
+			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_NAME'] = 'schema';
+
+			foreach ( $var_const as $name => $value ) {
+				if ( defined( $name ) ) {
+					$var_const[$name] = constant( $name );	// inherit existing values
+				}
+			}
+
+			return $var_const;
 		}
 
 		public static function require_libs( $plugin_filepath ) {
