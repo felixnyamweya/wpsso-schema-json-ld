@@ -442,6 +442,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.16.0 (TBD)**
+
+* *New Features*
+	* Added a new [[schema]] shortcode to define Schema types and properties for sections of the content.
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.15.1 (2017/07/03)**
 
 * *New Features*
