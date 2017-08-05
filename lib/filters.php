@@ -101,7 +101,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/*
 			 * Property:
 			 *	name
-			 *
 			 */
 			$ret['name'] = $this->p->page->get_title( $this->p->options['og_title_len'], 
 				'...', $mod, true, false, true, 'schema_title' );
@@ -109,7 +108,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/*
 			 * Property:
 			 *	description
-			 *
 			 */
 			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], 
 				'...', $mod, true, false, true, 'schema_desc' );
@@ -119,6 +117,29 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( ! empty( $action_data ) ) {
 				$ret['potentialAction'] = $action_data;
+			}
+
+			/*
+			 * Get additional Schema properties from the optional post content shortcode.
+			 */
+			if ( $mod['is_post'] ) {
+				$content_text = get_post_field( 'post_content', $mod['id'] );
+				if ( empty( $content_text ) ) {
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'post_content for post id '.$mod['id'].' is empty' );
+					}
+				} elseif ( has_shortcode( $content_text, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
+					if ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// just in case
+
+						$this->p->sc['schema']->set_save_data( true );	// defaults to false
+						$content_text = do_shortcode( $content_text );
+						$temp_data = $this->p->sc['schema']->get_json_data();
+
+						if ( ! empty( $temp_data ) ) {
+							$ret = WpssoSchema::return_data_from_filter( $ret, $temp_data );
+						}
+					}
+				}
 			}
 
 			if ( $this->p->debug->enabled ) {
