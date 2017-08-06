@@ -442,7 +442,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.0 (TBD)**
+**Version 1.16.0 (2017/08/06)**
 
 * *New Features*
 	* Added a new [schema][/schema] shortcode to define Schema types and properties for sections of the content.
@@ -708,6 +708,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.0-dev.1 =
+
+(2017/08/06) Added a new [schema] shortcode to define Schema types and properties for sections of the content.
 
 = 1.15.1 =
 
