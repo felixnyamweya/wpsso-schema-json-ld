@@ -128,8 +128,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Property:
 			 *	image as https://schema.org/ImageObject
 			 */
-			$og_image = array();
-
+			$og_images = array();
 			$prev_count = 0;
 			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
 
@@ -145,9 +144,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
 					if ( isset( $og_video['og:video:type'] ) &&
 						$og_video['og:video:type'] !== 'text/html' ) {
-						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) )
+						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) ) {
 							$prev_count++;
-						$og_image[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
+						}
+						$og_images[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
 					}
 				}
 				if ( $prev_count > 0 ) {
@@ -160,18 +160,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 			}
 
-			$og_image = array_merge( $og_image, $wpsso->og->get_all_images( $max['schema_img_max'],
+			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'],
 				$size_name, $mod, true, 'schema' ) );
 
-			if ( ! empty( $og_image ) ) {
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+			if ( ! empty( $og_images ) ) {
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			} else {
 				$images_added = 0;
 			}
 
 			if ( ! $images_added && $mod['is_post'] ) {
-				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
+				$og_images = $wpsso->media->get_default_images( 1, $size_name, true );
+				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			}
 
 			if ( ! $images_added ) {

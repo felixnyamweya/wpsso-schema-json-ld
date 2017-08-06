@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		private $set_data = false;
 		private $data_ref = null;
 		private $prev_ref = null;
-		private $sc_depth = null;
+		private $sc_depth = 0;
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -33,7 +33,10 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
-			$shortcodes[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
+			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
+				$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth ? '-'.$depth : '' );
+				$shortcodes[] = $sc_name;
+			}
 			return $shortcodes;
 		}
 
@@ -42,23 +45,27 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			return $preg_array;
 		}
 
-		public function add( $sc_depth = null ) {
+		public function add() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $sc_depth ? '-'.$sc_depth : '' );
-        			add_shortcode( $sc_name, array( &$this, 'shortcode' ) );
-				$this->p->debug->log( '['.$sc_name.'] sharing shortcode added' );
+				foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
+					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth > 0 ? '-'.$depth : '' );
+        				add_shortcode( $sc_name, array( &$this, 'shortcode' ) );
+					$this->p->debug->log( '['.$sc_name.'] schema shortcode added' );
+				}
 			}
 		}
 
-		public function remove( $sc_depth = null ) {
+		public function remove() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $sc_depth ? '-'.$sc_depth : '' );
-				remove_shortcode( $sc_name );
-				$this->p->debug->log( '['.$sc_name.'] sharing shortcode removed' );
+				foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
+					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth > 0 ? '-'.$depth : '' );
+					remove_shortcode( $sc_name );
+					$this->p->debug->log( '['.$sc_name.'] schema shortcode removed' );
+				}
 			}
 		}
 
-		public function shortcode( $atts, $content = null ) {
+		public function shortcode( $atts, $content, $sc_name ) {
 
 			if ( $this->set_data ) {
 				/*
@@ -72,7 +79,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 						$err_msg = __( '%1$s %2$s shortcode with a type value of "%3$s" is missing the required prop attribute value.',
 							'wpsso-schema-json-ld' );
-						$this->p->notice->err( sprintf( $err_msg, $info['short'], WPSSOJSON_SCHEMA_SHORTCODE_NAME, $atts['type'] ) );
+						$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name, $atts['type'] ) );
 					}
 				/*
 				 * When there's content (for a description), the schema type id must be specified -
@@ -86,7 +93,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 						$err_msg = __( '%1$s %2$s shortcode with a description value is missing the required type attribute value.',
 							'wpsso-schema-json-ld' );
-						$this->p->notice->err( sprintf( $err_msg, $info['short'], WPSSOJSON_SCHEMA_SHORTCODE_NAME ) );
+						$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name ) );
 					}
 				} else {
 					$type_url = '';
@@ -113,10 +120,9 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 								}
 								if ( $this->p->notice->is_admin_pre_notices() ) {
 									$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
-									$err_msg = __( '%1$s %2$s shortcode type attribute "%3$s is not a recognized value.',
+									$err_msg = __( '%1$s %2$s shortcode type attribute "%3$s" is not a recognized value.',
 										'wpsso-schema-json-ld' );
-									$this->p->notice->err( sprintf( $err_msg, $info['short'], 
-										WPSSOJSON_SCHEMA_SHORTCODE_NAME, $value ) );
+									$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name, $value ) );
 								}
 							} else {
 								$temp_data = WpssoSchema::get_schema_type_context( $type_url, $temp_data );
@@ -128,18 +134,28 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					}
 
 					if ( $prop_name ) {
+
 						if ( ! isset( $this->data_ref[$prop_name] ) || ! is_array( $this->data_ref[$prop_name] ) ) {
 							$this->data_ref[$prop_name] = array();
 						}
 						$this->data_ref[$prop_name] = SucomUtil::array_merge_recursive_distinct( $this->data_ref[$prop_name], $temp_data );
 
 						if ( ! empty( $content ) ) {
-							$this->data_ref[$prop_name]['description'] = $this->p->util->cleanup_html_tags( $content );
 
-							/*
-							 * Check content for images and embedded videos.
-							 */
-							//$og_image = $this->p->media->get_content_images( 1, $size_name, false, false, false, $content ) );
+							if ( ! isset( $this->data_ref[$prop_name]['description'] ) ) {
+								$this->data_ref[$prop_name]['description'] = $this->p->util->cleanup_html_tags( $content );
+							}
+
+							$og_videos = $this->p->media->get_content_videos( 1, false, false, $content );
+							if ( ! empty( $og_videos ) ) {
+								WpssoJsonSchema::add_video_list_data( $this->data_ref[$prop_name]['video'], $og_videos, 'og:video' );
+							}
+
+							$size_name = $this->p->cf['lca'].'-schema';
+							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $content );
+							if ( ! empty( $og_images ) ) {
+								WpssoSchema::add_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
+							}
 
 							$this->get_json_data( $content, $this->data_ref[$prop_name], true );
 						}
@@ -164,31 +180,29 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 		}
 
-		public function get_json_data( $content, &$json_data = array(), $nested = false ) {
+		public function get_json_data( $content, &$json_data = array(), $increment = false ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 			if ( ! empty( $content ) ) {
-				if ( $nested ) {
+				if ( $increment ) {
 					$this->sc_depth++;
 					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-'.$this->sc_depth;
-					$this->add( $this->sc_depth );
 				} else {
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
 					$this->set_data = true;
+					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
 				}
 				if ( has_shortcode( $content, $sc_name ) ) {
-					if ( $this->data_ref !== null ) {
-						$this->prev_ref =& $this->data_ref;
+					if ( isset( $this->data_ref ) ) {
+						$this->prev_ref[$this->sc_depth] =& $this->data_ref;
 					}
 					$this->data_ref =& $json_data;
 					do_shortcode( $content );
-					if ( $this->prev_ref !== null ) {
-						$this->data_ref =& $this->prev_ref;
+					if ( isset( $this->prev_ref[$this->sc_depth] ) ) {
+						$this->data_ref =& $this->prev_ref[$this->sc_depth];
 					}
 				}
-				if ( $nested ) {
-					$this->remove( $this->sc_depth );
+				if ( $increment ) {
 					$this->sc_depth--;
 				} else {
 					$this->set_data = false;

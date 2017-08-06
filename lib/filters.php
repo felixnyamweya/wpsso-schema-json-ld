@@ -130,6 +130,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					}
 				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {
 					$content_data = $this->p->sc['schema']->get_json_data( $content );
+					//error_log( __METHOD__.' '.print_r( $content_data, true ) );
 					if ( ! empty( $content_data ) ) {
 						$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
 					}
