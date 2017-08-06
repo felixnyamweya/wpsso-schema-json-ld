@@ -123,21 +123,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Get additional Schema properties from the optional post content shortcode.
 			 */
 			if ( $mod['is_post'] ) {
-				$content_text = get_post_field( 'post_content', $mod['id'] );
-				if ( empty( $content_text ) ) {
+				$content = get_post_field( 'post_content', $mod['id'] );
+				if ( empty( $content ) ) {
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( 'post_content for post id '.$mod['id'].' is empty' );
 					}
-				} elseif ( has_shortcode( $content_text, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
-					if ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// just in case
-
-						$this->p->sc['schema']->set_save_data( true );	// defaults to false
-						$content_text = do_shortcode( $content_text );
-						$temp_data = $this->p->sc['schema']->get_json_data();
-
-						if ( ! empty( $temp_data ) ) {
-							$ret = WpssoSchema::return_data_from_filter( $ret, $temp_data );
-						}
+				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {
+					$content_data = $this->p->sc['schema']->get_json_data( $content );
+					if ( ! empty( $content_data ) ) {
+						$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
 					}
 				}
 			}

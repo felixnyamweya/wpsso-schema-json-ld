@@ -163,17 +163,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$og_image = array_merge( $og_image, $wpsso->og->get_all_images( $max['schema_img_max'],
 				$size_name, $mod, true, 'schema' ) );
 
-			if ( ! empty( $og_image ) )
+			if ( ! empty( $og_image ) ) {
 				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
-			else $images_added = 0;
+			} else {
+				$images_added = 0;
+			}
 
 			if ( ! $images_added && $mod['is_post'] ) {
 				$og_image = $wpsso->media->get_default_image( 1, $size_name, true );
 				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_image, 'og:image' );
 			}
 
-			if ( ! $images_added )
+			if ( ! $images_added ) {
 				unset( $json_data['image'] );	// prevent null assignment
+			}
 
 			/*
 			 * Property:
@@ -188,8 +191,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
-			if ( ! $mod['is_post'] || ! $mod['id'] || ! comments_open( $mod['id'] ) )
+
+			if ( ! $mod['is_post'] || ! $mod['id'] || ! comments_open( $mod['id'] ) ) {
 				return;
+			}
 
 			$json_data['commentCount'] = get_comments_number( $mod['id'] );
 
@@ -276,10 +281,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$videos_added = 0;
 
 			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
-				foreach ( $og_video as $video )
+				foreach ( $og_video as $video ) {
 					$videos_added += self::add_single_video_data( $json_data, $video, $prefix, true );	// list_element = true
-			} elseif ( is_array( $og_video ) )
+				}
+			} elseif ( is_array( $og_video ) ) {
 				$videos_added += self::add_single_video_data( $json_data, $og_video, $prefix, true );		// list_element = true
+			}
 
 			return $videos_added;	// return count of videos added
 		}
