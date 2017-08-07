@@ -191,16 +191,53 @@
 <li>Schema Type <a href="https://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a></li>
 <li>Schema Type <a href="https://schema.org/TechArticle">schema.org/TechArticle</a></li>
 </ul></li>
-<li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
 <li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a> (includes blogPost property with posts)</li>
+<li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
+<li>Schema Type <a href="https://schema.org/Clip">schema.org/Clip</a></li>
+<li>Schema Type <a href="https://schema.org/Comment">schema.org/Comment</a></li>
+<li>Schema Type <a href="https://schema.org/Conversation">schema.org/Conversation</a></li>
+<li>Schema Type <a href="https://schema.org/Course">schema.org/Course</a></li>
+<li>Schema Type <a href="https://schema.org/CreativeWorkSeason">schema.org/CreativeWorkSeason</a></li>
+<li>Schema Type <a href="https://schema.org/CreativeWorkSeries">schema.org/CreativeWorkSeries</a></li>
+<li>Schema Type <a href="https://schema.org/DataCatalog">schema.org/DataCatalog</a></li>
+<li>Schema Type <a href="https://schema.org/DataSet">schema.org/DataSet</a></li>
+<li>Schema Type <a href="https://schema.org/DigitalDocument">schema.org/DigitalDocument</a></li>
+<li>Schema Type <a href="https://schema.org/Episode">schema.org/Episode</a></li>
 <li>Schema Type <a href="https://schema.org/Game">schema.org/Game</a></li>
+<li>Schema Type <a href="https://schema.org/Map">schema.org/Map</a></li>
+<li>Schema Type <a href="https://schema.org/MediaObject">schema.org/MediaObject</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/AudioObject">schema.org/AudioObject</a></li>
+<li>Schema Type <a href="https://schema.org/DataDownload">schema.org/DataDownload</a></li>
+<li>Schema Type <a href="https://schema.org/ImageObject">schema.org/ImageObject</a></li>
+<li>Schema Type <a href="https://schema.org/MusicVideoObject">schema.org/MusicVideoObject</a></li>
+<li>Schema Type <a href="https://schema.org/VideoObject">schema.org/VideoObject</a></li>
+</ul></li>
+<li>Schema Type <a href="https://schema.org/Menu">schema.org/Menu</a></li>
+<li>Schema Type <a href="https://schema.org/MenuSection">schema.org/MenuSection</a></li>
+<li>Schema Type <a href="https://schema.org/Message">schema.org/Message</a></li>
 <li>Schema Type <a href="https://schema.org/Movie">schema.org/Movie</a></li>
+<li>Schema Type <a href="https://schema.org/MusicComposition">schema.org/MusicComposition</a></li>
+<li>Schema Type <a href="https://schema.org/MusicPlaylist">schema.org/MusicPlaylist</a></li>
+<li>Schema Type <a href="https://schema.org/MusicRecording">schema.org/MusicRecording</a></li>
 <li>Schema Type <a href="https://schema.org/Painting">schema.org/Painting</a></li>
 <li>Schema Type <a href="https://schema.org/Photograph">schema.org/Photograph</a></li>
+<li>Schema Type <a href="https://schema.org/PublicationIssue">schema.org/PublicationIssue</a></li>
+<li>Schema Type <a href="https://schema.org/PublicationVolume">schema.org/PublicationVolume</a></li>
+<li>Schema Type <a href="https://schema.org/Question">schema.org/Question</a></li>
 <li>Schema Type <a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
-<li>Schema Type <a href="https://schema.org/Review">schema.org/Review</a></li>
+<li>Schema Type <a href="https://schema.org/Review">schema.org/Review</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/ClaimReview">schema.org/ClaimReview</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/Sculpture">schema.org/Sculpture</a></li>
+<li>Schema Type <a href="https://schema.org/Series">schema.org/Series</a></li>
 <li>Schema Type <a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a></li>
+<li>Schema Type <a href="https://schema.org/SoftwareSourceCode">schema.org/SoftwareSourceCode</a></li>
+<li>Schema Type <a href="https://schema.org/TVSeason">schema.org/TVSeason</a></li>
+<li>Schema Type <a href="https://schema.org/TVSeries">schema.org/TVSeries</a></li>
 <li>Schema Type <a href="https://schema.org/VisualArtwork">schema.org/VisualArtwork</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a>
 
@@ -214,6 +251,7 @@
 <li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
 <li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a> (includes mentions property with posts)</li>
 </ul></li>
+<li>Schema Type <a href="https://schema.org/WebPageElement">schema.org/WebPageElement</a></li>
 <li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Event">schema.org/Event</a>
@@ -550,5 +588,6 @@
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/">Filters by Name</a></li>
 </ul></li>
 </ul></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/">Schema Shortcode for Custom Markup</a></li>
 </ul>
 

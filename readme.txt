@@ -153,16 +153,47 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 			* Schema Type [schema.org/ScholarlyArticle](https://schema.org/ScholarlyArticle)
 			* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 			* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
-		* Schema Type [schema.org/Book](https://schema.org/Book)
 		* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
+		* Schema Type [schema.org/Book](https://schema.org/Book)
+		* Schema Type [schema.org/Clip](https://schema.org/Clip)
+		* Schema Type [schema.org/Comment](https://schema.org/Comment)
+		* Schema Type [schema.org/Conversation](https://schema.org/Conversation)
+		* Schema Type [schema.org/Course](https://schema.org/Course)
+		* Schema Type [schema.org/CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
+		* Schema Type [schema.org/CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
+		* Schema Type [schema.org/DataCatalog](https://schema.org/DataCatalog)
+		* Schema Type [schema.org/DataSet](https://schema.org/DataSet)
+		* Schema Type [schema.org/DigitalDocument](https://schema.org/DigitalDocument)
+		* Schema Type [schema.org/Episode](https://schema.org/Episode)
 		* Schema Type [schema.org/Game](https://schema.org/Game)
+		* Schema Type [schema.org/Map](https://schema.org/Map)
+		* Schema Type [schema.org/MediaObject](https://schema.org/MediaObject)
+			* Schema Type [schema.org/AudioObject](https://schema.org/AudioObject)
+			* Schema Type [schema.org/DataDownload](https://schema.org/DataDownload)
+			* Schema Type [schema.org/ImageObject](https://schema.org/ImageObject)
+			* Schema Type [schema.org/MusicVideoObject](https://schema.org/MusicVideoObject)
+			* Schema Type [schema.org/VideoObject](https://schema.org/VideoObject)
+		* Schema Type [schema.org/Menu](https://schema.org/Menu)
+		* Schema Type [schema.org/MenuSection](https://schema.org/MenuSection)
+		* Schema Type [schema.org/Message](https://schema.org/Message)
 		* Schema Type [schema.org/Movie](https://schema.org/Movie)
+		* Schema Type [schema.org/MusicComposition](https://schema.org/MusicComposition)
+		* Schema Type [schema.org/MusicPlaylist](https://schema.org/MusicPlaylist)
+		* Schema Type [schema.org/MusicRecording](https://schema.org/MusicRecording)
 		* Schema Type [schema.org/Painting](https://schema.org/Painting)
 		* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
+		* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
+		* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
+		* Schema Type [schema.org/Question](https://schema.org/Question)
 		* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
 		* Schema Type [schema.org/Review](https://schema.org/Review)
+			* Schema Type [schema.org/ClaimReview](https://schema.org/ClaimReview)
 		* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
+		* Schema Type [schema.org/Series](https://schema.org/Series)
 		* Schema Type [schema.org/SoftwareApplication](https://schema.org/SoftwareApplication)
+		* Schema Type [schema.org/SoftwareSourceCode](https://schema.org/SoftwareSourceCode)
+		* Schema Type [schema.org/TVSeason](https://schema.org/TVSeason)
+		* Schema Type [schema.org/TVSeries](https://schema.org/TVSeries)
 		* Schema Type [schema.org/VisualArtwork](https://schema.org/VisualArtwork)
 		* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 			* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
@@ -173,6 +204,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes mentions property with posts)
 			* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
 			* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes mentions property with posts)
+		* Schema Type [schema.org/WebPageElement](https://schema.org/WebPageElement)
 		* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
 	* Schema Type [schema.org/Event](https://schema.org/Event)
 		* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
@@ -414,6 +446,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 			* [Modify the aggregateRating Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
 			* [Modify the VideoObject Name and Description](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
 		* [Filters by Name](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/)
+* [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/)
 
 == Screenshots ==
 
@@ -445,7 +478,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.16.0-b.1 (2017/08/07)**
 
 * *New Features*
-	* Added a new [schema][/schema] shortcode to define additional Schema types and properties for sections / blocks in the content.
+	* Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content. See [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/) for more information.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -711,7 +744,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.0-b.1 =
 
-(2017/08/07) Added a new [schema][/schema] shortcode to define additional Schema types and properties for sections / blocks in the content.
+(2017/08/07) Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content.
 
 = 1.15.1 =
 
