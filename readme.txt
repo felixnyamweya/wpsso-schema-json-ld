@@ -442,10 +442,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.0 (2017/08/06)**
+**Version 1.16.0-b.1 (2017/08/07)**
 
 * *New Features*
-	* Added a new [schema][/schema] shortcode to define Schema types and properties for sections of the content.
+	* Added a new [schema][/schema] shortcode to define additional Schema types and properties for sections / blocks in the content.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -709,9 +709,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.0-dev.2 =
+= 1.16.0-b.1 =
 
-(2017/08/06) Added a new [schema] shortcode to define Schema types and properties for sections of the content.
+(2017/08/07) Added a new [schema][/schema] shortcode to define additional Schema types and properties for sections / blocks in the content.
 
 = 1.15.1 =
 
