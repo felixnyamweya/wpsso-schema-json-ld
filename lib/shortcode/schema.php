@@ -66,14 +66,16 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function shortcode( $atts, $content, $sc_name ) {
-
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
 			if ( $this->set_data ) {
 				/*
 				 * When a schema type id is selected, a prop attribute value must be specified as well.
 				 */
 				if ( ! empty( $atts['type'] ) && empty( $atts['prop'] ) ) {
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'schema shortcode with type is missing a prop attribute value' );
+						$this->p->debug->log( $sc_name.' shortcode with type is missing a prop attribute value' );
 					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
@@ -87,7 +89,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				 */
 				} elseif ( ! empty( $content ) && empty( $atts['type'] ) ) {
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'schema shortcode with content is missing a type attribute value' );
+						$this->p->debug->log( $sc_name.' shortcode with content is missing a type attribute value' );
 					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
@@ -116,7 +118,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							}
 							if ( empty( $type_url ) ) {
 								if ( $this->p->debug->enabled ) {
-									$this->p->debug->log( 'schema shortcode type "'.$value.'" is not a recognized value' );
+									$this->p->debug->log( $sc_name.' shortcode type "'.$value.'" is not a recognized value' );
 								}
 								if ( $this->p->notice->is_admin_pre_notices() ) {
 									$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
@@ -166,18 +168,43 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				return '';
 
 			} else {
-				// fix extra paragraph prefix / suffix from wpautop
-				$content = preg_replace( '/(^<\/p>|<p>$)/', '', $content );
-	
 				$atts_string = '';
 				foreach ( $atts as $key => $value ) {
 					$atts_string .= $key.'="'.$value.'" ';
 				}
-	
+
+				// fix extra paragraph prefix / suffix from wpautop
+				$content = preg_replace( '/(^<\/p>|<p>$)/', '', $content );
+
+				$content = $this->get_content_text( $content, true );
+
 				// show attributes in comment for debugging
-				return '<!-- wpssojson-schema-shortcode: '.$atts_string.'-->'.
-					$content.'<!-- /wpssojson-schema-shortcode -->';
+				$content = '<!-- '.$sc_name.' shortcode: '.$atts_string.'-->'.
+						$content.'<!-- /'.$sc_name.' shortcode -->';
+
+				return $content;
 			}
+		}
+
+		public function get_content_text( $content, $increment = false ) {
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+			if ( ! empty( $content ) ) {
+				if ( $increment ) {
+					$this->sc_depth++;
+					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-'.$this->sc_depth;
+				} else {
+					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
+				}
+				if ( has_shortcode( $content, $sc_name ) ) {
+					$content = do_shortcode( $content );
+				}
+				if ( $increment ) {
+					$this->sc_depth--;
+				}
+			}
+			return $content;
 		}
 
 		public function get_json_data( $content, &$json_data = array(), $increment = false ) {
