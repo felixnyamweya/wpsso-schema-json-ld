@@ -478,7 +478,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.16.0-b.1 (2017/08/07)**
 
 * *New Features*
-	* Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content. See [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/) for more information.
+	* Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content. See the [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/) notes for more information.
 * *Improvements*
 	* None
 * *Bugfixes*
