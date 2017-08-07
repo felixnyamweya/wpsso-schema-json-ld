@@ -129,9 +129,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						$this->p->debug->log( 'post_content for post id '.$mod['id'].' is empty' );
 					}
 				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {
-					$content_data = $this->p->sc['schema']->get_json_data( $content );
-					if ( ! empty( $content_data ) ) {
-						$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
+					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
+						$content_data = $this->p->sc['schema']->get_json_data( $content );
+						if ( ! empty( $content_data ) ) {
+							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
+						}
 					}
 				}
 			}

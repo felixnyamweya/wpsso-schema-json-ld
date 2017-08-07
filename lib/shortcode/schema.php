@@ -18,12 +18,17 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		private $data_ref = null;
 		private $prev_ref = null;
 		private $sc_depth = 0;
+		private $sc_names = array();
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
+
+			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
+				$this->sc_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth ? '-'.$depth : '' );
 			}
 
 			add_filter( 'no_texturize_shortcodes', array( &$this, 'exclude_from_wptexturize' ) );
@@ -33,8 +38,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
-			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
-				$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth ? '-'.$depth : '' );
+			foreach ( $this->sc_names as $sc_name ) {
 				$shortcodes[] = $sc_name;
 			}
 			return $shortcodes;
@@ -47,8 +51,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 		public function add() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth > 0 ? '-'.$depth : '' );
+				foreach ( $this->sc_names as $sc_name ) {
         				add_shortcode( $sc_name, array( &$this, 'shortcode' ) );
 					$this->p->debug->log( '['.$sc_name.'] schema shortcode added' );
 				}
@@ -57,8 +60,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 		public function remove() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-				foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth > 0 ? '-'.$depth : '' );
+				foreach ( $this->sc_names as $sc_name ) {
 					remove_shortcode( $sc_name );
 					$this->p->debug->log( '['.$sc_name.'] schema shortcode removed' );
 				}
@@ -144,17 +146,24 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 						if ( ! empty( $content ) ) {
 
-							if ( ! isset( $this->data_ref[$prop_name]['description'] ) ) {
-								$this->data_ref[$prop_name]['description'] = $this->p->util->cleanup_html_tags( $content );
+							if ( WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT ) {
+								$prop_content = preg_replace( '/\['.WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-[0-9]+[^\]]*\].*'.
+									'\[\/'.WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-[0-9]+[^\]]*\]/s', '', $content );
+							} else {
+								$prop_content =& $content;
 							}
 
-							$og_videos = $this->p->media->get_content_videos( 1, false, false, $content );
+							if ( ! isset( $this->data_ref[$prop_name]['description'] ) ) {
+								$this->data_ref[$prop_name]['description'] = $this->p->util->cleanup_html_tags( $prop_content );
+							}
+
+							$og_videos = $this->p->media->get_content_videos( 1, false, false, $prop_content );
 							if ( ! empty( $og_videos ) ) {
 								WpssoJsonSchema::add_video_list_data( $this->data_ref[$prop_name]['video'], $og_videos, 'og:video' );
 							}
 
 							$size_name = $this->p->cf['lca'].'-schema';
-							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $content );
+							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 							if ( ! empty( $og_images ) ) {
 								WpssoSchema::add_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
 							}
@@ -176,35 +185,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				// fix extra paragraph prefix / suffix from wpautop
 				$content = preg_replace( '/(^<\/p>|<p>$)/', '', $content );
 
-				$content = $this->get_content_text( $content, true );
+				$content = do_shortcode( $content );
 
-				// show attributes in comment for debugging
+				// show attributes in html comment for debugging
 				$content = '<!-- '.$sc_name.' shortcode: '.$atts_string.'-->'.
 						$content.'<!-- /'.$sc_name.' shortcode -->';
 
 				return $content;
 			}
-		}
-
-		public function get_content_text( $content, $increment = false ) {
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-			if ( ! empty( $content ) ) {
-				if ( $increment ) {
-					$this->sc_depth++;
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-'.$this->sc_depth;
-				} else {
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
-				}
-				if ( has_shortcode( $content, $sc_name ) ) {
-					$content = do_shortcode( $content );
-				}
-				if ( $increment ) {
-					$this->sc_depth--;
-				}
-			}
-			return $content;
 		}
 
 		public function get_json_data( $content, &$json_data = array(), $increment = false ) {
@@ -214,21 +202,33 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			if ( ! empty( $content ) ) {
 				if ( $increment ) {
 					$this->sc_depth++;
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-'.$this->sc_depth;
 				} else {
 					$this->set_data = true;
-					$sc_name = WPSSOJSON_SCHEMA_SHORTCODE_NAME;
 				}
-				if ( has_shortcode( $content, $sc_name ) ) {
-					if ( isset( $this->data_ref ) ) {
-						$this->prev_ref[$this->sc_depth] =& $this->data_ref;
-					}
-					$this->data_ref =& $json_data;
-					do_shortcode( $content );
-					if ( isset( $this->prev_ref[$this->sc_depth] ) ) {
-						$this->data_ref =& $this->prev_ref[$this->sc_depth];
-					}
+
+				/*
+				 * If we already have a position / depth for additions to the json_data array,
+				 * save it so we can return here after calling do_shortcode().
+				 */
+				if ( isset( $this->data_ref ) ) {
+					$this->prev_ref[$this->sc_depth] =& $this->data_ref;
 				}
+
+				/*
+				 * Set the current position / depth in the json_data array for new additions.
+				 */
+				$this->data_ref =& $json_data;
+
+				do_shortcode( $content );
+
+				/*
+				 * If we have a previous position / depth saved, restore that position so later 
+				 * shortcode additions can be added from this position / depth.
+				 */
+				if ( isset( $this->prev_ref[$this->sc_depth] ) ) {
+					$this->data_ref =& $this->prev_ref[$this->sc_depth];
+				}
+
 				if ( $increment ) {
 					$this->sc_depth--;
 				} else {

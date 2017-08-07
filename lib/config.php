@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.16.0-dev.2',		// plugin version
+					'version' => '1.16.0-b.1',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -131,6 +131,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_NAME'] = 'schema';
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_DEPTH'] = 3;
+			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT'] = true;
 
 			foreach ( $var_const as $name => $value ) {
 				if ( defined( $name ) ) {

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.0-dev.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -25,7 +25,7 @@ msgid ""
 "Local Business, Products, Recipes, Reviews + many more."
 msgstr ""
 
-#: lib/filters.php:163
+#: lib/filters.php:165
 msgid ""
 "The Free / Basic version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
@@ -33,36 +33,36 @@ msgid ""
 "included in the Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters.php:163
+#: lib/filters.php:165
 msgid ""
 "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
 "of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</"
 "a>."
 msgstr ""
 
-#: lib/filters.php:163
+#: lib/filters.php:165
 msgid ""
 "If this Schema is an important classification for your content, you should "
 "consider purchasing the Pro version."
 msgstr ""
 
-#: lib/filters.php:168
+#: lib/filters.php:170
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:368
+#: lib/filters.php:370
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:371
+#: lib/filters.php:373
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:374
+#: lib/filters.php:376
 msgid ""
 "An additional type URL for the item, typically used to specify a more "
 "precise type from an external vocabulary in microdata syntax. For example, "
@@ -70,25 +70,25 @@ msgid ""
 "productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
-#: lib/filters.php:377
+#: lib/filters.php:379
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:380
+#: lib/filters.php:382
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:383
+#: lib/filters.php:385
 msgid ""
 "Select an organizer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:386
+#: lib/filters.php:388
 msgid ""
 "Select an <em>optional</em> organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
@@ -96,121 +96,121 @@ msgid ""
 "organization details."
 msgstr ""
 
-#: lib/filters.php:389
+#: lib/filters.php:391
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:392
+#: lib/filters.php:394
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:395
+#: lib/filters.php:397
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:398
+#: lib/filters.php:400
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:401
+#: lib/filters.php:403
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:404
+#: lib/filters.php:406
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:407
+#: lib/filters.php:409
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:410
+#: lib/filters.php:412
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:413
+#: lib/filters.php:415
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:416
+#: lib/filters.php:418
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:419
+#: lib/filters.php:421
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:422
+#: lib/filters.php:424
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:425
+#: lib/filters.php:427
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:428
+#: lib/filters.php:430
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:431
+#: lib/filters.php:433
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:434
+#: lib/filters.php:436
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:437
+#: lib/filters.php:439
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:440
+#: lib/filters.php:442
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:443
+#: lib/filters.php:445
 msgid ""
 "Select a performer for the Schema Event item type and/or its sub-type "
 "(Festival, MusicEvent, etc)."
 msgstr ""
 
-#: lib/filters.php:446
+#: lib/filters.php:448
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:449
+#: lib/filters.php:451
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:452
+#: lib/filters.php:454
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:455
+#: lib/filters.php:457
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:458
+#: lib/filters.php:460
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:461
+#: lib/filters.php:463
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:464
+#: lib/filters.php:466
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
@@ -525,19 +525,19 @@ msgctxt "option comment"
 msgid "to"
 msgstr ""
 
-#: lib/shortcode/schema.php:82
+#: lib/shortcode/schema.php:84
 msgid ""
 "%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required "
 "prop attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:96
+#: lib/shortcode/schema.php:98
 msgid ""
 "%1$s %2$s shortcode with a description value is missing the required type "
 "attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:125
+#: lib/shortcode/schema.php:127
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
