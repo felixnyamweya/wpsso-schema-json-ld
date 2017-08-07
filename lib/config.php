@@ -130,6 +130,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			$var_const = array();
 
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_NAME'] = 'schema';
+			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR'] = '_';
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_DEPTH'] = 3;
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT'] = true;
 

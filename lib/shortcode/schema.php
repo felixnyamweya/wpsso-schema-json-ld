@@ -28,7 +28,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
-				$this->sc_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME.( $depth ? '-'.$depth : '' );
+				$this->sc_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+					( $depth ? WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.$depth : '' );
 			}
 
 			add_filter( 'no_texturize_shortcodes', array( &$this, 'exclude_from_wptexturize' ) );

@@ -525,19 +525,19 @@ msgctxt "option comment"
 msgid "to"
 msgstr ""
 
-#: lib/shortcode/schema.php:84
+#: lib/shortcode/schema.php:85
 msgid ""
 "%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required "
 "prop attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:98
+#: lib/shortcode/schema.php:99
 msgid ""
 "%1$s %2$s shortcode with a description value is missing the required type "
 "attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:127
+#: lib/shortcode/schema.php:128
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
