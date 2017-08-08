@@ -475,7 +475,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.0-b.1 (2017/08/07)**
+**Version 1.16.0 (2017/08/08)**
 
 * *New Features*
 	* Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content. See the [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/) notes for more information.
@@ -742,9 +742,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.0-b.1 =
+= 1.16.0 =
 
-(2017/08/07) Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content.
+(2017/08/08) Added a new &#91;schema&#93;&#91;/schema&#93; shortcode to define additional Schema types and properties for sections / blocks in the content.
 
 = 1.15.1 =
 
