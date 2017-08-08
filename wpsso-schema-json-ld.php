@@ -13,7 +13,7 @@
  * Description: WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires At Least: 3.7
  * Tested Up To: 4.8.1
- * Version: 1.16.0-b.1
+ * Version: 1.16.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
