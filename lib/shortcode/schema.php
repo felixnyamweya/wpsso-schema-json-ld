@@ -46,7 +46,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function strip_shortcodes_preg( $preg_array ) {
-			$preg_array[] = '/\[\/?'.WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-[0-9]+[^\]]*\]/';
+			$preg_array[] = '/\[\/?'.WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\]/';
 			return $preg_array;
 		}
 
@@ -148,8 +149,10 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						if ( ! empty( $content ) ) {
 
 							if ( WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT ) {
-								$prop_content = preg_replace( '/\['.WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-[0-9]+[^\]]*\].*'.
-									'\[\/'.WPSSOJSON_SCHEMA_SHORTCODE_NAME.'-[0-9]+[^\]]*\]/s', '', $content );
+								$prop_content = preg_replace( '/\['.WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+									WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\].*\[\/'.
+									WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+									WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\]/s', '', $content );
 							} else {
 								$prop_content =& $content;
 							}
