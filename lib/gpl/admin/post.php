@@ -50,9 +50,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$perf_names = array( 'none' => '[None]' );
 
 			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
-				$org_req_msg = ' <em><a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
+				$org_req_msg = ' <p><em><a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
 					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
-						$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em>';
+						$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em></p>';
 			} else {
 				$org_req_msg = '';
 			}
