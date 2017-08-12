@@ -47,11 +47,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'admin_post_head' => 1,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
-					'messages_tooltip_meta' => 2,
 					'option_type' => 2,
 					'post_cache_transients' => 3,	// clear transients on post save
 					'pub_google_rows' => 2,
 					'save_post_options' => 4,
+					'messages_tooltip_meta' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_gpl_features' => 4,
@@ -261,10 +261,29 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'schema_review_rating_from',
 					'schema_review_rating_to',
 				) as $md_idx ) {
-					if ( empty( $md_opts[$md_idx] ) && 
-						isset( $md_defs[$md_idx] ) ) {
+					if ( empty( $md_opts[$md_idx] ) && isset( $md_defs[$md_idx] ) ) {
 						$md_opts[$md_idx] = $md_defs[$md_idx];
 					}
+				}
+			}
+
+			foreach ( array(
+				'schema_event_start',
+				'schema_event_end',
+			) as $md_pre ) {
+				foreach ( array( 'date', 'time' ) as $md_ext ) {
+					if ( $md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ) {
+						unset( $md_opts[$md_pre.'_'.$md_ext] );
+					}
+				}
+				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
+					continue;
+				// check for a date with no time
+				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
+					$md_opts[$md_pre.'_time'] = '00:00';
+				// check for a time with no date
+				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {
+					$md_opts[$md_pre.'_date'] = gmdate( 'Y-m-d', time() );	// use the current date
 				}
 			}
 
@@ -308,6 +327,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_desc' => '',
 				'schema_pub_org_id' => 'site',		// Article Publisher
 				'schema_headline' => '',		// Article Headline
+				'schema_event_start_date' => '',	// Event Start Date
+				'schema_event_start_time' => 'none',	// Event Start Time
+				'schema_event_end_date' => '',		// Event End Date
+				'schema_event_end_time' => 'none',	// Event End Time
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
 				'schema_org_org_id' => 'none',		// Organization
@@ -386,9 +409,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_headline':
 					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
 				 	break;
-				case 'tooltip-meta-schema_event_org_id':
-					$text = __( 'Select an organizer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
-				 	break;
 				case 'tooltip-meta-schema_org_org_id':
 					$text = __( 'Select an <em>optional</em> organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" if you prefer to use the current Social Settings for the organization details.', 'wpsso-schema-json-ld' );
 				 	break;
@@ -446,8 +466,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_nutri_chol':
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_event_start':
+					$text = __( 'Select the start date and time of the event.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_end':
+					$text = __( 'Select the end date and time of the event.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_org_id':
+					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_event_perf_id':
-					$text = __( 'Select a performer for the Schema Event item type and/or its sub-type (Festival, MusicEvent, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_ingredients':
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );

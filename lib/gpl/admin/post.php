@@ -149,6 +149,20 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
+				'schema_event_start' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'label' => _x( 'Event Start', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_start', 'td_class' => 'blank',
+					'content' => $form->get_no_input_date( 'schema_event_start_date' ).' at '.
+						$form->get_no_select_time( 'schema_event_start_time' ),
+				),
+				'schema_event_end' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'label' => _x( 'Event End', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_end', 'td_class' => 'blank',
+					'content' => $form->get_no_input_date( 'schema_event_end_date' ).' at '.
+						$form->get_no_select_time( 'schema_event_end_time' ),
+				),
 				'schema_event_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
