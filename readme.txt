@@ -475,12 +475,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.1-dev.1 (TBD)**
+**Version 1.16.1-dev.1 (2017/08/12)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added an 'Event Start' and 'Event End' option in the Social Settings metabox.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -752,6 +752,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.1-dev.1 =
+
+(2017/08/12) Added an 'Event Start' and 'Event End' option in the Social Settings metabox.
 
 = 1.16.0 =
 
