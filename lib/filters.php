@@ -467,10 +467,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_start':
-					$text = __( 'Select the start date and time of the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select the start date and time for the event.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_end':
-					$text = __( 'Select the end date and time of the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select the end date and time for the event.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_org_id':
 					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );

@@ -171,11 +171,11 @@ msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
 #: lib/filters.php:470
-msgid "Select the start date and time of the event."
+msgid "Select the start date and time for the event."
 msgstr ""
 
 #: lib/filters.php:473
-msgid "Select the end date and time of the event."
+msgid "Select the end date and time for the event."
 msgstr ""
 
 #: lib/filters.php:476
