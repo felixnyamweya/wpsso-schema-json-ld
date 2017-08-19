@@ -475,12 +475,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.1-dev.1 (2017/08/12)**
+**Version 1.16.1-dev.2 (2017/08/19)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added an 'Event Start' and 'Event End' option in the Social Settings metabox.
+	* Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -753,9 +753,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.1-dev.1 =
+= 1.16.1-dev.2 =
 
-(2017/08/12) Added an 'Event Start' and 'Event End' option in the Social Settings metabox.
+(2017/08/19) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types.
 
 = 1.16.0 =
 
