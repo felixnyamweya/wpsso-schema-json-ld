@@ -271,8 +271,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_start',
 				'schema_event_end',
 			) as $md_pre ) {
+				// unset date / time if same as the default value
 				foreach ( array( 'date', 'time' ) as $md_ext ) {
-					if ( $md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ) {
+					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
+						$md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ) {
 						unset( $md_opts[$md_pre.'_'.$md_ext] );
 					}
 				}
