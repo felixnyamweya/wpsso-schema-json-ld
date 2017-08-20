@@ -475,7 +475,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.1-dev.2 (2017/08/19)**
+**Version 1.16.1-dev.3 (TBD)**
 
 * *New Features*
 	* None
@@ -753,9 +753,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.1-dev.2 =
+= 1.16.1-dev.3 =
 
-(2017/08/19) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types.
+(TBD) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types.
 
 = 1.16.0 =
 
