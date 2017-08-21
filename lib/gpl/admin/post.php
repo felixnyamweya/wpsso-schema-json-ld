@@ -50,9 +50,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$perf_names = array( 'none' => '[None]' );
 
 			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
-				$org_req_msg = ' <p><em><a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
-					sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
-						$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em></p>';
+				$org_req_msg = ' <p style="display:inline;"><em>'.
+					'<a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
+						sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
+							$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em></p>';
 			} else {
 				$org_req_msg = '';
 			}
@@ -116,9 +117,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'schema_type', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
 				),
 				'schema_add_type_url' => array(
-					'label' => _x( 'Additional Type URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_add_type_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input( 'schema_add_type_url', 'schema_type' ),
+					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
 				),
 				/*
 				 * Schema Article
@@ -246,13 +247,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_ingredients', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'long_name' ),
+					'content' => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
 				),
 				'schema_recipe_instructions' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Instructions', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_instructions', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide' ),
+					'content' => $form->get_no_input_value( '', 'wide', '', '', 5 ),	// $repeat = 5
 				),
 				'subsection_recipe_nutrition' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
