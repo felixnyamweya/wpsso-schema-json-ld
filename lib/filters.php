@@ -89,7 +89,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
 				foreach ( SucomUtil::preg_grep_keys( '/^schema_add_type_url_[0-9]+$/', $mod_opts ) as $add_type_url ) {
 					if ( filter_var( $add_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
-						$ret['additionalType'] = $add_type_url;
+						$ret['additionalType'][] = $add_type_url;
 					}
 				}
 			}
