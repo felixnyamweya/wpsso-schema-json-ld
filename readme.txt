@@ -111,7 +111,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Schema Description
 	* Main Entity of Page
 	* Schema Item Type
-	* Additional Type URL
+	* Additional Type URLs
 	* Article Publisher
 	* Article Headline
 	* Event Organizer
