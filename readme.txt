@@ -475,7 +475,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.1-b.2 (2017/08/20)**
+**Version 1.16.1-b.2 (2017/08/21)**
 
 * *New Features*
 	* None
@@ -756,7 +756,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.1-b.2 =
 
-(2017/08/20) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types. Added a 'seller' property to Schema Product type offers with the site organization markup.
+(2017/08/21) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types. Added a 'seller' property to Schema Product type offers with the site organization markup.
 
 = 1.16.0 =
 
