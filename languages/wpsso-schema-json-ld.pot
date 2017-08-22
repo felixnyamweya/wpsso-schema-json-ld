@@ -66,8 +66,8 @@ msgstr ""
 msgid ""
 "Additional (and optional) type URLs for the item, typically used to specify "
 "more precise types from an external vocabulary in microdata syntax. For "
-"example, an additional type URL for a product item could be http://www."
-"productontology.org/id/Hammer (see %s for more examples)."
+"example, an additional Schema type URL for a product item could be http://"
+"www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
 #: lib/filters.php:411
