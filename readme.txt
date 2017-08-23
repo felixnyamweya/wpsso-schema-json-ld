@@ -475,13 +475,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.1-rc.2 (2017/08/23)**
+**Version 1.16.1 (2017/08/23)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types.
-	* Added a 'seller' property to Schema Product type offers with the site organization markup.
+	* Added a 'seller' property to Schema Product type offers with the site organization markup (Pro version).
+	* Added a 'brand' property to the Schema Product type, which can be defined from a custom field, in the Social Settings metabox, or from a WooCommerce product attribute (Pro version).
+	* Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -754,9 +755,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.1-rc.2 =
+= 1.16.1 =
 
-(2017/08/23) Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types. Added a 'seller' property to Schema Product type offers with the site organization markup.
+(2017/08/23) Added a 'seller' property to Schema Product type offers (Pro version). Added a 'brand' property to the Schema Product type (Pro version). Added 'Event Start' and 'Event End' options in the Social Settings metabox (Pro version). 
 
 = 1.16.0 =
 
