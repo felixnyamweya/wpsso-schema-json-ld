@@ -51,7 +51,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
 				$org_req_msg = ' <p style="display:inline;"><em>'.
-					'<a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'" target="_blank">'.
+					'<a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'">'.
 						sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
 							$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em></p>';
 			} else {
