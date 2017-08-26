@@ -560,6 +560,16 @@ msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr ""
 
+#: lib/submenu/schema-json-ld.php:39
+msgctxt "metabox tabs"
+msgid "General Settings"
+msgstr ""
+
+#: lib/submenu/schema-json-ld.php:40
+msgctxt "metabox tabs"
+msgid "Schema Types"
+msgstr ""
+
 #: lib/submenu/schema-json-ld.php:56
 msgctxt "option label"
 msgid "Website Name"
