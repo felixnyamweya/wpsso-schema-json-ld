@@ -475,7 +475,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.2-dev.2 (2017/08/26)**
+**Version 1.16.2-dev.3 (2017/08/26)**
 
 * *New Features*
 	* None
@@ -766,7 +766,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.2-dev.2 =
+= 1.16.2-dev.3 =
 
 (2017/08/26) Added a tabbed layout to the Schema Markup settings page.
 
