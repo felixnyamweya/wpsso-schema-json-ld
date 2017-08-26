@@ -475,6 +475,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.16.2-dev.2 (2017/08/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a tabbed layout to the Schema Markup settings page.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.16.1 (2017/08/23)**
 
 * *New Features*
@@ -754,6 +765,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.2-dev.2 =
+
+(2017/08/26) Added a tabbed layout to the Schema Markup settings page.
 
 = 1.16.1 =
 
