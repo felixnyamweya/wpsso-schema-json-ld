@@ -29,13 +29,22 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 		protected function add_meta_boxes() {
 			add_meta_box( $this->pagehook.'_schema_json_ld', 
 				_x( 'Schema JSON-LD Markup', 'metabox title', 'wpsso-schema-json-ld' ),
-				array( &$this, 'show_metabox_schema_json_ld' ), $this->pagehook, 'normal' );
+					array( &$this, 'show_metabox_schema_json_ld' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_schema_json_ld() {
+			$lca = $this->p->cf['lca'];
 			$metabox = 'schema_json_ld';
-			$this->p->util->do_table_rows( apply_filters( $this->p->cf['lca'].'_'.$metabox.'_general_rows', 
-				$this->get_table_rows( $metabox, 'general' ), $this->form ), 'metabox-'.$metabox.'-general' );
+			$tabs = apply_filters( $lca.'_'.$metabox.'_tabs', array( 
+				'general' => 'General Settings',
+				'types' => 'Schema Types',
+			) );
+			$table_rows = array();
+			foreach ( $tabs as $key => $title ) {
+				$table_rows[$key] = apply_filters( $lca.'_'.$metabox.'_'.$key.'_rows', 
+					$this->get_table_rows( $metabox, $key ), $this->form );
+			}
+			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
 		}
 
 		protected function get_table_rows( $metabox, $key ) {
@@ -94,6 +103,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_author_name' ).
 					'<td>'.$this->form->get_select( 'schema_author_name', 
 						$this->p->cf['form']['user_name_fields'] ).'</td>';
+
+					break;
+
+				case 'schema_json_ld-types':
 
 					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 
