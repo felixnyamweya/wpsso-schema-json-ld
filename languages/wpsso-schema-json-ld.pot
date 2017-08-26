@@ -561,12 +561,12 @@ msgid "Schema JSON-LD Markup"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:39
-msgctxt "metabox tabs"
+msgctxt "metabox tab"
 msgid "General Settings"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:40
-msgctxt "metabox tabs"
+msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr ""
 

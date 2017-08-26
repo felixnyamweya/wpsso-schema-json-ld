@@ -36,8 +36,8 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 			$lca = $this->p->cf['lca'];
 			$metabox = 'schema_json_ld';
 			$tabs = apply_filters( $lca.'_'.$metabox.'_tabs', array( 
-				'general' => _x( 'General Settings', 'metabox tabs', 'wpsso-schema-json-ld' ),
-				'types' => _x( 'Schema Types', 'metabox tabs', 'wpsso-schema-json-ld' ),
+				'general' => _x( 'General Settings', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'types' => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
