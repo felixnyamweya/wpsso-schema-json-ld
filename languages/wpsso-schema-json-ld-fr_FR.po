@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-08-26 17:12-0400\n"
-"PO-Revision-Date: 2017-08-26 17:12-0400\n"
+"POT-Creation-Date: 2017-08-27 10:02-0400\n"
+"PO-Revision-Date: 2017-08-27 10:02-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -520,8 +520,8 @@ msgstr "Balisage de Schéma JSON-LD"
 
 #: lib/submenu/schema-json-ld.php:39
 msgctxt "metabox tab"
-msgid "General Settings"
-msgstr "Réglages Généraux"
+msgid "Schema Properties"
+msgstr "Propriétés de Schéma"
 
 #: lib/submenu/schema-json-ld.php:40
 msgctxt "metabox tab"
@@ -649,3 +649,7 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgctxt "metabox tab"
+#~ msgid "General Settings"
+#~ msgstr "Réglages Généraux"
