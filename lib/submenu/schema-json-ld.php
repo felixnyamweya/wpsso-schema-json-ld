@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 			$lca = $this->p->cf['lca'];
 			$metabox = 'schema_json_ld';
 			$tabs = apply_filters( $lca.'_'.$metabox.'_tabs', array( 
-				'general' => _x( 'General Settings', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'props' => _x( 'Schema Properties', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'types' => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
 			) );
 			$table_rows = array();
@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 		protected function get_table_rows( $metabox, $key ) {
 			$table_rows = array();
 			switch ( $metabox.'-'.$key ) {
-				case 'schema_json_ld-general':
+				case 'schema_json_ld-props':
 
 					$table_rows['site_name'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Website Name',
