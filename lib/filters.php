@@ -324,7 +324,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
 
-			return array_merge( $md_defs, array(
+			$schema_md_defs = array(
 				'schema_is_main' => 1,
 				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
 				'schema_title' => '',
@@ -375,7 +375,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating' => '0.0',	// Reviewed Item Rating
 				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)
 				'schema_review_rating_to' => '5',	// Reviewed Item Rating (to)
-			) );
+			);
+
+			return array_merge( $md_defs, $schema_md_defs );
 		}
 
 		public function filter_pub_google_rows( $table_rows, $form ) {
