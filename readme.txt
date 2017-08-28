@@ -484,7 +484,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added new constants to manage multi-line options:
+		* WPSSOJSON_SCHEMA_ADD_TYPE_URL_MAX
+		* WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX
+		* WPSSOJSON_SCHEMA_RECIPE_INGREDIENTS_MAX
+		* WPSSOJSON_SCHEMA_RECIPE_INSTRUCTIONS_MAX
 
 **Version 1.16.1 (2017/08/23)**
 
