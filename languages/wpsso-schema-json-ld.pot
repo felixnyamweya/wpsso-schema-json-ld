@@ -50,19 +50,19 @@ msgstr ""
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:404
+#: lib/filters.php:405
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:407
+#: lib/filters.php:408
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:410
+#: lib/filters.php:411
 msgid ""
 "Additional (and optional) type URLs for the item, typically used to specify "
 "more precise types from an external vocabulary in microdata syntax. For "
@@ -70,19 +70,19 @@ msgid ""
 "www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
-#: lib/filters.php:413
+#: lib/filters.php:414
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:416
+#: lib/filters.php:417
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:419
+#: lib/filters.php:420
 msgid ""
 "Select an <em>optional</em> organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
@@ -90,131 +90,131 @@ msgid ""
 "organization details."
 msgstr ""
 
-#: lib/filters.php:422
+#: lib/filters.php:423
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:425
+#: lib/filters.php:426
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:428
+#: lib/filters.php:429
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:431
+#: lib/filters.php:432
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:434
+#: lib/filters.php:435
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:437
+#: lib/filters.php:438
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:440
+#: lib/filters.php:441
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:443
+#: lib/filters.php:444
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:446
+#: lib/filters.php:447
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:449
+#: lib/filters.php:450
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:452
+#: lib/filters.php:453
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:455
+#: lib/filters.php:456
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:458
+#: lib/filters.php:459
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:461
+#: lib/filters.php:462
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:464
+#: lib/filters.php:465
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:467
+#: lib/filters.php:468
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:470
+#: lib/filters.php:471
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:473
+#: lib/filters.php:474
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:476
+#: lib/filters.php:477
 msgid "Select the start date and time for the event."
 msgstr ""
 
-#: lib/filters.php:479
+#: lib/filters.php:480
 msgid "Select the end date and time for the event."
 msgstr ""
 
-#: lib/filters.php:482
+#: lib/filters.php:483
 msgid "Select an organizer for the event."
 msgstr ""
 
-#: lib/filters.php:485
+#: lib/filters.php:486
 msgid "Select a performer for the event."
 msgstr ""
 
-#: lib/filters.php:488
+#: lib/filters.php:489
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:491
+#: lib/filters.php:492
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:494
+#: lib/filters.php:495
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:497
+#: lib/filters.php:498
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:500
+#: lib/filters.php:501
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:503
+#: lib/filters.php:504
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:506
+#: lib/filters.php:507
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
@@ -284,257 +284,257 @@ msgctxt "option label"
 msgid "Additional Type URLs"
 msgstr ""
 
-#: lib/gpl/admin/post.php:130 lib/pro/admin/post.php:145
+#: lib/gpl/admin/post.php:130 lib/pro/admin/post.php:146
 msgctxt "metabox title"
 msgid "Article Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:134 lib/pro/admin/post.php:149
+#: lib/gpl/admin/post.php:134 lib/pro/admin/post.php:150
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr ""
 
-#: lib/gpl/admin/post.php:140 lib/pro/admin/post.php:156
+#: lib/gpl/admin/post.php:140 lib/pro/admin/post.php:157
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:151 lib/pro/admin/post.php:169
+#: lib/gpl/admin/post.php:151 lib/pro/admin/post.php:170
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:155 lib/pro/admin/post.php:173
+#: lib/gpl/admin/post.php:155 lib/pro/admin/post.php:174
 msgctxt "option label"
 msgid "Event Organizer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:161 lib/pro/admin/post.php:180
+#: lib/gpl/admin/post.php:161 lib/pro/admin/post.php:181
 msgctxt "option label"
 msgid "Event Performer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:167 lib/pro/admin/post.php:187
+#: lib/gpl/admin/post.php:167 lib/pro/admin/post.php:188
 msgctxt "option label"
 msgid "Event Start"
 msgstr ""
 
-#: lib/gpl/admin/post.php:174 lib/pro/admin/post.php:194
+#: lib/gpl/admin/post.php:174 lib/pro/admin/post.php:195
 msgctxt "option label"
 msgid "Event End"
 msgstr ""
 
-#: lib/gpl/admin/post.php:185 lib/pro/admin/post.php:232
+#: lib/gpl/admin/post.php:185 lib/pro/admin/post.php:233
 msgctxt "metabox title"
 msgid "Organization Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:189 lib/pro/admin/post.php:236
+#: lib/gpl/admin/post.php:189 lib/pro/admin/post.php:237
 msgctxt "option label"
 msgid "Organization"
 msgstr ""
 
-#: lib/gpl/admin/post.php:199 lib/pro/admin/post.php:248
+#: lib/gpl/admin/post.php:199 lib/pro/admin/post.php:249
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:203 lib/pro/admin/post.php:252
+#: lib/gpl/admin/post.php:203 lib/pro/admin/post.php:253
 msgctxt "option label"
 msgid "Recipe Course"
 msgstr ""
 
-#: lib/gpl/admin/post.php:209 lib/pro/admin/post.php:258
+#: lib/gpl/admin/post.php:209 lib/pro/admin/post.php:259
 msgctxt "option label"
 msgid "Recipe Cuisine"
 msgstr ""
 
-#: lib/gpl/admin/post.php:215 lib/pro/admin/post.php:264
+#: lib/gpl/admin/post.php:215 lib/pro/admin/post.php:265
 msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr ""
 
-#: lib/gpl/admin/post.php:221 lib/pro/admin/post.php:270
+#: lib/gpl/admin/post.php:221 lib/pro/admin/post.php:271
 msgctxt "option label"
 msgid "Recipe Preperation Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:230 lib/pro/admin/post.php:279
+#: lib/gpl/admin/post.php:230 lib/pro/admin/post.php:280
 msgctxt "option label"
 msgid "Recipe Cooking Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:239 lib/pro/admin/post.php:288
+#: lib/gpl/admin/post.php:239 lib/pro/admin/post.php:289
 msgctxt "option label"
 msgid "Recipe Total Time"
 msgstr ""
 
-#: lib/gpl/admin/post.php:248 lib/pro/admin/post.php:297
+#: lib/gpl/admin/post.php:248 lib/pro/admin/post.php:298
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr ""
 
-#: lib/gpl/admin/post.php:254 lib/pro/admin/post.php:303
+#: lib/gpl/admin/post.php:254 lib/pro/admin/post.php:305
 msgctxt "option label"
 msgid "Recipe Instructions"
 msgstr ""
 
-#: lib/gpl/admin/post.php:261 lib/pro/admin/post.php:310
+#: lib/gpl/admin/post.php:261 lib/pro/admin/post.php:313
 msgctxt "metabox title"
 msgid "Nutrition Information per Serving"
 msgstr ""
 
-#: lib/gpl/admin/post.php:265 lib/pro/admin/post.php:314
+#: lib/gpl/admin/post.php:265 lib/pro/admin/post.php:317
 msgctxt "option label"
 msgid "Serving Size"
 msgstr ""
 
-#: lib/gpl/admin/post.php:271 lib/pro/admin/post.php:320
+#: lib/gpl/admin/post.php:271 lib/pro/admin/post.php:323
 msgctxt "option label"
 msgid "Calories"
 msgstr ""
 
-#: lib/gpl/admin/post.php:274 lib/pro/admin/post.php:323
+#: lib/gpl/admin/post.php:274 lib/pro/admin/post.php:326
 msgctxt "option comment"
 msgid "calories"
 msgstr ""
 
-#: lib/gpl/admin/post.php:278 lib/pro/admin/post.php:327
+#: lib/gpl/admin/post.php:278 lib/pro/admin/post.php:330
 msgctxt "option label"
 msgid "Protein"
 msgstr ""
 
-#: lib/gpl/admin/post.php:281 lib/pro/admin/post.php:330
+#: lib/gpl/admin/post.php:281 lib/pro/admin/post.php:333
 msgctxt "option comment"
 msgid "grams of protein"
 msgstr ""
 
-#: lib/gpl/admin/post.php:285 lib/pro/admin/post.php:334
+#: lib/gpl/admin/post.php:285 lib/pro/admin/post.php:337
 msgctxt "option label"
 msgid "Fiber"
 msgstr ""
 
-#: lib/gpl/admin/post.php:288 lib/pro/admin/post.php:337
+#: lib/gpl/admin/post.php:288 lib/pro/admin/post.php:340
 msgctxt "option comment"
 msgid "grams of fiber"
 msgstr ""
 
-#: lib/gpl/admin/post.php:292 lib/pro/admin/post.php:341
+#: lib/gpl/admin/post.php:292 lib/pro/admin/post.php:344
 msgctxt "option label"
 msgid "Carbohydrates"
 msgstr ""
 
-#: lib/gpl/admin/post.php:295 lib/pro/admin/post.php:344
+#: lib/gpl/admin/post.php:295 lib/pro/admin/post.php:347
 msgctxt "option comment"
 msgid "grams of carbohydrates"
 msgstr ""
 
-#: lib/gpl/admin/post.php:299 lib/pro/admin/post.php:348
+#: lib/gpl/admin/post.php:299 lib/pro/admin/post.php:351
 msgctxt "option label"
 msgid "Sugar"
 msgstr ""
 
-#: lib/gpl/admin/post.php:302 lib/pro/admin/post.php:351
+#: lib/gpl/admin/post.php:302 lib/pro/admin/post.php:354
 msgctxt "option comment"
 msgid "grams of sugar"
 msgstr ""
 
-#: lib/gpl/admin/post.php:306 lib/pro/admin/post.php:355
+#: lib/gpl/admin/post.php:306 lib/pro/admin/post.php:358
 msgctxt "option label"
 msgid "Sodium"
 msgstr ""
 
-#: lib/gpl/admin/post.php:309 lib/pro/admin/post.php:358
+#: lib/gpl/admin/post.php:309 lib/pro/admin/post.php:361
 msgctxt "option comment"
 msgid "milligrams of sodium"
 msgstr ""
 
-#: lib/gpl/admin/post.php:313 lib/pro/admin/post.php:362
+#: lib/gpl/admin/post.php:313 lib/pro/admin/post.php:365
 msgctxt "option label"
 msgid "Fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:316 lib/pro/admin/post.php:365
+#: lib/gpl/admin/post.php:316 lib/pro/admin/post.php:368
 msgctxt "option comment"
 msgid "grams of fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:320 lib/pro/admin/post.php:369
+#: lib/gpl/admin/post.php:320 lib/pro/admin/post.php:372
 msgctxt "option label"
 msgid "Saturated Fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:323 lib/pro/admin/post.php:372
+#: lib/gpl/admin/post.php:323 lib/pro/admin/post.php:375
 msgctxt "option comment"
 msgid "grams of saturated fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:327 lib/pro/admin/post.php:376
+#: lib/gpl/admin/post.php:327 lib/pro/admin/post.php:379
 msgctxt "option label"
 msgid "Unsaturated Fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:330 lib/pro/admin/post.php:379
+#: lib/gpl/admin/post.php:330 lib/pro/admin/post.php:382
 msgctxt "option comment"
 msgid "grams of unsaturated fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:334 lib/pro/admin/post.php:383
+#: lib/gpl/admin/post.php:334 lib/pro/admin/post.php:386
 msgctxt "option label"
 msgid "Trans Fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:337 lib/pro/admin/post.php:386
+#: lib/gpl/admin/post.php:337 lib/pro/admin/post.php:389
 msgctxt "option comment"
 msgid "grams of trans fat"
 msgstr ""
 
-#: lib/gpl/admin/post.php:341 lib/pro/admin/post.php:390
+#: lib/gpl/admin/post.php:341 lib/pro/admin/post.php:393
 msgctxt "option label"
 msgid "Cholesterol"
 msgstr ""
 
-#: lib/gpl/admin/post.php:344 lib/pro/admin/post.php:393
+#: lib/gpl/admin/post.php:344 lib/pro/admin/post.php:396
 msgctxt "option comment"
 msgid "milligrams of cholesterol"
 msgstr ""
 
-#: lib/gpl/admin/post.php:352 lib/pro/admin/post.php:402
+#: lib/gpl/admin/post.php:352 lib/pro/admin/post.php:405
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:356 lib/pro/admin/post.php:406
+#: lib/gpl/admin/post.php:356 lib/pro/admin/post.php:409
 msgctxt "option label"
 msgid "Subject Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:362 lib/pro/admin/post.php:412
+#: lib/gpl/admin/post.php:362 lib/pro/admin/post.php:415
 msgctxt "option label"
 msgid "Subject Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:368 lib/pro/admin/post.php:418
+#: lib/gpl/admin/post.php:368 lib/pro/admin/post.php:421
 msgctxt "option label"
 msgid "Subject Webpage URL"
 msgstr ""
 
-#: lib/gpl/admin/post.php:374 lib/pro/admin/post.php:424
+#: lib/gpl/admin/post.php:374 lib/pro/admin/post.php:427
 msgctxt "option label"
 msgid "Subject Image URL"
 msgstr ""
 
-#: lib/gpl/admin/post.php:381 lib/pro/admin/post.php:430
+#: lib/gpl/admin/post.php:381 lib/pro/admin/post.php:433
 msgctxt "option label"
 msgid "Review Rating"
 msgstr ""
 
-#: lib/gpl/admin/post.php:384 lib/pro/admin/post.php:434
+#: lib/gpl/admin/post.php:384 lib/pro/admin/post.php:437
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
-#: lib/gpl/admin/post.php:386 lib/pro/admin/post.php:437
+#: lib/gpl/admin/post.php:386 lib/pro/admin/post.php:440
 msgctxt "option comment"
 msgid "to"
 msgstr ""

@@ -239,10 +239,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
 
 			// check for default recipe values
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_'.
-				'(prep|cook|total)_(days|hours|mins|secs)$/',
-					$md_opts ) as $md_idx => $value ) {
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts )
+				as $md_idx => $value ) {
+
 				$md_opts[$md_idx] = (int) $value;
+
 				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
 					unset( $md_opts[$md_idx] );
 				}
