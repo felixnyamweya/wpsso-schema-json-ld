@@ -475,7 +475,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.2-dev.4 (2017/08/27)**
+**Version 1.16.2-dev.5 (2017/08/27)**
 
 * *New Features*
 	* None
@@ -766,7 +766,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.2-dev.4 =
+= 1.16.2-dev.5 =
 
 (2017/08/27) Added a tabbed layout to the Schema Markup settings page, moving all definitions of Schema types to a "Schema Types" tab.
 
