@@ -186,6 +186,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return $type;
 			}
 			switch ( $key ) {
+				case 'schema_event_offer_name':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
 				case 'schema_recipe_yield':
@@ -196,9 +197,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'one_line';
 					break;
 				case 'schema_type':
+				case 'schema_event_offer_currency':
 				case 'schema_review_item_type':
 					return 'not_blank';
 					break;
+				case 'schema_event_offer_price':
 				case 'schema_recipe_prep_days':
 				case 'schema_recipe_prep_hours':
 				case 'schema_recipe_prep_mins':
@@ -239,11 +242,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
 
 			// check for default recipe values
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts )
-				as $md_idx => $value ) {
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/',
+				$md_opts ) as $md_idx => $value ) {
 
 				$md_opts[$md_idx] = (int) $value;
-
 				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
 					unset( $md_opts[$md_idx] );
 				}
@@ -251,29 +253,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			// if the review rating is 0, remove the review rating options
 			if ( empty( $md_opts['schema_review_rating'] ) ) {
-				foreach ( array( 
-					'schema_review_rating',
-					'schema_review_rating_from',
-					'schema_review_rating_to',
-				) as $md_idx ) {
+				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
 					unset( $md_opts[$md_idx] );
 				}
 			// if we have a review rating, then make sure we have a from/to as well
 			} else {
-				foreach ( array( 
-					'schema_review_rating_from',
-					'schema_review_rating_to',
-				) as $md_idx ) {
+				foreach ( array( 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
 					if ( empty( $md_opts[$md_idx] ) && isset( $md_defs[$md_idx] ) ) {
 						$md_opts[$md_idx] = $md_defs[$md_idx];
 					}
 				}
 			}
 
-			foreach ( array(
-				'schema_event_start',
-				'schema_event_end',
-			) as $md_pre ) {
+			foreach ( array( 'schema_event_start', 'schema_event_end' ) as $md_pre ) {
 				// unset date / time if same as the default value
 				foreach ( array( 'date', 'time' ) as $md_ext ) {
 					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
@@ -289,6 +281,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				// check for a time with no date
 				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {
 					$md_opts[$md_pre.'_date'] = gmdate( 'Y-m-d', time() );	// use the current date
+				}
+			}
+
+			foreach ( range( 0, WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX - 1, 1 ) as $num ) {
+				$have_offer = false;
+				foreach ( array( 'schema_event_offer_name', 'schema_event_offer_price' ) as $md_pre ) {
+					if ( isset( $md_opts[$md_pre.'_'.$num] ) && $md_opts[$md_pre.'_'.$num] !== '' ) {
+						$have_offer = true;
+					}
+				}
+				if ( ! $have_offer ) {
+					unset( $md_opts['schema_event_offer_currency_'.$num] );
 				}
 			}
 
