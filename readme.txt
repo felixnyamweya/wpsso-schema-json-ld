@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8.1
 Requires PHP: 5.3
-Stable Tag: 1.16.1
+Stable Tag: 1.16.2
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -635,7 +635,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Minor revision to move URLs in the extension config to the main WPSSO core plugin config.
 	* Dropped the package number from the production version string.
 
-**Version 1.13.5-1 (2017/04/05)**
+**Version 1.13.5 (2017/04/05)**
 
 * *New Features*
 	* None
@@ -646,7 +646,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.13.4-1 (2017/03/31)**
+**Version 1.13.4 (2017/03/31)**
 
 * *New Features*
 	* None
@@ -655,9 +655,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+	* Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7.
 
-**Version 1.13.3-1 (2017/03/25)**
+**Version 1.13.3 (2017/03/25)**
 
 * *New Features*
 	* None
@@ -669,7 +669,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.13.2-1 (2017/03/15)**
+**Version 1.13.2 (2017/03/15)**
 
 * *New Features*
 	* None
@@ -680,7 +680,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.13.1-1 (2017/03/10)**
+**Version 1.13.1 (2017/03/10)**
 
 * *New Features*
 	* None
@@ -691,7 +691,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.13.0-1 (2017/03/06)**
+**Version 1.13.0 (2017/03/06)**
 
 * *New Features*
 	* Added support for the WP Recipe Maker plugin (Pro version).
@@ -720,7 +720,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
-**Version 1.12.3-1 (2017/02/26)**
+**Version 1.12.3 (2017/02/26)**
 
 * *New Features*
 	* Added support for the WP Product Review plugin (Pro version).
@@ -733,7 +733,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.12.2-1 (2017/02/19)**
+**Version 1.12.2 (2017/02/19)**
 
 * *New Features*
 	* None
@@ -742,11 +742,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed a few site related option keys for WPSSO v3.39.9-1:
+	* Renamed a few site related option keys for WPSSO v3.39.9:
 		* 'og_site_name' =&gt; 'site_name'
 		* 'og_site_description' =&gt; 'site_desc'
 
-**Version 1.12.1-1 (2017/02/13)**
+**Version 1.12.1 (2017/02/13)**
 
 * *New Features*
 	* None
@@ -757,7 +757,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.12.0-1 (2017/02/08)**
+**Version 1.12.0 (2017/02/08)**
 
 * *New Features*
 	* Added comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).
@@ -823,43 +823,43 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO core plugin config.
 
-= 1.13.5-1 =
+= 1.13.5 =
 
 (2017/04/05) Updated the plugin icon images and the documentation URLs.
 
-= 1.13.4-1 =
+= 1.13.4 =
 
-(2017/03/31) Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7-1.
+(2017/03/31) Added a 'wpsso_og_add_mt_reviews' filter to return true for WPSSO v3.40.7.
 
-= 1.13.3-1 =
+= 1.13.3 =
 
 (2017/03/25) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
 
-= 1.13.2-1 =
+= 1.13.2 =
 
 (2017/03/15) Added comments / replies for each review to the Schema Review markup.
 
-= 1.13.1-1 =
+= 1.13.1 =
 
 (2017/03/10) Added support for the "itemCondition" property in the https://schema.org/Product markup (Pro version).
 
-= 1.13.0-1 =
+= 1.13.0 =
 
 (2017/03/06) Added several new recipe options in the Social Settings metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
-= 1.12.3-1 =
+= 1.12.3 =
 
 (2017/02/26) Added new options for the Schema type Review (Pro version). Added support for the WP Product Review plugin (Pro version).
 
-= 1.12.2-1 =
+= 1.12.2 =
 
-(2017/02/19) Renamed a few site related option keys for WPSSO v3.39.9-1.
+(2017/02/19) Renamed a few site related option keys for WPSSO v3.39.9.
 
-= 1.12.1-1 =
+= 1.12.1 =
 
 (2017/02/13) Removed the unsupported video property from the Schema Organization markup.
 
-= 1.12.0-1 =
+= 1.12.0 =
 
 (2017/02/08) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
