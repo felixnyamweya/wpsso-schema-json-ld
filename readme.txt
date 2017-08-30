@@ -476,7 +476,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.2-rc.1 (2017/08/29)**
+**Version 1.16.2 (2017/08/30)**
 
 * *New Features*
 	* None
@@ -771,9 +771,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.2-rc.1 =
+= 1.16.2 =
 
-(2017/08/29) Added a tabbed layout to the Schema Markup settings page, moving all definitions of Schema types to a "Schema Types" tab.
+(2017/08/30) Added a tabbed layout to the Schema Markup settings page, moving all definitions of Schema types to a "Schema Types" tab.
 
 = 1.16.1 =
 
