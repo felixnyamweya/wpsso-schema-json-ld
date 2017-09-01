@@ -487,7 +487,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price and currency.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -790,7 +790,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.3-dev.1 =
 
-(2017/09/01) None.
+(2017/09/01) Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price and currency.
 
 = 1.16.2 =
 
