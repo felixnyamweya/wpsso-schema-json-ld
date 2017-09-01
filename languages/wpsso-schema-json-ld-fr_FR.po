@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-08-30 13:31-0400\n"
-"PO-Revision-Date: 2017-08-30 13:31-0400\n"
+"POT-Creation-Date: 2017-09-01 11:10-0400\n"
+"PO-Revision-Date: 2017-09-01 11:13-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -138,46 +138,50 @@ msgid "The number of milligrams of cholesterol per serving."
 msgstr "Le nombre de milligrammes de cholestérol par portion."
 
 #: lib/filters.php:481
-msgid "Select the start date and time for the event."
-msgstr "Sélectionnez la date et l'heure de début pour l'événement."
-
-#: lib/filters.php:484
-msgid "Select the end date and time for the event."
-msgstr "Sélectionnez la date et l'heure de fin pour l'événement."
-
-#: lib/filters.php:487
 msgid "Select an organizer for the event."
 msgstr "Sélectionnez un organisateur pour l'événement."
 
-#: lib/filters.php:490
+#: lib/filters.php:484
 msgid "Select a performer for the event."
 msgstr "Sélectionnez un interprète pour l'événement."
 
+#: lib/filters.php:487
+msgid "Select the start date and time for the event."
+msgstr "Sélectionnez la date et l'heure de début pour l'événement."
+
+#: lib/filters.php:490
+msgid "Select the end date and time for the event."
+msgstr "Sélectionnez la date et l'heure de fin pour l'événement."
+
 #: lib/filters.php:493
+msgid "One or more offers for the event, including the offer name, price and currency."
+msgstr "Une ou plusieurs offres pour l'événement, y compris le nom de l'offre, le prix et la devise."
+
+#: lib/filters.php:496
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:496
+#: lib/filters.php:499
 msgid "A list of instructions for this recipe (example: \"beat eggs\", \"add and mix flour\", etc.)."
 msgstr "Une liste d'instructions pour cette recette (exemple: \"battre les oeufs\", \"ajouter et mélanger la farine\", etc.)."
 
-#: lib/filters.php:499
+#: lib/filters.php:502
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr "Sélectionnez le type de Schéma qui décrit le sujet de l'évaluation."
 
-#: lib/filters.php:502
+#: lib/filters.php:505
 msgid "The official and/or model name for the subject being reviewed."
 msgstr "Le nom officiel et/ou de modèle pour le sujet de l'évaluation."
 
-#: lib/filters.php:505
+#: lib/filters.php:508
 msgid "A webpage URL for the subject being reviewed."
 msgstr "L'URL de la page Web pour le sujet de l'évaluation."
 
-#: lib/filters.php:508
+#: lib/filters.php:511
 msgid "An image URL showing the subject being reviewed."
 msgstr "L'URL d'une image montrant le sujet de l'évaluation."
 
-#: lib/filters.php:511
+#: lib/filters.php:514
 msgid "A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5)."
 msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min/max de l'échelle (1 à 5 par défaut)."
 
@@ -216,287 +220,307 @@ msgctxt "option comment"
 msgid "%s extension required"
 msgstr "%s extension requise"
 
-#: lib/gpl/admin/post.php:89 lib/pro/admin/post.php:106
+#: lib/gpl/admin/post.php:89 lib/pro/admin/post.php:103
 msgctxt "metabox title"
 msgid "Structured Data / Schema Markup"
 msgstr "Données Structurées / Balises de Schéma"
 
-#: lib/gpl/admin/post.php:95 lib/pro/admin/post.php:109
+#: lib/gpl/admin/post.php:96 lib/pro/admin/post.php:110
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr "Nom / titre de l'item"
 
-#: lib/gpl/admin/post.php:102 lib/pro/admin/post.php:116
+#: lib/gpl/admin/post.php:103 lib/pro/admin/post.php:117
 msgctxt "option label"
 msgid "Schema Description"
 msgstr "Description de l'item"
 
-#: lib/gpl/admin/post.php:109 lib/pro/admin/post.php:123
+#: lib/gpl/admin/post.php:110 lib/pro/admin/post.php:124
 msgctxt "option label"
 msgid "Main Entity of Page"
 msgstr "Entité principale"
 
-#: lib/gpl/admin/post.php:114 lib/pro/admin/post.php:128
+#: lib/gpl/admin/post.php:115 lib/pro/admin/post.php:129
 msgctxt "option label"
 msgid "Schema Item Type"
 msgstr "Type de Schéma"
 
-#: lib/gpl/admin/post.php:120 lib/pro/admin/post.php:134
+#: lib/gpl/admin/post.php:121 lib/pro/admin/post.php:135
 msgctxt "option label"
 msgid "Additional Type URLs"
 msgstr "URLs de type supplémentaire"
 
-#: lib/gpl/admin/post.php:130 lib/pro/admin/post.php:146
+#: lib/gpl/admin/post.php:132 lib/pro/admin/post.php:147
 msgctxt "metabox title"
 msgid "Article Information"
 msgstr "Informations sur l'article"
 
-#: lib/gpl/admin/post.php:134 lib/pro/admin/post.php:150
+#: lib/gpl/admin/post.php:136 lib/pro/admin/post.php:151
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr "Éditeur de l'article"
 
-#: lib/gpl/admin/post.php:140 lib/pro/admin/post.php:157
+#: lib/gpl/admin/post.php:142 lib/pro/admin/post.php:158
 msgctxt "option label"
 msgid "Article Headline"
 msgstr "Manchette d'article"
 
-#: lib/gpl/admin/post.php:151 lib/pro/admin/post.php:170
+#: lib/gpl/admin/post.php:154 lib/pro/admin/post.php:171
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr "Informations sur l'événement"
 
-#: lib/gpl/admin/post.php:155 lib/pro/admin/post.php:174
+#: lib/gpl/admin/post.php:158 lib/pro/admin/post.php:175
 msgctxt "option label"
 msgid "Event Organizer"
 msgstr "Organisateur de l’événement"
 
-#: lib/gpl/admin/post.php:161 lib/pro/admin/post.php:181
+#: lib/gpl/admin/post.php:164 lib/pro/admin/post.php:182
 msgctxt "option label"
 msgid "Event Performer"
 msgstr "Interprète de l’événement"
 
-#: lib/gpl/admin/post.php:167 lib/pro/admin/post.php:188
+#: lib/gpl/admin/post.php:170 lib/pro/admin/post.php:189
 msgctxt "option label"
 msgid "Event Start"
 msgstr "Début de l’événement"
 
-#: lib/gpl/admin/post.php:174 lib/pro/admin/post.php:195
+#: lib/gpl/admin/post.php:177 lib/pro/admin/post.php:196
 msgctxt "option label"
 msgid "Event End"
 msgstr "Fin de l’événement"
 
-#: lib/gpl/admin/post.php:185 lib/pro/admin/post.php:234
+#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:203
+msgctxt "option label"
+msgid "Event Offers"
+msgstr "Offres pour l'événement"
+
+#: lib/gpl/admin/post.php:188 lib/pro/admin/post.php:207
+msgctxt "option comment"
+msgid "Name"
+msgstr "Nom"
+
+#: lib/gpl/admin/post.php:193 lib/pro/admin/post.php:212
+msgctxt "option comment"
+msgid "price"
+msgstr "le prix"
+
+#: lib/gpl/admin/post.php:198 lib/pro/admin/post.php:217
+msgctxt "option comment (currency)"
+msgid "in"
+msgstr "en"
+
+#: lib/gpl/admin/post.php:213 lib/pro/admin/post.php:232
 msgctxt "metabox title"
 msgid "Organization Information"
 msgstr "Informations sur l'organisation"
 
-#: lib/gpl/admin/post.php:189 lib/pro/admin/post.php:238
+#: lib/gpl/admin/post.php:217 lib/pro/admin/post.php:236
 msgctxt "option label"
 msgid "Organization"
 msgstr "Organisation"
 
-#: lib/gpl/admin/post.php:199 lib/pro/admin/post.php:250
+#: lib/gpl/admin/post.php:228 lib/pro/admin/post.php:248
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr "Informations sur la recette"
 
-#: lib/gpl/admin/post.php:203 lib/pro/admin/post.php:254
+#: lib/gpl/admin/post.php:232 lib/pro/admin/post.php:252
 msgctxt "option label"
 msgid "Recipe Course"
 msgstr "Cours de la recette"
 
-#: lib/gpl/admin/post.php:209 lib/pro/admin/post.php:260
+#: lib/gpl/admin/post.php:238 lib/pro/admin/post.php:258
 msgctxt "option label"
 msgid "Recipe Cuisine"
 msgstr "Cuisine de la recette"
 
-#: lib/gpl/admin/post.php:215 lib/pro/admin/post.php:266
+#: lib/gpl/admin/post.php:244 lib/pro/admin/post.php:264
 msgctxt "option label"
 msgid "Recipe Quantity"
 msgstr "Quantité pour recette"
 
-#: lib/gpl/admin/post.php:221 lib/pro/admin/post.php:272
+#: lib/gpl/admin/post.php:250 lib/pro/admin/post.php:270
 msgctxt "option label"
 msgid "Recipe Preperation Time"
 msgstr "Temps de préparation"
 
-#: lib/gpl/admin/post.php:230 lib/pro/admin/post.php:281
+#: lib/gpl/admin/post.php:259 lib/pro/admin/post.php:279
 msgctxt "option label"
 msgid "Recipe Cooking Time"
 msgstr "Temps de cuisson"
 
-#: lib/gpl/admin/post.php:239 lib/pro/admin/post.php:290
+#: lib/gpl/admin/post.php:268 lib/pro/admin/post.php:288
 msgctxt "option label"
 msgid "Recipe Total Time"
 msgstr "Temps total"
 
-#: lib/gpl/admin/post.php:248 lib/pro/admin/post.php:299
+#: lib/gpl/admin/post.php:277 lib/pro/admin/post.php:297
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr "Ingrédients de recette"
 
-#: lib/gpl/admin/post.php:254 lib/pro/admin/post.php:306
+#: lib/gpl/admin/post.php:283 lib/pro/admin/post.php:304
 msgctxt "option label"
 msgid "Recipe Instructions"
 msgstr "Instructions de recette"
 
-#: lib/gpl/admin/post.php:261 lib/pro/admin/post.php:314
+#: lib/gpl/admin/post.php:290 lib/pro/admin/post.php:312
 msgctxt "metabox title"
 msgid "Nutrition Information per Serving"
 msgstr "Information nutritionnelle par portion"
 
-#: lib/gpl/admin/post.php:265 lib/pro/admin/post.php:318
+#: lib/gpl/admin/post.php:294 lib/pro/admin/post.php:316
 msgctxt "option label"
 msgid "Serving Size"
 msgstr "Taille de portion"
 
-#: lib/gpl/admin/post.php:271 lib/pro/admin/post.php:324
+#: lib/gpl/admin/post.php:300 lib/pro/admin/post.php:322
 msgctxt "option label"
 msgid "Calories"
 msgstr "Calories"
 
-#: lib/gpl/admin/post.php:274 lib/pro/admin/post.php:327
+#: lib/gpl/admin/post.php:303 lib/pro/admin/post.php:325
 msgctxt "option comment"
 msgid "calories"
 msgstr "calories"
 
-#: lib/gpl/admin/post.php:278 lib/pro/admin/post.php:331
+#: lib/gpl/admin/post.php:307 lib/pro/admin/post.php:329
 msgctxt "option label"
 msgid "Protein"
 msgstr "Protéine"
 
-#: lib/gpl/admin/post.php:281 lib/pro/admin/post.php:334
+#: lib/gpl/admin/post.php:310 lib/pro/admin/post.php:332
 msgctxt "option comment"
 msgid "grams of protein"
 msgstr "grammes de protéines"
 
-#: lib/gpl/admin/post.php:285 lib/pro/admin/post.php:338
+#: lib/gpl/admin/post.php:314 lib/pro/admin/post.php:336
 msgctxt "option label"
 msgid "Fiber"
 msgstr "Fibre"
 
-#: lib/gpl/admin/post.php:288 lib/pro/admin/post.php:341
+#: lib/gpl/admin/post.php:317 lib/pro/admin/post.php:339
 msgctxt "option comment"
 msgid "grams of fiber"
 msgstr "grammes de fibres"
 
-#: lib/gpl/admin/post.php:292 lib/pro/admin/post.php:345
+#: lib/gpl/admin/post.php:321 lib/pro/admin/post.php:343
 msgctxt "option label"
 msgid "Carbohydrates"
 msgstr "Glucides"
 
-#: lib/gpl/admin/post.php:295 lib/pro/admin/post.php:348
+#: lib/gpl/admin/post.php:324 lib/pro/admin/post.php:346
 msgctxt "option comment"
 msgid "grams of carbohydrates"
 msgstr "grammes de glucides"
 
-#: lib/gpl/admin/post.php:299 lib/pro/admin/post.php:352
+#: lib/gpl/admin/post.php:328 lib/pro/admin/post.php:350
 msgctxt "option label"
 msgid "Sugar"
 msgstr "Sucre"
 
-#: lib/gpl/admin/post.php:302 lib/pro/admin/post.php:355
+#: lib/gpl/admin/post.php:331 lib/pro/admin/post.php:353
 msgctxt "option comment"
 msgid "grams of sugar"
 msgstr "grammes de sucre"
 
-#: lib/gpl/admin/post.php:306 lib/pro/admin/post.php:359
+#: lib/gpl/admin/post.php:335 lib/pro/admin/post.php:357
 msgctxt "option label"
 msgid "Sodium"
 msgstr "Sodium"
 
-#: lib/gpl/admin/post.php:309 lib/pro/admin/post.php:362
+#: lib/gpl/admin/post.php:338 lib/pro/admin/post.php:360
 msgctxt "option comment"
 msgid "milligrams of sodium"
 msgstr "milligrammes de sodium"
 
-#: lib/gpl/admin/post.php:313 lib/pro/admin/post.php:366
+#: lib/gpl/admin/post.php:342 lib/pro/admin/post.php:364
 msgctxt "option label"
 msgid "Fat"
 msgstr "Gras"
 
-#: lib/gpl/admin/post.php:316 lib/pro/admin/post.php:369
+#: lib/gpl/admin/post.php:345 lib/pro/admin/post.php:367
 msgctxt "option comment"
 msgid "grams of fat"
 msgstr "grammes de matières grasses"
 
-#: lib/gpl/admin/post.php:320 lib/pro/admin/post.php:373
+#: lib/gpl/admin/post.php:349 lib/pro/admin/post.php:371
 msgctxt "option label"
 msgid "Saturated Fat"
 msgstr "Gras saturée"
 
-#: lib/gpl/admin/post.php:323 lib/pro/admin/post.php:376
+#: lib/gpl/admin/post.php:352 lib/pro/admin/post.php:374
 msgctxt "option comment"
 msgid "grams of saturated fat"
 msgstr "grammes de gras saturés"
 
-#: lib/gpl/admin/post.php:327 lib/pro/admin/post.php:380
+#: lib/gpl/admin/post.php:356 lib/pro/admin/post.php:378
 msgctxt "option label"
 msgid "Unsaturated Fat"
 msgstr "Grais insaturées"
 
-#: lib/gpl/admin/post.php:330 lib/pro/admin/post.php:383
+#: lib/gpl/admin/post.php:359 lib/pro/admin/post.php:381
 msgctxt "option comment"
 msgid "grams of unsaturated fat"
 msgstr "grammes de gras insaturés"
 
-#: lib/gpl/admin/post.php:334 lib/pro/admin/post.php:387
+#: lib/gpl/admin/post.php:363 lib/pro/admin/post.php:385
 msgctxt "option label"
 msgid "Trans Fat"
 msgstr "Gras trans"
 
-#: lib/gpl/admin/post.php:337 lib/pro/admin/post.php:390
+#: lib/gpl/admin/post.php:366 lib/pro/admin/post.php:388
 msgctxt "option comment"
 msgid "grams of trans fat"
 msgstr "grammes de gras trans"
 
-#: lib/gpl/admin/post.php:341 lib/pro/admin/post.php:394
+#: lib/gpl/admin/post.php:370 lib/pro/admin/post.php:392
 msgctxt "option label"
 msgid "Cholesterol"
 msgstr "Cholestérol"
 
-#: lib/gpl/admin/post.php:344 lib/pro/admin/post.php:397
+#: lib/gpl/admin/post.php:373 lib/pro/admin/post.php:395
 msgctxt "option comment"
 msgid "milligrams of cholesterol"
 msgstr "milligrammes de cholestérol"
 
-#: lib/gpl/admin/post.php:352 lib/pro/admin/post.php:406
+#: lib/gpl/admin/post.php:382 lib/pro/admin/post.php:404
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr "Informations sur l'évaluation"
 
-#: lib/gpl/admin/post.php:356 lib/pro/admin/post.php:410
+#: lib/gpl/admin/post.php:386 lib/pro/admin/post.php:408
 msgctxt "option label"
 msgid "Subject Type"
 msgstr "Type du sujet"
 
-#: lib/gpl/admin/post.php:362 lib/pro/admin/post.php:416
+#: lib/gpl/admin/post.php:392 lib/pro/admin/post.php:414
 msgctxt "option label"
 msgid "Subject Name"
 msgstr "Nom du sujet"
 
-#: lib/gpl/admin/post.php:368 lib/pro/admin/post.php:422
+#: lib/gpl/admin/post.php:398 lib/pro/admin/post.php:420
 msgctxt "option label"
 msgid "Subject Webpage URL"
 msgstr "URL de la page Web du sujet"
 
-#: lib/gpl/admin/post.php:374 lib/pro/admin/post.php:428
+#: lib/gpl/admin/post.php:404 lib/pro/admin/post.php:426
 msgctxt "option label"
 msgid "Subject Image URL"
 msgstr "URL de l'image du sujet"
 
-#: lib/gpl/admin/post.php:381 lib/pro/admin/post.php:434
+#: lib/gpl/admin/post.php:411 lib/pro/admin/post.php:432
 msgctxt "option label"
 msgid "Review Rating"
 msgstr "Note de l'évaluation"
 
-#: lib/gpl/admin/post.php:384 lib/pro/admin/post.php:438
+#: lib/gpl/admin/post.php:414 lib/pro/admin/post.php:436
 msgctxt "option comment"
 msgid "from"
 msgstr "de"
 
-#: lib/gpl/admin/post.php:386 lib/pro/admin/post.php:441
+#: lib/gpl/admin/post.php:416 lib/pro/admin/post.php:439
 msgctxt "option comment"
 msgid "to"
 msgstr "à"
