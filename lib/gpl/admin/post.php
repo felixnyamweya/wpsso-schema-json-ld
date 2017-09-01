@@ -88,6 +88,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
 				),
+
 				/*
 				 * All Schema Types
 				 */
@@ -114,13 +115,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_type', $schema_types,
-						'schema_type', '', true, $form->defaults['schema_type'], 'unhide_rows' ),
+						'schema_type', '', true, true, 'unhide_rows' ),
 				),
 				'schema_add_type_url' => array(
 					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_add_type_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
 				),
+
 				/*
 				 * Schema Article
 				 */
@@ -142,6 +144,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
 				),
+
 				/*
 				 * Schema Event
 				 */
@@ -176,6 +179,31 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_date( 'schema_event_end_date' ).' at '.
 						$form->get_no_select_time( 'schema_event_end_time' ),
 				),
+				'schema_event_offers' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'label' => _x( 'Event Offers', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_offers', 'td_class' => 'blank',
+					'content' => $form->get_no_mixed_multi( array(
+						'schema_event_offer_name' => array(
+							'input_label' => _x( 'Name', 'option comment', 'wpsso-schema-json-ld' ),
+							'input_type' => 'text',
+							'input_class' => 'long_name',
+						),
+						'schema_event_offer_price' => array(
+							'input_label' => _x( 'price', 'option comment', 'wpsso-schema-json-ld' ),
+							'input_type' => 'text',
+							'input_class' => 'short',
+						),
+						'schema_event_offer_currency' => array(
+							'input_label' => _x( 'in', 'option comment (currency)', 'wpsso-schema-json-ld' ),
+							'input_type' => 'select',
+							'input_class' => 'currency',
+							'select_options' => SucomUtil::get_currency_abbrev(),
+							'select_default' => $this->p->options['plugin_product_currency'],
+						),
+					), '', 'schema_event_offer', 0, WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX, 2 ),
+				),
+
 				/*
 				 * Schema Organization
 				 */
@@ -190,6 +218,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_org_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
+
 				/*
 				 * Schema Recipe
 				 */
@@ -343,6 +372,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( '', 'medium' ).' '.
 						_x( 'milligrams of cholesterol', 'option comment', 'wpsso-schema-json-ld' ),
 				),
+
 				/*
 				 * Schema Review
 				 */

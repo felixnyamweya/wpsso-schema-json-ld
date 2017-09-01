@@ -477,17 +477,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_nutri_chol':
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_event_org_id':
+					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_perf_id':
+					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_event_start':
 					$text = __( 'Select the start date and time for the event.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_end':
 					$text = __( 'Select the end date and time for the event.', 'wpsso-schema-json-ld' );
 				 	break;
-				case 'tooltip-meta-schema_event_org_id':
-					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_perf_id':
-					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+				case 'tooltip-meta-schema_event_offers':
+					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_ingredients':
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
