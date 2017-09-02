@@ -482,7 +482,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.3-dev.2 (2017/09/01)**
+**Version 1.16.3-b.1 (2017/09/02)**
 
 * *New Features*
 	* None
@@ -788,9 +788,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.3-dev.2 =
+= 1.16.3-b.1 =
 
-(2017/09/01) Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price and currency.
+(2017/09/02) Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price and currency.
 
 = 1.16.2 =
 
