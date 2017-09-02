@@ -198,6 +198,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					break;
 				case 'schema_type':
 				case 'schema_event_offer_currency':
+				case 'schema_event_offer_avail':
 				case 'schema_review_item_type':
 					return 'not_blank';
 					break;
@@ -293,6 +294,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 				if ( ! $have_offer ) {
 					unset( $md_opts['schema_event_offer_currency_'.$num] );
+					unset( $md_opts['schema_event_offer_avail_'.$num] );
 				}
 			}
 
