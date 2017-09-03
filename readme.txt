@@ -482,12 +482,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.3-b.1 (2017/09/02)**
+**Version 1.16.3-b.2 (2017/09/02)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price, currency, and availability.
+	* Added a timezone selection for Event Start / End times (Pro version).
+	* Added Schema properties 'url', 'validFrom', and 'validThrough' for Schema Event offers.
+	* Added multiple "Event Offers" options in the Social Settings metabox, including the offer name, price, currency, and availability (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -788,9 +790,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.3-b.1 =
+= 1.16.3-b.2 =
 
-(2017/09/02) Added "Event Offers" options in the Social Settings metabox for event offers, including their name, price, currency, and availability.
+(2017/09/02) Added multiple "Event Offers" options in the Social Settings metabox, including the offer name, price, currency, and availability (Pro version).
 
 = 1.16.2 =
 
