@@ -26,7 +26,7 @@
 <p><strong>Include JSON-LD markup for WooCommerce products</strong> &mdash; including images, variations (weight, size, color, etc), reviews, ratings, and more (Pro version).</p>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for social media optimization (SMO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for social media optimization (SMO) and SEO.</p>
 
 <ul>
 <li>The WPSSO JSON Free extension works with either the WPSSO Free or Pro core plugin.</li>
