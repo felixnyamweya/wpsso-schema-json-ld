@@ -268,20 +268,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			foreach ( array( 'schema_event_start', 'schema_event_end' ) as $md_pre ) {
 				// unset date / time if same as the default value
-				foreach ( array( 'date', 'time' ) as $md_ext ) {
+				foreach ( array( 'date', 'time', 'timezone' ) as $md_ext ) {
 					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
 						$md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ) {
 						unset( $md_opts[$md_pre.'_'.$md_ext] );
 					}
 				}
 				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
+					unset( $md_opts[$md_pre.'_timezone'] );
 					continue;
-				// check for a date with no time
-				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
+				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {	// date with no time
 					$md_opts[$md_pre.'_time'] = '00:00';
-				// check for a time with no date
-				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {
-					$md_opts[$md_pre.'_date'] = gmdate( 'Y-m-d', time() );	// use the current date
+				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {	// time with no date
+					$md_opts[$md_pre.'_date'] = gmdate( 'Y-m-d', time() );
 				}
 			}
 
@@ -331,6 +330,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
 
+			$wp_timezone = get_option( 'timezone_string' );
+
 			$schema_md_defs = array(
 				'schema_is_main' => 1,
 				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
@@ -339,9 +340,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_pub_org_id' => 'site',		// Article Publisher
 				'schema_headline' => '',		// Article Headline
 				'schema_event_start_date' => '',	// Event Start Date
-				'schema_event_start_time' => 'none',	// Event Start Time
+				'schema_event_start_time' => '',	// Event Start Time
+				'schema_event_start_timezone' => '',	// Event Start Timezone
 				'schema_event_end_date' => '',		// Event End Date
-				'schema_event_end_time' => 'none',	// Event End Time
+				'schema_event_end_time' => '',		// Event End Time
+				'schema_event_end_timezone' => '',	// Event End Timezone
 				'schema_event_org_id' => 'none',	// Event Organizer
 				'schema_event_perf_id' => 'none',	// Event Performer
 				'schema_org_org_id' => 'none',		// Organization

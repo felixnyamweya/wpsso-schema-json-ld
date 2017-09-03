@@ -90,7 +90,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$table_rows['schema_img'] = $this->form->get_th_html( _x( 'Schema Image Dimensions',
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_img_dimensions' ).
-					'<td>'.$this->form->get_image_dimensions_input( 'schema_img' ).'</td>';	// $use_opts = false
+					'<td>'.$this->form->get_input_image_dimensions( 'schema_img' ).'</td>';	// $use_opts = false
 
 					$table_rows['schema_desc_len'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Maximum Description Length',
