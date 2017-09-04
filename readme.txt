@@ -439,8 +439,8 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 = Install and Uninstall =
 
-* [Install the Plugin (Free and Pro version)](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
+* [Install the WPSSO JSON Plugin (Free and Pro version)](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Uninstall the WPSSO JSON Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
