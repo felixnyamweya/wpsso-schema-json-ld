@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: article seo, local seo, news seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, pinterest, aggregate rating, rating, review, recipe, event, product, video schema, knowledge graph, search engine optimization, rich snippets
+Tags: article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, rich cards, knowledge graph
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8.1
@@ -63,6 +63,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 * Adds Schema / Structured Data / SEO JSON-LD markup for:
 	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
+* Provides complete image SEO in webpage Schema JSON-LD markup.
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
@@ -71,6 +72,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 **WPSSO JSON Pro / Additional Features**
 
 * Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
+* Provides complete image and video SEO in webpage Schema JSON-LD markup.
 * WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
 	* **WPSSO Pro Integrated 3rd Party Plugins**
 		* All in One SEO Pack
@@ -121,6 +123,9 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 	* Article Headline
 	* Event Organizer
 	* Event Performer
+	* Event Start (date, time, timezone)
+	* Event End (date, time, timezone)
+	* Event Offers (name, price, currency, availability)
 	* Recipe Preparation Time 
 	* Recipe Cooking Time 
 	* Recipe Total Time 

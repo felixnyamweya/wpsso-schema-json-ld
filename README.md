@@ -8,7 +8,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.8.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>article seo, local seo, news seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, pinterest, aggregate rating, rating, review, recipe, event, product, video schema, knowledge graph, search engine optimization, rich snippets</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, rich cards, knowledge graph</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -66,6 +66,7 @@
 <li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a></li>
 </ul></li>
+<li>Provides complete image SEO in webpage Schema JSON-LD markup.</li>
 </ul>
 
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png"></p>
@@ -76,6 +77,7 @@
 
 <ul>
 <li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
+<li>Provides complete image and video SEO in webpage Schema JSON-LD markup.</li>
 <li>WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
 
 <ul>
@@ -145,6 +147,9 @@
 <li>Article Headline</li>
 <li>Event Organizer</li>
 <li>Event Performer</li>
+<li>Event Start (date, time, timezone)</li>
+<li>Event End (date, time, timezone)</li>
+<li>Event Offers (name, price, currency, availability)</li>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>
