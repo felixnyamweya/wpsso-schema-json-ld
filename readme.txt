@@ -71,23 +71,24 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 **WPSSO JSON Pro / Additional Features**
 
 * Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
-* WPSSO Pro already integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+* WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
 	* **WPSSO Pro Integrated 3rd Party Plugins**
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
 		* Co-Authors Plus (including Guest Authors)
 		* Easy Digital Downloads
+		* Gravity Forms + GravityView
 		* HeadSpace2 SEO
-		* NextGEN Gallery
 		* MarketPress - WordPress eCommerce
+		* NextGEN Gallery
 		* Polylang
 		* rtMedia for WordPress, BuddyPress and bbPress
 		* The Events Calendar
 		* The SEO Framework
-		* WooCommerce (version 1 and 2)
-		* WP eCommerce
+		* WooCommerce (versions 1, 2, and 3)
 		* WordPress REST API (version 2)
+		* WP eCommerce
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 	* **WPSSO Pro Integrated Service APIs**
@@ -102,8 +103,8 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 		* Wistia Videos
 		* Your Own URL Shortener (YOURLS)
 		* YouTube Videos and Playlists
-* WPSSO JSON Pro includes additional 3rd party integration modules to extend its Schema markup:
-	* **WPSSO JSON Pro Integrated 3rd Party Plugins**
+* WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
+	* **Integration with 3rd Party Plugins**
 		* WP Product Review
 		* WP Recipe Maker
 		* WP Ultimate Recipe
