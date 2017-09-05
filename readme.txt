@@ -488,6 +488,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.16.4-dev.1 (2017/09/05)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Minor code refactoring for WPSSO v3.45.10.
+
 **Version 1.16.3 (2017/09/03)**
 
 * *New Features*
@@ -795,6 +806,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.4-dev.1 =
+
+(2017/09/05) Minor code refactoring for WPSSO v3.45.10.
 
 = 1.16.3 =
 
