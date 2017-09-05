@@ -113,7 +113,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png">
 
-* Adds additional custom options to the Social Settings metabox, displayed or hidden based on the Schema Item Type selected:
+* Adds additional custom options to the Social / Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
 	* Schema Item Name (aka Title)
 	* Schema Description
 	* Main Entity of Page
@@ -464,9 +464,9 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 == Screenshots ==
 
 01. WPSSO JSON Schema Markup settings page includes options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
-02. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Article (Pro version).
-03. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Recipe (Pro version).
-04. WPSSO JSON options in the Social Settings metabox for the Schema type https://schema.org/Review (Pro version).
+02. WPSSO JSON options in the Social / Search Optimization metabox for the Schema type https://schema.org/Article (Pro version).
+03. WPSSO JSON options in the Social / Search Optimization metabox for the Schema type https://schema.org/Recipe (Pro version).
+04. WPSSO JSON options in the Social / Search Optimization metabox for the Schema type https://schema.org/Review (Pro version).
 05. WPSSO JSON example for the Schema type https://schema.org/Recipe on Pinterest (Pro version).
 06. WPSSO JSON example for the Schema type https://schema.org/TechArticle in Google's Structured Data Testing Tool (Pro version).
 
@@ -506,7 +506,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Added a timezone selection for Event Start / End times (Pro version).
 	* Added Schema properties 'url', 'validFrom', and 'validThrough' for Schema Event offers.
-	* Added multiple "Event Offers" options in the Social Settings metabox, including the offer name, price, currency, and availability (Pro version).
+	* Added multiple "Event Offers" options in the Social / Search Optimization metabox, including the offer name, price, currency, and availability (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -533,8 +533,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* Added a 'seller' property to Schema Product type offers with the site organization markup (Pro version).
-	* Added a 'brand' property to the Schema Product type, which can be defined from a custom field, in the Social Settings metabox, or from a WooCommerce product attribute (Pro version).
-	* Added 'Event Start' and 'Event End' options in the Social Settings metabox for Schema Event and its sub-types (Pro version).
+	* Added a 'brand' property to the Schema Product type, which can be defined from a custom field, in the Social / Search Optimization metabox, or from a WooCommerce product attribute (Pro version).
+	* Added 'Event Start' and 'Event End' options in the Social / Search Optimization metabox for Schema Event and its sub-types (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -618,7 +618,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new "Additional Type URL" option in the Social Settings metabox for posts, pages, and custom post types.
+	* Added a new "Additional Type URL" option in the Social / Search Optimization metabox for posts, pages, and custom post types.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -698,7 +698,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
+	* Added a new "Organization" selector in the Social / Search Optimization metabox when the Schema Item Type is an Organization.
 	* Added the organization filter to the local business filter (local businesses are both places and organizations).
 * *Bugfixes*
 	* None
@@ -735,7 +735,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added two new Recipe Information options (Pro version):
 		* Recipe Course
 		* Recipe Cuisine
-	* Added a Recipe Instructions list in the Social Settings metabox (Pro version).
+	* Added a Recipe Instructions list in the Social / Search Optimization metabox (Pro version).
 	* Added Nutrition Information per Serving options for the Schema Recipe type (Pro version):
 		* Serving Size
 		* Calories
@@ -813,7 +813,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.3 =
 
-(2017/09/03) Added multiple "Event Offers" options in the Social Settings metabox, including the offer name, price, currency, and availability (Pro version).
+(2017/09/03) Added multiple "Event Offers" options in the Social / Search Optimization metabox, including the offer name, price, currency, and availability (Pro version).
 
 = 1.16.2 =
 
@@ -821,7 +821,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.1 =
 
-(2017/08/23) Added a 'seller' property to Schema Product type offers (Pro version). Added a 'brand' property to the Schema Product type (Pro version). Added 'Event Start' and 'Event End' options in the Social Settings metabox (Pro version). 
+(2017/08/23) Added a 'seller' property to Schema Product type offers (Pro version). Added a 'brand' property to the Schema Product type (Pro version). Added 'Event Start' and 'Event End' options in the Social / Search Optimization metabox (Pro version). 
 
 = 1.16.0 =
 
@@ -849,7 +849,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.14.0 =
 
-(2017/05/15) Added a new "Additional Type URL" option in the Social Settings metabox for posts, pages, and custom post types.
+(2017/05/15) Added a new "Additional Type URL" option in the Social / Search Optimization metabox for posts, pages, and custom post types.
 
 = 1.13.9 =
 
@@ -877,7 +877,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.13.3 =
 
-(2017/03/25) Added a new "Organization" selector in the Social Settings metabox when the Schema Item Type is an Organization.
+(2017/03/25) Added a new "Organization" selector in the Social / Search Optimization metabox when the Schema Item Type is an Organization.
 
 = 1.13.2 =
 
@@ -889,7 +889,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.13.0 =
 
-(2017/03/06) Added several new recipe options in the Social Settings metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
+(2017/03/06) Added several new recipe options in the Social / Search Optimization metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
 
 = 1.12.3 =
 
