@@ -135,7 +135,7 @@
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"></p>
 
 <ul>
-<li>Adds additional custom options to the Social / Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+<li>Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
