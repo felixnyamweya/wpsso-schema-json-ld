@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-09-04 10:49-0400\n"
-"PO-Revision-Date: 2017-09-04 10:49-0400\n"
+"POT-Creation-Date: 2017-09-05 14:02-0400\n"
+"PO-Revision-Date: 2017-09-05 14:04-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -62,8 +62,8 @@ msgid "A custom headline for the Schema Article item type and/or its sub-type. T
 msgstr "Un titre personnalisé pour pour la propriété \"headline\" du type d’élément Schéma Article et ses sous-types (NewsArticle, TechArticle, etc.)."
 
 #: lib/filters.php:429
-msgid "Select an <em>optional</em> organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select \"[None]\" if you prefer to use the current Social Settings for the organization details."
-msgstr "Sélectionnez une organisation <em>facultative</em> pour le type de Schéma Organisation et/ou son sous-type (compagnie, société, école, etc.). Sélectionnez \"[Aucun]\" si vous préférez utiliser les Réglages Sociaux actuels pour les détails de l'organisation."
+msgid "Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select \"[None]\" to use the default organization details."
+msgstr "Sélectionnez une organisation différente et optionnelle pour le type d'élément Schéma Organisation et/ou son sous-type (Airline, Corporation, School, etc.). Sélectionnez \"[Aucun]\" pour utiliser les détails de l'organisation par défaut."
 
 #: lib/filters.php:432
 msgid "The total time it takes to prepare this recipe."
@@ -542,107 +542,107 @@ msgstr "Le shortcode %2$s de %1$s avec un texte de description doit avoir une va
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr "Le shortcode %2$s de %1$s avec \"%3$s\" pour l'attribut type du  n'est pas une valeur reconnue."
 
-#: lib/submenu/schema-json-ld.php:31
+#: lib/submenu/schema-json-ld.php:32
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr "Balisage de Schéma JSON-LD"
 
-#: lib/submenu/schema-json-ld.php:39
+#: lib/submenu/schema-json-ld.php:40
 msgctxt "metabox tab"
 msgid "Schema Properties"
 msgstr "Propriétés de Schéma"
 
-#: lib/submenu/schema-json-ld.php:40
+#: lib/submenu/schema-json-ld.php:41
 msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr "Types de Schéma"
 
-#: lib/submenu/schema-json-ld.php:56
+#: lib/submenu/schema-json-ld.php:57
 msgctxt "option label"
 msgid "Website Name"
 msgstr "Nom du site Web"
 
-#: lib/submenu/schema-json-ld.php:62
+#: lib/submenu/schema-json-ld.php:63
 msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr "Autre nom du site Web"
 
-#: lib/submenu/schema-json-ld.php:68
+#: lib/submenu/schema-json-ld.php:69
 msgctxt "option label"
 msgid "Website Description"
 msgstr "Description du site Web"
 
-#: lib/submenu/schema-json-ld.php:75
+#: lib/submenu/schema-json-ld.php:76
 msgctxt "option label"
 msgid "Organization Logo URL"
 msgstr "URL logo de organisation"
 
-#: lib/submenu/schema-json-ld.php:79
+#: lib/submenu/schema-json-ld.php:80
 msgctxt "option label"
 msgid "Organization Banner URL"
 msgstr "URL bannière de l'organisation"
 
-#: lib/submenu/schema-json-ld.php:83
+#: lib/submenu/schema-json-ld.php:84
 msgctxt "option label"
 msgid "Maximum Images to Include"
 msgstr "Images maximum a inclure"
 
-#: lib/submenu/schema-json-ld.php:88
+#: lib/submenu/schema-json-ld.php:89
 msgctxt "option comment"
 msgid "video preview images are enabled (and included first)"
 msgstr "images d'aperçu vidéo sont activés (et inclus en premier)"
 
-#: lib/submenu/schema-json-ld.php:91
+#: lib/submenu/schema-json-ld.php:92
 msgctxt "option label"
 msgid "Schema Image Dimensions"
 msgstr "Dimensions d'images Schéma"
 
-#: lib/submenu/schema-json-ld.php:96
+#: lib/submenu/schema-json-ld.php:97
 msgctxt "option label"
 msgid "Maximum Description Length"
 msgstr "Longueur de description maximale"
 
-#: lib/submenu/schema-json-ld.php:99
+#: lib/submenu/schema-json-ld.php:100
 msgctxt "option comment"
 msgid "characters or less"
 msgstr "caractères ou moins"
 
-#: lib/submenu/schema-json-ld.php:102
+#: lib/submenu/schema-json-ld.php:103
 msgctxt "option label"
 msgid "Author / Person Name Format"
 msgstr "Format du nom d’auteur"
 
-#: lib/submenu/schema-json-ld.php:114
+#: lib/submenu/schema-json-ld.php:115
 msgctxt "option label"
 msgid "Item Type for Blog Front Page"
 msgstr "Type d'élément pour page blog d'avant"
 
-#: lib/submenu/schema-json-ld.php:115
+#: lib/submenu/schema-json-ld.php:116
 msgctxt "option label"
 msgid "Item Type for Static Front Page"
 msgstr "Type d'élément pour page statique d'avant"
 
-#: lib/submenu/schema-json-ld.php:116
+#: lib/submenu/schema-json-ld.php:117
 msgctxt "option label"
 msgid "Item Type for Archive Page"
 msgstr "Type d’élément pour page d'archive"
 
-#: lib/submenu/schema-json-ld.php:117
+#: lib/submenu/schema-json-ld.php:118
 msgctxt "option label"
 msgid "Item Type for User / Author Page"
 msgstr "Type d’élément pour page d'utilisateur / auteur"
 
-#: lib/submenu/schema-json-ld.php:118
+#: lib/submenu/schema-json-ld.php:119
 msgctxt "option label"
 msgid "Item Type for Search Results Page"
 msgstr "Type d’élément pour page résultats de recherche"
 
-#: lib/submenu/schema-json-ld.php:141
+#: lib/submenu/schema-json-ld.php:142
 msgctxt "option label"
 msgid "Item Type by Post Type"
 msgstr "Type d'élément par type d'article"
 
-#: lib/submenu/schema-json-ld.php:146
+#: lib/submenu/schema-json-ld.php:147
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr "Type par défaut de l'article évalué"
