@@ -38,10 +38,10 @@ Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and
 Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO (Core Plugin)</a>, which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for social media optimization (SMO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
 
 <ul>
-<li>The WPSSO JSON Free extension works with either the WPSSO (Core Plugin) Free or Pro versions.</li>
+<li>The WPSSO JSON Free extension works with either the Free or Pro versions of WPSSO (Core Plugin).</li>
 <li>The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq">WPSSO JSON Pro extension</a> uses many WPSSO Pro (Core Plugin) features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq">WPSSO Pro (Core Plugin)</a>.</li>
 </ul>
 </blockquote>
@@ -456,7 +456,7 @@ Including product images, custom product variations (weight, size, color, materi
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Pro (Core Plugin) features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro (Core Plugin)</a>.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Purchase the WPSSO Schema JSON-LD Markup Pro extension here](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase) (all purchases include a *No Risk 30 Day Refund Policy*).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro extension here</a> (all purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
 == Installation ==
 
