@@ -15,13 +15,13 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>Comprehensive and <em>accurate</em> Schema / Rich Card / SEO markup for Google:</strong></p>
+<p><strong>Comprehensive and <em>accurate</em> Schema / Rich Card markup for Google:</strong></p>
 
 <p>Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
-<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:</strong></p>
+<p><strong>Adds comments and threaded replies to Schema CreativeWork:</strong></p>
 
-<p>Article, BlogPosting, Recipe, Review, WebPage, etc. for even better Google SEO ranking. ;-)</p>
+<p>Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)</p>
 
 <p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
 

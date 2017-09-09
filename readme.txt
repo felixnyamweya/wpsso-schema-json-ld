@@ -19,13 +19,13 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-**Comprehensive and *accurate* Schema / Rich Card / SEO markup for Google:**
+**Comprehensive and *accurate* Schema / Rich Card markup for Google:**
 
 Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.
 
-**Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:**
+**Adds comments and threaded replies to Schema CreativeWork:**
 
-Article, BlogPosting, Recipe, Review, WebPage, etc. for even better Google SEO ranking. ;-)
+Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
