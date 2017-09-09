@@ -409,7 +409,13 @@
 <li>Schema Type <a href="https://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a>
 
 <ul>
+<li>Schema Type <a href="https://schema.org/AdultEntertainment">schema.org/AdultEntertainment</a></li>
+<li>Schema Type <a href="https://schema.org/AmusementPark">schema.org/AmusementPark</a></li>
+<li>Schema Type <a href="https://schema.org/ArtGallery">schema.org/ArtGallery</a></li>
+<li>Schema Type <a href="https://schema.org/Casino">schema.org/Casino</a></li>
+<li>Schema Type <a href="https://schema.org/ComedyClub">schema.org/ComedyClub</a></li>
 <li>Schema Type <a href="https://schema.org/MovieTheatre">schema.org/MovieTheatre</a></li>
+<li>Schema Type <a href="https://schema.org/NightClub">schema.org/NightClub</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/FinancialService">schema.org/FinancialService</a></li>
 <li>Schema Type <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
