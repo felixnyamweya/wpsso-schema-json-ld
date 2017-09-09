@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, rich cards, knowledge graph
+Tags: rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8.1
@@ -19,15 +19,23 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-<p><strong>Comprehensive and <em>accurate</em> Schema / Structured Data / SEO markup for Google</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+**Comprehensive and *accurate* Schema / Rich Card / SEO markup for Google:**
 
-<p><strong>Customized Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the preferred JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
+Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.
 
-<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+**Customized Schema markup and optimization features for Pinterest:**
 
-<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.) for better Google SEO ranking.</p>
+Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
 
-<p><strong>Include JSON-LD markup for WooCommerce products</strong> &mdash; including images, variations (weight, size, color, etc), reviews, ratings, and more (Pro version).</p>
+**Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
+
+**Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:
+
+Article, BlogPosting, WebPage, etc. for even better Google SEO ranking. ;-)
+
+**Include Schema JSON-LD markup for WooCommerce products:**
+
+Including product images, product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for social media optimization (SMO) and SEO.</p>
@@ -42,28 +50,35 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 **WPSSO JSON Free / Standard Features**
 
-* Extends the features of WPSSO Free or Pro.
-* Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
-* Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](https://wpsso.com/) to retrieve co-author information).
-* Adds an additional "Schema Markup" settings page to the SSO menu:
-	* Website Alternate Name
-	* Organization Logo URL
-	* Organization Banner URL
-	* Maximum Images to Include
-	* Schema Image Dimensions
-	* Maximum Description Length
-	* Author / Person Name Format
-	* Item Type for Blog Front Page
-	* Item Type for Static Front Page
-	* Item Type for Archive Page
-	* Item Type for User / Author Page
-	* Item Type for Search Results Page
-	* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
-	* Default Reviewed Item Type
-* Adds Schema / Structured Data / SEO JSON-LD markup for:
-	* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
-	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
-* Provides complete image SEO in webpage Schema JSON-LD markup.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Free or Pro.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](https://wpsso.com/) to retrieve co-author information).
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:
+
+* Website Alternate Name
+* Organization Logo URL
+* Organization Banner URL
+* Maximum Images to Include
+* Schema Image Dimensions
+* Maximum Description Length
+* Author / Person Name Format
+* Item Type for Blog Front Page
+* Item Type for Static Front Page
+* Item Type for Archive Page
+* Item Type for User / Author Page
+* Item Type for Search Results Page
+* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
+* Default Reviewed Item Type
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
+
+* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
+* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO in webpage Schema JSON-LD markup.
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
@@ -71,360 +86,369 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 **WPSSO JSON Pro / Additional Features**
 
-* Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
-* Provides complete image and video SEO in webpage Schema JSON-LD markup.
-* WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
-	* **WPSSO Pro Integrated 3rd Party Plugins**
-		* All in One SEO Pack
-		* bbPress
-		* BuddyPress (including Group Forum Topics)
-		* Co-Authors Plus (including Guest Authors)
-		* Easy Digital Downloads
-		* Gravity Forms + GravityView
-		* HeadSpace2 SEO
-		* MarketPress - WordPress eCommerce
-		* NextGEN Gallery
-		* Polylang
-		* rtMedia for WordPress, BuddyPress and bbPress
-		* The Events Calendar
-		* The SEO Framework
-		* WooCommerce (versions 1, 2, and 3)
-		* WordPress REST API (version 2)
-		* WP eCommerce
-		* Yoast SEO (aka WordPress SEO)
-		* Yotpo Social Reviews for WooCommerce
-	* **WPSSO Pro Integrated Service APIs**
-		* Bitly
-		* Facebook Embedded Videos
-		* Google URL Shortener
-		* Gravatar (Author Image)
-		* Ow.ly
-		* Slideshare Presentations
-		* TinyURL
-		* Vimeo Videos
-		* Wistia Videos
-		* Your Own URL Shortener (YOURLS)
-		* YouTube Videos and Playlists
-* WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
-	* **Integration with 3rd Party Plugins**
-		* WP Product Review
-		* WP Recipe Maker
-		* WP Ultimate Recipe
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+
+* **WPSSO Pro Integrated 3rd Party Plugins**
+	* All in One SEO Pack
+	* bbPress
+	* BuddyPress (including Group Forum Topics)
+	* Co-Authors Plus (including Guest Authors)
+	* Easy Digital Downloads
+	* Gravity Forms + GravityView
+	* HeadSpace2 SEO
+	* MarketPress - WordPress eCommerce
+	* NextGEN Gallery
+	* Polylang
+	* rtMedia for WordPress, BuddyPress and bbPress
+	* The Events Calendar
+	* The SEO Framework
+	* WooCommerce (versions 1, 2, and 3)
+	* WordPress REST API (version 2)
+	* WP eCommerce
+	* Yoast SEO (aka WordPress SEO)
+	* Yotpo Social Reviews for WooCommerce
+* **WPSSO Pro Integrated Service APIs**
+	* Bitly
+	* Facebook Embedded Videos
+	* Google URL Shortener
+	* Gravatar (Author Image)
+	* Ow.ly
+	* Slideshare Presentations
+	* TinyURL
+	* Vimeo Videos
+	* Wistia Videos
+	* Your Own URL Shortener (YOURLS)
+	* YouTube Videos and Playlists
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
+
+* **Integration with 3rd Party Plugins**
+	* WP Product Review
+	* WP Recipe Maker
+	* WP Ultimate Recipe
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png">
 
-* Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
-	* Schema Item Name (aka Title)
-	* Schema Description
-	* Main Entity of Page
-	* Schema Item Type
-	* Additional Type URLs
-	* Article Publisher
-	* Article Headline
-	* Event Organizer
-	* Event Performer
-	* Event Start (date, time, timezone)
-	* Event End (date, time, timezone)
-	* Event Offers (name, price, currency, availability)
-	* Recipe Preparation Time 
-	* Recipe Cooking Time 
-	* Recipe Total Time 
-	* Recipe Total Calories 
-	* Recipe Quantity 
-	* Recipe Ingredients 
-	* Recipe Instructions 
-	* Recipe Nutrition Information per Serving 
-		* Serving Size
-		* Calories
-		* Protein
-		* Fiber
-		* Carbohydrates
-		* Sugar
-		* Sodium
-		* Fat
-		* Saturated Fat
-		* Unsaturated Fat
-		* Trans Fat
-		* Cholesterol
-	* (Review) Subject Type 
-	* (Review) Subject Name 
-	* (Review) Subject Webpage URL 
-	* (Review) Subject Image URL 
-	* Review Rating 
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+
+* Schema Item Name (aka Title)
+* Schema Description
+* Main Entity of Page
+* Schema Item Type
+* Additional Type URLs
+* Article Publisher
+* Article Headline
+* Event Organizer
+* Event Performer
+* Event Start (date, time, timezone)
+* Event End (date, time, timezone)
+* Event Offers (name, price, currency, availability)
+* Recipe Preparation Time 
+* Recipe Cooking Time 
+* Recipe Total Time 
+* Recipe Total Calories 
+* Recipe Quantity 
+* Recipe Ingredients 
+* Recipe Instructions 
+* Recipe Nutrition Information per Serving 
+* Serving Size
+	* Calories
+	* Protein
+	* Fiber
+	* Carbohydrates
+	* Sugar
+	* Sodium
+	* Fat
+	* Saturated Fat
+	* Unsaturated Fat
+	* Trans Fat
+	* Cholesterol
+* (Review) Subject Type 
+* (Review) Subject Name 
+* (Review) Subject Webpage URL 
+* (Review) Subject Image URL 
+* Review Rating 
 
 <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 
-* Adds Schema / Structured Data / SEO JSON-LD markup for:
-	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
-		* Schema Type [schema.org/Article](https://schema.org/Article)
-			* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
-			* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
-			* Schema Type [schema.org/Report](https://schema.org/Report)
-			* Schema Type [schema.org/ScholarlyArticle](https://schema.org/ScholarlyArticle)
-			* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
-			* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
-		* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
-		* Schema Type [schema.org/Book](https://schema.org/Book)
-		* Schema Type [schema.org/Clip](https://schema.org/Clip)
-		* Schema Type [schema.org/Comment](https://schema.org/Comment)
-		* Schema Type [schema.org/Conversation](https://schema.org/Conversation)
-		* Schema Type [schema.org/Course](https://schema.org/Course)
-		* Schema Type [schema.org/CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
-		* Schema Type [schema.org/CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
-		* Schema Type [schema.org/DataCatalog](https://schema.org/DataCatalog)
-		* Schema Type [schema.org/DataSet](https://schema.org/DataSet)
-		* Schema Type [schema.org/DigitalDocument](https://schema.org/DigitalDocument)
-		* Schema Type [schema.org/Episode](https://schema.org/Episode)
-		* Schema Type [schema.org/Game](https://schema.org/Game)
-		* Schema Type [schema.org/Map](https://schema.org/Map)
-		* Schema Type [schema.org/MediaObject](https://schema.org/MediaObject)
-			* Schema Type [schema.org/AudioObject](https://schema.org/AudioObject)
-			* Schema Type [schema.org/DataDownload](https://schema.org/DataDownload)
-			* Schema Type [schema.org/ImageObject](https://schema.org/ImageObject)
-			* Schema Type [schema.org/MusicVideoObject](https://schema.org/MusicVideoObject)
-			* Schema Type [schema.org/VideoObject](https://schema.org/VideoObject)
-		* Schema Type [schema.org/Menu](https://schema.org/Menu)
-		* Schema Type [schema.org/MenuSection](https://schema.org/MenuSection)
-		* Schema Type [schema.org/Message](https://schema.org/Message)
-		* Schema Type [schema.org/Movie](https://schema.org/Movie)
-		* Schema Type [schema.org/MusicComposition](https://schema.org/MusicComposition)
-		* Schema Type [schema.org/MusicPlaylist](https://schema.org/MusicPlaylist)
-		* Schema Type [schema.org/MusicRecording](https://schema.org/MusicRecording)
-		* Schema Type [schema.org/Painting](https://schema.org/Painting)
-		* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
-		* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
-		* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
-		* Schema Type [schema.org/Question](https://schema.org/Question)
-		* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
-		* Schema Type [schema.org/Review](https://schema.org/Review)
-			* Schema Type [schema.org/ClaimReview](https://schema.org/ClaimReview)
-		* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
-		* Schema Type [schema.org/Series](https://schema.org/Series)
-		* Schema Type [schema.org/SoftwareApplication](https://schema.org/SoftwareApplication)
-		* Schema Type [schema.org/SoftwareSourceCode](https://schema.org/SoftwareSourceCode)
-		* Schema Type [schema.org/TVSeason](https://schema.org/TVSeason)
-		* Schema Type [schema.org/TVSeries](https://schema.org/TVSeries)
-		* Schema Type [schema.org/VisualArtwork](https://schema.org/VisualArtwork)
-		* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
-			* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
-			* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
-			* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes mentions property with posts)
-			* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
-			* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
-			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes mentions property with posts)
-			* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
-			* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes mentions property with posts)
-		* Schema Type [schema.org/WebPageElement](https://schema.org/WebPageElement)
-		* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
-	* Schema Type [schema.org/Event](https://schema.org/Event)
-		* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
-		* Schema Type [schema.org/ChildrensEvent](https://schema.org/ChildrensEvent)
-		* Schema Type [schema.org/DanceEvent](https://schema.org/DanceEvent)
-		* Schema Type [schema.org/DeliveryEvent](https://schema.org/DeliveryEvent)
-		* Schema Type [schema.org/EducationEvent](https://schema.org/EducationEvent)
-		* Schema Type [schema.org/ExhibitionEvent](https://schema.org/ExhibitionEvent)
-		* Schema Type [schema.org/Festival](https://schema.org/Festival)
-		* Schema Type [schema.org/FoodEvent](https://schema.org/FoodEvent)
-		* Schema Type [schema.org/LiteraryEvent](https://schema.org/LiteraryEvent)
-		* Schema Type [schema.org/MusicEvent](https://schema.org/MusicEvent)
-		* Schema Type [schema.org/PublicationEvent](https://schema.org/PublicationEvent)
-		* Schema Type [schema.org/SaleEvent](https://schema.org/SaleEvent)
-		* Schema Type [schema.org/ScreeningEvent](https://schema.org/ScreeningEvent)
-		* Schema Type [schema.org/SocialEvent](https://schema.org/SocialEvent)
-		* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
-		* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
-		* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
+
+* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
+	* Schema Type [schema.org/Article](https://schema.org/Article)
+		* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
+		* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
+		* Schema Type [schema.org/Report](https://schema.org/Report)
+		* Schema Type [schema.org/ScholarlyArticle](https://schema.org/ScholarlyArticle)
+		* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
+		* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
+	* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
+	* Schema Type [schema.org/Book](https://schema.org/Book)
+	* Schema Type [schema.org/Clip](https://schema.org/Clip)
+	* Schema Type [schema.org/Comment](https://schema.org/Comment)
+	* Schema Type [schema.org/Conversation](https://schema.org/Conversation)
+	* Schema Type [schema.org/Course](https://schema.org/Course)
+	* Schema Type [schema.org/CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
+	* Schema Type [schema.org/CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
+	* Schema Type [schema.org/DataCatalog](https://schema.org/DataCatalog)
+	* Schema Type [schema.org/DataSet](https://schema.org/DataSet)
+	* Schema Type [schema.org/DigitalDocument](https://schema.org/DigitalDocument)
+	* Schema Type [schema.org/Episode](https://schema.org/Episode)
+	* Schema Type [schema.org/Game](https://schema.org/Game)
+	* Schema Type [schema.org/Map](https://schema.org/Map)
+	* Schema Type [schema.org/MediaObject](https://schema.org/MediaObject)
+		* Schema Type [schema.org/AudioObject](https://schema.org/AudioObject)
+		* Schema Type [schema.org/DataDownload](https://schema.org/DataDownload)
+		* Schema Type [schema.org/ImageObject](https://schema.org/ImageObject)
+		* Schema Type [schema.org/MusicVideoObject](https://schema.org/MusicVideoObject)
+		* Schema Type [schema.org/VideoObject](https://schema.org/VideoObject)
+	* Schema Type [schema.org/Menu](https://schema.org/Menu)
+	* Schema Type [schema.org/MenuSection](https://schema.org/MenuSection)
+	* Schema Type [schema.org/Message](https://schema.org/Message)
+	* Schema Type [schema.org/Movie](https://schema.org/Movie)
+	* Schema Type [schema.org/MusicComposition](https://schema.org/MusicComposition)
+	* Schema Type [schema.org/MusicPlaylist](https://schema.org/MusicPlaylist)
+	* Schema Type [schema.org/MusicRecording](https://schema.org/MusicRecording)
+	* Schema Type [schema.org/Painting](https://schema.org/Painting)
+	* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
+	* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
+	* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
+	* Schema Type [schema.org/Question](https://schema.org/Question)
+	* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
+	* Schema Type [schema.org/Review](https://schema.org/Review)
+		* Schema Type [schema.org/ClaimReview](https://schema.org/ClaimReview)
+	* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
+	* Schema Type [schema.org/Series](https://schema.org/Series)
+	* Schema Type [schema.org/SoftwareApplication](https://schema.org/SoftwareApplication)
+	* Schema Type [schema.org/SoftwareSourceCode](https://schema.org/SoftwareSourceCode)
+	* Schema Type [schema.org/TVSeason](https://schema.org/TVSeason)
+	* Schema Type [schema.org/TVSeries](https://schema.org/TVSeries)
+	* Schema Type [schema.org/VisualArtwork](https://schema.org/VisualArtwork)
+	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
+		* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
+		* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
+		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes mentions property with posts)
+		* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
+		* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
+		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes mentions property with posts)
+		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
+		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes mentions property with posts)
+	* Schema Type [schema.org/WebPageElement](https://schema.org/WebPageElement)
+	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
+* Schema Type [schema.org/Event](https://schema.org/Event)
+	* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
+	* Schema Type [schema.org/ChildrensEvent](https://schema.org/ChildrensEvent)
+	* Schema Type [schema.org/DanceEvent](https://schema.org/DanceEvent)
+	* Schema Type [schema.org/DeliveryEvent](https://schema.org/DeliveryEvent)
+	* Schema Type [schema.org/EducationEvent](https://schema.org/EducationEvent)
+	* Schema Type [schema.org/ExhibitionEvent](https://schema.org/ExhibitionEvent)
+	* Schema Type [schema.org/Festival](https://schema.org/Festival)
+	* Schema Type [schema.org/FoodEvent](https://schema.org/FoodEvent)
+	* Schema Type [schema.org/LiteraryEvent](https://schema.org/LiteraryEvent)
+	* Schema Type [schema.org/MusicEvent](https://schema.org/MusicEvent)
+	* Schema Type [schema.org/PublicationEvent](https://schema.org/PublicationEvent)
+	* Schema Type [schema.org/SaleEvent](https://schema.org/SaleEvent)
+	* Schema Type [schema.org/ScreeningEvent](https://schema.org/ScreeningEvent)
+	* Schema Type [schema.org/SocialEvent](https://schema.org/SocialEvent)
+	* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
+	* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
+	* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
+* Schema Type [schema.org/Organization](https://schema.org/Organization)
+	* Schema Type [schema.org/Airline](https://schema.org/Airline)
+	* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
+	* Schema Type [schema.org/EducationalOrganization](https://schema.org/EducationalOrganization)
+		* Schema Type [schema.org/CollegeOrUniversity](https://schema.org/CollegeOrUniversity)
+		* Schema Type [schema.org/ElementarySchool](https://schema.org/ElementarySchool)
+		* Schema Type [schema.org/HighSchool](https://schema.org/HighSchool)
+		* Schema Type [schema.org/MiddleSchool](https://schema.org/MiddleSchool)
+		* Schema Type [schema.org/Preschool](https://schema.org/Preschool)
+		* Schema Type [schema.org/School](https://schema.org/School)
+	* Schema Type [schema.org/GovernmentOrganization](https://schema.org/GovernmentOrganization)
+	* Schema Type [schema.org/MedicalOrganization](https://schema.org/MedicalOrganization)
+		* Schema Type [schema.org/Pharmacy](https://schema.org/Pharmacy)
+		* Schema Type [schema.org/Physician](https://schema.org/Physician)
+	* Schema Type [schema.org/NGO](https://schema.org/NGO)
 	* Schema Type [schema.org/Organization](https://schema.org/Organization)
-		* Schema Type [schema.org/Airline](https://schema.org/Airline)
-		* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
-		* Schema Type [schema.org/EducationalOrganization](https://schema.org/EducationalOrganization)
-			* Schema Type [schema.org/CollegeOrUniversity](https://schema.org/CollegeOrUniversity)
-			* Schema Type [schema.org/ElementarySchool](https://schema.org/ElementarySchool)
-			* Schema Type [schema.org/HighSchool](https://schema.org/HighSchool)
-			* Schema Type [schema.org/MiddleSchool](https://schema.org/MiddleSchool)
-			* Schema Type [schema.org/Preschool](https://schema.org/Preschool)
-			* Schema Type [schema.org/School](https://schema.org/School)
-		* Schema Type [schema.org/GovernmentOrganization](https://schema.org/GovernmentOrganization)
-		* Schema Type [schema.org/MedicalOrganization](https://schema.org/MedicalOrganization)
-			* Schema Type [schema.org/Pharmacy](https://schema.org/Pharmacy)
-			* Schema Type [schema.org/Physician](https://schema.org/Physician)
-		* Schema Type [schema.org/NGO](https://schema.org/NGO)
-		* Schema Type [schema.org/Organization](https://schema.org/Organization)
+	* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
+		* Schema Type [schema.org/DanceGroup](https://schema.org/DanceGroup)
+		* Schema Type [schema.org/MusicGroup](https://schema.org/MusicGroup)
 		* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
-			* Schema Type [schema.org/DanceGroup](https://schema.org/DanceGroup)
-			* Schema Type [schema.org/MusicGroup](https://schema.org/MusicGroup)
-			* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
-			* Schema Type [schema.org/TheaterGroup](https://schema.org/TheaterGroup)
-		* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
-			* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
-	* Schema Type [schema.org/Person](https://schema.org/Person)
-	* Schema Type [schema.org/Place](https://schema.org/Place)
-		* Schema Type [schema.org/Accommodation](https://schema.org/Accommodation)
-			* Schema Type [schema.org/Apartment](https://schema.org/Apartment)
-			* Schema Type [schema.org/CampingPitch](https://schema.org/CampingPitch)
-			* Schema Type [schema.org/House](https://schema.org/House)
-				* Schema Type [schema.org/SingleFamilyResidence](https://schema.org/SingleFamilyResidence)
-			* Schema Type [schema.org/Room](https://schema.org/Room)
-				* Schema Type [schema.org/HotelRoom](https://schema.org/HotelRoom)
-				* Schema Type [schema.org/MeetingRoom](https://schema.org/MeetingRoom)
-			* Schema Type [schema.org/Room](https://schema.org/Suite)
-		* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
-		* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
-			* Schema Type [schema.org/Airport](https://schema.org/Airport)
-			* Schema Type [schema.org/Aquarium](https://schema.org/Aquarium)
-			* Schema Type [schema.org/Beach](https://schema.org/Beach)
-			* Schema Type [schema.org/Bridge](https://schema.org/Bridge)
-			* Schema Type [schema.org/BusStation](https://schema.org/BusStation)
-			* Schema Type [schema.org/BusStop](https://schema.org/BusStop)
-			* Schema Type [schema.org/Cemetary](https://schema.org/Cemetary)
-			* Schema Type [schema.org/Crematorium](https://schema.org/Crematorium)
-			* Schema Type [schema.org/EventVenu](https://schema.org/EventVenu)
-			* Schema Type [schema.org/Park](https://schema.org/Park)
-			* Schema Type [schema.org/ParkingFacility](https://schema.org/ParkingFacility)
-			* Schema Type [schema.org/PerformingArtsTheater](https://schema.org/PerformingArtsTheater)
-			* Schema Type [schema.org/PlaceOfWorship](https://schema.org/PlaceOfWorship)
-			* Schema Type [schema.org/Playground](https://schema.org/Playground)
-			* Schema Type [schema.org/RVPark](https://schema.org/RVPark)
-			* Schema Type [schema.org/SubwayStation](https://schema.org/SubwayStation)
-			* Schema Type [schema.org/TaxiStand](https://schema.org/TaxiStand)
-			* Schema Type [schema.org/TrainStation](https://schema.org/TrainStation)
-			* Schema Type [schema.org/Zoo](https://schema.org/Zoo)
-		* Schema Type [schema.org/Landform](https://schema.org/Landform)
-		* Schema Type [schema.org/LandmarksOrHistoricalBuildings](https://schema.org/LandmarksOrHistoricalBuildings)
-		* Schema Type [schema.org/LocalBusiness](https://schema.org/LocalBusiness)
-			* Schema Type [schema.org/AnimalShelter](https://schema.org/AnimalShelter)
-			* Schema Type [schema.org/AutomotiveBusiness](https://schema.org/AutomotiveBusiness)
-				* Schema Type [schema.org/AutoBodyShop](https://schema.org/AutoBodyShop)
-				* Schema Type [schema.org/AutoDealer](https://schema.org/AutoDealer)
-				* Schema Type [schema.org/AutoPartsStore](https://schema.org/AutoPartsStore)
-				* Schema Type [schema.org/AutoRental](https://schema.org/AutoRental)
-				* Schema Type [schema.org/AutoRepair](https://schema.org/AutoRepair)
-				* Schema Type [schema.org/AutoWash](https://schema.org/AutoWash)
-				* Schema Type [schema.org/GasStation](https://schema.org/GasStation)
-				* Schema Type [schema.org/MotorcycleDealer](https://schema.org/MotorcycleDealer)
-				* Schema Type [schema.org/MotorcycleRepair](https://schema.org/MotorcycleRepair)
-			* Schema Type [schema.org/ChildCare](https://schema.org/ChildCare)
-			* Schema Type [schema.org/Dentist](https://schema.org/Dentist)
-			* Schema Type [schema.org/DryCleaningOrLaundry](https://schema.org/DryCleaningOrLaundry)
-			* Schema Type [schema.org/EmergencyService](https://schema.org/EmergencyService)
-				* Schema Type [schema.org/FireStation](https://schema.org/FireStation)
-				* Schema Type [schema.org/Hospital](https://schema.org/Hospital)
-				* Schema Type [schema.org/PoliceStation](https://schema.org/PoliceStation)
-			* Schema Type [schema.org/EmploymentAgency](https://schema.org/EmploymentAgency)
-			* Schema Type [schema.org/EntertainmentBusiness](https://schema.org/EntertainmentBusiness)
-				* Schema Type [schema.org/MovieTheatre](https://schema.org/MovieTheatre)
-			* Schema Type [schema.org/FinancialService](https://schema.org/FinancialService)
-			* Schema Type [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
-				* Schema Type [schema.org/Bakery](https://schema.org/Bakery)
-				* Schema Type [schema.org/BarOrPub](https://schema.org/BarOrPub)
-				* Schema Type [schema.org/Brewery](https://schema.org/Brewery)
-				* Schema Type [schema.org/CafeOrCoffeeShop](https://schema.org/CafeOrCoffeeShop)
-				* Schema Type [schema.org/FastFoodRestaurant](https://schema.org/FastFoodRestaurant)
-				* Schema Type [schema.org/IceCreamShop](https://schema.org/IceCreamShop)
-				* Schema Type [schema.org/Restaurant](https://schema.org/Restaurant)
-				* Schema Type [schema.org/Winery](https://schema.org/Winery)
-			* Schema Type [schema.org/GovernmentOffice](https://schema.org/GovernmentOffice)
-			* Schema Type [schema.org/HealthAndBeautyBusiness](https://schema.org/HealthAndBeautyBusiness)
-			* Schema Type [schema.org/HomeAndConstructionBusiness](https://schema.org/HomeAndConstructionBusiness)
-				* Schema Type [schema.org/Electrician](https://schema.org/Electrician)
-				* Schema Type [schema.org/GeneralContractor](https://schema.org/GeneralContractor)
-				* Schema Type [schema.org/HVACBusiness](https://schema.org/HVACBusiness)
-				* Schema Type [schema.org/HousePainter](https://schema.org/HousePainter)
-				* Schema Type [schema.org/Locksmith](https://schema.org/Locksmith)
-				* Schema Type [schema.org/MovingCompany](https://schema.org/MovingCompany)
-				* Schema Type [schema.org/Plumber](https://schema.org/Plumber)
-				* Schema Type [schema.org/RoofingContractor](https://schema.org/RoofingContractor)
-			* Schema Type [schema.org/InternetCafe](https://schema.org/InternetCafe)
-			* Schema Type [schema.org/LegalService](https://schema.org/LegalService)
-			* Schema Type [schema.org/Library](https://schema.org/Library)
-			* Schema Type [schema.org/LodgingBusiness](https://schema.org/LodgingBusiness)
-				* Schema Type [schema.org/Campground](https://schema.org/Campground)
-			* Schema Type [health-lifesci.schema.org/MedicalBusiness](https://health-lifesci.schema.org/MedicalBusiness)
-				* Schema Type [health-lifesci.schema.org/CommunityHealth](https://health-lifesci.schema.org/CommunityHealth)
-				* Schema Type [health-lifesci.schema.org/Dentist](https://health-lifesci.schema.org/Dentist)
-				* Schema Type [health-lifesci.schema.org/Dermatology](https://health-lifesci.schema.org/Dermatology)
-				* Schema Type [health-lifesci.schema.org/DietNutrition](https://health-lifesci.schema.org/DietNutrition)
-				* Schema Type [health-lifesci.schema.org/Emergency](https://health-lifesci.schema.org/Emergency)
-				* Schema Type [health-lifesci.schema.org/Geriatric](https://health-lifesci.schema.org/Geriatric)
-				* Schema Type [health-lifesci.schema.org/Gynecologic](https://health-lifesci.schema.org/Gynecologic)
-				* Schema Type [health-lifesci.schema.org/MedicalClinic](https://health-lifesci.schema.org/MedicalClinic)
-				* Schema Type [health-lifesci.schema.org/Midwifery](https://health-lifesci.schema.org/Midwifery)
-				* Schema Type [health-lifesci.schema.org/Nursing](https://health-lifesci.schema.org/Nursing)
-				* Schema Type [health-lifesci.schema.org/Obstetric](https://health-lifesci.schema.org/Obstetric)
-				* Schema Type [health-lifesci.schema.org/Oncologic](https://health-lifesci.schema.org/Oncologic)
-				* Schema Type [health-lifesci.schema.org/Optician](https://health-lifesci.schema.org/Optician)
-				* Schema Type [health-lifesci.schema.org/Optometric](https://health-lifesci.schema.org/Optometric)
-				* Schema Type [health-lifesci.schema.org/Otolaryngologic](https://health-lifesci.schema.org/Otolaryngologic)
-				* Schema Type [health-lifesci.schema.org/Pediatric](https://health-lifesci.schema.org/Pediatric)
-				* Schema Type [health-lifesci.schema.org/Pharmacy](https://health-lifesci.schema.org/Pharmacy)
-				* Schema Type [health-lifesci.schema.org/Physician](https://health-lifesci.schema.org/Physician)
-				* Schema Type [health-lifesci.schema.org/Physiotherapy](https://health-lifesci.schema.org/Physiotherapy)
-				* Schema Type [health-lifesci.schema.org/PlasticSurgery](https://health-lifesci.schema.org/PlasticSurgery)
-				* Schema Type [health-lifesci.schema.org/Podiatric](https://health-lifesci.schema.org/Podiatric)
-				* Schema Type [health-lifesci.schema.org/PrimaryCare](https://health-lifesci.schema.org/PrimaryCare)
-				* Schema Type [health-lifesci.schema.org/Psychiatric](https://health-lifesci.schema.org/Psychiatric)
-				* Schema Type [health-lifesci.schema.org/PublicHealth](https://health-lifesci.schema.org/PublicHealth)
-			* Schema Type [schema.org/ProfessionalService](https://schema.org/ProfessionalService)
-			* Schema Type [schema.org/RadioStation](https://schema.org/RadioStation)
-			* Schema Type [schema.org/RealEstateAgent](https://schema.org/RealEstateAgent)
-			* Schema Type [schema.org/RecyclingCenter](https://schema.org/RecyclingCenter)
-			* Schema Type [schema.org/SelfStorage](https://schema.org/SelfStorage)
-			* Schema Type [schema.org/ShoppingCenter](https://schema.org/ShoppingCenter)
-			* Schema Type [schema.org/SportsActivityLocation](https://schema.org/SportsActivityLocation)
-				* Schema Type [schema.org/StadiumOrArena](https://schema.org/StadiumOrArena)
-			* Schema Type [schema.org/Store](https://schema.org/Store)
-				* Schema Type [schema.org/AutoPartsStore](https://schema.org/AutoPartsStore)
-				* Schema Type [schema.org/BikeStore](https://schema.org/BikeStore)
-				* Schema Type [schema.org/BookStore](https://schema.org/BookStore)
-				* Schema Type [schema.org/ClothingStore](https://schema.org/ClothingStore)
-				* Schema Type [schema.org/ComputerStore](https://schema.org/ComputerStore)
-				* Schema Type [schema.org/ConvenienceStore](https://schema.org/ConvenienceStore)
-				* Schema Type [schema.org/DepartmentStore](https://schema.org/DepartmentStore)
-				* Schema Type [schema.org/ElectronicsStore](https://schema.org/ElectronicsStore)
-				* Schema Type [schema.org/Florist](https://schema.org/Florist)
-				* Schema Type [schema.org/FurnitureStore](https://schema.org/FurnitureStore)
-				* Schema Type [schema.org/GardenStore](https://schema.org/GardenStore)
-				* Schema Type [schema.org/GroceryStore](https://schema.org/GroceryStore)
-				* Schema Type [schema.org/HardwareStore](https://schema.org/HardwareStore)
-				* Schema Type [schema.org/HobbyShop](https://schema.org/HobbyShop)
-				* Schema Type [schema.org/HomeGoodsStore](https://schema.org/HomeGoodsStore)
-				* Schema Type [schema.org/JewelryStore](https://schema.org/JewelryStore)
-				* Schema Type [schema.org/LiquorStore](https://schema.org/LiquorStore)
-				* Schema Type [schema.org/MensClothingStore](https://schema.org/MensClothingStore)
-				* Schema Type [schema.org/MobilePhoneStore](https://schema.org/MobilePhoneStore)
-				* Schema Type [schema.org/MovieRentalStore](https://schema.org/MovieRentalStore)
-				* Schema Type [schema.org/MusicStore](https://schema.org/MusicStore)
-				* Schema Type [schema.org/OfficeEquipmentStore](https://schema.org/OfficeEquipmentStore)
-				* Schema Type [schema.org/OutletStore](https://schema.org/OutletStore)
-				* Schema Type [schema.org/PawnShop](https://schema.org/PawnShop)
-				* Schema Type [schema.org/PetStore](https://schema.org/PetStore)
-				* Schema Type [schema.org/ShoeStore](https://schema.org/ShoeStore)
-				* Schema Type [schema.org/SportingGoodsStore](https://schema.org/SportingGoodsStore)
-				* Schema Type [schema.org/TireShop](https://schema.org/TireShop)
-				* Schema Type [schema.org/ToyStore](https://schema.org/ToyStore)
-				* Schema Type [schema.org/WholesaleStore](https://schema.org/WholesaleStore)
-			* Schema Type [schema.org/TelevisionStation](https://schema.org/TelevisionStation)
-			* Schema Type [schema.org/TouristInformationCenter](https://schema.org/TouristInformationCenter)
-			* Schema Type [schema.org/TravelAgency](https://schema.org/TravelAgency)
-		* Schema Type [schema.org/Residence](https://schema.org/Residence)
-			* Schema Type [schema.org/ApartmentComplex](https://schema.org/ApartmentComplex)
-			* Schema Type [schema.org/GatedResidenceCommunity](https://schema.org/GatedResidenceCommunity)
-		* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
-	* Schema Type [schema.org/Product](https://schema.org/Product) (supported e-Commerce plugin required)
-		* Schema Type [schema.org/IndividualProduct](https://schema.org/IndividualProduct)
-		* Schema Type [schema.org/ProductModel](https://schema.org/ProductModel)
-		* Schema Type [schema.org/SomeProducts](https://schema.org/SomeProducts)
-		* Schema Type [auto.schema.org/Vehicle](https://auto.schema.org/Vehicle)
-			* Schema Type [auto.schema.org/BusOrCoach](https://auto.schema.org/BusOrCoach)
-			* Schema Type [auto.schema.org/Car](https://auto.schema.org/Car)
-			* Schema Type [auto.schema.org/Motorcycle](https://auto.schema.org/Motorcycle)
-			* Schema Type [auto.schema.org/MotorizedBicycle](https://auto.schema.org/MotorizedBicycle)
+		* Schema Type [schema.org/TheaterGroup](https://schema.org/TheaterGroup)
+	* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
+		* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
+* Schema Type [schema.org/Person](https://schema.org/Person)
+* Schema Type [schema.org/Place](https://schema.org/Place)
+	* Schema Type [schema.org/Accommodation](https://schema.org/Accommodation)
+		* Schema Type [schema.org/Apartment](https://schema.org/Apartment)
+		* Schema Type [schema.org/CampingPitch](https://schema.org/CampingPitch)
+		* Schema Type [schema.org/House](https://schema.org/House)
+			* Schema Type [schema.org/SingleFamilyResidence](https://schema.org/SingleFamilyResidence)
+		* Schema Type [schema.org/Room](https://schema.org/Room)
+			* Schema Type [schema.org/HotelRoom](https://schema.org/HotelRoom)
+			* Schema Type [schema.org/MeetingRoom](https://schema.org/MeetingRoom)
+		* Schema Type [schema.org/Room](https://schema.org/Suite)
+	* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
+	* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
+		* Schema Type [schema.org/Airport](https://schema.org/Airport)
+		* Schema Type [schema.org/Aquarium](https://schema.org/Aquarium)
+		* Schema Type [schema.org/Beach](https://schema.org/Beach)
+		* Schema Type [schema.org/Bridge](https://schema.org/Bridge)
+		* Schema Type [schema.org/BusStation](https://schema.org/BusStation)
+		* Schema Type [schema.org/BusStop](https://schema.org/BusStop)
+		* Schema Type [schema.org/Cemetary](https://schema.org/Cemetary)
+		* Schema Type [schema.org/Crematorium](https://schema.org/Crematorium)
+		* Schema Type [schema.org/EventVenu](https://schema.org/EventVenu)
+		* Schema Type [schema.org/Park](https://schema.org/Park)
+		* Schema Type [schema.org/ParkingFacility](https://schema.org/ParkingFacility)
+		* Schema Type [schema.org/PerformingArtsTheater](https://schema.org/PerformingArtsTheater)
+		* Schema Type [schema.org/PlaceOfWorship](https://schema.org/PlaceOfWorship)
+		* Schema Type [schema.org/Playground](https://schema.org/Playground)
+		* Schema Type [schema.org/RVPark](https://schema.org/RVPark)
+		* Schema Type [schema.org/SubwayStation](https://schema.org/SubwayStation)
+		* Schema Type [schema.org/TaxiStand](https://schema.org/TaxiStand)
+		* Schema Type [schema.org/TrainStation](https://schema.org/TrainStation)
+		* Schema Type [schema.org/Zoo](https://schema.org/Zoo)
+	* Schema Type [schema.org/Landform](https://schema.org/Landform)
+	* Schema Type [schema.org/LandmarksOrHistoricalBuildings](https://schema.org/LandmarksOrHistoricalBuildings)
+	* Schema Type [schema.org/LocalBusiness](https://schema.org/LocalBusiness)
+		* Schema Type [schema.org/AnimalShelter](https://schema.org/AnimalShelter)
+		* Schema Type [schema.org/AutomotiveBusiness](https://schema.org/AutomotiveBusiness)
+			* Schema Type [schema.org/AutoBodyShop](https://schema.org/AutoBodyShop)
+			* Schema Type [schema.org/AutoDealer](https://schema.org/AutoDealer)
+			* Schema Type [schema.org/AutoPartsStore](https://schema.org/AutoPartsStore)
+			* Schema Type [schema.org/AutoRental](https://schema.org/AutoRental)
+			* Schema Type [schema.org/AutoRepair](https://schema.org/AutoRepair)
+			* Schema Type [schema.org/AutoWash](https://schema.org/AutoWash)
+			* Schema Type [schema.org/GasStation](https://schema.org/GasStation)
+			* Schema Type [schema.org/MotorcycleDealer](https://schema.org/MotorcycleDealer)
+			* Schema Type [schema.org/MotorcycleRepair](https://schema.org/MotorcycleRepair)
+		* Schema Type [schema.org/ChildCare](https://schema.org/ChildCare)
+		* Schema Type [schema.org/Dentist](https://schema.org/Dentist)
+		* Schema Type [schema.org/DryCleaningOrLaundry](https://schema.org/DryCleaningOrLaundry)
+		* Schema Type [schema.org/EmergencyService](https://schema.org/EmergencyService)
+			* Schema Type [schema.org/FireStation](https://schema.org/FireStation)
+			* Schema Type [schema.org/Hospital](https://schema.org/Hospital)
+			* Schema Type [schema.org/PoliceStation](https://schema.org/PoliceStation)
+		* Schema Type [schema.org/EmploymentAgency](https://schema.org/EmploymentAgency)
+		* Schema Type [schema.org/EntertainmentBusiness](https://schema.org/EntertainmentBusiness)
+			* Schema Type [schema.org/MovieTheatre](https://schema.org/MovieTheatre)
+		* Schema Type [schema.org/FinancialService](https://schema.org/FinancialService)
+		* Schema Type [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment)
+			* Schema Type [schema.org/Bakery](https://schema.org/Bakery)
+			* Schema Type [schema.org/BarOrPub](https://schema.org/BarOrPub)
+			* Schema Type [schema.org/Brewery](https://schema.org/Brewery)
+			* Schema Type [schema.org/CafeOrCoffeeShop](https://schema.org/CafeOrCoffeeShop)
+			* Schema Type [schema.org/FastFoodRestaurant](https://schema.org/FastFoodRestaurant)
+			* Schema Type [schema.org/IceCreamShop](https://schema.org/IceCreamShop)
+			* Schema Type [schema.org/Restaurant](https://schema.org/Restaurant)
+			* Schema Type [schema.org/Winery](https://schema.org/Winery)
+		* Schema Type [schema.org/GovernmentOffice](https://schema.org/GovernmentOffice)
+		* Schema Type [schema.org/HealthAndBeautyBusiness](https://schema.org/HealthAndBeautyBusiness)
+		* Schema Type [schema.org/HomeAndConstructionBusiness](https://schema.org/HomeAndConstructionBusiness)
+			* Schema Type [schema.org/Electrician](https://schema.org/Electrician)
+			* Schema Type [schema.org/GeneralContractor](https://schema.org/GeneralContractor)
+			* Schema Type [schema.org/HVACBusiness](https://schema.org/HVACBusiness)
+			* Schema Type [schema.org/HousePainter](https://schema.org/HousePainter)
+			* Schema Type [schema.org/Locksmith](https://schema.org/Locksmith)
+			* Schema Type [schema.org/MovingCompany](https://schema.org/MovingCompany)
+			* Schema Type [schema.org/Plumber](https://schema.org/Plumber)
+			* Schema Type [schema.org/RoofingContractor](https://schema.org/RoofingContractor)
+		* Schema Type [schema.org/InternetCafe](https://schema.org/InternetCafe)
+		* Schema Type [schema.org/LegalService](https://schema.org/LegalService)
+		* Schema Type [schema.org/Library](https://schema.org/Library)
+		* Schema Type [schema.org/LodgingBusiness](https://schema.org/LodgingBusiness)
+			* Schema Type [schema.org/Campground](https://schema.org/Campground)
+		* Schema Type [health-lifesci.schema.org/MedicalBusiness](https://health-lifesci.schema.org/MedicalBusiness)
+			* Schema Type [health-lifesci.schema.org/CommunityHealth](https://health-lifesci.schema.org/CommunityHealth)
+			* Schema Type [health-lifesci.schema.org/Dentist](https://health-lifesci.schema.org/Dentist)
+			* Schema Type [health-lifesci.schema.org/Dermatology](https://health-lifesci.schema.org/Dermatology)
+			* Schema Type [health-lifesci.schema.org/DietNutrition](https://health-lifesci.schema.org/DietNutrition)
+			* Schema Type [health-lifesci.schema.org/Emergency](https://health-lifesci.schema.org/Emergency)
+			* Schema Type [health-lifesci.schema.org/Geriatric](https://health-lifesci.schema.org/Geriatric)
+			* Schema Type [health-lifesci.schema.org/Gynecologic](https://health-lifesci.schema.org/Gynecologic)
+			* Schema Type [health-lifesci.schema.org/MedicalClinic](https://health-lifesci.schema.org/MedicalClinic)
+			* Schema Type [health-lifesci.schema.org/Midwifery](https://health-lifesci.schema.org/Midwifery)
+			* Schema Type [health-lifesci.schema.org/Nursing](https://health-lifesci.schema.org/Nursing)
+			* Schema Type [health-lifesci.schema.org/Obstetric](https://health-lifesci.schema.org/Obstetric)
+			* Schema Type [health-lifesci.schema.org/Oncologic](https://health-lifesci.schema.org/Oncologic)
+			* Schema Type [health-lifesci.schema.org/Optician](https://health-lifesci.schema.org/Optician)
+			* Schema Type [health-lifesci.schema.org/Optometric](https://health-lifesci.schema.org/Optometric)
+			* Schema Type [health-lifesci.schema.org/Otolaryngologic](https://health-lifesci.schema.org/Otolaryngologic)
+			* Schema Type [health-lifesci.schema.org/Pediatric](https://health-lifesci.schema.org/Pediatric)
+			* Schema Type [health-lifesci.schema.org/Pharmacy](https://health-lifesci.schema.org/Pharmacy)
+			* Schema Type [health-lifesci.schema.org/Physician](https://health-lifesci.schema.org/Physician)
+			* Schema Type [health-lifesci.schema.org/Physiotherapy](https://health-lifesci.schema.org/Physiotherapy)
+			* Schema Type [health-lifesci.schema.org/PlasticSurgery](https://health-lifesci.schema.org/PlasticSurgery)
+			* Schema Type [health-lifesci.schema.org/Podiatric](https://health-lifesci.schema.org/Podiatric)
+			* Schema Type [health-lifesci.schema.org/PrimaryCare](https://health-lifesci.schema.org/PrimaryCare)
+			* Schema Type [health-lifesci.schema.org/Psychiatric](https://health-lifesci.schema.org/Psychiatric)
+			* Schema Type [health-lifesci.schema.org/PublicHealth](https://health-lifesci.schema.org/PublicHealth)
+		* Schema Type [schema.org/ProfessionalService](https://schema.org/ProfessionalService)
+		* Schema Type [schema.org/RadioStation](https://schema.org/RadioStation)
+		* Schema Type [schema.org/RealEstateAgent](https://schema.org/RealEstateAgent)
+		* Schema Type [schema.org/RecyclingCenter](https://schema.org/RecyclingCenter)
+		* Schema Type [schema.org/SelfStorage](https://schema.org/SelfStorage)
+		* Schema Type [schema.org/ShoppingCenter](https://schema.org/ShoppingCenter)
+		* Schema Type [schema.org/SportsActivityLocation](https://schema.org/SportsActivityLocation)
+			* Schema Type [schema.org/StadiumOrArena](https://schema.org/StadiumOrArena)
+		* Schema Type [schema.org/Store](https://schema.org/Store)
+			* Schema Type [schema.org/AutoPartsStore](https://schema.org/AutoPartsStore)
+			* Schema Type [schema.org/BikeStore](https://schema.org/BikeStore)
+			* Schema Type [schema.org/BookStore](https://schema.org/BookStore)
+			* Schema Type [schema.org/ClothingStore](https://schema.org/ClothingStore)
+			* Schema Type [schema.org/ComputerStore](https://schema.org/ComputerStore)
+			* Schema Type [schema.org/ConvenienceStore](https://schema.org/ConvenienceStore)
+			* Schema Type [schema.org/DepartmentStore](https://schema.org/DepartmentStore)
+			* Schema Type [schema.org/ElectronicsStore](https://schema.org/ElectronicsStore)
+			* Schema Type [schema.org/Florist](https://schema.org/Florist)
+			* Schema Type [schema.org/FurnitureStore](https://schema.org/FurnitureStore)
+			* Schema Type [schema.org/GardenStore](https://schema.org/GardenStore)
+			* Schema Type [schema.org/GroceryStore](https://schema.org/GroceryStore)
+			* Schema Type [schema.org/HardwareStore](https://schema.org/HardwareStore)
+			* Schema Type [schema.org/HobbyShop](https://schema.org/HobbyShop)
+			* Schema Type [schema.org/HomeGoodsStore](https://schema.org/HomeGoodsStore)
+			* Schema Type [schema.org/JewelryStore](https://schema.org/JewelryStore)
+			* Schema Type [schema.org/LiquorStore](https://schema.org/LiquorStore)
+			* Schema Type [schema.org/MensClothingStore](https://schema.org/MensClothingStore)
+			* Schema Type [schema.org/MobilePhoneStore](https://schema.org/MobilePhoneStore)
+			* Schema Type [schema.org/MovieRentalStore](https://schema.org/MovieRentalStore)
+			* Schema Type [schema.org/MusicStore](https://schema.org/MusicStore)
+			* Schema Type [schema.org/OfficeEquipmentStore](https://schema.org/OfficeEquipmentStore)
+			* Schema Type [schema.org/OutletStore](https://schema.org/OutletStore)
+			* Schema Type [schema.org/PawnShop](https://schema.org/PawnShop)
+			* Schema Type [schema.org/PetStore](https://schema.org/PetStore)
+			* Schema Type [schema.org/ShoeStore](https://schema.org/ShoeStore)
+			* Schema Type [schema.org/SportingGoodsStore](https://schema.org/SportingGoodsStore)
+			* Schema Type [schema.org/TireShop](https://schema.org/TireShop)
+			* Schema Type [schema.org/ToyStore](https://schema.org/ToyStore)
+			* Schema Type [schema.org/WholesaleStore](https://schema.org/WholesaleStore)
+		* Schema Type [schema.org/TelevisionStation](https://schema.org/TelevisionStation)
+		* Schema Type [schema.org/TouristInformationCenter](https://schema.org/TouristInformationCenter)
+		* Schema Type [schema.org/TravelAgency](https://schema.org/TravelAgency)
+	* Schema Type [schema.org/Residence](https://schema.org/Residence)
+		* Schema Type [schema.org/ApartmentComplex](https://schema.org/ApartmentComplex)
+		* Schema Type [schema.org/GatedResidenceCommunity](https://schema.org/GatedResidenceCommunity)
+	* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
+* Schema Type [schema.org/Product](https://schema.org/Product) (supported e-Commerce plugin required)
+	* Schema Type [schema.org/IndividualProduct](https://schema.org/IndividualProduct)
+	* Schema Type [schema.org/ProductModel](https://schema.org/ProductModel)
+	* Schema Type [schema.org/SomeProducts](https://schema.org/SomeProducts)
+	* Schema Type [auto.schema.org/Vehicle](https://auto.schema.org/Vehicle)
+		* Schema Type [auto.schema.org/BusOrCoach](https://auto.schema.org/BusOrCoach)
+		* Schema Type [auto.schema.org/Car](https://auto.schema.org/Car)
+		* Schema Type [auto.schema.org/Motorcycle](https://auto.schema.org/Motorcycle)
+		* Schema Type [auto.schema.org/MotorizedBicycle](https://auto.schema.org/MotorizedBicycle)
 
 = Markup Examples =
 
-* [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
-* [Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
-* [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
 
 = Extends the WPSSO Plugin =
 

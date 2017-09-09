@@ -8,22 +8,30 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.8.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, rich cards, knowledge graph</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph</td></tr>
 </table>
 
 <h2>Description</h2>
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>Comprehensive and <em>accurate</em> Schema / Structured Data / SEO markup for Google</strong> &mdash; including images, videos, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+<p><strong>Comprehensive and <em>accurate</em> Schema / Rich Card / SEO markup for Google:</strong></p>
 
-<p><strong>Customized Schema markup and optimization features for Pinterest</strong> &mdash; Pinterest does not (currently) read the preferred JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to avoid conflicts between incompatible Pinterest and Facebook Open Graph meta tags.</p>
+<p>Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
-<p><strong>Select a different Schema than <a href="https://schema.org/BlogPosting">BlogPosting</a> for <a href="https://wordpress.org/plugins/amp/">AMP</a> webpages.</strong></p>
+<p><strong>Customized Schema markup and optimization features for Pinterest:</strong></p>
 
-<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types</strong> (Article, BlogPosting, WebPage, etc.) for better Google SEO ranking.</p>
+<p>Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.</p>
 
-<p><strong>Include JSON-LD markup for WooCommerce products</strong> &mdash; including images, variations (weight, size, color, etc), reviews, ratings, and more (Pro version).</p>
+<p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
+
+<p>**Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:</p>
+
+<p>Article, BlogPosting, WebPage, etc. for even better Google SEO ranking. ;-)</p>
+
+<p><strong>Include Schema JSON-LD markup for WooCommerce products:</strong></p>
+
+<p>Including product images, product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).</p>
 
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for social media optimization (SMO) and SEO.</p>
@@ -38,11 +46,13 @@
 
 <p><strong>WPSSO JSON Free / Standard Features</strong></p>
 
-<ul>
-<li>Extends the features of WPSSO Free or Pro.</li>
-<li>Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</li>
-<li>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="https://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</li>
-<li>Adds an additional "Schema Markup" settings page to the SSO menu:
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Free or Pro.</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (requires <a href="https://wpsso.com/">WPSSO Pro</a> to retrieve co-author information).</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:</p>
 
 <ul>
 <li>Website Alternate Name</li>
@@ -59,15 +69,16 @@
 <li>Item Type for Search Results Page</li>
 <li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
 <li>Default Reviewed Item Type</li>
-</ul></li>
-<li>Adds Schema / Structured Data / SEO JSON-LD markup for:
+</ul>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:</p>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a></li>
-</ul></li>
-<li>Provides complete image SEO in webpage Schema JSON-LD markup.</li>
 </ul>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO in webpage Schema JSON-LD markup.</p>
 
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png"></p>
 
@@ -75,10 +86,11 @@
 
 <p><strong>WPSSO JSON Pro / Additional Features</strong></p>
 
-<ul>
-<li>Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</li>
-<li>Provides complete image and video SEO in webpage Schema JSON-LD markup.</li>
-<li>WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.</p>
 
 <ul>
 <li><strong>WPSSO Pro Integrated 3rd Party Plugins</strong>
@@ -118,8 +130,9 @@
 <li>Your Own URL Shortener (YOURLS)</li>
 <li>YouTube Videos and Playlists</li>
 </ul></li>
-</ul></li>
-<li>WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
+</ul>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:</p>
 
 <ul>
 <li><strong>Integration with 3rd Party Plugins</strong>
@@ -129,13 +142,11 @@
 <li>WP Recipe Maker</li>
 <li>WP Ultimate Recipe</li>
 </ul></li>
-</ul></li>
 </ul>
 
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"></p>
 
-<ul>
-<li>Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
@@ -157,10 +168,10 @@
 <li>Recipe Quantity </li>
 <li>Recipe Ingredients </li>
 <li>Recipe Instructions </li>
-<li>Recipe Nutrition Information per Serving 
+<li>Recipe Nutrition Information per Serving </li>
+<li>Serving Size
 
 <ul>
-<li>Serving Size</li>
 <li>Calories</li>
 <li>Protein</li>
 <li>Fiber</li>
@@ -178,13 +189,11 @@
 <li>(Review) Subject Webpage URL </li>
 <li>(Review) Subject Image URL </li>
 <li>Review Rating </li>
-</ul></li>
 </ul>
 
 <p><img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png"></p>
 
-<ul>
-<li>Adds Schema / Structured Data / SEO JSON-LD markup for:
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:</p>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>
@@ -538,16 +547,15 @@
 <li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
 </ul></li>
 </ul></li>
-</ul></li>
 </ul>
 
 <h4>Markup Examples</h4>
 
-<ul>
-<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/">Markup Example for a Restaurant</a> using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).</li>
-<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/">Markup Example for a Tech Article</a> published on surniaulula.com.</li>
-<li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/">Markup Example for a WooCommerce Product</a>, including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</li>
-</ul>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/">Markup Example for a Restaurant</a> using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/">Markup Example for a Tech Article</a> published on surniaulula.com.</p>
+
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/">Markup Example for a WooCommerce Product</a>, including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.</p>
 
 <h4>Extends the WPSSO Plugin</h4>
 
