@@ -19,17 +19,17 @@
 
 <p>Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
 
+<p><strong>Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:</strong></p>
+
+<p>Article, BlogPosting, Recipe, Review, WebPage, etc. for even better Google SEO ranking. ;-)</p>
+
+<p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
+
 <p><strong>Customized Schema markup and optimization features for Pinterest:</strong></p>
 
 <p>Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.</p>
 
-<p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
-
-<p>**Adds comments and threaded replies to Schema CreativeWork markup and its sub-types:</p>
-
-<p>Article, BlogPosting, WebPage, etc. for even better Google SEO ranking. ;-)</p>
-
-<p><strong>Include Schema JSON-LD markup for WooCommerce products:</strong></p>
+<p><strong>Provides extensive Schema JSON-LD markup for WooCommerce products:</strong></p>
 
 <p>Including product images, product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).</p>
 
