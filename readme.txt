@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.8.1
 Requires PHP: 5.3
-Stable Tag: 1.16.3
+Stable Tag: 1.16.4
 
 WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
