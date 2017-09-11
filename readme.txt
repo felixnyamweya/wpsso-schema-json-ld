@@ -516,7 +516,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.5-dev.1 (TBD)**
+**Version 1.16.5-dev.1 (2017/09/11)**
 
 * *New Features*
 	* None
@@ -846,6 +846,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.5-dev.1 =
+
+(2017/09/11) Minor code refactoring for WPSSO v3.46.1.
 
 = 1.16.4 =
 
