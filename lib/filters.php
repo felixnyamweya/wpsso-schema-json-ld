@@ -394,7 +394,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			foreach ( array_keys( $table_rows ) as $key ) {
 				switch ( $key ) {
 					case 'schema_add_noscript':	// keep these rows
-					case 'schema_social_json':
+					case 'schema_knowledge_graph':
 						break;
 					case 'subsection_google_schema':	// remove these rows
 					case ( strpos( $key, 'schema_' ) === 0 ? true : false ):
