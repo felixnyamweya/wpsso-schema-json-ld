@@ -33,7 +33,7 @@
 
 <p>Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).</p>
 
-<p><strong>WPSSO Schema JSON-LD Markup is <em>fast</em> and coded for performance:</strong></p>
+<p><strong>WPSSO JSON is <em>fast</em> and coded for performance:</strong></p>
 
 <p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes needed, keeping the code small, fast, light, and able to support a wide range of 3rd party integration features.</p>
 
@@ -41,7 +41,7 @@
 
 <h4>WPSSO (Core Plugin) Prerequisite</h4>
 
-<p>WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
+<p>WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
 
 <p>The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).</p>
 
