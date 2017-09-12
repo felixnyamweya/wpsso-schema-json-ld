@@ -37,7 +37,7 @@ Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and
 
 Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).
 
-**WPSSO JSON is *fast* and coded for performance:**
+**WPSSO Schema JSON-LD Markup is *fast* and coded for performance:**
 
 WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes needed, keeping the code small, fast, light, and able to support a wide range of 3rd party integration features.
 
