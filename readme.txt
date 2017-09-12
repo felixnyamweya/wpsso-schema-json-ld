@@ -27,11 +27,11 @@ Including image objects, video objects, organization (publisher), person (author
 
 Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)
 
-**Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
-
 **Customized Schema markup and optimization features for Pinterest:**
 
 Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
+
+**Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
 **Provides *extensive* Schema JSON-LD markup for WooCommerce products and variations:**
 

@@ -23,11 +23,11 @@
 
 <p>Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)</p>
 
-<p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
-
 <p><strong>Customized Schema markup and optimization features for Pinterest:</strong></p>
 
 <p>Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.</p>
+
+<p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
 
 <p><strong>Provides <em>extensive</em> Schema JSON-LD markup for WooCommerce products and variations:</strong></p>
 
