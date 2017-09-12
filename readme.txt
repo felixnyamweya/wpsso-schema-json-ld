@@ -43,7 +43,7 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-= Prerequisite =
+= WPSSO (Core Plugin) Prerequisite =
 
 WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which *automatically* generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
