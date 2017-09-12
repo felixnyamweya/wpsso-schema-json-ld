@@ -43,13 +43,13 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-<blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
+= Prerequisite =
 
-<p>The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).</p>
+WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which *automatically* generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
-<p>The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq">WPSSO JSON Pro extension</a> uses many WPSSO Pro (Core Plugin) features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq">WPSSO Pro (Core Plugin)</a>.</p>
-</blockquote>
+The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).
+
+The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Pro (Core Plugin) features and requires the [WPSSO Pro (Core Plugin)](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq).
 
 = Quick List of Features =
 
