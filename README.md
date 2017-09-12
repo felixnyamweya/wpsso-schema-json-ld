@@ -85,6 +85,8 @@
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO in webpage Schema JSON-LD markup.</p>
 
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from <a href="https://surniaulula.github.io/wpsso-schema-json-ld/">GitHub</a> or <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WordPress.org</a>.</p>
+
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png"></p>
 
 <h4>Quick List of Features (Continued)</h4>
