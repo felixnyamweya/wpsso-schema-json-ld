@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-09-08 20:38-0400\n"
-"PO-Revision-Date: 2017-09-11 10:33-0400\n"
+"POT-Creation-Date: 2017-09-13 12:31-0400\n"
+"PO-Revision-Date: 2017-09-13 12:37-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -557,92 +557,22 @@ msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr "Types de Schéma"
 
-#: lib/submenu/schema-json-ld.php:57
+#: lib/submenu/schema-json-ld.php:59
 msgctxt "option label"
 msgid "Website Name"
 msgstr "Nom du site Web"
 
-#: lib/submenu/schema-json-ld.php:63
+#: lib/submenu/schema-json-ld.php:65
 msgctxt "option label"
 msgid "Website Alternate Name"
 msgstr "Autre nom du site Web"
 
-#: lib/submenu/schema-json-ld.php:69
+#: lib/submenu/schema-json-ld.php:71
 msgctxt "option label"
 msgid "Website Description"
 msgstr "Description du site Web"
 
-#: lib/submenu/schema-json-ld.php:76
-msgctxt "option label"
-msgid "Organization Logo URL"
-msgstr "URL logo de organisation"
-
-#: lib/submenu/schema-json-ld.php:80
-msgctxt "option label"
-msgid "Organization Banner URL"
-msgstr "URL bannière d'organisation"
-
-#: lib/submenu/schema-json-ld.php:84
-msgctxt "option label"
-msgid "Maximum Images to Include"
-msgstr "Images maximum a inclure"
-
-#: lib/submenu/schema-json-ld.php:89
-msgctxt "option comment"
-msgid "video preview images are enabled (and included first)"
-msgstr "images d'aperçu vidéo sont activés (et inclus en premier)"
-
-#: lib/submenu/schema-json-ld.php:92
-msgctxt "option label"
-msgid "Schema Image Dimensions"
-msgstr "Dimensions d'images Schéma"
-
-#: lib/submenu/schema-json-ld.php:97
-msgctxt "option label"
-msgid "Maximum Description Length"
-msgstr "Longueur de description maximale"
-
-#: lib/submenu/schema-json-ld.php:100
-msgctxt "option comment"
-msgid "characters or less"
-msgstr "caractères ou moins"
-
-#: lib/submenu/schema-json-ld.php:103
-msgctxt "option label"
-msgid "Author / Person Name Format"
-msgstr "Format du nom d’auteur"
-
-#: lib/submenu/schema-json-ld.php:115
-msgctxt "option label"
-msgid "Item Type for Blog Front Page"
-msgstr "Type d'élément pour page blog d'avant"
-
-#: lib/submenu/schema-json-ld.php:116
-msgctxt "option label"
-msgid "Item Type for Static Front Page"
-msgstr "Type d'élément pour page statique d'avant"
-
-#: lib/submenu/schema-json-ld.php:117
-msgctxt "option label"
-msgid "Item Type for Archive Page"
-msgstr "Type d’élément pour page d'archive"
-
-#: lib/submenu/schema-json-ld.php:118
-msgctxt "option label"
-msgid "Item Type for User / Author Page"
-msgstr "Type d’élément pour page d'utilisateur / auteur"
-
-#: lib/submenu/schema-json-ld.php:119
-msgctxt "option label"
-msgid "Item Type for Search Results Page"
-msgstr "Type d’élément pour page résultats de recherche"
-
-#: lib/submenu/schema-json-ld.php:142
-msgctxt "option label"
-msgid "Item Type by Post Type"
-msgstr "Type d'élément par type d'article"
-
-#: lib/submenu/schema-json-ld.php:147
+#: lib/submenu/schema-json-ld.php:91
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr "Type par défaut de l'article évalué"
