@@ -49,7 +49,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 		}
 
 		protected function get_table_rows( $metabox_id, $key ) {
+
 			$table_rows = array();
+
 			switch ( $metabox_id.'-'.$key ) {
 				case 'schema_json_ld-props':
 
@@ -71,39 +73,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'site_desc', $this->p->options ),
 						'', '', 0, get_bloginfo( 'description', 'display' ) ).'</td>';
 
-					$table_rows['schema_logo_url'] = $this->form->get_th_html( 
-						'<a href="https://developers.google.com/structured-data/customize/logos">'.
-						_x( 'Organization Logo URL', 'option label', 'wpsso-schema-json-ld' ).'</a>',
-							'', 'schema_logo_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_logo_url', $this->p->options ), 'wide' ).'</td>';
-
-					$table_rows['schema_banner_url'] = $this->form->get_th_html( _x( 'Organization Banner URL',
-						'option label', 'wpsso-organization' ), '', 'schema_banner_url', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_banner_url', $this->p->options ), 'wide' ).'</td>';
-
-					$table_rows['schema_img_max'] = $this->form->get_th_html( _x( 'Maximum Images to Include',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_img_max' ).
-					'<td>'.$this->form->get_select( 'schema_img_max', 
-						range( 0, $this->p->cf['form']['max_media_items'] ), 'short', '', true ).
-					( empty( $this->form->options['og_vid_prev_img'] ) ?
-						'' : ' <em>'._x( 'video preview images are enabled (and included first)',
-							'option comment', 'wpsso-schema-json-ld' ).'</em>' ).'</td>';
-
-					$table_rows['schema_img'] = $this->form->get_th_html( _x( 'Schema Image Dimensions',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_img_dimensions' ).
-					'<td>'.$this->form->get_input_image_dimensions( 'schema_img' ).'</td>';	// $use_opts = false
-
-					$table_rows['schema_desc_len'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Maximum Description Length',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_desc_len' ).
-					'<td>'.$this->form->get_input( 'schema_desc_len', 'short' ).' '.
-						_x( 'characters or less', 'option comment', 'wpsso-schema-json-ld' ).'</td>';
-
-					$table_rows['schema_author_name'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Author / Person Name Format',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_author_name' ).
-					'<td>'.$this->form->get_select( 'schema_author_name', 
-						$this->p->cf['form']['user_name_fields'] ).'</td>';
+					$this->add_schema_item_props_table_rows( $table_rows );
 
 					break;
 
@@ -111,37 +81,11 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 
-					foreach ( array( 
-						'home_index' => _x( 'Item Type for Blog Front Page', 'option label', 'wpsso-schema-json-ld' ),
-						'home_page' => _x( 'Item Type for Static Front Page', 'option label', 'wpsso-schema-json-ld' ),
-						'archive_page' => _x( 'Item Type for Archive Page', 'option label', 'wpsso-schema-json-ld' ),
-						'user_page' => _x( 'Item Type for User / Author Page', 'option label', 'wpsso-schema-json-ld' ),
-						'search_page' => _x( 'Item Type for Search Results Page', 'option label', 'wpsso-schema-json-ld' ),
-					) as $type_name => $type_label ) {
-						switch ( $type_name ) {
-							case 'archive_page':
-							case 'user_page':
-							case 'search_page':
-								$tr = '<tr class="hide_in_basic">';
-								break;
-							default:
-								$tr = '';
-								break;
-						}
-						$table_rows['schema_type_for_'.$type_name] = $tr.
-						$this->form->get_th_html( $type_label, '', 'schema_type_for_'.$type_name ).
-						'<td>'.$this->form->get_select( 'schema_type_for_'.$type_name, $schema_types, 'schema_type' ).'</td>';
-					}
-
-					$schema_by_ptn = '';
-					foreach ( $this->p->util->get_post_types( 'object' ) as $pt ) {
-						$schema_by_ptn .= '<p>'.$this->form->get_select( 'schema_type_for_'.$pt->name,
-							$schema_types, 'schema_type' ).' for '.$pt->label.'</p>'."\n";
-					}
-
-					$table_rows['schema_type_for_ptn'] = $this->form->get_th_html( _x( 'Item Type by Post Type',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_type_for_ptn' ).
-					'<td>'.$schema_by_ptn.'</td>';
+					$this->add_schema_item_types_table_rows( $table_rows, array(
+						'schema_type_for_archive_page' => 'hide_in_basic',	// hide in basic view
+						'schema_type_for_user_page' => 'hide_in_basic',		// hide in basic view
+						'schema_type_for_search_page' => 'hide_in_basic',	// hide in basic view
+					), $schema_types );
 
 					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 
