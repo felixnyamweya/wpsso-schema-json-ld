@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.16.5-dev.2 (2017/09/13)**
+**Version 1.16.5-b.1 (2017/09/13)**
 
 * *New Features*
 	* None
@@ -535,6 +535,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Minor code refactoring for WPSSO v3.46.1.
 		* Renamed the Advanced settings 'social' tab ID to 'custom_meta'.
+		* Moved common Schema options from the settings page to methods the WpssoAdmin class.
 
 **Version 1.16.4 (2017/09/10)**
 
@@ -855,7 +856,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.5-dev.2 =
+= 1.16.5-b.1 =
 
 (2017/09/13) Minor code refactoring for WPSSO v3.46.1.
 
