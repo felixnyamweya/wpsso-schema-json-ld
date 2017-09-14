@@ -43,7 +43,7 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-= WPSSO (Core Plugin) Prerequisite =
+<h3>WPSSO (Core Plugin) Prerequisite</h3>
 
 WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
@@ -51,9 +51,9 @@ The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO
 
 The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Pro (Core Plugin) features and requires the [WPSSO Pro (Core Plugin)](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq).
 
-= Quick List of Features =
+<h3>Quick List of Features</h3>
 
-**WPSSO JSON Free / Standard Features**
+<h4>WPSSO JSON Free / Standard Features</h4>
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Free or Pro.
 
@@ -89,9 +89,9 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
-= Quick List of Features (Continued) =
+<h3>Quick List of Features (Continued)</h3>
 
-**WPSSO JSON Pro / Additional Features**
+<h4>WPSSO JSON Pro / Additional Features</h4>
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).
 
@@ -455,7 +455,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 		* Schema Type [auto.schema.org/Motorcycle](https://auto.schema.org/Motorcycle)
 		* Schema Type [auto.schema.org/MotorizedBicycle](https://auto.schema.org/MotorizedBicycle)
 
-= Markup Examples =
+<h3>Markup Examples</h3>
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
 
@@ -463,7 +463,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
 
-= Extends the WPSSO Plugin =
+<h3>Extends the WPSSO Plugin</h3>
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).
 
@@ -473,20 +473,20 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 == Installation ==
 
-= Install and Uninstall =
+<h3>Install and Uninstall</h3>
 
 * [Install the WPSSO JSON Plugin (Free and Pro version)](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
 * [Uninstall the WPSSO JSON Plugin](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
-= Frequently Asked Questions =
+<h3>Frequently Asked Questions</h3>
 
 * None
 
 == Other Notes ==
 
-= Additional Documentation =
+<h3>Additional Documentation</h3>
 
 * [Developer Resources](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/)
 	* [Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/)
@@ -508,12 +508,12 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 == Changelog ==
 
-= Free / Basic Version Repository =
+<h3>Free / Basic Version Repository</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/developers/)
 
-= Version Numbering =
+<h3>Version Numbering</h3>
 
 Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
@@ -522,7 +522,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
-= Changelog / Release Notes =
+<h3>Changelog / Release Notes</h3>
 
 **Version 1.16.5-rc.1 (2017/09/14)**
 
