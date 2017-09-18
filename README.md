@@ -17,7 +17,7 @@
 
 <p><strong>Comprehensive and <em>accurate</em> Schema / Rich Card markup for Google:</strong></p>
 
-<p>Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.</p>
+<p>Including image objects, video objects, local business, organization / publisher, person / author and co-authors, product variations, product ratings, recipe information, reviews, event details, collection pages, and much more.</p>
 
 <p><strong>Adds comments and threaded replies to Schema CreativeWork:</strong></p>
 
@@ -35,7 +35,7 @@
 
 <p><strong>WPSSO JSON is <em>fast</em> and coded for performance:</strong></p>
 
-<p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the library files and object classes they need, keeping the code small, fast, and light.</p>
+<p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
 
 <p>WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).</p>
 

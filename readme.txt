@@ -21,7 +21,7 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 **Comprehensive and *accurate* Schema / Rich Card markup for Google:**
 
-Including image objects, video objects, organization (publisher), person (author and co-authors), product variations, product ratings, recipe details, event information, collection pages, and much more.
+Including image objects, video objects, local business, organization / publisher, person / author and co-authors, product variations, product ratings, recipe information, reviews, event details, collection pages, and much more.
 
 **Adds comments and threaded replies to Schema CreativeWork:**
 
@@ -39,7 +39,7 @@ Including product images, custom product variations (weight, size, color, materi
 
 **WPSSO JSON is *fast* and coded for performance:**
 
-WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the library files and object classes they need, keeping the code small, fast, and light.
+WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
