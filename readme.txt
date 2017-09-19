@@ -23,19 +23,19 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 Including image objects, video objects, local business, organization / publisher, person / author and co-authors, product variations, product ratings, recipe information, reviews, event details, collection pages, and much more.
 
-**Adds comments and threaded replies to Schema CreativeWork:**
-
-Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)
-
 **Customized Schema markup and optimization features for Pinterest:**
 
 Pinterest does not currently read the preferred Schema JSON-LD format. WPSSO and its WPSSO JSON extension include special provisions to provide unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
-**Provides *extensive* Schema JSON-LD markup for WooCommerce products and variations:**
+**Provides *extensive* markup for WooCommerce products and variations:**
 
 Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).
+
+**Adds comments and threaded replies to Schema CreativeWork:**
+
+Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)
 
 **WPSSO JSON is *fast* and coded for performance:**
 
