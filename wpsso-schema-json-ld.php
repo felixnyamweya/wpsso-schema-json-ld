@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires At Least: 3.7
- * Tested Up To: 4.8.1
+ * Tested Up To: 4.8.2
  * Requires PHP: 5.3
  * Version: 1.16.5
  * 
