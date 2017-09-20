@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.8.1
+Tested Up To: 4.8.2
 Requires PHP: 5.3
 Stable Tag: 1.16.5
 
