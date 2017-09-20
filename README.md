@@ -33,7 +33,7 @@
 
 <p>Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)</p>
 
-<p><strong>WPSSO JSON is <em>fast</em> and coded for performance:</strong></p>
+<p><strong>WPSSO JSON is <em>super fast</em> and coded for performance:</strong></p>
 
 <p>WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.</p>
 
