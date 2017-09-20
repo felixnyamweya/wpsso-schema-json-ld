@@ -15,23 +15,23 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>Comprehensive and <em>accurate</em> Schema / Rich Card markup for Google:</strong></p>
+<p><strong>Comprehensive and accurate Schema / Rich Card markup for Google:</strong></p>
 
 <p>Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, and much, much more.</p>
 
 <p><strong>Customized Schema markup and optimization features for Pinterest:</strong></p>
 
-<p>Pinterest does not currently read the preferred Schema JSON-LD format &mdash; WPSSO and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.</p>
+<p>Pinterest does not (currently) read the preferred Schema JSON-LD format &mdash; WPSSO and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.</p>
 
 <p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
 
-<p><strong>Provides <em>extensive</em> markup for WooCommerce products and variations:</strong></p>
+<p><strong>Provides extensive markup for WooCommerce products and variations:</strong></p>
 
 <p>Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).</p>
 
 <p><strong>Adds comments and threaded replies to Schema CreativeWork:</strong></p>
 
-<p>Including the CreativeWork sub-types Article, BlogPosting, Recipe, Review, WebPage, etc., for even better Google SEO ranking. ;-)</p>
+<p>Includes comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)</p>
 
 <p><strong>WPSSO JSON is <em>super fast</em> and coded for performance:</strong></p>
 
