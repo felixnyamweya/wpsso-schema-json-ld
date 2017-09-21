@@ -17,7 +17,7 @@
 
 <p><strong>Comprehensive and accurate Schema / Rich Card markup for Google:</strong></p>
 
-<p>Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, and much, much more.</p>
+<p>Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, and much, much more (Pro version required for product and video markup).</p>
 
 <p><strong>Customized Schema markup and optimization features for Pinterest:</strong></p>
 
