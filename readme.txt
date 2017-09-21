@@ -21,17 +21,17 @@ WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local B
 
 **Comprehensive and accurate Schema / Rich Card markup for Google:**
 
-Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, and much, much more (Pro version required for product and video markup).
+Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
 
 **Customized Schema markup and optimization features for Pinterest:**
 
-Pinterest does not (currently) read the preferred Schema JSON-LD format &mdash; WPSSO and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
+Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
-**Provides extensive markup for WooCommerce products and variations:**
+**Provides extensive markup for WooCommerce products and variations (Pro version):**
 
-Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more (Pro version).
+Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
 **Adds comments and threaded replies to Schema CreativeWork:**
 
