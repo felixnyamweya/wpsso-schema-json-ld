@@ -15,7 +15,7 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>Comprehensive and accurate Schema / Rich Card markup for Google:</strong></p>
+<p><strong><em>Comprehensive</em> and <em>accurate</em> Schema / Rich Card markup for Google:</strong></p>
 
 <p>Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).</p>
 
