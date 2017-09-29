@@ -210,7 +210,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'select_options' => $this->p->cf['form']['item_availability'],
 							'select_default' => 'InStock',
 						),
-					), '', 'schema_event_offer', 0, WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX, 2 ),
+					), '', 'schema_event_offer', 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX, 2 ),
 				),
 
 				/*

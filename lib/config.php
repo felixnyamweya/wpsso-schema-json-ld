@@ -138,7 +138,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT'] = true;
 
 			$var_const['WPSSOJSON_SCHEMA_ADD_TYPE_URL_MAX'] = 5;
-			$var_const['WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX'] = 10;
 			$var_const['WPSSOJSON_SCHEMA_RECIPE_INGREDIENTS_MAX'] = 90;
 			$var_const['WPSSOJSON_SCHEMA_RECIPE_INSTRUCTIONS_MAX'] = 90;
 

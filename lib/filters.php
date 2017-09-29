@@ -284,16 +284,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 
-			foreach ( range( 0, WPSSOJSON_SCHEMA_EVENT_OFFERS_MAX - 1, 1 ) as $num ) {
+			foreach ( range( 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX - 1, 1 ) as $key_num ) {
 				$have_offer = false;
 				foreach ( array( 'schema_event_offer_name', 'schema_event_offer_price' ) as $md_pre ) {
-					if ( isset( $md_opts[$md_pre.'_'.$num] ) && $md_opts[$md_pre.'_'.$num] !== '' ) {
+					if ( isset( $md_opts[$md_pre.'_'.$key_num] ) && $md_opts[$md_pre.'_'.$key_num] !== '' ) {
 						$have_offer = true;
 					}
 				}
 				if ( ! $have_offer ) {
-					unset( $md_opts['schema_event_offer_currency_'.$num] );
-					unset( $md_opts['schema_event_offer_avail_'.$num] );
+					unset( $md_opts['schema_event_offer_currency_'.$key_num] );
+					unset( $md_opts['schema_event_offer_avail_'.$key_num] );
 				}
 			}
 
