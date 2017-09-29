@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.16.5',		// plugin version
+					'version' => '1.16.6-dev.1',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.46.1',
+						'min_version' => '3.46.3-dev.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -136,10 +136,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR'] = '_';
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_DEPTH'] = 3;
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT'] = true;
-
-			$var_const['WPSSOJSON_SCHEMA_ADD_TYPE_URL_MAX'] = 5;
-			$var_const['WPSSOJSON_SCHEMA_RECIPE_INGREDIENTS_MAX'] = 90;
-			$var_const['WPSSOJSON_SCHEMA_RECIPE_INSTRUCTIONS_MAX'] = 90;
 
 			foreach ( $var_const as $name => $value ) {
 				if ( defined( $name ) ) {
