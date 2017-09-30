@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Minor code refactoring for WPSSO v3.46.3.
+	* Minor code refactoring / standardizing for WPSSO v3.46.3.
 
 **Version 1.16.5 (2017/09/15)**
 
@@ -865,7 +865,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.6-dev.2 =
 
-(2017/09/30) Minor code refactoring for WPSSO v3.46.3.
+(2017/09/30) Minor code refactoring / standardizing for WPSSO v3.46.3.
 
 = 1.16.5 =
 
