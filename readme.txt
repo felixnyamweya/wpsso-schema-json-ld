@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.6-dev.2 (2017/09/30)**
+**Version 1.16.6-rc.1 (2017/09/30)**
 
 * *New Features*
 	* None
@@ -863,7 +863,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.6-dev.2 =
+= 1.16.6-rc.1 =
 
 (2017/09/30) Minor code refactoring / standardizing for WPSSO v3.46.3.
 
