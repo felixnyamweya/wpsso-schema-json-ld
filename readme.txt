@@ -524,6 +524,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.16.7-dev.1 (2017/10/04)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the inLanguage prperty value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
+* *Developer Notes*
+	* None
+
 **Version 1.16.6 (2017/10/02)**
 
 * *New Features*
@@ -862,6 +873,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.16.7-dev.1 =
+
+(2017/10/04) Fixed the inLanguage prperty value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
 
 = 1.16.6 =
 
