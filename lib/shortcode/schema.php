@@ -36,6 +36,11 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			add_filter( 'sucom_strip_shortcodes_preg', array( &$this, 'strip_shortcodes_preg' ) );
 
 			$this->add_shortcode();
+
+			$this->p->util->add_plugin_actions( $this, array( 
+				'text_filter_before' => 1,
+				'text_filter_after' => 1,
+			) );
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
@@ -51,6 +56,24 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.
 				'[0-9]+[^\]]*\]/';
 			return $preg_array;
+		}
+
+		public function action_text_filter_before( $filter_name ) {
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log_args( array( 
+					'filter_name' => $filter_name,
+				) );
+			}
+			return $this->add_shortcode();
+		}
+
+		public function action_text_filter_after( $filter_name ) {
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log_args( array( 
+					'filter_name' => $filter_name,
+				) );
+			}
+			return $this->remove_shortcode();
 		}
 
 		public function add_shortcode() {
