@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		private $set_data = false;
 		private $data_ref = null;
 		private $prev_ref = null;
-		private $sc_depth = 0;
 		private $sc_names = array();
+		private $sc_depth = 0;
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			add_filter( 'no_texturize_shortcodes', array( &$this, 'exclude_from_wptexturize' ) );
 			add_filter( 'sucom_strip_shortcodes_preg', array( &$this, 'strip_shortcodes_preg' ) );
 
-			$this->add();
+			$this->add_shortcode();
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
@@ -46,30 +46,52 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function strip_shortcodes_preg( $preg_array ) {
-			$preg_array[] = '/\[\/?'.WPSSOJSON_SCHEMA_SHORTCODE_NAME.
-				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\]/';
+			$preg_array[] = '/\[\/?'.
+				WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.
+				'[0-9]+[^\]]*\]/';
 			return $preg_array;
 		}
 
-		public function add() {
+		public function add_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
+				$sc_added = false;
 				foreach ( $this->sc_names as $sc_name ) {
-        				add_shortcode( $sc_name, array( &$this, 'shortcode' ) );
-					$this->p->debug->log( '['.$sc_name.'] schema shortcode added' );
+					if ( ! shortcode_exists( $sc_name ) ) {
+						$sc_added = true;
+        					add_shortcode( $sc_name, array( &$this, 'do_shortcode' ) );
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( '['.$sc_name.'] schema shortcode added' );
+						}
+					} elseif ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'cannot add ['.$sc_name.'] schema shortcode - shortcode already exists' );
+					}
 				}
+				return $sc_added;
 			}
+			return false;
 		}
 
-		public function remove() {
+		public function remove_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
+				$sc_removed = false;
 				foreach ( $this->sc_names as $sc_name ) {
-					remove_shortcode( $sc_name );
-					$this->p->debug->log( '['.$sc_name.'] schema shortcode removed' );
+					if ( shortcode_exists( $sc_name ) ) {
+						$sc_removed = true;
+						remove_shortcode( $sc_name );
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( '['.$sc_name.'] schema shortcode removed' );
+						}
+					} elseif ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'cannot remove ['.$sc_name.'] schema shortcode - shortcode does not exist' );
+					}
 				}
+				return $sc_removed;
 			}
+			return false;
 		}
 
-		public function shortcode( $atts, $content, $sc_name ) {
+		public function do_shortcode( $atts, $content, $sc_name ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
