@@ -82,7 +82,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *	inLanguage
 			 */
-			$ret['inLanguage'] = get_locale();
+			$ret['inLanguage'] = SucomUtil::get_locale( $mod );
 
 			/*
 			 * Property:
