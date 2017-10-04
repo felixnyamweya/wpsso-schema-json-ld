@@ -524,16 +524,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.7-dev.1 (2017/10/04)**
+**Version 1.16.7-dev.2 (2017/10/04)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed the inLanguage prperty value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
+	* Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
 * *Developer Notes*
-	* None
+	* Added a shortcode_exists() call to the WpssoJsonShortcodeSchema add_shortcode() and remove_shortcode() methods for more complete debug info.
 
 **Version 1.16.6 (2017/10/02)**
 
@@ -874,9 +874,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.7-dev.1 =
+= 1.16.7-dev.2 =
 
-(2017/10/04) Fixed the inLanguage prperty value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
+(2017/10/04) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
 
 = 1.16.6 =
 
