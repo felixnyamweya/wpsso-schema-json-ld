@@ -40,6 +40,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * $page_type_id can be false to prevent recursion.
 			 */
 			if ( $page_type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts' );
 				}
