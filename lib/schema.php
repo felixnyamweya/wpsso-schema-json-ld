@@ -59,6 +59,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$posts_per_page = apply_filters( $wpsso->cf['lca'].'_posts_per_page', 
 					get_option( 'posts_per_page' ), $mod );
 
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'posts_per_page from filter is '.$posts_per_page );
+				}
+
+				if ( defined( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX' ) ) {
+					if ( $posts_per_page > WPSSO_SCHEMA_POSTS_PER_PAGE_MAX ) {
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'posts_per_page greater than max of '.WPSSO_SCHEMA_POSTS_PER_PAGE_MAX.
+								' - setting posts_per_page to '.WPSSO_SCHEMA_POSTS_PER_PAGE_MAX );
+						}
+						$posts_per_page = WPSSO_SCHEMA_POSTS_PER_PAGE_MAX;
+					}
+				}
+
 				if ( count( $posts_mods ) > $posts_per_page ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'slicing posts_mods array from '.
