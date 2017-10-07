@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.7-b.1 (2017/10/04)**
+**Version 1.16.7-rc.4 (2017/10/07)**
 
 * *New Features*
 	* None
@@ -533,6 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function.
 * *Developer Notes*
+	* Added a new WPSSO_SCHEMA_POSTS_PER_PAGE_MAX constant (default is 20) to limit posts included in a collection.
 	* Added a shortcode_exists() call to the WpssoJsonShortcodeSchema add_shortcode() and remove_shortcode() methods for more complete debug info.
 	* Added 'wpsso_text_filter_before' and 'wpsso_text_filter_after' action hooks WpssoJsonShortcodeSchema to dynamically remove / add the schema shortcode(s) as required.
 
@@ -875,9 +876,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.7-b.1 =
+= 1.16.7-rc.4 =
 
-(2017/10/04) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
+(2017/10/07) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
 
 = 1.16.6 =
 
