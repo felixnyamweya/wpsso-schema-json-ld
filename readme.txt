@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.7-rc.4 (2017/10/07)**
+**Version 1.16.7-rc.5 (2017/10/07)**
 
 * *New Features*
 	* None
@@ -876,7 +876,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.7-rc.4 =
+= 1.16.7-rc.5 =
 
 (2017/10/07) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
 
