@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.16.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-10-07 07:49-0600\n"
-"PO-Revision-Date: 2017-10-07 07:49-0600\n"
+"POT-Creation-Date: 2017-10-08 08:07-0600\n"
+"PO-Revision-Date: 2017-10-08 08:08-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -530,15 +530,15 @@ msgctxt "option comment"
 msgid "to"
 msgstr "à"
 
-#: lib/shortcode/schema.php:86
+#: lib/shortcode/schema.php:131
 msgid "%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required prop attribute value."
 msgstr "Le shortcode %2$s de %1$s avec \"%3$s\" pour l'attribut type doit avoir une valeur pour l'attribut prop aussi."
 
-#: lib/shortcode/schema.php:100
+#: lib/shortcode/schema.php:145
 msgid "%1$s %2$s shortcode with a description value is missing the required type attribute value."
 msgstr "Le shortcode %2$s de %1$s avec un texte de description doit avoir une valeur pour l'attribut type."
 
-#: lib/shortcode/schema.php:129
+#: lib/shortcode/schema.php:174
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr "Le shortcode %2$s de %1$s avec \"%3$s\" pour l'attribut type du  n'est pas une valeur reconnue."
 
@@ -606,5 +606,5 @@ msgid "JS Morisset"
 msgstr "JS Morisset"
 
 #. Author URI of the plugin/theme
-msgid "https://surniaulula.com/"
-msgstr "https://surniaulula.com/"
+msgid "https://wpsso.com/"
+msgstr "https://wpsso.com/"
