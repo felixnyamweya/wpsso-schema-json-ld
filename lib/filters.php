@@ -267,13 +267,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			foreach ( array( 'schema_event_start', 'schema_event_end' ) as $md_pre ) {
+
 				// unset date / time if same as the default value
 				foreach ( array( 'date', 'time', 'timezone' ) as $md_ext ) {
 					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
-						$md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ) {
+						( $md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ||
+							$md_opts[$md_pre.'_'.$md_ext] === 'none' ) ) {
 						unset( $md_opts[$md_pre.'_'.$md_ext] );
 					}
 				}
+
 				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
 					unset( $md_opts[$md_pre.'_timezone'] );
 					continue;
@@ -330,61 +333,61 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
 
-			$wp_timezone = get_option( 'timezone_string' );
+			$timezone = get_option( 'timezone_string' );
 
 			$schema_md_defs = array(
 				'schema_is_main' => 1,
 				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
 				'schema_title' => '',
 				'schema_desc' => '',
-				'schema_pub_org_id' => 'site',		// Article Publisher
-				'schema_headline' => '',		// Article Headline
-				'schema_event_start_date' => '',	// Event Start Date
-				'schema_event_start_time' => '',	// Event Start Time
-				'schema_event_start_timezone' => '',	// Event Start Timezone
-				'schema_event_end_date' => '',		// Event End Date
-				'schema_event_end_time' => '',		// Event End Time
-				'schema_event_end_timezone' => '',	// Event End Timezone
-				'schema_event_org_id' => 'none',	// Event Organizer
-				'schema_event_perf_id' => 'none',	// Event Performer
-				'schema_org_org_id' => 'none',		// Organization
-				'schema_recipe_prep_days' => 0,		// Recipe Preperation Time (Days)
-				'schema_recipe_prep_hours' => 0,	// Recipe Preperation Time (Hours)
-				'schema_recipe_prep_mins' => 0,		// Recipe Preperation Time (Mins)
-				'schema_recipe_prep_secs' => 0,		// Recipe Preperation Time (Secs)
-				'schema_recipe_cook_days' => 0,		// Recipe Cooking Time (Days)
-				'schema_recipe_cook_hours' => 0,	// Recipe Cooking Time (Hours)
-				'schema_recipe_cook_mins' => 0,		// Recipe Cooking Time (Mins)
-				'schema_recipe_cook_secs' => 0,		// Recipe Cooking Time (Secs)
-				'schema_recipe_total_days' => 0,	// Recipe Total Time (Days)
-				'schema_recipe_total_hours' => 0,	// Recipe Total Time (Hours)
-				'schema_recipe_total_mins' => 0,	// Recipe Total Time (Mins)
-				'schema_recipe_total_secs' => 0,	// Recipe Total Time (Secs)
-				'schema_recipe_course' => '',		// Recipe Course
-				'schema_recipe_cuisine' => '',		// Recipe Cuisine
-				'schema_recipe_yield' => '',		// Recipe Yield
-				'schema_recipe_nutri_serv' => '',	// Serving Size
-				'schema_recipe_nutri_cal' => '',	// Calories
-				'schema_recipe_nutri_prot' => '',	// Protein
-				'schema_recipe_nutri_fib' => '',	// Fiber
-				'schema_recipe_nutri_carb' => '',	// Carbohydrates
-				'schema_recipe_nutri_sugar' => '',	// Sugar
-				'schema_recipe_nutri_sod' => '',	// Sodium
-				'schema_recipe_nutri_fat' => '',	// Fat
-				'schema_recipe_nutri_trans_fat' => '',	// Trans Fat
-				'schema_recipe_nutri_sat_fat' => '',	// Saturated Fat
-				'schema_recipe_nutri_unsat_fat' => '',	// Unsaturated Fat
-				'schema_recipe_nutri_chol' => '',	// Cholesterol
-				'schema_review_item_type' => (		// Reviewed Item Type
+				'schema_pub_org_id' => 'site',			// Article Publisher
+				'schema_headline' => '',			// Article Headline
+				'schema_event_start_date' => '',		// Event Start Date
+				'schema_event_start_time' => 'none',		// Event Start Time
+				'schema_event_start_timezone' => $timezone,	// Event Start Timezone
+				'schema_event_end_date' => '',			// Event End Date
+				'schema_event_end_time' => 'none',		// Event End Time
+				'schema_event_end_timezone' => '',		// Event End Timezone
+				'schema_event_org_id' => 'none',		// Event Organizer
+				'schema_event_perf_id' => 'none',		// Event Performer
+				'schema_org_org_id' => 'none',			// Organization
+				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
+				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
+				'schema_recipe_prep_mins' => 0,			// Recipe Preperation Time (Mins)
+				'schema_recipe_prep_secs' => 0,			// Recipe Preperation Time (Secs)
+				'schema_recipe_cook_days' => 0,			// Recipe Cooking Time (Days)
+				'schema_recipe_cook_hours' => 0,		// Recipe Cooking Time (Hours)
+				'schema_recipe_cook_mins' => 0,			// Recipe Cooking Time (Mins)
+				'schema_recipe_cook_secs' => 0,			// Recipe Cooking Time (Secs)
+				'schema_recipe_total_days' => 0,		// Recipe Total Time (Days)
+				'schema_recipe_total_hours' => 0,		// Recipe Total Time (Hours)
+				'schema_recipe_total_mins' => 0,		// Recipe Total Time (Mins)
+				'schema_recipe_total_secs' => 0,		// Recipe Total Time (Secs)
+				'schema_recipe_course' => '',			// Recipe Course
+				'schema_recipe_cuisine' => '',			// Recipe Cuisine
+				'schema_recipe_yield' => '',			// Recipe Yield
+				'schema_recipe_nutri_serv' => '',		// Serving Size
+				'schema_recipe_nutri_cal' => '',		// Calories
+				'schema_recipe_nutri_prot' => '',		// Protein
+				'schema_recipe_nutri_fib' => '',		// Fiber
+				'schema_recipe_nutri_carb' => '',		// Carbohydrates
+				'schema_recipe_nutri_sugar' => '',		// Sugar
+				'schema_recipe_nutri_sod' => '',		// Sodium
+				'schema_recipe_nutri_fat' => '',		// Fat
+				'schema_recipe_nutri_trans_fat' => '',		// Trans Fat
+				'schema_recipe_nutri_sat_fat' => '',		// Saturated Fat
+				'schema_recipe_nutri_unsat_fat' => '',		// Unsaturated Fat
+				'schema_recipe_nutri_chol' => '',		// Cholesterol
+				'schema_review_item_type' => (			// Reviewed Item Type
 					empty( $this->p->options['schema_review_item_type'] ) ?
 						'none' : $this->p->options['schema_review_item_type']
 				),
-				'schema_review_item_name' => '',	// Reviewed Item Name
-				'schema_review_item_url' => '',		// Reviewed Item URL
-				'schema_review_item_image_url' => '',	// Reviewed Item Image URL
-				'schema_review_rating' => '0.0',	// Reviewed Item Rating
-				'schema_review_rating_from' => '1',	// Reviewed Item Rating (from)
-				'schema_review_rating_to' => '5',	// Reviewed Item Rating (to)
+				'schema_review_item_name' => '',		// Reviewed Item Name
+				'schema_review_item_url' => '',			// Reviewed Item URL
+				'schema_review_item_image_url' => '',		// Reviewed Item Image URL
+				'schema_review_rating' => '0.0',		// Reviewed Item Rating
+				'schema_review_rating_from' => '1',		// Reviewed Item Rating (from)
+				'schema_review_rating_to' => '5',		// Reviewed Item Rating (to)
 			);
 
 			return array_merge( $md_defs, $schema_md_defs );
