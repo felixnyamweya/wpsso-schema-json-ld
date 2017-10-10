@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup ===
+=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup for WPSSO Core ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -43,13 +43,13 @@ WPSSO and its extensions make full use of all available caching techniques (pers
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
-<h3>WPSSO (Core Plugin) Prerequisite</h3>
+<h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup is an extension for the WPSSO (Core Plugin) &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
+WPSSO Schema JSON-LD Markup is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
 
-The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).
+The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.
 
-The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Pro (Core Plugin) features and requires the [WPSSO Pro (Core Plugin)](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq).
+The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro plugin features and requires the [WPSSO Core Pro](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq) plugin.
 
 <h3>Quick List of Features</h3>
 
@@ -463,11 +463,11 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
 
-<h3>Extends the WPSSO Plugin</h3>
+<h3>Extends the WPSSO Core Plugin</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO (Core Plugin).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Pro (Core Plugin) features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Pro (Core Plugin)</a>.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro plugin features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Core Pro</a> plugin.
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro extension here</a> (all purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.7-rc.5 (2017/10/08)**
+**Version 1.16.7-rc.6 (2017/10/10)**
 
 * *New Features*
 	* None
@@ -737,7 +737,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Minor revision to move URLs in the extension config to the main WPSSO (Core Plugin) config.
+	* Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
 	* Dropped the package number from the production version string.
 
 **Version 1.13.5 (2017/04/05)**
@@ -876,9 +876,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.7-rc.5 =
+= 1.16.7-rc.6 =
 
-(2017/10/08) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
+(2017/10/10) Fixed the inLanguage property value by calling the SucomUtil get_locale() method instead of the WordPress get_locale() function. Refactored the WpssoJsonShortcodeSchema add / remove shortcode methods.
 
 = 1.16.6 =
 
@@ -946,7 +946,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.13.6 =
 
-(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO (Core Plugin) config.
+(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
 
 = 1.13.5 =
 
