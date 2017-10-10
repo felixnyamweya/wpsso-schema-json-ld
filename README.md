@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / SEO Markup for WPSSO Core</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / SEO Markup</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>

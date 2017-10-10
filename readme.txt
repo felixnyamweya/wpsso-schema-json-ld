@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup for WPSSO Core ===
+=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / SEO Markup ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
