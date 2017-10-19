@@ -887,7 +887,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.9-dev.1 =
+= 1.16.8-dev.1 =
 
 (2017/10/19) None.
 
