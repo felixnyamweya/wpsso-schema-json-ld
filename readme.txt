@@ -889,7 +889,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.16.8-dev.1 =
 
-(2017/10/19) None.
+(2017/10/19) Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
 
 = 1.16.7 =
 
