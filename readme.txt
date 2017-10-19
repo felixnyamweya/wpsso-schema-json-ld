@@ -13,7 +13,7 @@ Tested Up To: 4.8.2
 Requires PHP: 5.3
 Stable Tag: 1.16.7
 
-WPSSO extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
+WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Including image objects / SEO, video objects / SEO, local business SEO, organiza
 
 **Customized Schema markup and optimization features for Pinterest:**
 
-Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
+Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO Core and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
@@ -37,11 +37,11 @@ Including product images, custom product variations (weight, size, color, materi
 
 Includes comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)
 
-**WPSSO JSON is *super fast* and coded for performance:**
+**WPSSO JSON is *incredibly fast* and coded for performance:**
 
-WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
+WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
-WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
+WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
