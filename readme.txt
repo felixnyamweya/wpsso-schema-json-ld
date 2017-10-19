@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
 
 **Version 1.16.7 (2017/10/15)**
 
