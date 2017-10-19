@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.16.7',		// plugin version
+					'version' => '1.16.8-dev.1',		// plugin version
 					'opt_version' => '9',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.47.0',
+						'min_version' => '3.47.2-dev.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -79,6 +79,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							'prop' => array(
 								'aggregaterating' => '(code) Property Aggregate Rating',
 								'review' => '(code) Property Reviews',
+							),
+							'job' => array(
+								'wpjobmanager' => '(plugin) WP Job Manager',
 							),
 							'recipe' => array(
 								'wprecipemaker' => '(plugin) WP Recipe Maker',

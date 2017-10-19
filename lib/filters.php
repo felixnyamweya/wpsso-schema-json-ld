@@ -37,8 +37,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'json_data_https_schema_org_thing' => 5,
 				), -1000 );	// make sure we run first
 			}
-		
+
+error_log( 'HOOKING get_avail' );
 			$this->p->util->add_plugin_filters( $this, array(
+				'get_avail' => 1,
 				'get_md_defaults' => 2,
 			) );
 
@@ -329,6 +331,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$transients['WpssoHead::get_head_array'][] = 'user:'.$author_id;
 
 			return $transients;
+		}
+
+		public function filter_get_avail( $avail ) {
+			if ( class_exists( 'WP_Job_Manager' ) ) {
+				$avail['job']['*'] = $avail['job']['wpjobmanager'] = true;
+			}
+			if ( class_exists( 'WP_Recipe_Maker' ) ) {
+				$avail['recipe']['*'] = $avail['recipe']['wprecipemaker'] = true;
+			}
+			if ( class_exists( 'WPUltimateRecipe' ) ) {
+				$avail['recipe']['*'] = $avail['recipe']['wpultimaterecipe'] = true;
+			}
+			if ( class_exists( 'WPPR' ) ) {
+				$avail['review']['*'] = $avail['review']['wpproductreview'] = true;
+			}
+			return $avail;
 		}
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
