@@ -54,6 +54,8 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 2 );
+			add_filter( 'wpsso_get_avail', array( &$this, 'wpsso_get_avail' ), 10, 1 );
+
 			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 100 );
 			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 100 );
 			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 100 );
@@ -108,19 +110,10 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoJsonConfig::$cf );
 		}
 
-		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
-				$this->p =& Wpsso::get_instance();
-			} else {
-				$this->p =& $GLOBALS['wpsso'];
-			}
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
+		public function wpsso_get_avail( $avail ) {
 
 			if ( self::$have_min ) {
-				$this->p->avail['p_ext']['json'] = true;
+				$avail['p_ext']['json'] = true;
 				foreach ( array( 'gpl', 'pro' ) as $lib ) {
 					foreach ( array( 'head', 'prop' ) as $sub ) {
 						if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
@@ -129,12 +122,42 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 						}
 						foreach ( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] as $id_key => $label ) {
 							list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-							$this->p->avail[$sub][$id] = true;
+							$avail[$sub][$id] = true;
 						}
 					}
 				}
 			} else {
-				$this->p->avail['p_ext']['json'] = false;	// just in case
+				$avail['p_ext']['json'] = false;	// just in case
+			}
+
+			// WP Job Manager
+			if ( class_exists( 'WP_Job_Manager' ) ) {
+				$avail['job']['*'] = $avail['job']['wpjobmanager'] = true;
+			}
+
+			// WP Recipe Maker
+			if ( class_exists( 'WP_Recipe_Maker' ) ) {
+				$avail['recipe']['*'] = $avail['recipe']['wprecipemaker'] = true;
+			}
+
+			// WP Ultimate Recipe 
+			if ( class_exists( 'WPUltimateRecipe' ) ) {
+				$avail['recipe']['*'] = $avail['recipe']['wpultimaterecipe'] = true;
+			}
+
+			// WP Product Review
+			if ( class_exists( 'WPPR' ) ) {
+				$avail['review']['*'] = $avail['review']['wpproductreview'] = true;
+			}
+
+			return $avail;
+		}
+
+		public function wpsso_init_options() {
+			$this->p =& Wpsso::get_instance();
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
 			}
 		}
 
