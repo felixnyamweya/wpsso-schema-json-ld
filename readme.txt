@@ -534,6 +534,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
+	* Minor code refactoring for WPSSO v3.47.2.
+		* Added a call to the new WpssoUtil get_ext_req_msg() method to get the required extension text message. 
 
 **Version 1.16.7 (2017/10/15)**
 
