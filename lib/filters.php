@@ -335,9 +335,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$timezone = get_option( 'timezone_string' );
 
+			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $get_id = true, $use_mod_opts = false
+
+			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
+				'USD' : $this->p->options['plugin_def_currency'];
+
+			$review_item_type = empty( $this->p->options['schema_review_item_type'] ) ?
+				'none' : $this->p->options['schema_review_item_type'];
+
 			$schema_md_defs = array(
 				'schema_is_main' => 1,
-				'schema_type' => $this->p->schema->get_mod_schema_type( $mod, true, false ),	// $get_id = true, $use_mod_opts = false
+				'schema_type' => $schema_type,
 				'schema_title' => '',
 				'schema_desc' => '',
 				'schema_pub_org_id' => 'site',			// Article Publisher
@@ -350,6 +358,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_end_timezone' => '',		// Event End Timezone
 				'schema_event_org_id' => 'none',		// Event Organizer
 				'schema_event_perf_id' => 'none',		// Event Performer
+				'schema_job_salary' => '',			// Base Salary (Yearly)
+				'schema_job_currency' => $def_currency,		// Base Salary (Yearly) Currency
 				'schema_org_org_id' => 'none',			// Organization
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
@@ -378,10 +388,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_sat_fat' => '',		// Saturated Fat
 				'schema_recipe_nutri_unsat_fat' => '',		// Unsaturated Fat
 				'schema_recipe_nutri_chol' => '',		// Cholesterol
-				'schema_review_item_type' => (			// Reviewed Item Type
-					empty( $this->p->options['schema_review_item_type'] ) ?
-						'none' : $this->p->options['schema_review_item_type']
-				),
+				'schema_review_item_type' => $review_item_type,	// Reviewed Item Type
 				'schema_review_item_name' => '',		// Reviewed Item Name
 				'schema_review_item_url' => '',			// Reviewed Item URL
 				'schema_review_item_image_url' => '',		// Reviewed Item Image URL

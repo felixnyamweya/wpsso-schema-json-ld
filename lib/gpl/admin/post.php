@@ -32,6 +32,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			}
 
 			$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
+			$currencies = SucomUtil::get_currency_abbrev();
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
@@ -198,8 +199,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'input_title' => _x( 'Event Offer Currency', 'option label', 'wpsso-schema-json-ld' ),
 							'input_type' => 'select',
 							'input_class' => 'currency',
-							'select_options' => SucomUtil::get_currency_abbrev(),
-							'select_default' => $this->p->options['plugin_product_currency'],
+							'select_options' => $currencies,
+							'select_default' => $this->p->options['plugin_def_currency'],
 						),
 						'schema_event_offer_avail' => array(
 							'input_title' => _x( 'Event Offer Availability', 'option label', 'wpsso-schema-json-ld' ),
@@ -224,6 +225,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_job_org_id', $org_names, 'long_name' ).$org_req_msg,
+				),
+				'schema_job_salary' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'label' => _x( 'Base Salary (Yearly)', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_salary', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+						$form->get_no_select( 'schema_job_currency', $currencies, 'currency' ),
 				),
 
 				/*
