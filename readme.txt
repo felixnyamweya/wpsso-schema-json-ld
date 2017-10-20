@@ -524,7 +524,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.8-dev.1 (2017/10/19)**
+**Version 1.16.8-dev.2 (2017/10/20)**
 
 * *New Features*
 	* None
@@ -887,9 +887,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.8-dev.1 =
+= 1.16.8-dev.2 =
 
-(2017/10/19) Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
+(2017/10/20) Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
 
 = 1.16.7 =
 
