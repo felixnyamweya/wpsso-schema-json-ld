@@ -154,6 +154,8 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Event Start (date, time, timezone)
 * Event End (date, time, timezone)
 * Event Offers (name, price, currency, availability)
+* Job Posting Hiring Organization
+* Job Posting Base Salary (Yearly)
 * Recipe Preparation Time 
 * Recipe Cooking Time 
 * Recipe Total Time 
@@ -524,12 +526,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.16.8-dev.2 (2017/10/20)**
+**Version 1.17.0-dev.2 (2017/10/20)**
 
 * *New Features*
-	* None
+	* Added support for the WP Job Manager plugin.
 * *Improvements*
-	* None
+	* Added support for additional Schema Job Posting properties (hiringOrganization, baseSalary, salaryCurrency, etc.).
+	* Added options in the Social and Search Optimization metabox for the Schema Job Posting type:
+		* Hiring Organization
+		* Base Salary (Yearly) and currency selection
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -889,9 +894,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.16.8-dev.2 =
+= 1.17.0-dev.2 =
 
-(2017/10/20) Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
+(2017/10/20) Added support for the WP Job Manager plugin. Added support for additional Schema Job Posting properties. Added options in the Social and Search Optimization metabox for the Schema Job Posting type.
 
 = 1.16.7 =
 
