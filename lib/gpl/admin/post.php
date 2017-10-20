@@ -46,17 +46,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/*
 			 * Organization variables.
 			 */
+			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
 			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization', 'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 
-			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
-				$org_req_msg = ' <p style="display:inline;"><em>'.
-					'<a href="'.$this->p->cf['plugin']['wpssoorg']['url']['home'].'">'.
-						sprintf( _x( '%s extension required', 'option comment', 'wpsso-schema-json-ld' ),
-							$this->p->cf['plugin']['wpssoorg']['short'] ).'</a></em></p>';
-			} else {
-				$org_req_msg = '';
-			}
+			/*
+			 * Place / Location variables.
+			 */
+			$plm_req_msg = $this->p->util->get_ext_req_msg( 'plm' );
 
 			/*
 			 * Javascript classes to hide/show rows by selected schema type.
