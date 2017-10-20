@@ -37,6 +37,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
+
 			$days_sep = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
 			$hours_sep = ' '._x( 'hours', 'option comment', 'wpsso-schema-json-ld' ).', ';
 			$mins_sep = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
@@ -45,8 +46,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/*
 			 * Organization variables.
 			 */
-			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization',
-				'option value', 'wpsso-schema-json-ld' ) );
+			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization', 'option value', 'wpsso-schema-json-ld' ) );
 			$perf_names = array( 'none' => '[None]' );
 
 			if ( empty( $this->p->avail['p_ext']['org'] ) ) {
@@ -64,11 +64,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$schema_type_tr_class = array(
 				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'job.posting' => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local.business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization' => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark( 'setup post form variables' );	// timer end
+			}
 
 			/*
 			 * Remove the default schema rows so we can append a whole new set.
@@ -77,10 +82,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				if ( isset( $table_rows[$key] ) ) {
 					unset ( $table_rows[$key] );
 				}
-			}
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// timer end
 			}
 
 			$form_rows = array(
@@ -211,6 +212,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'select_default' => 'InStock',
 						),
 					), '', 'schema_event_offer', 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX, 2 ),
+				),
+
+				/*
+				 * Schema Job Posting
+				 */
+				'subsection_job' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_job_org_id' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_job_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
 
 				/*
