@@ -596,7 +596,7 @@
 <h3>Frequently Asked Questions</h3>
 
 <ul>
-<li>None</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-schema-property-values-and-types-to-the-json-ld/">Can I add property values and types to the JSON-LD?</a></li>
 </ul>
 
 
