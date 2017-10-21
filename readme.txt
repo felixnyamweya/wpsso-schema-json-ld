@@ -484,7 +484,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <h3>Frequently Asked Questions</h3>
 
-* [Can I add property values and types to the JSON-LD?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-schema-property-values-and-types-to-the-json-ld/)
+* [Can I add custom Schema properties to the JSON-LD?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-custom-schema-properties-to-the-json-ld/)
 
 == Other Notes ==
 
