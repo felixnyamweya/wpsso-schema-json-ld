@@ -536,7 +536,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Hiring Organization
 		* Base Salary (Yearly) and currency selection
 * *Bugfixes*
-	* None
+	* Fix to prevent null assignment when a Schema CollectionPage does not have any mentions (empty categories, for example).
 * *Developer Notes*
 	* Added checks for the WP Job Manager, WP Recipe Maker, WP Ultimate Recipe, and WP Product Review plugins.
 	* Minor code refactoring for WPSSO v3.47.2.
