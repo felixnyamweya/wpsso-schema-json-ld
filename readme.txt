@@ -526,7 +526,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.17.0-dev.3 (2017/10/21)**
+**Version 1.17.0-dev.4 (2017/10/22)**
 
 * *New Features*
 	* Added support for the WP Job Manager plugin.
@@ -894,9 +894,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.17.0-dev.3 =
+= 1.17.0-dev.4 =
 
-(2017/10/21) Added support for the WP Job Manager plugin. Added support for additional Schema Job Posting properties. Added options in the Social and Search Optimization metabox for the Schema Job Posting type.
+(2017/10/22) Added support for the WP Job Manager plugin. Added support for additional Schema Job Posting properties. Added options in the Social and Search Optimization metabox for the Schema Job Posting type.
 
 = 1.16.7 =
 
