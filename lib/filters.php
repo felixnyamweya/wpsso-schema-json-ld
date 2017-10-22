@@ -427,7 +427,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'Select a Schema item type that best describes the main content of this webpage.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_add_type_url':
-					$text = sprintf( __( 'Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/">http://www.productontology.org/</a>' );
+					$text = sprintf( __( 'Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/">The Product Types Ontology</a>' );
 				 	break;
 				case 'tooltip-meta-schema_pub_org_id':
 					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );

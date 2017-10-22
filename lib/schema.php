@@ -110,8 +110,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$post_mt_og = array();
 					$post_mt_og = $wpsso->og->get_array( $post_mod, $post_mt_og );
-					$json_data[$prop_name][] = $wpsso->schema->get_json_data( $post_mod,
-						$post_mt_og, false, true );	// $page_type_id = false, $is_main = true
+					$prop_value = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, false, true );	// $page_type_id = false, $is_main = true
+
+					if ( ! empty( $prop_value ) ) {	// prevent null assignment
+						$json_data[$prop_name][] = $prop_value;
+					}
 
 					// restore previous reference values for admin notices
 					if ( is_admin() ) {
