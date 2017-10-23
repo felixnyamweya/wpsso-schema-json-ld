@@ -187,6 +187,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 			switch ( $key ) {
 				case 'schema_event_offer_name':
+				case 'schema_job_title':
+				case 'schema_job_currency':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
 				case 'schema_recipe_yield':
@@ -233,6 +235,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_review_item_url':
 				case 'schema_review_item_image_url':
 					return 'url';
+					break;
+				case 'schema_job_salary':
+					return 'blank_int';
 					break;
 			}
 			return $type;
