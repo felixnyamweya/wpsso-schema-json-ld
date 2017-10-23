@@ -31,6 +31,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso =& Wpsso::get_instance();
 			$posts_added = 0;
 			$posts_mods = array();
+
+			global $wpsso_paged;
+			$wpsso_paged = 1;
 			
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding posts data' );	// begin timer
@@ -89,22 +92,24 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts' );
 				}
-				$posts_mods = $mod['obj']->get_posts_mods( $mod );
+				$posts_mods = $mod['obj']->get_posts_mods( $mod, false, $wpsso_paged );
 			}
 
 			if ( ! empty( $posts_mods ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
 				}
 
 				foreach ( $posts_mods as $post_mod ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// begin timer
 					}
 
 					// set reference values for admin notices
 					if ( is_admin() ) {
-						$sharing_url = $wpsso->util->get_sharing_url( $post_mod );
+						$sharing_url = $wpsso->util->get_sharing_url( $post_mod, $wpsso_paged );
 						$wpsso->notice->set_ref( $sharing_url, $post_mod );
 					}
 
@@ -127,6 +132,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->mark( 'post id '.$post_mod['id'].' part' );	// end timer
 					}
 				}
+
 			} elseif ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'posts_mods array is empty' );
 			}
@@ -134,6 +140,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding posts data' );	// end timer
 			}
+
+			unset( $wpsso_paged );
 
 			return $posts_added;
 		}

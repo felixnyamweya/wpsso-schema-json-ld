@@ -169,7 +169,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Event Start', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_start', 'td_class' => 'blank',
 					'content' => $form->get_no_input_date( 'schema_event_start_date' ).' '.
-						$form->get_no_select_time( 'schema_event_start_time' ).' TZ '.
+						$form->get_no_select_time( 'schema_event_start_time' ).' '.
+						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
 						$form->get_no_select_timezone( 'schema_event_start_timezone' ),
 				),
 				'schema_event_end' => array(
@@ -177,7 +178,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Event End', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_end', 'td_class' => 'blank',
 					'content' => $form->get_no_input_date( 'schema_event_end_date' ).' '.
-						$form->get_no_select_time( 'schema_event_end_time' ).' TZ '.
+						$form->get_no_select_time( 'schema_event_end_time' ).' '.
+						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
 						$form->get_no_select_timezone( 'schema_event_end_timezone' ),
 				),
 				'schema_event_offers' => array(
@@ -228,10 +230,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
-					'label' => _x( 'Base Salary (Yearly)', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Base Salary', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_salary', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'medium' ).' '.
-						$form->get_no_select( 'schema_job_currency', $currencies, 'currency' ),
+						$form->get_no_select( 'schema_job_salary_currency', $currencies, 'currency' ).' '.
+						_x( 'per', 'option comment', 'wpsso-schema-json-ld' ).' '.
+						$form->get_no_select( 'schema_job_salary_period', $this->p->cf['form']['time_text'], 'short' ),
 				),
 
 				/*

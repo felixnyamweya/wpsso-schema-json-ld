@@ -237,7 +237,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'url';
 					break;
 				case 'schema_job_salary':
-					return 'blank_int';
+					return 'blank_num';
 					break;
 			}
 			return $type;
@@ -363,8 +363,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_end_timezone' => '',		// Event End Timezone
 				'schema_event_org_id' => 'none',		// Event Organizer
 				'schema_event_perf_id' => 'none',		// Event Performer
-				'schema_job_salary' => '',			// Base Salary (Yearly)
-				'schema_job_currency' => $def_currency,		// Base Salary (Yearly) Currency
+				'schema_job_org_id' => 'none',			// Hiring Organization
+				'schema_job_salary' => '',			// Base Salary
+				'schema_job_salary_currency' => $def_currency,	// Base Salary Currency
+				'schema_job_salary_period' => 'year',		// Base Salary per Year, Day, Hour
 				'schema_org_org_id' => 'none',			// Organization
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
