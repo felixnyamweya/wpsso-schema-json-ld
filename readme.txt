@@ -155,7 +155,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Event End (date, time, timezone)
 * Event Offers (name, price, currency, availability)
 * Job Posting Hiring Organization
-* Job Posting Base Salary (Yearly)
+* Job Posting Base Salary per Year, Day, or Hour
 * Recipe Preparation Time 
 * Recipe Cooking Time 
 * Recipe Total Time 
@@ -534,7 +534,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added support for additional Schema Job Posting properties (hiringOrganization, baseSalary, salaryCurrency, etc.).
 	* Added options in the Social and Search Optimization metabox for the Schema Job Posting type:
 		* Hiring Organization
-		* Base Salary (Yearly) and currency selection
+		* Base Salary per Year, Day, or Hour
 * *Bugfixes*
 	* Fix to prevent null assignment when a Schema CollectionPage does not have any mentions (empty categories, for example).
 * *Developer Notes*

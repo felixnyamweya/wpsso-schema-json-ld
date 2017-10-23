@@ -169,7 +169,7 @@
 <li>Event End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
 <li>Job Posting Hiring Organization</li>
-<li>Job Posting Base Salary (Yearly)</li>
+<li>Job Posting Base Salary per Year, Day, or Hour</li>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>
