@@ -156,6 +156,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Event End (date, time, timezone)
 * Event Offers (name, price, currency, availability)
 * Job Posting Hiring Organization
+* Job Posting Job Location
 * Job Posting Base Salary
 * Recipe Preparation Time 
 * Recipe Cooking Time 
