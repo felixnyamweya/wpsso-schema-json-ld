@@ -228,6 +228,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_job_org_id', $org_names, 'long_name' ).$org_req_msg,
 				),
+				'schema_job_place_id' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_place_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_job_place_id', $place_names, 'long_name' ).$plm_req_msg,
+				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Base Salary', 'option label', 'wpsso-schema-json-ld' ),
