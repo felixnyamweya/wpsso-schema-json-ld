@@ -366,7 +366,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_org_id' => 'none',			// Hiring Organization
 				'schema_job_salary' => '',			// Base Salary
 				'schema_job_salary_currency' => $def_currency,	// Base Salary Currency
-				'schema_job_salary_period' => 'year',		// Base Salary per Year, Day, Hour
+				'schema_job_salary_period' => 'year',		// Base Salary per Year, Month, Week, Hour
 				'schema_org_org_id' => 'none',			// Organization
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
