@@ -364,7 +364,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_org_id' => 'none',		// Event Organizer
 				'schema_event_perf_id' => 'none',		// Event Performer
 				'schema_job_org_id' => 'none',			// Hiring Organization
-				'schema_job_place_id' => 'none',		// Job Location
+				'schema_job_location_id' => 'none',		// Job Location
 				'schema_job_salary' => '',			// Base Salary
 				'schema_job_salary_currency' => $def_currency,	// Base Salary Currency
 				'schema_job_salary_period' => 'year',		// Base Salary per Year, Month, Week, Hour

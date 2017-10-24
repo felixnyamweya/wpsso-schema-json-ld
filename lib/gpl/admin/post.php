@@ -48,13 +48,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 * Organization variables.
 			 */
 			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
-			$org_names = array( 'none' => '[None]', 'site' => _x( 'Website Organization', 'option value', 'wpsso-schema-json-ld' ) );
-			$perf_names = array( 'none' => '[None]' );
+			$org_disable = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
+			$org_site_names = $form->get_cache( 'org_site_names', true );		// $add_none = true
+			$org_perf_names = $form->get_cache( 'org_perf_names', true );	// $add_none = true
 
 			/*
 			 * Place / Location variables.
 			 */
 			$plm_req_msg = $this->p->util->get_ext_req_msg( 'plm' );
+			$plm_disable = empty( $plm_req_msg ) ? false : true;	// disable if plm extension not available
+			$place_addr_names = $form->get_cache( 'place_addr_names', true );	// $add_none = true
 
 			/*
 			 * Javascript classes to hide/show rows by selected schema type.
@@ -134,7 +137,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['article'],
 					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_pub_org_id', $org_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_pub_org_id',
+						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_headline' => array(
 					'tr_class' => $schema_type_tr_class['article'],
@@ -156,13 +160,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_org_id', $org_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_org_id',
+						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_event_perf_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_perf_id', $perf_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_perf_id',
+						$org_perf_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -226,13 +232,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_org_id', $org_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_job_org_id',
+						$org_site_names, 'long_name' ).$org_req_msg,
 				),
-				'schema_job_place_id' => array(
+				'schema_job_location_id' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_place_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_place_id', $place_names, 'long_name' ).$plm_req_msg,
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_location_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_job_location_id',
+						$place_addr_names, 'long_name' ).$plm_req_msg,
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
@@ -256,7 +264,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local.business'],
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_org_org_id', $org_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_org_org_id',
+						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 
 				/*
