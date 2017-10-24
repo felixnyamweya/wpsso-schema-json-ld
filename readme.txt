@@ -532,10 +532,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* Added support for the WP Job Manager plugin.
 * *Improvements*
-	* Added support for additional Schema Job Posting properties (hiringOrganization, baseSalary, etc.).
+	* Added support for additional Schema Job Posting properties (hiringOrganization, jobLocation, baseSalary, etc.).
 	* Added options in the Social and Search Optimization metabox for the Schema Job Posting type:
 		* Hiring Organization
-		* Base Salary per Year, Day, or Hour
+		* Job Location
+		* Base Salary (per Year, Month, Week, Day, or Hour)
 * *Bugfixes*
 	* Fix to prevent null assignment when a Schema CollectionPage does not have any mentions (empty categories, for example).
 * *Developer Notes*
