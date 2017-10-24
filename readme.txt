@@ -134,6 +134,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
 
 * **Integration with 3rd Party Plugins**
+	* WP Job Manager
 	* WP Product Review
 	* WP Recipe Maker
 	* WP Ultimate Recipe
@@ -155,7 +156,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Event End (date, time, timezone)
 * Event Offers (name, price, currency, availability)
 * Job Posting Hiring Organization
-* Job Posting Base Salary per Year, Day, or Hour
+* Job Posting Base Salary
 * Recipe Preparation Time 
 * Recipe Cooking Time 
 * Recipe Total Time 
@@ -531,7 +532,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* Added support for the WP Job Manager plugin.
 * *Improvements*
-	* Added support for additional Schema Job Posting properties (hiringOrganization, baseSalary, salaryCurrency, etc.).
+	* Added support for additional Schema Job Posting properties (hiringOrganization, baseSalary, etc.).
 	* Added options in the Social and Search Optimization metabox for the Schema Job Posting type:
 		* Hiring Organization
 		* Base Salary per Year, Day, or Hour

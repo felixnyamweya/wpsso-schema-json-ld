@@ -145,6 +145,7 @@
 <li><strong>Integration with 3rd Party Plugins</strong>
 
 <ul>
+<li>WP Job Manager</li>
 <li>WP Product Review</li>
 <li>WP Recipe Maker</li>
 <li>WP Ultimate Recipe</li>
@@ -169,7 +170,7 @@
 <li>Event End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
 <li>Job Posting Hiring Organization</li>
-<li>Job Posting Base Salary per Year, Day, or Hour</li>
+<li>Job Posting Base Salary</li>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>
