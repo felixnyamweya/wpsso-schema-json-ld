@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Comprehensive Support of WooCommerce Products and Variations)</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
