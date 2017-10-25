@@ -443,6 +443,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_headline':
 					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_job_org_id':
+					$text = __( 'Optionally select a different organization for the hiring organization.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_job_location_id':
+					$text = __( 'Optionally select a different address / place / location for the job location.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_job_salary':
+					$text = __( 'Optionally provide details on the base salary. The base salary must be numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency symbols, as these are not valid numeric values.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_org_org_id':
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );
 				 	break;

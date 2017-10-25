@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.17.0-dev.6\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.17.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -83,143 +83,160 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:447
+msgid "Optionally select a different organization for the hiring organization."
+msgstr ""
+
+#: lib/filters.php:450
+msgid ""
+"Optionally select a different address / place / location for the job "
+"location."
+msgstr ""
+
+#: lib/filters.php:453
+msgid ""
+"Optionally provide details on the base salary. The base salary must be "
+"numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency "
+"symbols, as these are not valid numeric values."
+msgstr ""
+
+#: lib/filters.php:456
 msgid ""
 "Optionally select a different organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
 "\"[None]\" to use the default organization details."
 msgstr ""
 
-#: lib/filters.php:450
+#: lib/filters.php:459
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:453
+#: lib/filters.php:462
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:456
+#: lib/filters.php:465
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:459
+#: lib/filters.php:468
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:462
+#: lib/filters.php:471
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:465
+#: lib/filters.php:474
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:468
+#: lib/filters.php:477
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:471
+#: lib/filters.php:480
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:474
+#: lib/filters.php:483
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:477
+#: lib/filters.php:486
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:480
+#: lib/filters.php:489
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:483
+#: lib/filters.php:492
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:486
+#: lib/filters.php:495
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:489
+#: lib/filters.php:498
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:492
+#: lib/filters.php:501
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:495
+#: lib/filters.php:504
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:498
+#: lib/filters.php:507
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:501
+#: lib/filters.php:510
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:504
+#: lib/filters.php:513
 msgid "Select an organizer for the event."
 msgstr ""
 
-#: lib/filters.php:507
+#: lib/filters.php:516
 msgid "Select a performer for the event."
 msgstr ""
 
-#: lib/filters.php:510
+#: lib/filters.php:519
 msgid "Select the start date and time for the event."
 msgstr ""
 
-#: lib/filters.php:513
+#: lib/filters.php:522
 msgid "Select the end date and time for the event."
 msgstr ""
 
-#: lib/filters.php:516
+#: lib/filters.php:525
 msgid ""
 "One or more offers for the event, including the offer name, price and "
 "currency."
 msgstr ""
 
-#: lib/filters.php:519
+#: lib/filters.php:528
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:522
+#: lib/filters.php:531
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:525
+#: lib/filters.php:534
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:528
+#: lib/filters.php:537
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:531
+#: lib/filters.php:540
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:534
+#: lib/filters.php:543
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:537
+#: lib/filters.php:546
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
@@ -588,6 +605,18 @@ msgstr ""
 #: lib/gpl/admin/post.php:465 lib/pro/admin/post.php:481
 msgctxt "option comment"
 msgid "to"
+msgstr ""
+
+#. translators: organization from a plugin name
+#: lib/pro/job/wpjobmanager.php:49
+msgctxt "option value"
+msgid "%s Organization"
+msgstr ""
+
+#. translators: location from a plugin name
+#: lib/pro/job/wpjobmanager.php:55
+msgctxt "option value"
+msgid "%s Location"
 msgstr ""
 
 #: lib/shortcode/schema.php:131

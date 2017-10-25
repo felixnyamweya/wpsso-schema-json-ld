@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 */
 			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
 			$org_disable = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
-			$org_site_names = $form->get_cache( 'org_site_names', true );		// $add_none = true
+			$org_site_names = $form->get_cache( 'org_site_names', true );	// $add_none = true
 			$org_perf_names = $form->get_cache( 'org_perf_names', true );	// $add_none = true
 
 			/*
