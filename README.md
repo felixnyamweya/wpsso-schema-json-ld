@@ -45,7 +45,7 @@
 
 <p>The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.</p>
 
-<p>The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro plugin features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq">WPSSO Core Pro plugin</a>.</p>
+<p>The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro plugin features and requires the <a href="https://wpsso.com/?utm_source=wpssojson-readme-prereq">WPSSO Core Pro plugin</a>.</p>
 
 <h3>Quick List of Features</h3>
 
@@ -93,7 +93,7 @@
 
 <h4>WPSSO JSON Pro / Additional Features</h4>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Pro (requires a licensed WPSSO Pro plugin).</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).</p>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.</p>
 
@@ -578,7 +578,7 @@
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.</p>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro plugin features and requires the <a href="https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro plugin features and requires the <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.</p>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro extension here</a> (all purchases include a <em>No Risk 30 Day Refund Policy</em>).</p>
 
