@@ -47,9 +47,9 @@ WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP
 
 WPSSO Schema JSON-LD Markup is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
 
-The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.
+The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
 
-The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro (Main Plugin) features, which requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
+The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro features, which requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
 
 <h3>Quick List of Features</h3>
 
@@ -469,9 +469,9 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro (Main Plugin) features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro extension here</a> (all purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
