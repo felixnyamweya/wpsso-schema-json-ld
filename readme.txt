@@ -528,7 +528,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.17.0-b.3 (2017/10/26)**
+**Version 1.17.0-rc.1 (2017/10/26)**
 
 * *New Features*
 	* Added support for the WP Job Manager plugin.
@@ -897,7 +897,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.17.0-b.3 =
+= 1.17.0-rc.1 =
 
 (2017/10/26) Added support for the WP Job Manager plugin. Added support for additional Schema Job Posting properties. Added options in the Social and Search Optimization metabox for the Schema Job Posting type. Fix to prevent null assignment when a Schema CollectionPage does not have any mentions (empty categories, for example).
 
