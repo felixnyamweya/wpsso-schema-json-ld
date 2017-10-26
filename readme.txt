@@ -49,7 +49,7 @@ WPSSO Schema JSON-LD Markup is an extension for the WPSSO Core plugin &mdash; wh
 
 The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core.
 
-The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro plugin features and requires the [WPSSO Core Pro](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq) plugin.
+The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro plugin features and requires the [WPSSO Core Pro plugin](https://wpsso.com/extend/plugins/wpsso/?utm_source=wpssojson-readme-prereq).
 
 <h3>Quick List of Features</h3>
 
@@ -59,7 +59,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors (requires [WPSSO Pro](https://wpsso.com/) to retrieve co-author information).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:
 
