@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.17.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-10-25 07:17-0600\n"
-"PO-Revision-Date: 2017-10-25 07:24-0600\n"
+"POT-Creation-Date: 2017-10-27 09:11-0600\n"
+"PO-Revision-Date: 2017-10-27 09:11-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -563,13 +563,13 @@ msgctxt "option comment"
 msgid "to"
 msgstr "à"
 
-#. translators: plugin name organization
+#. translators: organization from a plugin name
 #: lib/pro/job/wpjobmanager.php:49
 msgctxt "option value"
 msgid "%s Organization"
 msgstr "Organisation de %s"
 
-#. translators: plugin name location
+#. translators: location from a plugin name
 #: lib/pro/job/wpjobmanager.php:55
 msgctxt "option value"
 msgid "%s Location"
@@ -653,7 +653,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
-
-#~ msgctxt "option value"
-#~ msgid "Website Organization"
-#~ msgstr "Organisation du site Web"
