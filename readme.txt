@@ -529,6 +529,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.17.1-dev.3 (2017/10/31)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the post cache clearing filter for WPSSO v3.47.4.
+
 **Version 1.17.0 (2017/10/28)**
 
 * *New Features*
@@ -897,6 +908,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
 
 == Upgrade Notice ==
+
+= 1.17.1-dev.3 =
+
+(2017/10/31) Refactored the post cache clearing filter for WPSSO v3.47.4.
 
 = 1.17.0 =
 
