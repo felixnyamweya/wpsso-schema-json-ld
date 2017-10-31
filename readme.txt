@@ -6,11 +6,12 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph
+Tags: rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph, woocommerce
 Contributors: jsmoriss
 Requires PHP: 5.3
 Requires At Least: 3.7
 Tested Up To: 4.8.3
+WC Tested Up To: 3.2.2
 Stable Tag: 1.17.0
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
