@@ -310,28 +310,32 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_post_cache_transient_array( $transient_array, $mod, $sharing_url ) {
 
-			// clear blog home page
-			$transient_array['WpssoHead::get_head_array'][] = 'url:'.home_url( '/' );
+			$head_method = 'WpssoHead::get_head_array';
+			$head_md5_pre = $this->p->cf['lca'].'_h_';
 
-			// clear date based archive pages
+			$home_url = home_url( '/' );
 			$year = get_the_time( 'Y', $mod['id'] );
 			$month = get_the_time( 'm', $mod['id'] );
 			$day = get_the_time( 'd', $mod['id'] );
 
-			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_year_link( $year );
-			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_month_link( $year, $month );
-			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_day_link( $year, $month, $day );
+			// clear blog home page
+			$transient_array[$head_method.'(url:'.$home_url.')'] = $head_md5_pre;
+
+			// clear date based archive pages
+			$transient_array[$head_method.'(url:'.get_year_link( $year ).')'] = $head_md5_pre;
+			$transient_array[$head_method.'(url:'.get_month_link( $year, $month ).')'] = $head_md5_pre;
+			$transient_array[$head_method.'(url:'.get_day_link( $year, $month, $day ).')'] = $head_md5_pre;
 
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transient_array['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name;
+					$transient_array[$head_method.'(term:'.$term->term_id.'_tax:'.$tax_name.')'] = $head_md5_pre;
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transient_array['WpssoHead::get_head_array'][] = 'user:'.$author_id;
+			$transient_array[$head_method.'(user:'.$author_id.')'] = $head_md5_pre;
 
 			return $transient_array;
 		}
