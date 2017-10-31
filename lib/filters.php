@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				) );
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
 					'option_type' => 2,
-					'post_cache_transients' => 3,	// clear transients on post save
+					'post_cache_transient_array' => 3,
 					'pub_google_rows' => 2,
 					'save_post_options' => 4,
 					'messages_tooltip_meta' => 2,
@@ -308,32 +308,32 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $md_opts;
 		}
 
-		public function filter_post_cache_transients( $transients, $mod, $sharing_url ) {
+		public function filter_post_cache_transient_array( $transient_array, $mod, $sharing_url ) {
 
 			// clear blog home page
-			$transients['WpssoHead::get_head_array'][] = 'url:'.home_url( '/' );
+			$transient_array['WpssoHead::get_head_array'][] = 'url:'.home_url( '/' );
 
 			// clear date based archive pages
 			$year = get_the_time( 'Y', $mod['id'] );
 			$month = get_the_time( 'm', $mod['id'] );
 			$day = get_the_time( 'd', $mod['id'] );
 
-			$transients['WpssoHead::get_head_array'][] = 'url:'.get_year_link( $year );
-			$transients['WpssoHead::get_head_array'][] = 'url:'.get_month_link( $year, $month );
-			$transients['WpssoHead::get_head_array'][] = 'url:'.get_day_link( $year, $month, $day );
+			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_year_link( $year );
+			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_month_link( $year, $month );
+			$transient_array['WpssoHead::get_head_array'][] = 'url:'.get_day_link( $year, $month, $day );
 
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transients['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name;
+					$transient_array['WpssoHead::get_head_array'][] = 'term:'.$term->term_id.'_tax:'.$tax_name;
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transients['WpssoHead::get_head_array'][] = 'user:'.$author_id;
+			$transient_array['WpssoHead::get_head_array'][] = 'user:'.$author_id;
 
-			return $transients;
+			return $transient_array;
 		}
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
