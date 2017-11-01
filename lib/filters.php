@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				) );
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
 					'option_type' => 2,
-					'post_cache_transient_array' => 3,
+					'post_cache_transient_keys' => 3,
 					'pub_google_rows' => 2,
 					'save_post_options' => 4,
 					'messages_tooltip_meta' => 2,
@@ -308,10 +308,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $md_opts;
 		}
 
-		public function filter_post_cache_transient_array( $transient_array, $mod, $sharing_url ) {
+		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url ) {
 
-			$head_method = 'WpssoHead::get_head_array';
-			$head_md5_pre = $this->p->cf['lca'].'_h_';
+			$md5_pre = $this->p->cf['lca'].'_h_';
+			$class_pre = 'Wpsso';
+			$method_name = $class_pre.'WpssoHead::get_head_keys';
 
 			$home_url = home_url( '/' );
 			$year = get_the_time( 'Y', $mod['id'] );
@@ -319,25 +320,25 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$day = get_the_time( 'd', $mod['id'] );
 
 			// clear blog home page
-			$transient_array[$head_method.'(url:'.$home_url.')'] = $head_md5_pre;
+			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.$home_url.')' );
 
 			// clear date based archive pages
-			$transient_array[$head_method.'(url:'.get_year_link( $year ).')'] = $head_md5_pre;
-			$transient_array[$head_method.'(url:'.get_month_link( $year, $month ).')'] = $head_md5_pre;
-			$transient_array[$head_method.'(url:'.get_day_link( $year, $month, $day ).')'] = $head_md5_pre;
+			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_year_link( $year ).')' );
+			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_month_link( $year, $month ).')' );
+			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_day_link( $year, $month, $day ).')' );
 
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transient_array[$head_method.'(term:'.$term->term_id.'_tax:'.$tax_name.')'] = $head_md5_pre;
+					$transient_keys[] = $md5_pre.md5( $method_name.'(term:'.$term->term_id.'_tax:'.$tax_name.')' );
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transient_array[$head_method.'(user:'.$author_id.')'] = $head_md5_pre;
+			$transient_keys[] = $md5_pre.md5( $method_name.'(user:'.$author_id.')' );
 
-			return $transient_array;
+			return $transient_keys;
 		}
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
