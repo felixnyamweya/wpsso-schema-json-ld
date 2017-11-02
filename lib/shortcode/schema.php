@@ -58,7 +58,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			return $preg_array;
 		}
 
-		public function action_text_filter_before( $filter_name ) {
+		public function action_pre_apply_filters_text( $filter_name ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log_args( array( 
 					'filter_name' => $filter_name,
@@ -67,7 +67,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			return $this->add_shortcode();
 		}
 
-		public function action_text_filter_after( $filter_name ) {
+		public function action_after_apply_filters_text( $filter_name ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log_args( array( 
 					'filter_name' => $filter_name,
