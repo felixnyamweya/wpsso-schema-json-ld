@@ -529,7 +529,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.17.1-rc.2 (2017/11/02)**
+**Version 1.17.1 (2017/11/02)**
 
 * *New Features*
 	* None
@@ -909,7 +909,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.17.1-rc.2 =
+= 1.17.1 =
 
 (2017/11/02) Refactored the post cache clearing filter for WPSSO v3.48.0.
 
