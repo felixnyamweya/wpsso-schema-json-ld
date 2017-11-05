@@ -310,9 +310,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url ) {
 
-			$md5_pre = $this->p->cf['lca'].'_h_';
-			$class_pre = 'Wpsso';
-			$method_name = $class_pre.'WpssoHead::get_head_keys';
+			$cache_md5_pre = $this->p->cf['lca'].'_h_';
+			$cache_method = 'WpssoHead::get_head_keys';
 
 			$home_url = home_url( '/' );
 			$year = get_the_time( 'Y', $mod['id'] );
@@ -320,23 +319,23 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$day = get_the_time( 'd', $mod['id'] );
 
 			// clear blog home page
-			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.$home_url.')' );
+			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(url:'.$home_url.')' );
 
 			// clear date based archive pages
-			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_year_link( $year ).')' );
-			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_month_link( $year, $month ).')' );
-			$transient_keys[] = $md5_pre.md5( $method_name.'(url:'.get_day_link( $year, $month, $day ).')' );
+			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(url:'.get_year_link( $year ).')' );
+			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(url:'.get_month_link( $year, $month ).')' );
+			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(url:'.get_day_link( $year, $month, $day ).')' );
 
 			// clear term archive page meta tags (and json markup)
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
-					$transient_keys[] = $md5_pre.md5( $method_name.'(term:'.$term->term_id.'_tax:'.$tax_name.')' );
+					$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(term:'.$term->term_id.'_tax:'.$tax_name.')' );
 				}
 			}
 
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
-			$transient_keys[] = $md5_pre.md5( $method_name.'(user:'.$author_id.')' );
+			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(user:'.$author_id.')' );
 
 			return $transient_keys;
 		}
