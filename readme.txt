@@ -536,7 +536,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
 	* None
 
@@ -922,7 +922,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.17.2-dev.3 =
 
-(2017/11/05) None.
+(2017/11/05) Fixed an incorrect cache index name in the post cache clearing filter.
 
 = 1.17.1 =
 
