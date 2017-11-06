@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Comprehensive Support for WooCommerce) ===
+=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Complete Support for WooCommerce) ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -30,9 +30,9 @@ Pinterest does not (currently) read Google's preferred Schema JSON-LD format &md
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
-**Provides extensive markup for WooCommerce products and variations (Pro version):**
+**Provides complete markup for WooCommerce products and all variations (Pro version):**
 
-Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more.
+Including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
 **Adds comments and threaded replies to Schema CreativeWork:**
 

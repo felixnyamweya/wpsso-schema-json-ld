@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Comprehensive Support for WooCommerce)</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Complete Support for WooCommerce)</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
@@ -25,9 +25,9 @@
 
 <p><strong>Select a different Schema than BlogPosting for your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</strong></p>
 
-<p><strong>Provides extensive markup for WooCommerce products and variations (Pro version):</strong></p>
+<p><strong>Provides complete markup for WooCommerce products and all variations (Pro version):</strong></p>
 
-<p>Including product images, custom product variations (weight, size, color, material, etc), product reviews, product ratings, and much more.</p>
+<p>Including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.</p>
 
 <p><strong>Adds comments and threaded replies to Schema CreativeWork:</strong></p>
 
