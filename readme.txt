@@ -529,12 +529,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.17.2-dev.3 (2017/11/05)**
+**Version 1.17.2-dev.4 (2017/11/06)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a "Job Title" field in the Social and Search Optimization metabox (Pro version).
 * *Bugfixes*
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
@@ -920,9 +920,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.17.2-dev.3 =
+= 1.17.2-dev.4 =
 
-(2017/11/05) Fixed an incorrect cache index name in the post cache clearing filter.
+(2017/11/06) Fixed an incorrect cache index name in the post cache clearing filter. Added a "Job Title" field in the Social and Search Optimization metabox (Pro version).
 
 = 1.17.1 =
 
