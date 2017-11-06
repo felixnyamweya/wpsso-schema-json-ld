@@ -228,6 +228,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
+				'schema_job_title' => array(
+					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_title', 'td_class' => 'blank',
+					'no_auto_draft' => true,
+					'content' => $form->get_no_input_value( $this->p->page->get_title( $title_max_len,
+						'...', $mod ), 'wide' ),
+				),
 				'schema_job_org_id' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),

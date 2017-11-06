@@ -367,6 +367,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_end_timezone' => '',		// Event End Timezone
 				'schema_event_org_id' => 'none',		// Event Organizer
 				'schema_event_perf_id' => 'none',		// Event Performer
+				'schema_job_title' => '',
 				'schema_job_org_id' => 'none',			// Hiring Organization
 				'schema_job_location_id' => 'none',		// Job Location
 				'schema_job_salary' => '',			// Base Salary
@@ -446,6 +447,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_headline':
 					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_job_title':
+					$text = __( 'The title of this job, which may be different than the WordPress post / page title.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_job_org_id':
 					$text = __( 'Optionally select a different organization for the hiring organization.', 'wpsso-schema-json-ld' );

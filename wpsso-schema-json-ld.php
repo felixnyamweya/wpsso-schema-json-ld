@@ -15,7 +15,7 @@
  * Requires At Least: 3.7
  * Tested Up To: 4.8.3
  * WC Tested Up To: 3.2.3
- * Version: 1.17.2-dev.3
+ * Version: 1.17.2-dev.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -38,6 +38,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public $p;			// Wpsso
 		public $reg;			// WpssoJsonRegister
 		public $filters;		// WpssoJsonFilters
+		public $schema;			// WpssoJsonSchema
 
 		private static $instance;
 		private static $have_min = true;	// have minimum wpsso version
@@ -63,8 +64,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		}
 
 		public static function &get_instance() {
-			if ( ! isset( self::$instance ) )
+			if ( ! isset( self::$instance ) ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
 
@@ -131,18 +133,19 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				$avail['p_ext']['json'] = false;	// just in case
 			}
 
+			// Simple Job Board
+			if ( class_exists( 'Simple_Job_Board' ) ) {
+				$avail['job']['*'] = $avail['job']['simplejobboard'] = true;
 			// WP Job Manager
-			if ( class_exists( 'WP_Job_Manager' ) ) {
+			} elseif ( class_exists( 'WP_Job_Manager' ) ) {
 				$avail['job']['*'] = $avail['job']['wpjobmanager'] = true;
 			}
 
 			// WP Recipe Maker
 			if ( class_exists( 'WP_Recipe_Maker' ) ) {
 				$avail['recipe']['*'] = $avail['recipe']['wprecipemaker'] = true;
-			}
-
 			// WP Ultimate Recipe 
-			if ( class_exists( 'WPUltimateRecipe' ) ) {
+			} elseif ( class_exists( 'WPUltimateRecipe' ) ) {
 				$avail['recipe']['*'] = $avail['recipe']['wpultimaterecipe'] = true;
 			}
 
