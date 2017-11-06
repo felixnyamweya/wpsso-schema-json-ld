@@ -96,13 +96,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					),
 				),
 			),
-			'schema' => array(
-				'article' => array(
-					'headline' => array(
-						'max_len' => 110,
-					),
-				),
-			),
 		);
 
 		public static function get_version() { 

@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				 * Property:
 				 * 	headline
 				 */
-				$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+				$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 				$ret['headline'] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
 			} else {

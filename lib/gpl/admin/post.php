@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$currencies = SucomUtil::get_currency_abbrev();
 			$title_max_len = $this->p->options['og_title_len'];
 			$desc_max_len = $this->p->options['schema_desc_len'];
-			$headline_max_len = WpssoJsonConfig::$cf['schema']['article']['headline']['max_len'];
+			$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 
@@ -257,6 +257,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_select( 'schema_job_salary_currency', $currencies, 'currency' ).' '.
 						_x( 'per', 'option comment', 'wpsso-schema-json-ld' ).' '.
 						$form->get_no_select( 'schema_job_salary_period', $this->p->cf['form']['time_text'], 'short' ),
+				),
+				'schema_job_employment_type' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'label' => _x( 'Employement Type', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_employement_type', 'td_class' => 'blank',
+					'content' => $form->get_no_radio( 'schema_job_employement_type',
+						$this->p->cf['form']['employment_type'], 'input_vertical_list' ),
 				),
 
 				/*
