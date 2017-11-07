@@ -382,6 +382,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_empl_type_volunteer' => 0,
 				'schema_job_empl_type_per_diem' => 0,
 				'schema_job_empl_type_other' => 0,
+				'schema_job_expire_date' => '',
+				'schema_job_expire_time' => 'none',
+				'schema_job_expire_timezone' => '',
 				'schema_org_org_id' => 'none',			// Organization
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
@@ -457,6 +460,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_headline':
 					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_event_org_id':
+					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_perf_id':
+					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_start':
+					$text = __( 'Select the event start date and time.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_end':
+					$text = __( 'Select the event end date and time.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_offers':
+					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_job_title':
 					$text = __( 'The title of this job, which may be different than the WordPress post / page title.', 'wpsso-schema-json-ld' );
 				 	break;
@@ -471,6 +489,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_job_empl_type':
 					$text = sprintf( __( 'Check one or more Google approved employment types (see <a href="%s">Google\'s Job Posting guidelines</a> for more information).', 'wpsso-schema-json-ld' ), 'https://developers.google.com/search/docs/data-types/job-postings' );
+				 	break;
+				case 'tooltip-meta-schema_job_expire':
+					$text = __( 'Select a job posting expiration date and time. If a job posting never expires, or you do not know when the job will expire, do not select an expiration date and time.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_org_org_id':
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );
@@ -528,21 +549,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_recipe_nutri_chol':
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_org_id':
-					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_perf_id':
-					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_start':
-					$text = __( 'Select the start date and time for the event.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_end':
-					$text = __( 'Select the end date and time for the event.', 'wpsso-schema-json-ld' );
-				 	break;
-				case 'tooltip-meta-schema_event_offers':
-					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_recipe_ingredients':
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
