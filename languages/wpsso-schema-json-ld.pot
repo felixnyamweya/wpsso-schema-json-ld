@@ -297,113 +297,113 @@ msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:123 lib/pro/admin/post.php:134
+#: lib/gpl/admin/post.php:124 lib/pro/admin/post.php:135
 msgctxt "option label"
 msgid "Additional Type URLs"
 msgstr ""
 
-#: lib/gpl/admin/post.php:134 lib/pro/admin/post.php:146
+#: lib/gpl/admin/post.php:135 lib/pro/admin/post.php:147
 msgctxt "metabox title"
 msgid "Article Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:138 lib/pro/admin/post.php:150
+#: lib/gpl/admin/post.php:139 lib/pro/admin/post.php:151
 msgctxt "option label"
 msgid "Article Publisher"
 msgstr ""
 
-#: lib/gpl/admin/post.php:145 lib/pro/admin/post.php:157
+#: lib/gpl/admin/post.php:146 lib/pro/admin/post.php:158
 msgctxt "option label"
 msgid "Article Headline"
 msgstr ""
 
-#: lib/gpl/admin/post.php:157 lib/pro/admin/post.php:170
+#: lib/gpl/admin/post.php:158 lib/pro/admin/post.php:171
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:161 lib/pro/admin/post.php:174
+#: lib/gpl/admin/post.php:162 lib/pro/admin/post.php:175
 msgctxt "option label"
 msgid "Event Organizer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:168 lib/pro/admin/post.php:181
+#: lib/gpl/admin/post.php:169 lib/pro/admin/post.php:182
 msgctxt "option label"
 msgid "Event Performer"
 msgstr ""
 
-#: lib/gpl/admin/post.php:175 lib/pro/admin/post.php:188
+#: lib/gpl/admin/post.php:176 lib/pro/admin/post.php:189
 msgctxt "option label"
 msgid "Event Start"
 msgstr ""
 
-#: lib/gpl/admin/post.php:179 lib/gpl/admin/post.php:188
-#: lib/pro/admin/post.php:192 lib/pro/admin/post.php:201
+#: lib/gpl/admin/post.php:180 lib/gpl/admin/post.php:189
+#: lib/pro/admin/post.php:193 lib/pro/admin/post.php:202
 msgctxt "option comment"
 msgid "TZ"
 msgstr ""
 
-#: lib/gpl/admin/post.php:184 lib/pro/admin/post.php:197
+#: lib/gpl/admin/post.php:185 lib/pro/admin/post.php:198
 msgctxt "option label"
 msgid "Event End"
 msgstr ""
 
-#: lib/gpl/admin/post.php:193 lib/pro/admin/post.php:206
+#: lib/gpl/admin/post.php:194 lib/pro/admin/post.php:207
 msgctxt "option label"
 msgid "Event Offers"
 msgstr ""
 
-#: lib/gpl/admin/post.php:197 lib/pro/admin/post.php:210
+#: lib/gpl/admin/post.php:198 lib/pro/admin/post.php:211
 msgctxt "option label"
 msgid "Event Offer Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:202 lib/pro/admin/post.php:215
+#: lib/gpl/admin/post.php:203 lib/pro/admin/post.php:216
 msgctxt "option label"
 msgid "Event Offer Price"
 msgstr ""
 
-#: lib/gpl/admin/post.php:207 lib/pro/admin/post.php:220
+#: lib/gpl/admin/post.php:208 lib/pro/admin/post.php:221
 msgctxt "option label"
 msgid "Event Offer Currency"
 msgstr ""
 
-#: lib/gpl/admin/post.php:214 lib/pro/admin/post.php:227
+#: lib/gpl/admin/post.php:215 lib/pro/admin/post.php:228
 msgctxt "option label"
 msgid "Event Offer Availability"
 msgstr ""
 
-#: lib/gpl/admin/post.php:229 lib/pro/admin/post.php:242
+#: lib/gpl/admin/post.php:230 lib/pro/admin/post.php:243
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:232 lib/pro/admin/post.php:245
+#: lib/gpl/admin/post.php:233 lib/pro/admin/post.php:246
 msgctxt "option label"
 msgid "Job Title"
 msgstr ""
 
-#: lib/gpl/admin/post.php:240 lib/pro/admin/post.php:253
+#: lib/gpl/admin/post.php:241 lib/pro/admin/post.php:254
 msgctxt "option label"
 msgid "Hiring Organization"
 msgstr ""
 
-#: lib/gpl/admin/post.php:247 lib/pro/admin/post.php:260
+#: lib/gpl/admin/post.php:248 lib/pro/admin/post.php:261
 msgctxt "option label"
 msgid "Job Location"
 msgstr ""
 
-#: lib/gpl/admin/post.php:254 lib/pro/admin/post.php:267
+#: lib/gpl/admin/post.php:255 lib/pro/admin/post.php:268
 msgctxt "option label"
 msgid "Base Salary"
 msgstr ""
 
-#: lib/gpl/admin/post.php:258 lib/pro/admin/post.php:271
+#: lib/gpl/admin/post.php:259 lib/pro/admin/post.php:272
 msgctxt "option comment"
 msgid "per"
 msgstr ""
 
-#: lib/gpl/admin/post.php:263 lib/pro/admin/post.php:276
+#: lib/gpl/admin/post.php:264 lib/pro/admin/post.php:277
 msgctxt "option label"
 msgid "Employement Type"
 msgstr ""

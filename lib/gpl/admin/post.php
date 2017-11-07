@@ -120,6 +120,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'schema_type', '', true, true, 'unhide_rows' ),
 				),
 				'schema_add_type_url' => array(
+					'tr_class' => 'hide_in_basic',
 					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_add_type_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
@@ -262,8 +263,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Employement Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_employement_type', 'td_class' => 'blank',
-					'content' => $form->get_no_radio( 'schema_job_employement_type',
-						$this->p->cf['form']['employment_type'], 'input_vertical_list' ),
+					'content' => $form->get_no_checklist( 'schema_job_employement_type', $this->p->cf['form']['employment_type'] ),
 				),
 
 				/*
