@@ -169,9 +169,11 @@
 <li>Event Start (date, time, timezone)</li>
 <li>Event End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
+<li>Job Posting Job Title</li>
 <li>Job Posting Hiring Organization</li>
 <li>Job Posting Job Location</li>
 <li>Job Posting Base Salary</li>
+<li>Job Posting Employment Type</li>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>

@@ -156,9 +156,11 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Event Start (date, time, timezone)
 * Event End (date, time, timezone)
 * Event Offers (name, price, currency, availability)
+* Job Posting Job Title
 * Job Posting Hiring Organization
 * Job Posting Job Location
 * Job Posting Base Salary
+* Job Posting Employment Type
 * Recipe Preparation Time 
 * Recipe Cooking Time 
 * Recipe Total Time 
@@ -534,7 +536,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added a "Job Title" field in the Social and Search Optimization metabox (Pro version).
+	* Added support for the Simple Job Board plugin (Pro Version).
+	* Added "Job Title" and "Employment Type" custom fields in the Social and Search Optimization metabox (Pro version).
 * *Bugfixes*
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
@@ -922,7 +925,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.17.2-dev.4 =
 
-(2017/11/06) Fixed an incorrect cache index name in the post cache clearing filter. Added a "Job Title" field in the Social and Search Optimization metabox (Pro version).
+(2017/11/06) Fixed an incorrect cache index name in the post cache clearing filter. Added new Job Posting custom meta and added support for the Simple Job Board plugin (Pro Version).
 
 = 1.17.1 =
 
