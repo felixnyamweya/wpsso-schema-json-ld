@@ -531,7 +531,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.17.2-dev.6 (2017/11/07)**
+**Version 1.17.2-dev.7 (2017/11/07)**
 
 * *New Features*
 	* None
@@ -923,7 +923,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.17.2-dev.6 =
+= 1.17.2-dev.7 =
 
 (2017/11/07) Fixed an incorrect cache index name in the post cache clearing filter. Added new Job Posting custom meta and added support for the Simple Job Board plugin (Pro Version).
 
