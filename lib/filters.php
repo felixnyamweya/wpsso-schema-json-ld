@@ -310,7 +310,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url ) {
 
-			$cache_md5_pre = $this->p->cf['lca'].'_h_';
+			$lca = $this->p->cf['lca'];
+			$cache_md5_pre = $lca.'_h_';
 			$cache_method = 'WpssoHead::get_head_keys';
 
 			$home_url = home_url( '/' );
@@ -373,6 +374,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_salary' => '',			// Base Salary
 				'schema_job_salary_currency' => $def_currency,	// Base Salary Currency
 				'schema_job_salary_period' => 'year',		// Base Salary per Year, Month, Week, Hour
+				'schema_job_empl_type_full_time' => 0,
+				'schema_job_empl_type_part_time' => 0,
+				'schema_job_empl_type_contractor' => 0,
+				'schema_job_empl_type_temporary' => 0,
+				'schema_job_empl_type_intern' => 0,
+				'schema_job_empl_type_volunteer' => 0,
+				'schema_job_empl_type_per_diem' => 0,
+				'schema_job_empl_type_other' => 0,
 				'schema_org_org_id' => 'none',			// Organization
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
@@ -459,6 +468,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_job_salary':
 					$text = __( 'Optionally provide details on the base salary. The base salary must be numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency symbols, as these are not valid numeric values.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_job_empl_type':
+					$text = sprintf( __( 'Check one or more Google approved employment types (see <a href="%s">Google\'s Job Posting guidelines</a> for more information).', 'wpsso-schema-json-ld' ), 'https://developers.google.com/search/docs/data-types/job-postings' );
 				 	break;
 				case 'tooltip-meta-schema_org_org_id':
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );

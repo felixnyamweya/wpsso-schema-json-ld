@@ -259,11 +259,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						_x( 'per', 'option comment', 'wpsso-schema-json-ld' ).' '.
 						$form->get_no_select( 'schema_job_salary_period', $this->p->cf['form']['time_text'], 'short' ),
 				),
-				'schema_job_employment_type' => array(
+				'schema_job_empl_type' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
-					'label' => _x( 'Employement Type', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_employement_type', 'td_class' => 'blank',
-					'content' => $form->get_no_checklist( 'schema_job_employement_type', $this->p->cf['form']['employment_type'] ),
+					'label' => _x( 'Employment Type', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_empl_type', 'td_class' => 'blank',
+					'content' => $form->get_no_checklist( 'schema_job_empl_type', $this->p->cf['form']['employment_type'] ),
 				),
 
 				/*
