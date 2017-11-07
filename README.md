@@ -145,6 +145,7 @@
 <li><strong>Integration with 3rd Party Plugins</strong>
 
 <ul>
+<li>Simple Job Board</li>
 <li>WP Job Manager</li>
 <li>WP Product Review</li>
 <li>WP Recipe Maker</li>
@@ -174,6 +175,7 @@
 <li>Job Posting Job Location</li>
 <li>Job Posting Base Salary</li>
 <li>Job Posting Employment Type</li>
+<li>Job Posting Expires</li>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>

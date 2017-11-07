@@ -135,6 +135,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
 
 * **Integration with 3rd Party Plugins**
+	* Simple Job Board
 	* WP Job Manager
 	* WP Product Review
 	* WP Recipe Maker
@@ -161,6 +162,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Job Posting Job Location
 * Job Posting Base Salary
 * Job Posting Employment Type
+* Job Posting Expires
 * Recipe Preparation Time 
 * Recipe Cooking Time 
 * Recipe Total Time 
