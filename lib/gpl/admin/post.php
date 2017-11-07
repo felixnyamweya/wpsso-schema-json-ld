@@ -265,6 +265,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_empl_type', 'td_class' => 'blank',
 					'content' => $form->get_no_checklist( 'schema_job_empl_type', $this->p->cf['form']['employment_type'] ),
 				),
+				'schema_job_expire' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
+					'label' => _x( 'Job Posting Expires', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_expire', 'td_class' => 'blank',
+					'content' => $form->get_no_input_date( 'schema_job_expire_date' ).' '.
+						$form->get_no_select_time( 'schema_job_expire_time' ).' '.
+						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
+						$form->get_no_select_timezone( 'schema_job_expire_timezone' ),
+				),
 
 				/*
 				 * Schema Organization
