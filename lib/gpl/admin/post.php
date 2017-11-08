@@ -175,19 +175,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Start', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_start', 'td_class' => 'blank',
-					'content' => $form->get_no_input_date( 'schema_event_start_date' ).' '.
-						$form->get_no_select_time( 'schema_event_start_time' ).' '.
-						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
-						$form->get_no_select_timezone( 'schema_event_start_timezone' ),
+					'content' => $form->get_no_date_time_iso( 'schema_event_start' ),
 				),
 				'schema_event_end' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event End', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_end', 'td_class' => 'blank',
-					'content' => $form->get_no_input_date( 'schema_event_end_date' ).' '.
-						$form->get_no_select_time( 'schema_event_end_time' ).' '.
-						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
-						$form->get_no_select_timezone( 'schema_event_end_timezone' ),
+					'content' => $form->get_no_date_time_iso( 'schema_event_end' ),
 				),
 				'schema_event_offers' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -267,12 +261,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_job_expire' => array(
 					'tr_class' => $schema_type_tr_class['job.posting'],
-					'label' => _x( 'Job Posting Expiry', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Job Posting Expires', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_expire', 'td_class' => 'blank',
-					'content' => $form->get_no_input_date( 'schema_job_expire_date' ).' '.
-						$form->get_no_select_time( 'schema_job_expire_time' ).' '.
-						_x( 'TZ', 'option comment', 'wpsso-schema-json-ld' ).' '.
-						$form->get_no_select_timezone( 'schema_job_expire_timezone' ),
+					'content' => $form->get_no_date_time_iso( 'schema_job_expire' ),
 				),
 
 				/*
