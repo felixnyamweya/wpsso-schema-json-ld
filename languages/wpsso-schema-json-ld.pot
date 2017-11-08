@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.17.2-dev.7\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.17.2-a.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -424,7 +424,7 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:270 lib/pro/admin/post.php:283
 msgctxt "option label"
-msgid "Job Posting Expires"
+msgid "Job Posting Expiry"
 msgstr ""
 
 #: lib/gpl/admin/post.php:284 lib/pro/admin/post.php:297
@@ -643,13 +643,13 @@ msgid "to"
 msgstr ""
 
 #. translators: {plugin name} Organization
-#: lib/pro/job/wpjobmanager.php:87
+#: lib/pro/job/wpjobmanager.php:293
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
 #. translators: {plugin name} Location
-#: lib/pro/job/wpjobmanager.php:93
+#: lib/pro/job/wpjobmanager.php:299
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""
