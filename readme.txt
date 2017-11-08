@@ -536,10 +536,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.17.2-a.1 (2017/11/08)**
 
 * *New Features*
-	* None
-* *Improvements*
 	* Added support for the Simple Job Board plugin (Pro Version).
-	* Added "Job Title" and "Employment Type" custom fields in the Social and Search Optimization metabox (Pro version).
+* *Improvements*
+	* Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields in the Social and Search Optimization metabox (Pro version).
 * *Bugfixes*
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
