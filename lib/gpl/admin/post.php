@@ -109,6 +109,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'...', $mod ), '', '', $desc_max_len ),
 				),
 				'schema_is_main' => array(
+					'tr_class' => 'hide_in_basic',
 					'label' => _x( 'Main Entity of Page', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_is_main', 'td_class' => 'blank',
 					'content' => $form->get_no_checkbox( 'schema_is_main' ),
@@ -224,6 +225,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_job_title' => array(
+					'tr_class' => $schema_type_tr_class['job.posting'],
 					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
