@@ -26,7 +26,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		/*
 		 * Called by Blog ($prop_name = 'blogPost'), CollectionPage, ProfilePage, and SearchResultsPage.
 		 */
-		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $prop_name = 'mentions' ) {
+		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $prop_name = 'mentions', $posts_per_page = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 			$posts_added = 0;
@@ -60,20 +60,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					wp_reset_postdata();
 				}
 
-				$posts_per_page = apply_filters( $wpsso->cf['lca'].'_posts_per_page', 
-					get_option( 'posts_per_page' ), $mod );
+				if ( $posts_per_page === false ) {
+					$posts_per_page = get_option( 'posts_per_page' );	// get default value
+				}
+
+				$posts_per_page = (int) apply_filters( $wpsso->cf['lca'].'_posts_per_page', $posts_per_page, $mod );
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'posts_per_page from filter is '.$posts_per_page );
 				}
 
-				if ( defined( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX' ) ) {
-					if ( $posts_per_page > WPSSO_SCHEMA_POSTS_PER_PAGE_MAX ) {
+				$max_per_page = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 6 );
+				
+				if ( $max_per_page ) {
+					if ( $posts_per_page > $max_per_page ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'posts_per_page greater than max of '.WPSSO_SCHEMA_POSTS_PER_PAGE_MAX.
-								' - setting posts_per_page to '.WPSSO_SCHEMA_POSTS_PER_PAGE_MAX );
+							$wpsso->debug->log( 'posts_per_page gt max of '.$max_per_page.
+								' - setting posts_per_page to '.$max_per_page );
 						}
-						$posts_per_page = WPSSO_SCHEMA_POSTS_PER_PAGE_MAX;
+						$posts_per_page = $max_per_page;
 					}
 				}
 
