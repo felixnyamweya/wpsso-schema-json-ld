@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.0-a.1 (2017/11/08)**
+**Version 1.18.0-a.2 (2017/11/09)**
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
@@ -924,9 +924,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.0-a.1 =
+= 1.18.0-a.2 =
 
-(2017/11/08) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version). Fixed an incorrect cache index name in the post cache clearing filter.
+(2017/11/09) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version). Fixed an incorrect cache index name in the post cache clearing filter.
 
 = 1.17.1 =
 
