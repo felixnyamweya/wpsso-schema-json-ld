@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.18.0-b.5',		// plugin version
-					'opt_version' => '9',		// increment when changing default options
+					'version' => '1.18.0-b.6',		// plugin version
+					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
 					'desc' => 'WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.48.1-b.5',
+						'min_version' => '3.48.1-b.6',
 					),
 					'img' => array(
 						'icons' => array(
@@ -47,6 +47,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'gpl' => array(
 							'admin' => array(
+								'advanced' => 'Advanced Settings',
 								'post' => 'Post Settings',
 							),
 							'head' => array(
@@ -56,6 +57,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'pro' => array(
 							'admin' => array(
+								'advanced' => 'Advanced Settings',
 								'post' => 'Post Settings',
 							),
 							'head' => array(
@@ -93,6 +95,24 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'wpproductreview' => '(plugin) WP Product Review',
 							),
 						),
+					),
+				),
+			),
+			'opt' => array(						// options
+				'defaults' => array(
+					'plugin_json_post_data_cache_exp' => 2 * WEEK_IN_SECONDS,	// Schema (Mentions) Post JSON-LD (2 weeks)
+				),	// end of defaults
+				'site_defaults' => array(
+					'plugin_json_post_data_cache_exp' => 2 * WEEK_IN_SECONDS,	// Schema (Mentions) Post JSON-LD (2 weeks)
+					'plugin_json_post_data_cache_exp:use' => 'default',
+				),	// end of site defaults
+			),
+			'wp' => array(				// wordpress
+				'transient' => array(
+					'wpsso_j_' => array(
+						'label' => 'Posts JSON-LD',
+						'opt_key' => 'plugin_json_post_data_cache_exp',
+						'filter' => 'wpsso_cache_expire_json_post_data',
 					),
 				),
 			),

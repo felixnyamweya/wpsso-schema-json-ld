@@ -48,9 +48,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				) );
 				$this->p->util->add_plugin_filters( $this, array(	// admin filters
 					'option_type' => 2,
-					'post_cache_transient_keys' => 3,
+					'post_cache_transient_keys' => 4,
 					'pub_google_rows' => 2,
 					'save_post_options' => 4,
+					'messages_tooltip_plugin' => 2,
 					'messages_tooltip_meta' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
@@ -308,9 +309,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $md_opts;
 		}
 
-		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url ) {
+		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url, $mod_salt ) {
 
 			$lca = $this->p->cf['lca'];
+
+			/*
+			 * Clear the WPSSO Core head meta tags array.
+			 */
 			$cache_md5_pre = $lca.'_h_';
 			$cache_method = 'WpssoHead::get_head_keys';
 
@@ -337,6 +342,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
 			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(user:'.$author_id.')' );
+
+			/*
+			 * Clear the WPSSO JSON posts data array.
+			 */
+			$cache_md5_pre = $lca.'_j_';
+			$classname_pre = 'WpssoJson';
+			$transient_keys[] = $cache_md5_pre.md5( $classname_pre.'Schema::add_posts_data('.$mod_salt.')' );
 
 			return $transient_keys;
 		}
@@ -440,10 +452,24 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $table_rows;
 		}
 
-		public function filter_messages_tooltip_meta( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 )
-				return $text;
+		public function filter_messages_tooltip_plugin( $text, $idx ) {
+			switch ( $idx ) {
+				case 'tooltip-plugin_json_post_data_cache_exp':
+					$cache_exp_secs = WpssoJsonConfig::$cf['opt']['defaults']['plugin_json_post_data_cache_exp'];
+					$cache_exp_human = $cache_exp_secs ? 
+						human_time_diff( 0, $cache_exp_secs ) : 
+						_x( 'disabled', 'option comment', 'wpsso-schema-json-ld' );
 
+					$text = __( 'When creating Schema markup for the Blog, CollectionPage ProfilePage, and SearchResultsPage types, the JSON-LD of individual posts included in the markup is saved to the WordPress transient cache to optimize performance.', 'wpsso-schema-json-ld' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).', 'wpsso-schema-json-ld' ), $cache_exp_secs, $cache_exp_human );
+				 	break;
+			}
+			return $text;
+		}
+
+		public function filter_messages_tooltip_meta( $text, $idx ) {
+			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 ) {
+				return $text;
+			}
 			switch ( $idx ) {
 				case 'tooltip-meta-schema_is_main':
 					$text = __( 'Check this option if the Schema markup describes the main content (aka "main entity") of this webpage.', 'wpsso-schema-json-ld' );
@@ -578,8 +604,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		// hooked to 'wpssojson_status_gpl_features'
 		public function filter_status_gpl_features( $features, $lca, $info, $pkg ) {
 			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
-				if ( $sub === 'admin' ) // skip status for admin menus and tabs
+				if ( $sub === 'admin' ) { // skip status for admin menus and tabs
 					continue;
+				}
 				foreach ( $libs as $id_key => $label ) {
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl'.$sub.$id, false );	// $underscore = false
@@ -595,9 +622,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		private function filter_common_status_features( $features, $lca, $info, $pkg ) {
-			foreach ( $features as $key => $arr )
-				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) )
+			foreach ( $features as $key => $arr ) {
+				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) ) {
 					$features[$key]['label'] = $match[2].' ('.$this->p->schema->count_schema_type_children( $match[3] ).')';
+				}
+			}
 			return $features;
 		}
 	}
