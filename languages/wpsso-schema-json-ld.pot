@@ -678,19 +678,19 @@ msgctxt "option value"
 msgid "%s Location"
 msgstr ""
 
-#: lib/shortcode/schema.php:131
+#: lib/shortcode/schema.php:137
 msgid ""
 "%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required "
 "prop attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:145
+#: lib/shortcode/schema.php:151
 msgid ""
 "%1$s %2$s shortcode with a description value is missing the required type "
 "attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:174
+#: lib/shortcode/schema.php:180
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 

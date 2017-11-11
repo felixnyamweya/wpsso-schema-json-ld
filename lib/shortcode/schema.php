@@ -115,9 +115,15 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function do_shortcode( $atts, $content, $sc_name ) {
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
+
+			if ( ! is_array( $atts ) ) {	// empty string if no shortcode attributes
+				$atts = array();
+			}
+
 			if ( $this->set_data ) {
 				/*
 				 * When a schema type id is selected, a prop attribute value must be specified as well.
@@ -227,6 +233,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 			} else {
 				$atts_string = '';
+
 				foreach ( $atts as $key => $value ) {
 					$atts_string .= $key.'="'.$value.'" ';
 				}
@@ -245,9 +252,11 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function get_json_data( $content, &$json_data = array(), $increment = false ) {
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
+
 			if ( ! empty( $content ) ) {
 				if ( $increment ) {
 					$this->sc_depth++;
@@ -284,6 +293,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$this->set_data = false;
 				}
 			}
+
 			return $json_data;
 		}
 	}
