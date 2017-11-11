@@ -347,8 +347,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Clear the WPSSO JSON posts data array.
 			 */
 			$cache_md5_pre = $lca.'_j_';
-			$classname_pre = 'WpssoJson';
-			$transient_keys[] = $cache_md5_pre.md5( $classname_pre.'Schema::add_posts_data('.$mod_salt.')' );
+			$transient_keys[] = $cache_md5_pre.md5( 'WpssoJsonSchema::get_mod_cache_data('.$mod_salt.')' );
 
 			return $transient_keys;
 		}
