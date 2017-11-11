@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		private $set_data = false;
 		private $data_ref = null;
 		private $prev_ref = null;
-		private $sc_names = array();
+		private $tag_names = array();
 		private $sc_depth = 0;
 
 		public function __construct( &$plugin ) {
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
-				$this->sc_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+				$this->tag_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME.
 					( $depth ? WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.$depth : '' );
 			}
 
@@ -44,8 +44,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
-			foreach ( $this->sc_names as $sc_name ) {
-				$shortcodes[] = $sc_name;
+			foreach ( $this->tag_names as $tag ) {
+				$shortcodes[] = $tag;
 			}
 			return $shortcodes;
 		}
@@ -79,15 +79,15 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		public function add_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				$sc_added = false;
-				foreach ( $this->sc_names as $sc_name ) {
-					if ( ! shortcode_exists( $sc_name ) ) {
+				foreach ( $this->tag_names as $tag ) {
+					if ( ! shortcode_exists( $tag ) ) {
 						$sc_added = true;
-        					add_shortcode( $sc_name, array( &$this, 'do_shortcode' ) );
+        					add_shortcode( $tag, array( &$this, 'do_shortcode' ) );
 						if ( $this->p->debug->enabled ) {
-							$this->p->debug->log( '['.$sc_name.'] schema shortcode added' );
+							$this->p->debug->log( '['.$tag.'] schema shortcode added' );
 						}
 					} elseif ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'cannot add ['.$sc_name.'] schema shortcode - shortcode already exists' );
+						$this->p->debug->log( 'cannot add ['.$tag.'] schema shortcode - shortcode already exists' );
 					}
 				}
 				return $sc_added;
@@ -98,15 +98,15 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		public function remove_shortcode() {
 			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
 				$sc_removed = false;
-				foreach ( $this->sc_names as $sc_name ) {
-					if ( shortcode_exists( $sc_name ) ) {
+				foreach ( $this->tag_names as $tag ) {
+					if ( shortcode_exists( $tag ) ) {
 						$sc_removed = true;
-						remove_shortcode( $sc_name );
+						remove_shortcode( $tag );
 						if ( $this->p->debug->enabled ) {
-							$this->p->debug->log( '['.$sc_name.'] schema shortcode removed' );
+							$this->p->debug->log( '['.$tag.'] schema shortcode removed' );
 						}
 					} elseif ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'cannot remove ['.$sc_name.'] schema shortcode - shortcode does not exist' );
+						$this->p->debug->log( 'cannot remove ['.$tag.'] schema shortcode - shortcode does not exist' );
 					}
 				}
 				return $sc_removed;
@@ -114,7 +114,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			return false;
 		}
 
-		public function do_shortcode( $atts, $content, $sc_name ) {
+		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) { 
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
@@ -130,13 +130,13 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				 */
 				if ( ! empty( $atts['type'] ) && empty( $atts['prop'] ) ) {
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( $sc_name.' shortcode with type is missing a prop attribute value' );
+						$this->p->debug->log( $tag.' shortcode with type is missing a prop attribute value' );
 					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 						$err_msg = __( '%1$s %2$s shortcode with a type value of "%3$s" is missing the required prop attribute value.',
 							'wpsso-schema-json-ld' );
-						$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name, $atts['type'] ) );
+						$this->p->notice->err( sprintf( $err_msg, $info['short'], $tag, $atts['type'] ) );
 					}
 				/*
 				 * When there's content (for a description), the schema type id must be specified -
@@ -144,13 +144,13 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				 */
 				} elseif ( ! empty( $content ) && empty( $atts['type'] ) ) {
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( $sc_name.' shortcode with content is missing a type attribute value' );
+						$this->p->debug->log( $tag.' shortcode with content is missing a type attribute value' );
 					}
 					if ( $this->p->notice->is_admin_pre_notices() ) {
 						$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 						$err_msg = __( '%1$s %2$s shortcode with a description value is missing the required type attribute value.',
 							'wpsso-schema-json-ld' );
-						$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name ) );
+						$this->p->notice->err( sprintf( $err_msg, $info['short'], $tag ) );
 					}
 				} else {
 					$type_url = '';
@@ -173,13 +173,13 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							}
 							if ( empty( $type_url ) ) {
 								if ( $this->p->debug->enabled ) {
-									$this->p->debug->log( $sc_name.' shortcode type "'.$value.'" is not a recognized value' );
+									$this->p->debug->log( $tag.' shortcode type "'.$value.'" is not a recognized value' );
 								}
 								if ( $this->p->notice->is_admin_pre_notices() ) {
 									$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 									$err_msg = __( '%1$s %2$s shortcode type attribute "%3$s" is not a recognized value.',
 										'wpsso-schema-json-ld' );
-									$this->p->notice->err( sprintf( $err_msg, $info['short'], $sc_name, $value ) );
+									$this->p->notice->err( sprintf( $err_msg, $info['short'], $tag, $value ) );
 								}
 							} else {
 								$temp_data = WpssoSchema::get_schema_type_context( $type_url, $temp_data );
@@ -244,8 +244,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$content = do_shortcode( $content );
 
 				// show attributes in html comment for debugging
-				$content = '<!-- '.$sc_name.' shortcode: '.$atts_string.'-->'.
-						$content.'<!-- /'.$sc_name.' shortcode -->';
+				$content = '<!-- '.$tag.' shortcode: '.$atts_string.'-->'.
+						$content.'<!-- /'.$tag.' shortcode -->';
 
 				return $content;
 			}
