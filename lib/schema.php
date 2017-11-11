@@ -127,7 +127,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$cache_salt = __METHOD__.'('.SucomUtil::get_mod_salt( $post_mod ).')';
 				$cache_id = $cache_md5_pre.md5( $cache_salt );
-				$cache_index = 'locale:'.SucomUtil::get_locale( $post_mod );
+				$cache_index = self::get_json_cache_index( $post_mod );
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'cache expire = '.$cache_exp_secs );
@@ -148,8 +148,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					} elseif ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'cache index not in transient '.$cache_id );
 					}
-				} elseif ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'posts data transient cache is disabled' );
+				} elseif ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'posts data transient cache is disabled' );
 				}
 
 				if ( ! is_array( $posts_data[$cache_index] ) ) {
@@ -460,6 +460,23 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			return 1;	// return count of videos added
+		}
+
+		public static function get_json_cache_index( $mixed = 'current' ) {
+
+			$cache_index = '';
+
+			if ( $mixed !== false ) {
+				$cache_index .= '_locale:'.SucomUtil::get_locale( $post_mod );
+			}
+
+			if ( SucomUtil::is_amp() ) {
+				$cache_index .= '_amp:true';
+			}
+
+			$cache_index = trim( $cache_index, '_' );	// cleanup leading underscores
+
+			return $cache_index;
 		}
 	}
 }
