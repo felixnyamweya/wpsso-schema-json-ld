@@ -460,7 +460,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						human_time_diff( 0, $cache_exp_secs ) : 
 						_x( 'disabled', 'option comment', 'wpsso-schema-json-ld' );
 
-					$text = __( 'When creating Schema markup for the Blog, CollectionPage ProfilePage, and SearchResultsPage types, the JSON-LD of individual posts included in the markup is saved to the WordPress transient cache to optimize performance.', 'wpsso-schema-json-ld' ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).', 'wpsso-schema-json-ld' ), $cache_exp_secs, $cache_exp_human );
+					$short = $this->p->cf['plugin']['wpssojson']['short'];
+
+					$text = sprintf( __( 'When %s creates Schema markup for the Blog, CollectionPage ProfilePage, and SearchResultsPage types, the JSON-LD of each individual post is saved to the WordPress transient cache to optimize performance.', 'wpsso-schema-json-ld' ), $short ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).', 'wpsso-schema-json-ld' ), $cache_exp_secs, $cache_exp_human );
 				 	break;
 			}
 			return $text;

@@ -15,7 +15,7 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:3
 msgctxt "option label"
-msgid "Posts JSON-LD"
+msgid "JSON-LD Posts"
 msgstr ""
 
 #: lib/config-gettext-extract.php:4
@@ -60,30 +60,30 @@ msgctxt "option comment"
 msgid "disabled"
 msgstr ""
 
-#: lib/filters.php:463
+#: lib/filters.php:465
 msgid ""
-"When creating Schema markup for the Blog, CollectionPage ProfilePage, and "
-"SearchResultsPage types, the JSON-LD of individual posts included in the "
-"markup is saved to the WordPress transient cache to optimize performance."
+"When %s creates Schema markup for the Blog, CollectionPage ProfilePage, and "
+"SearchResultsPage types, the JSON-LD of each individual post is saved to the "
+"WordPress transient cache to optimize performance."
 msgstr ""
 
-#: lib/filters.php:463
+#: lib/filters.php:465
 msgid "The suggested cache expiration value is %1$s seconds (%2$s)."
 msgstr ""
 
-#: lib/filters.php:475
+#: lib/filters.php:477
 msgid ""
 "Check this option if the Schema markup describes the main content (aka "
 "\"main entity\") of this webpage."
 msgstr ""
 
-#: lib/filters.php:478
+#: lib/filters.php:480
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:481
+#: lib/filters.php:483
 msgid ""
 "Additional (and optional) type URLs for the item, typically used to specify "
 "more precise types from an external vocabulary in microdata syntax. For "
@@ -91,192 +91,192 @@ msgid ""
 "www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
-#: lib/filters.php:484
+#: lib/filters.php:486
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:487
+#: lib/filters.php:489
 msgid ""
 "A custom headline for the Schema Article item type and/or its sub-type. The "
 "headline Schema property is not added for non-Article item types."
 msgstr ""
 
-#: lib/filters.php:490
+#: lib/filters.php:492
 msgid "Select an organizer for the event."
 msgstr ""
 
-#: lib/filters.php:493
+#: lib/filters.php:495
 msgid "Select a performer for the event."
 msgstr ""
 
-#: lib/filters.php:496
+#: lib/filters.php:498
 msgid "Select the event start date and time."
 msgstr ""
 
-#: lib/filters.php:499
+#: lib/filters.php:501
 msgid "Select the event end date and time."
 msgstr ""
 
-#: lib/filters.php:502
+#: lib/filters.php:504
 msgid ""
 "One or more offers for the event, including the offer name, price and "
 "currency."
 msgstr ""
 
-#: lib/filters.php:505
+#: lib/filters.php:507
 msgid ""
 "The title of this job, which may be different than the WordPress post / page "
 "title."
 msgstr ""
 
-#: lib/filters.php:508
+#: lib/filters.php:510
 msgid "Optionally select a different organization for the hiring organization."
 msgstr ""
 
-#: lib/filters.php:511
+#: lib/filters.php:513
 msgid ""
 "Optionally select a different address / place / location for the job "
 "location."
 msgstr ""
 
-#: lib/filters.php:514
+#: lib/filters.php:516
 msgid ""
 "Optionally provide details on the base salary. The base salary must be "
 "numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency "
 "symbols, as these are not valid numeric values."
 msgstr ""
 
-#: lib/filters.php:517
+#: lib/filters.php:519
 msgid ""
 "Check one or more Google approved employment types (see <a href=\"%s"
 "\">Google's Job Posting guidelines</a> for more information)."
 msgstr ""
 
-#: lib/filters.php:520
+#: lib/filters.php:522
 msgid ""
 "Select a job posting expiration date and time. If a job posting never "
 "expires, or you do not know when the job will expire, do not select an "
 "expiration date and time."
 msgstr ""
 
-#: lib/filters.php:523
+#: lib/filters.php:525
 msgid ""
 "Optionally select a different organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
 "\"[None]\" to use the default organization details."
 msgstr ""
 
-#: lib/filters.php:526
+#: lib/filters.php:528
 msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
-#: lib/filters.php:529
+#: lib/filters.php:531
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:532
+#: lib/filters.php:534
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr ""
 
-#: lib/filters.php:535
+#: lib/filters.php:537
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:538
+#: lib/filters.php:540
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:541
+#: lib/filters.php:543
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:544
+#: lib/filters.php:546
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:547
+#: lib/filters.php:549
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:550
+#: lib/filters.php:552
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:553
+#: lib/filters.php:555
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:556
+#: lib/filters.php:558
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:559
+#: lib/filters.php:561
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:562
+#: lib/filters.php:564
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:565
+#: lib/filters.php:567
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:568
+#: lib/filters.php:570
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:571
+#: lib/filters.php:573
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:574
+#: lib/filters.php:576
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:577
+#: lib/filters.php:579
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:580
+#: lib/filters.php:582
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:583
+#: lib/filters.php:585
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:586
+#: lib/filters.php:588
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:589
+#: lib/filters.php:591
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:592
+#: lib/filters.php:594
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:595
+#: lib/filters.php:597
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:598
+#: lib/filters.php:600
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
@@ -284,7 +284,7 @@ msgstr ""
 
 #: lib/gpl/admin/advanced.php:40 lib/pro/admin/advanced.php:51
 msgctxt "option label"
-msgid "Schema (Mentions) Post JSON-LD"
+msgid "Schema JSON-LD Post Cache Expiry"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:43 lib/pro/admin/advanced.php:54
