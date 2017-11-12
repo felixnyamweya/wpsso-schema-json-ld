@@ -398,7 +398,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			$cache_index = self::get_mod_cache_index( $mod );
-			$cache_data = self::get_mod_cache_data( $mod, true, $cache_index );	// return the whole cache data array
+			$cache_data = self::get_mod_cache_data( $mod, $cache_index );
 
 			if ( isset( $cache_data[$cache_index] ) ) {
 				if ( $wpsso->debug->enabled ) {
@@ -437,7 +437,24 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $cache_data[$cache_index];
 		}
 
-		public static function get_mod_cache_data( $mod, $complete = false, $cache_index = false ) {
+		public static function get_mod_cache_index_data( $mod, $cache_index ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->mark();
+			}
+
+			$cache_data = self::get_mod_cache_data( $mod, $cache_index );
+
+			if ( isset( $cache_data[$cache_index] ) ) {
+				return $cache_data[$cache_index];
+			}
+
+			return false;
+		}
+
+		public static function get_mod_cache_data( $mod, $cache_index = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -464,30 +481,38 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
 				$wpsso->debug->log( 'cache salt = '.$cache_salt );
+				$wpsso->debug->log( 'cache id = '.$cache_id );
 				$wpsso->debug->log( 'cache index = '.$cache_index );
 			}
 
 			if ( self::$cache_exp_secs > 0 ) {
+
 				$cache_data = get_transient( $cache_id );
+
 				if ( isset( $cache_data[$cache_index] ) ) {
 					if ( is_array( $cache_data[$cache_index] ) ) {	// just in case
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'cache index found in array from transient '.$cache_id );
+							$wpsso->debug->log( 'cache index data found in array from transient' );
 						}
-						return $complete ? $cache_data : $cache_data[$cache_index];	// stop here
-					} elseif ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'cache index is not an array (unsetting index)' );
+						return $cache_data;	// stop here
+					} else {
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'cache index data not an array (unsetting index)' );
+						}
 						unset( $cache_data[$cache_index] );	// just in case
-						return $complete ? $cache_data : false;	// stop here
+						return $cache_data;	// stop here
 					}
-				} elseif ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'cache index not in transient '.$cache_id );
-					return $complete ? $cache_data : false;	// stop here
+				} else {
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'cache index not in transient' );
+					}
+					return $cache_data;	// stop here
 				}
 			} elseif ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'post data transient cache is disabled' );
-				return false;
+				$wpsso->debug->log( 'transient cache is disabled' );
 			}
+
+			return false;
 		}
 
 		public static function save_mod_cache_data( $mod, $cache_data ) {
@@ -507,22 +532,28 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				self::$cache_exp_secs = (int) apply_filters( $cache_exp_filter, $wpsso->options[$cache_opt_key] );
 			}
 
-			if ( self::$cache_exp_secs > 0 ) {
-				$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
-				$cache_id = $cache_md5_pre.md5( $cache_salt );
-	
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
-					$wpsso->debug->log( 'cache salt = '.$cache_salt );
-				}
+			$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
+			$cache_id = $cache_md5_pre.md5( $cache_salt );
 
-				SucomUtil::update_transient_array( $cache_id, $cache_data, self::$cache_exp_secs );
-
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'posts data saved to transient cache for '.self::$cache_exp_secs.' seconds' );
-				}
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
+				$wpsso->debug->log( 'cache salt = '.$cache_salt );
+				$wpsso->debug->log( 'cache id = '.$cache_id );
 			}
 
+			if ( self::$cache_exp_secs > 0 ) {
+
+				// update the cached array and maintain the existing transient expiration time
+				$expires_in_secs = SucomUtil::update_transient_array( $cache_id, $cache_data, self::$cache_exp_secs );
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'cache data saved to transient cache (expires in '.$expires_in_secs.' seconds)' );
+				}
+			} elseif ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'transient cache is disabled' );
+			}
+
+			return false;
 		}
 
 		public static function get_mod_cache_index( $mixed = 'current' ) {
