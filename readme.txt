@@ -539,6 +539,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added support for the Simple Job Board plugin (Pro Version).
 	* Added a new "Schema JSON-LD Post Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds (2 weeks).
 * *Improvements*
+	* Optimized the addition of single post data in Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage by caching and sharing single post data with the main WPSSO Core plugin (which uses the same cache data for singular pages).
 	* Moved product prices to a new Schema priceSpecification property and included valueAddedTaxIncluded when applicable (Pro version).
 	* Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields in the Social and Search Optimization metabox (Pro version).
 * *Bugfixes*
