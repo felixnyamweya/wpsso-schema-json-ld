@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.0-b.7 (2017/11/11)**
+**Version 1.18.0-rc.1 (2017/11/12)**
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
@@ -545,8 +545,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
 	* Changed the WPSSO_SCHEMA_POSTS_PER_PAGE_MAX constant default value from 20 to 10.
-	* Added a new WPSSO_SCHEMA_POSTS_NO_CACHE_MAX constant with a default value of 5.
 	* Added a new WPSSO_SCHEMA_POSTS_PER_SEARCH constant with a default value of 3 to include only the top 3 search results in the Schema SearchResultsPage markup.
+	* Added several new WpssoJsonSchema class methods to manage single post json data for the Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage:
+		* get_single_post_data()
+		* get_mod_cache_data()
+		* get_mod_cache_index()
+		* get_mod_cache_index_data()
+		* save_mod_cache_data()
 
 **Version 1.17.1 (2017/11/02)**
 
@@ -928,9 +933,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.0-b.7 =
+= 1.18.0-rc.1 =
 
-(2017/11/11) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version). Fixed an incorrect cache index name in the post cache clearing filter.
+(2017/11/12) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version). Fixed an incorrect cache index name in the post cache clearing filter.
 
 = 1.17.1 =
 
