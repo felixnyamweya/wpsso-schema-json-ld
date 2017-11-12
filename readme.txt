@@ -537,11 +537,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
-	* Added a new "Schema JSON-LD Post Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds (2 weeks).
+	* Added a new "Schema JSON-LD Post Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds / 2 weeks (Pro version).
 * *Improvements*
-	* Optimized the addition of single post data in Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage by caching and sharing single post data with the main WPSSO Core plugin (which uses the same cache data for singular pages).
-	* Moved product prices to a new Schema priceSpecification property and included valueAddedTaxIncluded when applicable (Pro version).
 	* Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields in the Social and Search Optimization metabox (Pro version).
+	* Moved product prices to a new Schema priceSpecification property and included valueAddedTaxIncluded when applicable (Pro version).
+	* Optimized the addition of single post data in Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage by caching and sharing single post data with the main WPSSO Core plugin (which uses the same cache data for singular pages).
 * *Bugfixes*
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
@@ -936,7 +936,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.0-rc.1 =
 
-(2017/11/12) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version). Fixed an incorrect cache index name in the post cache clearing filter.
+(2017/11/12) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version).  Added a new "Schema JSON-LD Post Cache Expiry" option (Pro version).
 
 = 1.17.1 =
 
