@@ -413,7 +413,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			// set reference values for admin notices
 			if ( is_admin() ) {
-				$sharing_url = $wpsso->util->get_sharing_url( $mod, $wpsso_paged );
+				$sharing_url = $wpsso->util->get_sharing_url( $mod );
 				$wpsso->notice->set_ref( $sharing_url, $mod );
 			}
 
