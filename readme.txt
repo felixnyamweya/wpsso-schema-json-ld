@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.0 (2017/11/14)**
+**Version 1.18.1 (2017/11/14)**
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
@@ -934,7 +934,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.0 =
+= 1.18.1 =
 
 (2017/11/14) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version).  Added a new "Schema JSON-LD Post Cache Expiry" option (Pro version).
 
