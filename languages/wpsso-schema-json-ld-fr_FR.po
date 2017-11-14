@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-11-12 07:42-0600\n"
-"PO-Revision-Date: 2017-11-12 07:48-0600\n"
+"POT-Creation-Date: 2017-11-14 06:59-0600\n"
+"PO-Revision-Date: 2017-11-14 07:01-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,14 +16,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: lib/config-gettext-extract.php:3
-msgctxt "option label"
-msgid "Post JSON-LD"
-msgstr "JSON-LD d'article"
-
-#: lib/config-gettext-extract.php:4
 msgctxt "lib file description"
 msgid "Schema Markup"
 msgstr "Balises Schéma"
+
+#: lib/config-gettext-extract.php:4
+msgctxt "option label"
+msgid "Schema Post Data"
+msgstr "Données Schéma"
 
 #: lib/config-gettext-extract.php:5
 msgctxt "plugin description"
@@ -229,8 +229,8 @@ msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min/max de l'
 
 #: lib/gpl/admin/advanced.php:40 lib/pro/admin/advanced.php:51
 msgctxt "option label"
-msgid "Schema JSON-LD Post Cache Expiry"
-msgstr "Expiration cache JSON-LD d'article"
+msgid "Schema Post Data Cache Expiry"
+msgstr "Expiration cache données de Schéma"
 
 #: lib/gpl/admin/advanced.php:43 lib/pro/admin/advanced.php:54
 msgctxt "option comment"
@@ -702,7 +702,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://wpsso.com/"
 msgstr "https://wpsso.com/"
-
-#~ msgctxt "option label"
-#~ msgid "JSON-LD Posts"
-#~ msgstr "JSON-LD d'Articles"

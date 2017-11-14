@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.0-rc.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -14,13 +14,13 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: lib/config-gettext-extract.php:3
-msgctxt "option label"
-msgid "Post JSON-LD"
+msgctxt "lib file description"
+msgid "Schema Markup"
 msgstr ""
 
 #: lib/config-gettext-extract.php:4
-msgctxt "lib file description"
-msgid "Schema Markup"
+msgctxt "option label"
+msgid "Schema Post Data"
 msgstr ""
 
 #: lib/config-gettext-extract.php:5
@@ -284,7 +284,7 @@ msgstr ""
 
 #: lib/gpl/admin/advanced.php:40 lib/pro/admin/advanced.php:51
 msgctxt "option label"
-msgid "Schema JSON-LD Post Cache Expiry"
+msgid "Schema Post Data Cache Expiry"
 msgstr ""
 
 #: lib/gpl/admin/advanced.php:43 lib/pro/admin/advanced.php:54

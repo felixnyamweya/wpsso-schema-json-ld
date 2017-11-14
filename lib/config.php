@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.18.0-rc.3',		// plugin version
+					'version' => '1.18.0',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.48.1-rc.3',
+						'min_version' => '3.48.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			'wp' => array(				// wordpress
 				'transient' => array(
 					'wpsso_j_' => array(
-						'label' => 'Post JSON-LD',
+						'label' => 'Schema Post Data',
 						'text_domain' => 'wpsso-schema-json-ld',
 						'opt_key' => 'plugin_json_post_data_cache_exp',
 						'filter' => 'wpsso_cache_expire_json_post_data',
