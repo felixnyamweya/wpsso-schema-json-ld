@@ -12,7 +12,7 @@ Requires PHP: 5.3
 Requires At Least: 3.7
 Tested Up To: 4.9
 WC Tested Up To: 3.2.3
-Stable Tag: 1.18.0
+Stable Tag: 1.18.1
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -883,55 +883,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
-**Version 1.12.3 (2017/02/26)**
-
-* *New Features*
-	* Added support for the WP Product Review plugin (Pro version).
-* *Improvements*
-	* Added new options for the Schema type Review (Pro version):
-		* (Review) Subject Name
-		* (Review) Subject Image URL
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.12.2 (2017/02/19)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed a few site related option keys for WPSSO v3.39.9:
-		* 'og_site_name' =&gt; 'site_name'
-		* 'og_site_description' =&gt; 'site_desc'
-
-**Version 1.12.1 (2017/02/13)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Removed the unsupported video property from the Schema Organization markup.
-* *Developer Notes*
-	* None
-
-**Version 1.12.0 (2017/02/08)**
-
-* *New Features*
-	* Added comments and replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, WebPage, etc.).
-* *Improvements*
-	* Added a new Schema review property module to include WooCommerce product reviews (Pro version).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added new add_comment_list_data() and add_single_comment_data() methods in the WpssoJsonSchema class.
-	* Added a new WpssoJsonProPropReview class in lib/pro/prop/review.php (Pro version).
-
 == Upgrade Notice ==
 
 = 1.18.1 =
@@ -1041,20 +992,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.13.0 =
 
 (2017/03/06) Added several new recipe options in the Social and Search Optimization metabox (Pro version). Added support for the WP Recipe Maker and WP Ultimate Recipe plugins (Pro version).
-
-= 1.12.3 =
-
-(2017/02/26) Added new options for the Schema type Review (Pro version). Added support for the WP Product Review plugin (Pro version).
-
-= 1.12.2 =
-
-(2017/02/19) Renamed a few site related option keys for WPSSO v3.39.9.
-
-= 1.12.1 =
-
-(2017/02/13) Removed the unsupported video property from the Schema Organization markup.
-
-= 1.12.0 =
-
-(2017/02/08) Added comments and replies to the Schema CreativeWork markup and its sub-types. Added a new Schema review property module to include WooCommerce product reviews (Pro version).
 
