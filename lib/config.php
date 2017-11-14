@@ -100,10 +100,10 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'opt' => array(						// options
 				'defaults' => array(
-					'plugin_json_post_data_cache_exp' => 2 * WEEK_IN_SECONDS,	// Schema JSON-LD Post Cache Expiry (2 weeks)
+					'plugin_json_post_data_cache_exp' => 1209600,	// Schema Post Data Cache Expiry (2 weeks)
 				),	// end of defaults
 				'site_defaults' => array(
-					'plugin_json_post_data_cache_exp' => 2 * WEEK_IN_SECONDS,	// Schema JSON-LD Post Cache Expiry (2 weeks)
+					'plugin_json_post_data_cache_exp' => 1209600,	// Schema Post Data Cache Expiry (2 weeks)
 					'plugin_json_post_data_cache_exp:use' => 'default',
 				),	// end of site defaults
 			),
