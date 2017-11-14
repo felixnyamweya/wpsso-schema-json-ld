@@ -12,7 +12,7 @@ Requires PHP: 5.3
 Requires At Least: 3.7
 Tested Up To: 4.9
 WC Tested Up To: 3.2.3
-Stable Tag: 1.17.1
+Stable Tag: 1.18.0
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
