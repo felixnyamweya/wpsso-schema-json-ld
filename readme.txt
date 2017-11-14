@@ -533,11 +533,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.0-rc.3 (2017/11/13)**
+**Version 1.18.0 (2017/11/14)**
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
-	* Added a new "Schema JSON-LD Post Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds / 2 weeks (Pro version).
+	* Added a new "Schema Post Data Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds / 2 weeks (Pro version).
 * *Improvements*
 	* Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields in the Social and Search Optimization metabox (Pro version).
 	* Moved product prices to a new Schema priceSpecification property and included valueAddedTaxIncluded when applicable (Pro version).
@@ -934,9 +934,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.0-rc.3 =
+= 1.18.0 =
 
-(2017/11/13) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version).  Added a new "Schema JSON-LD Post Cache Expiry" option (Pro version).
+(2017/11/14) Added support for the Simple Job Board plugin (Pro Version). Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields (Pro version).  Added a new "Schema JSON-LD Post Cache Expiry" option (Pro version).
 
 = 1.17.1 =
 
