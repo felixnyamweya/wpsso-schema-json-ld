@@ -542,7 +542,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Minor refactoring for WPSSO Core v3.48.4.
+		* Renamed the WpssoSchema add_image_list_data() method to add_og_image_list_data().
+		* Renamed the WpssoSchema add_single_image_data() method to add_og_single_image_data().
 
 **Version 1.18.2 (2017/11/15)**
 
@@ -905,6 +907,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
 == Upgrade Notice ==
+
+= 1.18.3-dev.1 =
+
+(2017/11/15) Minor refactoring for WPSSO Core v3.48.4.
 
 = 1.18.2 =
 
