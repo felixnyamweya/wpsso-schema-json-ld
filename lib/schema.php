@@ -111,7 +111,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			foreach ( $posts_mods as $post_mod ) {
 
-				$post_data = self::get_single_post_data( $post_mod );
+				$post_data = self::get_single_post_data( $post_mod, false, $page_type_id );
 
 				if ( ! empty( $post_data ) ) {	// prevent null assignment
 					$posts_added++;
@@ -382,7 +382,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return 1;	// return count of videos added
 		}
 
-		public static function get_single_post_data( array $mod, $mt_og = false ) {
+		public static function get_single_post_data( array $mod, $mt_og, $page_type_id ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -397,7 +397,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return false;
 			}
 
-			$cache_index = self::get_mod_cache_index( $mod );
+			$cache_index = self::get_mod_cache_index( $mod, $page_type_id );
 			$cache_data = self::get_mod_cache_data( $mod, $cache_index );
 
 			if ( isset( $cache_data[$cache_index] ) ) {
@@ -454,7 +454,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return false;
 		}
 
-		public static function get_mod_cache_data( $mod, $cache_index = false ) {
+		public static function get_mod_cache_data( $mod, $cache_index ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -473,10 +473,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
 			$cache_id = $cache_md5_pre.md5( $cache_salt );
-
-			if ( $cache_index === false ) {
-				$cache_index = self::get_mod_cache_index( $mod );
-			}
 
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
@@ -556,9 +552,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return false;
 		}
 
-		public static function get_mod_cache_index( $mixed = 'current' ) {
+		public static function get_mod_cache_index( $mixed, $schema_type_id ) {
 
-			$cache_index = '';
+			$cache_index = 'schema_type_id:'.$schema_type_id;
 
 			if ( $mixed !== false ) {
 				$cache_index .= '_locale:'.SucomUtil::get_locale( $mixed );
@@ -567,8 +563,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( SucomUtil::is_amp() ) {
 				$cache_index .= '_amp:true';
 			}
-
-			$cache_index = trim( $cache_index, '_' );	// cleanup leading underscores
 
 			return $cache_index;
 		}
