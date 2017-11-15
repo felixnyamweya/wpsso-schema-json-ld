@@ -533,6 +533,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.18.2 (2017/11/15)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the caching index key for singular pages with multiple JSON code blocks (like the home page).
+* *Developer Notes*
+	* None
+
 **Version 1.18.1 (2017/11/14)**
 
 * *New Features*
@@ -549,9 +560,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new WPSSO_SCHEMA_POSTS_PER_SEARCH constant with a default value of 3 to include only the top 3 search results in the Schema SearchResultsPage markup.
 	* Added several new WpssoJsonSchema class methods to manage single post json data for the Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage:
 		* get_single_post_data()
-		* get_mod_cache_data()
 		* get_mod_cache_index()
-		* get_mod_cache_index_data()
+		* get_mod_cache_data()
 		* save_mod_cache_data()
 
 **Version 1.17.1 (2017/11/02)**
@@ -884,6 +894,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
 == Upgrade Notice ==
+
+= 1.18.2 =
+
+(2017/11/15) Fixed the caching index key for singular pages with multiple JSON code blocks (like the home page).
 
 = 1.18.1 =
 
