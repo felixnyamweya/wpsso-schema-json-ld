@@ -540,7 +540,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed the JSON data cache index key for singular pages with multiple JSON code blocks (like the home page).
+	* Fixed the JSON data cache index key for singular pages with multiple JSON-LD scripts (like the home page).
 * *Developer Notes*
 	* None
 
@@ -897,7 +897,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.2 =
 
-(2017/11/15) Fixed the JSON data cache index key for singular pages with multiple JSON code blocks (like the home page).
+(2017/11/15) Fixed the JSON data cache index key for singular pages with multiple JSON-LD scripts (like the home page).
 
 = 1.18.1 =
 
