@@ -220,7 +220,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							$size_name = $this->p->cf['lca'].'-schema';
 							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 							if ( ! empty( $og_images ) ) {
-								WpssoSchema::add_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
+								WpssoSchema::add_og_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
 							}
 
 							$this->get_json_data( $content, $this->data_ref[$prop_name], true );

@@ -175,14 +175,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_images, 'og:image' );
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			} else {
 				$images_added = 0;
 			}
 
 			if ( ! $images_added && $mod['is_post'] ) {
 				$og_images = $wpsso->media->get_default_images( 1, $size_name, true );
-				$images_added = WpssoSchema::add_image_list_data( $json_data['image'], $og_images, 'og:image' );
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			}
 
 			if ( ! $images_added ) {
@@ -368,7 +368,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			) );
 
 			if ( ! empty( $opts[$prefix.':has_image'] ) ) {
-				if ( ! WpssoSchema::add_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) ) {	// list_element = false
+				if ( ! WpssoSchema::add_og_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) ) {	// list_element = false
 					unset( $ret['thumbnail'] );
 				}
 			}
