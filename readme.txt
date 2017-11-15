@@ -499,11 +499,11 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 * [Developer Resources](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/)
 	* [Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/)
+		* [All Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/all/)
 		* [Filter Examples](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
 			* [Assign a Custom Field Value to a Schema Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
 			* [Modify the aggregateRating Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
 			* [Modify the VideoObject Name and Description](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
-		* [Filters by Name](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/by-name/)
 * [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/)
 
 == Screenshots ==
@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.3-dev.1 (2017/11/15)**
+**Version 1.18.3-dev.2 (2017/11/16)**
 
 * *New Features*
 	* None
@@ -908,9 +908,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.3-dev.1 =
+= 1.18.3-dev.2 =
 
-(2017/11/15) Minor refactoring for WPSSO Core v3.48.4.
+(2017/11/16) Minor refactoring for WPSSO Core v3.48.4.
 
 = 1.18.2 =
 
