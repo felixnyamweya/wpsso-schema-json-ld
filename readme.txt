@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9
 WC Tested Up To: 3.2.3
-Stable Tag: 1.18.1
+Stable Tag: 1.18.2
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -540,7 +540,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed the caching index key for singular pages with multiple JSON code blocks (like the home page).
+	* Fixed the JSON data cache index key for singular pages with multiple JSON code blocks (like the home page).
 * *Developer Notes*
 	* None
 
@@ -897,7 +897,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.2 =
 
-(2017/11/15) Fixed the caching index key for singular pages with multiple JSON code blocks (like the home page).
+(2017/11/15) Fixed the JSON data cache index key for singular pages with multiple JSON code blocks (like the home page).
 
 = 1.18.1 =
 
