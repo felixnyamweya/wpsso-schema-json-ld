@@ -437,23 +437,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $cache_data[$cache_index];
 		}
 
-		public static function get_mod_cache_index_data( $mod, $cache_index ) {
+		public static function get_mod_cache_index( $mixed, $page_type_id ) {
 
-			$wpsso =& Wpsso::get_instance();
+			$cache_index = 'page_type_id:'.$page_type_id;
 
-			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->mark();
+			if ( $mixed !== false ) {
+				$cache_index .= '_locale:'.SucomUtil::get_locale( $mixed );
 			}
 
-			$cache_data = self::get_mod_cache_data( $mod, $cache_index );
-
-			if ( isset( $cache_data[$cache_index] ) ) {
-				return $cache_data[$cache_index];
+			if ( SucomUtil::is_amp() ) {
+				$cache_index .= '_amp:true';
 			}
 
-			return false;
+			return $cache_index;
 		}
 
+		/*
+		 * Returns an associative array of json data. The $cache_index argument is used for 
+		 * quality control - making sure the $cache_index json data is an array (if it exists).
+		 */
 		public static function get_mod_cache_data( $mod, $cache_index ) {
 
 			$wpsso =& Wpsso::get_instance();
@@ -550,21 +552,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			return false;
-		}
-
-		public static function get_mod_cache_index( $mixed, $schema_type_id ) {
-
-			$cache_index = 'schema_type_id:'.$schema_type_id;
-
-			if ( $mixed !== false ) {
-				$cache_index .= '_locale:'.SucomUtil::get_locale( $mixed );
-			}
-
-			if ( SucomUtil::is_amp() ) {
-				$cache_index .= '_amp:true';
-			}
-
-			return $cache_index;
 		}
 	}
 }
