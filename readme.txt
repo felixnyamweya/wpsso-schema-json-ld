@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.3-dev.2 (2017/11/16)**
+**Version 1.18.3-dev.3 (2017/11/16)**
 
 * *New Features*
 	* None
@@ -908,7 +908,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.3-dev.2 =
+= 1.18.3-dev.3 =
 
 (2017/11/16) Minor refactoring for WPSSO Core v3.48.4.
 
