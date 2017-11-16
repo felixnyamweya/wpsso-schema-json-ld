@@ -1,9 +1,16 @@
-<p>WPSSO JSON provides extensive support for hundreds of Schema types, and pulls content from dozens of supported 3rd party plugins and APIs. Many Schema properties can be customized in the <em>Social and Search Optimization</em> metabox (Pro version required), and the <code>&#91;schema&#93;</code> shortcode can be used to define additional properties and types for sections of your content.</p>
+<p>
+WPSSO JSON provides extensive support for hundreds of Schema types, and both WPSSO Core and WPSSO JSON pull content from dozens of supported 3rd party plugins and APIs.
+The most popular Schema type properties can be easily customized in the <em>Social and Search Optimization</em> metabox (Pro version required), and the <code>&#91;schema&#93;</code> shortcode can be used to define additional (non-standard) properties and types for sections of your content.
+</p>
 
-<p>Please note that the <code>&#91;schema&#93;</code> shortcode is meant for advanced users and is not required &mdash; WPSSO JSON creates complete and accurate Schema markup for most content automatically. ;-)</p>
+<p>
+PLEASE NOTE that the <code>&#91;schema&#93;</code> shortcode is meant for <strong>advanced users only</strong> and is not required for WPSSO JSON to create complete and accurate Schema markup for your content. 
+You should not use the <code>&#91;schema&#93;</code> shortcode unless you're comfortable with the <a href="https://schema.org">https://schema.org</a> standard, and have a very specific / non-standard requirement.
+If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always validate any change with the <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Structured Data Testing Tool</a>.
+</p>
 
 <blockquote style="width:100%">
-<p>Before using the <code>&#91;schema&#93;</code> shortcode in your content, please make sure the <strong>SSO &gt; Advanced &gt; Plugin Settings &gt; Enable Plugin Shortcode(s)</strong> option is enabled, or the shortcode will be ignored. ;-)</p>
+<p>Before using the <code>&#91;schema&#93;</code> shortcode in your content, make sure the <strong>SSO &gt; Advanced &gt; Plugin Settings &gt; Enable Plugin Shortcode(s)</strong> option is enabled, or the shortcode will be ignored. ;-)</p>
 </blockquote>
 
 <p>The <code>&#91;schema&#93;</code> shortcode can be used to define additional properties for the content. The following example defines an 'articleSection' property for the Schema Article type. Note that all shortcode attributes are considered to be Schema property names, except for the 'prop' and 'type' attribute names, which have special meaning (see bellow).</p>
@@ -12,7 +19,7 @@
 &#91;schema articleSection="Sports" /&#93;
 </pre> 
 
-<p>The <code>&#91;schema&#93;</code> shortcode can also be used to define a Schema type for a section of content, along with using that section of content for the Schema type description and its media properties. The following example defines a section of content as a Schema Map type. Please note that the 'type' value can be a WPSSO Schema type ID (as shown here) or a complete https://schema.org URL. When using the 'type' shortcode attribute, the 'prop' shortcode attribute is required (so the Schema type can be assigned to a Schema property). WPSSO JSON will automatically detect and include the example image in the Schema Map content.</p>
+<p>The <code>&#91;schema&#93;</code> shortcode can also be used to define a Schema type for a section of content, along with using that section of content for the Schema type description and its media properties. The following example defines a section of content as a Schema Map type. Please note that the 'type' value can be a WPSSO Schema type ID (as shown here) or a complete <a href="https://schema.org">https://schema.org</a> URL. When using the 'type' shortcode attribute, the 'prop' shortcode attribute is required (so the Schema type can be assigned to a Schema property). WPSSO JSON will automatically detect and include the example image in the Schema Map content.</p>
  
 <pre class="lang:xhtml decode:true">
 &#91;schema prop="hasPart" type="map" name="Map of the World"&#93;
