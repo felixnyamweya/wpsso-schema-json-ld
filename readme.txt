@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9
-WC Tested Up To: 3.2.3
+WC Tested Up To: 3.2.4
 Stable Tag: 1.18.2
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.3-dev.3 (2017/11/16)**
+**Version 1.18.3-dev.4 (2017/11/17)**
 
 * *New Features*
 	* None
@@ -908,9 +908,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.3-dev.3 =
+= 1.18.3-dev.4 =
 
-(2017/11/16) Minor refactoring for WPSSO Core v3.48.4.
+(2017/11/17) Minor refactoring for WPSSO Core v3.48.4.
 
 = 1.18.2 =
 
