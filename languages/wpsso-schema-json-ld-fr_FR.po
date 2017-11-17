@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-11-15 06:45-0600\n"
-"PO-Revision-Date: 2017-11-15 06:45-0600\n"
+"POT-Creation-Date: 2017-11-17 08:13-0600\n"
+"PO-Revision-Date: 2017-11-17 08:23-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
 msgid "Schema Markup"
-msgstr "Balises Schéma"
+msgstr "Balisage Schéma"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "option label"
@@ -26,6 +26,11 @@ msgid "Schema Post Data"
 msgstr "Données Schéma"
 
 #: lib/config-gettext-extract.php:5
+msgctxt "lib file description"
+msgid "Schema Shortcode"
+msgstr "Shortcode Schéma"
+
+#: lib/config-gettext-extract.php:6
 msgctxt "plugin description"
 msgid "WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
 msgstr "Extension WPSSO Core pour balisage de Schéma JSON-LD d'articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
@@ -265,7 +270,7 @@ msgstr "secs"
 #: lib/gpl/admin/post.php:91 lib/pro/admin/post.php:102
 msgctxt "metabox title"
 msgid "Structured Data / Schema Markup"
-msgstr "Données structurées / balises de Schéma"
+msgstr "Données structurées / balisage de Schéma"
 
 #: lib/gpl/admin/post.php:98 lib/pro/admin/post.php:109
 msgctxt "option label"
@@ -670,6 +675,11 @@ msgstr "Description du site Web"
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr "Type par défaut de l'article évalué"
+
+#: lib/submenu/schema-shortcode.php:38
+msgctxt "metabox title"
+msgid "Schema Shortcode"
+msgstr "Shortcode Schéma"
 
 #: wpsso-schema-json-ld.php:83
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
