@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.3-rc.4 (2017/11/18)**
+**Version 1.18.3-rc.4 (2017/11/19)**
 
 * *New Features*
 	* None
@@ -910,7 +910,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.3-rc.4 =
 
-(2017/11/18) Added a new "Schema Shortcode" settings page with documentation for the &#91;schema&#93; shortcode. Minor refactoring for WPSSO Core v3.48.4.
+(2017/11/19) Added a new "Schema Shortcode" settings page with documentation for the &#91;schema&#93; shortcode. Minor refactoring for WPSSO Core v3.48.4.
 
 = 1.18.2 =
 
