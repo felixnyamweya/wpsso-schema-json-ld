@@ -27,7 +27,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		/*
 		 * Called by Blog ($prop_name = 'blogPost'), CollectionPage, ProfilePage, and SearchResultsPage.
 		 */
-		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $prop_name = 'mentions', $posts_per_page = false ) {
+		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id,
+			$prop_name = 'mentions', $prop_type_id = false, $posts_per_page = false ) {
+
+error_log( __METHOD__.' page type id = '.$page_type_id );
+
+
+
+
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -60,13 +67,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$posts_per_page = $max_per_page;
 			}
 
+
+
+
+
 			/*
 			 * $page_type_id can be false to prevent recursion.
 			 */
 			if ( $page_type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts' );
 				}
+
 				if ( have_posts() ) {
 					while ( have_posts() ) {
 						the_post();
@@ -88,6 +101,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 				$posts_mods = $mod['obj']->get_posts_mods( $mod, false, $wpsso_paged );
 			}
+
+
+
+
+
 
 			if ( empty( $posts_mods ) ) {
 				if ( $wpsso->debug->enabled ) {
