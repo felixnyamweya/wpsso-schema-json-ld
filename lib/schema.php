@@ -25,87 +25,103 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		/*
-		 * Called by Blog ($prop_name = 'blogPost'), CollectionPage, ProfilePage, and SearchResultsPage.
+		 * Called by Blog, CollectionPage, ProfilePage, and SearchResultsPage.
 		 */
-		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id,
-			$prop_name = 'mentions', $prop_type_id = false, $posts_per_page = false ) {
+		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $is_main,
+			$prop_name = 'mentions', $prop_type_ids = false, $posts_per_page = false ) {
 
-error_log( __METHOD__.' page type id = '.$page_type_id );
-
-
-
-
+			static $added_page_type_ids = array();
+			static $posts_per_page_max = null;
 
 			$wpsso =& Wpsso::get_instance();
+			$posts_added = 0;
+
+			if ( is_string( $prop_type_ids ) ) {	// argument can be single type id, or an array of type ids
+				$prop_type_ids = array( $prop_type_ids );
+			}
+
+			if ( empty( $page_type_id ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: page_type_id is empty' );
+				}
+				return $posts_added;
+			} elseif ( empty( $prop_name ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: prop_name is empty' );
+				}
+				return $posts_added;
+			} elseif ( isset( $added_page_type_ids[$page_type_id][$prop_name] ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: preventing recursion for '.$page_type_id.'/'.$prop_name );
+				}
+				return $posts_added;
+			}
+
+			// prevent recusion
+			$added_page_type_ids[$page_type_id][$prop_name] = true;
 
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding posts data' );	// begin timer
 			}
 
-			$lca = $wpsso->cf['lca'];
-			$max_per_page = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
-			$posts_mods = array();
-			$posts_added = 0;
+			if ( ! isset( $posts_per_page_max ) ) {
+				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
+			}
 
 			global $wpsso_paged;
 			$wpsso_paged = 1;
-			
+			$posts_mods = array();
+
 			if ( $posts_per_page === false ) {
 				$posts_per_page = get_option( 'posts_per_page' );	// get wordpress value if not specified
 			}
 
-			$posts_per_page = (int) apply_filters( $wpsso->cf['lca'].'_posts_per_page', $posts_per_page, $mod );
+			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
 
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'posts_per_page from filter is '.$posts_per_page );
 			}
 
-			if ( $posts_per_page > $max_per_page ) {
+			if ( $posts_per_page > $posts_per_page_max ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$max_per_page );
+					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$posts_per_page_max );
 				}
-				$posts_per_page = $max_per_page;
+				$posts_per_page = $posts_per_page_max;
 			}
 
-
-
-
-
-			/*
-			 * $page_type_id can be false to prevent recursion.
-			 */
-			if ( $page_type_id !== false && ( is_home() || is_archive() || is_search() ) ) {
-
+			if ( $is_main && ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts' );
 				}
-
+				$post_count = 0;
 				if ( have_posts() ) {
 					while ( have_posts() ) {
+						$post_count++;
 						the_post();
 						global $post;
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
 						}
 						$posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
+						if ( $post_count >= $posts_per_page ) {
+							break;	// stop here
+						}
 					}
-					wp_reset_postdata();
+					rewind_posts();
 				}
-			/*
-			 * If the module is a post, then get all children of that post.
-			 * If the module is a term / user, then get the first page of posts for the archive page.
-			 */
-			} elseif ( method_exists( $mod['obj'], 'get_posts_mods' ) ) {
+			} elseif ( is_object( $mod['obj'] ) && method_exists( $mod['obj'], 'get_posts_mods' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts' );
 				}
-				$posts_mods = $mod['obj']->get_posts_mods( $mod, false, $wpsso_paged );
+				$posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
+			} else {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: no source to get posts' );
+					$wpsso->debug->mark( 'adding posts data' );	// end timer
+				}
+				return $posts_added;
+				unset( $wpsso_paged );	// unset the forced page number
 			}
-
-
-
-
-
 
 			if ( empty( $posts_mods ) ) {
 				if ( $wpsso->debug->enabled ) {
@@ -116,20 +132,32 @@ error_log( __METHOD__.' page type id = '.$page_type_id );
 				return $posts_added;
 			}
 
-			if ( count( $posts_mods ) > $posts_per_page ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'slicing posts_mods array from '.count( $posts_mods ).' to '.$posts_per_page.' elements' );
-				}
-				$posts_mods = array_slice( $posts_mods, 0, $posts_per_page );
-			}
-
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
 			}
 
 			foreach ( $posts_mods as $post_mod ) {
+				if ( is_array( $prop_type_ids ) ) {	// just in case
+					foreach ( $prop_type_ids as $parent_id ) {
+						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $get_id = true
+						$mod_is_child = $wpsso->schema->is_schema_type_child_of( $mod_type_id, $parent_id );
+						if ( $mod_is_child ) {
+							if ( $wpsso->debug->enabled ) {
+								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': '.
+									$mod_type_id.' is child of '.$parent_id );
+							}
+							continue;	// add the post data
+						} else {
+							if ( $wpsso->debug->enabled ) {
+								$wpsso->debug->log( 'skipping post id '.$post_mod['id'].': '.
+									$mod_type_id.' not child of '.$parent_id );
+							}
+							continue 2;	// get the next post
+						}
+					}
+				}
 
-				$post_data = self::get_single_post_data( $post_mod, false, $page_type_id );
+				$post_data = self::get_single_post_data( $post_mod, false, $page_type_id );	// $mt_og = false
 
 				if ( ! empty( $post_data ) ) {	// prevent null assignment
 					$posts_added++;
@@ -137,14 +165,20 @@ error_log( __METHOD__.' page type id = '.$page_type_id );
 						$wpsso->debug->log( 'adding '.$prop_name.' posts data #'.$posts_added );
 					}
 					$json_data[$prop_name][] = $post_data;
+					if ( $posts_added >= $posts_per_page ) {
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'maximum posts per page ('.$posts_per_page.') reached - stopping here' );
+						}
+						break;	// stop here
+					}
 				}
 			}
+
+			unset( $wpsso_paged );
 
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding posts data' );	// end timer
 			}
-
-			unset( $wpsso_paged );
 
 			return $posts_added;
 		}
@@ -162,7 +196,7 @@ error_log( __METHOD__.' page type id = '.$page_type_id );
 			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
 
 			if ( empty( $size_name ) ) {
-				$size_name = $wpsso->cf['lca'].'-schema';
+				$size_name = $wpsso->lca.'-schema';
 			}
 
 			/*
@@ -482,8 +516,7 @@ error_log( __METHOD__.' page type id = '.$page_type_id );
 				$wpsso->debug->mark();
 			}
 
-			$lca = $wpsso->cf['lca'];
-			$cache_md5_pre = $lca.'_j_';
+			$cache_md5_pre = $wpsso->lca.'_j_';
 
 			if ( ! isset( self::$cache_exp_secs ) ) {	// filter cache expiration if not already set
 				$cache_exp_filter = $wpsso->cf['wp']['transient'][$cache_md5_pre]['filter'];
@@ -539,8 +572,7 @@ error_log( __METHOD__.' page type id = '.$page_type_id );
 				$wpsso->debug->mark();
 			}
 
-			$lca = $wpsso->cf['lca'];
-			$cache_md5_pre = $lca.'_j_';
+			$cache_md5_pre = $wpsso->lca.'_j_';
 
 			if ( ! isset( self::$cache_exp_secs ) ) {	// filter cache expiration if not already set
 				$cache_exp_filter = $wpsso->cf['wp']['transient'][$cache_md5_pre]['filter'];
