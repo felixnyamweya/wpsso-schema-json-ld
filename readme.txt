@@ -542,7 +542,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Refactored the WpssoJsonSchema add_posts_data() method:
+		* Added `$is_main` and `$prop_type_id` to the method arguments.
+		* Added recursion detection for the combined arguments $page_type_id/$prop_name/$prop_type_id.
 
 **Version 1.18.3 (2017/11/20)**
 
@@ -921,7 +923,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.4-dev.1 =
 
-(2017/11/20) None.
+(2017/11/20) Refactored the WpssoJsonSchema add_posts_data() method.
 
 = 1.18.3 =
 
