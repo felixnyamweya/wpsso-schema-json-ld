@@ -543,8 +543,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Refactored the WpssoJsonSchema add_posts_data() method:
-		* Added `$is_main` and `$prop_type_id` to the method arguments.
-		* Added recursion detection for the combined arguments $page_type_id/$prop_name/$prop_type_id.
+		* Changed the argument order and added `$is_main` and `$prop_type_ids` to the argument list.
+		* Added recursion detection for the combined arguments of $page_type_id and $prop_name.
+	* Refactored the Schema Blog filter to include only posts of type Schema BlogPosting in the blogPost property (Pro version).
 
 **Version 1.18.3 (2017/11/20)**
 
