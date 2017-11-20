@@ -533,6 +533,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.18.4-dev.1 (2017/11/20)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.18.3 (2017/11/20)**
 
 * *New Features*
@@ -907,6 +918,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WP Product Review integration module to standardize the code / methods with the two new recipe modules included in this version.
 
 == Upgrade Notice ==
+
+= 1.18.4-dev.1 =
+
+(2017/11/20) None.
 
 = 1.18.3 =
 
