@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
 "POT-Creation-Date: 2017-11-19 06:16-0600\n"
-"PO-Revision-Date: 2017-11-19 06:16-0600\n"
+"PO-Revision-Date: 2017-11-21 12:25-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
 msgid "Schema Markup"
-msgstr "Balisage Schéma"
+msgstr "Balisage de Schéma"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "option label"
@@ -66,7 +66,7 @@ msgstr "La valeur d'expiration de cache suggérée est de %1$s secondes (%2$s)."
 
 #: lib/filters.php:476
 msgid "Check this option if the Schema markup describes the main content (aka \"main entity\") of this webpage."
-msgstr "Cochez cette option si le balisage Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
+msgstr "Cochez cette option si le balisage de Schéma décrit le contenu principal (aka \"l'entité principale\") de cette page Web."
 
 #: lib/filters.php:479
 msgid "Select a Schema item type that best describes the main content of this webpage."
