@@ -533,12 +533,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-dev.3 (2017/11/20)**
+**Version 1.18.4-dev.4 (2017/11/21)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a notice on the settings page if the current language is different than the default site language. Localized option values are used for webpages and content for that language only (not for the default language, or any other language).
 * *Bugfixes*
 	* Fixed hidding of the "Site Owner for Social Profile" option in the General settings page when WPSSO JSON is active.
 * *Developer Notes*
@@ -922,9 +922,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-dev.3 =
+= 1.18.4-dev.4 =
 
-(2017/11/20) Refactored the WpssoJsonSchema add_posts_data() method.
+(2017/11/21) Refactored the WpssoJsonSchema add_posts_data() method.
 
 = 1.18.3 =
 
