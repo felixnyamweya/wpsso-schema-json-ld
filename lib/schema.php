@@ -72,9 +72,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			/*
-			 * Set the page number and the posts per page value.
+			 * Set the page number and the posts per page values.
 			 */
-			if ( ! isset( $posts_per_page_max ) ) {
+			if ( ! isset( $posts_per_page_max ) ) {	// only set the value once
 				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
 			}
 
@@ -82,8 +82,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso_paged = 1;
 			$posts_mods = array();
 
-			if ( $posts_per_page === false ) {
-				$posts_per_page = get_option( 'posts_per_page' );	// get wordpress value if not specified
+			if ( $posts_per_page === false ) {	// get the default if no argument provided
+				$posts_per_page = get_option( 'posts_per_page' );
 			}
 
 			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
@@ -161,7 +161,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 */
 				foreach ( $prop_name_types as $prop_name => $prop_type_ids ) {
 
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'checking if post id '.$post_mod['id'].' is allowed for prop_name '.$prop_name );
+					}
+
 					if ( empty( $prop_type_ids ) ) {		// allow any schema type
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': any post schema type is allowed' );
+						}
 						$add_to_prop_names[] = $prop_name;	// add the post to property name
 						continue;				// check the next property name
 
@@ -170,11 +177,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					} elseif ( ! is_array( $prop_type_ids ) ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'skipping prop_name '.$prop_name.': value must be a prop_type_ids array' );
+							$wpsso->debug->log( 'skipping prop_name '.$prop_name.': prop_type_ids must be an array' );
 						}
 						continue;
 					}
 
+					/*
+					 * If we have a list of schema type ids, then check if the type id of this post is included.
+					 */
 					foreach ( $prop_type_ids as $family_member_id ) {
 
 						if ( $wpsso->debug->enabled ) {
@@ -184,7 +194,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $get_id = true
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'checking if schema type id '.$mod_type_id.' is child in '.$family_member_id );
+							$wpsso->debug->log( 'checking if schema type id '.
+								$mod_type_id.' is child of '.$family_member_id );
 						}
 
 						$mod_is_child = $wpsso->schema->is_schema_type_child( $mod_type_id, $family_member_id );
@@ -192,20 +203,22 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $mod_is_child ) {
 							if ( $wpsso->debug->enabled ) {
 								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': '.
-									$mod_type_id.' is child in '.$family_member_id );
+									$mod_type_id.' is child of '.$family_member_id );
 							}
 							$add_to_prop_names[] = $prop_name;
 							continue 2;			// check the next property name
 
 						} elseif ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'ignoring post id '.$post_mod['id'].': '.
-								$mod_type_id.' not child in '.$family_member_id );
+								$mod_type_id.' not child of '.$family_member_id );
 						}
 					}
 				}
 
 				if ( empty( $add_to_prop_names ) ) {
-					$wpsso->debug->log( 'no posts to add for prop_name '.$prop_name );
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'no property names allowed for post id '.$post_mod['id'] );
+					}
 					continue;	// get the next post mod
 				}
 
