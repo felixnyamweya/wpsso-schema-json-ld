@@ -533,14 +533,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-dev.2 (2017/11/20)**
+**Version 1.18.4-dev.3 (2017/11/20)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* None
+	* Fixed hidding of the "Site Owner for Social Profile" option in the General settings page when WPSSO JSON is active.
 * *Developer Notes*
 	* Refactored the WpssoJsonSchema add_posts_data() method:
 		* Changed the argument order and added `$is_main` to the argument list.
@@ -922,7 +922,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-dev.2 =
+= 1.18.4-dev.3 =
 
 (2017/11/20) Refactored the WpssoJsonSchema add_posts_data() method.
 
