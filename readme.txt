@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-dev.1 (2017/11/20)**
+**Version 1.18.4-dev.2 (2017/11/20)**
 
 * *New Features*
 	* None
@@ -543,9 +543,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Refactored the WpssoJsonSchema add_posts_data() method:
-		* Changed the argument order and added `$is_main` and `$prop_type_ids` to the argument list.
-		* Added recursion detection for the combined arguments of $page_type_id and $prop_name.
-	* Refactored the Schema Blog filter to include only posts of type Schema BlogPosting in the blogPost property (Pro version).
+		* Changed the argument order and added `$is_main` to the argument list.
+		* Added recursion detection based on the `$page_type_id` argument value.
+	* Refactored the schema.org/Blog filter to include only posts of type BlogPosting in the blogPost property (Pro version).
 
 **Version 1.18.3 (2017/11/20)**
 
@@ -922,7 +922,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-dev.1 =
+= 1.18.4-dev.2 =
 
 (2017/11/20) Refactored the WpssoJsonSchema add_posts_data() method.
 
