@@ -436,13 +436,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return array_merge( $md_defs, $schema_md_defs );
 		}
 
+		/*
+		 * Filter the SSO > General > Google / Schema tab options.
+		 */
 		public function filter_pub_google_rows( $table_rows, $form ) {
 			foreach ( array_keys( $table_rows ) as $key ) {
 				switch ( $key ) {
-					case 'schema_add_noscript':	// keep these rows
-					case 'schema_knowledge_graph':
+					/*
+					 * Keep these rows.
+					 */
+					case 'schema_knowledge_graph':	// schema_website_json, schema_organization_json, and schema_person_json
+					case 'schema_person_id':
 						break;
-					case 'subsection_google_schema':	// remove these rows
+					/*
+					 * Remove these rows.
+					 */
+					case 'subsection_google_schema':
 					case ( strpos( $key, 'schema_' ) === 0 ? true : false ):
 						unset( $table_rows[$key] );
 						break;
