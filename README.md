@@ -217,11 +217,16 @@
 <li>Schema Type <a href="https://schema.org/Article">schema.org/Article</a>
 
 <ul>
-<li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
 <li>Schema Type <a href="https://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
 <li>Schema Type <a href="https://schema.org/Report">schema.org/Report</a></li>
 <li>Schema Type <a href="https://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
+<li>Schema Type <a href="https://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
+<li>Schema Type <a href="https://schema.org/DiscussionForumPosting">schema.org/DiscussionForumPosting</a></li>
 <li>Schema Type <a href="https://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/TechArticle">schema.org/TechArticle</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a> (includes blogPost property with posts)</li>
@@ -280,6 +285,7 @@
 <li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a> (includes mentions property with posts)</li>
 <li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
 <li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
+<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalWebPage">health-lifesci.schema.org/MedicalWebPage</a></li>
 <li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a> (includes mentions property with posts)</li>
 <li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
 <li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a> (includes mentions property with posts)</li>
@@ -327,6 +333,7 @@
 <li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
 
 <ul>
+<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
 <li>Schema Type <a href="https://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
 <li>Schema Type <a href="https://schema.org/Physician">schema.org/Physician</a></li>
 </ul></li>
@@ -412,7 +419,6 @@
 <li>Schema Type <a href="https://schema.org/MotorcycleRepair">schema.org/MotorcycleRepair</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/ChildCare">schema.org/ChildCare</a></li>
-<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
 <li>Schema Type <a href="https://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
 <li>Schema Type <a href="https://schema.org/EmergencyService">schema.org/EmergencyService</a>
 
@@ -466,7 +472,12 @@
 <li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a>
 
 <ul>
+<li>Schema Type <a href="https://schema.org/BedAndBreakfast">schema.org/BedAndBreakfast</a></li>
 <li>Schema Type <a href="https://schema.org/Campground">schema.org/Campground</a></li>
+<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
+<li>Schema Type <a href="https://chema.org/Hostel">chema.org/Hostel</a></li>
+<li>Schema Type <a href="https://schema.org/Motel">schema.org/Motel</a></li>
+<li>Schema Type <a href="https://schema.org/Resort">schema.org/Resort</a></li>
 </ul></li>
 <li>Schema Type <a href="https://health-lifesci.schema.org/MedicalBusiness">health-lifesci.schema.org/MedicalBusiness</a>
 
