@@ -60,7 +60,7 @@
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:</p>
 
 <ul>
-<li>Website Alternate Name</li>
+<li>WebSite Alternate Name</li>
 <li>Organization Logo URL</li>
 <li>Organization Banner URL</li>
 <li>Maximum Images to Include</li>

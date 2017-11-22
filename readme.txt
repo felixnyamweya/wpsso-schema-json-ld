@@ -64,7 +64,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:
 
-* Website Alternate Name
+* WebSite Alternate Name
 * Organization Logo URL
 * Organization Banner URL
 * Maximum Images to Include
