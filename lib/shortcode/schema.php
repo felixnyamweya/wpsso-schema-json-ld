@@ -158,8 +158,10 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$temp_data = array();
 
 					foreach ( $atts as $key => $value ) {
-						// ignore @context, @type, etc. attribute keys
-						if ( strpos( $key, '@' ) === 0 ) {
+
+						// ignore @id, @context, @type, etc. shortcode attribute keys
+						// wordpress detects keys with illegal characters as a value, so test for both
+						if ( strpos( $key, '@' ) === 0 || strpos( $value, '@' ) === 0 ) {
 							continue;
 						// save the property name to add the new json array
 						} elseif ( $key === 'prop' ) {
@@ -195,6 +197,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						if ( ! isset( $this->data_ref[$prop_name] ) || ! is_array( $this->data_ref[$prop_name] ) ) {
 							$this->data_ref[$prop_name] = array();
 						}
+
 						$this->data_ref[$prop_name] = SucomUtil::array_merge_recursive_distinct( $this->data_ref[$prop_name], $temp_data );
 
 						if ( ! empty( $content ) ) {
@@ -213,12 +216,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							}
 
 							$og_videos = $this->p->media->get_content_videos( 1, false, false, $prop_content );
+
 							if ( ! empty( $og_videos ) ) {
 								WpssoJsonSchema::add_video_list_data( $this->data_ref[$prop_name]['video'], $og_videos, 'og:video' );
 							}
 
 							$size_name = $this->p->cf['lca'].'-schema';
 							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
+
 							if ( ! empty( $og_images ) ) {
 								WpssoSchema::add_og_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
 							}
@@ -244,8 +249,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$content = do_shortcode( $content );
 
 				// show attributes in html comment for debugging
-				$content = '<!-- '.$tag.' shortcode: '.$atts_string.'-->'.
-						$content.'<!-- /'.$tag.' shortcode -->';
+				$content = '<!-- '.$tag.' shortcode: '.$atts_string.'-->'.$content.'<!-- /'.$tag.' shortcode -->';
 
 				return $content;
 			}

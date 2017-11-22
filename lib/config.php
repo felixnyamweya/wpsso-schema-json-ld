@@ -78,7 +78,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
 								'searchresultspage' => '(code) Schema Type Search Results Page (webpage.search.results)',
-								'website' => '(code) Schema Type Website (website)',
+								'webpage' => '(code) Schema Type WebPage (webpage)',
+								'website' => '(code) Schema Type WebSite (website)',
 							),
 							'prop' => array(
 								'aggregaterating' => '(code) Property Aggregate Rating',

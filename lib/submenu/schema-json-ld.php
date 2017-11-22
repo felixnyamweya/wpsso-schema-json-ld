@@ -58,19 +58,19 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 				case 'schema_json_ld-props':
 
 					$table_rows['site_name'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Name',
+					$this->form->get_th_html( _x( 'WebSite Name',
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_name', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name', $this->p->options ),
 						'long_name', '', 0, get_bloginfo( 'name', 'display' ) ).'</td>';
 
 					$table_rows['schema_alt_name'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Alternate Name',
+					$this->form->get_th_html( _x( 'WebSite Alternate Name',
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_alt_name', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_alt_name', $this->p->options ),
 						'long_name' ).'</td>';
 
 					$table_rows['site_desc'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Website Description',
+					$this->form->get_th_html( _x( 'WebSite Description',
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', array( 'is_locale' => true ) ).
 					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'site_desc', $this->p->options ),
 						'', '', 0, get_bloginfo( 'description', 'display' ) ).'</td>';

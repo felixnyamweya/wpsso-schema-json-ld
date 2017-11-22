@@ -695,7 +695,7 @@ msgid ""
 "attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:180
+#: lib/shortcode/schema.php:182
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
@@ -716,17 +716,17 @@ msgstr ""
 
 #: lib/submenu/schema-json-ld.php:61
 msgctxt "option label"
-msgid "Website Name"
+msgid "WebSite Name"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:67
 msgctxt "option label"
-msgid "Website Alternate Name"
+msgid "WebSite Alternate Name"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:73
 msgctxt "option label"
-msgid "Website Description"
+msgid "WebSite Description"
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:93
