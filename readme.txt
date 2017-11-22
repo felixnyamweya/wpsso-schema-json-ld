@@ -533,7 +533,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-dev.4 (2017/11/21)**
+**Version 1.18.4-dev.5 (2017/11/22)**
 
 * *New Features*
 	* None
@@ -922,9 +922,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-dev.4 =
+= 1.18.4-dev.5 =
 
-(2017/11/21) Refactored the WpssoJsonSchema add_posts_data() method.
+(2017/11/22) Refactored the WpssoJsonSchema add_posts_data() method.
 
 = 1.18.3 =
 
