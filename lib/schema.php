@@ -26,9 +26,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 		/*
 		 * Called by Blog, CollectionPage, ProfilePage, and SearchResultsPage.
+		 *
+		 * Examples:
+		 *
+		 *	$prop_name_type_ids = array( 'mentions' => false )
+		 *	$prop_name_type_ids = array( 'blogPosting' => 'blog.posting' )
 		 */
-		public static function add_posts_data( &$json_data, $mod, $mt_og, $page_type_id, $is_main,
-			array $prop_name_type_ids = array( 'mentions' => false ), $posts_per_page = false ) {
+		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main,
+			array $prop_name_type_ids, $posts_per_page = false ) {
 
 			static $added_page_type_ids = array();
 			static $posts_per_page_max = null;
@@ -157,7 +162,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'any schema type is allowed for prop_name '.$prop_name );
 					}
-					$prop_type_ids = array();
+					$prop_type_ids = array( 'any' );
 
 				} elseif ( is_string( $prop_type_ids ) ) {	// convert value to an array
 					if ( $wpsso->debug->enabled ) {
@@ -184,15 +189,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$add_post_data = false;
 
-					if ( empty( $prop_type_ids ) ) {
+					foreach ( $prop_type_ids as $family_member_id ) {
 
-						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': any schema type is allowed' );
+						if ( $family_member_id === 'any' ) {
+							if ( $wpsso->debug->enabled ) {
+								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': any schema type is allowed' );
+							}
+							$add_post_data = true;
+							break;	// stop here
 						}
-						$add_post_data = true;
 
-					} else foreach ( $prop_type_ids as $family_member_id ) {
-	
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'getting schema type for post id '.$post_mod['id'] );
 						}
