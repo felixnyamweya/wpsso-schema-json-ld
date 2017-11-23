@@ -120,10 +120,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_select( 'schema_type', $schema_types,
 						'schema_type', '', true, true, 'unhide_rows' ),
 				),
-				'schema_add_type_url' => array(
-					'tr_class' => 'hide_in_basic',
+				'schema_addl_type_url' => array(
+					'tr_class' => ( empty( $form->options['schema_addl_type_url_0'] ) ? 'hide_in_basic' : '' ),
 					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_add_type_url', 'td_class' => 'blank',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_addl_type_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
 				),
 
