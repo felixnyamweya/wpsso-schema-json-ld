@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-b.2 (2017/11/22)**
+**Version 1.18.4-rc.1 (2017/11/23)**
 
 * *New Features*
 	* None
@@ -726,9 +726,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-b.2 =
+= 1.18.4-rc.1 =
 
-(2017/11/22) Fixed hidding of the "User for Person Social Profile" option in the General settings. Refactored the WpssoJsonSchema add_posts_data() method. Refactored the schema.org/Blog filter to include only posts of type BlogPosting (Pro version).
+(2017/11/23) Fixed hidding of the "User for Person Social Profile" option in the General settings. Refactored the WpssoJsonSchema add_posts_data() method. Refactored the schema.org/Blog filter to include only posts of type BlogPosting (Pro version).
 
 = 1.18.3 =
 
