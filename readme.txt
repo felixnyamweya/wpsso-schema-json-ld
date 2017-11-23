@@ -546,6 +546,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
+	* Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
 	* Added a notice on the settings page if the current language is different than the default site language. Localized option values are used for webpages and content for that language only (not for the default language, or any other language).
 * *Bugfixes*
 	* Fixed hidding of the "Site Owner for Person Social Profile" option in the General settings page when WPSSO JSON is active.
