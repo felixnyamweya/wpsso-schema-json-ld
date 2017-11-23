@@ -445,8 +445,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					/*
 					 * Keep these rows.
 					 */
-					case 'schema_knowledge_graph':	// schema_website_json, schema_organization_json, and schema_person_json
-					case 'schema_person_id':
+					case 'schema_knowledge_graph':
+					case 'schema_home_person_id':
 						break;
 					/*
 					 * Remove these rows.
