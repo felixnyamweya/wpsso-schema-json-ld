@@ -549,7 +549,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
 	* Added a notice on the settings page if the current language is different than the default site language. Localized option values are used for webpages and content for that language only (not for the default language, or any other language).
 * *Bugfixes*
-	* Fixed hidding of the "Site Owner for Person Social Profile" option in the General settings page when WPSSO JSON is active.
+	* Fixed hidding of the "User for Person Social Profile" option in the General settings page when WPSSO JSON is active.
 * *Developer Notes*
 	* Refactored the WpssoJsonSchema add_posts_data() method:
 		* Changed the argument order and added `$is_main` to the argument list.
@@ -728,7 +728,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.18.4-b.2 =
 
-(2017/11/22) Fixed hidding of the "Site Owner for Person Social Profile" option in the General settings. Refactored the WpssoJsonSchema add_posts_data() method. Refactored the schema.org/Blog filter to include only posts of type BlogPosting (Pro version).
+(2017/11/22) Fixed hidding of the "User for Person Social Profile" option in the General settings. Refactored the WpssoJsonSchema add_posts_data() method. Refactored the schema.org/Blog filter to include only posts of type BlogPosting (Pro version).
 
 = 1.18.3 =
 
