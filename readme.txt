@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.19.0-rc.1 (2017/11/23)**
+**Version 1.19.0 (2017/11/24)**
 
 * *New Features*
 	* None
@@ -726,9 +726,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.19.0-rc.1 =
+= 1.19.0 =
 
-(2017/11/23) Fixed hidding of the "User for Person Social Profile" option in the General settings. Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
+(2017/11/24) Fixed hidding of the "User for Person Social Profile" option in the General settings. Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.18.3 =
 
