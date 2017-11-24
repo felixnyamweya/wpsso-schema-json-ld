@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.18.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.19.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2017-11-23 16:09-0600\n"
-"PO-Revision-Date: 2017-11-23 16:09-0600\n"
+"POT-Creation-Date: 2017-11-24 07:16-0600\n"
+"PO-Revision-Date: 2017-11-24 07:16-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -617,6 +617,10 @@ msgctxt "option comment"
 msgid "to"
 msgstr "à"
 
+#: lib/pro/head/product.php:180
+msgid "adding schema for product model"
+msgstr "ajout de schéma pour modèle de produit"
+
 #. translators: {plugin name} Organization
 #: lib/pro/job/wpjobmanager.php:293
 msgctxt "option value"
@@ -628,6 +632,10 @@ msgstr "Organisation de %s"
 msgctxt "option value"
 msgid "%s Location"
 msgstr "Lieu de %s"
+
+#: lib/schema.php:571
+msgid "adding schema for post object"
+msgstr "ajout de schéma pour object d'article"
 
 #: lib/shortcode/schema.php:137
 msgid "%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required prop attribute value."
