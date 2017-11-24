@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9
 WC Tested Up To: 3.2.4
-Stable Tag: 1.18.3
+Stable Tag: 1.19.0
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -729,8 +729,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.19.0 =
 
 (2017/11/24) Fixed hidding of the "User for Person Social Profile" option in the General settings. Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
-
-= 1.18.3 =
-
-(2017/11/20) Added a new "Schema Shortcode" settings page with documentation for the &#91;schema&#93; shortcode. Minor refactoring for WPSSO Core v3.48.4.
 
