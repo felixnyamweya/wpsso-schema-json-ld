@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.18.4-rc.1 (2017/11/23)**
+**Version 1.19.0-rc.1 (2017/11/23)**
 
 * *New Features*
 	* None
@@ -551,7 +551,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* Fixed hidding of the "User for Person Social Profile" option in the General settings page when WPSSO JSON is active.
 * *Developer Notes*
-	* Refactored the WpssoJsonSchema add_posts_data() method:
+	* Refactored the WpssoJsonSchema add_posts_data() static method:
 		* Changed the argument order and added `$is_main` to the argument list.
 		* Added recursion detection based on the `$page_type_id` argument value.
 	* Refactored the schema.org/Blog filter to include only posts of type BlogPosting in the blogPost property (Pro version).
@@ -726,9 +726,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.18.4-rc.1 =
+= 1.19.0-rc.1 =
 
-(2017/11/23) Fixed hidding of the "User for Person Social Profile" option in the General settings. Refactored the WpssoJsonSchema add_posts_data() method. Refactored the schema.org/Blog filter to include only posts of type BlogPosting (Pro version).
+(2017/11/23) Fixed hidding of the "User for Person Social Profile" option in the General settings. Added a "Knowledge Graph" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.18.3 =
 
