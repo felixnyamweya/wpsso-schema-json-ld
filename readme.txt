@@ -541,6 +541,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.19.1-dev.2 (2017/11/26)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Optimized the definition of cache ids when the transient cache is disabled.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.19.0 (2017/11/24)**
 
 * *New Features*
@@ -725,6 +736,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.19.1-dev.2 =
+
+(2017/11/26) Optimized the definition of cache ids when the transient cache is disabled.
 
 = 1.19.0 =
 
