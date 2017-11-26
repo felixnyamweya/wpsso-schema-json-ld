@@ -626,17 +626,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				self::$cache_exp_secs = (int) apply_filters( $cache_exp_filter, $wpsso->options[$cache_opt_key] );
 			}
 
-			$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
-			$cache_id = $cache_md5_pre.md5( $cache_salt );
-
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
-				$wpsso->debug->log( 'cache salt = '.$cache_salt );
-				$wpsso->debug->log( 'cache id = '.$cache_id );
-				$wpsso->debug->log( 'cache index = '.$cache_index );
 			}
 
 			if ( self::$cache_exp_secs > 0 ) {
+
+				$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
+				$cache_id = $cache_md5_pre.md5( $cache_salt );
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'cache salt = '.$cache_salt );
+					$wpsso->debug->log( 'cache id = '.$cache_id );
+					$wpsso->debug->log( 'cache index = '.$cache_index );
+				}
 
 				$cache_data = get_transient( $cache_id );
 
@@ -682,16 +685,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				self::$cache_exp_secs = (int) apply_filters( $cache_exp_filter, $wpsso->options[$cache_opt_key] );
 			}
 
-			$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
-			$cache_id = $cache_md5_pre.md5( $cache_salt );
-
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'cache expire = '.self::$cache_exp_secs );
-				$wpsso->debug->log( 'cache salt = '.$cache_salt );
-				$wpsso->debug->log( 'cache id = '.$cache_id );
 			}
 
 			if ( self::$cache_exp_secs > 0 ) {
+
+				$cache_salt = 'WpssoJsonSchema::get_mod_cache_data('.SucomUtil::get_mod_salt( $mod ).')';
+				$cache_id = $cache_md5_pre.md5( $cache_salt );
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'cache salt = '.$cache_salt );
+					$wpsso->debug->log( 'cache id = '.$cache_id );
+				}
 
 				// update the cached array and maintain the existing transient expiration time
 				$expires_in_secs = SucomUtil::update_transient_array( $cache_id, $cache_data, self::$cache_exp_secs );
