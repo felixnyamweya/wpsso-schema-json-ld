@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.19.1-rc.1 (2017/11/28)**
+**Version 1.19.1 (2017/11/29)**
 
 * *New Features*
 	* None
@@ -737,9 +737,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.19.1-rc.1 =
+= 1.19.1 =
 
-(2017/11/28) Optimized the definition of cache ids when the transient cache is disabled.
+(2017/11/29) Optimized the definition of cache ids when the transient cache is disabled.
 
 = 1.19.0 =
 
