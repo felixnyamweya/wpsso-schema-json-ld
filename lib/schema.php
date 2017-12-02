@@ -307,8 +307,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
 				// prevent duplicates - exclude text/html videos
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
-					if ( isset( $og_video['og:video:type'] ) &&
-						$og_video['og:video:type'] !== 'text/html' ) {
+					if ( isset( $og_video['og:video:type'] ) && $og_video['og:video:type'] !== 'text/html' ) {
 						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) ) {
 							$prev_count++;
 						}

@@ -88,9 +88,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			if ( is_object( $mod['obj'] ) ) {
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
-				foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $add_type_url ) {
-					if ( filter_var( $add_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
-						$ret['additionalType'][] = $add_type_url;
+				if ( is_array( $mod_opts ) ) {	// just in case
+					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $add_type_url ) {
+						if ( filter_var( $add_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
+							$ret['additionalType'][] = $add_type_url;
+						}
 					}
 				}
 			}
@@ -249,9 +251,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
 
 			// check for default recipe values
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/',
-				$md_opts ) as $md_idx => $value ) {
-
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts ) as $md_idx => $value ) {
 				$md_opts[$md_idx] = (int) $value;
 				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
 					unset( $md_opts[$md_idx] );
