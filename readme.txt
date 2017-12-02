@@ -541,6 +541,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.19.2-dev.1 (2017/12/02)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed a call to SucomUtil preg_grep_keys() for a possible false meta options value in WpssoJsonFilters filter_json_data_https_schema_org_thing().
+* *Developer Notes*
+	* None
+
 **Version 1.19.1 (2017/11/29)**
 
 * *New Features*
@@ -736,6 +747,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.19.2-dev.1 =
+
+(2017/12/02) Fixed a call to SucomUtil preg_grep_keys() for a possible false meta options value in WpssoJsonFilters filter_json_data_https_schema_org_thing().
 
 = 1.19.1 =
 
