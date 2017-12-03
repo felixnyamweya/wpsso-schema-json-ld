@@ -114,4 +114,3 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 	}
 }
 
-?>

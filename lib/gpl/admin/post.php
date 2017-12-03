@@ -492,4 +492,3 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 	}
 }
 
-?>

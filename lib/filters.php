@@ -642,4 +642,3 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 	}
 }
 
-?>

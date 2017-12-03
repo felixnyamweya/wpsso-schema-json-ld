@@ -89,4 +89,3 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 	}
 }
 
-?>

@@ -49,4 +49,3 @@ if ( ! class_exists( 'WpssoJsonGplAdminAdvanced' ) ) {
 	}
 }
 
-?>

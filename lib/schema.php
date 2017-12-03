@@ -713,4 +713,3 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 	}
 }
 
-?>

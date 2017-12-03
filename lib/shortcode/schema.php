@@ -303,4 +303,3 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 	}
 }
 
-?>

@@ -54,4 +54,3 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaShortcode' ) && class_exists( 'Wpsso
 	}
 }
 
-?>
