@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.19.2-dev.2 (2017/12/03)**
+**Version 1.19.2-b.1 (2017/12/05)**
 
 * *New Features*
 	* None
@@ -748,9 +748,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.19.2-dev.2 =
+= 1.19.2-b.1 =
 
-(2017/12/03) Fixed a call to SucomUtil preg_grep_keys() for a possible false meta options value in WpssoJsonFilters filter_json_data_https_schema_org_thing().
+(2017/12/05) Fixed a call to SucomUtil preg_grep_keys() for a possible false meta options value in WpssoJsonFilters filter_json_data_https_schema_org_thing().
 
 = 1.19.1 =
 
