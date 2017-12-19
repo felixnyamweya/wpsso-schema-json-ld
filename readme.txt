@@ -525,7 +525,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 == Changelog ==
 
-<h3>Free / Basic Version Repository</h3>
+<h3>Free / Basic Version Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/developers/)
