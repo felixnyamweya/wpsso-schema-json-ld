@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Plugin Name: WPSSO Schema JSON-LD Markup
  * Plugin Slug: wpsso-schema-json-ld
  * Text Domain: wpsso-schema-json-ld

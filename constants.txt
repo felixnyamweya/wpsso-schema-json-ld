@@ -1,5 +1,5 @@
 
-/*
+/**
  * Hard-coded / fixed constants (values cannot be modified).
  */
 
@@ -9,7 +9,7 @@ WPSSOJSON_PLUGINSLUG
 WPSSOJSON_PLUGINBASE
 WPSSOJSON_URLPATH
 
-/*
+/**
  * Variable constants (define in wp-config.php file to change default values).
  */
 
