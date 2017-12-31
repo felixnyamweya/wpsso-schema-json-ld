@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			if ( ! empty( $mod['obj'] ) ) {
 				// get_options() returns null if an index key is not found
 				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' );	// null, 'none', 'site', or number (including 0)
-				if ( $org_id === null ) {
+				if ( null === $org_id ) {
 					$org_id = 'site';	// default
 				}
 			} else {

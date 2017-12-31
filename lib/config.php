@@ -147,7 +147,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 
 		public static function set_variable_constants( $var_const = null ) {
-			if ( $var_const === null ) {
+			if ( null === $var_const ) {
 				$var_const = self::get_variable_constants();
 			}
 			foreach ( $var_const as $name => $value ) {
