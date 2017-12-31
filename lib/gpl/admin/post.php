@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -45,7 +44,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$mins_sep = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
 			$secs_sep = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
 
-			/*
+			/**
 			 * Organization variables.
 			 */
 			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
@@ -53,14 +52,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$org_site_names = $form->get_cache( 'org_site_names', true );	// $add_none = true
 			$org_perf_names = $form->get_cache( 'org_perf_names', true );	// $add_none = true
 
-			/*
+			/**
 			 * Place / Location variables.
 			 */
 			$plm_req_msg = $this->p->util->get_ext_req_msg( 'plm' );
 			$plm_disable = empty( $plm_req_msg ) ? false : true;	// disable if plm extension not available
 			$place_addr_names = $form->get_cache( 'place_addr_names', true );	// $add_none = true
 
-			/*
+			/**
 			 * Javascript classes to hide/show rows by selected schema type.
 			 */
 			$schema_type_tr_class = array(
@@ -77,7 +76,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// timer end
 			}
 
-			/*
+			/**
 			 * Remove the default schema rows so we can append a whole new set.
 			 */
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
@@ -92,7 +91,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
 				),
 
-				/*
+				/**
 				 * All Schema Types
 				 */
 				'schema_title' => array(
@@ -128,7 +127,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
 				),
 
-				/*
+				/**
 				 * Schema Article
 				 */
 				'subsection_article' => array(
@@ -151,7 +150,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
 				),
 
-				/*
+				/**
 				 * Schema Event
 				 */
 				'subsection_event' => array(
@@ -217,7 +216,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					), '', 'schema_event_offer', 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX, 2 ),
 				),
 
-				/*
+				/**
 				 * Schema Job Posting
 				 */
 				'subsection_job' => array(
@@ -269,7 +268,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_date_time_iso( 'schema_job_expire' ),
 				),
 
-				/*
+				/**
 				 * Schema Organization
 				 */
 				'subsection_organization' => array(
@@ -285,7 +284,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 
-				/*
+				/**
 				 * Schema Recipe
 				 */
 				'subsection_recipe' => array(
@@ -439,7 +438,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						_x( 'milligrams of cholesterol', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 
-				/*
+				/**
 				 * Schema Review
 				 */
 				'subsection_review' => array(

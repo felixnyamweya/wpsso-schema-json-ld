@@ -1,5 +1,4 @@
 <?php
-
 /**
  * IMPORTANT: READ THE LICENSE AGREEMENT CAREFULLY.
  *
@@ -58,7 +57,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$org_logo_key = 'org_banner_url';		// use a banner for all article sub-types
 				$size_name = $lca.'-schema-article';		// same size, but minimum width is 696px
 
-				/*
+				/**
 				 * Property:
 				 * 	headline
 				 */
@@ -70,7 +69,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$size_name = $this->p->cf['lca'].'-schema';
 			}
 
-			/*
+			/**
 			 * Property:
 			 * 	datePublished
 			 * 	dateModified
@@ -80,13 +79,13 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				'dateModified' => 'article:modified_time',
 			) );
 
-			/*
+			/**
 			 * Property:
 			 *	inLanguage
 			 */
 			$ret['inLanguage'] = SucomUtil::get_locale( $mod );
 
-			/*
+			/**
 			 * Property:
 			 *	publisher as https://schema.org/Organization
 			 */
@@ -104,21 +103,21 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->log( 'publisher / organization id is '.$org_id );
 			}
 
-		 	/*
+		 	/**
 			 * $org_id can be 'none', 'site', or a number (including 0).
 		 	 * $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles.
 			 * do not provide localized option names - the method will fetch the localized values.
 			 */
 			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, $org_id, $org_logo_key, false );	// $list_element = false
 
-			/*
+			/**
 			 * Property:
 			 *	author as https://schema.org/Person
 			 *	contributor as https://schema.org/Person
 			 */
 			WpssoSchema::add_author_coauthor_data( $ret, $mod );
 
-			/*
+			/**
 			 * Property:
 			 *	image as https://schema.org/ImageObject
 			 *	video as https://schema.org/VideoObject
@@ -139,7 +138,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				}
 			}
 
-			/*
+			/**
 			 * Property:
 			 *	commentCount
 			 *	comment as https://schema.org/Comment

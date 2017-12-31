@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -126,7 +125,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			if ( $this->set_data ) {
-				/*
+				/**
 				 * When a schema type id is selected, a prop attribute value must be specified as well.
 				 */
 				if ( ! empty( $atts['type'] ) && empty( $atts['prop'] ) ) {
@@ -139,7 +138,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							'wpsso-schema-json-ld' );
 						$this->p->notice->err( sprintf( $err_msg, $info['short'], $tag, $atts['type'] ) );
 					}
-				/*
+				/**
 				 * When there's content (for a description), the schema type id must be specified -
 				 * otherwise it would apply to the main schema, where there is already a description.
 				 */
@@ -269,7 +268,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$this->set_data = true;
 				}
 
-				/*
+				/**
 				 * If we already have a position / depth for additions to the json_data array,
 				 * save it so we can return here after calling do_shortcode().
 				 */
@@ -277,14 +276,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$this->prev_ref[$this->sc_depth] =& $this->data_ref;
 				}
 
-				/*
+				/**
 				 * Set the current position / depth in the json_data array for new additions.
 				 */
 				$this->data_ref =& $json_data;
 
 				do_shortcode( $content );
 
-				/*
+				/**
 				 * If we have a previous position / depth saved, restore that position so later 
 				 * shortcode additions can be added from this position / depth.
 				 */

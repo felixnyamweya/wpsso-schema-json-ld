@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -25,7 +24,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 		}
 
-		/*
+		/**
 		 * Called by Blog, CollectionPage, ProfilePage, and SearchResultsPage.
 		 *
 		 * Examples:
@@ -42,7 +41,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso =& Wpsso::get_instance();
 			$posts_count = 0;
 
-			/*
+			/**
 			 * Sanity check - must have at least $page_type_id and $prop_name_type_ids.
 			 */
 			if ( empty( $page_type_id ) ) {
@@ -57,7 +56,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return $posts_count;
 			}
 
-			/*
+			/**
 			 * Prevent recursion - i.e. webpage.collection in webpage.collection, etc.
 			 */
 			if ( isset( $added_page_type_ids[$page_type_id] ) ) {
@@ -69,14 +68,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$added_page_type_ids[$page_type_id] = true;
 			}
 
-			/*
+			/**
 			 * Begin timer.
 			 */
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->mark( 'adding posts data' );	// begin timer
 			}
 
-			/*
+			/**
 			 * Set the page number and the posts per page values.
 			 */
 			if ( ! isset( $posts_per_page_max ) ) {	// only set the value once
@@ -87,7 +86,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso_paged = 1;
 			$posts_mods = array();
 
-			if ( $posts_per_page === false ) {	// get the default if no argument provided
+			if ( false === $posts_per_page ) {	// get the default if no argument provided
 				$posts_per_page = get_option( 'posts_per_page' );
 			}
 
@@ -104,7 +103,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$posts_per_page = $posts_per_page_max;
 			}
 
-			/*
+			/**
 			 * Get the mod array for all posts.
 			 */
 			if ( $is_main && ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) ) {
@@ -154,7 +153,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
 			}
 
-			/*
+			/**
 			 * Set the Schema properties.
 			 */
 			foreach ( $prop_name_type_ids as $prop_name => $prop_type_ids ) {
@@ -276,7 +275,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			unset( $wpsso_paged );
 
-			/*
+			/**
 			 * End timer.
 			 */
 			if ( $wpsso->debug->enabled ) {
@@ -290,7 +289,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 			
-			/*
+			/**
 			 * Property:
 			 *	image as https://schema.org/ImageObject
 			 */
@@ -302,7 +301,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$size_name = $wpsso->lca.'-schema';
 			}
 
-			/*
+			/**
 			 * Include video preview images first.
 			 */
 			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
@@ -343,7 +342,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				unset( $json_data['image'] );	// prevent null assignment
 			}
 
-			/*
+			/**
 			 * Property:
 			 *	video as https://schema.org/VideoObject
 			 *
@@ -363,7 +362,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$json_data['commentCount'] = get_comments_number( $mod['id'] );
 
-			/*
+			/**
 			 * Only get parent comments. The add_single_comment_data() method 
 			 * will recurse and add the children.
 			 */
@@ -439,7 +438,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $comments_added;	// return count of comments added
 		}
 
-		/*
+		/**
 		 * Provide a single or two-dimension video array in $og_video.
 		 */
 		public static function add_video_list_data( &$json_data, $og_video, $prefix = 'og:video' ) {
@@ -606,7 +605,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $cache_index;
 		}
 
-		/*
+		/**
 		 * Returns an associative array of json data. The $cache_index argument is used for 
 		 * quality control - making sure the $cache_index json data is an array (if it exists).
 		 */

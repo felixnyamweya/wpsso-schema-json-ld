@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -66,7 +65,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return array();	// remove the AMP json data to prevent duplicate JSON-LD blocks
 		}
 
-		/*
+		/**
 		 * Common filter for all Schema types.
 		 *
 		 * Adds the url, name, description, and if true, the main entity property. 
@@ -83,7 +82,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$ret = WpssoSchema::get_schema_type_context( $page_type_url );
 
-			/*
+			/**
 			 * Property:
 			 *	additionalType
 			 */
@@ -98,20 +97,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 
-			/*
+			/**
 			 * Property:
 			 *	url
 			 */
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $mt_og, array( 'url' => 'og:url' ) );
 
-			/*
+			/**
 			 * Property:
 			 *	name
 			 */
 			$ret['name'] = $this->p->page->get_title( $this->p->options['og_title_len'], 
 				'...', $mod, true, false, true, 'schema_title' );
 
-			/*
+			/**
 			 * Property:
 			 *	description
 			 */
@@ -125,7 +124,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$ret['potentialAction'] = $action_data;
 			}
 
-			/*
+			/**
 			 * Get additional Schema properties from the optional post content shortcode.
 			 */
 			if ( $mod['is_post'] ) {
@@ -314,7 +313,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$lca = $this->p->cf['lca'];
 
-			/*
+			/**
 			 * Clear the WPSSO Core head meta tags array.
 			 */
 			$cache_md5_pre = $lca.'_h_';
@@ -344,7 +343,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$author_id = get_post_field( 'post_author', $mod['id'] );
 			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(user:'.$author_id.')' );
 
-			/*
+			/**
 			 * Clear the WPSSO JSON posts data array.
 			 */
 			$cache_md5_pre = $lca.'_j_';
@@ -437,19 +436,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return array_merge( $md_defs, $schema_md_defs );
 		}
 
-		/*
+		/**
 		 * Filter the SSO > General > Google / Schema tab options.
 		 */
 		public function filter_pub_google_rows( $table_rows, $form ) {
 			foreach ( array_keys( $table_rows ) as $key ) {
 				switch ( $key ) {
-					/*
+					/**
 					 * Keep these rows.
 					 */
 					case 'schema_knowledge_graph':
 					case 'schema_home_person_id':
 						break;
-					/*
+					/**
 					 * Remove these rows.
 					 */
 					case 'subsection_google_schema':
