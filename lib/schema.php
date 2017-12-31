@@ -505,7 +505,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			$ret = WpssoSchema::get_schema_type_context( $video_type_url, 
-				array( 'url' => esc_url( $media_url ),
+				array( 'url' => esc_url_raw( $media_url ),
 			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
