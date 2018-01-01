@@ -21,7 +21,7 @@
  *
  *      {major}         Major structural code changes / re-writes or incompatible API changes.
  *      {minor}         New functionality was added or improved in a backwards-compatible manner.
- *      {bugfix}	Backwards-compatible bug fixes or small improvements.
+ *      {bugfix}        Backwards-compatible bug fixes or small improvements.
  *      {stage}.{level} Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
  * 
  * Copyright 2014-2018 Jean-Sebastien Morisset (https://wpsso.com/)
