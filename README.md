@@ -29,9 +29,9 @@
 
 <p>Including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.</p>
 
-<p><strong>Adds comments and threaded replies to Schema CreativeWork:</strong></p>
+<p><strong>Adds content text, comments, and threaded replies to Schema CreativeWork:</strong></p>
 
-<p>Includes comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)</p>
+<p>Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)</p>
 
 <p><strong>WPSSO JSON is <em>incredibly fast</em> and coded for performance:</strong></p>
 

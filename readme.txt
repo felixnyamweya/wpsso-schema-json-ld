@@ -34,9 +34,9 @@ Pinterest does not (currently) read Google's preferred Schema JSON-LD format &md
 
 Including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
-**Adds comments and threaded replies to Schema CreativeWork:**
+**Adds content text, comments, and threaded replies to Schema CreativeWork:**
 
-Includes comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)
+Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)
 
 **WPSSO JSON is *incredibly fast* and coded for performance:**
 
@@ -541,6 +541,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.19.3-dev.1 (2018/01/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content (HTML removed).
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.19.2 (2017/12/09)**
 
 * *New Features*
@@ -747,6 +758,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.19.3-dev.1 =
+
+(2018/01/01) Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content (HTML removed).
 
 = 1.19.2 =
 
