@@ -87,6 +87,18 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
+			 *	text
+			 */
+			$ret['text'] = $this->p->page->get_the_content( $mod );
+
+			$ret['text'] = $this->p->util->cleanup_html_tags( $ret['text'], true, $this->p->options['plugin_use_img_alt'] );
+
+			if ( empty( $ret['text'] ) ) {	// just in case
+				unset( $ret['text'] );
+			}
+
+			/**
+			 * Property:
 			 *	publisher as https://schema.org/Organization
 			 */
 			if ( ! empty( $mod['obj'] ) ) {
