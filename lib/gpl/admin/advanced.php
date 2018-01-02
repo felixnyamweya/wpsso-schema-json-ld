@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminAdvanced' ) ) {
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'plugin_cache_rows' => 3,		// $table_rows, $form, $network
+				'plugin_cache_rows' => 3,
 			), 25 );
 		}
 

@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'post_text_rows' => 4,	// $table_rows, $form, $head, $mod
+				'post_text_rows' => 4,
 			) );
 		}
 
