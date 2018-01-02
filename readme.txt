@@ -541,16 +541,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.19.3-dev.1 (2018/01/01)**
+**Version 1.19.3-rc.1 (2018/01/02)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content (HTML removed).
+	* Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content text (HTML and formatting removed).
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Minor refactoring for PHPCS compatibility checks.
 
 **Version 1.19.2 (2017/12/09)**
 
@@ -759,9 +759,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.19.3-dev.1 =
+= 1.19.3-rc.1 =
 
-(2018/01/01) Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content (HTML removed).
+(2018/01/02) Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content text (HTML and formatting removed).
 
 = 1.19.2 =
 
