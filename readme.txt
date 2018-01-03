@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.19.3-rc.1 (2018/01/02)**
+**Version 1.19.3 (2018/01/03)**
 
 * *New Features*
 	* None
@@ -759,9 +759,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.19.3-rc.1 =
+= 1.19.3 =
 
-(2018/01/02) Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content text (HTML and formatting removed).
+(2018/01/03) Added a "text" attribute in the Schema CreativeWork type markup (and its sub-types) with the complete post content text (HTML and formatting removed).
 
 = 1.19.2 =
 
