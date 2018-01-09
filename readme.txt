@@ -546,7 +546,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for Schema property arrays in the &#91;schema&#93; shortcode.
+	* Added support to add new Schema property array elements in the &#91;schema&#93; shortcode.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -772,7 +772,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.20.0-dev.1 =
 
-(2018/01/09) None.
+(2018/01/09) Added support to add new Schema property array elements in the &#91;schema&#93; shortcode.
 
 = 1.19.3 =
 
