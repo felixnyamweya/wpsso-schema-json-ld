@@ -691,19 +691,19 @@ msgstr ""
 msgid "adding schema for post object"
 msgstr ""
 
-#: lib/shortcode/schema.php:140
+#: lib/shortcode/schema.php:162
 msgid ""
-"%1$s %2$s shortcode with a type value of \"%3$s\" is missing the required "
-"prop attribute value."
+"%1$s %2$s shortcode with a type value of \"%3$s\" is missing a required "
+"'prop' attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:155
+#: lib/shortcode/schema.php:180
 msgid ""
-"%1$s %2$s shortcode with a description value is missing the required type "
-"attribute value."
+"%1$s %2$s shortcode with a content is missing a required 'type' attribute "
+"value."
 msgstr ""
 
-#: lib/shortcode/schema.php:214
+#: lib/shortcode/schema.php:249
 msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
