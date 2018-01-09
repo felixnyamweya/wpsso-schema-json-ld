@@ -53,8 +53,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		public function strip_shortcodes_preg( $preg_array ) {
 			$preg_array[] = '/\[\/?'.
 				WPSSOJSON_SCHEMA_SHORTCODE_NAME.
-				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.
-				'[0-9]+[^\]]*\]/';
+				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\]/';
 			return $preg_array;
 		}
 
@@ -121,6 +120,9 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			if ( ! is_array( $atts ) ) {	// empty string if no shortcode attributes
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'no shortcode attributes' );
+				}
 				$atts = array();
 			}
 
@@ -129,6 +131,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				 * When a schema type id is selected, a prop attribute value must be specified as well.
 				 */
 				if ( ! empty( $atts['type'] ) && empty( $atts['prop'] ) ) {
+
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( $tag.' shortcode with type is missing a prop attribute value' );
 					}
@@ -143,6 +146,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				 * otherwise it would apply to the main schema, where there is already a description.
 				 */
 				} elseif ( ! empty( $content ) && empty( $atts['type'] ) ) {
+
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( $tag.' shortcode with content is missing a type attribute value' );
 					}
@@ -152,9 +156,12 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							'wpsso-schema-json-ld' );
 						$this->p->notice->err( sprintf( $err_msg, $info['short'], $tag ) );
 					}
+
 				} else {
+
 					$type_url = '';
-					$prop_name = '';
+					$prop_name = null;
+					$prop_is_array = false;
 					$temp_data = array();
 
 					foreach ( $atts as $key => $value ) {
@@ -162,12 +169,37 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						// ignore @id, @context, @type, etc. shortcode attribute keys
 						// wordpress detects keys with illegal characters as a value, so test for both
 						if ( strpos( $key, '@' ) === 0 || strpos( $value, '@' ) === 0 ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'skipping '.$key.' = '.$value );
+							}
 							continue;
+
 						// save the property name to add the new json array
-						} elseif ( $key === 'prop' ) {
+						} elseif ( $key === 'prop' || $key === 'prop_name' ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'setting prop_name for prop = '.$value );
+							}
+
+							if ( strpos( $value, '+' ) === 0 ) {
+								$prop_is_array = true;
+								$value = substr( $value, 1 );
+							} else {
+								$prop_is_array = false;
+							}
 							$prop_name = $value;
+
+						} elseif ( $key === 'prop_value' ) {
+
+							$temp_data = $value;
+
 						// get the @context and @type for the new json array
 						} elseif ( $key === 'type' ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'setting type_url for type = '.$value );
+							}
 							if ( filter_var( $value, FILTER_VALIDATE_URL ) !== false ) {
 								$type_url = $value;
 							} else {
@@ -186,24 +218,60 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 							} else {
 								$temp_data = WpssoSchema::get_schema_type_context( $type_url, $temp_data );
 							}
+
 						// all other attribute keys are assumed to be schema property names
-						} else {
+						} elseif ( is_array( $temp_data ) ) {	// just in case
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'setting '.$key.' = '.$value );
+							}
 							$temp_data[$key] = $value;
 						}
 					}
 
-					if ( $prop_name ) {
+					if ( empty( $prop_name ) ) {
 
-						if ( ! isset( $this->data_ref[$prop_name] ) || ! is_array( $this->data_ref[$prop_name] ) ) {
+						$this->data_ref = SucomUtil::array_merge_recursive_distinct( $this->data_ref, $temp_data );
+
+					} else {
+
+						if ( ! isset( $this->data_ref[$prop_name] ) ) {
 							$this->data_ref[$prop_name] = array();
 						}
 
-						$this->data_ref[$prop_name] = SucomUtil::array_merge_recursive_distinct( $this->data_ref[$prop_name], $temp_data );
+						if ( $prop_is_array ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'adding new element to '.$prop_name.' array' );
+							}
+							$this->data_ref[$prop_name][] = $temp_data;
+							end( $this->data_ref[$prop_name] );	// just in case
+							$last_key = key( $this->data_ref[$prop_name] );
+							$prop_ref =& $this->data_ref[$prop_name][$last_key];
+
+						} elseif ( is_array( $temp_data ) ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'merging elements into '.$prop_name.' array' );
+							}
+							$this->data_ref[$prop_name] = SucomUtil::array_merge_recursive_distinct( $this->data_ref[$prop_name], $temp_data );
+							$prop_ref =& $this->data_ref[$prop_name];
+							if ( empty( $content ) ) {
+								$this->data_ref =& $prop_ref;
+							}
+
+						} else {
+
+							$this->data_ref[$prop_name] = $temp_data;
+							$prop_ref =& $this->data_ref[$prop_name];
+							$content = null;	// you can add properties to a string
+						}
 
 						if ( ! empty( $content ) ) {
 
 							if ( WPSSOJSON_SCHEMA_SHORTCODE_SINGLE_CONTENT ) {
-								$prop_content = preg_replace( '/\['.WPSSOJSON_SCHEMA_SHORTCODE_NAME.
+								$prop_content = preg_replace( '/\['.
+									WPSSOJSON_SCHEMA_SHORTCODE_NAME.
 									WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\].*\[\/'.
 									WPSSOJSON_SCHEMA_SHORTCODE_NAME.
 									WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR.'[0-9]+[^\]]*\]/s', '', $content );
@@ -211,29 +279,34 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 								$prop_content =& $content;
 							}
 
-							if ( ! isset( $this->data_ref[$prop_name]['description'] ) ) {
-								$this->data_ref[$prop_name]['description'] = $this->p->util->cleanup_html_tags( $prop_content );
+							if ( ! isset( $prop_ref['description'] ) ) {
+								$prop_ref['description'] = $this->p->util->cleanup_html_tags( $prop_content );
+								if ( empty( $prop_ref['description'] ) ) {
+									if ( $this->p->debug->enabled ) {
+										$this->p->debug->log( 'unsetting empty description property' );
+									}
+									unset( $prop_ref['description'] );
+								}
 							}
 
 							$og_videos = $this->p->media->get_content_videos( 1, false, false, $prop_content );
 
 							if ( ! empty( $og_videos ) ) {
-								WpssoJsonSchema::add_video_list_data( $this->data_ref[$prop_name]['video'], $og_videos, 'og:video' );
+								WpssoJsonSchema::add_video_list_data( $prop_ref['video'], $og_videos, 'og:video' );
 							}
 
 							$size_name = $this->p->cf['lca'].'-schema';
 							$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 
 							if ( ! empty( $og_images ) ) {
-								WpssoSchema::add_og_image_list_data( $this->data_ref[$prop_name]['image'], $og_images, 'og:image' );
+								WpssoSchema::add_og_image_list_data( $prop_ref['image'], $og_images, 'og:image' );
 							}
 
-							$this->get_json_data( $content, $this->data_ref[$prop_name], true );
+							$this->get_json_data( $content, $prop_ref, true );
 						}
-					} else {
-						$this->data_ref = SucomUtil::array_merge_recursive_distinct( $this->data_ref, $temp_data );
 					}
 				}
+
 				return '';
 
 			} else {
@@ -262,8 +335,12 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			if ( ! empty( $content ) ) {
+
 				if ( $increment ) {
 					$this->sc_depth++;
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'shortcode depth = '. $this->sc_depth );
+					}
 				} else {
 					$this->set_data = true;
 				}
@@ -293,6 +370,9 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 				if ( $increment ) {
 					$this->sc_depth--;
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'shortcode depth = '. $this->sc_depth );
+					}
 				} else {
 					$this->set_data = false;
 				}
