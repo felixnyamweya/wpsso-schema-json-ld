@@ -546,7 +546,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added support for Schema property arrays in the &#91;schema&#93; shortcode.
 * *Bugfixes*
 	* None
 * *Developer Notes*
