@@ -546,7 +546,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added support to add new Schema property array elements in the &#91;schema&#93; shortcode.
+	* Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -772,7 +772,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.20.0-dev.2 =
 
-(2018/01/09) Added support to add new Schema property array elements in the &#91;schema&#93; shortcode.
+(2018/01/09) Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
 
 = 1.19.3 =
 
