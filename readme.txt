@@ -541,7 +541,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.20.0-dev.2 (2018/01/09)**
+**Version 1.20.0-b.1 (2018/01/10)**
 
 * *New Features*
 	* None
@@ -770,9 +770,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.20.0-dev.2 =
+= 1.20.0-b.1 =
 
-(2018/01/09) Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
+(2018/01/10) Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
 
 = 1.19.3 =
 
