@@ -341,7 +341,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					WpssoJsonSchema::add_video_list_data( $prop_ref['video'], $og_videos, 'og:video' );
 				}
 
-				$size_name = $this->p->cf['lca'] . '-schema';
+				$size_name = $this->p->lca . '-schema';
 				$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 
 				if ( ! empty( $og_images ) ) {

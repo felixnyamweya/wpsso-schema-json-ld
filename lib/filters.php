@@ -78,7 +78,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark( 'common json data filter' );
 			}
 
-			$lca = $this->p->cf['lca'];
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$ret = WpssoSchema::get_schema_type_context( $page_type_url );
 
@@ -117,7 +116,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], 
 				'...', $mod, true, false, true, 'schema_desc' );
 
-			$action_data = (array) apply_filters( $lca.'_json_prop_https_schema_org_potentialaction',
+			$action_data = (array) apply_filters( $this->p->lca.'_json_prop_https_schema_org_potentialaction',
 				array(), $mod, $mt_og, $page_type_id, $is_main );
 
 			if ( ! empty( $action_data ) ) {
@@ -311,12 +310,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_post_cache_transient_keys( $transient_keys, $mod, $sharing_url, $mod_salt ) {
 
-			$lca = $this->p->cf['lca'];
-
 			/**
 			 * Clear the WPSSO Core head meta tags array.
 			 */
-			$cache_md5_pre = $lca.'_h_';
+			$cache_md5_pre = $this->p->lca.'_h_';
 			$cache_method = 'WpssoHead::get_head_keys';
 
 			$home_url = home_url( '/' );
@@ -346,7 +343,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Clear the WPSSO JSON posts data array.
 			 */
-			$cache_md5_pre = $lca.'_j_';
+			$cache_md5_pre = $this->p->lca.'_j_';
 			$transient_keys[] = $cache_md5_pre.md5( 'WpssoJsonSchema::get_mod_cache_data('.$mod_salt.')' );
 
 			return $transient_keys;
@@ -612,7 +609,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		// hooked to 'wpssojson_status_gpl_features'
-		public function filter_status_gpl_features( $features, $lca, $info, $pkg ) {
+		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
 			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
 				if ( $sub === 'admin' ) { // skip status for admin menus and tabs
 					continue;
@@ -623,15 +620,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}
-			return $this->filter_common_status_features( $features, $lca, $info, $pkg );
+			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 
 		// hooked to 'wpssojson_status_pro_features'
-		public function filter_status_pro_features( $features, $lca, $info, $pkg ) {
-			return $this->filter_common_status_features( $features, $lca, $info, $pkg );
+		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
+			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 
-		private function filter_common_status_features( $features, $lca, $info, $pkg ) {
+		private function filter_common_status_features( $features, $ext, $info, $pkg ) {
 			foreach ( $features as $key => $arr ) {
 				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) ) {
 					$features[$key]['label'] = $match[2].' ('.$this->p->schema->count_schema_type_children( $match[3] ).')';
