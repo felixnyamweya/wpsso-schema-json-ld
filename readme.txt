@@ -152,6 +152,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 * Additional Type URLs
 * Article Publisher
 * Article Headline
+* Course Provider
 * Event Organizer
 * Event Performer
 * Event Start (date, time, timezone)
@@ -541,11 +542,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.20.0-b.1 (2018/01/10)**
+**Version 1.20.0-b.2 (2018/01/10)**
 
 * *New Features*
 	* None
 * *Improvements*
+	* Added a Course Provider option in the Social and Search Optimization metabox for the Schema Course type.
 	* Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
 * *Bugfixes*
 	* None
@@ -770,9 +772,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.20.0-b.1 =
+= 1.20.0-b.2 =
 
-(2018/01/10) Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements (instead of merging / replacing property values by default).
+(2018/01/10) Added a Course Provider option in the Social and Search Optimization metabox for the Schema Course type. Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements.
 
 = 1.19.3 =
 

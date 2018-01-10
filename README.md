@@ -165,6 +165,7 @@
 <li>Additional Type URLs</li>
 <li>Article Publisher</li>
 <li>Article Headline</li>
+<li>Course Provider</li>
 <li>Event Organizer</li>
 <li>Event Performer</li>
 <li>Event Start (date, time, timezone)</li>
