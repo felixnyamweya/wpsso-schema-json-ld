@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(
-					'version' => '1.20.0-b.1',		// plugin version
+					'version' => '1.20.0-b.2',		// plugin version
 					'opt_version' => '10',		// increment when changing default options
 					'short' => 'WPSSO JSON',	// short plugin name
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.49.1-b.1',
+						'min_version' => '3.49.1-b.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -65,6 +65,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'article' => '(code) Schema Type Article (article)',
 								'blog' => '(code) Schema Type Blog (blog)',
 								'collectionpage' => '(code) Schema Type Collection Page (webpage.collection)',
+								'course' => '(code) Schema Type Course (course)',
 								'creativework' => '(code) Schema Type Creative Work (creative.work)',
 								'event' => '(code) Schema Type Event (event)',
 								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishment)',

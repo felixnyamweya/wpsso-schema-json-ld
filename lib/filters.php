@@ -368,6 +368,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_desc' => '',
 				'schema_pub_org_id' => 'site',			// Article Publisher
 				'schema_headline' => '',			// Article Headline
+				'schema_course_provider_id' => 'none',		// Course Provider 
 				'schema_event_start_date' => '',		// Event Start Date
 				'schema_event_start_time' => 'none',		// Event Start Time
 				'schema_event_start_timezone' => $timezone,	// Event Start Timezone

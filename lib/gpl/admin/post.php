@@ -64,6 +64,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 */
 			$schema_type_tr_class = array(
 				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
+				'course' => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
 				'job.posting' => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local.business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
@@ -148,6 +149,22 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
+				),
+
+				/**
+				 * Schema Course
+				 */
+				'subsection_course' => array(
+					'tr_class' => $schema_type_tr_class['course'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_course_provider_id' => array(
+					'tr_class' => $schema_type_tr_class['course'],
+					'label' => _x( 'Course Provider', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_course_provider_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_course_provider_id',
+						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 
 				/**
