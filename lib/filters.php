@@ -494,6 +494,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_headline':
 					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
 				 	break;
+				case 'tooltip-meta-schema_course_provider_id':
+					$text = __( 'Select an organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );
+				 	break;
 				case 'tooltip-meta-schema_event_org_id':
 					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
 				 	break;
