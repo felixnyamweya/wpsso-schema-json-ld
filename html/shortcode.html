@@ -41,20 +41,20 @@ If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always val
 &#91;/schema&#93;
 </pre> 
 
-<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to add a new property array element, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see bellow for additional notes on using nested shortcodes).
+<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to <em>add</em> a new element to the Schema property array, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see bellow for additional notes on using nested shortcodes).
 
 <pre class="lang:xhtml decode:true">
 &#91;schema prop="+offers" type="https://schema.org/Offer"&#93;
 
 	&#91;schema_1 prop="priceSpecification" type="https://schema.org/UnitPriceSpecification"
-		price="50.00" priceCurrency="USD" unitCode="DAY"/&#93;
+		price="50.00" priceCurrency="USD" unitCode="DAY" /&#93;
 
 &#91;/schema&#93;
 
 &#91;schema prop="+offers" type="https://schema.org/Offer"&#93;
 
 	&#91;schema_1 prop="priceSpecification" type="https://schema.org/UnitPriceSpecification"
-		 price="250.00" priceCurrency="USD" unitCode="WEEK"/&#93;
+		 price="250.00" priceCurrency="USD" unitCode="WEEK" /&#93;
 
 &#91;/schema&#93;
 </pre> 

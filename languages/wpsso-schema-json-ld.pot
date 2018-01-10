@@ -691,20 +691,24 @@ msgstr ""
 msgid "adding schema for post object"
 msgstr ""
 
-#: lib/shortcode/schema.php:162
+#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the prop value.
+#: lib/shortcode/schema.php:163
 msgid ""
-"%1$s %2$s shortcode with a type value of \"%3$s\" is missing a required "
+"%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required "
 "'prop' attribute value."
 msgstr ""
 
-#: lib/shortcode/schema.php:180
+#. translators: %1$s is the short plugin name, and %2$s is the shortcode tag.
+#: lib/shortcode/schema.php:182
 msgid ""
-"%1$s %2$s shortcode with a content is missing a required 'type' attribute "
+"%1$s [%2$s] shortcode with a content is missing a required 'type' attribute "
 "value."
 msgstr ""
 
-#: lib/shortcode/schema.php:249
-msgid "%1$s %2$s shortcode type attribute \"%3$s\" is not a recognized value."
+#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the type value.
+#: lib/shortcode/schema.php:252
+msgid ""
+"%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
 #: lib/submenu/schema-json-ld.php:34
