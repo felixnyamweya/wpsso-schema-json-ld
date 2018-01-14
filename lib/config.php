@@ -15,10 +15,10 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssojson' => array(
-					'version' => '1.20.0-rc.1',		// plugin version
-					'opt_version' => '10',		// increment when changing default options
-					'short' => 'WPSSO JSON',	// short plugin name
+				'wpssojson' => array(			// Plugin acronym.
+					'version' => '1.20.0',		// Plugin version.
+					'opt_version' => '10',		// Increment when changing default option values.
+					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
 					'desc' => 'WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.',
 					'slug' => 'wpsso-schema-json-ld',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.49.1-rc.1',
+						'min_version' => '3.49.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -38,8 +38,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						// submenu items must have unique keys
-						'submenu' => array (
+						'submenu' => array(	// Note that submenu elements must have unique keys.
 							'schema-json-ld' => 'Schema Markup',
 							'schema-shortcode' => 'Schema Shortcode',
 						),
