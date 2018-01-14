@@ -542,7 +542,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.20.0-rc.1 (2018/01/12)**
+**Version 1.20.0 (2018/01/14)**
 
 * *New Features*
 	* None
@@ -772,9 +772,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.20.0-rc.1 =
+= 1.20.0 =
 
-(2018/01/12) Added a Course Provider option in the Social and Search Optimization metabox for the Schema Course type. Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements.
+(2018/01/14) Added a Course Provider option in the Social and Search Optimization metabox for the Schema Course type. Extended the &#91;schema&#93; shortcode 'prop' attribute to allow adding new array elements.
 
 = 1.19.3 =
 
