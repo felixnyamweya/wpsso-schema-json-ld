@@ -13,7 +13,7 @@
  * Description: WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
- * Tested Up To: 4.9.1
+ * Tested Up To: 4.9.2
  * WC Tested Up To: 3.2.6
  * Version: 1.20.0
  * 
