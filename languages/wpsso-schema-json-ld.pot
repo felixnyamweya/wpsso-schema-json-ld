@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.20.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.20.2-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -359,17 +359,17 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:137 lib/pro/admin/post.php:149
 msgctxt "metabox title"
-msgid "Article Information"
+msgid "CreativeWork Information"
 msgstr ""
 
 #: lib/gpl/admin/post.php:141 lib/pro/admin/post.php:153
 msgctxt "option label"
-msgid "Article Publisher"
+msgid "CreativeWork Publisher"
 msgstr ""
 
 #: lib/gpl/admin/post.php:148 lib/pro/admin/post.php:160
 msgctxt "option label"
-msgid "Article Headline"
+msgid "CreativeWork Headline"
 msgstr ""
 
 #: lib/gpl/admin/post.php:160 lib/pro/admin/post.php:173

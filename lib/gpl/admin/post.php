@@ -63,11 +63,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 * Javascript classes to hide/show rows by selected schema type.
 			 */
 			$schema_type_tr_class = array(
-				'article' => $this->p->schema->get_children_css_class( 'article', 'hide_schema_type' ),
+				'creative_work' => $this->p->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
 				'course' => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
 				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
-				'job.posting' => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
-				'local.business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
+				'job_posting' => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
+				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization' => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
@@ -129,23 +129,23 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema Article
+				 * Schema CreativeWork
 				 */
-				'subsection_article' => array(
-					'tr_class' => $schema_type_tr_class['article'],
+				'subsection_creative_work' => array(
+					'tr_class' => $schema_type_tr_class['creative_work'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Article Information', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'CreativeWork Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_pub_org_id' => array(
-					'tr_class' => $schema_type_tr_class['article'],
-					'label' => _x( 'Article Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'tr_class' => $schema_type_tr_class['creative_work'],
+					'label' => _x( 'CreativeWork Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_pub_org_id',
 						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_headline' => array(
-					'tr_class' => $schema_type_tr_class['article'],
-					'label' => _x( 'Article Headline', 'option label', 'wpsso-schema-json-ld' ),
+					'tr_class' => $schema_type_tr_class['creative_work'],
+					'label' => _x( 'CreativeWork Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
@@ -237,12 +237,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Job Posting
 				 */
 				'subsection_job' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_job_title' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
@@ -250,21 +250,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'...', $mod ), 'wide' ),
 				),
 				'schema_job_org_id' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_job_org_id',
 						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_job_location_id' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_location_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_job_location_id',
 						$place_addr_names, 'long_name' ).$plm_req_msg,
 				),
 				'schema_job_salary' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Base Salary', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_salary', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'medium' ).' '.
@@ -273,13 +273,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_select( 'schema_job_salary_period', $this->p->cf['form']['time_text'], 'short' ),
 				),
 				'schema_job_empl_type' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Employment Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_empl_type', 'td_class' => 'blank',
 					'content' => $form->get_no_checklist( 'schema_job_empl_type', $this->p->cf['form']['employment_type'] ),
 				),
 				'schema_job_expire' => array(
-					'tr_class' => $schema_type_tr_class['job.posting'],
+					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Posting Expires', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_expire', 'td_class' => 'blank',
 					'content' => $form->get_no_date_time_iso( 'schema_job_expire' ),
@@ -289,12 +289,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Organization
 				 */
 				'subsection_organization' => array(
-					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local.business'],
+					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
 					'td_class' => 'subsection', 'header' => 'h4',
 					'label' => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_org_org_id' => array(
-					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local.business'],
+					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_org_org_id',
