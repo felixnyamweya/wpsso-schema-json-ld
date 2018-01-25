@@ -542,6 +542,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.20.2-dev.3 (2018/01/25)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Moved the headline and publisher custom values from Schema Article to Schema CreativeWork.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.20.1 (2018/01/25)**
 
 * *New Features*
@@ -782,6 +793,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.20.2-dev.3 =
+
+(2018/01/25) Moved the headline and publisher custom values from Schema Article to Schema CreativeWork.
 
 = 1.20.1 =
 
