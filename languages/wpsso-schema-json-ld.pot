@@ -703,7 +703,7 @@ msgctxt "option value"
 msgid "%s Location"
 msgstr ""
 
-#: lib/schema.php:586
+#: lib/schema.php:585
 msgid "adding schema for post object"
 msgstr ""
 

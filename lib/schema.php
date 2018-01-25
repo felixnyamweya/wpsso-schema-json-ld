@@ -350,8 +350,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Property:
 			 *	video as https://schema.org/VideoObject
 			 *
-			 * Allow the video property to be skipped -- some schema types (organization, 
-			 * for example) do not include a video property.
+			 * Allow the video property to be skipped -- some schema types (organization, for example) do not include a video property.
 			 */
 			if ( $add_video ) {
 				if ( ! empty( $mt_og['og:video'] ) ) {
