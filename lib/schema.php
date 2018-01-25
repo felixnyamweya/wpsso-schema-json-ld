@@ -39,6 +39,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			static $posts_per_page_max = null;
 
 			$wpsso =& Wpsso::get_instance();
+
 			$posts_count = 0;
 
 			/**
@@ -385,6 +386,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		public static function add_single_comment_data( &$json_data, $mod, $comment_id, $list_element = true ) {
+
+			$wpsso =& Wpsso::get_instance();
+
 			$comments_added = 0;
 
 			if ( $comment_id && $cmt = get_comment( $comment_id ) ) {
@@ -393,8 +397,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				// if not adding a list element, inherit the existing schema type url (if one exists)
 				if ( ! $list_element && ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
-					if ( $ngfb->debug->enabled ) {
-						$ngfb->debug->log( 'using inherited schema type url = '.$comment_type_url );
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'using inherited schema type url = '.$comment_type_url );
 					}
 				} else {
 					$comment_type_url = 'https://schema.org/Comment';
@@ -489,16 +493,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$media_url = SucomUtil::get_mt_media_url( $opts, $prefix );
 
 			if ( empty( $media_url ) ) {
-				if ( $ngfb->debug->enabled ) {
-					$ngfb->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
 				}
 				return 0;	// return count of videos added
 			}
 
 			// if not adding a list element, inherit the existing schema type url (if one exists)
 			if ( ! $list_element && ( $video_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
-				if ( $ngfb->debug->enabled ) {
-					$ngfb->debug->log( 'using inherited schema type url = '.$video_type_url );
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'using inherited schema type url = '.$video_type_url );
 				}
 			} else {
 				$video_type_url = 'https://schema.org/VideoObject';

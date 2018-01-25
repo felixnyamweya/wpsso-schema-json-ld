@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.20.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.20.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -703,7 +703,7 @@ msgctxt "option value"
 msgid "%s Location"
 msgstr ""
 
-#: lib/schema.php:570
+#: lib/schema.php:574
 msgid "adding schema for post object"
 msgstr ""
 
