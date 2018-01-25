@@ -542,6 +542,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.20.1 (2018/01/25)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed a variable name in the WpssoJsonSchema::add_single_comment_data() method.
+* *Developer Notes*
+	* None
+
 **Version 1.20.0 (2018/01/14)**
 
 * *New Features*
@@ -771,6 +782,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.20.1 =
+
+(2018/01/25) Fixed a variable name in the WpssoJsonSchema::add_single_comment_data() method.
 
 = 1.20.0 =
 
