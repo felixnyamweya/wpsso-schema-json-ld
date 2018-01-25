@@ -289,7 +289,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		public static function add_media_data( &$json_data, $mod, $mt_og, $size_name = null, $add_video = true ) {
 
 			$wpsso =& Wpsso::get_instance();
-			
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->mark();
+			}
+
 			/**
 			 * Property:
 			 *	image as https://schema.org/ImageObject
@@ -299,7 +303,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
 
 			if ( empty( $size_name ) ) {
-				$size_name = $wpsso->lca.'-schema';
+				$size_name = $wpsso->lca . '-schema';
 			}
 
 			/**
@@ -325,8 +329,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 			}
 
-			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'],
-				$size_name, $mod, true, 'schema' ) );
+			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'], $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
 				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
@@ -350,8 +353,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Allow the video property to be skipped -- some schema types (organization, 
 			 * for example) do not include a video property.
 			 */
-			if ( $add_video && ! empty( $mt_og['og:video'] ) ) {
-				WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
+			if ( $add_video ) {
+				if ( ! empty( $mt_og['og:video'] ) ) {
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'adding videos to json data' );
+					}
+					WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
+				} elseif ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'skipping videos: og:video is empty' );
+				}
+			} elseif ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'skipping videos: add_video argument is false' );
 			}
 		}
 
