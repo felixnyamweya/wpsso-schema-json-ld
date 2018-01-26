@@ -139,8 +139,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'label' => _x( 'Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_pub_org_id',
-						$org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_headline' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
@@ -162,8 +161,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['course'],
 					'label' => _x( 'Course Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_course_provider_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_course_provider_id',
-						$org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_course_provider_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 
 				/**
@@ -243,22 +241,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->page->get_title( $title_max_len,
-						'...', $mod ), 'wide' ),
+					'content' => $form->get_no_input_value( $this->p->page->get_title( $title_max_len, '...', $mod ), 'wide' ),
 				),
 				'schema_job_org_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_org_id',
-						$org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_job_org_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_job_location_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_location_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_location_id',
-						$place_addr_names, 'long_name' ).$plm_req_msg,
+					'content' => $form->get_no_select( 'schema_job_location_id', $place_addr_names, 'long_name' ).$plm_req_msg,
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
@@ -294,8 +289,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_org_org_id',
-						$org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_org_org_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 
 				/**
