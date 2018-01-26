@@ -547,7 +547,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Moved the headline and publisher custom values from Schema Article to Schema CreativeWork.
+	* Moved the headline and publisher custom options in the Social and Search Optimization metabox from Schema Article to Schema CreativeWork.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -796,7 +796,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.20.2-b.1 =
 
-(2018/01/26) Moved the headline and publisher custom values from Schema Article to Schema CreativeWork.
+(2018/01/26) Moved the headline and publisher custom options in the Social and Search Optimization metabox from Schema Article to Schema CreativeWork.
 
 = 1.20.1 =
 
