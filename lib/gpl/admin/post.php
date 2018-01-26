@@ -50,7 +50,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
 			$org_disable = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
 			$org_site_names = $form->get_cache( 'org_site_names', true );	// $add_none = true
-			$org_perf_names = $form->get_cache( 'org_perf_names', true );	// $add_none = true
 
 			/**
 			 * Place / Location variables.
@@ -134,18 +133,18 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_creative_work' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'CreativeWork Information', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_pub_org_id' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
-					'label' => _x( 'CreativeWork Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_pub_org_id',
 						$org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_headline' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
-					'label' => _x( 'CreativeWork Headline', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Creative Work Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
 					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '...', $mod ), 'wide' ),
@@ -179,15 +178,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_org_id',
-						$org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_org_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_event_perf_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_perf_id',
-						$org_perf_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_perf_id', $org_site_names, 'long_name' ).$org_req_msg,
 				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class['event'],
