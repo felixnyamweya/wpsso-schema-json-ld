@@ -542,7 +542,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.20.2-b.1 (2018/01/26)**
+**Version 1.20.2 (2018/01/27)**
 
 * *New Features*
 	* None
@@ -794,9 +794,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.20.2-b.1 =
+= 1.20.2 =
 
-(2018/01/26) Moved the headline and publisher custom options in the Social and Search Optimization metabox from Schema Article to Schema CreativeWork.
+(2018/01/27) Moved the headline and publisher custom options in the Social and Search Optimization metabox from Schema Article to Schema CreativeWork.
 
 = 1.20.1 =
 
