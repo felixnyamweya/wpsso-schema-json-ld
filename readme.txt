@@ -126,9 +126,11 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* Gravatar (Author Image)
 	* Ow.ly
 	* Slideshare Presentations
+	* Soundcloud Tracks (for Twitter Player Card)
 	* TinyURL
 	* Vimeo Videos
 	* Wistia Videos
+	* WordPress Video Shortcode (and Self-Hosted Videos)
 	* Your Own URL Shortener (YOURLS)
 	* YouTube Videos and Playlists
 

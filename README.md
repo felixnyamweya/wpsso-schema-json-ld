@@ -131,9 +131,11 @@
 <li>Gravatar (Author Image)</li>
 <li>Ow.ly</li>
 <li>Slideshare Presentations</li>
+<li>Soundcloud Tracks (for Twitter Player Card)</li>
 <li>TinyURL</li>
 <li>Vimeo Videos</li>
 <li>Wistia Videos</li>
+<li>WordPress Video Shortcode (and Self-Hosted Videos)</li>
 <li>Your Own URL Shortener (YOURLS)</li>
 <li>YouTube Videos and Playlists</li>
 </ul></li>
