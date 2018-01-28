@@ -31,45 +31,45 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// timer begin
 			}
 
-			$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
-			$currencies = SucomUtil::get_currency_abbrev();
-			$title_max_len = $this->p->options['og_title_len'];
-			$desc_max_len = $this->p->options['schema_desc_len'];
+			$schema_types     = $this->p->schema->get_schema_types_select( null, true ); // $add_none = true
+			$currencies       = SucomUtil::get_currency_abbrev();
+			$title_max_len    = $this->p->options['og_title_len'];
+			$desc_max_len     = $this->p->options['schema_desc_len'];
 			$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
+			$auto_draft_msg   = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 
-			$days_sep = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
+			$days_sep  = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
 			$hours_sep = ' '._x( 'hours', 'option comment', 'wpsso-schema-json-ld' ).', ';
-			$mins_sep = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
-			$secs_sep = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
+			$mins_sep  = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
+			$secs_sep  = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
 
 			/**
 			 * Organization variables.
 			 */
-			$org_req_msg = $this->p->util->get_ext_req_msg( 'org' );
-			$org_disable = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
-			$org_site_names = $form->get_cache( 'org_site_names', true );	// $add_none = true
+			$org_req_msg    = $this->p->util->get_ext_req_msg( 'org' );
+			$org_disable    = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
+			$org_site_names = $form->get_cache( 'org_site_names', true ); // $add_none = true
 
 			/**
 			 * Place / Location variables.
 			 */
-			$plm_req_msg = $this->p->util->get_ext_req_msg( 'plm' );
-			$plm_disable = empty( $plm_req_msg ) ? false : true;	// disable if plm extension not available
-			$place_addr_names = $form->get_cache( 'place_addr_names', true );	// $add_none = true
+			$plm_req_msg      = $this->p->util->get_ext_req_msg( 'plm' );
+			$plm_disable      = empty( $plm_req_msg ) ? false : true; // disable if plm extension not available
+			$place_addr_names = $form->get_cache( 'place_addr_names', true ); // $add_none = true
 
 			/**
 			 * Javascript classes to hide/show rows by selected schema type.
 			 */
 			$schema_type_tr_class = array(
-				'creative_work' => $this->p->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
-				'course' => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
-				'event' => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
-				'job_posting' => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
+				'creative_work'  => $this->p->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
+				'course'         => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
+				'event'          => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'job_posting'    => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
-				'organization' => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
-				'recipe' => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
-				'review' => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
+				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
+				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
+				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
 
 			if ( $this->p->debug->enabled ) {
