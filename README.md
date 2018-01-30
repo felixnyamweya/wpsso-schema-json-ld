@@ -157,7 +157,10 @@
 
 <p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"></p>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
+
+<ul>
+<li>All Schema Types
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
@@ -165,20 +168,46 @@
 <li>Main Entity of Page</li>
 <li>Schema Item Type</li>
 <li>Additional Type URLs</li>
-<li>Article Publisher</li>
-<li>Article Headline</li>
+<li>SameAs Webpage URLs</li>
+</ul></li>
+<li>Creative Work Information
+
+<ul>
+<li>Creative Work Publisher</li>
+<li>Creative Work Headline</li>
+</ul></li>
+<li>Course Information
+
+<ul>
 <li>Course Provider</li>
+</ul></li>
+<li>Event Information
+
+<ul>
 <li>Event Organizer</li>
 <li>Event Performer</li>
 <li>Event Start (date, time, timezone)</li>
 <li>Event End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
+</ul></li>
+<li>Job Posting Information
+
+<ul>
 <li>Job Posting Job Title</li>
 <li>Job Posting Hiring Organization</li>
 <li>Job Posting Job Location</li>
 <li>Job Posting Base Salary</li>
 <li>Job Posting Employment Type</li>
 <li>Job Posting Expires</li>
+</ul></li>
+<li>Organization Information
+
+<ul>
+<li>Organization</li>
+</ul></li>
+<li>Recipe Information
+
+<ul>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>
@@ -202,11 +231,16 @@
 <li>Trans Fat</li>
 <li>Cholesterol</li>
 </ul></li>
-<li>(Review) Subject Type </li>
-<li>(Review) Subject Name </li>
-<li>(Review) Subject Webpage URL </li>
-<li>(Review) Subject Image URL </li>
+</ul></li>
+<li>Review Information
+
+<ul>
+<li>Subject Type </li>
+<li>Subject Name </li>
+<li>Subject Webpage URL </li>
+<li>Subject Image URL </li>
 <li>Review Rating </li>
+</ul></li>
 </ul>
 
 <p><img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png"></p>

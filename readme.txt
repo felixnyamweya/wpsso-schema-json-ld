@@ -145,52 +145,62 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png">
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds additional custom options to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
 
-* Schema Item Name (aka Title)
-* Schema Description
-* Main Entity of Page
-* Schema Item Type
-* Additional Type URLs
-* Article Publisher
-* Article Headline
-* Course Provider
-* Event Organizer
-* Event Performer
-* Event Start (date, time, timezone)
-* Event End (date, time, timezone)
-* Event Offers (name, price, currency, availability)
-* Job Posting Job Title
-* Job Posting Hiring Organization
-* Job Posting Job Location
-* Job Posting Base Salary
-* Job Posting Employment Type
-* Job Posting Expires
-* Recipe Preparation Time 
-* Recipe Cooking Time 
-* Recipe Total Time 
-* Recipe Total Calories 
-* Recipe Quantity 
-* Recipe Ingredients 
-* Recipe Instructions 
-* Recipe Nutrition Information per Serving 
-* Serving Size
-	* Calories
-	* Protein
-	* Fiber
-	* Carbohydrates
-	* Sugar
-	* Sodium
-	* Fat
-	* Saturated Fat
-	* Unsaturated Fat
-	* Trans Fat
-	* Cholesterol
-* (Review) Subject Type 
-* (Review) Subject Name 
-* (Review) Subject Webpage URL 
-* (Review) Subject Image URL 
-* Review Rating 
+* All Schema Types
+	* Schema Item Name (aka Title)
+	* Schema Description
+	* Main Entity of Page
+	* Schema Item Type
+	* Additional Type URLs
+	* SameAs Webpage URLs
+* Creative Work Information
+	* Creative Work Publisher
+	* Creative Work Headline
+* Course Information
+	* Course Provider
+* Event Information
+	* Event Organizer
+	* Event Performer
+	* Event Start (date, time, timezone)
+	* Event End (date, time, timezone)
+	* Event Offers (name, price, currency, availability)
+* Job Posting Information
+	* Job Posting Job Title
+	* Job Posting Hiring Organization
+	* Job Posting Job Location
+	* Job Posting Base Salary
+	* Job Posting Employment Type
+	* Job Posting Expires
+* Organization Information
+	* Organization
+* Recipe Information
+	* Recipe Preparation Time 
+	* Recipe Cooking Time 
+	* Recipe Total Time 
+	* Recipe Total Calories 
+	* Recipe Quantity 
+	* Recipe Ingredients 
+	* Recipe Instructions 
+	* Recipe Nutrition Information per Serving 
+	* Serving Size
+		* Calories
+		* Protein
+		* Fiber
+		* Carbohydrates
+		* Sugar
+		* Sodium
+		* Fat
+		* Saturated Fat
+		* Unsaturated Fat
+		* Trans Fat
+		* Cholesterol
+* Review Information
+	* Subject Type 
+	* Subject Name 
+	* Subject Webpage URL 
+	* Subject Image URL 
+	* Review Rating 
 
 <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 
