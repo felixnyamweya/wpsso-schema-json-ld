@@ -88,9 +88,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( is_object( $mod['obj'] ) ) {
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
 				if ( is_array( $mod_opts ) ) {	// just in case
-					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $add_type_url ) {
-						if ( filter_var( $add_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
-							$ret['additionalType'][] = $add_type_url;
+					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
+						if ( filter_var( $addl_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
+							$ret['additionalType'][] = $addl_type_url;
 						}
 					}
 				}
@@ -101,6 +101,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	url
 			 */
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $mt_og, array( 'url' => 'og:url' ) );
+
+			/**
+			 * Property:
+			 *	sameAs
+			 */
+			if ( is_object( $mod['obj'] ) ) {
+				$mod_opts = $mod['obj']->get_options( $mod['id'] );
+				if ( is_array( $mod_opts ) ) {	// just in case
+					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $sameas_url ) {
+						if ( filter_var( $sameas_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
+							$ret['sameAs'][] = $sameas_url;
+						}
+					}
+				}
+			}
 
 			/**
 			 * Property:
@@ -487,6 +502,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_addl_type_url':
 					$text = sprintf( __( 'Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/">The Product Types Ontology</a>' );
+				 	break;
+				case 'tooltip-meta-schema_sameas_url':
+					$text = __( 'Additional (and optional) webpage reference URLs that unambiguously indicate the item\'s identity. For example, the URL of the item\'s Wikipedia page, Wikidata entry, IMDB page, official website, etc.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_pub_org_id':
 					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );

@@ -124,7 +124,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => ( empty( $form->options['schema_addl_type_url_0'] ) ? 'hide_in_basic' : '' ),
 					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_addl_type_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),	// $repeat = 2
+					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ), // $repeat = 2
+				),
+				'schema_sameas_url' => array(
+					'tr_class' => ( empty( $form->options['schema_sameas_url_0'] ) ? 'hide_in_basic' : '' ),
+					'label' => _x( 'SameAs Webpage URLs', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ), // $repeat = 2
 				),
 
 				/**
