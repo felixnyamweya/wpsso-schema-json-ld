@@ -554,7 +554,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.21.0-b.2 (2018/01/31)**
+**Version 1.21.0-b.3 (2018/02/01)**
 
 * *New Features*
 	* Added a "SameAs Webpage URLs" option in the Social and Search Optimization metabox.
@@ -817,9 +817,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.21.0-b.2 =
+= 1.21.0-b.3 =
 
-(2018/01/31) Added a "SameAs Webpage URLs" option in the Social and Search Optimization metabox.
+(2018/02/01) Added a "SameAs Webpage URLs" option in the Social and Search Optimization metabox.
 
 = 1.20.2 =
 
