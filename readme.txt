@@ -554,7 +554,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.21.1-dev.3 (TBD)**
+**Version 1.21.1-dev.3 (2018/02/07)**
 
 * *New Features*
 	* None
@@ -563,7 +563,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Moved the following methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class:
+		* get_single_post_data()
+		* get_mod_cache_index()
+		* get_mod_cache_data()
+		* save_mod_cache_data()
 
 **Version 1.21.0 (2018/02/03)**
 
@@ -734,7 +738,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.21.1-dev.3 =
 
-(TBD) None.
+(2018/02/07) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class.
 
 = 1.21.0 =
 
