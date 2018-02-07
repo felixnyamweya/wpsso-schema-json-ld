@@ -559,7 +559,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Moved the itemCondition property up one level in the Product markup (with the brand, category, color, material, sku, etc., properties) (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -738,7 +738,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.21.1-dev.4 =
 
-(2018/02/07) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class.
+(2018/02/07) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
 
 = 1.21.0 =
 
