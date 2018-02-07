@@ -554,7 +554,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.21.1-dev.3 (2018/02/07)**
+**Version 1.21.1-dev.4 (2018/02/07)**
 
 * *New Features*
 	* None
@@ -736,7 +736,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.21.1-dev.3 =
+= 1.21.1-dev.4 =
 
 (2018/02/07) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class.
 
