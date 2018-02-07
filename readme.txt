@@ -554,6 +554,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.21.1-dev.3 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.21.0 (2018/02/03)**
 
 * *New Features*
@@ -720,6 +731,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Added a call to the new WpssoUtil get_ext_req_msg() method to get the required extension text message. 
 
 == Upgrade Notice ==
+
+= 1.21.1-dev.3 =
+
+(TBD) None.
 
 = 1.21.0 =
 
