@@ -348,13 +348,13 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					WpssoSchema::add_og_image_list_data( $prop_ref['image'], $og_images, 'og:image' );
 				}
 
-				$this->get_json_data( $content, $prop_ref, true );
+				$this->get_content_json_data( $content, $prop_ref, true );
 			}
 
 			return true;
 		}
 
-		public function get_json_data( $content, &$json_data = array(), $increment = false ) {
+		public function get_content_json_data( $content, &$json_data = array(), $increment = false ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
