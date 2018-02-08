@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$posts_count = 0;
 
 			/**
-			 * Sanity check - must have at least $page_type_id and $prop_name_type_ids.
+			 * Sanity checks.
 			 */
 			if ( empty( $page_type_id ) ) {
 				if ( $wpsso->debug->enabled ) {
@@ -51,7 +51,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return $posts_count;
 			} elseif ( empty( $prop_name_type_ids ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: prop_name_types is empty' );
+					$wpsso->debug->log( 'exiting early: prop_name_type_ids is empty' );
 				}
 				return $posts_count;
 			}
@@ -84,7 +84,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			global $wpsso_paged;
 			$wpsso_paged = 1;
-			$posts_mods = array();
+			$post_mods = array();
 
 			if ( false === $posts_per_page ) {	// get the default if no argument provided
 				$posts_per_page = get_option( 'posts_per_page' );
@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
 						}
-						$posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
+						$post_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
 						if ( $post_count >= $posts_per_page ) {
 							break;	// stop here
 						}
@@ -130,7 +130,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
 				}
-				$posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
+				$post_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
 			} else {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: no source to get posts mods' );
@@ -140,9 +140,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return $posts_count;
 			}
 
-			if ( empty( $posts_mods ) ) {
+			if ( empty( $post_mods ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: posts_mods array is empty' );
+					$wpsso->debug->log( 'exiting early: post_mods array is empty' );
 					$wpsso->debug->mark( 'adding posts data' );	// end timer
 				}
 				unset( $wpsso_paged );	// unset the forced page number
@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'posts_mods array has '.count( $posts_mods ).' elements' );
+				$wpsso->debug->log( 'post_mods array has '.count( $post_mods ).' elements' );
 			}
 
 			/**
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$prop_name_count = count( $json_data[$prop_name] );	// initialize the posts counter
 
-				foreach ( $posts_mods as $post_mod ) {
+				foreach ( $post_mods as $post_mod ) {
 
 					$add_post_data = false;
 
@@ -227,13 +227,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					if ( $add_post_data ) {
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting single post data for post id '.$post_mod['id'] );
+							$wpsso->debug->log( 'getting single mod data for post id '.$post_mod['id'] );
 						}
 
-						$post_data = WpssoSchema::get_single_post_data( $post_mod, false, $page_type_id );	// $mt_og = false
+						$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og = false
 
 						if ( empty( $post_data ) ) {	// prevent null assignment
-							$wpsso->debug->log( 'single post data for post id '.$post_mod['id'].' is empty' );
+							$wpsso->debug->log( 'single mod data for post id '.$post_mod['id'].' is empty' );
 							continue;	// get the next post mod
 						}
 
@@ -274,6 +274,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			unset( $wpsso_paged );
+			unset( $added_page_type_ids[$page_type_id] );
 
 			/**
 			 * End timer.
@@ -321,9 +322,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $prev_count > 0 ) {
 					$max['schema_img_max'] -= $prev_count;
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( $prev_count.
-							' video preview images found (og_img_max adjusted to '.
-								$max['schema_img_max'].')' );
+						$wpsso->debug->log( $prev_count.' preview images found (schema_img_max adjusted to '.$max['schema_img_max'].')' );
 					}
 				}
 			}

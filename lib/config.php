@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.22.0-b.1',		// Plugin version.
+					'version' => '1.22.0-b.2',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.52.1-b.1',
+						'min_version' => '3.52.1-b.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -47,7 +47,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'gpl' => array(
 							'admin' => array(
-								'advanced' => 'Advanced Settings',
 								'post' => 'Post Settings',
 							),
 							'head' => array(
@@ -57,7 +56,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'pro' => array(
 							'admin' => array(
-								'advanced' => 'Advanced Settings',
 								'post' => 'Post Settings',
 							),
 							'head' => array(
@@ -97,25 +95,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'wpproductreview' => '(plugin) WP Product Review',
 							),
 						),
-					),
-				),
-			),
-			'opt' => array(						// options
-				'defaults' => array(
-					'plugin_json_post_data_cache_exp' => 1209600,	// Schema Post Data Cache Expiry (2 weeks)
-				),	// end of defaults
-				'site_defaults' => array(
-					'plugin_json_post_data_cache_exp' => 1209600,	// Schema Post Data Cache Expiry (2 weeks)
-					'plugin_json_post_data_cache_exp:use' => 'default',
-				),	// end of site defaults
-			),
-			'wp' => array(				// wordpress
-				'transient' => array(
-					'wpsso_j_' => array(
-						'label' => 'Schema Post Data',
-						'text_domain' => 'wpsso-schema-json-ld',
-						'opt_key' => 'plugin_json_post_data_cache_exp',
-						'filter' => 'wpsso_cache_expire_json_post_data',
 					),
 				),
 			),

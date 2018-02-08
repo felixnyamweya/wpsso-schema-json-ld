@@ -51,7 +51,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'post_cache_transient_keys' => 4,
 					'pub_google_rows' => 2,
 					'save_post_options' => 4,
-					'messages_tooltip_plugin' => 2,
 					'messages_tooltip_meta' => 2,
 				) );
 				$this->p->util->add_plugin_filters( $this, array(
@@ -331,7 +330,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Clear the WPSSO Core head meta tags array.
 			 */
 			$cache_md5_pre = $this->p->lca.'_h_';
-			$cache_method = 'WpssoHead::get_head_keys';
+			$cache_method = 'WpssoHead::get_head_array';
 
 			$home_url = home_url( '/' );
 			$year = get_the_time( 'Y', $mod['id'] );
@@ -356,12 +355,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			// clear author archive page meta tags (and json markup)
 			$author_id = get_post_field( 'post_author', $mod['id'] );
 			$transient_keys[] = $cache_md5_pre.md5( $cache_method.'(user:'.$author_id.')' );
-
-			/**
-			 * Clear the WPSSO JSON posts data array.
-			 */
-			$cache_md5_pre = $this->p->lca.'_j_';
-			$transient_keys[] = $cache_md5_pre.md5( 'WpssoJsonSchema::get_mod_cache_data('.$mod_salt.')' );
 
 			return $transient_keys;
 		}
@@ -479,22 +472,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 			return $table_rows;
-		}
-
-		public function filter_messages_tooltip_plugin( $text, $idx ) {
-			switch ( $idx ) {
-				case 'tooltip-plugin_json_post_data_cache_exp':
-					$cache_exp_secs = WpssoJsonConfig::$cf['opt']['defaults']['plugin_json_post_data_cache_exp'];
-					$cache_exp_human = $cache_exp_secs ? 
-						human_time_diff( 0, $cache_exp_secs ) : 
-						_x( 'disabled', 'option comment', 'wpsso-schema-json-ld' );
-
-					$short = $this->p->cf['plugin']['wpssojson']['short'];
-
-					$text = sprintf( __( 'When %s creates Schema markup for the Blog, CollectionPage ProfilePage, and SearchResultsPage types, the JSON-LD of each individual post is saved to the WordPress transient cache to optimize performance.', 'wpsso-schema-json-ld' ), $short ).' '.sprintf( __( 'The suggested cache expiration value is %1$s seconds (%2$s).', 'wpsso-schema-json-ld' ), $cache_exp_secs, $cache_exp_human );
-				 	break;
-			}
-			return $text;
 		}
 
 		public function filter_messages_tooltip_meta( $text, $idx ) {
