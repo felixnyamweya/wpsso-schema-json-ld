@@ -554,10 +554,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.21.1-dev.5 (2018/02/08)**
+**Version 1.22.0-dev.6 (2018/02/08)**
 
 * *New Features*
-	* None
+	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
 * *Improvements*
 	* Moved the itemCondition property up one level in the Product markup (with the brand, category, color, material, sku, etc., properties) (Pro version).
 * *Bugfixes*
@@ -736,7 +736,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.21.1-dev.5 =
+= 1.22.0-dev.6 =
 
 (2018/02/08) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
 
