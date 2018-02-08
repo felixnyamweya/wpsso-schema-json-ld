@@ -290,14 +290,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				// unset date / time if same as the default value
 				foreach ( array( 'date', 'time', 'timezone' ) as $md_ext ) {
+
 					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
 						( $md_opts[$md_pre.'_'.$md_ext] === $md_defs[$md_pre.'_'.$md_ext] ||
 							$md_opts[$md_pre.'_'.$md_ext] === 'none' ) ) {
+
 						unset( $md_opts[$md_pre.'_'.$md_ext] );
 					}
 				}
 
-				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {
+				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {		// no date or time
 					unset( $md_opts[$md_pre.'_timezone'] );
 					continue;
 				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {	// date with no time
@@ -381,23 +383,29 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_type' => $schema_type,
 				'schema_title' => '',
 				'schema_desc' => '',
-				'schema_pub_org_id' => 'site',			// Article Publisher
-				'schema_headline' => '',			// Article Headline
-				'schema_course_provider_id' => 'none',		// Course Provider 
-				'schema_event_start_date' => '',		// Event Start Date
-				'schema_event_start_time' => 'none',		// Event Start Time
-				'schema_event_start_timezone' => $timezone,	// Event Start Timezone
-				'schema_event_end_date' => '',			// Event End Date
-				'schema_event_end_time' => 'none',		// Event End Time
-				'schema_event_end_timezone' => '',		// Event End Timezone
-				'schema_event_org_id' => 'none',		// Event Organizer
-				'schema_event_perf_id' => 'none',		// Event Performer
+				'schema_pub_org_id' => 'site',				// Article Publisher
+				'schema_headline' => '',				// Article Headline
+				'schema_course_provider_id' => 'none',			// Course Provider 
+				'schema_event_start_date' => '',			// Event Start Date
+				'schema_event_start_time' => 'none',			// Event Start Time
+				'schema_event_start_timezone' => $timezone,		// Event Start Timezone
+				'schema_event_end_date' => '',				// Event End Date
+				'schema_event_end_time' => 'none',			// Event End Time
+				'schema_event_end_timezone' => '',			// Event End Timezone
+				'schema_event_offers_start_date' => '',			// Event Start Date
+				'schema_event_offers_start_time' => 'none',		// Offers Start Time
+				'schema_event_offers_start_timezone' => $timezone,	// Offers Start Timezone
+				'schema_event_offers_end_date' => '',			// Offers End Date
+				'schema_event_offers_end_time' => 'none',		// Offers End Time
+				'schema_event_offers_end_timezone' => '',		// Offers End Timezone
+				'schema_event_org_id' => 'none',			// Event Organizer
+				'schema_event_perf_id' => 'none',			// Event Performer
 				'schema_job_title' => '',
-				'schema_job_org_id' => 'none',			// Hiring Organization
-				'schema_job_location_id' => 'none',		// Job Location
-				'schema_job_salary' => '',			// Base Salary
-				'schema_job_salary_currency' => $def_currency,	// Base Salary Currency
-				'schema_job_salary_period' => 'year',		// Base Salary per Year, Month, Week, Hour
+				'schema_job_org_id' => 'none',				// Hiring Organization
+				'schema_job_location_id' => 'none',			// Job Location
+				'schema_job_salary' => '',				// Base Salary
+				'schema_job_salary_currency' => $def_currency,		// Base Salary Currency
+				'schema_job_salary_period' => 'year',			// Base Salary per Year, Month, Week, Hour
 				'schema_job_empl_type_full_time' => 0,
 				'schema_job_empl_type_part_time' => 0,
 				'schema_job_empl_type_contractor' => 0,
@@ -526,6 +534,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 	break;
 				case 'tooltip-meta-schema_event_end':
 					$text = __( 'Select the event end date and time.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_offers_start':
+					$text = __( 'The date and time when tickets go on sale.', 'wpsso-schema-json-ld' );
+				 	break;
+				case 'tooltip-meta-schema_event_offers_end':
+					$text = __( 'The date and time when tickets are no longer on sale.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_event_offers':
 					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
