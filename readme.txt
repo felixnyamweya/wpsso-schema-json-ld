@@ -164,6 +164,8 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* Event Performer
 	* Event Start (date, time, timezone)
 	* Event End (date, time, timezone)
+	* Offers Start (date, time, timezone)
+	* Offers End (date, time, timezone)
 	* Event Offers (name, price, currency, availability)
 * Job Posting Information
 	* Job Posting Job Title
@@ -554,7 +556,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.0-b.1 (2018/02/08)**
+**Version 1.22.0-b.2 (2018/02/08)**
 
 * *New Features*
 	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
@@ -564,7 +566,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* Moved the following methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class:
-		* get_single_post_data()
+		* get_single_mod_data()
 		* get_mod_cache_index()
 		* get_mod_cache_data()
 		* save_mod_cache_data()
@@ -690,18 +692,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 * *New Features*
 	* Added support for the Simple Job Board plugin (Pro Version).
-	* Added a new "Schema Post Data Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds / 2 weeks (Pro version).
+	* Added a new "Schema Data Cache Expiry" option under the SSO &gt; Advanced &gt; Cache Settings tab with a default value of 1209600 seconds / 2 weeks (Pro version).
 * *Improvements*
 	* Added "Job Title", "Employment Type", and "Job Posting Expires" custom fields in the Social and Search Optimization metabox (Pro version).
 	* Moved product prices to a new Schema priceSpecification property and included valueAddedTaxIncluded when applicable (Pro version).
-	* Optimized the addition of single post data in Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage by caching and sharing single post data with the main WPSSO Core plugin (which uses the same cache data for singular pages).
+	* Optimized the addition of single mod data in Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage by caching and sharing single mod data with the main WPSSO Core plugin (which uses the same cache data for singular pages).
 * *Bugfixes*
 	* Fixed an incorrect cache index name in the post cache clearing filter.
 * *Developer Notes*
 	* Changed the WPSSO_SCHEMA_POSTS_PER_PAGE_MAX constant default value from 20 to 10.
-	* Added a new WPSSO_SCHEMA_POSTS_PER_SEARCH constant with a default value of 3 to include only the top 3 search results in the Schema SearchResultsPage markup.
+	* Added a new WPSSO_SCHEMA_POSTS_PER_SEARCH_MAX constant with a default value of 3 to include only the top 3 search results in the Schema SearchResultsPage markup.
 	* Added several new WpssoJsonSchema class methods to manage single post json data for the Schema types Blog, CollectionPage, ProfilePage, and SearchResultsPage:
-		* get_single_post_data()
+		* get_single_mod_data()
 		* get_mod_cache_index()
 		* get_mod_cache_data()
 		* save_mod_cache_data()
@@ -736,7 +738,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.0-b.1 =
+= 1.22.0-b.2 =
 
 (2018/02/08) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
 

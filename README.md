@@ -188,6 +188,8 @@
 <li>Event Performer</li>
 <li>Event Start (date, time, timezone)</li>
 <li>Event End (date, time, timezone)</li>
+<li>Offers Start (date, time, timezone)</li>
+<li>Offers End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
 </ul></li>
 <li>Job Posting Information
