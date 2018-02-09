@@ -122,7 +122,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret['name'] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
 
-			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_title' );
+			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_alt_title' );
 
 			if ( $ret['name'] === $ret['alternateName'] ) {
 				unset( $ret['alternateName'] );
