@@ -562,6 +562,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
 * *Improvements*
 	* Moved the itemCondition property up one level in the Product markup (with the brand, category, color, material, sku, etc., properties) (Pro version).
+	* Added different 'name' and 'alternameName' properties for categories (alternateName being the longer Open Graph title value).
 * *Bugfixes*
 	* None
 * *Developer Notes*
