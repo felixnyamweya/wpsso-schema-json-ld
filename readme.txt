@@ -26,7 +26,7 @@ Including image objects / SEO, video objects / SEO, local business SEO, organiza
 
 **Customized Schema markup and optimization features for Pinterest:**
 
-Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO Core and its WPSSO JSON extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
+Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO Core and its WPSSO Schema JSON-LD Markup (aka WPSSO JSON) extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
 
 **Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
 
@@ -38,15 +38,15 @@ Including product images, product variations, custom product attributes (weight,
 
 Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)
 
-**WPSSO JSON is *incredibly fast* and coded for performance:**
+**WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance:**
 
 WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
 
-WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
+WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
 
@@ -497,7 +497,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Schema JSON-LD Markup (aka WPSSO JSON) Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.
 
@@ -556,7 +556,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.0-b.3 (2018/02/08)**
+**Version 1.22.0-rc.1 (2018/02/09)**
 
 * *New Features*
 	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
@@ -739,9 +739,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.0-b.3 =
+= 1.22.0-rc.1 =
 
-(2018/02/08) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
+(2018/02/09) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
 
 = 1.21.0 =
 
