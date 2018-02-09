@@ -385,8 +385,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title' => '',
 				'schema_title_alt' => '',
 				'schema_desc' => '',
-				'schema_pub_org_id' => 'site',				// Article Publisher
-				'schema_headline' => '',				// Article Headline
+				'schema_pub_org_id' => 'site',				// Creative Work Publisher
+				'schema_headline' => '',				// Creative Work Headline
 				'schema_course_provider_id' => 'none',			// Course Provider 
 				'schema_event_start_date' => '',			// Event Start Date
 				'schema_event_start_time' => 'none',			// Event Start Time
@@ -504,7 +504,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_headline':
-					$text = __( 'A custom headline for the Schema Article item type and/or its sub-type. The headline Schema property is not added for non-Article item types.', 'wpsso-schema-json-ld' );
+					$text = __( 'A custom headline for the Schema CreativeWork item type and/or its sub-type.', 'wpsso-schema-json-ld' );
 				 	break;
 				case 'tooltip-meta-schema_course_provider_id':
 					$text = __( 'Select an organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );

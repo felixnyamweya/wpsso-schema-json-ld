@@ -90,8 +90,7 @@ msgstr ""
 
 #: lib/filters.php:507
 msgid ""
-"A custom headline for the Schema Article item type and/or its sub-type. The "
-"headline Schema property is not added for non-Article item types."
+"A custom headline for the Schema CreativeWork item type and/or its sub-type."
 msgstr ""
 
 #: lib/filters.php:510
@@ -317,12 +316,11 @@ msgid "Structured Data / Schema Markup"
 msgstr ""
 
 #: lib/gpl/admin/post.php:98 lib/pro/admin/post.php:111
-#: lib/pro/admin/post.php:119
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:105
+#: lib/gpl/admin/post.php:105 lib/pro/admin/post.php:119
 msgctxt "option label"
 msgid "Schema Alternate Name"
 msgstr ""
