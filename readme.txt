@@ -556,13 +556,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.0-rc.1 (2018/02/09)**
+**Version 1.22.0 (2018/02/09)**
 
 * *New Features*
 	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
 * *Improvements*
 	* Moved the itemCondition property up one level in the Product markup (with the brand, category, color, material, sku, etc., properties) (Pro version).
-	* Added different 'name' and 'alternameName' properties for categories (alternateName being the longer Open Graph title value).
+	* Added different 'name' and 'alternameName' properties for category webpages (alternateName being the longer Open Graph title value).
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -739,9 +739,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.0-rc.1 =
+= 1.22.0 =
 
-(2018/02/09) Moved several methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class. Moved the itemCondition property up one level in the Product markup (Pro version).
+(2018/02/09) Added Schema Event "Offers Start" and "Offers End" options (Pro version). Moved itemCondition property up one level in the Product markup (Pro version). Added different 'name' and 'alternameName' properties for category webpages.
 
 = 1.21.0 =
 

@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.21.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.22.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-02-08 07:47-0600\n"
-"PO-Revision-Date: 2018-02-08 07:50-0600\n"
+"POT-Creation-Date: 2018-02-08 07:51-0600\n"
+"PO-Revision-Date: 2018-02-08 07:51-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -113,8 +113,8 @@ msgid "The date and time when tickets go on sale."
 msgstr "La date et l'heure auxquelles les billets sont en vente."
 
 #: lib/filters.php:542
-msgid "The date and time when tickets can no longer be purchased."
-msgstr "La date et l'heure auxquelles les billets ne peuvent plus être achetés."
+msgid "The date and time when tickets are no longer on sale."
+msgstr "La date et l'heure auxquelles les billets ne sont plus en vente."
 
 #: lib/filters.php:545
 msgid "One or more offers for the event, including the offer name, price and currency."
