@@ -69,10 +69,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name', $this->p->options ),
 						'long_name', '', 0, get_bloginfo( 'name', 'display' ) ).'</td>';
 
-					$table_rows['schema_alt_name'] = '<tr class="hide_in_basic">'.
+					$table_rows['site_name_alt'] = '<tr class="hide_in_basic">'.
 					$this->form->get_th_html( _x( 'WebSite Alternate Name',
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_alt_name', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'schema_alt_name', $this->p->options ),
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', array( 'is_locale' => true ) ).
+					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name_alt', $this->p->options ),
 						'long_name' ).'</td>';
 
 					$table_rows['site_desc'] = '<tr class="hide_in_basic">'.

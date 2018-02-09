@@ -119,10 +119,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Property:
 			 *	name
+			 *	alternateName
 			 */
 			$ret['name'] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
 
-			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_alt_title' );
+			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_title_alt' );
 
 			if ( $ret['name'] === $ret['alternateName'] ) {
 				unset( $ret['alternateName'] );
@@ -134,6 +135,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true, false, true, 'schema_desc' );
 
+			/**
+			 * Property:
+			 *	potentialAction
+			 */
 			$action_data = (array) apply_filters( $this->p->lca.'_json_prop_https_schema_org_potentialaction', array(), $mod, $mt_og, $page_type_id, $is_main );
 
 			if ( ! empty( $action_data ) ) {
@@ -378,6 +383,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_is_main' => 1,
 				'schema_type' => $schema_type,
 				'schema_title' => '',
+				'schema_title_alt' => '',
 				'schema_desc' => '',
 				'schema_pub_org_id' => 'site',				// Article Publisher
 				'schema_headline' => '',				// Article Headline
