@@ -120,18 +120,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	name
 			 */
-			$ret['name'] = $this->p->page->get_title( $this->p->options['og_title_len'], 
-				'...', $mod, true, false, true, 'schema_title' );
+			$ret['name'] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
+
+			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_title' );
+
+			if ( $ret['name'] === $ret['alternateName'] ) {
+				unset( $ret['alternateName'] );
+			}
 
 			/**
 			 * Property:
 			 *	description
 			 */
-			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], 
-				'...', $mod, true, false, true, 'schema_desc' );
+			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true, false, true, 'schema_desc' );
 
-			$action_data = (array) apply_filters( $this->p->lca.'_json_prop_https_schema_org_potentialaction',
-				array(), $mod, $mt_og, $page_type_id, $is_main );
+			$action_data = (array) apply_filters( $this->p->lca.'_json_prop_https_schema_org_potentialaction', array(), $mod, $mt_og, $page_type_id, $is_main );
 
 			if ( ! empty( $action_data ) ) {
 				$ret['potentialAction'] = $action_data;
