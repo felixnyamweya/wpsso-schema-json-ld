@@ -149,6 +149,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 * All Schema Types
 	* Schema Item Name (aka Title)
+	* Schema Alternate Name
 	* Schema Description
 	* Main Entity of Page
 	* Schema Item Type
