@@ -36,7 +36,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$title_max_len    = $this->p->options['og_title_len'];
 			$desc_max_len     = $this->p->options['schema_desc_len'];
 			$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-			$auto_draft_msg   = sprintf( __( 'Save a draft version or publish the %s to update this value.',
+
+			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false );
+			$def_schema_title_alt = $this->p->page->get_title( $title_max_len, '...', $mod, true, false, true, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $desc_max_len, '...', $mod );
+			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod );
+
+			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 
 			$days_sep  = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
@@ -98,20 +104,20 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false ), 'wide' ),
+					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
-					'tr_class' => 'hide_in_basic',
+					'tr_class' => ( $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '' ),
 					'label' => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->page->get_title( $title_max_len, '...', $mod, true, false, true, 'og_title' ), 'wide' ),
+					'content' => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
 				'schema_desc' => array(
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_textarea_value( $this->p->page->get_description( $desc_max_len, '...', $mod ), '', '', $desc_max_len ),
+					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $desc_max_len ),
 				),
 				'schema_is_main' => array(
 					'tr_class' => 'hide_in_basic',
@@ -157,7 +163,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Creative Work Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_headline', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->page->get_title( $headline_max_len, '', $mod ), 'wide' ),
+					'content' => $form->get_no_input_value( $def_schema_headline, 'wide' ),
 				),
 
 				/**
@@ -264,7 +270,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_title', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_input_value( $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false ), 'wide' ),
+					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_job_org_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
