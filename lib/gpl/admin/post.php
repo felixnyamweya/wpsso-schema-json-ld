@@ -31,15 +31,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// timer begin
 			}
 
-			$schema_types     = $this->p->schema->get_schema_types_select( null, true ); // $add_none = true
-			$currencies       = SucomUtil::get_currency_abbrev();
-			$title_max_len    = $this->p->options['og_title_len'];
-			$desc_max_len     = $this->p->options['schema_desc_len'];
-			$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
+			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none = true
+			$currencies          = SucomUtil::get_currency_abbrev();
+			$og_title_max_len    = $this->p->options['og_title_len'];
+			$schema_desc_max_len = $this->p->options['schema_desc_len'];
+			$headline_max_len    = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false );
-			$def_schema_title_alt = $this->p->page->get_title( $title_max_len, '...', $mod, true, false, true, 'og_title' );
-			$def_schema_desc      = $this->p->page->get_description( $desc_max_len, '...', $mod );
+			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, '...', $mod, true, false, true, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, '...', $mod );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod );
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
@@ -117,7 +117,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 					'no_auto_draft' => true,
-					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $desc_max_len ),
+					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
 				'schema_is_main' => array(
 					'tr_class' => 'hide_in_basic',
