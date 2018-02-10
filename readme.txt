@@ -98,9 +98,9 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
 
-* **WPSSO Pro Integrated 3rd Party Plugins**
+* **WPSSO Core Pro Integrated 3rd Party Plugins**
 	* All in One SEO Pack
 	* bbPress
 	* BuddyPress (including Group Forum Topics)
@@ -119,7 +119,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* WP eCommerce
 	* Yoast SEO (aka WordPress SEO)
 	* Yotpo Social Reviews for WooCommerce
-* **WPSSO Pro Integrated Service APIs**
+* **WPSSO Core Pro Integrated Service APIs**
 	* Bitly
 	* Facebook Embedded Videos
 	* Google URL Shortener
