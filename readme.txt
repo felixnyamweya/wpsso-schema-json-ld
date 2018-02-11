@@ -557,6 +557,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.22.1-dev.1 (2018/02/11)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.52.2.
+
 **Version 1.22.0 (2018/02/09)**
 
 * *New Features*
@@ -739,6 +750,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Added a call to the new WpssoUtil get_ext_req_msg() method to get the required extension text message. 
 
 == Upgrade Notice ==
+
+= 1.22.1-dev.1 =
+
+(2018/02/11) Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.52.2.
 
 = 1.22.0 =
 
