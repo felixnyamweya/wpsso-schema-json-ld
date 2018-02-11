@@ -21,11 +21,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'post_text_rows' => 4,
+				'post_edit_rows' => 4,
 			) );
 		}
 
-		public function filter_post_text_rows( $table_rows, $form, $head, $mod ) {
+		public function filter_post_edit_rows( $table_rows, $form, $head, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'setup post form variables' );	// timer begin
