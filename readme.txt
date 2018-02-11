@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.1-dev.1 (2018/02/11)**
+**Version 1.22.1-dev.2 (2018/02/11)**
 
 * *New Features*
 	* None
@@ -566,7 +566,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.52.2.
+	* Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.53.0.
 
 **Version 1.22.0 (2018/02/09)**
 
@@ -751,9 +751,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.1-dev.1 =
+= 1.22.1-dev.2 =
 
-(2018/02/11) Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.52.2.
+(2018/02/11) Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.53.0.
 
 = 1.22.0 =
 
