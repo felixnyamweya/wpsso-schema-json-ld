@@ -63,23 +63,24 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 				case 'schema_json_ld-props':
 
-					$table_rows['site_name'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'WebSite Name',
-						'option label', 'wpsso-schema-json-ld' ), '', 'site_name', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name', $this->p->options ),
-						'long_name', '', 0, get_bloginfo( 'name', 'display' ) ).'</td>';
+					$is_locale_arr = array( 'is_locale' => true );
+					$def_site_name = get_bloginfo( 'name', 'display' );
+					$def_site_desc = get_bloginfo( 'description', 'display' );
+					$site_name_key = SucomUtil::get_key_locale( 'site_name', $this->form->options );
+					$site_name_alt_key = SucomUtil::get_key_locale( 'site_name_alt', $this->form->options );
+					$site_desc_key = SucomUtil::get_key_locale( 'site_desc', $this->form->options );
 
-					$table_rows['site_name_alt'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'WebSite Alternate Name',
-						'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_input( SucomUtil::get_key_locale( 'site_name_alt', $this->p->options ),
-						'long_name' ).'</td>';
+					$table_rows['site_name'] = $this->form->get_tr_hide( 'basic', $site_name_key ).
+					$this->form->get_th_html( _x( 'WebSite Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $is_locale_arr ).
+					'<td>'.$this->form->get_input( $site_name_key, 'long_name', '', 0, $def_site_name ).'</td>';
 
-					$table_rows['site_desc'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'WebSite Description',
-						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', array( 'is_locale' => true ) ).
-					'<td>'.$this->form->get_textarea( SucomUtil::get_key_locale( 'site_desc', $this->p->options ),
-						'', '', 0, get_bloginfo( 'description', 'display' ) ).'</td>';
+					$table_rows['site_name_alt'] = $this->form->get_tr_hide( 'basic', $site_name_alt_key ).
+					$this->form->get_th_html( _x( 'WebSite Alternate Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $is_locale_arr ).
+					'<td>'.$this->form->get_input( $site_name_alt_key, 'long_name' ).'</td>';
+
+					$table_rows['site_desc'] = $this->form->get_tr_hide( 'basic', $site_desc_key ).
+					$this->form->get_th_html( _x( 'WebSite Description', 'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $is_locale_arr ).
+					'<td>'.$this->form->get_textarea( $site_desc_key, '', '', 0, $def_site_desc ).'</td>';
 
 					$this->add_schema_item_props_table_rows( $table_rows );
 
@@ -89,15 +90,15 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 
+					// show all by default, except for the archive, user, and search types
 					$this->add_schema_item_types_table_rows( $table_rows, array(
-						'schema_type_for_archive_page' => 'hide_in_basic',	// hide in basic view
-						'schema_type_for_user_page' => 'hide_in_basic',		// hide in basic view
-						'schema_type_for_search_page' => 'hide_in_basic',	// hide in basic view
+						'schema_type_for_archive_page' => 'basic',
+						'schema_type_for_user_page' => 'basic',
+						'schema_type_for_search_page' => 'basic',
 					), $schema_types );
 
-					$table_rows['schema_review_item_type'] = '<tr class="hide_in_basic">'.
-					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 
-						'option label', 'wpsso-schema-json-ld' ), '', 'schema_review_item_type' ).
+					$table_rows['schema_review_item_type'] = $this->form->get_tr_hide( 'basic', 'schema_review_item_type' ).
+					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 'option label', 'wpsso-schema-json-ld' ), '', 'schema_review_item_type' ).
 					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'schema_type' ).'</td>';
 
 					break;
