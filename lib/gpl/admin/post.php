@@ -107,7 +107,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
-					'tr_class' => ( $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '' ),
+					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// hide if titles are the same
 					'label' => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
 					'no_auto_draft' => true,
@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
 				'schema_is_main' => array(
-					'tr_class' => 'hide_in_basic',
+					'tr_class' => $form->get_css_class_hide( 'basic', 'schema_is_main' ),
 					'label' => _x( 'Main Entity of Page', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_is_main', 'td_class' => 'blank',
 					'content' => $form->get_no_checkbox( 'schema_is_main' ),
@@ -132,16 +132,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						'schema_type', '', true, true, 'unhide_rows' ),
 				),
 				'schema_addl_type_url' => array(
-					'tr_class' => ( empty( $form->options['schema_addl_type_url_0'] ) ? 'hide_in_basic' : '' ),
+					'tr_class' => $form->get_css_class_hide( 'basic', 'schema_addl_type_url_0' ),
 					'label' => _x( 'Additional Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_addl_type_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ), // $repeat = 2
+					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),
 				),
 				'schema_sameas_url' => array(
-					'tr_class' => ( empty( $form->options['schema_sameas_url_0'] ) ? 'hide_in_basic' : '' ),
+					'tr_class' => $form->get_css_class_hide( 'basic', 'schema_sameas_url_0' ),
 					'label' => _x( 'SameAs Webpage URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ), // $repeat = 2
+					'content' => $form->get_no_input_value( '', 'schema_type', '', '', 2 ),
 				),
 
 				/**

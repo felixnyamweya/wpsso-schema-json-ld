@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.22.1-dev.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.22.1-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -746,22 +746,22 @@ msgctxt "metabox tab"
 msgid "Knowledge Graph"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:74
+#: lib/submenu/schema-json-ld.php:76
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:78
+#: lib/submenu/schema-json-ld.php:80
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:82
+#: lib/submenu/schema-json-ld.php:84
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:101
+#: lib/submenu/schema-json-ld.php:103
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""

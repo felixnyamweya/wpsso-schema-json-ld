@@ -63,23 +63,25 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 				case 'schema_json_ld-props':
 
-					$is_locale_arr = array( 'is_locale' => true );
+					$atts_locale = array( 'is_locale' => true );
+
 					$def_site_name = get_bloginfo( 'name', 'display' );
 					$def_site_desc = get_bloginfo( 'description', 'display' );
-					$site_name_key = SucomUtil::get_key_locale( 'site_name', $this->form->options );
+
+					$site_name_key     = SucomUtil::get_key_locale( 'site_name', $this->form->options );
 					$site_name_alt_key = SucomUtil::get_key_locale( 'site_name_alt', $this->form->options );
-					$site_desc_key = SucomUtil::get_key_locale( 'site_desc', $this->form->options );
+					$site_desc_key     = SucomUtil::get_key_locale( 'site_desc', $this->form->options );
 
 					$table_rows['site_name'] = $this->form->get_tr_hide( 'basic', $site_name_key ).
-					$this->form->get_th_html( _x( 'WebSite Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $is_locale_arr ).
+					$this->form->get_th_html( _x( 'WebSite Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $atts_locale ).
 					'<td>'.$this->form->get_input( $site_name_key, 'long_name', '', 0, $def_site_name ).'</td>';
 
 					$table_rows['site_name_alt'] = $this->form->get_tr_hide( 'basic', $site_name_alt_key ).
-					$this->form->get_th_html( _x( 'WebSite Alternate Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $is_locale_arr ).
+					$this->form->get_th_html( _x( 'WebSite Alternate Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $atts_locale ).
 					'<td>'.$this->form->get_input( $site_name_alt_key, 'long_name' ).'</td>';
 
 					$table_rows['site_desc'] = $this->form->get_tr_hide( 'basic', $site_desc_key ).
-					$this->form->get_th_html( _x( 'WebSite Description', 'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $is_locale_arr ).
+					$this->form->get_th_html( _x( 'WebSite Description', 'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $atts_locale ).
 					'<td>'.$this->form->get_textarea( $site_desc_key, '', '', 0, $def_site_desc ).'</td>';
 
 					$this->add_schema_item_props_table_rows( $table_rows );
