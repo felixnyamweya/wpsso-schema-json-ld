@@ -557,12 +557,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.1-dev.3 (2018/02/12)**
+**Version 1.22.1-dev.4 (2018/02/13)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -751,9 +751,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.1-dev.3 =
+= 1.22.1-dev.4 =
 
-(2018/02/12) Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.53.0.
+(2018/02/13) Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
 
 = 1.22.0 =
 
