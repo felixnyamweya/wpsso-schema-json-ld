@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.22.1-b.1 (2018/02/13)**
+**Version 1.22.1-rc.1 (2018/02/14)**
 
 * *New Features*
 	* None
@@ -751,9 +751,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.22.1-b.1 =
+= 1.22.1-rc.1 =
 
-(2018/02/13) Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
+(2018/02/14) Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
 
 = 1.22.0 =
 
