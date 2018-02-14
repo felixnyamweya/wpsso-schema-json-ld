@@ -456,6 +456,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_to' => '5',		// Reviewed Item Rating (to)
 			);
 
+			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
+				$schema_md_defs['schema_addl_type_url_'.$key_num] = '';
+			}
+
+			foreach ( range( 0, WPSSO_SCHEMA_SAMEAS_URL_MAX - 1, 1 ) as $key_num ) {
+				$schema_md_defs['schema_sameas_url_'.$key_num] = '';
+			}
+
 			return array_merge( $md_defs, $schema_md_defs );
 		}
 
