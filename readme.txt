@@ -563,6 +563,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
+	* In WordPress attachment pages, the 'mainEntityOfPage' property is now defined in the first media object, not the main webpage markup.
 * *Bugfixes*
 	* None
 * *Developer Notes*
