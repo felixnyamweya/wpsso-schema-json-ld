@@ -362,6 +362,37 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			} elseif ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'skipping videos: add_video argument is false' );
 			}
+
+			/**
+			 * Redefine mainEntityOfPage property for Attachment pages.
+			 *
+			 * If this is an attachment page, and the post mime_type is a known media type (image, video, or audio),
+			 * then set the first media array element mainEntityOfPage to the page url, and set the page mainEntityOfPage
+			 * property to false (so it doesn't get defined later).
+			 */
+			if ( $mod['is_post'] && $mod['post_type'] === 'attachment' ) {
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'post is an attachment page' );
+				}
+
+				$media_type = preg_replace( '/\/.*$/', '', $mod['post_mime'] );	// 'image/jpeg' to 'image'
+
+				reset( $json_data[$media_type] );
+				$media_key = key( $json_data[$media_type] );
+
+				if ( ! empty( $json_data[$media_type][$media_key] ) ) {
+					if ( ! isset( $json_data[$media_type][$media_key]['mainEntityOfPage'] ) ) {
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' = '.$mt_og['og:url'] );
+						}
+						$json_data[$media_type][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
+					} elseif ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' already defined' );
+					}
+					$json_data['mainEntityOfPage'] = false;
+				}
+			}
 		}
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
@@ -517,14 +548,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$video_type_url = 'https://schema.org/VideoObject';
 			}
 
-			$ret = WpssoSchema::get_schema_type_context( $video_type_url, 
-				array( 'url' => esc_url_raw( $media_url ),
-			) );
+			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array( 'url' => esc_url_raw( $media_url ) ) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
 				'name' => $prefix.':title',
 				'description' => $prefix.':description',
-				'fileFormat' => $prefix.':type',
+				'fileFormat' => $prefix.':type',	// mime type
 				'width' => $prefix.':width',
 				'height' => $prefix.':height',
 				'duration' => $prefix.':duration',
