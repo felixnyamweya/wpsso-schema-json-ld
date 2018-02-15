@@ -309,6 +309,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Include video preview images first.
 			 */
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'getting preview image(s)' );
+			}
 			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
 				// prevent duplicates - exclude text/html videos
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
@@ -327,21 +330,38 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 			}
 
+			/**
+			 * All other images.
+			 */
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'adding all image(s)' );
+			}
+
 			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'], $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'adding images to json data' );
+				}
 				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			} else {
 				$images_added = 0;
 			}
 
 			if ( ! $images_added && $mod['is_post'] ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'adding default image to json data' );
+				}
 				$og_images = $wpsso->media->get_default_images( 1, $size_name, true );
 				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
 			}
 
 			if ( ! $images_added ) {
 				unset( $json_data['image'] );	// prevent null assignment
+			}
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( $images_added.' images added' );
 			}
 
 			/**
@@ -351,14 +371,28 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Allow the video property to be skipped -- some schema types (organization, for example) do not include a video property.
 			 */
 			if ( $add_video ) {
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'adding all video(s)' );
+				}
+
 				if ( ! empty( $mt_og['og:video'] ) ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'adding videos to json data' );
 					}
-					WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
-				} elseif ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'skipping videos: og:video is empty' );
+					$videos_added = WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
+				} else {
+					$videos_added = 0;
 				}
+
+				if ( ! $videos_added ) {
+					unset( $json_data['video'] );	// prevent null assignment
+				}
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( $videos_added.' videos added' );
+				}
+
 			} elseif ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'skipping videos: add_video argument is false' );
 			}
@@ -373,15 +407,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $mod['is_post'] && $mod['post_type'] === 'attachment' ) {
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'post is an attachment page' );
+					$wpsso->debug->log( $mod['name'].' id '.$mod['id'].' is an attachment page' );
 				}
 
-				$media_type = preg_replace( '/\/.*$/', '', $mod['post_mime'] );	// 'image/jpeg' to 'image'
+				// convert the mime type (image/jpeg) to a schema property name (image)
+				$media_type = preg_replace( '/\/.*$/', '', $mod['post_mime'] );
 
-				reset( $json_data[$media_type] );
-				$media_key = key( $json_data[$media_type] );
+				if ( ! empty( $json_data[$media_type] ) && is_array( $json_data[$media_type] ) ) {
 
-				if ( ! empty( $json_data[$media_type][$media_key] ) ) {
+					reset( $json_data[$media_type] );
+					$media_key = key( $json_data[$media_type] );	// media array key should be '0'
+
 					if ( ! isset( $json_data[$media_type][$media_key]['mainEntityOfPage'] ) ) {
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' = '.$mt_og['og:url'] );
@@ -390,6 +426,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					} elseif ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' already defined' );
 					}
+
 					$json_data['mainEntityOfPage'] = false;
 				}
 			}
@@ -486,6 +523,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 * Provide a single or two-dimension video array in $og_video.
 		 */
 		public static function add_video_list_data( &$json_data, $og_video, $prefix = 'og:video' ) {
+
 			$videos_added = 0;
 
 			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
@@ -540,15 +578,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			// if not adding a list element, inherit the existing schema type url (if one exists)
-			if ( ! $list_element && ( $video_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'using inherited schema type url = '.$video_type_url );
-				}
-			} else {
-				$video_type_url = 'https://schema.org/VideoObject';
-			}
+			list( $video_type_id, $video_type_url ) = WpssoSchema::get_single_type_id_url( $json_data, false, false, 'video.object', $list_element );
 
-			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array( 'url' => esc_url_raw( $media_url ) ) );
+			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array(
+				'url' => esc_url_raw( $media_url ),
+			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
 				'name' => $prefix.':title',

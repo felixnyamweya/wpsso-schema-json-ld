@@ -380,7 +380,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'none' : $this->p->options['schema_review_item_type'];
 
 			$schema_md_defs = array(
-				'schema_is_main' => 1,
 				'schema_type' => $schema_type,
 				'schema_title' => '',
 				'schema_title_alt' => '',
@@ -496,9 +495,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return $text;
 			}
 			switch ( $idx ) {
-				case 'tooltip-meta-schema_is_main':
-					$text = __( 'Check this option if the Schema markup describes the main content (aka "main entity") of this webpage.', 'wpsso-schema-json-ld' );
-				 	break;
 				case 'tooltip-meta-schema_type':
 					$text = __( 'Select a Schema item type that best describes the main content of this webpage.', 'wpsso-schema-json-ld' );
 				 	break;

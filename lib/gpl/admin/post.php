@@ -119,12 +119,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'no_auto_draft' => true,
 					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
-				'schema_is_main' => array(
-					'tr_class' => $form->get_css_class_hide( 'basic', 'schema_is_main' ),
-					'label' => _x( 'Main Entity of Page', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_is_main', 'td_class' => 'blank',
-					'content' => $form->get_no_checkbox( 'schema_is_main' ),
-				),
 				'schema_type' => array(
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
