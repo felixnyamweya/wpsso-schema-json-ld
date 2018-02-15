@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.23.0-rc.2 (2018/02/15)**
+**Version 1.23.0-rc.3 (2018/02/15)**
 
 * *New Features*
 	* None
@@ -565,6 +565,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* In attachment pages, the 'mainEntityOfPage' property is now defined in the first media object, not the main / top-most webpage Schema type.
 	* Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
 	* Removed the "Main Entity of Page" option from the Social and Search Optimization metabox (option was not useful).
+	* Added a 'keywords' property to the Schema VideoObject markup for YouTube videos.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -753,7 +754,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.23.0-rc.2 =
+= 1.23.0-rc.3 =
 
 (2018/02/15) Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden. In attachment pages, the 'mainEntityOfPage' property is now defined in the first media object.
 
