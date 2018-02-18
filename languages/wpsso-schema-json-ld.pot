@@ -683,33 +683,33 @@ msgstr ""
 msgid "adding schema for product model"
 msgstr ""
 
-#. translators: {plugin name} Organization
+#. translators: %s is the WP Job Manager plugin name
 #: lib/pro/job/wpjobmanager.php:293
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
-#. translators: {plugin name} Location
+#. translators: %s is the WP Job Manager plugin name
 #: lib/pro/job/wpjobmanager.php:299
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""
 
-#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the prop value.
+#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 #: lib/shortcode/schema.php:163
 msgid ""
 "%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required "
 "'prop' attribute value."
 msgstr ""
 
-#. translators: %1$s is the short plugin name, and %2$s is the shortcode tag.
+#. translators: %1$s is the short plugin name, %2$s is the shortcode tag
 #: lib/shortcode/schema.php:182
 msgid ""
 "%1$s [%2$s] shortcode with a content is missing a required 'type' attribute "
 "value."
 msgstr ""
 
-#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the type value.
+#. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 #: lib/shortcode/schema.php:252
 msgid ""
 "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."

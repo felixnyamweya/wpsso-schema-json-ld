@@ -159,7 +159,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				}
 				if ( $this->p->notice->is_admin_pre_notices() ) {
 					$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
-					// translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the prop value.
+					// translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 					$error_msg = __( '%1$s [%2$s] shortcode with a type value of "%3$s" is missing a required \'prop\' attribute value.',
 						'wpsso-schema-json-ld' );
 					$this->p->notice->err( sprintf( $error_msg, $info['short'], $tag, $atts['type'] ) );
@@ -178,7 +178,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				}
 				if ( $this->p->notice->is_admin_pre_notices() ) {
 					$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
-					// translators: %1$s is the short plugin name, and %2$s is the shortcode tag.
+					// translators: %1$s is the short plugin name, %2$s is the shortcode tag
 					$error_msg = __( '%1$s [%2$s] shortcode with a content is missing a required \'type\' attribute value.',
 						'wpsso-schema-json-ld' );
 					$this->p->notice->err( sprintf( $error_msg, $info['short'], $tag ) );
@@ -248,7 +248,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						}
 						if ( $this->p->notice->is_admin_pre_notices() ) {
 							$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
-							// translators: %1$s is the short plugin name, %2$s is the shortcode tag, and %3$s is the type value.
+							// translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 							$error_msg = __( '%1$s [%2$s] shortcode type attribute "%3$s" is not a recognized value.',
 								'wpsso-schema-json-ld' );
 							$this->p->notice->err( sprintf( $error_msg, $info['short'], $tag, $value ) );
