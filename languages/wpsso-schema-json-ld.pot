@@ -778,7 +778,8 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:236
+#. translators: %s is the short plugin name
+#: wpsso-schema-json-ld.php:237
 msgid "%s warning:"
 msgstr ""
 
