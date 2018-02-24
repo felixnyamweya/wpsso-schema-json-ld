@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.4
 WC Tested Up To: 3.3.3
-Stable Tag: 1.23.0
+Stable Tag: 1.24.0
 
 WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -604,8 +604,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.24.0 =
 
 (2018/02/24) Refactored the WpssoJson min_version_notice() method to use PHP's trigger_error() and include a notice to refresh plugin update information.
-
-= 1.23.0 =
-
-(2018/02/17) In attachment pages, the 'mainEntityOfPage' property is now added to the first media object. Added a 'keywords' property to the Schema VideoObject markup for YouTube videos. Added a 'servesCuisine' to the Schema Restaurant markup.
 
