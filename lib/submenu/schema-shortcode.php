@@ -36,8 +36,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaShortcode' ) && class_exists( 'Wpsso
 		protected function add_meta_boxes() {
 			add_meta_box( $this->pagehook.'_schema_shortcode',
 				_x( 'Schema Shortcode', 'metabox title', 'wpsso-schema-json-ld' ),
-					array( &$this, 'show_metabox_schema_shortcode' ),
-						$this->pagehook, 'normal' );
+					array( &$this, 'show_metabox_schema_shortcode' ), $this->pagehook, 'normal' );
 		}
 
 		public function filter_action_buttons( $action_buttons ) {

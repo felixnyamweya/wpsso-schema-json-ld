@@ -715,42 +715,42 @@ msgid ""
 "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:34
+#: lib/submenu/schema-json-ld.php:35
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:43
+#: lib/submenu/schema-json-ld.php:44
 msgctxt "metabox tab"
 msgid "Schema Properties"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:44
+#: lib/submenu/schema-json-ld.php:45
 msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:45
+#: lib/submenu/schema-json-ld.php:46
 msgctxt "metabox tab"
 msgid "Knowledge Graph"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:76
+#: lib/submenu/schema-json-ld.php:77
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:80
+#: lib/submenu/schema-json-ld.php:81
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:84
+#: lib/submenu/schema-json-ld.php:85
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-json-ld.php:103
+#: lib/submenu/schema-json-ld.php:104
 msgctxt "option label"
 msgid "Default Reviewed Item Type"
 msgstr ""

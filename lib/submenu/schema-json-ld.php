@@ -28,6 +28,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 		// called by the extended WpssoAdmin class
 		protected function add_meta_boxes() {
+
 			$this->maybe_show_language_notice();
 
 			add_meta_box( $this->pagehook.'_schema_json_ld', 
