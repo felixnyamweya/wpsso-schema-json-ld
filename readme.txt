@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.24.1-dev.2 (2018/02/26)**
+**Version 1.24.1-dev.3 (2018/02/26)**
 
 * *New Features*
 	* None
@@ -613,7 +613,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.24.1-dev.2 =
+= 1.24.1-dev.3 =
 
 (2018/02/26) Added two new filters to (optionally) define media as the main entity for the page.
 
