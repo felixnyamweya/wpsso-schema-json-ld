@@ -404,27 +404,30 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * then set the first media array element mainEntityOfPage to the page url, and set the page mainEntityOfPage
 			 * property to false (so it doesn't get defined later).
 			 */
-			if ( $mod['is_post'] && $mod['post_type'] === 'attachment' ) {
+			$main_prop = $mod['is_post'] && $mod['post_type'] === 'attachment' ? 
+				preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
+
+			$main_prop = apply_filters( $wpsso->lca.'_json_media_main_prop', $main_prop, $mod );
+
+			if ( ! empty( $main_prop ) ) {
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( $mod['name'].' id '.$mod['id'].' is an attachment page' );
+					$wpsso->debug->log( $mod['name'].' id '.$mod['id'].' '.$main_prop.' property is main entity' );
 				}
 
-				// convert the mime type (image/jpeg) to a schema property name (image)
-				$media_type = preg_replace( '/\/.*$/', '', $mod['post_mime'] );
+				if ( ! empty( $json_data[$main_prop] ) && is_array( $json_data[$main_prop] ) ) {
 
-				if ( ! empty( $json_data[$media_type] ) && is_array( $json_data[$media_type] ) ) {
+					reset( $json_data[$main_prop] );
 
-					reset( $json_data[$media_type] );
-					$media_key = key( $json_data[$media_type] );	// media array key should be '0'
+					$media_key = key( $json_data[$main_prop] );	// media array key should be '0'
 
-					if ( ! isset( $json_data[$media_type][$media_key]['mainEntityOfPage'] ) ) {
+					if ( ! isset( $json_data[$main_prop][$media_key]['mainEntityOfPage'] ) ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' = '.$mt_og['og:url'] );
+							$wpsso->debug->log( 'mainEntityOfPage for '.$main_prop.' key '.$media_key.' = '.$mt_og['og:url'] );
 						}
-						$json_data[$media_type][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
+						$json_data[$main_prop][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
 					} elseif ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'mainEntityOfPage for '.$media_type.' key '.$media_key.' already defined' );
+						$wpsso->debug->log( 'mainEntityOfPage for '.$main_prop.' key '.$media_key.' already defined' );
 					}
 
 					$json_data['mainEntityOfPage'] = false;
