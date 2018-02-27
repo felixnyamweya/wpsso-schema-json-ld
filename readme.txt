@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.24.1-dev.3 (2018/02/26)**
+**Version 1.24.1-dev.4 (2018/02/27)**
 
 * *New Features*
 	* None
@@ -566,8 +566,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added two new filters to (optionally) define media as the main entity for the page.
-		* 'wpsso_json_media_main_prop' ( $prop_name, $mod );
+	* Added a new filter to (optionally) define media as the main entity for the webpage.
+		* 'wpsso_json_media_main_prop' ( $main_prop, $mod );	// empty string by default
 
 **Version 1.24.0 (2018/02/24)**
 
@@ -613,9 +613,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.24.1-dev.3 =
+= 1.24.1-dev.4 =
 
-(2018/02/26) Added two new filters to (optionally) define media as the main entity for the page.
+(2018/02/27) Added a new filter to (optionally) define media as the main entity for the webpage.
 
 = 1.24.0 =
 
