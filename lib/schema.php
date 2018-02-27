@@ -404,8 +404,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * then set the first media array element mainEntityOfPage to the page url, and set the page mainEntityOfPage
 			 * property to false (so it doesn't get defined later).
 			 */
-			$main_prop = $mod['is_post'] && $mod['post_type'] === 'attachment' ? 
-				preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
+			$main_prop = $mod['is_post'] && $mod['post_type'] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
 
 			$main_prop = apply_filters( $wpsso->lca.'_json_media_main_prop', $main_prop, $mod );
 
