@@ -566,6 +566,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Refactored transient cache index values to include WP query variables for extra uniqueness.
 	* Added a new filter to (optionally) define media as the main entity for the webpage.
 		* 'wpsso_json_media_main_prop' ( $main_prop, $mod );	// empty string by default
 
@@ -615,7 +616,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.24.1-b.2 =
 
-(2018/03/01) Added a new filter to (optionally) define media as the main entity for the webpage.
+(2018/03/01) Refactored transient cache index values to include WP query variables for extra uniqueness. Added a new filter to (optionally) define media as the main entity for the webpage.
 
 = 1.24.0 =
 
