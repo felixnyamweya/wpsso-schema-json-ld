@@ -133,7 +133,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	description
 			 */
-			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true, false, true, 'schema_desc' );
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'getting schema description with custom meta fallback: schema_desc, seo_desc, og_desc' );
+			}
+
+			$md_idx = array( 'schema_desc', 'seo_desc', 'og_desc' );
+
+			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true, false, true, $md_idx );
 
 			/**
 			 * Property:
