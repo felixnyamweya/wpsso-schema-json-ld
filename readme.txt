@@ -557,7 +557,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.24.1-rc.2 (2018/03/02)**
+**Version 1.24.1-rc.3 (2018/03/03)**
 
 * *New Features*
 	* None
@@ -614,9 +614,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.24.1-rc.2 =
+= 1.24.1-rc.3 =
 
-(2018/03/02) Refactored transient cache index values to include WP query variables for extra uniqueness. Added a new filter to (optionally) define media as the main entity for the webpage.
+(2018/03/03) Refactored transient cache index values to include WP query variables for extra uniqueness. Added a new filter to (optionally) define media as the main entity for the webpage.
 
 = 1.24.0 =
 
