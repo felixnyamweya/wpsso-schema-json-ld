@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.24.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-02-28 07:23-0600\n"
-"PO-Revision-Date: 2018-02-28 07:23-0600\n"
+"POT-Creation-Date: 2018-03-04 07:54-0600\n"
+"PO-Revision-Date: 2018-03-04 07:54-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -30,199 +30,199 @@ msgctxt "plugin description"
 msgid "WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
 msgstr "Extension WPSSO Core pour balisage de Schéma JSON-LD d'articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
 
-#: lib/filters.php:196
+#: lib/filters.php:202
 msgid "The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
 msgstr "La version gratuite / de base WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans les balises de Schéma JSON-LD."
 
-#: lib/filters.php:196
+#: lib/filters.php:202
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
 msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma, y compris le type de Schéma <a href=\"%2$s\">%2$s</a>."
 
-#: lib/filters.php:196
+#: lib/filters.php:202
 msgid "If this Schema is an important classification for your content, you should consider purchasing the Pro version."
 msgstr "Si ce Schéma est une classification importante pour votre contenu, vous devriez considérer l'achat de la version Pro."
 
-#: lib/filters.php:201
+#: lib/filters.php:207
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
-#: lib/filters.php:499
+#: lib/filters.php:505
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
-#: lib/filters.php:502
+#: lib/filters.php:508
 msgid "Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr "URLs de type supplémentaire (optionnel) pour l'élément, généralement utilisée pour spécifier des types plus précis d'un vocabulaire externe de microdata. Par exemple, un URL de type de Schéma supplémentaire pour un produit pourrait être http://www.productontology.org/id/Hammer (voir %s pour d'autres exemples)."
 
-#: lib/filters.php:505
+#: lib/filters.php:511
 msgid "Additional (and optional) webpage reference URLs that unambiguously indicate the item's identity. For example, the URL of the item's Wikipedia page, Wikidata entry, IMDB page, official website, etc."
 msgstr "URL de référence de page Web supplémentaires (et facultatives) indiquant de manière non ambiguë l'identité de l'élément. Par exemple, l'URL de la page Wikipedia de l'élément, l'entrée Wikidata, la page IMDB, le site officiel, etc."
 
-#: lib/filters.php:508
+#: lib/filters.php:514
 msgid "Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc)."
 msgstr "Sélectionnez un éditeur pour le type de Schéma Article et/ou de son sous-type (NewsArticle, TechArticle, etc)."
 
-#: lib/filters.php:511
+#: lib/filters.php:517
 msgid "A custom headline for the Schema CreativeWork item type and/or its sub-type."
 msgstr "Sélectionnez un éditeur pour le type de Schéma CreativeWork et/ou de son sous-type."
 
-#: lib/filters.php:514
+#: lib/filters.php:520
 msgid "Select an organizer for the course service provider, service operator, or service performer (ie. the goods producer)."
 msgstr "Sélectionnez un organisateur pour le fournisseur our l'opérateur de service de ce cours (c'est-à-dire le producteur des biens)."
 
-#: lib/filters.php:517
+#: lib/filters.php:523
 msgid "Select an organizer for the event."
 msgstr "Sélectionnez un organisateur pour l'événement."
 
-#: lib/filters.php:520
+#: lib/filters.php:526
 msgid "Select a performer for the event."
 msgstr "Sélectionnez un interprète pour l'événement."
 
-#: lib/filters.php:523
+#: lib/filters.php:529
 msgid "Select the event start date and time."
 msgstr "Sélectionnez la date et l'heure de début pour l'événement."
 
-#: lib/filters.php:526
+#: lib/filters.php:532
 msgid "Select the event end date and time."
 msgstr "Sélectionnez la date et l'heure de fin pour l'événement."
 
-#: lib/filters.php:529
+#: lib/filters.php:535
 msgid "The date and time when tickets go on sale."
 msgstr "La date et l'heure auxquelles les billets sont en vente."
 
-#: lib/filters.php:532
+#: lib/filters.php:538
 msgid "The date and time when tickets are no longer on sale."
 msgstr "La date et l'heure auxquelles les billets ne sont plus en vente."
 
-#: lib/filters.php:535
+#: lib/filters.php:541
 msgid "One or more offers for the event, including the offer name, price and currency."
 msgstr "Une ou plusieurs offres pour l'événement, y compris le nom de l'offre, le prix et la devise."
 
-#: lib/filters.php:538
+#: lib/filters.php:544
 msgid "The title of this job, which may be different than the WordPress post / page title."
 msgstr "Le titre de ce poste, qui peut être différent du titre d'article / page WordPress."
 
-#: lib/filters.php:541
+#: lib/filters.php:547
 msgid "Optionally select a different organization for the hiring organization."
 msgstr "En option, sélectionnez une organisation différente pour l'organisation d'embauche."
 
-#: lib/filters.php:544
+#: lib/filters.php:550
 msgid "Optionally select a different address / place / location for the job location."
 msgstr "En option, sélectionnez une adresse / un lieu / un emplacement différent pour l'emplacement du travail."
 
-#: lib/filters.php:547
+#: lib/filters.php:553
 msgid "Optionally provide details on the base salary. The base salary must be numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency symbols, as these are not valid numeric values."
 msgstr "En option, fournir des détails sur le salaire de base. Le salaire de base doit être numérique, comme 120000, 50.00, etc. N'utilisez pas d'espaces, de virgules ou de symboles monétaires, car ce ne sont pas des valeurs numériques valides."
 
-#: lib/filters.php:550
+#: lib/filters.php:556
 msgid "Check one or more Google approved employment types (see <a href=\"%s\">Google's Job Posting guidelines</a> for more information)."
 msgstr "Cochez un ou plusieurs types d'emploi approuvés par Google (voir <a href=\"%s\">les consignes relatives à l'affichage des offres d'emploi Google</a> pour plus d'informations)."
 
-#: lib/filters.php:553
+#: lib/filters.php:559
 msgid "Select a job posting expiration date and time. If a job posting never expires, or you do not know when the job will expire, do not select an expiration date and time."
 msgstr "Sélectionnez une date et heure d'expiration pour l'offre d'emploi. Si cette offre d'emploi n'expire jamais, ou si vous ne savez pas quand cette offre expirera, ne sélectionnez pas de date et heure d'expiration."
 
-#: lib/filters.php:556
+#: lib/filters.php:562
 msgid "Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select \"[None]\" to use the default organization details."
 msgstr "Sélectionnez une organisation différente et optionnelle pour le type d'élément Schéma Organisation et/ou son sous-type (Airline, Corporation, School, etc.). Sélectionnez \"[Aucun]\" pour utiliser les détails de l'organisation par défaut."
 
-#: lib/filters.php:559
+#: lib/filters.php:565
 msgid "The total time it takes to prepare this recipe."
 msgstr "Le temps total qu’il faut pour la préparation cette recette."
 
-#: lib/filters.php:562
+#: lib/filters.php:568
 msgid "The total time it takes to cook this recipe."
 msgstr "Le temps total qu’il faut pour la cuisson de cette recette."
 
-#: lib/filters.php:565
+#: lib/filters.php:571
 msgid "The total time it takes to prepare and cook this recipe."
 msgstr "Le temps total qu’il faut pour la préparation et la cuisson cette recette."
 
-#: lib/filters.php:568
+#: lib/filters.php:574
 msgid "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr "Le nom du cours pour cette recette (exemple: Apéritif, Entrée, Plat principal, Dessert, Plat d'accompagnement, etc.)."
 
-#: lib/filters.php:571
+#: lib/filters.php:577
 msgid "The type of cuisine for this recipe (example: French, Indian, Italian, Japanese, Thai, etc.)."
 msgstr "Le type de cuisine pour cette recette (exemple: Français, Indien, Italien, Japonais, Thaï, etc.)."
 
-#: lib/filters.php:574
+#: lib/filters.php:580
 msgid "The quantity or servings made by this recipe (example: \"5 servings\", \"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr "La quantité ou les portions fournie par cette recette (exemple : \"5 portions\", \"10 burgers\", etc.)."
 
-#: lib/filters.php:577
+#: lib/filters.php:583
 msgid "The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup."
 msgstr "La taille de portion en volume ou en masse. Une taille de portion est requise pour inclure les informations nutritionnelles dans le balisage Schéma de la recette."
 
-#: lib/filters.php:580
+#: lib/filters.php:586
 msgid "The number of calories per serving."
 msgstr "Le nombre de calories par portion."
 
-#: lib/filters.php:583
+#: lib/filters.php:589
 msgid "The number of grams of protein per serving."
 msgstr "Le nombre de grammes de protéines par portion."
 
-#: lib/filters.php:586
+#: lib/filters.php:592
 msgid "The number of grams of fiber per serving."
 msgstr "Le nombre de grammes de fibres par portion."
 
-#: lib/filters.php:589
+#: lib/filters.php:595
 msgid "The number of grams of carbohydrates per serving."
 msgstr "Le nombre de grammes de glucides par portion."
 
-#: lib/filters.php:592
+#: lib/filters.php:598
 msgid "The number of grams of sugar per serving."
 msgstr "Le nombre de grammes de sucre par portion."
 
-#: lib/filters.php:595
+#: lib/filters.php:601
 msgid "The number of milligrams of sodium per serving."
 msgstr "Le nombre de milligrammes de sodium par portion."
 
-#: lib/filters.php:598
+#: lib/filters.php:604
 msgid "The number of grams of fat per serving."
 msgstr "Le nombre de grammes de matières grasses par portion."
 
-#: lib/filters.php:601
+#: lib/filters.php:607
 msgid "The number of grams of trans fat per serving."
 msgstr "Le nombre de grammes de gras trans par portion."
 
-#: lib/filters.php:604
+#: lib/filters.php:610
 msgid "The number of grams of saturated fat per serving."
 msgstr "Le nombre de grammes de gras saturés par portion."
 
-#: lib/filters.php:607
+#: lib/filters.php:613
 msgid "The number of grams of unsaturated fat per serving."
 msgstr "Le nombre de grammes de gras insaturée par portion."
 
-#: lib/filters.php:610
+#: lib/filters.php:616
 msgid "The number of milligrams of cholesterol per serving."
 msgstr "Le nombre de milligrammes de cholestérol par portion."
 
-#: lib/filters.php:613
+#: lib/filters.php:619
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:616
+#: lib/filters.php:622
 msgid "A list of instructions for this recipe (example: \"beat eggs\", \"add and mix flour\", etc.)."
 msgstr "Une liste d'instructions pour cette recette (exemple: \"battre les oeufs\", \"ajouter et mélanger la farine\", etc.)."
 
-#: lib/filters.php:619
+#: lib/filters.php:625
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr "Sélectionnez le type de Schéma qui décrit le sujet de l'évaluation."
 
-#: lib/filters.php:622
+#: lib/filters.php:628
 msgid "The official and/or model name for the subject being reviewed."
 msgstr "Le nom officiel et/ou de modèle pour le sujet de l'évaluation."
 
-#: lib/filters.php:625
+#: lib/filters.php:631
 msgid "A webpage URL for the subject being reviewed."
 msgstr "L'URL de la page Web pour le sujet de l'évaluation."
 
-#: lib/filters.php:628
+#: lib/filters.php:634
 msgid "An image URL showing the subject being reviewed."
 msgstr "L'URL d'une image montrant le sujet de l'évaluation."
 
-#: lib/filters.php:631
+#: lib/filters.php:637
 msgid "A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5)."
 msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min/max de l'échelle (1 à 5 par défaut)."
 
