@@ -155,7 +155,7 @@
 </ul></li>
 </ul>
 
-<p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-settings.png"></p>
+<p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png"></p>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
 
