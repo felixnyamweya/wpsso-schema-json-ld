@@ -143,11 +143,9 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* WP Recipe Maker
 	* WP Ultimate Recipe
 
-<img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
-
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
 
-* All Schema Types
+* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 	* Schema Item Name (aka Title)
 	* Schema Alternate Name
 	* Schema Description
@@ -177,7 +175,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* Job Posting Expires
 * Organization Information
 	* Organization
-* Recipe Information
+* Recipe Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 	* Recipe Preparation Time 
 	* Recipe Cooking Time 
 	* Recipe Total Time 
@@ -205,9 +203,7 @@ The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-jso
 	* Subject Image URL 
 	* Review Rating 
 
-<img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
-
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for: <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 
 * Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork)
 	* Schema Type [schema.org/Article](https://schema.org/Article)

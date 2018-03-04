@@ -155,12 +155,10 @@
 </ul></li>
 </ul>
 
-<p><img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png"></p>
-
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
 
 <ul>
-<li>All Schema Types
+<li>All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 
 <ul>
 <li>Schema Item Name (aka Title)</li>
@@ -208,7 +206,7 @@
 <ul>
 <li>Organization</li>
 </ul></li>
-<li>Recipe Information
+<li>Recipe Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 
 <ul>
 <li>Recipe Preparation Time </li>
@@ -246,9 +244,7 @@
 </ul></li>
 </ul>
 
-<p><img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png"></p>
-
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for: <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png"></p>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a>
