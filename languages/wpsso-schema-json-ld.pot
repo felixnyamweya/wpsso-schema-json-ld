@@ -772,14 +772,14 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:224
+#: wpsso-schema-json-ld.php:223
 msgid ""
 "The %1$s version %2$s extension requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
 #. translators: %s is the short plugin name
-#: wpsso-schema-json-ld.php:237
+#: wpsso-schema-json-ld.php:235
 msgid "%s warning:"
 msgstr ""
 
