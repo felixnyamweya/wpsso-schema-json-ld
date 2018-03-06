@@ -551,6 +551,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.24.2-dev.1 (2018/03/06)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a list of human-readable checked IDs when the "Show Cache Purge Count on Update" option is checked *and* the WP_DEBUG contant is true.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.24.1 (2018/03/04)**
 
 * *New Features*
@@ -607,6 +618,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* save_mod_cache_data()
 
 == Upgrade Notice ==
+
+= 1.24.2-dev.1 =
+
+(2018/03/06) Added a list of human-readable checked IDs when the "Show Cache Purge Count on Update" option is checked *and* the WP_DEBUG contant is true.
 
 = 1.24.1 =
 
