@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Schema / Structured Data / Rich Snippet / Rich Card / SEO Markup for Google and Pinterest Rich Pins (Complete Support for WooCommerce) ===
+=== WPSSO Schema JSON-LD Markup - Structured Data / Rich Snippet / Google Rich Card / Pinterest Rich Pin Markup ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
