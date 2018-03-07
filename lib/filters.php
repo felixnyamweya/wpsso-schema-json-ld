@@ -22,10 +22,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$crawler_name = SucomUtil::get_crawler_name();
-
 			add_filter( 'amp_post_template_metadata', 
 				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
+
+			$crawler_name = empty( $this->p->avail['*']['vary_ua'] ) ?
+				'none' : SucomUtil::get_crawler_name();
 
 			if ( $crawler_name === 'pinterest' ) {
 				// pinterest does not read json markup
