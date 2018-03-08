@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup - Structured Data / Rich Snippet / Google Rich Card / Pinterest Rich Pin Markup ===
+=== WPSSO Schema JSON-LD Markup - Structured Data / Rich Snippet / Google Rich Cards / Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -20,37 +20,23 @@ WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Lo
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-***Comprehensive* and *accurate* Schema / Rich Card markup for Google:**
+**WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
 
-Including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
+Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
 
-**Customized Schema markup and optimization features for Pinterest:**
+Includes special markup and optimization features for Pinterest, as Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO Core and the WPSSO Schema JSON-LD Markup (aka WPSSO JSON) extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest / Facebook Open Graph meta tag values.
 
-Pinterest does not (currently) read Google's preferred Schema JSON-LD format &mdash; WPSSO Core and its WPSSO Schema JSON-LD Markup (aka WPSSO JSON) extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest and Facebook Open Graph meta tag values.
+Allows you to select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.
 
-**Select a different Schema than BlogPosting for your [AMP](https://wordpress.org/plugins/amp/) pages.**
-
-**Provides complete markup for WooCommerce products and all variations (Pro version):**
-
-Including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
-
-**Adds content text, comments, and threaded replies to Schema CreativeWork:**
+Provides complete markup for WooCommerce products and all variations (Pro version) &mdash; including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
 Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google SEO ranking. ;-)
 
-**WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance:**
-
-WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
-
-WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
-
-The WPSSO JSON Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin).
-
-The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro features, which requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
+WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc. The Free extension works with either the Free or Pro version of WPSSO Core (Main Plugin). The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro features, which requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
 
 <h3>Quick List of Features</h3>
 
