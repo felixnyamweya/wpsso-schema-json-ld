@@ -679,7 +679,7 @@ msgctxt "option comment"
 msgid "to"
 msgstr ""
 
-#: lib/pro/head/product.php:180
+#: lib/pro/head/product.php:190
 msgid "adding schema for product model"
 msgstr ""
 
