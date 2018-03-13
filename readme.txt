@@ -537,6 +537,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.24.3 (2018/03/13)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed an array argument error in WpssoJsonProHeadProduct::check_itemprop_content_map().
+* *Developer Notes*
+	* None
+
 **Version 1.24.2 (2018/03/10)**
 
 * *New Features*
@@ -604,6 +615,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* save_mod_cache_data()
 
 == Upgrade Notice ==
+
+= 1.24.3 =
+
+(2018/03/13) Fixed an array argument error in WpssoJsonProHeadProduct::check_itemprop_content_map().
 
 = 1.24.2 =
 
