@@ -490,7 +490,7 @@ The Free extension works with either the Free or Pro version of WPSSO Core. The 
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO JSON Extension (Free and Pro version)](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Install the WPSSO JSON Extension](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
 * [Uninstall the WPSSO JSON Extension](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==

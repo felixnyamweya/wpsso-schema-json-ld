@@ -625,7 +625,7 @@
 <h3>Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the WPSSO JSON Extension (Free and Pro version)</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/">Install the WPSSO JSON Extension</a></li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/">Uninstall the WPSSO JSON Extension</a></li>
 </ul>
 
