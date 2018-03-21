@@ -14,13 +14,13 @@ Tested Up To: 4.9.4
 WC Tested Up To: 3.3.3
 Stable Tag: 1.24.3
 
-WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
+WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-**WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
+**WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
 
 Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
 
@@ -28,17 +28,17 @@ Includes the complete content text (along with a description text), comments, re
 
 Allows you to select a different Schema than "BlogPosting" for all your [AMP](https://wordpress.org/plugins/amp/) pages.
 
-Includes special markup and optimization features for Pinterest, as Pinterest does not (currently) read the Schema JSON-LD format &mdash; WPSSO Core and the WPSSO Schema JSON-LD Markup (aka WPSSO JSON) extension include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest / Facebook Open Graph meta tag values.
+Includes special markup and optimization features for Pinterest, as Pinterest does not (currently) read the Schema JSON-LD format &mdash; WPSSO Core and the WPSSO Schema JSON-LD Markup (aka WPSSO JSON) add-on include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest / Facebook Open Graph meta tag values.
 
 Provides complete markup for WooCommerce products and all variations (Pro version) &mdash; including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
-WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
-The Free extension works with either the Free or Pro version of WPSSO Core. The [WPSSO JSON Pro extension](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
+The Free add-on plugin works with either the Free or Pro version of WPSSO Core. The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-prereq) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme-prereq).
 
 <h3>Quick List of Features</h3>
 
@@ -472,7 +472,7 @@ The Free extension works with either the Free or Pro version of WPSSO Core. The 
 
 <h3>Markup Examples</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM extension to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, accepts reservations, etc.).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM add-on to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, accepts reservations, etc.).
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; [Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
 
@@ -480,18 +480,18 @@ The Free extension works with either the Free or Pro version of WPSSO Core. The 
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Schema JSON-LD Markup (aka WPSSO JSON) Free extension works with either the Free or Pro version of WPSSO Core.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Schema JSON-LD Markup (aka WPSSO JSON) Free add-on plugin works with either the Free or Pro version of WPSSO Core.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro extension</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-extends">WPSSO JSON Pro add-on</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssojson-readme-extends">WPSSO Core Pro plugin</a>.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro extension here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme-purchase">Purchase the WPSSO Schema JSON-LD Markup Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO JSON Extension](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
-* [Uninstall the WPSSO JSON Extension](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
+* [Install the WPSSO JSON Add-on](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
+* [Uninstall the WPSSO JSON Add-on](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -539,6 +539,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.24.4-dev.2 (2018/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.24.3 (2018/03/13)**
 
 * *New Features*
@@ -585,48 +596,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Refactored the WpssoJson `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
-**Version 1.23.0 (2018/02/17)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* In attachment pages, the 'mainEntityOfPage' property is now added to the first media object, not the main / top-most webpage Schema type.
-	* Options hidden in the "Basic Options" view that have a different value than their default will no longer be hidden.
-	* Removed the "Main Entity of Page" option from the Social and Search Optimization metabox (option was not useful).
-	* Added a 'keywords' property to the Schema VideoObject markup for YouTube videos.
-	* Added a 'servesCuisine' to the Schema Restaurant markup.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed the 'wpsso_post_text_rows' filter hook to 'wpsso_post_edit_rows' for WPSSO v3.53.0.
-
-**Version 1.22.0 (2018/02/09)**
-
-* *New Features*
-	* Added Schema Event "Offers Start" and "Offers End" options (Pro version).
-* *Improvements*
-	* Moved the itemCondition property up one level in the Product markup (with the brand, category, color, material, sku, etc., properties) (Pro version).
-	* Added different 'name' and 'alternameName' properties for category webpages (alternateName being the longer Open Graph title value).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Moved the following methods from the (WPSSO JSON extension) WpssoJsonSchema class to the main (WPSSO Core plugin) WpssoSchema class:
-		* get_single_mod_data()
-		* get_mod_cache_index()
-		* get_mod_cache_data()
-		* save_mod_cache_data()
-
 == Upgrade Notice ==
+
+= 1.24.4-dev.2 =
+
+(2018/03/21) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
 = 1.24.3 =
 
 (2018/03/13) Fixed an array argument error in WpssoJsonProHeadProduct::check_itemprop_content_map().
-
-= 1.24.2 =
-
-(2018/03/10) Added a list of human-readable checked IDs when the "Show Cache Purge Count on Update" option is checked *and* the WP_DEBUG contant is true.
-
-= 1.24.1 =
-
-(2018/03/04) Refactored transient cache index values to include WP query variables for extra uniqueness. Added a new filter to (optionally) define media as the main entity for the webpage.
 
