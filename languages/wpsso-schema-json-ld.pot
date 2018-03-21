@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.24.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.24.4-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -26,8 +26,8 @@ msgstr ""
 #: lib/config-gettext-extract.php:5
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews + many more."
+"WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, "
+"Local Business, Products, Recipes, Reviews + many more."
 msgstr ""
 
 #: lib/filters.php:203
@@ -762,19 +762,19 @@ msgstr ""
 
 #: wpsso-schema-json-ld.php:93
 msgid ""
-"%1$s is an extension for the %2$s plugin &mdash; please install and activate "
+"%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
 #: wpsso-schema-json-ld.php:95
 msgid ""
-"The %1$s extension requires the %2$s plugin &mdash; install and activate the "
-"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
+"The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
+"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
 #: wpsso-schema-json-ld.php:223
 msgid ""
-"The %1$s version %2$s extension requires %3$s version %4$s or newer (version "
+"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
@@ -793,8 +793,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews + many more."
+"WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, "
+"Local Business, Products, Recipes, Reviews + many more."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -54,14 +54,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 * Organization variables.
 			 */
 			$org_req_msg    = $this->p->util->get_ext_req_msg( 'org' );
-			$org_disable    = empty( $org_req_msg ) ? false : true;	// disable if org extension not available
+			$org_disable    = empty( $org_req_msg ) ? false : true;
 			$org_site_names = $form->get_cache( 'org_site_names', true ); // $add_none = true
 
 			/**
 			 * Place / Location variables.
 			 */
 			$plm_req_msg      = $this->p->util->get_ext_req_msg( 'plm' );
-			$plm_disable      = empty( $plm_req_msg ) ? false : true; // disable if plm extension not available
+			$plm_disable      = empty( $plm_req_msg ) ? false : true;
 			$place_addr_names = $form->get_cache( 'place_addr_names', true ); // $add_none = true
 
 			/**

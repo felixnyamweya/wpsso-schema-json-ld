@@ -10,12 +10,12 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
+ * Description: WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4
  * WC Tested Up To: 3.3.3
- * Version: 1.24.3
+ * Version: 1.24.4-dev.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -90,9 +90,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 
-			$die_msg = __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-schema-json-ld' );
+			$die_msg = __( '%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-schema-json-ld' );
 
-			$error_msg = __( 'The %1$s extension requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s extension</a>.', 'wpsso-schema-json-ld' );
+			$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s add-on</a>.', 'wpsso-schema-json-ld' );
 
 			if ( true === $deactivate ) {
 
@@ -220,7 +220,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
-			$error_msg = sprintf( __( 'The %1$s version %2$s extension requires %3$s version %4$s or newer (version %5$s is currently installed).',
+			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-schema-json-ld' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
@@ -241,4 +241,3 @@ if ( ! class_exists( 'WpssoJson' ) ) {
         global $wpssojson;
 	$wpssojson =& WpssoJson::get_instance();
 }
-

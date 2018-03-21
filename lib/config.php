@@ -16,11 +16,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.24.3',		// Plugin version.
+					'version' => '1.24.4-dev.2',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
-					'desc' => 'WPSSO Core extension to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.',
+					'desc' => 'WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.',
 					'slug' => 'wpsso-schema-json-ld',
 					'base' => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
 					'update_auth' => 'tid',
