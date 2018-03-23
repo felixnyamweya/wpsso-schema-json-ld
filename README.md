@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.24.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.4</td></tr>
@@ -15,7 +15,7 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</strong></p>
+<p><strong>WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</strong></p>
 
 <p>Adds <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).</p>
 

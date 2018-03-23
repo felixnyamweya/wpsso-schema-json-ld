@@ -14,13 +14,13 @@ Tested Up To: 4.9.4
 WC Tested Up To: 3.3.4
 Stable Tag: 1.24.3
 
-WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
+WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-**WPSSO Core add-on to add Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
+**WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
 
 Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
 
@@ -539,7 +539,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.24.4-b.1 (2018/03/22)**
+**Version 1.24.4-rc.1 (2018/03/23)**
 
 * *New Features*
 	* None
@@ -598,9 +598,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.24.4-b.1 =
+= 1.24.4-rc.1 =
 
-(2018/03/22) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
+(2018/03/23) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
 = 1.24.3 =
 
