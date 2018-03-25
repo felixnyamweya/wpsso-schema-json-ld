@@ -90,17 +90,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$posts_per_page = get_option( 'posts_per_page' );
 			}
 
-			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
-
-			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'posts_per_page after filter is '.$posts_per_page );
-			}
-
 			if ( $posts_per_page > $posts_per_page_max ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$posts_per_page_max );
 				}
 				$posts_per_page = $posts_per_page_max;
+			}
+
+			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'posts_per_page after filter is '.$posts_per_page );
 			}
 
 			/**
@@ -148,6 +148,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				unset( $wpsso_paged );	// unset the forced page number
 				return $posts_count;
 			}
+
+			$post_mods = apply_filters( $wpsso->lca.'_json_post_mods', $post_mods, $mod, $page_type_id, $is_main );
 
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'post_mods array has '.count( $post_mods ).' elements' );
