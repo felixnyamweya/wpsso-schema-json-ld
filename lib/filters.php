@@ -22,14 +22,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			add_filter( 'amp_post_template_metadata', 
-				array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
+			add_filter( 'amp_post_template_metadata', array( &$this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
-			$crawler_name = empty( $this->p->avail['*']['vary_ua'] ) ?
-				'none' : SucomUtil::get_crawler_name();
+			$crawler_name = empty( $this->p->avail['*']['vary_ua'] ) ? 'none' : SucomUtil::get_crawler_name();
 
 			if ( $crawler_name === 'pinterest' ) {
-				// pinterest does not read json markup
+				// Pinterest does not read JSON-LD markup.
 			} else {
 				$this->p->util->add_plugin_filters( $this, array(
 					'add_schema_head_attributes' => '__return_false',
@@ -210,13 +208,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 		}
 
-		public function filter_option_type( $type, $key ) {
+		public function filter_option_type( $type, $base_key ) {
+
 			if ( ! empty( $type ) ) {
 				return $type;
-			} elseif ( strpos( $key, 'schema_' ) !== 0 ) {
+			} elseif ( strpos( $base_key, 'schema_' ) !== 0 ) {
 				return $type;
 			}
-			switch ( $key ) {
+
+			switch ( $base_key ) {
 				case 'schema_event_offer_name':
 				case 'schema_job_title':
 				case 'schema_job_currency':
@@ -271,6 +271,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'blank_num';
 					break;
 			}
+
 			return $type;
 		}
 

@@ -59,13 +59,13 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			}
 
-			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 2 );
-			add_filter( 'wpsso_get_avail', array( &$this, 'wpsso_get_avail' ), 10, 1 );
+			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 2 );	// Checks core version and merges config array.
+			add_filter( 'wpsso_get_avail', array( &$this, 'wpsso_get_avail' ), 20, 1 );
 
-			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 100 );
+			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
+			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 100 );	// Sets the $this->p reference variable.
 			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 100 );
 			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 100 );
 		}
@@ -83,7 +83,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 		}
 
-		// also called from the activate_plugin method with $deactivate = true
+		/**
+		 * Also called from the activate_plugin method with $deactivate = true.
+		 */
 		public static function required_notice( $deactivate = false ) {
 
 			self::wpsso_init_textdomain();
@@ -124,6 +126,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			load_plugin_textdomain( 'wpsso-schema-json-ld', false, 'wpsso-schema-json-ld/languages/' );
 		}
 
+		/**
+		 * Checks the core plugin version and merges the extension / add-on config array.
+		 */
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
 
 			$info = WpssoJsonConfig::$cf['plugin']['wpssojson'];
@@ -139,10 +144,11 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['json'] = false;	// just in case
+				$avail['p_ext']['json'] = false;	// Signal that this extension / add-on is not available.
+				return $avail;
 			}
 
-			$avail['p_ext']['json'] = true;
+			$avail['p_ext']['json'] = true;	// Signal that this extension / add-on is available.
 
 			foreach ( array( 'gpl', 'pro' ) as $lib ) {
 				foreach ( array( 'head', 'prop' ) as $sub ) {
@@ -181,6 +187,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			return $avail;
 		}
 
+		/**
+		 * Sets the $this->p reference variable for the core plugin instance.
+		 */
 		public function wpsso_init_options() {
 
 			$this->p =& Wpsso::get_instance();
