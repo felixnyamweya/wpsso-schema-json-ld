@@ -2,7 +2,6 @@
 /**
  * Hard-coded / fixed constants (values cannot be modified).
  */
-
 WPSSOJSON_FILEPATH
 WPSSOJSON_PLUGINDIR
 WPSSOJSON_PLUGINSLUG
@@ -12,7 +11,6 @@ WPSSOJSON_URLPATH
 /**
  * Variable constants (define in wp-config.php file to change default values).
  */
-
 WPSSOJSON_SCHEMA_SHORTCODE_NAME			= 'schema'
 WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR		= '_'
 WPSSOJSON_SCHEMA_SHORTCODE_DEPTH		= 3
