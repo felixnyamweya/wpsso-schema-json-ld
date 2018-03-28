@@ -107,11 +107,15 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Get the mod array for all posts.
 			 */
 			if ( $is_main && ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts mods' );
 				}
+
 				$post_count = 0;
+
 				if ( have_posts() ) {
+
 					while ( have_posts() ) {
 						$post_count++;
 						the_post();
@@ -124,8 +128,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							break;	// stop here
 						}
 					}
+
 					rewind_posts();
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( $post_count . ' post_mods added' );
+					}
+
+				} elseif ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'no posts to add' );
 				}
+
 			} elseif ( is_object( $mod['obj'] ) && method_exists( $mod['obj'], 'get_posts_mods' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
