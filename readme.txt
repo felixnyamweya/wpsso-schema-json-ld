@@ -539,7 +539,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.24.5-dev.3 (2018/03/29)**
+**Version 1.24.5 (2018/03/29)**
 
 * *New Features*
 	* None
@@ -609,7 +609,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.24.5-dev.3 =
+= 1.24.5 =
 
 (2018/03/29) Fixed the missing WP_Query for a blog posts page in the back-end.
 
