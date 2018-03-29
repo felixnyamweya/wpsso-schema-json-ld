@@ -539,6 +539,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.24.5-dev.3 (2018/03/29)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the missing WP_Query for a blog posts page in the back-end.
+* *Developer Notes*
+	* None
+
 **Version 1.24.4 (2018/03/24)**
 
 * *New Features*
@@ -597,6 +608,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJson `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.24.5-dev.3 =
+
+(2018/03/29) Fixed the missing WP_Query for a blog posts page in the back-end.
 
 = 1.24.4 =
 
