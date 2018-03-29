@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.4
 WC Tested Up To: 3.3.4
-Stable Tag: 1.24.4
+Stable Tag: 1.24.5
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -612,8 +612,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.24.5 =
 
 (2018/03/29) Fixed the missing WP_Query for a blog posts page in the back-end.
-
-= 1.24.4 =
-
-(2018/03/24) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
