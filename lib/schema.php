@@ -112,6 +112,22 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'using query loop to get posts mods' );
 				}
 
+				/**
+				 * Setup the query for a blog posts page in the back-end.
+				 */
+				if ( is_admin() && $mod['is_home_index'] ) {
+					global $wp_query;
+					$wp_query = new WP_Query( array(
+						'posts_per_page' => $posts_per_page,
+						'paged'          => true,
+						'post_status'    => 'publish',
+						'post_type'      => 'post',
+					) );
+					if ( $mod['is_home'] ) {
+						$wp_query->is_home = true;
+					}
+				}
+
 				$post_count = 0;
 
 				if ( have_posts() ) {
