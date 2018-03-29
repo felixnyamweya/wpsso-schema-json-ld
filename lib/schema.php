@@ -122,10 +122,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						'paged'          => true,
 						'post_status'    => 'publish',
 						'post_type'      => 'post',
+						'orderby'        => 'date',
+						'order'          => 'DESC',
 					) );
-					if ( $mod['is_home'] ) {
-						$wp_query->is_home = true;
-					}
+					$wp_query->is_home = true;
 				}
 
 				$post_count = 0;
