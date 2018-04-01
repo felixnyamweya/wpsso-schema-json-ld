@@ -112,9 +112,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			if ( defined( 'WPSSOJSON_VERSION' ) ) {			// execute and define constants only once
 				return;
 			}
+
 			define( 'WPSSOJSON_VERSION', self::$cf['plugin']['wpssojson']['version'] );						
 			define( 'WPSSOJSON_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOJSON_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
@@ -126,9 +128,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 
 		public static function set_variable_constants( $var_const = null ) {
+
 			if ( null === $var_const ) {
 				$var_const = self::get_variable_constants();
 			}
+
 			foreach ( $var_const as $name => $value ) {
 				if ( ! defined( $name ) ) {
 					define( $name, $value );
@@ -137,6 +141,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 
 		public static function get_variable_constants() {
+
 			$var_const = array();
 
 			$var_const['WPSSOJSON_SCHEMA_SHORTCODE_NAME'] = 'schema';
@@ -178,4 +183,3 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		}
 	}
 }
-
