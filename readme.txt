@@ -539,6 +539,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.24.6-dev.1 (2018/04/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
+
 **Version 1.24.5 (2018/03/29)**
 
 * *New Features*
@@ -608,6 +619,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJson `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.24.6-dev.1 =
+
+(2018/04/01) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
 
 = 1.24.5 =
 
