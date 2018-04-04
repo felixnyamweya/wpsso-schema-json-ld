@@ -10,7 +10,7 @@ Tags: rich card, article seo, local seo, news seo, image seo, video seo, local b
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
-Tested Up To: 4.9.4
+Tested Up To: 4.9.5
 WC Tested Up To: 3.3.4
 Stable Tag: 1.24.5
 
