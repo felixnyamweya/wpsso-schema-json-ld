@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
 WC Tested Up To: 3.3.4
-Stable Tag: 1.24.5
+Stable Tag: 1.24.6
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -623,8 +623,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.24.6 =
 
 (2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-= 1.24.5 =
-
-(2018/03/29) Fixed the missing WP_Query for a blog posts page in the back-end.
 
