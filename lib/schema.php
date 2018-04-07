@@ -106,7 +106,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Get the mod array for all posts.
 			 */
-			if ( $is_main && ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) ) {
+			if ( $is_main ) {
+				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
+					$is_archive = true;
+				} elseif ( empty( $mod['id'] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
+					$is_archive = true;
+				} else {
+					$is_archive = false;
+				}
+			} else {
+				$is_archive = false;
+			}
+
+			if ( $is_archive ) {
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using query loop to get posts mods' );
