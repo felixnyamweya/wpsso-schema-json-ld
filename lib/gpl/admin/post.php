@@ -28,10 +28,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 		public function filter_post_edit_rows( $table_rows, $form, $head, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// timer begin
+				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
 			}
 
-			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none = true
+			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
 			$currencies          = SucomUtil::get_currency_abbrev();
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
@@ -55,14 +55,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 */
 			$org_req_msg    = $this->p->util->get_ext_req_msg( 'org' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
-			$org_site_names = $form->get_cache( 'org_site_names', true ); // $add_none = true
+			$org_site_names = $form->get_cache( 'org_site_names', true ); // $add_none is true.
 
 			/**
 			 * Place / Location variables.
 			 */
 			$plm_req_msg      = $this->p->util->get_ext_req_msg( 'plm' );
 			$plm_disable      = empty( $plm_req_msg ) ? false : true;
-			$place_addr_names = $form->get_cache( 'place_addr_names', true ); // $add_none = true
+			$place_addr_names = $form->get_cache( 'place_addr_names', true ); // $add_none is true.
 
 			/**
 			 * Javascript classes to hide/show rows by selected schema type.
@@ -79,7 +79,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			);
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// timer end
+				$this->p->debug->mark( 'setup post form variables' );	// Timer end.
 			}
 
 			/**
@@ -107,7 +107,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
-					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// hide if titles are the same
+					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// Hide if titles are the same.
 					'label' => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
 					'no_auto_draft' => true,
@@ -122,8 +122,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_type' => array(
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_type', $schema_types,
-						'schema_type', '', true, true, 'unhide_rows' ),
+					'content' => $form->get_no_select( 'schema_type', $schema_types, 'schema_type', '', true, true, 'unhide_rows' ),
 				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
@@ -501,8 +500,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_image_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
-				// included as schema.org/Rating, not schema.org/aggregateRating
-				'schema_review_rating' => array(
+				'schema_review_rating' => array(	// Included as schema.org/Rating, not schema.org/aggregateRating.
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
@@ -522,4 +520,3 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 		}
 	}
 }
-

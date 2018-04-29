@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.24.6',		// Plugin version.
+					'version' => '1.25.0-dev.1',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.57.0',
+						'min_version' => '4.1.0-dev.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -48,6 +48,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'gpl' => array(
 							'admin' => array(
 								'post' => 'Post Settings',
+								'meta' => 'Term and User Settings',
 							),
 							'head' => array(
 								'webpage' => '(code) Schema Type WebPage (webpage)',
@@ -57,6 +58,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'pro' => array(
 							'admin' => array(
 								'post' => 'Post Settings',
+								'meta' => 'Term and User Settings',
 							),
 							'head' => array(
 								'article' => '(code) Schema Type Article (article)',
@@ -66,6 +68,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'creativework' => '(code) Schema Type Creative Work (creative.work)',
 								'event' => '(code) Schema Type Event (event)',
 								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishment)',
+								'itemlist' => '(code) Schema Type Item List (item.list)',
 								'jobposting' => '(code) Schema Type Job Posting (job.posting)',
 								'localbusiness' => '(code) Schema Type Local Business (local.business)',
 								'organization' => '(code) Schema Type Organization (organization)',

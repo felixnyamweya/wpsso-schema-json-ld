@@ -23,6 +23,90 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 		}
 
+		public static function add_itemlist_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			$posts_count = 0;
+			$prop_name = 'itemListElement';
+
+			/**
+			 * Set the page number and the posts per page values.
+			 */
+			global $wpsso_paged;
+			$wpsso_paged = 1;
+
+			$posts_per_page = self::get_posts_per_page( $posts_per_page, $mod );
+
+			/**
+			 * Get the mod array for all posts.
+			 */
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
+
+			if ( empty( $page_posts_mods ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
+				}
+				unset( $wpsso_paged );	// Unset the forced page number.
+				return $posts_count;
+			}
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'page_posts_mods array has '.count( $page_posts_mods ).' elements' );
+			}
+
+			if ( empty( $json_data[$prop_name] ) ) {
+				$json_data[$prop_name] = array();
+			} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// Convert single value to an array.
+				$json_data[$prop_name] = array( $json_data[$prop_name] );
+			}
+
+			$prop_name_count = count( $json_data[$prop_name] );	// Initialize the posts counter.
+
+			foreach ( $page_posts_mods as $post_mod ) {
+
+				$post_type_url = $wpsso->schema->get_mod_schema_type( $post_mod );
+				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
+
+				$posts_count++;
+
+				$post_data = WpssoSchema::get_schema_type_context( 'https://schema.org/ListItem', array(
+					'position' => $posts_count,
+					'url' => $post_sharing_url,
+				) );
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'adding post id '.$post_mod['id'].' to '.$prop_name.' as array element #'.$prop_name_count );
+				}
+
+				$json_data[$prop_name][] = $post_data;	// Add the post data.
+
+				if ( $prop_name_count >= $posts_per_page ) {
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'stopping here: maximum posts per page of '.$posts_per_page.' reached' );
+					}
+					break;	// Stop here.
+				}
+
+				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca.'_json_prop_https_schema_org_'.$prop_name );
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'applying filter '.$filter_name );
+				}
+
+				$json_data[$prop_name] = (array) apply_filters( $filter_name, $json_data[$prop_name], $mod, $mt_og, $page_type_id, $is_main );
+
+				if ( empty( $json_data[$prop_name] ) ) {
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'json data prop_name '.$prop_name.' is empty' );
+					}
+					unset( $json_data[$prop_name] );
+				}
+			}
+
+			return $posts_count;
+		}
+
 		/**
 		 * Called by Blog, CollectionPage, ProfilePage, and SearchResultsPage.
 		 *
@@ -32,10 +116,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *	$prop_name_type_ids = array( 'blogPosting' => 'blog.posting' )
 		 */
 		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main,
-			array $prop_name_type_ids, $posts_per_page = false ) {
+			$posts_per_page = false, array $prop_name_type_ids ) {
 
 			static $added_page_type_ids = array();
-			static $posts_per_page_max = null;
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -78,122 +161,27 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Set the page number and the posts per page values.
 			 */
-			if ( ! isset( $posts_per_page_max ) ) {	// only set the value once
-				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
-			}
-
 			global $wpsso_paged;
 			$wpsso_paged = 1;
-			$post_mods = array();
 
-			if ( false === $posts_per_page ) {	// get the default if no argument provided
-				$posts_per_page = get_option( 'posts_per_page' );
-			}
-
-			if ( $posts_per_page > $posts_per_page_max ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$posts_per_page_max );
-				}
-				$posts_per_page = $posts_per_page_max;
-			}
-
-			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
-
-			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'posts_per_page after filter is '.$posts_per_page );
-			}
+			$posts_per_page = self::get_posts_per_page( $posts_per_page, $mod );
 
 			/**
 			 * Get the mod array for all posts.
 			 */
-			if ( $is_main ) {
-				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
-					$is_archive = true;
-				} elseif ( empty( $mod['id'] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
-					$is_archive = true;
-				} else {
-					$is_archive = false;
-				}
-			} else {
-				$is_archive = false;
-			}
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
 
-			if ( $is_archive ) {
-
+			if ( empty( $page_posts_mods ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'using query loop to get posts mods' );
-				}
-
-				/**
-				 * Setup the query for a blog posts page in the back-end.
-				 */
-				if ( is_admin() && $mod['is_home_index'] ) {
-					global $wp_query;
-					$wp_query = new WP_Query( array(
-						'posts_per_page' => $posts_per_page,
-						'paged'          => true,
-						'post_status'    => 'publish',
-						'post_type'      => 'post',
-						'orderby'        => 'date',
-						'order'          => 'DESC',
-					) );
-					$wp_query->is_home = true;
-				}
-
-				$post_count = 0;
-
-				if ( have_posts() ) {
-
-					while ( have_posts() ) {
-						$post_count++;
-						the_post();
-						global $post;
-						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
-						}
-						$post_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
-						if ( $post_count >= $posts_per_page ) {
-							break;	// stop here
-						}
-					}
-
-					rewind_posts();
-
-					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( $post_count . ' post_mods added' );
-					}
-
-				} elseif ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'no posts to add' );
-				}
-
-			} elseif ( is_object( $mod['obj'] ) && method_exists( $mod['obj'], 'get_posts_mods' ) ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'using module object to get posts mods' );
-				}
-				$post_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
-			} else {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: no source to get posts mods' );
+					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
 					$wpsso->debug->mark( 'adding posts data' );	// end timer
 				}
 				unset( $wpsso_paged );	// unset the forced page number
 				return $posts_count;
 			}
-
-			if ( empty( $post_mods ) ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: post_mods array is empty' );
-					$wpsso->debug->mark( 'adding posts data' );	// end timer
-				}
-				unset( $wpsso_paged );	// unset the forced page number
-				return $posts_count;
-			}
-
-			$post_mods = apply_filters( $wpsso->lca.'_json_post_mods', $post_mods, $mod, $page_type_id, $is_main );
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'post_mods array has '.count( $post_mods ).' elements' );
+				$wpsso->debug->log( 'page_posts_mods array has '.count( $page_posts_mods ).' elements' );
 			}
 
 			/**
@@ -222,24 +210,27 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( empty( $json_data[$prop_name] ) ) {
 					$json_data[$prop_name] = array();
-				} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// convert single value to an array
+				} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// Convert single value to an array.
 					$json_data[$prop_name] = array( $json_data[$prop_name] );
 				}
 
-				$prop_name_count = count( $json_data[$prop_name] );	// initialize the posts counter
+				$prop_name_count = count( $json_data[$prop_name] );	// Initialize the posts counter.
 
-				foreach ( $post_mods as $post_mod ) {
+				foreach ( $page_posts_mods as $post_mod ) {
 
 					$add_post_data = false;
 
 					foreach ( $prop_type_ids as $family_member_id ) {
 
 						if ( $family_member_id === 'any' ) {
+
 							if ( $wpsso->debug->enabled ) {
 								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': any schema type is allowed' );
 							}
+
 							$add_post_data = true;
-							break;	// stop here
+
+							break;	// one positive match is enough
 						}
 
 						if ( $wpsso->debug->enabled ) {
@@ -259,44 +250,48 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							if ( $wpsso->debug->enabled ) {
 								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': '.$mod_type_id.' is child of '.$family_member_id );
 							}
+
 							$add_post_data = true;
-							break;	// stop here
+
+							break;	// one positive match is enough
 
 						} elseif ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'post id '.$post_mod['id'].' schema type '.$mod_type_id.' not a child of '.$family_member_id );
 						}
 					}
 
-					if ( $add_post_data ) {
-
+					if ( ! $add_post_data ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting single mod data for post id '.$post_mod['id'] );
+							$wpsso->debug->log( 'skipping post id '.$post_mod['id'].' for prop_name '.$prop_name );
 						}
+						continue;
+					}
 
-						$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og = false
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'getting single mod data for post id '.$post_mod['id'] );
+					}
 
-						if ( empty( $post_data ) ) {	// prevent null assignment
-							$wpsso->debug->log( 'single mod data for post id '.$post_mod['id'].' is empty' );
-							continue;	// get the next post mod
-						}
+					$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og is false.
 
-						$posts_count++;
-						$prop_name_count++;
+					if ( empty( $post_data ) ) {	// Prevent null assignment.
+						$wpsso->debug->log( 'single mod data for post id '.$post_mod['id'].' is empty' );
+						continue;	// Get the next post mod.
+					}
 
+					$posts_count++;
+					$prop_name_count++;
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'adding post id '.$post_mod['id'].' to '.$prop_name.' as array element #'.$prop_name_count );
+					}
+
+					$json_data[$prop_name][] = $post_data;	// Add the post data.
+
+					if ( $prop_name_count >= $posts_per_page ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'adding post id '.$post_mod['id'].' to '.$prop_name.' as array element #'.$prop_name_count );
+							$wpsso->debug->log( 'stopping here: maximum posts per page of '.$posts_per_page.' reached' );
 						}
-
-						$json_data[$prop_name][] = $post_data;	// add the post data
-
-						if ( $prop_name_count >= $posts_per_page ) {
-							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'stopping here: maximum posts per page of '.$posts_per_page.' reached' );
-							}
-							break;	// stop here
-						}
-					} elseif ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'skipping post id '.$post_mod['id'].' for prop_name '.$prop_name );
+						break;	// Stop here.
 					}
 				}
 
@@ -663,6 +658,127 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			return 1;	// return count of videos added
 		}
+
+		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			$page_posts_mods = array();
+
+			if ( $is_main ) {
+				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
+					$is_archive = true;
+				} elseif ( empty( $mod['id'] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
+					$is_archive = true;
+				} else {
+					$is_archive = false;
+				}
+			} else {
+				$is_archive = false;
+			}
+
+			if ( $is_archive ) {
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'using query loop to get posts mods' );
+				}
+
+				/**
+				 * Setup the query for a blog posts page in the back-end.
+				 */
+				if ( is_admin() && $mod['is_home_index'] ) {
+					global $wp_query;
+					$wp_query = new WP_Query( array(
+						'posts_per_page' => $posts_per_page,
+						'paged'          => true,
+						'post_status'    => 'publish',
+						'post_type'      => 'post',
+						'orderby'        => 'date',
+						'order'          => 'DESC',
+					) );
+					$wp_query->is_home = true;
+				}
+
+				$have_num = 0;
+
+				if ( have_posts() ) {
+
+					while ( have_posts() ) {
+
+						$have_num++;
+
+						the_post();	// Defines the $post global.
+
+						global $post;
+
+						if ( $wpsso->debug->enabled ) {
+							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
+						}
+
+						$page_posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
+
+						if ( $have_num >= $posts_per_page ) {
+							break;	// Stop here.
+						}
+					}
+
+					rewind_posts();
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( $have_num . ' page_posts_mods added' );
+					}
+
+				} elseif ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'no posts to add' );
+				}
+
+			} elseif ( is_object( $mod['obj'] ) && method_exists( $mod['obj'], 'get_posts_mods' ) ) {
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'using module object to get posts mods' );
+				}
+
+				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
+
+			} else {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'no source to get posts mods' );
+				}
+			}
+
+			$page_posts_mods = apply_filters( $wpsso->lca.'_json_page_posts_mods', $page_posts_mods, $mod, $page_type_id, $is_main );
+
+			return $page_posts_mods;
+		}
+
+		private static function get_posts_per_page( $posts_per_page = null, $mod ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			static $posts_per_page_max = null;
+
+			if ( ! isset( $posts_per_page_max ) ) {	// only set the value once
+				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
+			}
+
+			if ( ! is_numeric( $posts_per_page ) ) {	// get the default if no argument provided
+				$posts_per_page = get_option( 'posts_per_page' );
+			}
+
+			if ( $posts_per_page > $posts_per_page_max ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$posts_per_page_max );
+				}
+				$posts_per_page = $posts_per_page_max;
+			}
+
+			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'posts_per_page after filter is '.$posts_per_page );
+			}
+
+			return $posts_per_page;
+		}
 	}
 }
-

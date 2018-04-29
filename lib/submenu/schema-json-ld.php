@@ -93,11 +93,13 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 
 					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
 
-					// show all by default, except for the archive, user, and search types
+					/**
+					 * Show all by default, except for the archive, user, and search types.
+					 */
 					$this->add_schema_item_types_table_rows( $table_rows, array(
-						'schema_type_for_archive_page' => 'basic',
 						'schema_type_for_user_page' => 'basic',
 						'schema_type_for_search_page' => 'basic',
+						'schema_type_for_archive_page' => 'basic',
 					), $schema_types );
 
 					$table_rows['schema_review_item_type'] = $this->form->get_tr_hide( 'basic', 'schema_review_item_type' ).
