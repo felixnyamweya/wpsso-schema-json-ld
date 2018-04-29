@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph, woocommerce
+Tags: rich card, carousel, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, review, recipe, event, product, video schema, knowledge graph, woocommerce
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
@@ -22,7 +22,7 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 **A WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
 
-Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
+Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).
 
 Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google &amp; Bing SEO ranking. ;-)
 
@@ -61,10 +61,11 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Author / Person Name Format
 * Item Type for Blog Front Page
 * Item Type for Static Front Page
-* Item Type for Archive Page
 * Item Type for User / Author Page
 * Item Type for Search Results Page
-* Item Type by Post Type (for Posts, Pages, Media, and custom post types).
+* Item Type for Other Archive Page
+* Item Type by Post Type (for Posts, Pages, Media, (Post Type) Archive Page, and custom post types).
+* Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies).
 * Default Reviewed Item Type
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
@@ -539,6 +540,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.25.0-dev.1 (2018/04/29)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.24.6 (2018/04/05)**
 
 * *New Features*
@@ -619,6 +631,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJson `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.25.0-dev.1 =
+
+(2018/04/29) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
 
 = 1.24.6 =
 

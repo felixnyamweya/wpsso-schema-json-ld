@@ -8,7 +8,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.5</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>rich card, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, rating, review, recipe, event, product, video schema, knowledge graph, woocommerce</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>rich card, carousel, article seo, local seo, news seo, image seo, video seo, local business, json, json-ld, ld+json, schema, structured data, seo, rating, review, recipe, event, product, video schema, knowledge graph, woocommerce</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -17,7 +17,7 @@
 
 <p><strong>A WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.</strong></p>
 
-<p>Adds <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).</p>
+<p>Adds <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the Quick List of Features bellow for Free / Pro version details).</p>
 
 <p>Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google &amp; Bing SEO ranking. ;-)</p>
 
@@ -57,10 +57,11 @@
 <li>Author / Person Name Format</li>
 <li>Item Type for Blog Front Page</li>
 <li>Item Type for Static Front Page</li>
-<li>Item Type for Archive Page</li>
 <li>Item Type for User / Author Page</li>
 <li>Item Type for Search Results Page</li>
-<li>Item Type by Post Type (for Posts, Pages, Media, and custom post types).</li>
+<li>Item Type for Other Archive Page</li>
+<li>Item Type by Post Type (for Posts, Pages, Media, (Post Type) Archive Page, and custom post types).</li>
+<li>Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies).</li>
 <li>Default Reviewed Item Type</li>
 </ul>
 
