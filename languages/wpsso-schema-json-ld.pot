@@ -306,28 +306,28 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:99 lib/gpl/admin/term.php:60
 #: lib/gpl/admin/user.php:58 lib/pro/admin/post.php:110
-#: lib/pro/admin/term.php:71 lib/pro/admin/user.php:70
+#: lib/pro/admin/term.php:71 lib/pro/admin/user.php:69
 msgctxt "metabox title"
 msgid "Structured Data / Schema Markup"
 msgstr ""
 
 #: lib/gpl/admin/post.php:106 lib/gpl/admin/term.php:63
 #: lib/gpl/admin/user.php:61 lib/pro/admin/post.php:117
-#: lib/pro/admin/term.php:74 lib/pro/admin/user.php:73
+#: lib/pro/admin/term.php:74 lib/pro/admin/user.php:72
 msgctxt "option label"
 msgid "Schema Item Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:113 lib/gpl/admin/term.php:69
 #: lib/gpl/admin/user.php:67 lib/pro/admin/post.php:124
-#: lib/pro/admin/term.php:80 lib/pro/admin/user.php:79
+#: lib/pro/admin/term.php:80 lib/pro/admin/user.php:78
 msgctxt "option label"
 msgid "Schema Alternate Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:119 lib/gpl/admin/term.php:74
 #: lib/gpl/admin/user.php:72 lib/pro/admin/post.php:130
-#: lib/pro/admin/term.php:85 lib/pro/admin/user.php:84
+#: lib/pro/admin/term.php:85 lib/pro/admin/user.php:83
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
@@ -338,15 +338,15 @@ msgctxt "option label"
 msgid "Schema Item Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:131 lib/gpl/admin/term.php:86
+#: lib/gpl/admin/post.php:131 lib/gpl/admin/term.php:85
 #: lib/pro/admin/post.php:142 lib/pro/admin/term.php:96
 msgctxt "option label"
 msgid "Additional Type URLs"
 msgstr ""
 
-#: lib/gpl/admin/post.php:137 lib/gpl/admin/term.php:92
+#: lib/gpl/admin/post.php:137 lib/gpl/admin/term.php:91
 #: lib/gpl/admin/user.php:78 lib/pro/admin/post.php:148
-#: lib/pro/admin/term.php:102 lib/pro/admin/user.php:90
+#: lib/pro/admin/term.php:102 lib/pro/admin/user.php:89
 msgctxt "option label"
 msgid "SameAs Webpage URLs"
 msgstr ""
@@ -784,7 +784,7 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:232
+#: wpsso-schema-json-ld.php:236
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

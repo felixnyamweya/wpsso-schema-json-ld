@@ -151,7 +151,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$avail['p_ext']['json'] = true;	// Signal that this extension / add-on is available.
 
 			foreach ( array( 'gpl', 'pro' ) as $lib ) {
-				foreach ( array( 'head', 'prop' ) as $sub ) {
+				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
 					if ( ! isset( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ||
 						! is_array( WpssoJsonConfig::$cf['plugin']['wpssojson']['lib'][$lib][$sub] ) ) {
 						continue;
@@ -166,16 +166,20 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			// Simple Job Board
 			if ( class_exists( 'Simple_Job_Board' ) ) {
 				$avail['job']['*'] = $avail['job']['simplejobboard'] = true;
+			}
+
 			// WP Job Manager
-			} elseif ( class_exists( 'WP_Job_Manager' ) ) {
+			if ( class_exists( 'WP_Job_Manager' ) ) {
 				$avail['job']['*'] = $avail['job']['wpjobmanager'] = true;
 			}
 
 			// WP Recipe Maker
 			if ( class_exists( 'WP_Recipe_Maker' ) ) {
 				$avail['recipe']['*'] = $avail['recipe']['wprecipemaker'] = true;
+			}
+
 			// WP Ultimate Recipe 
-			} elseif ( class_exists( 'WPUltimateRecipe' ) ) {
+			if ( class_exists( 'WPUltimateRecipe' ) ) {
 				$avail['recipe']['*'] = $avail['recipe']['wpultimaterecipe'] = true;
 			}
 
