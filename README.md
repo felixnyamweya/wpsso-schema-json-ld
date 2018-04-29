@@ -61,7 +61,7 @@
 <li>Item Type for Search Results Page</li>
 <li>Item Type for Other Archive Page</li>
 <li>Item Type by Post Type (for Posts, Pages, Media, (Post Type) Archive Page, and custom post types).</li>
-<li>Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies).</li>
+<li>Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies) -- defaults to <a href="https://schema.org/ItemList">schema.org/ItemList</a> for Google's mobile carousel feature.</li>
 <li>Default Reviewed Item Type</li>
 </ul>
 

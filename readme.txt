@@ -65,7 +65,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Item Type for Search Results Page
 * Item Type for Other Archive Page
 * Item Type by Post Type (for Posts, Pages, Media, (Post Type) Archive Page, and custom post types).
-* Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies).
+* Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies) -- defaults to [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature.
 * Default Reviewed Item Type
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
