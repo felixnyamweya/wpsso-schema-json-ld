@@ -50,7 +50,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional "Schema Markup" settings page to the SSO menu:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional Schema Markup settings page to the SSO menu:
 
 * WebSite Alternate Name
 * Organization Logo URL
@@ -68,12 +68,9 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies) -- defaults to [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature.
 * Default Reviewed Item Type
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO markup.
 
-* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
-* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
-
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO in webpage Schema JSON-LD markup.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for: BlogPosting and WebPage.
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
@@ -190,7 +187,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Subject Image URL 
 	* Review Rating 
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for the following Schema types, along with hundreds more!
 
 * Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork) <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 	* Schema Type [schema.org/Article](https://schema.org/Article)
@@ -199,20 +196,11 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 		* Schema Type [schema.org/ScholarlyArticle](https://schema.org/ScholarlyArticle)
 		* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 			* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
-			* Schema Type [schema.org/DiscussionForumPosting](https://schema.org/DiscussionForumPosting)
-			* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 		* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
 	* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
 	* Schema Type [schema.org/Book](https://schema.org/Book)
-	* Schema Type [schema.org/Clip](https://schema.org/Clip)
 	* Schema Type [schema.org/Comment](https://schema.org/Comment)
-	* Schema Type [schema.org/Conversation](https://schema.org/Conversation)
 	* Schema Type [schema.org/Course](https://schema.org/Course)
-	* Schema Type [schema.org/CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
-	* Schema Type [schema.org/CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
-	* Schema Type [schema.org/DataCatalog](https://schema.org/DataCatalog)
-	* Schema Type [schema.org/DataSet](https://schema.org/DataSet)
-	* Schema Type [schema.org/DigitalDocument](https://schema.org/DigitalDocument)
 	* Schema Type [schema.org/Episode](https://schema.org/Episode)
 	* Schema Type [schema.org/Game](https://schema.org/Game)
 	* Schema Type [schema.org/Map](https://schema.org/Map)
@@ -231,8 +219,6 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Schema Type [schema.org/MusicRecording](https://schema.org/MusicRecording)
 	* Schema Type [schema.org/Painting](https://schema.org/Painting)
 	* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
-	* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
-	* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
 	* Schema Type [schema.org/Question](https://schema.org/Question)
 	* Schema Type [schema.org/Recipe](https://schema.org/Recipe)
 	* Schema Type [schema.org/Review](https://schema.org/Review)
@@ -247,14 +233,13 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Schema Type [schema.org/WebPage](https://schema.org/WebPage)
 		* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
 		* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
-		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes mentions property with posts)
+		* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage)
 		* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
 		* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
 		* Schema Type [health-lifesci.schema.org/MedicalWebPage](https://health-lifesci.schema.org/MedicalWebPage)
-		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage) (includes mentions property with posts)
+		* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage)
 		* Schema Type [schema.org/QAPage](https://schema.org/QAPage)
-		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage) (includes mentions property with posts)
-	* Schema Type [schema.org/WebPageElement](https://schema.org/WebPageElement)
+		* Schema Type [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
 	* Schema Type [schema.org/WebSite](https://schema.org/WebSite)
 * Schema Type [schema.org/Event](https://schema.org/Event)
 	* Schema Type [schema.org/BusinessEvent](https://schema.org/BusinessEvent)
@@ -274,6 +259,53 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
 	* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
 	* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
+* Schema Type [schema.org/Intangible](https://schema.org/Intangible)
+	* Schema Type [schema.org/Enumeration](https://schema.org/Enumeration)
+		* Schema Type [schema.org/Specialty](https://schema.org/Specialty)
+			* Schema Type [schema.org/MedicalSpecialty](https://schema.org/MedicalSpecialty)
+				* Schema Type [health-lifesci.schema.org/Anesthesia](https://health-lifesci.schema.org/Anesthesia)
+				* Schema Type [health-lifesci.schema.org/Cardiovascular](https://health-lifesci.schema.org/Cardiovascular)
+				* Schema Type [health-lifesci.schema.org/CommunityHealth](https://health-lifesci.schema.org/CommunityHealth)
+				* Schema Type [health-lifesci.schema.org/Dentistry](https://health-lifesci.schema.org/Dentistry)
+				* Schema Type [health-lifesci.schema.org/Dermatologic](https://health-lifesci.schema.org/Dermatologic)
+				* Schema Type [health-lifesci.schema.org/Dermatology](https://health-lifesci.schema.org/Dermatology)
+				* Schema Type [health-lifesci.schema.org/DietNutrition](https://health-lifesci.schema.org/DietNutrition)
+				* Schema Type [health-lifesci.schema.org/Emergency](https://health-lifesci.schema.org/Emergency)
+				* Schema Type [health-lifesci.schema.org/Endocrine](https://health-lifesci.schema.org/Endocrine)
+				* Schema Type [health-lifesci.schema.org/Gastroenterologic](https://health-lifesci.schema.org/Gastroenterologic)
+				* Schema Type [health-lifesci.schema.org/Genetic](https://health-lifesci.schema.org/Genetic)
+				* Schema Type [health-lifesci.schema.org/Geriatric](https://health-lifesci.schema.org/Geriatric)
+				* Schema Type [health-lifesci.schema.org/Gynecologic](https://health-lifesci.schema.org/Gynecologic)
+				* Schema Type [health-lifesci.schema.org/Hematologic](https://health-lifesci.schema.org/Hematologic)
+				* Schema Type [health-lifesci.schema.org/Infectious](https://health-lifesci.schema.org/Infectious)
+				* Schema Type [health-lifesci.schema.org/LaboratoryScience](https://health-lifesci.schema.org/LaboratoryScience)
+				* Schema Type [health-lifesci.schema.org/Midwifery](https://health-lifesci.schema.org/Midwifery)
+				* Schema Type [health-lifesci.schema.org/Musculoskeletal](https://health-lifesci.schema.org/Musculoskeletal)
+				* Schema Type [health-lifesci.schema.org/Neurologic](https://health-lifesci.schema.org/Neurologic)
+				* Schema Type [health-lifesci.schema.org/Nursing](https://health-lifesci.schema.org/Nursing)
+				* Schema Type [health-lifesci.schema.org/Obstetric](https://health-lifesci.schema.org/Obstetric)
+				* Schema Type [health-lifesci.schema.org/OccupationalTherapy](https://health-lifesci.schema.org/OccupationalTherapy)
+				* Schema Type [health-lifesci.schema.org/Oncologic](https://health-lifesci.schema.org/Oncologic)
+				* Schema Type [health-lifesci.schema.org/Optometric](https://health-lifesci.schema.org/Optometric)
+				* Schema Type [health-lifesci.schema.org/Otolaryngologic](https://health-lifesci.schema.org/Otolaryngologic)
+				* Schema Type [health-lifesci.schema.org/Pathology](https://health-lifesci.schema.org/Pathology)
+				* Schema Type [health-lifesci.schema.org/Pediatric](https://health-lifesci.schema.org/Pediatric)
+				* Schema Type [health-lifesci.schema.org/PharmacySpecialty](https://health-lifesci.schema.org/PharmacySpecialty)
+				* Schema Type [health-lifesci.schema.org/Physiotherapy](https://health-lifesci.schema.org/Physiotherapy)
+				* Schema Type [health-lifesci.schema.org/PlasticSurgery](https://health-lifesci.schema.org/PlasticSurgery)
+				* Schema Type [health-lifesci.schema.org/Podiatric](https://health-lifesci.schema.org/Podiatric)
+				* Schema Type [health-lifesci.schema.org/PrimaryCare](https://health-lifesci.schema.org/PrimaryCare)
+				* Schema Type [health-lifesci.schema.org/Psychiatric](https://health-lifesci.schema.org/Psychiatric)
+				* Schema Type [health-lifesci.schema.org/PublicHealth](https://health-lifesci.schema.org/PublicHealth)
+				* Schema Type [health-lifesci.schema.org/Pulmonary](https://health-lifesci.schema.org/Pulmonary)
+				* Schema Type [health-lifesci.schema.org/Radiography](https://health-lifesci.schema.org/Radiography)
+				* Schema Type [health-lifesci.schema.org/Renal](https://health-lifesci.schema.org/Renal)
+				* Schema Type [health-lifesci.schema.org/RespiratoryTherapy](https://health-lifesci.schema.org/RespiratoryTherapy)
+				* Schema Type [health-lifesci.schema.org/Rheumatologic](https://health-lifesci.schema.org/Rheumatologic)
+				* Schema Type [health-lifesci.schema.org/SpeechPathology](https://health-lifesci.schema.org/SpeechPathology)
+				* Schema Type [health-lifesci.schema.org/Surgical](https://health-lifesci.schema.org/Surgical)
+				* Schema Type [health-lifesci.schema.org/Toxicologic](https://health-lifesci.schema.org/Toxicologic)
+				* Schema Type [health-lifesci.schema.org/Urologic](https://health-lifesci.schema.org/Urologic)
 * Schema Type [schema.org/Organization](https://schema.org/Organization)
 	* Schema Type [schema.org/Airline](https://schema.org/Airline)
 	* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
@@ -290,25 +322,15 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 		* Schema Type [schema.org/Pharmacy](https://schema.org/Pharmacy)
 		* Schema Type [schema.org/Physician](https://schema.org/Physician)
 	* Schema Type [schema.org/NGO](https://schema.org/NGO)
-	* Schema Type [schema.org/Organization](https://schema.org/Organization)
 	* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
 		* Schema Type [schema.org/DanceGroup](https://schema.org/DanceGroup)
 		* Schema Type [schema.org/MusicGroup](https://schema.org/MusicGroup)
-		* Schema Type [schema.org/PerformingGroup](https://schema.org/PerformingGroup)
 		* Schema Type [schema.org/TheaterGroup](https://schema.org/TheaterGroup)
 	* Schema Type [schema.org/SportsOrganization](https://schema.org/SportsOrganization)
 		* Schema Type [schema.org/SportsTeam](https://schema.org/SportsTeam)
 * Schema Type [schema.org/Person](https://schema.org/Person)
 * Schema Type [schema.org/Place](https://schema.org/Place)
 	* Schema Type [schema.org/Accommodation](https://schema.org/Accommodation)
-		* Schema Type [schema.org/Apartment](https://schema.org/Apartment)
-		* Schema Type [schema.org/CampingPitch](https://schema.org/CampingPitch)
-		* Schema Type [schema.org/House](https://schema.org/House)
-			* Schema Type [schema.org/SingleFamilyResidence](https://schema.org/SingleFamilyResidence)
-		* Schema Type [schema.org/Room](https://schema.org/Room)
-			* Schema Type [schema.org/HotelRoom](https://schema.org/HotelRoom)
-			* Schema Type [schema.org/MeetingRoom](https://schema.org/MeetingRoom)
-		* Schema Type [schema.org/Room](https://schema.org/Suite)
 	* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
 	* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
 		* Schema Type [schema.org/Airport](https://schema.org/Airport)
@@ -330,7 +352,6 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 		* Schema Type [schema.org/TaxiStand](https://schema.org/TaxiStand)
 		* Schema Type [schema.org/TrainStation](https://schema.org/TrainStation)
 		* Schema Type [schema.org/Zoo](https://schema.org/Zoo)
-	* Schema Type [schema.org/Landform](https://schema.org/Landform)
 	* Schema Type [schema.org/LandmarksOrHistoricalBuildings](https://schema.org/LandmarksOrHistoricalBuildings)
 	* Schema Type [schema.org/LocalBusiness](https://schema.org/LocalBusiness)
 		* Schema Type [schema.org/AnimalShelter](https://schema.org/AnimalShelter)
