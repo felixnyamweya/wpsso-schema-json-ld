@@ -188,6 +188,11 @@
 <ul>
 <li>Organization</li>
 </ul></li>
+<li>Person Information
+
+<ul>
+<li>Person</li>
+</ul></li>
 <li>Recipe Information
 
 <ul>

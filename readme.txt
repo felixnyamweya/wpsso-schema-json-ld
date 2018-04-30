@@ -159,6 +159,8 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Job Posting Expires
 * Organization Information
 	* Organization
+* Person Information
+	* Person
 * Recipe Information
 	* Recipe Preparation Time 
 	* Recipe Cooking Time 
@@ -561,12 +563,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.25.0-dev.1 (2018/04/29)**
+**Version 1.25.0-dev.2 (2018/04/29)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
+	* Added a "Person Information" section to the Social and Search Optimization metabox for the https://schema.org/Person type.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -653,7 +656,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.25.0-dev.1 =
+= 1.25.0-dev.2 =
 
 (2018/04/29) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
 
