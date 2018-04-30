@@ -57,14 +57,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 */
 			$org_req_msg    = $this->p->util->get_ext_req_msg( 'org' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
-			$org_site_names = $form->get_cache( 'org_site_names', true ); // $add_none is true.
+			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', true ); // $add_none is true.
+
+			/**
+			 * Person variables.
+			 */
+			$person_names = $this->p->util->get_form_cache( 'person_names', true ); // $add_none is true.
 
 			/**
 			 * Place / Location variables.
 			 */
 			$plm_req_msg      = $this->p->util->get_ext_req_msg( 'plm' );
 			$plm_disable      = empty( $plm_req_msg ) ? false : true;
-			$place_addr_names = $form->get_cache( 'place_addr_names', true ); // $add_none is true.
+			$place_addr_names = $this->p->util->get_form_cache( 'place_addr_names', true ); // $add_none is true.
 
 			/**
 			 * Javascript classes to hide/show rows by selected schema type.
@@ -76,6 +81,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'job_posting'    => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
+				'person'         => $this->p->schema->get_children_css_class( 'person', 'hide_schema_type' ),
 				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
@@ -314,6 +320,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_org_org_id', $org_site_names, 'long_name' ).$org_req_msg,
+				),
+
+				/**
+				 * Schema Person
+				 */
+				'subsection_person' => array(
+					'tr_class' => $schema_type_tr_class['person'],
+					'td_class' => 'subsection', 'header' => 'h4',
+					'label' => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_person_id' => array(
+					'tr_class' => $schema_type_tr_class['person'],
+					'label' => _x( 'Person', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_person_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_person_id', $person_names, 'long_name' ),
 				),
 
 				/**

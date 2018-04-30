@@ -440,6 +440,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_expire_time' => 'none',
 				'schema_job_expire_timezone' => '',
 				'schema_org_org_id' => 'none',			// Organization
+				'schema_person_id' => 'none',			// Person
 				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
 				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
 				'schema_recipe_prep_mins' => 0,			// Recipe Preperation Time (Mins)
