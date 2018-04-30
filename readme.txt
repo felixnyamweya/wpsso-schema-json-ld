@@ -197,7 +197,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 		* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 			* Schema Type [schema.org/BlogPosting](https://schema.org/BlogPosting)
 		* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
-	* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
+	* Schema Type [schema.org/Blog](https://schema.org/Blog)
 	* Schema Type [schema.org/Book](https://schema.org/Book)
 	* Schema Type [schema.org/Comment](https://schema.org/Comment)
 	* Schema Type [schema.org/Course](https://schema.org/Course)

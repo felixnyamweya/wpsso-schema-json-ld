@@ -245,7 +245,7 @@
 </ul></li>
 <li>Schema Type <a href="https://schema.org/TechArticle">schema.org/TechArticle</a></li>
 </ul></li>
-<li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a> (includes blogPost property with posts)</li>
+<li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a></li>
 <li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
 <li>Schema Type <a href="https://schema.org/Comment">schema.org/Comment</a></li>
 <li>Schema Type <a href="https://schema.org/Course">schema.org/Course</a></li>
