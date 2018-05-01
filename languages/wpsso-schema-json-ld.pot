@@ -178,114 +178,118 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:654
-msgid "The total time it takes to prepare this recipe."
+msgid "A person's job title (for example, Financial Manager)."
 msgstr ""
 
 #: lib/filters.php:660
-msgid "The total time it takes to cook this recipe."
+msgid "The total time it takes to prepare this recipe."
 msgstr ""
 
 #: lib/filters.php:666
-msgid "The total time it takes to prepare and cook this recipe."
+msgid "The total time it takes to cook this recipe."
 msgstr ""
 
 #: lib/filters.php:672
+msgid "The total time it takes to prepare and cook this recipe."
+msgstr ""
+
+#: lib/filters.php:678
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:678
+#: lib/filters.php:684
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:684
+#: lib/filters.php:690
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:690
+#: lib/filters.php:696
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:696
+#: lib/filters.php:702
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:702
+#: lib/filters.php:708
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:708
+#: lib/filters.php:714
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:714
+#: lib/filters.php:720
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:720
+#: lib/filters.php:726
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:726
+#: lib/filters.php:732
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:732
+#: lib/filters.php:738
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:738
+#: lib/filters.php:744
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:744
+#: lib/filters.php:750
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:750
+#: lib/filters.php:756
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:756
+#: lib/filters.php:762
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:762
+#: lib/filters.php:768
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:768
+#: lib/filters.php:774
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:774
+#: lib/filters.php:780
 msgid "Select a Schema type that best describes the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:780
+#: lib/filters.php:786
 msgid "The official and/or model name for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:786
+#: lib/filters.php:792
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:792
+#: lib/filters.php:798
 msgid "An image URL showing the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:798
+#: lib/filters.php:804
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."

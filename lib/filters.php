@@ -649,6 +649,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-meta-schema_person_job_title':
+
+					$text = __( 'A person\'s job title (for example, Financial Manager).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
 				case 'tooltip-meta-schema_recipe_prep_time':
 
 					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );
