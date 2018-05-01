@@ -319,15 +319,15 @@ msgid "Schema Item Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:119 lib/gpl/admin/term.php:69
-#: lib/gpl/admin/user.php:67 lib/pro/admin/post.php:130
-#: lib/pro/admin/term.php:80 lib/pro/admin/user.php:78
+#: lib/gpl/admin/user.php:66 lib/pro/admin/post.php:130
+#: lib/pro/admin/term.php:80 lib/pro/admin/user.php:77
 msgctxt "option label"
 msgid "Schema Alternate Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:125 lib/gpl/admin/term.php:74
-#: lib/gpl/admin/user.php:72 lib/pro/admin/post.php:136
-#: lib/pro/admin/term.php:85 lib/pro/admin/user.php:83
+#: lib/gpl/admin/user.php:71 lib/pro/admin/post.php:136
+#: lib/pro/admin/term.php:85 lib/pro/admin/user.php:82
 msgctxt "option label"
 msgid "Schema Description"
 msgstr ""
@@ -345,8 +345,8 @@ msgid "Additional Type URLs"
 msgstr ""
 
 #: lib/gpl/admin/post.php:143 lib/gpl/admin/term.php:91
-#: lib/gpl/admin/user.php:78 lib/pro/admin/post.php:154
-#: lib/pro/admin/term.php:102 lib/pro/admin/user.php:89
+#: lib/gpl/admin/user.php:76 lib/pro/admin/post.php:154
+#: lib/pro/admin/term.php:102 lib/pro/admin/user.php:87
 msgctxt "option label"
 msgid "SameAs Webpage URLs"
 msgstr ""
@@ -441,7 +441,8 @@ msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:271 lib/pro/admin/post.php:282
+#: lib/gpl/admin/post.php:271 lib/gpl/admin/user.php:89
+#: lib/pro/admin/post.php:282 lib/pro/admin/user.php:100
 msgctxt "option label"
 msgid "Job Title"
 msgstr ""
@@ -486,7 +487,8 @@ msgctxt "option label"
 msgid "Organization"
 msgstr ""
 
-#: lib/gpl/admin/post.php:331 lib/pro/admin/post.php:343
+#: lib/gpl/admin/post.php:331 lib/gpl/admin/user.php:86
+#: lib/pro/admin/post.php:343 lib/pro/admin/user.php:97
 msgctxt "metabox title"
 msgid "Person Information"
 msgstr ""
