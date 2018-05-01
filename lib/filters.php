@@ -514,150 +514,299 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		public function filter_messages_tooltip_meta( $text, $idx ) {
+
 			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 ) {
 				return $text;
 			}
+
 			switch ( $idx ) {
+
 				case 'tooltip-meta-schema_type':
+
 					$text = __( 'Select a Schema item type that best describes the main content of this webpage.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_addl_type_url':
+
 					$text = sprintf( __( 'Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/">The Product Types Ontology</a>' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_sameas_url':
+
 					$text = __( 'Additional (and optional) webpage reference URLs that unambiguously indicate the item\'s identity. For example, the URL of the item\'s Wikipedia page, Wikidata entry, IMDB page, official website, etc.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_pub_org_id':
+
 					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_headline':
+
 					$text = __( 'A custom headline for the Schema CreativeWork item type and/or its sub-type.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_course_provider_id':
+
 					$text = __( 'Select an organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_org_id':
+
 					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_perf_id':
+
 					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_start':
+
 					$text = __( 'Select the event start date and time.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_end':
+
 					$text = __( 'Select the event end date and time.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_offers_start':
+
 					$text = __( 'The date and time when tickets go on sale.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_offers_end':
+
 					$text = __( 'The date and time when tickets are no longer on sale.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_event_offers':
+
 					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_title':
+
 					$text = __( 'The title of this job, which may be different than the WordPress post / page title.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_org_id':
+
 					$text = __( 'Optionally select a different organization for the hiring organization.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_location_id':
+
 					$text = __( 'Optionally select a different address / place / location for the job location.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_salary':
+
 					$text = __( 'Optionally provide details on the base salary. The base salary must be numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency symbols, as these are not valid numeric values.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_empl_type':
+
 					$text = sprintf( __( 'Check one or more Google approved employment types (see <a href="%s">Google\'s Job Posting guidelines</a> for more information).', 'wpsso-schema-json-ld' ), 'https://developers.google.com/search/docs/data-types/job-postings' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_job_expire':
+
 					$text = __( 'Select a job posting expiration date and time. If a job posting never expires, or you do not know when the job will expire, do not select an expiration date and time.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_org_org_id':
+
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
+				case 'tooltip-meta-schema_person_id':
+
+					$role_label_transl = _x( 'Person', 'user role', 'wpsso' );	// use the wpsso translation domain
+
+					$text = sprintf( __( 'Select a person from the list of eligible WordPress users &mdash; to be included in this list, a user must be members of the WordPress "%s" role.', 'wpsso-schema-json-ld' ), $role_label_transl );
+
+				 	break;
+
 				case 'tooltip-meta-schema_recipe_prep_time':
+
 					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_cook_time':
+
 					$text = __( 'The total time it takes to cook this recipe.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_total_time':
+
 					$text = __( 'The total time it takes to prepare and cook this recipe.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_course':
+
 					$text = __( 'The course name for this recipe (example: Appetizer, Entr&eacute;e, Main Course / Main Dish, Dessert, Side-dish, etc.).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_cuisine':
+
 					$text = __( 'The type of cuisine for this recipe (example: French, Indian, Italian, Japanese, Thai, etc.).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_yield':
+
 					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_serv':
+
 					$text = __( 'The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_cal':
+
 					$text = __( 'The number of calories per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_prot':
+
 					$text = __( 'The number of grams of protein per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_fib':
+
 					$text = __( 'The number of grams of fiber per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_carb':
+
 					$text = __( 'The number of grams of carbohydrates per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_sugar':
+
 					$text = __( 'The number of grams of sugar per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_sod':
+
 					$text = __( 'The number of milligrams of sodium per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_fat':
+
 					$text = __( 'The number of grams of fat per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_trans_fat':
+
 					$text = __( 'The number of grams of trans fat per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_sat_fat':
+
 					$text = __( 'The number of grams of saturated fat per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_unsat_fat':
+
 					$text = __( 'The number of grams of unsaturated fat per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_nutri_chol':
+
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_ingredients':
+
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_recipe_instructions':
+
 					$text = __( 'A list of instructions for this recipe (example: "beat eggs", "add and mix flour", etc.).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_review_item_type':
+
 					$text = __( 'Select a Schema type that best describes the subject being reviewed.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_review_item_name':
+
 					$text = __( 'The official and/or model name for the subject being reviewed.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_review_item_url':
+
 					$text = __( 'A webpage URL for the subject being reviewed.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_review_item_image_url':
+
 					$text = __( 'An image URL showing the subject being reviewed.', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 				case 'tooltip-meta-schema_review_rating':
+
 					$text = __( 'A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5).', 'wpsso-schema-json-ld' );
+
 				 	break;
+
 			}
+
 			return $text;
 		}
 
-		// hooked to 'wpssojson_status_gpl_features'
+		/**
+		 * Hooked to 'wpssojson_status_gpl_features'.
+		 */
 		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
 			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
 				if ( $sub === 'admin' ) { // skip status for admin menus and tabs
@@ -675,7 +824,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 
-		// hooked to 'wpssojson_status_pro_features'
+		/**
+		 * Hooked to 'wpssojson_status_pro_features'.
+		 */
 		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
 			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
