@@ -220,6 +220,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_event_offer_name':
 				case 'schema_job_title':
 				case 'schema_job_currency':
+				case 'schema_person_job_title':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
 				case 'schema_recipe_yield':
