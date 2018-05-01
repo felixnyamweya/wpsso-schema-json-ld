@@ -569,7 +569,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
-	* Added a "Person Information" section to the Social and Search Optimization metabox for the https://schema.org/Person type.
+	* Added a "Person Information" section to the post Social and Search Optimization metabox for the https://schema.org/Person type.
+	* Added a "Person Information" section and "Job Title" option in the Users &gt; Your SSO settings page metabox.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -658,7 +659,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.25.0-b.1 =
 
-(2018/05/01) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
+(2018/05/01) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature. Added a "Person Information" section to the Social and Search Optimization metabox.
 
 = 1.24.6 =
 
