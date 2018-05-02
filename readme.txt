@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
 WC Tested Up To: 3.3.5
-Stable Tag: 1.24.6
+Stable Tag: 1.25.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -575,85 +575,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Developer Notes*
 	* None
-
-**Version 1.24.6 (2018/04/05)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-**Version 1.24.5 (2018/03/29)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed the missing WP_Query for a blog posts page in the back-end.
-* *Developer Notes*
-	* None
-
-**Version 1.24.4 (2018/03/24)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.24.3 (2018/03/13)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* Fixed an array argument error in WpssoJsonProHeadProduct::check_itemprop_content_map().
-* *Developer Notes*
-	* None
-
-**Version 1.24.2 (2018/03/10)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a list of human-readable checked IDs when the "Show Cache Purge Count on Update" option is checked *and* the WP_DEBUG contant is true.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.24.1 (2018/03/04)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored transient cache index values to include WP query variables for extra uniqueness.
-	* Added a new filter to (optionally) define media as the main entity for the webpage.
-		* 'wpsso_json_media_main_prop' ( $main_prop, $mod );	// empty string by default
-
-**Version 1.24.0 (2018/02/24)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the WpssoJson `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
 
