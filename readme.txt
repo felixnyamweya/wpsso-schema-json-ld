@@ -563,7 +563,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.25.0-b.1 (2018/05/01)**
+**Version 1.25.0 (2018/05/02)**
 
 * *New Features*
 	* None
@@ -657,11 +657,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.25.0-b.1 =
+= 1.25.0 =
 
-(2018/05/01) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature. Added a "Person Information" section to the Social and Search Optimization metabox.
-
-= 1.24.6 =
-
-(2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
+(2018/05/02) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature. Added a "Person Information" section to the Social and Search Optimization metabox.
 
