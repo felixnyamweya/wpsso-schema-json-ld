@@ -32,8 +32,6 @@ Includes special markup and optimization features for Pinterest, as Pinterest do
 
 Provides complete markup for WooCommerce products and all variations (Pro version) &mdash; including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.
 
-WPSSO Schema JSON-LD Markup is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
-
 <h3>Users Love WPSSO Schema JSON-LD Markup</h3>
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin is heaven sent. I know little about SSO and this has taken care of everything. The support makes this an even better plugin to have. Keep up the great work!" - [kevanchetty](https://wordpress.org/support/topic/best-plugin-and-support-10/)
@@ -89,50 +87,56 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 &#x0229b; &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.
 
-&#x0229b; &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.
+&#x0229b; &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
 
-* **WPSSO Core Pro Integrated 3rd Party Plugins**
-	* All in One SEO Pack
-	* bbPress
-	* BuddyPress (including Group Forum Topics)
-	* Co-Authors Plus (including Guest Authors)
-	* Easy Digital Downloads
-	* Gravity Forms + GravityView
-	* HeadSpace2 SEO
-	* MarketPress - WordPress eCommerce
-	* NextGEN Gallery
-	* Polylang
-	* rtMedia for WordPress, BuddyPress and bbPress
-	* The Events Calendar
-	* The SEO Framework
-	* WooCommerce (versions 1, 2, and 3)
-	* WordPress REST API (version 2)
-	* WP eCommerce
-	* Yoast SEO (aka WordPress SEO)
-	* Yotpo Social Reviews for WooCommerce
-* **WPSSO Core Pro Integrated Service APIs**
-	* Bitly
-	* Facebook Embedded Videos
-	* Google URL Shortener
-	* Gravatar (Author Image)
-	* Ow.ly
-	* Slideshare Presentations
-	* Soundcloud Tracks (for Twitter Player Card)
-	* TinyURL
-	* Vimeo Videos
-	* Wistia Videos
-	* WordPress Video Shortcode (and Self-Hosted Videos)
-	* Your Own URL Shortener (YOURLS)
-	* YouTube Videos and Playlists
+**Integration with 3rd Party Plugins**
+
+* All in One SEO Pack
+* bbPress
+* BuddyPress (including Group Forum Topics)
+* Co-Authors Plus (including Guest Authors)
+* Easy Digital Downloads
+* Gravity Forms + GravityView
+* HeadSpace2 SEO
+* MarketPress - WordPress eCommerce
+* NextCellent Gallery - NextGEN Legacy
+* NextGEN Gallery
+* Polylang
+* rtMedia for WordPress, BuddyPress and bbPress
+* The Events Calendar
+* The SEO Framework
+* WooCommerce (versions 1, 2, and 3)
+* WordPress REST API (version 2)
+* WP eCommerce
+* WP Meta SEO
+* Yoast SEO (aka WordPress SEO)
+* Yotpo Social Reviews for WooCommerce
+
+**Integration with Service APIs**
+
+* Bitly
+* Facebook Embedded Videos
+* Google URL Shortener
+* Gravatar (Author Image)
+* Ow.ly
+* Slideshare Presentations
+* Soundcloud Tracks (for Twitter Player Card)
+* TinyURL
+* Vimeo Videos
+* Wistia Videos
+* WordPress Video Shortcode (and Self-Hosted Videos)
+* Your Own URL Shortener (YOURLS)
+* YouTube Videos and Playlists
 
 &#x0229b; &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
 
-* **Integration with 3rd Party Plugins**
-	* Simple Job Board
-	* WP Job Manager
-	* WP Product Review
-	* WP Recipe Maker
-	* WP Ultimate Recipe
+**Integration with 3rd Party Plugins**
+
+* Simple Job Board
+* WP Job Manager
+* WP Product Review
+* WP Recipe Maker
+* WP Ultimate Recipe
 
 &#x0229b; &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
 

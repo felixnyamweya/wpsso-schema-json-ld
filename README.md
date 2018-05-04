@@ -27,8 +27,6 @@
 
 <p>Provides complete markup for WooCommerce products and all variations (Pro version) &mdash; including product images, product variations, custom product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more.</p>
 
-<p>WPSSO Schema JSON-LD Markup is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
-
 <h3>Users Love WPSSO Schema JSON-LD Markup</h3>
 
 <p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin is heaven sent. I know little about SSO and this has taken care of everything. The support makes this an even better plugin to have. Keep up the great work!" - <a href="https://wordpress.org/support/topic/best-plugin-and-support-10/">kevanchetty</a></p>
@@ -88,10 +86,9 @@
 
 <p>&#x0229b; &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.</p>
 
-<p>&#x0229b; &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO, and are automatically loaded if/when the supported plugins and/or services are required.</p>
+<p>&#x0229b; &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.</p>
 
-<ul>
-<li><strong>WPSSO Core Pro Integrated 3rd Party Plugins</strong>
+<p><strong>Integration with 3rd Party Plugins</strong></p>
 
 <ul>
 <li>All in One SEO Pack</li>
@@ -102,6 +99,7 @@
 <li>Gravity Forms + GravityView</li>
 <li>HeadSpace2 SEO</li>
 <li>MarketPress - WordPress eCommerce</li>
+<li>NextCellent Gallery - NextGEN Legacy</li>
 <li>NextGEN Gallery</li>
 <li>Polylang</li>
 <li>rtMedia for WordPress, BuddyPress and bbPress</li>
@@ -110,10 +108,12 @@
 <li>WooCommerce (versions 1, 2, and 3)</li>
 <li>WordPress REST API (version 2)</li>
 <li>WP eCommerce</li>
+<li>WP Meta SEO</li>
 <li>Yoast SEO (aka WordPress SEO)</li>
 <li>Yotpo Social Reviews for WooCommerce</li>
-</ul></li>
-<li><strong>WPSSO Core Pro Integrated Service APIs</strong>
+</ul>
+
+<p><strong>Integration with Service APIs</strong></p>
 
 <ul>
 <li>Bitly</li>
@@ -129,13 +129,11 @@
 <li>WordPress Video Shortcode (and Self-Hosted Videos)</li>
 <li>Your Own URL Shortener (YOURLS)</li>
 <li>YouTube Videos and Playlists</li>
-</ul></li>
 </ul>
 
 <p>&#x0229b; &nbsp; WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:</p>
 
-<ul>
-<li><strong>Integration with 3rd Party Plugins</strong>
+<p><strong>Integration with 3rd Party Plugins</strong></p>
 
 <ul>
 <li>Simple Job Board</li>
@@ -143,7 +141,6 @@
 <li>WP Product Review</li>
 <li>WP Recipe Maker</li>
 <li>WP Ultimate Recipe</li>
-</ul></li>
 </ul>
 
 <p>&#x0229b; &nbsp; Adds <em>additional customizable option values</em> to the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:</p>
