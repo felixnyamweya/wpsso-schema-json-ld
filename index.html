@@ -48,7 +48,7 @@
 
 <p>Includes the complete content text (along with a description text), comments, reviews, and their replies to the Schema CreativeWork markup and its sub-types (Article, BlogPosting, Recipe, Review, WebPage, etc.) for even better Google &amp; Bing SEO ranking. ;-)</p>
 
-<p>Allows you to select a different Schema than "BlogPosting" for all your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</p>
+<p>Allows you to select a different Schema than BlogPosting for all your <a href="https://wordpress.org/plugins/amp/">AMP</a> pages.</p>
 
 <p>Includes special markup and optimization features for Pinterest, as Pinterest does not (currently) read the Schema JSON-LD format &mdash; WPSSO Core and the WPSSO Schema JSON-LD Markup (aka WPSSO JSON) add-on include special provisions to include unique Schema meta tags for Pinterest, along with methods to prevent conflicts between incompatible Pinterest / Facebook Open Graph meta tag values.</p>
 
@@ -94,7 +94,12 @@
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO markup.</p>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a> and <a href="https://schema.org/WebPage">schema.org/WebPage</a>.</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (<em>all other Schema types and sub-types</em> are available in the Pro version):</p>
+
+<ul>
+<li><a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
+<li><a href="https://schema.org/WebPage">schema.org/WebPage</a> (10 sub-types)</li>
+</ul>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from <a href="https://surniaulula.github.io/wpsso-schema-json-ld/">GitHub</a> or <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WordPress.org</a>.</p>
 
@@ -175,8 +180,8 @@
 <li>Schema Description</li>
 <li>Main Entity of Page</li>
 <li>Schema Item Type</li>
-<li>Additional Type URLs</li>
-<li>SameAs Webpage URLs</li>
+<li>Microdata Type URLs</li>
+<li>SameAs / Canonical URLs</li>
 </ul></li>
 <li>Creative Work Information
 
@@ -220,14 +225,14 @@
 <ul>
 <li>Person</li>
 </ul></li>
-<li>Recipe Information
+<li>HowTo / Recipe Information
 
 <ul>
 <li>Recipe Preparation Time </li>
 <li>Recipe Cooking Time </li>
 <li>Recipe Total Time </li>
 <li>Recipe Total Calories </li>
-<li>Recipe Quantity </li>
+<li>Recipe Makes </li>
 <li>Recipe Ingredients </li>
 <li>Recipe Instructions </li>
 <li>Recipe Nutrition Information per Serving </li>
@@ -258,405 +263,30 @@
 </ul></li>
 </ul>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types, including <a href="https://schema.org/ItemList">schema.org/ItemList</a> for Google's mobile carousel feature, along with hundreds more Schema types!</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for <em>all Schema types and sub-types</em>, including <a href="https://schema.org/ItemList">schema.org/ItemList</a> for Google's mobile carousel feature:</p>
 
 <ul>
-<li>Schema Type <a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a> <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Article">schema.org/Article</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/NewsArticle">schema.org/NewsArticle</a></li>
-<li>Schema Type <a href="https://schema.org/Report">schema.org/Report</a></li>
-<li>Schema Type <a href="https://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a></li>
-<li>Schema Type <a href="https://schema.org/SocialMediaPosting">schema.org/SocialMediaPosting</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/BlogPosting">schema.org/BlogPosting</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/TechArticle">schema.org/TechArticle</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Blog">schema.org/Blog</a></li>
-<li>Schema Type <a href="https://schema.org/Book">schema.org/Book</a></li>
-<li>Schema Type <a href="https://schema.org/Comment">schema.org/Comment</a></li>
-<li>Schema Type <a href="https://schema.org/Course">schema.org/Course</a></li>
-<li>Schema Type <a href="https://schema.org/Episode">schema.org/Episode</a></li>
-<li>Schema Type <a href="https://schema.org/Game">schema.org/Game</a></li>
-<li>Schema Type <a href="https://schema.org/Map">schema.org/Map</a></li>
-<li>Schema Type <a href="https://schema.org/MediaObject">schema.org/MediaObject</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AudioObject">schema.org/AudioObject</a></li>
-<li>Schema Type <a href="https://schema.org/DataDownload">schema.org/DataDownload</a></li>
-<li>Schema Type <a href="https://schema.org/ImageObject">schema.org/ImageObject</a></li>
-<li>Schema Type <a href="https://schema.org/MusicVideoObject">schema.org/MusicVideoObject</a></li>
-<li>Schema Type <a href="https://schema.org/VideoObject">schema.org/VideoObject</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Menu">schema.org/Menu</a></li>
-<li>Schema Type <a href="https://schema.org/MenuSection">schema.org/MenuSection</a></li>
-<li>Schema Type <a href="https://schema.org/Message">schema.org/Message</a></li>
-<li>Schema Type <a href="https://schema.org/Movie">schema.org/Movie</a></li>
-<li>Schema Type <a href="https://schema.org/MusicComposition">schema.org/MusicComposition</a></li>
-<li>Schema Type <a href="https://schema.org/MusicPlaylist">schema.org/MusicPlaylist</a></li>
-<li>Schema Type <a href="https://schema.org/MusicRecording">schema.org/MusicRecording</a></li>
-<li>Schema Type <a href="https://schema.org/Painting">schema.org/Painting</a></li>
-<li>Schema Type <a href="https://schema.org/Photograph">schema.org/Photograph</a></li>
-<li>Schema Type <a href="https://schema.org/Question">schema.org/Question</a></li>
-<li>Schema Type <a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
-<li>Schema Type <a href="https://schema.org/Review">schema.org/Review</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/ClaimReview">schema.org/ClaimReview</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Sculpture">schema.org/Sculpture</a></li>
-<li>Schema Type <a href="https://schema.org/Series">schema.org/Series</a></li>
-<li>Schema Type <a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a></li>
-<li>Schema Type <a href="https://schema.org/SoftwareSourceCode">schema.org/SoftwareSourceCode</a></li>
-<li>Schema Type <a href="https://schema.org/TVSeason">schema.org/TVSeason</a></li>
-<li>Schema Type <a href="https://schema.org/TVSeries">schema.org/TVSeries</a></li>
-<li>Schema Type <a href="https://schema.org/VisualArtwork">schema.org/VisualArtwork</a></li>
-<li>Schema Type <a href="https://schema.org/WebPage">schema.org/WebPage</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AboutPage">schema.org/AboutPage</a></li>
-<li>Schema Type <a href="https://schema.org/CheckoutPage">schema.org/CheckoutPage</a></li>
-<li>Schema Type <a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a></li>
-<li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
-<li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalWebPage">health-lifesci.schema.org/MedicalWebPage</a></li>
-<li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
-<li>Schema Type <a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
-<li>Schema Type <a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Event">schema.org/Event</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/BusinessEvent">schema.org/BusinessEvent</a></li>
-<li>Schema Type <a href="https://schema.org/ChildrensEvent">schema.org/ChildrensEvent</a></li>
-<li>Schema Type <a href="https://schema.org/DanceEvent">schema.org/DanceEvent</a></li>
-<li>Schema Type <a href="https://schema.org/DeliveryEvent">schema.org/DeliveryEvent</a></li>
-<li>Schema Type <a href="https://schema.org/EducationEvent">schema.org/EducationEvent</a></li>
-<li>Schema Type <a href="https://schema.org/ExhibitionEvent">schema.org/ExhibitionEvent</a></li>
-<li>Schema Type <a href="https://schema.org/Festival">schema.org/Festival</a></li>
-<li>Schema Type <a href="https://schema.org/FoodEvent">schema.org/FoodEvent</a></li>
-<li>Schema Type <a href="https://schema.org/LiteraryEvent">schema.org/LiteraryEvent</a></li>
-<li>Schema Type <a href="https://schema.org/MusicEvent">schema.org/MusicEvent</a></li>
-<li>Schema Type <a href="https://schema.org/PublicationEvent">schema.org/PublicationEvent</a></li>
-<li>Schema Type <a href="https://schema.org/SaleEvent">schema.org/SaleEvent</a></li>
-<li>Schema Type <a href="https://schema.org/ScreeningEvent">schema.org/ScreeningEvent</a></li>
-<li>Schema Type <a href="https://schema.org/SocialEvent">schema.org/SocialEvent</a></li>
-<li>Schema Type <a href="https://schema.org/SportsEvent">schema.org/SportsEvent</a></li>
-<li>Schema Type <a href="https://schema.org/TheaterEvent">schema.org/TheaterEvent</a></li>
-<li>Schema Type <a href="https://schema.org/VisualArtsEvent">schema.org/VisualArtsEvent</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Intangible">schema.org/Intangible</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Enumeration">schema.org/Enumeration</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Specialty">schema.org/Specialty</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/MedicalSpecialty">schema.org/MedicalSpecialty</a>
-
-<ul>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Anesthesia">health-lifesci.schema.org/Anesthesia</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Cardiovascular">health-lifesci.schema.org/Cardiovascular</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/CommunityHealth">health-lifesci.schema.org/CommunityHealth</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Dentistry">health-lifesci.schema.org/Dentistry</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Dermatologic">health-lifesci.schema.org/Dermatologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Dermatology">health-lifesci.schema.org/Dermatology</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/DietNutrition">health-lifesci.schema.org/DietNutrition</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Emergency">health-lifesci.schema.org/Emergency</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Endocrine">health-lifesci.schema.org/Endocrine</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Gastroenterologic">health-lifesci.schema.org/Gastroenterologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Genetic">health-lifesci.schema.org/Genetic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Geriatric">health-lifesci.schema.org/Geriatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Gynecologic">health-lifesci.schema.org/Gynecologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Hematologic">health-lifesci.schema.org/Hematologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Infectious">health-lifesci.schema.org/Infectious</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/LaboratoryScience">health-lifesci.schema.org/LaboratoryScience</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Midwifery">health-lifesci.schema.org/Midwifery</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Musculoskeletal">health-lifesci.schema.org/Musculoskeletal</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Neurologic">health-lifesci.schema.org/Neurologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Nursing">health-lifesci.schema.org/Nursing</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Obstetric">health-lifesci.schema.org/Obstetric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/OccupationalTherapy">health-lifesci.schema.org/OccupationalTherapy</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Oncologic">health-lifesci.schema.org/Oncologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Optometric">health-lifesci.schema.org/Optometric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Otolaryngologic">health-lifesci.schema.org/Otolaryngologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Pathology">health-lifesci.schema.org/Pathology</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Pediatric">health-lifesci.schema.org/Pediatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PharmacySpecialty">health-lifesci.schema.org/PharmacySpecialty</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Physiotherapy">health-lifesci.schema.org/Physiotherapy</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PlasticSurgery">health-lifesci.schema.org/PlasticSurgery</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Podiatric">health-lifesci.schema.org/Podiatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PrimaryCare">health-lifesci.schema.org/PrimaryCare</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Psychiatric">health-lifesci.schema.org/Psychiatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PublicHealth">health-lifesci.schema.org/PublicHealth</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Pulmonary">health-lifesci.schema.org/Pulmonary</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Radiography">health-lifesci.schema.org/Radiography</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Renal">health-lifesci.schema.org/Renal</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/RespiratoryTherapy">health-lifesci.schema.org/RespiratoryTherapy</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Rheumatologic">health-lifesci.schema.org/Rheumatologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/SpeechPathology">health-lifesci.schema.org/SpeechPathology</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Surgical">health-lifesci.schema.org/Surgical</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Toxicologic">health-lifesci.schema.org/Toxicologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Urologic">health-lifesci.schema.org/Urologic</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/ItemList">schema.org/Enumeration</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Organization">schema.org/Organization</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Airline">schema.org/Airline</a></li>
-<li>Schema Type <a href="https://schema.org/Corporation">schema.org/Corporation</a></li>
-<li>Schema Type <a href="https://schema.org/EducationalOrganization">schema.org/EducationalOrganization</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/CollegeOrUniversity">schema.org/CollegeOrUniversity</a></li>
-<li>Schema Type <a href="https://schema.org/ElementarySchool">schema.org/ElementarySchool</a></li>
-<li>Schema Type <a href="https://schema.org/HighSchool">schema.org/HighSchool</a></li>
-<li>Schema Type <a href="https://schema.org/MiddleSchool">schema.org/MiddleSchool</a></li>
-<li>Schema Type <a href="https://schema.org/Preschool">schema.org/Preschool</a></li>
-<li>Schema Type <a href="https://schema.org/School">schema.org/School</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/GovernmentOrganization">schema.org/GovernmentOrganization</a></li>
-<li>Schema Type <a href="https://schema.org/MedicalOrganization">schema.org/MedicalOrganization</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Dentist">schema.org/Dentist</a></li>
-<li>Schema Type <a href="https://schema.org/Pharmacy">schema.org/Pharmacy</a></li>
-<li>Schema Type <a href="https://schema.org/Physician">schema.org/Physician</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/NGO">schema.org/NGO</a></li>
-<li>Schema Type <a href="https://schema.org/PerformingGroup">schema.org/PerformingGroup</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/DanceGroup">schema.org/DanceGroup</a></li>
-<li>Schema Type <a href="https://schema.org/MusicGroup">schema.org/MusicGroup</a></li>
-<li>Schema Type <a href="https://schema.org/TheaterGroup">schema.org/TheaterGroup</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/SportsOrganization">schema.org/SportsOrganization</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/SportsTeam">schema.org/SportsTeam</a></li>
-</ul></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Person">schema.org/Person</a></li>
-<li>Schema Type <a href="https://schema.org/Place">schema.org/Place</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Accommodation">schema.org/Accommodation</a></li>
-<li>Schema Type <a href="https://schema.org/AdministrativeArea">schema.org/AdministrativeArea</a></li>
-<li>Schema Type <a href="https://schema.org/CivicStructure">schema.org/CivicStructure</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Airport">schema.org/Airport</a></li>
-<li>Schema Type <a href="https://schema.org/Aquarium">schema.org/Aquarium</a></li>
-<li>Schema Type <a href="https://schema.org/Beach">schema.org/Beach</a></li>
-<li>Schema Type <a href="https://schema.org/Bridge">schema.org/Bridge</a></li>
-<li>Schema Type <a href="https://schema.org/BusStation">schema.org/BusStation</a></li>
-<li>Schema Type <a href="https://schema.org/BusStop">schema.org/BusStop</a></li>
-<li>Schema Type <a href="https://schema.org/Cemetary">schema.org/Cemetary</a></li>
-<li>Schema Type <a href="https://schema.org/Crematorium">schema.org/Crematorium</a></li>
-<li>Schema Type <a href="https://schema.org/EventVenu">schema.org/EventVenu</a></li>
-<li>Schema Type <a href="https://schema.org/Park">schema.org/Park</a></li>
-<li>Schema Type <a href="https://schema.org/ParkingFacility">schema.org/ParkingFacility</a></li>
-<li>Schema Type <a href="https://schema.org/PerformingArtsTheater">schema.org/PerformingArtsTheater</a></li>
-<li>Schema Type <a href="https://schema.org/PlaceOfWorship">schema.org/PlaceOfWorship</a></li>
-<li>Schema Type <a href="https://schema.org/Playground">schema.org/Playground</a></li>
-<li>Schema Type <a href="https://schema.org/RVPark">schema.org/RVPark</a></li>
-<li>Schema Type <a href="https://schema.org/SubwayStation">schema.org/SubwayStation</a></li>
-<li>Schema Type <a href="https://schema.org/TaxiStand">schema.org/TaxiStand</a></li>
-<li>Schema Type <a href="https://schema.org/TrainStation">schema.org/TrainStation</a></li>
-<li>Schema Type <a href="https://schema.org/Zoo">schema.org/Zoo</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/LandmarksOrHistoricalBuildings">schema.org/LandmarksOrHistoricalBuildings</a></li>
-<li>Schema Type <a href="https://schema.org/LocalBusiness">schema.org/LocalBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AnimalShelter">schema.org/AnimalShelter</a></li>
-<li>Schema Type <a href="https://schema.org/AutomotiveBusiness">schema.org/AutomotiveBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AutoBodyShop">schema.org/AutoBodyShop</a></li>
-<li>Schema Type <a href="https://schema.org/AutoDealer">schema.org/AutoDealer</a></li>
-<li>Schema Type <a href="https://schema.org/AutoPartsStore">schema.org/AutoPartsStore</a></li>
-<li>Schema Type <a href="https://schema.org/AutoRental">schema.org/AutoRental</a></li>
-<li>Schema Type <a href="https://schema.org/AutoRepair">schema.org/AutoRepair</a></li>
-<li>Schema Type <a href="https://schema.org/AutoWash">schema.org/AutoWash</a></li>
-<li>Schema Type <a href="https://schema.org/GasStation">schema.org/GasStation</a></li>
-<li>Schema Type <a href="https://schema.org/MotorcycleDealer">schema.org/MotorcycleDealer</a></li>
-<li>Schema Type <a href="https://schema.org/MotorcycleRepair">schema.org/MotorcycleRepair</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/ChildCare">schema.org/ChildCare</a></li>
-<li>Schema Type <a href="https://schema.org/DryCleaningOrLaundry">schema.org/DryCleaningOrLaundry</a></li>
-<li>Schema Type <a href="https://schema.org/EmergencyService">schema.org/EmergencyService</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/FireStation">schema.org/FireStation</a></li>
-<li>Schema Type <a href="https://schema.org/Hospital">schema.org/Hospital</a></li>
-<li>Schema Type <a href="https://schema.org/PoliceStation">schema.org/PoliceStation</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/EmploymentAgency">schema.org/EmploymentAgency</a></li>
-<li>Schema Type <a href="https://schema.org/EntertainmentBusiness">schema.org/EntertainmentBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AdultEntertainment">schema.org/AdultEntertainment</a></li>
-<li>Schema Type <a href="https://schema.org/AmusementPark">schema.org/AmusementPark</a></li>
-<li>Schema Type <a href="https://schema.org/ArtGallery">schema.org/ArtGallery</a></li>
-<li>Schema Type <a href="https://schema.org/Casino">schema.org/Casino</a></li>
-<li>Schema Type <a href="https://schema.org/ComedyClub">schema.org/ComedyClub</a></li>
-<li>Schema Type <a href="https://schema.org/MovieTheatre">schema.org/MovieTheatre</a></li>
-<li>Schema Type <a href="https://schema.org/NightClub">schema.org/NightClub</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/FinancialService">schema.org/FinancialService</a></li>
-<li>Schema Type <a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Bakery">schema.org/Bakery</a></li>
-<li>Schema Type <a href="https://schema.org/BarOrPub">schema.org/BarOrPub</a></li>
-<li>Schema Type <a href="https://schema.org/Brewery">schema.org/Brewery</a></li>
-<li>Schema Type <a href="https://schema.org/CafeOrCoffeeShop">schema.org/CafeOrCoffeeShop</a></li>
-<li>Schema Type <a href="https://schema.org/FastFoodRestaurant">schema.org/FastFoodRestaurant</a></li>
-<li>Schema Type <a href="https://schema.org/IceCreamShop">schema.org/IceCreamShop</a></li>
-<li>Schema Type <a href="https://schema.org/Restaurant">schema.org/Restaurant</a></li>
-<li>Schema Type <a href="https://schema.org/Winery">schema.org/Winery</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/GovernmentOffice">schema.org/GovernmentOffice</a></li>
-<li>Schema Type <a href="https://schema.org/HealthAndBeautyBusiness">schema.org/HealthAndBeautyBusiness</a></li>
-<li>Schema Type <a href="https://schema.org/HomeAndConstructionBusiness">schema.org/HomeAndConstructionBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/Electrician">schema.org/Electrician</a></li>
-<li>Schema Type <a href="https://schema.org/GeneralContractor">schema.org/GeneralContractor</a></li>
-<li>Schema Type <a href="https://schema.org/HVACBusiness">schema.org/HVACBusiness</a></li>
-<li>Schema Type <a href="https://schema.org/HousePainter">schema.org/HousePainter</a></li>
-<li>Schema Type <a href="https://schema.org/Locksmith">schema.org/Locksmith</a></li>
-<li>Schema Type <a href="https://schema.org/MovingCompany">schema.org/MovingCompany</a></li>
-<li>Schema Type <a href="https://schema.org/Plumber">schema.org/Plumber</a></li>
-<li>Schema Type <a href="https://schema.org/RoofingContractor">schema.org/RoofingContractor</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/InternetCafe">schema.org/InternetCafe</a></li>
-<li>Schema Type <a href="https://schema.org/LegalService">schema.org/LegalService</a></li>
-<li>Schema Type <a href="https://schema.org/Library">schema.org/Library</a></li>
-<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/BedAndBreakfast">schema.org/BedAndBreakfast</a></li>
-<li>Schema Type <a href="https://schema.org/Campground">schema.org/Campground</a></li>
-<li>Schema Type <a href="https://schema.org/LodgingBusiness">schema.org/LodgingBusiness</a></li>
-<li>Schema Type <a href="https://chema.org/Hostel">chema.org/Hostel</a></li>
-<li>Schema Type <a href="https://schema.org/Motel">schema.org/Motel</a></li>
-<li>Schema Type <a href="https://schema.org/Resort">schema.org/Resort</a></li>
-</ul></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalBusiness">health-lifesci.schema.org/MedicalBusiness</a>
-
-<ul>
-<li>Schema Type <a href="https://health-lifesci.schema.org/CommunityHealth">health-lifesci.schema.org/CommunityHealth</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Dentist">health-lifesci.schema.org/Dentist</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Dermatology">health-lifesci.schema.org/Dermatology</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/DietNutrition">health-lifesci.schema.org/DietNutrition</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Emergency">health-lifesci.schema.org/Emergency</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Geriatric">health-lifesci.schema.org/Geriatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Gynecologic">health-lifesci.schema.org/Gynecologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalClinic">health-lifesci.schema.org/MedicalClinic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Midwifery">health-lifesci.schema.org/Midwifery</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Nursing">health-lifesci.schema.org/Nursing</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Obstetric">health-lifesci.schema.org/Obstetric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Oncologic">health-lifesci.schema.org/Oncologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Optician">health-lifesci.schema.org/Optician</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Optometric">health-lifesci.schema.org/Optometric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Otolaryngologic">health-lifesci.schema.org/Otolaryngologic</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Pediatric">health-lifesci.schema.org/Pediatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Pharmacy">health-lifesci.schema.org/Pharmacy</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Physician">health-lifesci.schema.org/Physician</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Physiotherapy">health-lifesci.schema.org/Physiotherapy</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PlasticSurgery">health-lifesci.schema.org/PlasticSurgery</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Podiatric">health-lifesci.schema.org/Podiatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PrimaryCare">health-lifesci.schema.org/PrimaryCare</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/Psychiatric">health-lifesci.schema.org/Psychiatric</a></li>
-<li>Schema Type <a href="https://health-lifesci.schema.org/PublicHealth">health-lifesci.schema.org/PublicHealth</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/ProfessionalService">schema.org/ProfessionalService</a></li>
-<li>Schema Type <a href="https://schema.org/RadioStation">schema.org/RadioStation</a></li>
-<li>Schema Type <a href="https://schema.org/RealEstateAgent">schema.org/RealEstateAgent</a></li>
-<li>Schema Type <a href="https://schema.org/RecyclingCenter">schema.org/RecyclingCenter</a></li>
-<li>Schema Type <a href="https://schema.org/SelfStorage">schema.org/SelfStorage</a></li>
-<li>Schema Type <a href="https://schema.org/ShoppingCenter">schema.org/ShoppingCenter</a></li>
-<li>Schema Type <a href="https://schema.org/SportsActivityLocation">schema.org/SportsActivityLocation</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/StadiumOrArena">schema.org/StadiumOrArena</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Store">schema.org/Store</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/AutoPartsStore">schema.org/AutoPartsStore</a></li>
-<li>Schema Type <a href="https://schema.org/BikeStore">schema.org/BikeStore</a></li>
-<li>Schema Type <a href="https://schema.org/BookStore">schema.org/BookStore</a></li>
-<li>Schema Type <a href="https://schema.org/ClothingStore">schema.org/ClothingStore</a></li>
-<li>Schema Type <a href="https://schema.org/ComputerStore">schema.org/ComputerStore</a></li>
-<li>Schema Type <a href="https://schema.org/ConvenienceStore">schema.org/ConvenienceStore</a></li>
-<li>Schema Type <a href="https://schema.org/DepartmentStore">schema.org/DepartmentStore</a></li>
-<li>Schema Type <a href="https://schema.org/ElectronicsStore">schema.org/ElectronicsStore</a></li>
-<li>Schema Type <a href="https://schema.org/Florist">schema.org/Florist</a></li>
-<li>Schema Type <a href="https://schema.org/FurnitureStore">schema.org/FurnitureStore</a></li>
-<li>Schema Type <a href="https://schema.org/GardenStore">schema.org/GardenStore</a></li>
-<li>Schema Type <a href="https://schema.org/GroceryStore">schema.org/GroceryStore</a></li>
-<li>Schema Type <a href="https://schema.org/HardwareStore">schema.org/HardwareStore</a></li>
-<li>Schema Type <a href="https://schema.org/HobbyShop">schema.org/HobbyShop</a></li>
-<li>Schema Type <a href="https://schema.org/HomeGoodsStore">schema.org/HomeGoodsStore</a></li>
-<li>Schema Type <a href="https://schema.org/JewelryStore">schema.org/JewelryStore</a></li>
-<li>Schema Type <a href="https://schema.org/LiquorStore">schema.org/LiquorStore</a></li>
-<li>Schema Type <a href="https://schema.org/MensClothingStore">schema.org/MensClothingStore</a></li>
-<li>Schema Type <a href="https://schema.org/MobilePhoneStore">schema.org/MobilePhoneStore</a></li>
-<li>Schema Type <a href="https://schema.org/MovieRentalStore">schema.org/MovieRentalStore</a></li>
-<li>Schema Type <a href="https://schema.org/MusicStore">schema.org/MusicStore</a></li>
-<li>Schema Type <a href="https://schema.org/OfficeEquipmentStore">schema.org/OfficeEquipmentStore</a></li>
-<li>Schema Type <a href="https://schema.org/OutletStore">schema.org/OutletStore</a></li>
-<li>Schema Type <a href="https://schema.org/PawnShop">schema.org/PawnShop</a></li>
-<li>Schema Type <a href="https://schema.org/PetStore">schema.org/PetStore</a></li>
-<li>Schema Type <a href="https://schema.org/ShoeStore">schema.org/ShoeStore</a></li>
-<li>Schema Type <a href="https://schema.org/SportingGoodsStore">schema.org/SportingGoodsStore</a></li>
-<li>Schema Type <a href="https://schema.org/TireShop">schema.org/TireShop</a></li>
-<li>Schema Type <a href="https://schema.org/ToyStore">schema.org/ToyStore</a></li>
-<li>Schema Type <a href="https://schema.org/WholesaleStore">schema.org/WholesaleStore</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/TelevisionStation">schema.org/TelevisionStation</a></li>
-<li>Schema Type <a href="https://schema.org/TouristInformationCenter">schema.org/TouristInformationCenter</a></li>
-<li>Schema Type <a href="https://schema.org/TravelAgency">schema.org/TravelAgency</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Residence">schema.org/Residence</a>
-
-<ul>
-<li>Schema Type <a href="https://schema.org/ApartmentComplex">schema.org/ApartmentComplex</a></li>
-<li>Schema Type <a href="https://schema.org/GatedResidenceCommunity">schema.org/GatedResidenceCommunity</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/TouristAttraction">schema.org/TouristAttraction</a></li>
-</ul></li>
-<li>Schema Type <a href="https://schema.org/Product">schema.org/Product</a> (supported e-Commerce plugin required)
-
-<ul>
-<li>Schema Type <a href="https://schema.org/IndividualProduct">schema.org/IndividualProduct</a></li>
-<li>Schema Type <a href="https://schema.org/ProductModel">schema.org/ProductModel</a></li>
-<li>Schema Type <a href="https://schema.org/SomeProducts">schema.org/SomeProducts</a></li>
-<li>Schema Type <a href="https://auto.schema.org/Vehicle">auto.schema.org/Vehicle</a>
-
-<ul>
-<li>Schema Type <a href="https://auto.schema.org/BusOrCoach">auto.schema.org/BusOrCoach</a></li>
-<li>Schema Type <a href="https://auto.schema.org/Car">auto.schema.org/Car</a></li>
-<li>Schema Type <a href="https://auto.schema.org/Motorcycle">auto.schema.org/Motorcycle</a></li>
-<li>Schema Type <a href="https://auto.schema.org/MotorizedBicycle">auto.schema.org/MotorizedBicycle</a></li>
-</ul></li>
-</ul></li>
+<li><a href="https://schema.org/Article">schema.org/Article</a> (8 sub-types)</li>
+<li><a href="https://schema.org/Blog">schema.org/Blog</a></li>
+<li><a href="https://schema.org/CollectionPage">schema.org/CollectionPage</a></li>
+<li><a href="https://schema.org/Course">schema.org/Course</a></li>
+<li><a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a> (67 sub-types)</li>
+<li><a href="https://schema.org/Event">schema.org/Event</a> (19 sub-types)</li>
+<li><a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a> (9 sub-types)</li>
+<li><a href="https://schema.org/HowTo">schema.org/HowTo</a> (2 sub-types)</li>
+<li><a href="https://schema.org/IndividualProduct">schema.org/IndividualProduct</a> (9 sub-types)</li>
+<li><a href="https://schema.org/ItemList">schema.org/ItemList</a> (5 sub-types)</li>
+<li><a href="https://schema.org/JobPosting">schema.org/JobPosting</a></li>
+<li><a href="https://schema.org/LocalBusiness">schema.org/LocalBusiness</a> (133 sub-types)</li>
+<li><a href="https://schema.org/Organization">schema.org/Organization</a> (133 sub-types)</li>
+<li><a href="https://schema.org/Person">schema.org/Person</a></li>
+<li><a href="https://schema.org/Place">schema.org/Place</a> (173 sub-types)</li>
+<li><a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
+<li><a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
+<li><a href="https://schema.org/Review">schema.org/Review</a> (2 sub-types)</li>
+<li><a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
+<li><a href="https://schema.org/WebPage">schema.org/WebPage</a> (10 sub-types)</li>
+<li><a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul>
 
 <h3>Markup Examples</h3>
