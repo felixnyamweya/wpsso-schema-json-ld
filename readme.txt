@@ -163,6 +163,8 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Event Offers (name, price, currency, availability)
 * How-To
 	* How-To Makes 
+	* How-To Preparation Time 
+	* How-To Total Time 
 * Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 	* Job Posting Job Title
 	* Job Posting Hiring Organization
@@ -175,15 +177,18 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Person Information
 	* Person
 * Recipe Information
+	* Recipe Cuisine 
+	* Recipe Course 
+	* Recipe Makes 
+	* Recipe Cooking Method 
 	* Recipe Preparation Time 
 	* Recipe Cooking Time 
 	* Recipe Total Time 
 	* Recipe Total Calories 
-	* Recipe Makes 
 	* Recipe Ingredients 
 	* Recipe Instructions 
 	* Recipe Nutrition Information per Serving 
-	* Serving Size
+		* Serving Size
 		* Calories
 		* Protein
 		* Fiber
@@ -211,7 +216,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * [schema.org/CreativeWork](https://schema.org/CreativeWork) (67 sub-types)
 * [schema.org/Event](https://schema.org/Event) (19 sub-types)
 * [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (9 sub-types)
-* [schema.org/HowTo](https://schema.org/HowTo) (2 sub-types)
+* [schema.org/HowTo](https://schema.org/HowTo)
 * [schema.org/IndividualProduct](https://schema.org/IndividualProduct) (9 sub-types)
 * [schema.org/ItemList](https://schema.org/ItemList) (5 sub-types)
 * [schema.org/JobPosting](https://schema.org/JobPosting)
