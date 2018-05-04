@@ -50,7 +50,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional Schema Markup settings page to the SSO menu:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds an additional Schema Markup settings page to the SSO menu with additional options:
 
 * WebSite Alternate Name
 * Organization Logo URL
