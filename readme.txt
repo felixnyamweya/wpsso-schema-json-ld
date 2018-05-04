@@ -64,13 +64,13 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Item Type for User / Author Page
 * Item Type for Search Results Page
 * Item Type for Other Archive Page
-* Item Type by Post Type (for Posts, Pages, Media, (Post Type) Archive Page, and custom post types).
-* Item Type by Term Taxonomy (for Categories, Tags, and custom term taxonomies) -- defaults to [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature.
+* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types.
+* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies (defaults to [schema.org/ItemList](https://schema.org/ItemList) for Google's carousel feature - Pro version required).
 * Default Reviewed Item Type
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides complete image SEO markup.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for: BlogPosting and WebPage.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for [schema.org/BlogPosting](https://schema.org/BlogPosting) and [schema.org/WebPage](https://schema.org/WebPage).
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
@@ -189,7 +189,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Subject Image URL 
 	* Review Rating 
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Adds Schema / Structured Data / SEO JSON-LD markup for the following Schema types, along with hundreds more!
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature, along with hundreds more Schema types!
 
 * Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork) <img class="readme-example landscape" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/google-testing-tool-results-tech-article.png">
 	* Schema Type [schema.org/Article](https://schema.org/Article)
@@ -308,6 +308,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 				* Schema Type [health-lifesci.schema.org/Surgical](https://health-lifesci.schema.org/Surgical)
 				* Schema Type [health-lifesci.schema.org/Toxicologic](https://health-lifesci.schema.org/Toxicologic)
 				* Schema Type [health-lifesci.schema.org/Urologic](https://health-lifesci.schema.org/Urologic)
+	* Schema Type [schema.org/Enumeration](https://schema.org/ItemList)
 * Schema Type [schema.org/Organization](https://schema.org/Organization)
 	* Schema Type [schema.org/Airline](https://schema.org/Airline)
 	* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
