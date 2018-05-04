@@ -83,7 +83,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'person'         => $this->p->schema->get_children_css_class( 'person', 'hide_schema_type' ),
-				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),	// Sub-type of howto.
+				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
 
@@ -151,7 +151,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_creative_work' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_pub_org_id' => array(
@@ -173,7 +173,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_course' => array(
 					'tr_class' => $schema_type_tr_class['course'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_course_provider_id' => array(
@@ -188,7 +188,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_event' => array(
 					'tr_class' => $schema_type_tr_class['event'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_event_org_id' => array(
@@ -260,18 +260,36 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema HowTo
+				 * Schema How-To
 				 */
 				'subsection_howto' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
-					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'HowTo Information', 'metabox title', 'wpsso-schema-json-ld' ),
+					'td_class' => 'subsection', 'header' => 'h5',
+					'label' => _x( 'How-To Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_howto_yield' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
-					'label' => _x( 'HowTo Creates', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'How-To Makes', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_yield', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
+				),
+				'schema_howto_prep_time' => array(
+					'tr_class' => $schema_type_tr_class['howto'],
+					'label' => _x( 'How-To Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_prep_time', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
+						$form->get_no_input_value( '0', 'short' ).$hours_sep.
+						$form->get_no_input_value( '0', 'short' ).$mins_sep.
+						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+				),
+				'schema_howto_total_time' => array(
+					'tr_class' => $schema_type_tr_class['howto'],
+					'label' => _x( 'How-To Total Time', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_total_time', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
+						$form->get_no_input_value( '0', 'short' ).$hours_sep.
+						$form->get_no_input_value( '0', 'short' ).$mins_sep.
+						$form->get_no_input_value( '0', 'short' ).$secs_sep,
 				),
 
 				/**
@@ -279,7 +297,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_job' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_job_title' => array(
@@ -328,7 +346,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_organization' => array(
 					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_org_org_id' => array(
@@ -343,7 +361,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_person' => array(
 					'tr_class' => $schema_type_tr_class['person'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_person_id' => array(
@@ -358,19 +376,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_recipe' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'HowTo / Recipe Information', 'metabox title', 'wpsso-schema-json-ld' ),
-				),
-				'schema_recipe_course' => array(
-					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Course', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_course', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'long_name' ),
+					'td_class' => 'subsection', 'header' => 'h5',
+					'label' => _x( 'Recipe Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_cuisine' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Recipe Cuisine', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cuisine', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name' ),
+				),
+				'schema_recipe_course' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Recipe Course', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_course', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_recipe_yield' => array(
@@ -379,9 +397,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_yield', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'long_name' ),
 				),
+				'schema_recipe_cook_method' => array(
+					'tr_class' => $schema_type_tr_class['recipe'],
+					'label' => _x( 'Cooking Method', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_method', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name' ),
+				),
 				'schema_recipe_prep_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Preperation Time', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
 						$form->get_no_input_value( '0', 'short' ).$hours_sep.
@@ -390,7 +414,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_recipe_cook_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
 						$form->get_no_input_value( '0', 'short' ).$hours_sep.
@@ -399,7 +423,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_recipe_total_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'label' => _x( 'Recipe Total Time', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Total Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
 						$form->get_no_input_value( '0', 'short' ).$hours_sep.
@@ -418,9 +442,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_instructions', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide', '', '', 5 ),	// $repeat = 5
 				),
+
+				/**
+				 * Schema Recipe - Nutrition Information
+				 */
 				'subsection_recipe_nutrition' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Nutrition Information per Serving', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_serv' => array(
@@ -512,7 +540,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 */
 				'subsection_review' => array(
 					'tr_class' => $schema_type_tr_class['review'],
-					'td_class' => 'subsection', 'header' => 'h4',
+					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_review_item_type' => array(

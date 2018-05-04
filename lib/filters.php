@@ -218,16 +218,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $base_key ) {
 				case 'schema_event_offer_name':
-				case 'schema_howto_yield':
+				case 'schema_howto_yield':		// How-To Makes
 				case 'schema_job_title':
 				case 'schema_job_currency':
 				case 'schema_person_job_title':
+				case 'schema_recipe_cook_method':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
 				case 'schema_recipe_ingredient':
 				case 'schema_recipe_instruction':
 				case 'schema_recipe_nutri_serv':
-				case 'schema_recipe_yield':
+				case 'schema_recipe_yield':		// Recipe Makes
 				case 'schema_review_item_name':
 					return 'one_line';
 					break;
@@ -238,15 +239,23 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'not_blank';
 					break;
 				case 'schema_event_offer_price':
-				case 'schema_recipe_prep_days':
+				case 'schema_howto_prep_days':		// How-To Preparation Time
+				case 'schema_howto_prep_hours':
+				case 'schema_howto_prep_mins':
+				case 'schema_howto_prep_secs':
+				case 'schema_howto_total_days':		// How-To Total Time
+				case 'schema_howto_total_hours':
+				case 'schema_howto_total_mins':
+				case 'schema_howto_total_secs':
+				case 'schema_recipe_prep_days':		// Recipe Preparation Time
 				case 'schema_recipe_prep_hours':
 				case 'schema_recipe_prep_mins':
 				case 'schema_recipe_prep_secs':
-				case 'schema_recipe_cook_days':
+				case 'schema_recipe_cook_days':		// Recipe Cooking Time
 				case 'schema_recipe_cook_hours':
 				case 'schema_recipe_cook_mins':
 				case 'schema_recipe_cook_secs':
-				case 'schema_recipe_total_days':
+				case 'schema_recipe_total_days':	// Recipe Total Time
 				case 'schema_recipe_total_hours':
 				case 'schema_recipe_total_mins':
 				case 'schema_recipe_total_secs':
@@ -424,7 +433,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_timezone' => '',		// Offers End Timezone
 				'schema_event_org_id' => 'none',			// Event Organizer
 				'schema_event_perf_id' => 'none',			// Event Performer
-				'schema_howto_yield' => '',				// HowTo Yield
+				'schema_howto_prep_days' => 0,				// How-To Preparation Time (Days)
+				'schema_howto_prep_hours' => 0,				// How-To Preparation Time (Hours)
+				'schema_howto_prep_mins' => 0,				// How-To Preparation Time (Mins)
+				'schema_howto_prep_secs' => 0,				// How-To Preparation Time (Secs)
+				'schema_howto_total_days' => 0,				// How-To Total Time (Days)
+				'schema_howto_total_hours' => 0,			// How-To Total Time (Hours)
+				'schema_howto_total_mins' => 0,				// How-To Total Time (Mins)
+				'schema_howto_total_secs' => 0,				// How-To Total Time (Secs)
+				'schema_howto_yield' => '',				// How-To Yield
 				'schema_job_title' => '',
 				'schema_job_org_id' => 'none',				// Hiring Organization
 				'schema_job_location_id' => 'none',			// Job Location
@@ -442,42 +459,43 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_expire_date' => '',
 				'schema_job_expire_time' => 'none',
 				'schema_job_expire_timezone' => '',
-				'schema_org_org_id' => 'none',			// Organization
-				'schema_person_id' => 'none',			// Person
-				'schema_recipe_prep_days' => 0,			// Recipe Preperation Time (Days)
-				'schema_recipe_prep_hours' => 0,		// Recipe Preperation Time (Hours)
-				'schema_recipe_prep_mins' => 0,			// Recipe Preperation Time (Mins)
-				'schema_recipe_prep_secs' => 0,			// Recipe Preperation Time (Secs)
-				'schema_recipe_cook_days' => 0,			// Recipe Cooking Time (Days)
-				'schema_recipe_cook_hours' => 0,		// Recipe Cooking Time (Hours)
-				'schema_recipe_cook_mins' => 0,			// Recipe Cooking Time (Mins)
-				'schema_recipe_cook_secs' => 0,			// Recipe Cooking Time (Secs)
-				'schema_recipe_total_days' => 0,		// Recipe Total Time (Days)
-				'schema_recipe_total_hours' => 0,		// Recipe Total Time (Hours)
-				'schema_recipe_total_mins' => 0,		// Recipe Total Time (Mins)
-				'schema_recipe_total_secs' => 0,		// Recipe Total Time (Secs)
-				'schema_recipe_course' => '',			// Recipe Course
-				'schema_recipe_cuisine' => '',			// Recipe Cuisine
-				'schema_recipe_nutri_serv' => '',		// Serving Size
-				'schema_recipe_nutri_cal' => '',		// Calories
-				'schema_recipe_nutri_prot' => '',		// Protein
-				'schema_recipe_nutri_fib' => '',		// Fiber
-				'schema_recipe_nutri_carb' => '',		// Carbohydrates
-				'schema_recipe_nutri_sugar' => '',		// Sugar
-				'schema_recipe_nutri_sod' => '',		// Sodium
-				'schema_recipe_nutri_fat' => '',		// Fat
-				'schema_recipe_nutri_trans_fat' => '',		// Trans Fat
-				'schema_recipe_nutri_sat_fat' => '',		// Saturated Fat
-				'schema_recipe_nutri_unsat_fat' => '',		// Unsaturated Fat
-				'schema_recipe_nutri_chol' => '',		// Cholesterol
-				'schema_recipe_yield' => '',			// Recipe Yield
-				'schema_review_item_type' => $review_item_type,	// Reviewed Item Type
-				'schema_review_item_name' => '',		// Reviewed Item Name
-				'schema_review_item_url' => '',			// Reviewed Item URL
-				'schema_review_item_image_url' => '',		// Reviewed Item Image URL
-				'schema_review_rating' => '0.0',		// Reviewed Item Rating
-				'schema_review_rating_from' => '1',		// Reviewed Item Rating (from)
-				'schema_review_rating_to' => '5',		// Reviewed Item Rating (to)
+				'schema_org_org_id' => 'none',				// Organization
+				'schema_person_id' => 'none',				// Person
+				'schema_recipe_cook_method' => '',			// Recipe Cooking Method
+				'schema_recipe_course' => '',				// Recipe Course
+				'schema_recipe_cuisine' => '',				// Recipe Cuisine
+				'schema_recipe_prep_days' => 0,				// Recipe Preparation Time (Days)
+				'schema_recipe_prep_hours' => 0,			// Recipe Preparation Time (Hours)
+				'schema_recipe_prep_mins' => 0,				// Recipe Preparation Time (Mins)
+				'schema_recipe_prep_secs' => 0,				// Recipe Preparation Time (Secs)
+				'schema_recipe_cook_days' => 0,				// Recipe Cooking Time (Days)
+				'schema_recipe_cook_hours' => 0,			// Recipe Cooking Time (Hours)
+				'schema_recipe_cook_mins' => 0,				// Recipe Cooking Time (Mins)
+				'schema_recipe_cook_secs' => 0,				// Recipe Cooking Time (Secs)
+				'schema_recipe_total_days' => 0,			// How-To Total Time (Days)
+				'schema_recipe_total_hours' => 0,			// How-To Total Time (Hours)
+				'schema_recipe_total_mins' => 0,			// How-To Total Time (Mins)
+				'schema_recipe_total_secs' => 0,			// How-To Total Time (Secs)
+				'schema_recipe_nutri_serv' => '',			// Serving Size
+				'schema_recipe_nutri_cal' => '',			// Calories
+				'schema_recipe_nutri_prot' => '',			// Protein
+				'schema_recipe_nutri_fib' => '',			// Fiber
+				'schema_recipe_nutri_carb' => '',			// Carbohydrates
+				'schema_recipe_nutri_sugar' => '',			// Sugar
+				'schema_recipe_nutri_sod' => '',			// Sodium
+				'schema_recipe_nutri_fat' => '',			// Fat
+				'schema_recipe_nutri_trans_fat' => '',			// Trans Fat
+				'schema_recipe_nutri_sat_fat' => '',			// Saturated Fat
+				'schema_recipe_nutri_unsat_fat' => '',			// Unsaturated Fat
+				'schema_recipe_nutri_chol' => '',			// Cholesterol
+				'schema_recipe_yield' => '',				// Recipe Yield
+				'schema_review_item_type' => $review_item_type,		// Reviewed Item Type
+				'schema_review_item_name' => '',			// Reviewed Item Name
+				'schema_review_item_url' => '',				// Reviewed Item URL
+				'schema_review_item_image_url' => '',			// Reviewed Item Image URL
+				'schema_review_rating' => '0.0',			// Reviewed Item Rating
+				'schema_review_rating_from' => '1',			// Reviewed Item Rating (from)
+				'schema_review_rating_to' => '5',			// Reviewed Item Rating (to)
 			);
 
 			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
@@ -601,6 +619,26 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-meta-schema_howto_prep_time':
+				case 'tooltip-meta-schema_recipe_prep_time':
+
+					$text = __( 'The total time it takes to prepare the items before executing the instruction steps.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_howto_total_time':
+				case 'tooltip-meta-schema_recipe_total_time':
+
+					$text = __( 'The total time required to perform the all instructions (including any preparation time).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_howto_yield':
+
+					$text = __( 'The quantity made when following these How-To instructions (example: "a paper airplane", "10 personalized candles", etc.).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
 				case 'tooltip-meta-schema_job_title':
 
 					$text = __( 'The title of this job, which may be different than the WordPress post / page title.', 'wpsso-schema-json-ld' );
@@ -657,21 +695,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_recipe_prep_time':
+				case 'tooltip-meta-schema_recipe_cook_method':
 
-					$text = __( 'The total time it takes to prepare this recipe.', 'wpsso-schema-json-ld' );
+					$text = __( 'The cooking method used for this recipe (example: Baking, Frying, Steaming, etc.)', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_recipe_cook_time':
 
 					$text = __( 'The total time it takes to cook this recipe.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_recipe_total_time':
-
-					$text = __( 'The total time it takes to prepare and cook this recipe.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -684,6 +716,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_cuisine':
 
 					$text = __( 'The type of cuisine for this recipe (example: French, Indian, Italian, Japanese, Thai, etc.).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_recipe_ingredients':
+
+					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_recipe_instructions':
+
+					$text = __( 'A list of instructions for this recipe (example: "beat eggs", "add and mix flour", etc.).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -756,18 +800,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_nutri_chol':
 
 					$text = __( 'The number of milligrams of cholesterol per serving.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_recipe_ingredients':
-
-					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_recipe_instructions':
-
-					$text = __( 'A list of instructions for this recipe (example: "beat eggs", "add and mix flour", etc.).', 'wpsso-schema-json-ld' );
 
 				 	break;
 

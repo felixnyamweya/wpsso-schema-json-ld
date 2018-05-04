@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'creativework' => '(code) Schema Type Creative Work (creative.work)',
 								'event' => '(code) Schema Type Event (event)',
 								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishment)',
-								'howto' => '(code) Schema Type HowTo (howto)',
+								'howto' => '(code) Schema Type How-To (howto)',
 								'itemlist' => '(code) Schema Type Item List (item.list)',
 								'jobposting' => '(code) Schema Type Job Posting (job.posting)',
 								'localbusiness' => '(code) Schema Type Local Business (local.business)',
