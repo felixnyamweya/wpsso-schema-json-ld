@@ -218,16 +218,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $base_key ) {
 				case 'schema_event_offer_name':
+				case 'schema_howto_yield':
 				case 'schema_job_title':
 				case 'schema_job_currency':
 				case 'schema_person_job_title':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
-				case 'schema_recipe_yield':
 				case 'schema_recipe_ingredient':
 				case 'schema_recipe_instruction':
-				case 'schema_review_item_name':
 				case 'schema_recipe_nutri_serv':
+				case 'schema_recipe_yield':
+				case 'schema_review_item_name':
 					return 'one_line';
 					break;
 				case 'schema_type':
@@ -423,6 +424,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_timezone' => '',		// Offers End Timezone
 				'schema_event_org_id' => 'none',			// Event Organizer
 				'schema_event_perf_id' => 'none',			// Event Performer
+				'schema_howto_yield' => '',				// HowTo Yield
 				'schema_job_title' => '',
 				'schema_job_org_id' => 'none',				// Hiring Organization
 				'schema_job_location_id' => 'none',			// Job Location
@@ -456,7 +458,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_total_secs' => 0,		// Recipe Total Time (Secs)
 				'schema_recipe_course' => '',			// Recipe Course
 				'schema_recipe_cuisine' => '',			// Recipe Cuisine
-				'schema_recipe_yield' => '',			// Recipe Yield
 				'schema_recipe_nutri_serv' => '',		// Serving Size
 				'schema_recipe_nutri_cal' => '',		// Calories
 				'schema_recipe_nutri_prot' => '',		// Protein
@@ -469,6 +470,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_sat_fat' => '',		// Saturated Fat
 				'schema_recipe_nutri_unsat_fat' => '',		// Unsaturated Fat
 				'schema_recipe_nutri_chol' => '',		// Cholesterol
+				'schema_recipe_yield' => '',			// Recipe Yield
 				'schema_review_item_type' => $review_item_type,	// Reviewed Item Type
 				'schema_review_item_name' => '',		// Reviewed Item Name
 				'schema_review_item_url' => '',			// Reviewed Item URL
@@ -685,12 +687,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_recipe_yield':
-
-					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
-
-				 	break;
-
 				case 'tooltip-meta-schema_recipe_nutri_serv':
 
 					$text = __( 'The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup.', 'wpsso-schema-json-ld' );
@@ -772,6 +768,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_instructions':
 
 					$text = __( 'A list of instructions for this recipe (example: "beat eggs", "add and mix flour", etc.).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_recipe_yield':
+
+					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
