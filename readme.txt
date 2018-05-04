@@ -161,6 +161,8 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Offers Start (date, time, timezone)
 	* Offers End (date, time, timezone)
 	* Event Offers (name, price, currency, availability)
+* How-To
+	* How-To Makes 
 * Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 	* Job Posting Job Title
 	* Job Posting Hiring Organization
@@ -172,7 +174,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Organization
 * Person Information
 	* Person
-* HowTo / Recipe Information
+* Recipe Information
 	* Recipe Preparation Time 
 	* Recipe Cooking Time 
 	* Recipe Total Time 

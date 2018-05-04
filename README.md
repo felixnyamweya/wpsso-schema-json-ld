@@ -179,6 +179,11 @@
 <li>Offers End (date, time, timezone)</li>
 <li>Event Offers (name, price, currency, availability)</li>
 </ul></li>
+<li>How-To
+
+<ul>
+<li>How-To Makes </li>
+</ul></li>
 <li>Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 
 <ul>
@@ -199,7 +204,7 @@
 <ul>
 <li>Person</li>
 </ul></li>
-<li>HowTo / Recipe Information
+<li>Recipe Information
 
 <ul>
 <li>Recipe Preparation Time </li>
