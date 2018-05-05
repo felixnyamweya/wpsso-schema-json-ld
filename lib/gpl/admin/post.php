@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'creative_work'  => $this->p->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
 				'course'         => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
 				'event'          => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
-				'howto'          => $this->p->schema->get_children_css_class( 'howto', 'hide_schema_type' ),
+				'howto'          => $this->p->schema->get_children_css_class( 'howto', 'hide_schema_type', '/^recipe$/' ),	// Exclude recipe.
 				'job_posting'    => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
