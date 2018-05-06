@@ -171,7 +171,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Main Entity of Page
 	* Schema Item Type
 	* Microdata Type URLs
-	* SameAs / Canonical URLs
+	* Same-As URLs
 * Creative Work Information
 	* Creative Work Publisher
 	* Creative Work Headline
@@ -189,6 +189,9 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* How-To Makes 
 	* How-To Preparation Time 
 	* How-To Total Time 
+	* How-To Supplies 
+	* How-To Tools 
+	* How-To Steps 
 * Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 	* Job Posting Job Title
 	* Job Posting Hiring Organization
@@ -304,7 +307,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.26.0-dev.2 (2018/05/06)**
+**Version 1.26.0-b.1 (2018/05/06)**
 
 * *New Features*
 	* None
@@ -313,6 +316,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* How-To Makes 
 		* How-To Preparation Time 
 		* How-To Total Time 
+		* How-To Supplies 
+		* How-To Tools 
+		* How-To Steps 
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -333,7 +339,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.26.0-dev.2 =
+= 1.26.0-b.1 =
 
 (2018/05/06) Added support for the Schema HowTo type (Pro version).
 
