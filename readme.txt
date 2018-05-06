@@ -50,7 +50,14 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 &#x0229b; &nbsp; Extends the features of the WPSSO Core Free or Pro plugin.
 
-&#x0229b; &nbsp; Includes support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+&#x0229b; &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (*all other Schema types and sub-types* are available in the Pro version):
+
+* [schema.org/BlogPosting](https://schema.org/BlogPosting)
+* [schema.org/WebPage](https://schema.org/WebPage) (10 sub-types)
+
+&#x0229b; &nbsp; Provides complete image SEO markup with information from the WordPress Media Library.
+
+&#x0229b; &nbsp; Built-in support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
 &#x0229b; &nbsp; Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
 
@@ -72,20 +79,37 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies (defaults to [schema.org/ItemList](https://schema.org/ItemList) for Google's carousel feature - Pro version required).
 * Default Reviewed Item Type
 
-&#x0229b; &nbsp; Provides complete image SEO markup with information from the WordPress Media Library.
-
-&#x0229b; &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (*all other Schema types and sub-types* are available in the Pro version):
-
-* [schema.org/BlogPosting](https://schema.org/BlogPosting)
-* [schema.org/WebPage](https://schema.org/WebPage) (10 sub-types)
-
 &#x0229b; &nbsp; Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
 <h3>WPSSO JSON Pro / Additional Features</h3>
 
 &#x0229b; &nbsp; Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>). <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
-&#x0229b; &nbsp; Provides complete image and video SEO in webpage Schema JSON-LD markup.
+&#x0229b; &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
+
+* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
+* [schema.org/Blog](https://schema.org/Blog)
+* [schema.org/CollectionPage](https://schema.org/CollectionPage)
+* [schema.org/Course](https://schema.org/Course)
+* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 67 Schema types)
+* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
+* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
+* [schema.org/HowTo](https://schema.org/HowTo)
+* [schema.org/IndividualProduct](https://schema.org/IndividualProduct) (includes 9 Schema types)
+* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
+* [schema.org/JobPosting](https://schema.org/JobPosting)
+* [schema.org/LocalBusiness](https://schema.org/LocalBusiness) (includes 133 Schema types)
+* [schema.org/Organization](https://schema.org/Organization) (includes 133 Schema types)
+* [schema.org/Person](https://schema.org/Person)
+* [schema.org/Place](https://schema.org/Place) (includes 173 Schema types)
+* [schema.org/ProfilePage](https://schema.org/ProfilePage)
+* [schema.org/Recipe](https://schema.org/Recipe)
+* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
+* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
+* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
+* [schema.org/WebSite](https://schema.org/WebSite)
+
+&#x0229b; &nbsp; Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
 
 &#x0229b; &nbsp; WPSSO Core Pro integrates with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
 
@@ -206,30 +230,6 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 	* Subject Webpage URL 
 	* Subject Image URL 
 	* Review Rating 
-
-&#x0229b; &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
-
-* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
-* [schema.org/Blog](https://schema.org/Blog)
-* [schema.org/CollectionPage](https://schema.org/CollectionPage)
-* [schema.org/Course](https://schema.org/Course)
-* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 67 Schema types)
-* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
-* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
-* [schema.org/HowTo](https://schema.org/HowTo)
-* [schema.org/IndividualProduct](https://schema.org/IndividualProduct) (includes 9 Schema types)
-* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
-* [schema.org/JobPosting](https://schema.org/JobPosting)
-* [schema.org/LocalBusiness](https://schema.org/LocalBusiness) (includes 133 Schema types)
-* [schema.org/Organization](https://schema.org/Organization) (includes 133 Schema types)
-* [schema.org/Person](https://schema.org/Person)
-* [schema.org/Place](https://schema.org/Place) (includes 173 Schema types)
-* [schema.org/ProfilePage](https://schema.org/ProfilePage)
-* [schema.org/Recipe](https://schema.org/Recipe)
-* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
-* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
-* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
-* [schema.org/WebSite](https://schema.org/WebSite)
 
 <h3>Schema JSON-LD Markup Examples</h3>
 
