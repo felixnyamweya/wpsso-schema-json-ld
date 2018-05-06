@@ -304,12 +304,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.26.0-dev.1 (2018/05/05)**
+**Version 1.26.0-dev.2 (2018/05/06)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added support for the Schema HowTo type, with additiona options in the Social and Search Optimization metabox (Pro version).
+		* How-To Makes 
+		* How-To Preparation Time 
+		* How-To Total Time 
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -330,9 +333,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.26.0-dev.1 =
+= 1.26.0-dev.2 =
 
-(2018/05/05) None.
+(2018/05/06) Added support for the Schema HowTo type (Pro version).
 
 = 1.25.0 =
 
