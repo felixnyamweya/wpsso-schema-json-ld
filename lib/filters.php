@@ -198,13 +198,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			if ( ! $this->p->check->aop( 'wpssojson', true, $this->p->avail['*']['p_dir'] ) ) {
-				$warn_msg = sprintf( __( 'The Free / Basic version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ).' '.sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ).' '.sprintf( __( 'If this Schema is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
+
+				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ).' ';
+				
+				$warn_msg .= sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ).' ';
+				
+				$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
+
 				$dismiss_key = 'no_filter_'.$filter_name.'_'.$mod['name'].'_'.$mod['id'];
 			}
 
 			if ( ! empty( $warn_msg ) ) {
-				$this->p->notice->warn( '<em>'.__( 'This notice is only shown to users with Administrative privileges.',
-					'wpsso-schema-json-ld' ).'</em><p>'.$warn_msg.'</p>', true, $dismiss_key, true );	// can be dismissed
+				$this->p->notice->warn( '<p class="top"><em>'.__( 'This notice is only shown to users with Administrative privileges.',
+					'wpsso-schema-json-ld' ).'</em></p><p>'.$warn_msg.'</p>', true, $dismiss_key, true );	// can be dismissed
 			}
 		}
 
