@@ -224,6 +224,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $base_key ) {
 				case 'schema_event_offer_name':
+				case 'schema_howto_step':
+				case 'schema_howto_supply':
+				case 'schema_howto_tool':
 				case 'schema_howto_yield':		// How-To Makes
 				case 'schema_job_title':
 				case 'schema_job_currency':
@@ -622,6 +625,24 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_event_offers':
 
 					$text = __( 'One or more offers for the event, including the offer name, price and currency.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_howto_steps':
+
+					$text = __( 'A list of steps to complete this How-To.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_howto_supplies':
+
+					$text = __( 'A list of supplies that are consumed when completing this How-To.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_howto_tools':
+
+					$text = __( 'A list of tools or objects that are required to complete this How-To.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

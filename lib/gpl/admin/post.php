@@ -141,7 +141,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_sameas_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
-					'label' => _x( 'SameAs / Canonical URLs', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide', '', '', 2 ),
 				),
@@ -275,7 +275,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_howto_prep_time' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
-					'label' => _x( 'How-To Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_prep_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
 						$form->get_no_input_value( '0', 'short' ).$hours_sep.
@@ -284,12 +284,30 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_howto_total_time' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
-					'label' => _x( 'How-To Total Time', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Total Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_total_time', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
 						$form->get_no_input_value( '0', 'short' ).$hours_sep.
 						$form->get_no_input_value( '0', 'short' ).$mins_sep.
 						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+				),
+				'schema_howto_supplies' => array(
+					'tr_class' => $schema_type_tr_class['howto'],
+					'label' => _x( 'How-To Supplies', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_supplies', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
+				),
+				'schema_howto_tools' => array(
+					'tr_class' => $schema_type_tr_class['howto'],
+					'label' => _x( 'How-To Tools', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_tools', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
+				),
+				'schema_howto_steps' => array(
+					'tr_class' => $schema_type_tr_class['howto'],
+					'label' => _x( 'How-To Steps', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_steps', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'wide', '', '', 5 ),	// $repeat = 5
 				),
 
 				/**
