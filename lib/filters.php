@@ -379,9 +379,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			foreach ( array( $home_url, $year_url, $month_url, $day_url ) as $url ) {
 				$transient_keys[] = array(
-					'id' => $cache_md5_pre.md5( $cache_method.'(url:'.$url.')' ),
-					'pre' => $cache_md5_pre,
-					'salt' => $cache_method.'(url:'.$url.')',
+					'id'   => $cache_md5_pre . md5( $cache_method . '(url:' . $url . ')' ),
+					'pre'  => $cache_md5_pre,
+					'salt' => $cache_method . '(url:' . $url . ')',
 				);
 			}
 
@@ -389,9 +389,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
 					$transient_keys[] = array(
-						'id' => $cache_md5_pre.md5( $cache_method.'(term:'.$term->term_id.'_tax:'.$tax_name.')' ),
-						'pre' => $cache_md5_pre,
-						'salt' => $cache_method.'(term:'.$term->term_id.'_tax:'.$tax_name.')',
+						'id'   => $cache_md5_pre . md5( $cache_method . '(term:' . $term->term_id . '_tax:' . $tax_name . ')' ),
+						'pre'  => $cache_md5_pre,
+						'salt' => $cache_method . '(term:' . $term->term_id . '_tax:' . $tax_name . ')',
 					);
 				}
 			}
@@ -400,9 +400,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$author_id = get_post_field( 'post_author', $mod['id'] );
 
 			$transient_keys[] = array(
-				'id' => $cache_md5_pre.md5( $cache_method.'(user:'.$author_id.')' ),
-				'pre' => $cache_md5_pre,
-				'salt' => $cache_method.'(user:'.$author_id.')',
+				'id'   => $cache_md5_pre . md5( $cache_method . '(user:' . $author_id . ')' ),
+				'pre'  => $cache_md5_pre,
+				'salt' => $cache_method . '(user:' . $author_id . ')',
 			);
 
 			return $transient_keys;
