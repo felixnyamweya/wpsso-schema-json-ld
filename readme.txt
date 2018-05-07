@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
 WC Tested Up To: 3.3.5
-Stable Tag: 1.25.0
+Stable Tag: 1.26.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
 
@@ -342,8 +342,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.26.0 =
 
 (2018/05/07) Added support for the Schema HowTo type (Pro version).
-
-= 1.25.0 =
-
-(2018/05/02) Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature. Added a "Person Information" section to the Social and Search Optimization metabox.
 
