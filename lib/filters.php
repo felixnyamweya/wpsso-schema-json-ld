@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filter' );
+				$this->p->debug->mark( 'common json data filters' );
 			}
 
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
@@ -175,7 +175,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filter' );
+				$this->p->debug->mark( 'common json data filters' );
 			}
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
@@ -188,7 +188,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$urls = $this->p->cf['plugin']['wpssojson']['url'];
-			$page_type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $get_id = true;
+			$page_type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $ret_schema_id = true;
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
 			$warn_msg = '';
@@ -412,7 +412,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$timezone = get_option( 'timezone_string' );
 
-			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $get_id = true, $use_mod_opts = false
+			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $ret_schema_id = true, $use_mod_opts = false
 
 			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
 				'USD' : $this->p->options['plugin_def_currency'];

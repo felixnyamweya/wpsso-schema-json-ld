@@ -91,7 +91,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca.'_json_prop_https_schema_org_'.$prop_name );
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'applying filter '.$filter_name );
+					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
 				}
 
 				$json_data[$prop_name] = (array) apply_filters( $filter_name, $json_data[$prop_name], $mod, $mt_og, $page_type_id, $is_main );
@@ -237,7 +237,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							$wpsso->debug->log( 'getting schema type for post id '.$post_mod['id'] );
 						}
 
-						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $get_id = true
+						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $ret_schema_id = true
 
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'checking if schema type '.$mod_type_id.' is child of '.$family_member_id );
@@ -298,7 +298,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca.'_json_prop_https_schema_org_'.$prop_name );
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'applying filter '.$filter_name );
+					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
 				}
 
 				$json_data[$prop_name] = (array) apply_filters( $filter_name, $json_data[$prop_name], $mod, $mt_og, $page_type_id, $is_main );
