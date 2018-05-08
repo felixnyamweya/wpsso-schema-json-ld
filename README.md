@@ -8,7 +8,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.5</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>google rich cards, knowledge graph, local seo, video seo, woocommerce, article seo, news seo, image seo, ld+json, schema, structured data, seo, rating, review, recipe, event, product, video schema, local business</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>knowledge graph, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product</td></tr>
 </table>
 
 <h2>Description</h2>

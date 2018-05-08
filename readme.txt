@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: google rich cards, knowledge graph, local seo, video seo, woocommerce, article seo, news seo, image seo, ld+json, schema, structured data, seo, rating, review, recipe, event, product, video schema, local business
+Tags: knowledge graph, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
