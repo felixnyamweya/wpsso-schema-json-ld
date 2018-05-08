@@ -53,7 +53,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 &#x0229b; &nbsp; Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (*all other Schema types and sub-types* are available in the Pro version):
 
 * [schema.org/BlogPosting](https://schema.org/BlogPosting)
-* [schema.org/WebPage](https://schema.org/WebPage) (10 sub-types)
+* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
 
 &#x0229b; &nbsp; Provides complete image SEO markup with information from the WordPress Media Library.
 
