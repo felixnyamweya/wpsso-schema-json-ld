@@ -131,7 +131,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_type' => array(
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_type', $schema_types, 'schema_type', '', true, true, 'unhide_rows' ),
+					'content' => $form->get_select( 'schema_type', $schema_types,
+						'schema_type', '', true, false, true, 'unhide_rows' ),
 				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
