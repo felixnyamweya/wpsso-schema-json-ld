@@ -47,9 +47,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'gpl' => array(
 							'admin' => array(
-								'post' => 'Post Settings',
-								'term' => 'Term Settings',
-								'user' => 'User Settings',
+								'post' => 'Extend Post Settings',
+								'term' => 'Extend Term Settings',
+								'user' => 'Extend User Settings',
 							),
 							'head' => array(
 								'webpage' => '(code) Schema Type WebPage (webpage)',
@@ -58,9 +58,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'pro' => array(
 							'admin' => array(
-								'post' => 'Post Settings',
-								'term' => 'Term Settings',
-								'user' => 'User Settings',
+								'post' => 'Extend Post Settings',
+								'term' => 'Extend Term Settings',
+								'user' => 'Extend User Settings',
 							),
 							'head' => array(
 								'article' => '(code) Schema Type Article (article)',
