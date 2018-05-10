@@ -20,7 +20,7 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-**A WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.**
+**A WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.**
 
 Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing &mdash; including image objects / SEO, video objects / SEO, local business SEO, organization / publisher, person / author and co-authors, complete and very extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features bellow for Free / Pro version details).
 
