@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.26.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-05-08 08:39-0600\n"
-"PO-Revision-Date: 2018-05-08 08:39-0600\n"
+"POT-Creation-Date: 2018-05-10 10:40-0600\n"
+"PO-Revision-Date: 2018-05-10 10:40-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -27,8 +27,8 @@ msgstr "Shortcode Schéma"
 
 #: lib/config-gettext-extract.php:5
 msgctxt "plugin description"
-msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
-msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
+msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more."
+msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
 
 #: lib/filters.php:202
 msgid "The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
@@ -820,8 +820,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more."
-msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'articles, événements, entreprise locale, produits, recettes, critiques + bien plus."
+msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more."
+msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

@@ -27,7 +27,7 @@ msgstr ""
 msgctxt "plugin description"
 msgid ""
 "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews + many more."
+"Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #: lib/filters.php:202
@@ -896,7 +896,7 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews + many more."
+"Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #. Author of the plugin/theme
