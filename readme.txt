@@ -14,7 +14,7 @@ Tested Up To: 4.9.5
 WC Tested Up To: 3.3.5
 Stable Tag: 1.26.0
 
-WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews + many more.
+WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
 == Description ==
 
