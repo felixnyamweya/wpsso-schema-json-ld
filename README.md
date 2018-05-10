@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup</h1><h3>Structured Data / Rich Snippet / Google Rich Cards / Pinterest Rich Pins</h3>
+<h1>WPSSO Schema JSON-LD Markup</h1><h3>Structured Data, Rich Snippet, Google Rich Cards, Pinterest Rich Pins</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
