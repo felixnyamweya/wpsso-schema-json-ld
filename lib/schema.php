@@ -65,7 +65,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			foreach ( $page_posts_mods as $post_mod ) {
 
-				$post_type_url = $wpsso->schema->get_mod_schema_type( $post_mod );
 				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
 
 				$posts_count++;
