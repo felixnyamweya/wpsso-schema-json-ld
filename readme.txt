@@ -312,7 +312,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for the Schema HowTo type, with additiona options in the Social and Search Optimization metabox (Pro version).
+	* Added support for the Schema HowTo type, with additional options in the Social and Search Optimization metabox (Pro version).
 		* How-To Makes 
 		* How-To Preparation Time 
 		* How-To Total Time 
