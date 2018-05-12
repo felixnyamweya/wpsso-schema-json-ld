@@ -20,7 +20,7 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
 
-**Adds *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards &amp; Bing:**
+**Provides *comprehensive* and *accurate* Schema JSON-LD markup for Google Rich Cards and Bing:**
 
 Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, complete and extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features bellow for Free / Pro version details).
 
@@ -71,7 +71,7 @@ WooCommerce product markup includes all product images, product variations, prod
 
 <h3>WPSSO JSON Pro / Additional Features</h3>
 
-* Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>). <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
+* Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 * Provides Schema / Structured Data / SEO JSON-LD markup for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
@@ -95,7 +95,7 @@ WooCommerce product markup includes all product images, product variations, prod
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
 * Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
-* WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc.
+* WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 * The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
 	* **Integration with 3rd Party Plugins**
 		* All in One SEO Pack
