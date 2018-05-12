@@ -15,7 +15,7 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-<p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google Rich Cards and Bing:</strong></p>
+<p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google's Knowledge Graph and Rich Cards:</strong></p>
 
 <p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, complete and extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features bellow for Free / Pro version details).</p>
 
