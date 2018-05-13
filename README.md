@@ -17,7 +17,7 @@
 
 <p><strong>Provides <em>comprehensive</em> and <em>accurate</em> Schema JSON-LD markup for Google's Knowledge Graph and Rich Cards:</strong></p>
 
-<p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, complete and extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features bellow for Free / Pro version details).</p>
+<p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features bellow for Free / Pro version details).</p>
 
 <p><strong>Includes special markup and optimization features for Pinterest:</strong></p>
 
@@ -279,7 +279,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro version of WPSSO Core. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro add-on</a> uses many WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>.</p>
+<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro add-on</a> uses many WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>.</p>
 
 
 <h2>Installation</h2>
