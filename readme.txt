@@ -45,13 +45,20 @@ WooCommerce product markup includes all product images, product variations, prod
 <h3>WPSSO JSON Free / Standard Features</h3>
 
 * Extends the features of the WPSSO Core Free or Pro plugin.
+
 * Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (all other Schema types are available in the Pro version):
+
 	* [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
+
 * Provides complete image SEO markup with image information from the WordPress Media Library.
+
 * Built-in support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
+
 * Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
+
 * Adds an additional Schema Markup settings page to the SSO menu with additional options:
+
 	* WebSite Alternate Name
 	* Organization Logo URL
 	* Organization Banner URL
@@ -67,12 +74,15 @@ WooCommerce product markup includes all product images, product variations, prod
 	* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
 	* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
 	* Default Reviewed Item Type
+
 * Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
 <h3>WPSSO JSON Pro / Additional Features</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
+
 * Provides Schema / Structured Data / SEO JSON-LD markup for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
+
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
 	* [schema.org/CollectionPage](https://schema.org/CollectionPage)
@@ -94,10 +104,15 @@ WooCommerce product markup includes all product images, product variations, prod
 	* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
+
 * Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
+
 * WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
+
 * The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
+
 	* **Integration with 3rd Party Plugins**
+
 		* All in One SEO Pack
 		* bbPress
 		* BuddyPress (including Group Forum Topics)
@@ -118,7 +133,9 @@ WooCommerce product markup includes all product images, product variations, prod
 		* WP Meta SEO
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
+
 	* **Integration with Service APIs**
+
 		* Bitly
 		* Facebook Embedded Videos
 		* Google URL Shortener
@@ -132,14 +149,19 @@ WooCommerce product markup includes all product images, product variations, prod
 		* WordPress Video Shortcode (and Self-Hosted Videos)
 		* Your Own URL Shortener (YOURLS)
 		* YouTube Videos and Playlists
+
 * WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
+
 	* **Integration with 3rd Party Plugins** 
+
 		* Simple Job Board
 		* WP Job Manager
 		* WP Product Review
 		* WP Recipe Maker
 		* WP Ultimate Recipe
+
 * Includes additional customizable option values in the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Item Name (aka Title)
 		* Schema Alternate Name
@@ -213,12 +235,14 @@ WooCommerce product markup includes all product images, product variations, prod
 <h3>Schema JSON-LD Markup Examples</h3>
 
 * [Schema JSON-LD Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
+
 * [Schema JSON-LD Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM add-on to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, accepts reservations, etc.).
+
 * [Schema JSON-LD Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro version of WPSSO Core. The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/?utm_source=wpssojson-readme) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssojson-readme).
+WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro version of WPSSO Core. The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/).
 
 == Installation ==
 
