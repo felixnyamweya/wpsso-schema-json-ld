@@ -28,11 +28,13 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 As Pinterest does not currently read Schema JSON-LD markup, WPSSO Core and its WPSSO Schema JSON-LD Markup add-on include special features to provide different Schema meta tags for Pinterest, along with preventing conflicts between incompatible Pinterest and Facebook meta tag values.
 
-**Allows you to select a different Schema than BlogPosting for your AMP pages.**
+**Allows selecting a different Schema than BlogPosting for your AMP pages.**
 
-**Complete WooCommerce product markup, including all variations (Pro version):**
+**Complete product markup for WooCommerce, including all variations (Pro version):**
 
 WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+
+<div style="clear:both"></div>
 
 <h3>Users Love WPSSO Schema JSON-LD Markup</h3>
 
@@ -41,6 +43,8 @@ WooCommerce product markup includes all product images, product variations, prod
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Crazy good! This plugin is one of my favorites! JS aggressively develops and improves this suite of plugins, continuously improving and adding features – with great customer support to boot! Highly recommended to improve your SEO for all kinds of JSON schemas!" - [mikegoubeaux](https://wordpress.org/support/topic/crazy-good-1/)
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Tried three other plugins before this one - for our Woocommerce site, this was by far the best one. Thanks!" - [EntoMarket](https://wordpress.org/support/topic/tried-three-other-plugins-before-this-one/)
+
+<div style="clear:both"></div>
 
 <h3>WPSSO JSON Free / Standard Features</h3>
 
@@ -57,7 +61,7 @@ WooCommerce product markup includes all product images, product variations, prod
 
 * Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
 
-* Adds an additional Schema Markup settings page to the SSO menu with additional options:
+* Adds a Schema Markup settings page to the SSO menu with additional options:
 
 	* WebSite Alternate Name
 	* Organization Logo URL
@@ -242,7 +246,7 @@ WooCommerce product markup includes all product images, product variations, prod
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core. The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/).
+WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The WPSSO JSON Free add-on works with either the Free or Pro versions of WPSSO Core. The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) uses WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/).
 
 == Installation ==
 

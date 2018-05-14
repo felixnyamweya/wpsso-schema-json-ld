@@ -23,11 +23,13 @@
 
 <p>As Pinterest does not currently read Schema JSON-LD markup, WPSSO Core and its WPSSO Schema JSON-LD Markup add-on include special features to provide different Schema meta tags for Pinterest, along with preventing conflicts between incompatible Pinterest and Facebook meta tag values.</p>
 
-<p><strong>Allows you to select a different Schema than BlogPosting for your AMP pages.</strong></p>
+<p><strong>Allows selecting a different Schema than BlogPosting for your AMP pages.</strong></p>
 
-<p><strong>Complete WooCommerce product markup, including all variations (Pro version):</strong></p>
+<p><strong>Complete product markup for WooCommerce, including all variations (Pro version):</strong></p>
 
 <p>WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
+
+<div style="clear:both"></div>
 
 <h3>Users Love WPSSO Schema JSON-LD Markup</h3>
 
@@ -36,6 +38,8 @@
 <p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Crazy good! This plugin is one of my favorites! JS aggressively develops and improves this suite of plugins, continuously improving and adding features – with great customer support to boot! Highly recommended to improve your SEO for all kinds of JSON schemas!" - <a href="https://wordpress.org/support/topic/crazy-good-1/">mikegoubeaux</a></p>
 
 <p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Tried three other plugins before this one - for our Woocommerce site, this was by far the best one. Thanks!" - <a href="https://wordpress.org/support/topic/tried-three-other-plugins-before-this-one/">EntoMarket</a></p>
+
+<div style="clear:both"></div>
 
 <h3>WPSSO JSON Free / Standard Features</h3>
 
@@ -50,7 +54,7 @@
 <li><p>Provides complete image SEO markup with image information from the WordPress Media Library.</p></li>
 <li><p>Built-in support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p></li>
 <li><p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (<a href="https://wpsso.com/">WPSSO Core Pro plugin</a> required).</p></li>
-<li><p>Adds an additional Schema Markup settings page to the SSO menu with additional options:</p>
+<li><p>Adds a Schema Markup settings page to the SSO menu with additional options:</p>
 
 <ul>
 <li>WebSite Alternate Name</li>
@@ -279,7 +283,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro add-on</a> uses many WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>.</p>
+<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plugin. The WPSSO JSON Free add-on works with either the Free or Pro versions of WPSSO Core. The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro add-on</a> uses WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>.</p>
 
 
 <h2>Installation</h2>
