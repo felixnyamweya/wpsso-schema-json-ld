@@ -34,8 +34,6 @@ As Pinterest does not currently read Schema JSON-LD markup, WPSSO Core and its W
 
 WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
-<div style="clear:both"></div>
-
 <h3>Users Love WPSSO Schema JSON-LD Markup</h3>
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin is heaven sent. I know little about SSO and this has taken care of everything. The support makes this an even better plugin to have. Keep up the great work!" - [kevanchetty](https://wordpress.org/support/topic/best-plugin-and-support-10/)
@@ -43,8 +41,6 @@ WooCommerce product markup includes all product images, product variations, prod
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Crazy good! This plugin is one of my favorites! JS aggressively develops and improves this suite of plugins, continuously improving and adding features – with great customer support to boot! Highly recommended to improve your SEO for all kinds of JSON schemas!" - [mikegoubeaux](https://wordpress.org/support/topic/crazy-good-1/)
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Tried three other plugins before this one - for our Woocommerce site, this was by far the best one. Thanks!" - [EntoMarket](https://wordpress.org/support/topic/tried-three-other-plugins-before-this-one/)
-
-<div style="clear:both"></div>
 
 <h3>WPSSO JSON Free / Standard Features</h3>
 
