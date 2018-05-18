@@ -349,8 +349,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( $wpsso->debug->enabled ) {
 				$wpsso->debug->log( 'getting preview image(s)' );
 			}
+
 			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
-				// prevent duplicates - exclude text/html videos
+
+				/**
+				 * Prevent duplicates by excluding text/html videos.
+				 */
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
 					if ( isset( $og_video['og:video:type'] ) && $og_video['og:video:type'] !== 'text/html' ) {
 						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) ) {
@@ -359,6 +363,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$og_images[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
 					}
 				}
+
 				if ( $prev_count > 0 ) {
 					$max['schema_img_max'] -= $prev_count;
 					if ( $wpsso->debug->enabled ) {
@@ -576,9 +581,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $videos_added;	// return count of videos added
 		}
 
-		/* pass a single dimension video array in $opts
+		/**
+		 * Pass a single dimension video array in $opts.
 		 *
-		 * example $opts array:
+		 * Example $opts array:
 		 *
 		 *	Array (
 		 *		[og:video:title] => An Example Title
@@ -604,7 +610,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );
 				}
-				return 0;	// return count of videos added
+				return 0;	// Return count of videos added.
 			}
 
 			$media_url = SucomUtil::get_mt_media_url( $opts, $prefix );
@@ -613,10 +619,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
 				}
-				return 0;	// return count of videos added
+				return 0;	// Return count of videos added.
 			}
 
-			// if not adding a list element, inherit the existing schema type url (if one exists)
+			/**
+			 * If not adding a list element, inherit the existing schema type url (if one exists).
+			 */
 			list( $video_type_id, $video_type_url ) = WpssoSchema::get_single_type_id_url( $json_data, false, false, 'video.object', $list_element );
 
 			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array(
