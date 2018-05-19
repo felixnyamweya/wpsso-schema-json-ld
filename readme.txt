@@ -272,7 +272,7 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plu
 
 == Screenshots ==
 
-01. WPSSO JSON Schema Markup settings page includes options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
+01. WPSSO JSON settings page with options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
 02. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Article (Pro version).
 03. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Recipe (Pro version).
 04. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Review (Pro version).
