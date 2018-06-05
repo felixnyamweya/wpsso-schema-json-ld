@@ -161,7 +161,7 @@
 <li>WP Ultimate Recipe</li>
 </ul></li>
 </ul></li>
-<li><p>Includes additional customizable option values in the Document SSO metabox, displayed or hidden based on the Schema Item Type selected:</p>
+<li><p>Includes additional customizable option values in the Document SSO (aka Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:</p>
 
 <ul>
 <li>All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
