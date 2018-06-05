@@ -160,7 +160,7 @@ WooCommerce product markup includes all product images, product variations, prod
 		* WP Recipe Maker
 		* WP Ultimate Recipe
 
-* Includes additional customizable option values in the Social and Search Optimization metabox, displayed or hidden based on the Schema Item Type selected:
+* Includes additional customizable option values in the Document SSO metabox, displayed or hidden based on the Schema Item Type selected:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Item Name (aka Title)
@@ -273,9 +273,9 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plu
 == Screenshots ==
 
 01. WPSSO JSON settings page with options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
-02. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Article (Pro version).
-03. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Recipe (Pro version).
-04. WPSSO JSON options in the Social and Search Optimization metabox for the Schema type https://schema.org/Review (Pro version).
+02. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Article (Pro version).
+03. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Recipe (Pro version).
+04. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Review (Pro version).
 05. WPSSO JSON example for the Schema type https://schema.org/Recipe on Pinterest (Pro version).
 06. WPSSO JSON example for the Schema type https://schema.org/TechArticle in Google's Structured Data Testing Tool (Pro version).
 
@@ -302,7 +302,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for the Schema HowTo type, with additional options in the Social and Search Optimization metabox (Pro version).
+	* Added support for the Schema HowTo type, with additional options in the Document SSO metabox (Pro version).
 		* How-To Makes 
 		* How-To Preparation Time 
 		* How-To Total Time 
@@ -320,7 +320,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 * *Improvements*
 	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
-	* Added a "Person Information" section to the post Social and Search Optimization metabox for the https://schema.org/Person type.
+	* Added a "Person Information" section to the post Document SSO metabox for the https://schema.org/Person type.
 	* Added a "Person Information" section and "Job Title" option in the Users &gt; Your SSO settings page metabox.
 * *Bugfixes*
 	* None
