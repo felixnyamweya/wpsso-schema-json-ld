@@ -160,7 +160,7 @@ WooCommerce product markup includes all product images, product variations, prod
 		* WP Recipe Maker
 		* WP Ultimate Recipe
 
-* Includes additional customizable option values in the Document SSO (aka Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:
+* Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Item Name (aka Title)
