@@ -244,7 +244,7 @@ WooCommerce product markup includes all product images, product variations, prod
 				* Schema Type [schema.org/DiscussionForumPosting](https://schema.org/DiscussionForumPosting)
 				* Schema Type [schema.org/SocialMediaPosting](https://schema.org/SocialMediaPosting)
 			* Schema Type [schema.org/TechArticle](https://schema.org/TechArticle)
-		* Schema Type [schema.org/Blog](https://schema.org/Blog) (includes blogPost property with posts)
+		* Schema Type [schema.org/Blog](https://schema.org/Blog)
 		* Schema Type [schema.org/Book](https://schema.org/Book)
 		* Schema Type [schema.org/Clip](https://schema.org/Clip)
 		* Schema Type [schema.org/Comment](https://schema.org/Comment)
