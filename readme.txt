@@ -18,7 +18,7 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png">
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
 **Provides *comprehensive* and *accurate* Schema JSON-LD markup for Google's Knowledge Graph and Rich Cards:**
 
