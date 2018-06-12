@@ -672,16 +672,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$page_posts_mods = array();
 
-			$get_posts_args = array(
-				'has_password'   => false,
-				'orderby'        => 'date',
-				'order'          => 'DESC',
-				'paged'          => $wpsso_paged,
-				'post_status'    => 'publish',
-				'post_type'      => 'post',
-				'posts_per_page' => $posts_per_page,
-			);
-
 			if ( $is_main ) {
 				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
 					$is_archive = true;
@@ -704,8 +694,21 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 * Setup the query for a blog posts page in the back-end.
 				 */
 				if ( is_admin() && $mod['is_home_index'] ) {
+
+					$get_posts_args = apply_filters( $this->p->lca . '_get_posts_args', array(
+						'has_password'   => false,
+						'orderby'        => 'date',
+						'order'          => 'DESC',
+						'paged'          => $wpsso_paged,
+						'post_status'    => 'publish',
+						'post_type'      => 'post',
+						'posts_per_page' => $posts_per_page,
+					), $mod );
+
 					global $wp_query;
+
 					$wp_query = new WP_Query( $get_posts_args );
+
 					$wp_query->is_home = true;
 				}
 
