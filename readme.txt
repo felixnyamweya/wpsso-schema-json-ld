@@ -598,7 +598,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Refactored code in the WpssoJsonSchema class for standardization.
 
 **Version 1.26.0 (2018/05/07)**
 
@@ -634,7 +634,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.26.1-dev.3 =
 
-(2018/06/12) None.
+(2018/06/12) Refactored code in the WpssoJsonSchema class for standardization.
 
 = 1.26.0 =
 
