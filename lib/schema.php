@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			global $wpsso_paged;
 			$wpsso_paged = 1;
 
-			$posts_per_page = self::get_posts_per_page( $posts_per_page, $mod );
+			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
 
 			/**
 			 * Get the mod array for all posts.
@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'page_posts_mods array has '.count( $page_posts_mods ).' elements' );
+				$wpsso->debug->log( 'page_posts_mods array has ' . count( $page_posts_mods ) . ' elements' );
 			}
 
 			if ( empty( $json_data[$prop_name] ) ) {
@@ -71,23 +71,23 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$post_data = WpssoSchema::get_schema_type_context( 'https://schema.org/ListItem', array(
 					'position' => $posts_count,
-					'url' => $post_sharing_url,
+					'url'      => $post_sharing_url,
 				) );
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'adding post id '.$post_mod['id'].' to '.$prop_name.' as array element #'.$prop_name_count );
+					$wpsso->debug->log( 'adding post id ' . $post_mod['id'] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 				}
 
 				$json_data[$prop_name][] = $post_data;	// Add the post data.
 
 				if ( $prop_name_count >= $posts_per_page ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'stopping here: maximum posts per page of '.$posts_per_page.' reached' );
+						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
 					}
 					break;	// Stop here.
 				}
 
-				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca.'_json_prop_https_schema_org_'.$prop_name );
+				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca . '_json_prop_https_schema_org_' . $prop_name );
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( empty( $json_data[$prop_name] ) ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'json data prop_name '.$prop_name.' is empty' );
+						$wpsso->debug->log( 'json data prop_name ' . $prop_name . ' is empty' );
 					}
 					unset( $json_data[$prop_name] );
 				}
@@ -143,7 +143,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			if ( isset( $added_page_type_ids[$page_type_id] ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: preventing recursion of page_type_id '.$page_type_id );
+					$wpsso->debug->log( 'exiting early: preventing recursion of page_type_id ' . $page_type_id );
 				}
 				return $posts_count;
 			} else {
@@ -163,7 +163,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			global $wpsso_paged;
 			$wpsso_paged = 1;
 
-			$posts_per_page = self::get_posts_per_page( $posts_per_page, $mod );
+			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
 
 			/**
 			 * Get the mod array for all posts.
@@ -180,7 +180,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'page_posts_mods array has '.count( $page_posts_mods ).' elements' );
+				$wpsso->debug->log( 'page_posts_mods array has ' . count( $page_posts_mods ) . ' elements' );
 			}
 
 			/**
@@ -190,19 +190,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( empty( $prop_type_ids ) ) {		// false or empty array - allow any schema type
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'any schema type is allowed for prop_name '.$prop_name );
+						$wpsso->debug->log( 'any schema type is allowed for prop_name ' . $prop_name );
 					}
 					$prop_type_ids = array( 'any' );
 
 				} elseif ( is_string( $prop_type_ids ) ) {	// convert value to an array
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'only schema type '.$prop_type_ids.' allowed for prop_name '.$prop_name );
+						$wpsso->debug->log( 'only schema type ' . $prop_type_ids . ' allowed for prop_name ' . $prop_name );
 					}
 					$prop_type_ids = array( $prop_type_ids );
 
 				} elseif ( ! is_array( $prop_type_ids ) ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'skipping prop_name '.$prop_name.': value must be false, string, or array of schema types' );
+						$wpsso->debug->log( 'skipping prop_name ' . $prop_name . ': value must be false, string, or array of schema types' );
 					}
 					continue;
 				}
@@ -224,7 +224,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $family_member_id === 'any' ) {
 
 							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': any schema type is allowed' );
+								$wpsso->debug->log( 'accepting post id ' . $post_mod['id'] . ': any schema type is allowed' );
 							}
 
 							$add_post_data = true;
@@ -233,13 +233,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						}
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting schema type for post id '.$post_mod['id'] );
+							$wpsso->debug->log( 'getting schema type for post id ' . $post_mod['id'] );
 						}
 
 						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $ret_schema_id = true
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'checking if schema type '.$mod_type_id.' is child of '.$family_member_id );
+							$wpsso->debug->log( 'checking if schema type ' . $mod_type_id . ' is child of ' . $family_member_id );
 						}
 
 						$mod_is_child = $wpsso->schema->is_schema_type_child( $mod_type_id, $family_member_id );
@@ -247,7 +247,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $mod_is_child ) {
 
 							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'accepting post id '.$post_mod['id'].': '.$mod_type_id.' is child of '.$family_member_id );
+								$wpsso->debug->log( 'accepting post id ' . $post_mod['id'] . ': ' . $mod_type_id . ' is child of ' . $family_member_id );
 							}
 
 							$add_post_data = true;
@@ -255,25 +255,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							break;	// one positive match is enough
 
 						} elseif ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'post id '.$post_mod['id'].' schema type '.$mod_type_id.' not a child of '.$family_member_id );
+							$wpsso->debug->log( 'post id ' . $post_mod['id'] . ' schema type ' . $mod_type_id . ' not a child of ' . $family_member_id );
 						}
 					}
 
 					if ( ! $add_post_data ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'skipping post id '.$post_mod['id'].' for prop_name '.$prop_name );
+							$wpsso->debug->log( 'skipping post id ' . $post_mod['id'] . ' for prop_name ' . $prop_name );
 						}
 						continue;
 					}
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'getting single mod data for post id '.$post_mod['id'] );
+						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod['id'] );
 					}
 
 					$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og is false.
 
 					if ( empty( $post_data ) ) {	// Prevent null assignment.
-						$wpsso->debug->log( 'single mod data for post id '.$post_mod['id'].' is empty' );
+						$wpsso->debug->log( 'single mod data for post id ' . $post_mod['id'] . ' is empty' );
 						continue;	// Get the next post mod.
 					}
 
@@ -281,20 +281,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$prop_name_count++;
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'adding post id '.$post_mod['id'].' to '.$prop_name.' as array element #'.$prop_name_count );
+						$wpsso->debug->log( 'adding post id ' . $post_mod['id'] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 					}
 
 					$json_data[$prop_name][] = $post_data;	// Add the post data.
 
 					if ( $prop_name_count >= $posts_per_page ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'stopping here: maximum posts per page of '.$posts_per_page.' reached' );
+							$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
 						}
 						break;	// Stop here.
 					}
 				}
 
-				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca.'_json_prop_https_schema_org_'.$prop_name );
+				$filter_name = SucomUtil::sanitize_hookname( $wpsso->lca . '_json_prop_https_schema_org_' . $prop_name );
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
@@ -304,7 +304,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( empty( $json_data[$prop_name] ) ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'json data prop_name '.$prop_name.' is empty' );
+						$wpsso->debug->log( 'json data prop_name ' . $prop_name . ' is empty' );
 					}
 					unset( $json_data[$prop_name] );
 				}
@@ -367,7 +367,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $prev_count > 0 ) {
 					$max['schema_img_max'] -= $prev_count;
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( $prev_count.' preview images found (schema_img_max adjusted to '.$max['schema_img_max'].')' );
+						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max['schema_img_max'] . ')' );
 					}
 				}
 			}
@@ -403,7 +403,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( $images_added.' images added' );
+				$wpsso->debug->log( $images_added . ' images added' );
 			}
 
 			/**
@@ -432,7 +432,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( $videos_added.' videos added' );
+					$wpsso->debug->log( $videos_added . ' videos added' );
 				}
 
 			} elseif ( $wpsso->debug->enabled ) {
@@ -448,12 +448,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			$main_prop = $mod['is_post'] && $mod['post_type'] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
 
-			$main_prop = apply_filters( $wpsso->lca.'_json_media_main_prop', $main_prop, $mod );
+			$main_prop = apply_filters( $wpsso->lca . '_json_media_main_prop', $main_prop, $mod );
 
 			if ( ! empty( $main_prop ) ) {
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( $mod['name'].' id '.$mod['id'].' '.$main_prop.' property is main entity' );
+					$wpsso->debug->log( $mod['name'] . ' id ' . $mod['id'] . ' ' . $main_prop . ' property is main entity' );
 				}
 
 				if ( ! empty( $json_data[$main_prop] ) && is_array( $json_data[$main_prop] ) ) {
@@ -464,11 +464,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					if ( ! isset( $json_data[$main_prop][$media_key]['mainEntityOfPage'] ) ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'mainEntityOfPage for '.$main_prop.' key '.$media_key.' = '.$mt_og['og:url'] );
+							$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' = ' . $mt_og['og:url'] );
 						}
 						$json_data[$main_prop][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
 					} elseif ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'mainEntityOfPage for '.$main_prop.' key '.$media_key.' already defined' );
+						$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' already defined' );
 					}
 
 					$json_data['mainEntityOfPage'] = false;
@@ -490,10 +490,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			$comments = get_comments( array(
 				'post_id' => $mod['id'],
-				'status' => 'approve',
-				'parent' => 0,	// don't get replies
-				'order' => 'DESC',
-				'number' => get_option( 'page_comments' ),	// limit number of comments
+				'status'  => 'approve',
+				'parent'  => 0,	// don't get replies
+				'order'   => 'DESC',
+				'number'  => get_option( 'page_comments' ),	// limit number of comments
 			) );
 
 			if ( is_array( $comments ) ) {
@@ -519,27 +519,27 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				// if not adding a list element, inherit the existing schema type url (if one exists)
 				if ( ! $list_element && ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'using inherited schema type url = '.$comment_type_url );
+						$wpsso->debug->log( 'using inherited schema type url = ' . $comment_type_url );
 					}
 				} else {
 					$comment_type_url = 'https://schema.org/Comment';
 				}
 
 				$ret = WpssoSchema::get_schema_type_context( $comment_type_url, array(
-					'url' => get_comment_link( $cmt->comment_ID ),
+					'url'         => get_comment_link( $cmt->comment_ID ),
 					'dateCreated' => mysql2date( 'c', $cmt->comment_date_gmt ),
 					'description' => get_comment_excerpt( $cmt->comment_ID ),
-					'author' => WpssoSchema::get_schema_type_context( 'https://schema.org/Person', array(
+					'author'      => WpssoSchema::get_schema_type_context( 'https://schema.org/Person', array(
 						'name' => $cmt->comment_author,
 					) ),
 				) );
 
 				$children = get_comments( array(
 					'post_id' => $mod['id'],
-					'status' => 'approve',
-					'parent' => $cmt->comment_ID,	// get the children
-					'order' => 'DESC',
-					'number' => get_option( 'page_comments' ),	// limit number of comments
+					'status'  => 'approve',
+					'parent'  => $cmt->comment_ID,	// get the children
+					'order'   => 'DESC',
+					'number'  => get_option( 'page_comments' ),	// limit number of comments
 				) );
 
 				if ( is_array( $children ) ) {
@@ -587,19 +587,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 * Example $opts array:
 		 *
 		 *	Array (
-		 *		[og:video:title] => An Example Title
+		 *		[og:video:title]       => An Example Title
 		 *		[og:video:description] => An example description...
-		 *		[og:video:secure_url] => https://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
-		 *		[og:video:url] => http://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
-		 *		[og:video:type] => application/x-shockwave-flash
-		 *		[og:video:width] => 1280
-		 *		[og:video:height] => 544
-		 *		[og:video:embed_url] => https://player.vimeo.com/video/150575335?autoplay=1
-		 *		[og:video:has_image] => 1
-		 *		[og:image:secure_url] => https://i.vimeocdn.com/video/550095036_1280.jpg
-		 *		[og:image] =>
-		 *		[og:image:width] => 1280
-		 *		[og:image:height] => 544
+		 *		[og:video:secure_url]  => https://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
+		 *		[og:video:url]         => http://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
+		 *		[og:video:type]        => application/x-shockwave-flash
+		 *		[og:video:width]       => 1280
+		 *		[og:video:height]      => 544
+		 *		[og:video:embed_url]   => https://player.vimeo.com/video/150575335?autoplay=1
+		 *		[og:video:has_image]   => 1
+		 *		[og:image:secure_url]  => https://i.vimeocdn.com/video/550095036_1280.jpg
+		 *		[og:image]             =>
+		 *		[og:image:width]       => 1280
+		 *		[og:image:height]      => 544
 		 *	)
 		 */
 		public static function add_single_video_data( &$json_data, $opts, $prefix = 'og:video', $list_element = true ) {
@@ -617,7 +617,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( empty( $media_url ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: '.$prefix.' URL values are empty' );
+					$wpsso->debug->log( 'exiting early: ' . $prefix . ' URL values are empty' );
 				}
 				return 0;	// Return count of videos added.
 			}
@@ -632,28 +632,28 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
-				'name' => $prefix.':title',
-				'description' => $prefix.':description',
-				'fileFormat' => $prefix.':type',	// mime type
-				'width' => $prefix.':width',
-				'height' => $prefix.':height',
-				'duration' => $prefix.':duration',
-				'uploadDate' => $prefix.':upload_date',
-				'thumbnailUrl' => $prefix.':thumbnail_url',
-				'embedUrl' => $prefix.':embed_url',
+				'name'         => $prefix . ':title',
+				'description'  => $prefix . ':description',
+				'fileFormat'   => $prefix . ':type',	// mime type
+				'width'        => $prefix . ':width',
+				'height'       => $prefix . ':height',
+				'duration'     => $prefix . ':duration',
+				'uploadDate'   => $prefix . ':upload_date',
+				'thumbnailUrl' => $prefix . ':thumbnail_url',
+				'embedUrl'     => $prefix . ':embed_url',
 			) );
 
-			if ( ! empty( $opts[$prefix.':has_image'] ) ) {
+			if ( ! empty( $opts[$prefix . ':has_image'] ) ) {
 				if ( ! WpssoSchema::add_og_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) ) {	// list_element = false
 					unset( $ret['thumbnail'] );
 				}
 			}
 
-			if ( ! empty( $opts[$prefix.':tag'] ) ) {
-				if ( is_array( $opts[$prefix.':tag'] ) ) {
-					$ret['keywords'] = implode( ', ', $opts[$prefix.':tag'] );
+			if ( ! empty( $opts[$prefix . ':tag'] ) ) {
+				if ( is_array( $opts[$prefix . ':tag'] ) ) {
+					$ret['keywords'] = implode( ', ', $opts[$prefix . ':tag'] );
 				} else {
-					$ret['keywords'] = $opts[$prefix.':tag'];
+					$ret['keywords'] = $opts[$prefix . ':tag'];
 				}
 			}
 
@@ -671,6 +671,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			$page_posts_mods = array();
+
+			$get_posts_args = array(
+				'has_password'   => false,
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+				'paged'          => $wpsso_paged,
+				'post_status'    => 'publish',
+				'post_type'      => 'post',
+				'posts_per_page' => $posts_per_page,
+			);
 
 			if ( $is_main ) {
 				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
@@ -695,14 +705,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 */
 				if ( is_admin() && $mod['is_home_index'] ) {
 					global $wp_query;
-					$wp_query = new WP_Query( array(
-						'posts_per_page' => $posts_per_page,
-						'paged'          => true,
-						'post_status'    => 'publish',
-						'post_type'      => 'post',
-						'orderby'        => 'date',
-						'order'          => 'DESC',
-					) );
+					$wp_query = new WP_Query( $get_posts_args );
 					$wp_query->is_home = true;
 				}
 
@@ -719,7 +722,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						global $post;
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting mod for post id '.$post->ID );
+							$wpsso->debug->log( 'getting mod for post id ' . $post->ID );
 						}
 
 						$page_posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
@@ -753,18 +756,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 			}
 
-			$page_posts_mods = apply_filters( $wpsso->lca.'_json_page_posts_mods', $page_posts_mods, $mod, $page_type_id, $is_main );
+			$page_posts_mods = apply_filters( $wpsso->lca . '_json_page_posts_mods', $page_posts_mods, $mod, $page_type_id, $is_main );
 
 			return $page_posts_mods;
 		}
 
-		private static function get_posts_per_page( $posts_per_page = null, $mod ) {
+		private static function get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
 			static $posts_per_page_max = null;
 
-			if ( ! isset( $posts_per_page_max ) ) {	// only set the value once
+			if ( ! isset( $posts_per_page_max ) ) {	// Only set the value once
 				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
 			}
 
@@ -774,15 +777,15 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( $posts_per_page > $posts_per_page_max ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'setting posts_per_page '.$posts_per_page.' to maximum of '.$posts_per_page_max );
+					$wpsso->debug->log( 'setting posts_per_page ' . $posts_per_page . ' to maximum of ' . $posts_per_page_max );
 				}
 				$posts_per_page = $posts_per_page_max;
 			}
 
-			$posts_per_page = (int) apply_filters( $wpsso->lca.'_posts_per_page', $posts_per_page, $mod );
+			$posts_per_page = (int) apply_filters( $wpsso->lca . '_posts_per_page', $posts_per_page, $mod, $page_type_id, $is_main );
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'posts_per_page after filter is '.$posts_per_page );
+				$wpsso->debug->log( 'posts_per_page after filter is ' . $posts_per_page );
 			}
 
 			return $posts_per_page;
