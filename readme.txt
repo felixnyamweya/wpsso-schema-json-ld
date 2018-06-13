@@ -589,7 +589,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.26.1-dev.3 (2018/06/12)**
+**Version 1.26.1-b.1 (2018/06/13)**
 
 * *New Features*
 	* None
@@ -632,9 +632,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.26.1-dev.3 =
+= 1.26.1-b.1 =
 
-(2018/06/12) Refactored code in the WpssoJsonSchema class for standardization.
+(2018/06/13) Refactored code in the WpssoJsonSchema class for standardization.
 
 = 1.26.0 =
 
