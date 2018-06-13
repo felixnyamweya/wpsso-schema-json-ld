@@ -589,12 +589,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.26.1-b.1 (2018/06/13)**
+**Version 1.27.0-b.1 (2018/06/13)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added the canonical, permalink, and shortlink URLs to the 'sameAs' property.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -632,9 +632,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.26.1-b.1 =
+= 1.27.0-b.1 =
 
-(2018/06/13) Refactored code in the WpssoJsonSchema class for standardization.
+(2018/06/13) Added the canonical, permalink, and shortlink URLs to the 'sameAs' property. Refactored code in the WpssoJsonSchema class for standardization.
 
 = 1.26.0 =
 
