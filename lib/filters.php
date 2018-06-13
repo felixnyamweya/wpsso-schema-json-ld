@@ -77,6 +77,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
+
 			$ret = WpssoSchema::get_schema_type_context( $page_type_url );
 
 			/**
@@ -84,7 +85,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	additionalType
 			 */
 			if ( is_object( $mod['obj'] ) ) {
+
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
+
 				if ( is_array( $mod_opts ) ) {	// just in case
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
 						if ( filter_var( $addl_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
@@ -105,13 +108,90 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	sameAs
 			 */
 			if ( is_object( $mod['obj'] ) ) {
+
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
-				if ( is_array( $mod_opts ) ) {	// just in case
-					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $sameas_url ) {
-						if ( filter_var( $sameas_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
-							$ret['sameAs'][] = $sameas_url;
-						}
+
+				$ret['sameAs'][] = $this->p->util->get_canonical_url( $mod );
+
+				if ( $mod['is_post'] ) {
+
+					$ret['sameAs'][] = get_permalink( $mod['id'] );
+
+					$ret['sameAs'][] = wp_get_shortlink( $mod['id'], 'post' );
+
+					/**
+					 * Some themes and plugins have been known to hook the WordPress 'get_shortlink' filter 
+					 * and return an empty URL to disable the WordPress shortlink meta tag. This breaks the 
+					 * WordPress wp_get_shortlink() function and is a violation of the WordPress theme 
+					 * guidelines.
+					 *
+					 * This method calls the WordPress wp_get_shortlink() function, and if an empty string 
+					 * is returned, calls an unfiltered version of the same function.
+					 *
+					 * $context = 'blog', 'post' (default), 'media', or 'query'
+					 */
+					$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod['id'], 'post' );
+
+				} elseif ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
+
+					$service_key = $this->p->options['plugin_shortener'];
+
+					$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og['og:url'], $service_key, $mod, $mod['name'] );
+				}
+
+				/**
+				 * Get additional sameAs URLs from the post/term/user custom meta.
+				 */
+				if ( is_array( $mod_opts ) ) {	// Just in case
+					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $url ) {
+						$ret['sameAs'][] = $url;
 					}
+				}
+
+				/**
+				 * Sanitize the sameAs array - make sure URLs are valid and remove any duplicates.
+				 */
+				if ( ! empty( $ret['sameAs'] ) ) {
+
+					$added_urls = array();
+
+					foreach ( $ret['sameAs'] as $num => $url ) {
+
+						if ( empty( $url ) ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'skipping sameAs url - value is empty' );
+							}
+
+						} elseif ( $ret['url'] === $url ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'skipping sameAs url - value is "url" property (' . $url . ')' );
+							}
+
+						} elseif ( isset( $added_urls[$url] ) ) {	// Already added.
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'skipping sameAs url - value already added (' . $url . ')' );
+							}
+
+						} elseif ( filter_var( $url, FILTER_VALIDATE_URL ) === false ) {
+
+							if ( $this->p->debug->enabled ) {
+								$this->p->debug->log( 'skipping sameAs url - value is not valid (' . $url . ')' );
+							}
+
+						} else {	// Mark the url as already added and get the next url.
+
+							$added_urls[$url] = true;
+
+							continue;	// Get the next url.
+						}
+
+						unset( $ret['sameAs'][$num] );	// Remove the duplicate / invalid url.
+					}
+
+					$ret['sameAs'] = array_values( $ret['sameAs'] );	// Reindex / renumber the array.
 				}
 			}
 
@@ -154,18 +234,23 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Get additional Schema properties from the optional post content shortcode.
 			 */
 			if ( $mod['is_post'] ) {
+
 				$content = get_post_field( 'post_content', $mod['id'] );
+
 				if ( empty( $content ) ) {
+
 					if ( $this->p->debug->enabled ) {
 						$this->p->debug->log( 'post_content for post id '.$mod['id'].' is empty' );
 					}
-				// are plugin shortcodes enabled
-				} elseif ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
-					// is the schema shortcode class loaded
-					if ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {
-						// does the content have a schema shortcode
-						if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
+
+				} elseif ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {	// Are plugin shortcodes enabled.
+
+					if ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
+
+						if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {	// Does the content have a schema shortcode.
+
 							$content_data = $this->p->sc['schema']->get_content_json_data( $content );
+
 							if ( ! empty( $content_data ) ) {
 								$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
 							}
@@ -876,7 +961,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 */
 		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
 			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
-				if ( $sub === 'admin' ) { // skip status for admin menus and tabs
+				if ( $sub === 'admin' ) { // Skip status for admin menus and tabs.
 					continue;
 				}
 				foreach ( $libs as $id_key => $label ) {
