@@ -32,8 +32,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					( $depth ? WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . $depth : '' );
 			}
 
-			add_filter( 'no_texturize_shortcodes', array( &$this, 'exclude_from_wptexturize' ) );
-			add_filter( 'sucom_strip_shortcodes_preg', array( &$this, 'strip_shortcodes_preg' ) );
+			add_filter( 'no_texturize_shortcodes', array( $this, 'exclude_from_wptexturize' ) );
+			add_filter( 'sucom_strip_shortcodes_preg', array( $this, 'strip_shortcodes_preg' ) );
 
 			$this->add_shortcode();
 
@@ -81,7 +81,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				foreach ( $this->tag_names as $tag ) {
 					if ( ! shortcode_exists( $tag ) ) {
 						$sc_added = true;
-						add_shortcode( $tag, array( &$this, 'do_shortcode' ) );
+						add_shortcode( $tag, array( $this, 'do_shortcode' ) );
 						if ( $this->p->debug->enabled ) {
 							$this->p->debug->log( '[' . $tag . '] schema shortcode added' );
 						}

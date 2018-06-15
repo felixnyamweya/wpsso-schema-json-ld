@@ -61,13 +61,13 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
-			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 20, 2 );	// Checks core version and merges config array.
-			add_filter( 'wpsso_get_avail', array( &$this, 'wpsso_get_avail' ), 20, 1 );
+			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 20, 2 );	// Checks core version and merges config array.
+			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 20, 1 );
 
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
-			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 100 );	// Sets the $this->p reference variable.
-			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 100 );
-			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 100 );
+			add_action( 'wpsso_init_options', array( $this, 'wpsso_init_options' ), 100 );	// Sets the $this->p reference variable.
+			add_action( 'wpsso_init_objects', array( $this, 'wpsso_init_objects' ), 100 );
+			add_action( 'wpsso_init_plugin', array( $this, 'wpsso_init_plugin' ), 100 );
 		}
 
 		public static function &get_instance() {
