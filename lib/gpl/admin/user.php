@@ -94,9 +94,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 
-			return SucomUtil::get_after_key( $table_rows, 'subsection_schema',
-				'', '<td colspan="2">'.$this->p->msgs->get( 'pro-feature-msg', 
-					array( 'lca' => 'wpssojson' ) ).'</td>' );
+			return SucomUtil::get_after_key( $table_rows, 'subsection_schema', '',
+				'<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
 		}
 	}
 }
