@@ -589,6 +589,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.28.0-dev.1 (2018/06/20)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.27.0 (2018/06/16)**
 
 * *New Features*
@@ -598,7 +609,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Refactored code in the WpssoJsonSchema class for standardization.
+	* Refactored code in the WpssoJsonSchema class.
 
 **Version 1.26.0 (2018/05/07)**
 
@@ -632,9 +643,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 1.28.0-dev.1 =
+
+(2018/06/20) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
+
 = 1.27.0 =
 
-(2018/06/16) Added the canonical, permalink, and shortlink URLs to the 'sameAs' property. Refactored code in the WpssoJsonSchema class for standardization.
+(2018/06/16) Added the canonical, permalink, and shortlink URLs to the 'sameAs' property. Refactored code in the WpssoJsonSchema class.
 
 = 1.26.0 =
 
