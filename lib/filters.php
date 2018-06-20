@@ -324,6 +324,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_nutri_serv':
 				case 'schema_recipe_yield':		// Recipe Makes
 				case 'schema_review_item_name':
+				case 'schema_review_rating_alt_name':
 					return 'one_line';
 					break;
 				case 'schema_type':
@@ -382,9 +383,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_save_post_options( $md_opts, $post_id, $rel_id, $mod ) {
 
-			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// only get the schema options
+			$md_defs = $this->filter_get_md_defaults( array(), $mod );	// Only get the schema options.
 
-			// check for default recipe values
+			/**
+			 * Check for default recipe values.
+			 */
 			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts ) as $md_idx => $value ) {
 				$md_opts[$md_idx] = (int) $value;
 				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
@@ -392,12 +395,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 
-			// if the review rating is 0, remove the review rating options
+			/**
+			 * If the review rating is 0, remove the review rating options.
+			 * If we have a review rating, then make sure there's a from/to as well.
+			 */
 			if ( empty( $md_opts['schema_review_rating'] ) ) {
 				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
 					unset( $md_opts[$md_idx] );
 				}
-			// if we have a review rating, then make sure we have a from/to as well
 			} else {
 				foreach ( array( 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
 					if ( empty( $md_opts[$md_idx] ) && isset( $md_defs[$md_idx] ) ) {
@@ -408,7 +413,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			foreach ( array( 'schema_event_start', 'schema_event_end' ) as $md_pre ) {
 
-				// unset date / time if same as the default value
+				/**
+				 * Unset date / time if same as the default value.
+				 */
 				foreach ( array( 'date', 'time', 'timezone' ) as $md_ext ) {
 
 					if ( isset( $md_opts[$md_pre.'_'.$md_ext] ) &&
@@ -419,12 +426,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					}
 				}
 
-				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {		// no date or time
+				if ( empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {		// No date or time.
 					unset( $md_opts[$md_pre.'_timezone'] );
 					continue;
-				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {	// date with no time
+				} elseif ( ! empty( $md_opts[$md_pre.'_date'] ) && empty( $md_opts[$md_pre.'_time'] ) ) {	// Date with no time.
 					$md_opts[$md_pre.'_time'] = '00:00';
-				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {	// time with no date
+				} elseif ( empty( $md_opts[$md_pre.'_date'] ) && ! empty( $md_opts[$md_pre.'_time'] ) ) {	// Time with no date.
 					$md_opts[$md_pre.'_date'] = gmdate( 'Y-m-d', time() );
 				}
 			}
@@ -470,7 +477,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				);
 			}
 
-			// clear term archive page meta tags (and json markup)
+			/**
+			 * Clear term archive page meta tags (and json markup).
+			 */
 			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
 				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
 					$transient_keys[] = array(
@@ -481,7 +490,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 
-			// clear author archive page meta tags (and json markup)
+			/**
+			 * Clear author archive page meta tags (and json markup).
+			 */
 			$author_id = get_post_field( 'post_author', $mod['id'] );
 
 			$transient_keys[] = array(
@@ -588,8 +599,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_item_url' => '',				// Reviewed Item URL
 				'schema_review_item_image_url' => '',			// Reviewed Item Image URL
 				'schema_review_rating' => '0.0',			// Reviewed Item Rating
-				'schema_review_rating_from' => '1',			// Reviewed Item Rating (from)
-				'schema_review_rating_to' => '5',			// Reviewed Item Rating (to)
+				'schema_review_rating_from' => '1',			// Reviewed Item Rating (From)
+				'schema_review_rating_to' => '5',			// Reviewed Item Rating (To)
+				'schema_review_rating_alt_name' => '',			// Reviewed Item Rating Alternate Name
 			);
 
 			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
@@ -948,6 +960,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_rating':
 
 					$text = __( 'A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5).', 'wpsso-schema-json-ld' );
+
+				case 'tooltip-meta-schema_review_rating_alt_name':
+
+					$text = __( 'An alternate name / description for the rating value (example: False, Misleading, Accurate, etc.).', 'wpsso-schema-json-ld' );
 
 				 	break;
 

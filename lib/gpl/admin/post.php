@@ -597,6 +597,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						' '._x( 'to', 'option comment', 'wpsso-schema-json-ld' ).' '.
 							$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
 				),
+				'schema_review_rating_alt_name' => array(
+					'tr_class' => $schema_type_tr_class['review'],
+					'label' => _x( 'Rating Alt Name', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating_alt_name', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '' ),
+				),
 			);
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
