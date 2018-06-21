@@ -231,6 +231,7 @@ WooCommerce product markup includes all product images, product variations, prod
 		* Subject Webpage URL 
 		* Subject Image URL 
 		* Review Rating 
+		* Rating Alt Name
 
 * Select any available Schema type or sub-type for your content, including the following and more:
 
@@ -589,7 +590,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.28.0-dev.1 (2018/06/20)**
+**Version 1.28.0-dev.2 (2018/06/20)**
 
 * *New Features*
 	* None
@@ -643,7 +644,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.28.0-dev.1 =
+= 1.28.0-dev.2 =
 
 (2018/06/20) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
 
