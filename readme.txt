@@ -544,20 +544,20 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plu
 
 == Installation ==
 
-<h3>Install and Uninstall</h3>
+<h3 class="top">Install and Uninstall</h3>
 
 * [Install the WPSSO JSON Add-on](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/install-the-plugin/)
 * [Uninstall the WPSSO JSON Add-on](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
-<h3>Frequently Asked Questions</h3>
+<h3 class="top">Frequently Asked Questions</h3>
 
 * [Can I add custom Schema properties to the JSON-LD?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-custom-schema-properties-to-the-json-ld/)
 
 == Other Notes ==
 
-<h3>Additional Documentation</h3>
+<h3 class="top">Additional Documentation</h3>
 
 * [Developer Resources](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/)
 	* [Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/)
@@ -579,7 +579,7 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the WPSSO Core plu
 
 == Changelog ==
 
-<h3>Version Numbering</h3>
+<h3 class="top">Version Numbering</h3>
 
 Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
