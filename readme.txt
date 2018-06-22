@@ -595,7 +595,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.28.0-b.1 (2018/06/21)**
+**Version 1.28.0-b.2 (2018/06/22)**
 
 * *New Features*
 	* None
@@ -649,9 +649,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.28.0-b.1 =
+= 1.28.0-b.2 =
 
-(2018/06/21) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
+(2018/06/22) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
 
 = 1.27.0 =
 
