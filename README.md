@@ -14,8 +14,7 @@
 <h2>Description</h2>
 
 <blockquote class="top">
-<p><strong>Choose a plugin for today AND tomorrow!</strong></p>
-<p><strong>The WPSSO Schema JSON-LD Markup plugin is 100% compatible with the new "Gutenberg" block editor in WordPress 5!</strong></p>
+<p><strong>Choose a plugin for today AND tomorrow! The WPSSO Schema JSON-LD Markup plugin is 100% compatible with the upcoming <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in WordPress 5!</strong></p>
 </blockquote>
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
