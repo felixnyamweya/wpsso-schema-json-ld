@@ -136,6 +136,7 @@ WooCommerce product markup includes all product images, product variations, prod
 		* WordPress REST API (version 2)
 		* WP eCommerce
 		* WP Meta SEO
+		* WP-PostRatings
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 
@@ -595,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.28.0-rc.1 (2018/06/23)**
+**Version 1.28.0 (2018/06/23)**
 
 * *New Features*
 	* None
@@ -649,7 +650,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.28.0-rc.1 =
+= 1.28.0 =
 
 (2018/06/23) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
 
