@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.6
 WC Tested Up To: 3.4.2
-Stable Tag: 1.27.0
+Stable Tag: 1.28.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -653,12 +653,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.28.0 =
 
 (2018/06/23) Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
-
-= 1.27.0 =
-
-(2018/06/16) Added the canonical, permalink, and shortlink URLs to the 'sameAs' property. Refactored code in the WpssoJsonSchema class.
-
-= 1.26.0 =
-
-(2018/05/07) Added support for the Schema HowTo type (Pro version).
 
