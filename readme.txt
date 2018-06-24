@@ -132,7 +132,6 @@ WooCommerce product markup includes all product images, product variations, prod
 		* The Events Calendar
 		* The SEO Framework
 		* WooCommerce (versions 1, 2, and 3)
-		* WordPress REST API (version 2)
 		* WP eCommerce
 		* WP Meta SEO
 		* WP-PostRatings

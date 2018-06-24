@@ -128,7 +128,6 @@
 <li>The Events Calendar</li>
 <li>The SEO Framework</li>
 <li>WooCommerce (versions 1, 2, and 3)</li>
-<li>WordPress REST API (version 2)</li>
 <li>WP eCommerce</li>
 <li>WP Meta SEO</li>
 <li>WP-PostRatings</li>
