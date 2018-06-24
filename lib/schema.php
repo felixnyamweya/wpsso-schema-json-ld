@@ -695,7 +695,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 */
 				if ( is_admin() && $mod['is_home_index'] ) {
 
-					$get_posts_args = apply_filters( $this->p->lca . '_get_posts_args', array(
+					$get_posts_args = apply_filters( $wpsso->lca . '_get_posts_args', array(
 						'has_password'   => false,
 						'orderby'        => 'date',
 						'order'          => 'DESC',

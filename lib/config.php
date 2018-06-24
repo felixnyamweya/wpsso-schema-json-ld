@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.28.0',		// Plugin version.
+					'version' => '1.28.1',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 		public static function set_constants( $plugin_filepath ) { 
 
-			if ( defined( 'WPSSOJSON_VERSION' ) ) {			// execute and define constants only once
+			if ( defined( 'WPSSOJSON_VERSION' ) ) {	// Define constants only once.
 				return;
 			}
 
