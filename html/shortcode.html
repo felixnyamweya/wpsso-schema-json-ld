@@ -114,7 +114,7 @@ The resulting JSON-LD array:
 
 <h4>Customer Reviews</h4>
 
-<p>You can add customer reviews to your content manually (using this example), but a better solution is to use a proper content rating / review plugin like the <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a> add-on, which adds customer ratings, reviews, replies, and aggregate ratings markup automatically. ;-)</p>
+<p>You can add (and maintain) customer reviews in your content manually using this example, but <strong>a much better (and more scalable) solution is to use a proper content rating / review plugin</strong>, like the <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a> Free add-on, which adds customer ratings, reviews, replies and aggregate ratings markup automatically. WPSSO Core Pro also supports ratings and reviews from the WooCommerce, Yotpo Social Reviews for WooCommerce, and WP-PostRatings plugins.</p>
 
 <p>Note that we're using Schema type IDs from WPSSO in this example &mdash; using <code>type="review"</code> is the same as using <code>type="https://schema.org/Review"</code>.</p>
 
@@ -139,3 +139,13 @@ Rating: 4/5
 &lt;dd&gt;
 &lt;dl&gt;
 </pre>
+
+<h4>Aggregate Ratings</h4>
+
+<p>Again, you can add (and maintain) aggregate rating values in your content manually using this example, but <strong>a much better (and more scalable) solution is to use a proper content rating / review plugin</strong>. ;-) And in case you're using a non-supported rating / review plugin &mdash; that saves aggregate rating values in post meta &mdash; instead of using a shortcode, you can also use a <a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Pro version filter to update the Schema aggregateRating property value</a>.</p>
+
+<pre class="lang:xhtml decode:true">
+&#91;schema prop="aggregateRating" type="rating.aggregate"
+    ratingValue="4" ratingCount="1" worstRating="1" bestRating="5"/&#93;
+</pre>
+
