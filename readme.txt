@@ -594,6 +594,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.28.2-dev.1 (2018/06/25)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a new WpssoJsonSchema add_single_comment_reply_data() method to add only replies to reviews.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.28.1 (2018/06/24)**
 
 * *New Features*
@@ -658,6 +669,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.28.2-dev.1 =
+
+(2018/06/25) Added a new WpssoJsonSchema add_single_comment_reply_data() method to add only replies to reviews.
 
 = 1.28.1 =
 
