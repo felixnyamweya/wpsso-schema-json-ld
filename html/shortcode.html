@@ -116,7 +116,7 @@ The resulting JSON-LD array:
 
 <p>You can add customer reviews to your content manually (using this example), but a better solution is to use a proper content rating / review plugin like the <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a> add-on, which adds customer ratings, reviews, replies, and aggregate ratings markup automatically. ;-)</p>
 
-<p>Note that we're using Schema type IDs from WPSSO in this example &mdash; using <code>type="review"</code> is the same as <code>type="https://schema.org/Review"</code>.</p>
+<p>Note that we're using Schema type IDs from WPSSO in this example &mdash; using <code>type="review"</code> is the same as using <code>type="https://schema.org/Review"</code>.</p>
 
 <pre class="lang:xhtml decode:true">
 &lt;dl&gt;
@@ -125,7 +125,8 @@ The resulting JSON-LD array:
 
 &#91;schema prop="+review" type="review" dateCreated="2018-06-25T12:40:09+00:00"&#93;
 
-    &#91;schema_1 prop="reviewRating" type="rating" ratingValue="4" worstRating="1" bestRating="5"/&#93;
+    &#91;schema_1 prop="reviewRating" type="rating"
+        ratingValue="4" worstRating="1" bestRating="5"/&#93;
 
     &#91;schema_1 prop="author" type="person" name="John Doe"/&#93;
 
