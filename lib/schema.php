@@ -512,15 +512,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$comments_added = 0;
 
-			if ( $comment_id && $cmt = get_comment( $comment_id ) ) {
+			if ( $comment_id && $cmt = get_comment( $comment_id ) ) {	// Just in case.
 
-				$comments_added++;
-
-				// if not adding a list element, inherit the existing schema type url (if one exists)
+				/**
+				 * If not adding a list element, inherit the existing schema type url (if one exists).
+				 */
 				if ( ! $list_element && ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'using inherited schema type url = ' . $comment_type_url );
 					}
+
 				} else {
 					$comment_type_url = 'https://schema.org/Comment';
 				}
@@ -534,23 +536,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					) ),
 				) );
 
-				$children = get_comments( array(
-					'post_id' => $mod['id'],
-					'status'  => 'approve',
-					'parent'  => $cmt->comment_ID,	// get the children
-					'order'   => 'DESC',
-					'number'  => get_option( 'page_comments' ),	// limit number of comments
-				) );
+				$comments_added++;
 
-				if ( is_array( $children ) ) {
-					foreach( $children as $num => $child ) {
-						$children_added = self::add_single_comment_data( $ret['comment'], $mod, $child->comment_ID );
-						if ( ! $children_added ) {
-							unset( $ret['comment'] );
-						} else {
-							$comments_added += $children_added;
-						}
-					}
+				$replies_added = self::add_single_comment_reply_data( $ret['comment'], $mod, $cmt->comment_ID );
+
+				if ( ! $replies_added ) {
+					unset( $ret['comment'] );
 				}
 
 				if ( empty( $list_element ) ) {
@@ -561,6 +552,35 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			return $comments_added;	// return count of comments added
+		}
+
+		public static function add_single_comment_reply_data( &$json_data, $mod, $comment_id ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			$replies_added = 0;
+
+			$replies = get_comments( array(
+				'post_id' => $mod['id'],
+				'status'  => 'approve',
+				'parent'  => $comment_id,	// Get only the replies for this comment.
+				'order'   => 'DESC',
+				'number'  => get_option( 'page_comments' ),	// Limit the number of comments.
+			) );
+
+			if ( is_array( $replies ) ) {
+
+				foreach( $replies as $num => $reply ) {
+
+					$comments_added = self::add_single_comment_data( $json_data, $mod, $reply->comment_ID, true );
+
+					if ( $comments_added ) {
+						$replies_added += $comments_added;
+					}
+				}
+			}
+
+			return $replies_added;	// Return count of replies added.
 		}
 
 		/**
