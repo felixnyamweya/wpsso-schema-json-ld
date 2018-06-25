@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.28.2-dev.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.28.2-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -814,21 +814,21 @@ msgid "%s Location"
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:163
+#: lib/shortcode/schema.php:200
 msgid ""
 "%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required "
 "'prop' attribute value."
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag
-#: lib/shortcode/schema.php:182
+#: lib/shortcode/schema.php:224
 msgid ""
 "%1$s [%2$s] shortcode with a content is missing a required 'type' attribute "
 "value."
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:252
+#: lib/shortcode/schema.php:301
 msgid ""
 "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
