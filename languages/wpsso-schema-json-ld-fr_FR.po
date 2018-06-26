@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.28.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.28.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-06-23 09:01-0600\n"
-"PO-Revision-Date: 2018-06-23 09:01-0600\n"
+"POT-Creation-Date: 2018-06-26 11:20-0600\n"
+"PO-Revision-Date: 2018-06-26 11:20-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -749,17 +749,17 @@ msgid "%s Location"
 msgstr "Lieu de %s"
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:163
+#: lib/shortcode/schema.php:200
 msgid "%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required 'prop' attribute value."
 msgstr "Le shortcode [%2$s] de %1$s avec \"%3$s\" comme attribut type doit avoir une valeur pour l'attribut 'prop' aussi."
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag
-#: lib/shortcode/schema.php:182
+#: lib/shortcode/schema.php:224
 msgid "%1$s [%2$s] shortcode with a content is missing a required 'type' attribute value."
 msgstr "Le shortcode [%2$s] de %1$s avec un texte de description doit avoir une valeur pour l'attribut 'type'."
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:252
+#: lib/shortcode/schema.php:301
 msgid "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr "Le shortcode [%2$s] de %1$s avec \"%3$s\" comme attribut type du  n'est pas une valeur reconnue."
 
