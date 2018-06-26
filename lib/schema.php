@@ -781,6 +781,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$page_posts_mods = apply_filters( $wpsso->lca . '_json_page_posts_mods', $page_posts_mods, $mod, $page_type_id, $is_main );
 
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'returning ' . count( $page_posts_mods ) . ' page posts mods' );
+			}
+
 			return $page_posts_mods;
 		}
 
