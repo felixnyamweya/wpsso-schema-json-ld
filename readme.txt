@@ -594,12 +594,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.28.2-dev.2 (2018/06/25)**
+**Version 1.28.2-dev.3 (2018/06/26)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a new WpssoJsonSchema add_single_comment_reply_data() method to add only replies to reviews.
+	* Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
 * *Bugfixes*
 	* Fixed an incorrect array element pointer when parsing nested shortcodes.
 * *Developer Notes*
@@ -670,9 +670,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.28.2-dev.2 =
+= 1.28.2-dev.3 =
 
-(2018/06/25) Fixed an incorrect array element pointer when parsing nested shortcodes. Added a new WpssoJsonSchema add_single_comment_reply_data() method to add only replies to reviews.
+(2018/06/26) Fixed an incorrect array element pointer when parsing nested shortcodes. Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
 
 = 1.28.1 =
 
