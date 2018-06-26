@@ -14,7 +14,7 @@ If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always val
 <p>Before using the <code>&#91;schema&#93;</code> shortcode in your content, make sure the <strong>SSO &gt; Advanced &gt; Plugin Settings &gt; Enable Plugin Shortcode(s)</strong> option is enabled, or the shortcode will be ignored. ;-)</p>
 </blockquote>
 
-<p>The <code>&#91;schema&#93;</code> shortcode can be used to define additional properties for the content. The following example defines an 'articleSection' property for the Schema Article type. Note that all shortcode attributes are considered to be Schema property names, except for the 'prop' and 'type' attribute names, which have special meaning (see bellow).</p>
+<p>The <code>&#91;schema&#93;</code> shortcode can be used to define additional properties for the content. The following example defines an 'articleSection' property for the Schema Article type. Note that all shortcode attributes are considered to be Schema property names, except for the 'prop' and 'type' attribute names, which have special meaning (see below).</p>
 
 <pre class="lang:xhtml decode:true">
 &#91;schema articleSection="Sports" /&#93;
@@ -41,7 +41,7 @@ If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always val
 &#91;/schema&#93;
 </pre> 
 
-<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to <em>add</em> a new element to the Schema property array, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see bellow for additional notes on using nested shortcodes).
+<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to <em>add</em> a new element to the Schema property array, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see below for additional notes on using nested shortcodes).
 
 <pre class="lang:xhtml decode:true">
 &#91;schema prop="+offers" type="https://schema.org/Offer"&#93;
