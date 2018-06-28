@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.6
 WC Tested Up To: 3.4.2
-Stable Tag: 1.28.1
+Stable Tag: 1.28.2
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -673,8 +673,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.28.2 =
 
 (2018/06/28) Fixed an incorrect array element pointer when parsing nested shortcodes. Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
-
-= 1.28.1 =
-
-(2018/06/24) Fixed an incorrect object variable context in the WpssoJsonSchema get_page_posts_mods() method.
 
