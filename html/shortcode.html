@@ -116,7 +116,7 @@ The resulting JSON-LD array:
 
 <p>You can add (and maintain) customer reviews in your content manually using this example, but <strong>a much better (and more scalable) solution is to use a proper content rating / review plugin</strong>, like the <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a> Free add-on, which adds customer ratings, reviews, replies and aggregate ratings markup automatically. WPSSO Core Pro also supports ratings and reviews from the <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>, <a href="https://wordpress.org/plugins/yotpo-social-reviews-for-woocommerce/">Yotpo Social Reviews for WooCommerce</a>, and <a href="https://wordpress.org/plugins/wp-postratings/">WP-PostRatings</a> plugins.</p>
 
-<p>Note that we're using Schema type IDs from WPSSO in this example &mdash; using <code>type="review"</code> is the same as using <code>type="https://schema.org/Review"</code>.</p>
+<p>Note that we're using Schema type IDs from WPSSO in this example &mdash; using <code>type="review"</code> is the same as using <code>type="https://schema.org/Review"</code>. Also note the use of a leading "+" sign in the first <code>&#91;schema&#93;</code> shortcode 'prop' attribute &mdash; this tells WPSSO JSON to add this property as an array, so several reviews can be included this way. WPSSO JSON handles nested shortcodes, but WordPress does not, so nested shortcodes must be numbered for WordPress (schema, schema_1, schema_2, etc.). Don't forget to terminate the shortcode enclosure &mdash; it can be easy to forget that closing <code>&#91;/schema&#93;</code> tag. ;-)</p>
 
 <pre class="lang:xhtml decode:true">
 &lt;dl&gt;
@@ -132,7 +132,7 @@ The resulting JSON-LD array:
 
     An example review text.
 
-&#91;schema&#93;
+&#91;/schema&#93;
 
 Rating: 4/5
 
