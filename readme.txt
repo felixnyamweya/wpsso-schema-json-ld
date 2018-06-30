@@ -594,7 +594,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.29.0-dev.1 (2018/06/29)**
+**Version 1.29.0-b.1 (2018/06/30)**
 
 * *New Features*
 	* None
@@ -681,9 +681,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.29.0-dev.1 =
+= 1.29.0-b.1 =
 
-(2018/06/29) Added support for the Schema Question type with an 'acceptedAnswer' property.
+(2018/06/30) Added support for the Schema Question type with an 'acceptedAnswer' property.
 
 = 1.28.2 =
 
