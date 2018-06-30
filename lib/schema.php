@@ -23,17 +23,78 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 		}
 
+		/**
+		 * Called by WpssoJsonProHeadQAPage.
+		 *
+		 * $json_data may be a null property, so do not force the array type on this method argument.
+		 */
+		public static function add_page_links( &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false ) {
+
+			$wpsso =& Wpsso::get_instance();
+
+			$posts_count = 0;
+
+			/**
+			 * Set the page number and the posts per page values.
+			 */
+			global $wpsso_paged;
+
+			$wpsso_paged = 1;
+
+			$posts_per_page = is_numeric( $posts_per_page ) ? $posts_per_page : 200;	// Just in case.
+
+			/**
+			 * Get the mod array for all posts.
+			 */
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
+
+			if ( empty( $page_posts_mods ) ) {
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
+				}
+				unset( $wpsso_paged );	// Unset the forced page number.
+				return $posts_count;
+			}
+
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->log( 'page_posts_mods array has ' . count( $page_posts_mods ) . ' elements' );
+			}
+
+			foreach ( $page_posts_mods as $post_mod ) {
+
+				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
+
+				$posts_count++;
+
+				$json_data[] = $post_sharing_url;
+
+				if ( $posts_count >= $posts_per_page ) {
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
+					}
+					break;	// Stop here.
+				}
+			}
+
+			return $posts_count;
+		}
+
+		/**
+		 * Called by WpssoJsonProHeadItemList.
+		 */
 		public static function add_itemlist_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
 			$posts_count = 0;
+
 			$prop_name = 'itemListElement';
 
 			/**
 			 * Set the page number and the posts per page values.
 			 */
 			global $wpsso_paged;
+
 			$wpsso_paged = 1;
 
 			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
@@ -114,8 +175,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *	$prop_name_type_ids = array( 'mentions' => false )
 		 *	$prop_name_type_ids = array( 'blogPosting' => 'blog.posting' )
 		 */
-		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main,
-			$posts_per_page = false, array $prop_name_type_ids ) {
+		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false, array $prop_name_type_ids ) {
 
 			static $added_page_type_ids = array();
 
@@ -161,6 +221,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Set the page number and the posts per page values.
 			 */
 			global $wpsso_paged;
+
 			$wpsso_paged = 1;
 
 			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
@@ -803,9 +864,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			if ( $posts_per_page > $posts_per_page_max ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'setting posts_per_page ' . $posts_per_page . ' to maximum of ' . $posts_per_page_max );
 				}
+
 				$posts_per_page = $posts_per_page_max;
 			}
 

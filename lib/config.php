@@ -79,6 +79,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'place' => '(code) Schema Type Place (place)',
 								'product' => '(code) Schema Type Product (product)',
 								'profilepage' => '(code) Schema Type Profile Page (webpage.profile)',
+								'qapage' => '(code) Schema Type QAPage (webpage.qa)',
 								'question' => '(code) Schema Type Question (question)',
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
