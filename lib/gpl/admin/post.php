@@ -83,6 +83,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'person'         => $this->p->schema->get_children_css_class( 'person', 'hide_schema_type' ),
+				'question'       => $this->p->schema->get_children_css_class( 'question', 'hide_schema_type' ),
 				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 			);
@@ -389,6 +390,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label' => _x( 'Person', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_person_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_person_id', $person_names, 'long_name' ),
+				),
+
+				/**
+				 * Schema Question
+				 */
+				'subsection_question' => array(
+					'tr_class' => $schema_type_tr_class['question'],
+					'td_class' => 'subsection', 'header' => 'h5',
+					'label' => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_question_desc' => array(
+					'tr_class' => $schema_type_tr_class['question'],
+					'label' => _x( 'Q&A Heading / Desc.', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_question_desc', 'td_class' => 'blank',
+					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 
 				/**
