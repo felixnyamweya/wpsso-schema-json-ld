@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.28.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-06-30 11:13-0600\n"
-"PO-Revision-Date: 2018-06-30 11:16-0600\n"
+"POT-Creation-Date: 2018-06-30 11:32-0600\n"
+"PO-Revision-Date: 2018-06-30 11:32-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -528,8 +528,8 @@ msgstr "Personne"
 
 #: lib/gpl/admin/post.php:405 lib/pro/admin/post.php:421
 msgctxt "option label"
-msgid "Q&A Heading / Desc."
-msgstr "Q&A en-tête / desc."
+msgid "Q & A Heading / Desc."
+msgstr "Q & A en-tête / desc."
 
 #: lib/gpl/admin/post.php:416 lib/pro/admin/post.php:432
 msgctxt "metabox title"

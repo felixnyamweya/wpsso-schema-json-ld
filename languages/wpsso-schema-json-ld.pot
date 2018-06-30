@@ -596,7 +596,7 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:405 lib/pro/admin/post.php:421
 msgctxt "option label"
-msgid "Q&A Heading / Desc."
+msgid "Q & A Heading / Desc."
 msgstr ""
 
 #: lib/gpl/admin/post.php:416 lib/pro/admin/post.php:432

@@ -402,7 +402,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_question_desc' => array(
 					'tr_class' => $schema_type_tr_class['question'],
-					'label' => _x( 'Q&A Heading / Desc.', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Q & A Heading / Desc.', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_question_desc', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
