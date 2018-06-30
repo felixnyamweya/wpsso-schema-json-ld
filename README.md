@@ -99,6 +99,7 @@
 <li><a href="https://schema.org/Place">schema.org/Place</a> (includes 173 Schema types)</li>
 <li><a href="https://schema.org/Product">schema.org/Product</a> (includes 9 Schema types)</li>
 <li><a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
+<li><a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
 <li><a href="https://schema.org/Question">schema.org/Question</a></li>
 <li><a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
 <li><a href="https://schema.org/Review">schema.org/Review</a> (includes 2 Schema types)</li>

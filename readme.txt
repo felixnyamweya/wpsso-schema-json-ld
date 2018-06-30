@@ -103,6 +103,7 @@ WooCommerce product markup includes all product images, product variations, prod
 	* [schema.org/Place](https://schema.org/Place) (includes 173 Schema types)
 	* [schema.org/Product](https://schema.org/Product) (includes 9 Schema types)
 	* [schema.org/ProfilePage](https://schema.org/ProfilePage)
+	* [schema.org/QAPage](https://schema.org/QAPage)
 	* [schema.org/Question](https://schema.org/Question)
 	* [schema.org/Recipe](https://schema.org/Recipe)
 	* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
@@ -602,6 +603,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
+	* Added support for the Schema QAPage type with an 'significantLink' property.
 	* Added support for the Schema Question type with an 'acceptedAnswer' property.
 * *Bugfixes*
 	* None
@@ -686,7 +688,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.29.0-b.2 =
 
-(2018/06/30) Added support for the Schema Question type with an 'acceptedAnswer' property.
+(2018/06/30) Added support for the Schema QAPage type with an 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
 
 = 1.28.2 =
 
