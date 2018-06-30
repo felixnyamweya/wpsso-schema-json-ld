@@ -243,17 +243,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						$this->p->debug->log( 'post_content for post id '.$mod['id'].' is empty' );
 					}
 
-				} elseif ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {	// Are plugin shortcodes enabled.
+				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
 
-					if ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
+					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {	// Does the content have a schema shortcode.
 
-						if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {	// Does the content have a schema shortcode.
+						$content_data = $this->p->sc['schema']->get_content_json_data( $content );
 
-							$content_data = $this->p->sc['schema']->get_content_json_data( $content );
-
-							if ( ! empty( $content_data ) ) {
-								$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
-							}
+						if ( ! empty( $content_data ) ) {
+							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
 						}
 					}
 				}

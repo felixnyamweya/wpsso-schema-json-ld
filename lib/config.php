@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.28.2',		// Plugin version.
+					'version' => '1.29.0-dev.1',		// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short' => 'WPSSO JSON',	// Short plugin name.
 					'name' => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '4.6.0',
+						'min_version' => '4.7.0-dev.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -77,8 +77,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'organization' => '(code) Schema Type Organization (organization)',
 								'person' => '(code) Schema Type Person (person)',
 								'place' => '(code) Schema Type Place (place)',
-								'product' => '(code) Schema Type Individual Product (product)',
+								'product' => '(code) Schema Type Product (product)',
 								'profilepage' => '(code) Schema Type Profile Page (webpage.profile)',
+								'question' => '(code) Schema Type Question (question)',
 								'recipe' => '(code) Schema Type Recipe (recipe)',
 								'review' => '(code) Schema Type Review (review)',
 								'searchresultspage' => '(code) Schema Type Search Results Page (webpage.search.results)',

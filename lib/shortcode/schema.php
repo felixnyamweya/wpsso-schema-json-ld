@@ -85,60 +85,50 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 		public function add_shortcode() {
 
-			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
+			$sc_added = false;
 
-				$sc_added = false;
+			foreach ( $this->tag_names as $tag ) {
 
-				foreach ( $this->tag_names as $tag ) {
+				if ( ! shortcode_exists( $tag ) ) {
 
-					if ( ! shortcode_exists( $tag ) ) {
+					$sc_added = true;
 
-						$sc_added = true;
+					add_shortcode( $tag, array( $this, 'do_shortcode' ) );
 
-						add_shortcode( $tag, array( $this, 'do_shortcode' ) );
-
-						if ( $this->p->debug->enabled ) {
-							$this->p->debug->log( '[' . $tag . '] schema shortcode added' );
-						}
-
-					} elseif ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'cannot add [' . $tag . '] schema shortcode - shortcode already exists' );
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( '[' . $tag . '] schema shortcode added' );
 					}
-				}
 
-				return $sc_added;
+				} elseif ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'cannot add [' . $tag . '] schema shortcode - shortcode already exists' );
+				}
 			}
 
-			return false;
+			return $sc_added;
 		}
 
 		public function remove_shortcode() {
 
-			if ( ! empty( $this->p->options['plugin_shortcodes'] ) ) {
+			$sc_removed = false;
 
-				$sc_removed = false;
+			foreach ( $this->tag_names as $tag ) {
 
-				foreach ( $this->tag_names as $tag ) {
+				if ( shortcode_exists( $tag ) ) {
 
-					if ( shortcode_exists( $tag ) ) {
+					$sc_removed = true;
 
-						$sc_removed = true;
+					remove_shortcode( $tag );
 
-						remove_shortcode( $tag );
-
-						if ( $this->p->debug->enabled ) {
-							$this->p->debug->log( '[' . $tag . '] schema shortcode removed' );
-						}
-
-					} elseif ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'cannot remove [' . $tag . '] schema shortcode - shortcode does not exist' );
+					if ( $this->p->debug->enabled ) {
+						$this->p->debug->log( '[' . $tag . '] schema shortcode removed' );
 					}
-				}
 
-				return $sc_removed;
+				} elseif ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'cannot remove [' . $tag . '] schema shortcode - shortcode does not exist' );
+				}
 			}
 
-			return false;
+			return $sc_removed;
 		}
 
 		public function do_shortcode( $atts = array(), $content = null, $tag = '' ) {

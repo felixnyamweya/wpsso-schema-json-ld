@@ -1,18 +1,7 @@
 
-<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/googlebot-512x495.png" style="min-width:256px;max-width:25%;float:right;margin:0 0 30px 60px;">
-WPSSO JSON provides extensive support for hundreds of Schema types, and both WPSSO Core and WPSSO JSON pull content from dozens of supported 3rd party plugins and APIs.
-The most popular Schema type properties can be easily customized in the <em>Document SSO (Social and Search Optimization)</em> metabox (Pro version required), and the <code>&#91;schema&#93;</code> shortcode can be used to define additional (non-standard) properties and types for sections of your content.
-</p>
+<p><img src="https://surniaulula.github.io/wpsso-schema-json-ld/images/googlebot-512x495.png" style="min-width:256px;max-width:25%;float:right;margin:0 0 30px 60px;">WPSSO JSON provides extensive support for hundreds of Schema types, and both WPSSO Core and WPSSO JSON pull content from dozens of supported 3rd party plugins and APIs. The most popular Schema type properties can be easily customized in the <em>Document SSO (Social and Search Optimization)</em> metabox (Pro version required), and the <code>&#91;schema&#93;</code> shortcode can be used to define additional (non-standard) properties and types for sections of your content.</p>
 
-<p>
-PLEASE NOTE that the <code>&#91;schema&#93;</code> shortcode is meant for <strong>advanced users only</strong> and is not required for WPSSO JSON to create complete and accurate Schema JSON-LD markup for your content. 
-You should not use the <code>&#91;schema&#93;</code> shortcode unless you're familiar and comfortable with <a href="https://schema.org">https://schema.org</a> markup &mdash; and have a very specific / non-standard requirement.
-If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always validate any change with the <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Structured Data Testing Tool</a>.
-</p>
-
-<blockquote>
-<p>Before using the <code>&#91;schema&#93;</code> shortcode in your content, make sure the <strong>SSO &gt; Advanced &gt; Plugin Settings &gt; Enable Plugin Shortcode(s)</strong> option is enabled, or the shortcode will be ignored. ;-)</p>
-</blockquote>
+<p>PLEASE NOTE that the <code>&#91;schema&#93;</code> shortcode is meant for <strong>advanced users only</strong> and is not required for WPSSO JSON to create complete and accurate Schema JSON-LD markup for your content. You should not use the <code>&#91;schema&#93;</code> shortcode unless you're familiar and comfortable with <a href="https://schema.org">https://schema.org</a> markup &mdash; and have a very specific / non-standard requirement. If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always validate any change with the <a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Structured Data Testing Tool</a>.</p>
 
 <p>The <code>&#91;schema&#93;</code> shortcode can be used to define additional properties for the content. The following example defines an 'articleSection' property for the Schema Article type. Note that all shortcode attributes are considered to be Schema property names, except for the 'prop' and 'type' attribute names, which have special meaning (see below).</p>
 
@@ -41,7 +30,7 @@ If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always val
 &#91;/schema&#93;
 </pre> 
 
-<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to <em>add</em> a new element to the Schema property array, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see below for additional notes on using nested shortcodes).
+<p>By default, the <code>&#91;schema&#93;</code> shortcode merges / repaces existing Schema property values &mdash; if instead you want to <em>add</em> a new element to the Schema property array, prefix the 'prop' attribute value with a '+' sign. For example, the following shortcodes will create an offers array with two price specifications (see below for additional notes on using nested shortcodes).</p>
 
 <pre class="lang:xhtml decode:true">
 &#91;schema prop="+offers" type="https://schema.org/Offer"&#93;
@@ -59,7 +48,7 @@ If you use the <code>&#91;schema&#93;</code> shortcode, make sure you always val
 &#91;/schema&#93;
 </pre> 
 
-The resulting JSON-LD array:
+<p>The resulting JSON-LD array:</p>
 
 <pre class="lang:xhtml decode:true">
     "offers": &#91;
@@ -85,7 +74,7 @@ The resulting JSON-LD array:
                 "unitcode": "WEEK"
             }
         }
-    &#93;,
+    &#93;
 </pre> 
 
 <p><strong>Please note that WordPress is not currently able to parse nested shortcodes</strong>, so the following shortcode structure is not supported by WordPress.</p>
