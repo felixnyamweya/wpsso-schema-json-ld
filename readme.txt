@@ -594,7 +594,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.29.0-dev.1 (TBD)**
+**Version 1.29.0-dev.1 (2018/06/29)**
 
 * *New Features*
 	* None
@@ -683,7 +683,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.29.0-dev.1 =
 
-(TBD) Added support for the Schema Question type with an 'acceptedAnswer' property.
+(2018/06/29) Added support for the Schema Question type with an 'acceptedAnswer' property.
 
 = 1.28.2 =
 
