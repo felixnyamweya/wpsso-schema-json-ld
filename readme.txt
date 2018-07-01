@@ -598,7 +598,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.29.0-b.2 (2018/06/30)**
+**Version 1.29.0-rc.1 (2018/07/01)**
 
 * *New Features*
 	* None
@@ -692,9 +692,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.29.0-b.2 =
+= 1.29.0-rc.1 =
 
-(2018/06/30) Added support for the Schema QAPage type with an 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
+(2018/07/01) Added support for the Schema QAPage type with an 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
 
 = 1.28.2 =
 
