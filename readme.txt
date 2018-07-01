@@ -608,7 +608,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
+	* Added a new WpssoJsonSchema::add_page_links() method for the Schema QAPage type.
 	* Removed a check for the deprecated "Enable Plugin Shortcode(s)" option.
+	* Removed the following filters:
+		* 'wpsso_json_add_https_schema_org_blog_blogpost' ( $bool );
+		* 'wpsso_json_add_https_schema_org_collectionpage_mentions' ( $bool );
+		* 'wpsso_json_add_https_schema_org_searchresultspage_mentions' ( $bool );
+		* 'wpsso_json_add_https_schema_org_profilepage_mentions' ( $bool );
 
 **Version 1.28.2 (2018/06/28)**
 
