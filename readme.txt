@@ -18,10 +18,6 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 == Description ==
 
-<blockquote class="top">
-<p><strong>Choose a plugin for today AND tomorrow! The WPSSO Schema JSON-LD Markup plugin is 100% compatible with the upcoming <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in WordPress 5 (expected in August 2018)!</strong></p>
-</blockquote>
-
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
 **Provides *comprehensive* and *accurate* Schema JSON-LD markup for Google's Knowledge Graph and Rich Cards:**
@@ -37,6 +33,10 @@ As Pinterest does not currently read Schema JSON-LD markup, WPSSO Core and its W
 **Complete product markup for WooCommerce, including all variations (Pro version):**
 
 WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+
+**Choose a Schema markup plugin for today *and* tomorrow:**
+
+The WPSSO Schema JSON-LD Markup plugin is 100% compatible with the upcoming <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in WordPress 5 (expected in August 2018)!
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
