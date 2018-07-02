@@ -710,11 +710,7 @@
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-custom-schema-properties-to-the-json-ld/">Can I add custom Schema properties to the JSON-LD?</a></li>
 </ul>
 
-
-<h2>Other Notes</h2>
-
-<h3>Other Notes</h3>
-<h3 class="top">Additional Documentation</h3>
+<h3>Documentation and Notes</h3>
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/">Developer Resources</a>
@@ -735,4 +731,5 @@
 </ul></li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/">Schema Shortcode for Custom Markup</a></li>
 </ul>
+
 
