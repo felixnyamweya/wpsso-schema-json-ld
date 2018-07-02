@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.6
 WC Tested Up To: 3.4.2
-Stable Tag: 1.28.2
+Stable Tag: 1.29.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -598,12 +598,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.29.0 (2018/07/01)**
+**Version 1.29.0 (2018/07/02)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added support for the Schema QAPage type with an 'significantLink' property.
+	* Added support for the Schema QAPage type with a 'significantLink' property.
 	* Added support for the Schema Question type with an 'acceptedAnswer' property.
 * *Bugfixes*
 	* None
@@ -694,7 +694,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.29.0 =
 
-(2018/07/01) Added support for the Schema QAPage type with an 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
+(2018/07/02) Added support for the Schema QAPage type with a 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
 
 = 1.28.2 =
 
