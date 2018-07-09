@@ -80,7 +80,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'content' => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, false, true, 'unhide_rows' ) . ' ' .
-							$this->p->msgs->get( 'pro-option-msg', array( 'lca' => 'wpssojson' ) ),
+							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
 				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
