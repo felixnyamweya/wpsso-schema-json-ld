@@ -601,11 +601,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
 * *Bugfixes*
 	* None
 * *Developer Notes*
 	* Added a new 'wpsso_json_itemlist_posts_args' filter.
+	* Added an optional `$get_posts_args` argument for the following methods:
+		* WpssoJsonSchema::get_page_posts_mods()
 
 **Version 1.29.0 (2018/07/02)**
 
@@ -703,7 +705,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.29.1-dev.1 =
 
-(2018/07/10) None.
+(2018/07/10) Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
 
 = 1.29.0 =
 
