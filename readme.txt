@@ -596,6 +596,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.29.1-dev.1 (2018/07/10)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added a new 'wpsso_json_itemlist_posts_args' filter.
+
 **Version 1.29.0 (2018/07/02)**
 
 * *New Features*
@@ -690,11 +701,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 1.29.1-dev.1 =
+
+(2018/07/10) None.
+
 = 1.29.0 =
 
 (2018/07/02) Added support for the Schema QAPage type with a 'significantLink' property. Added support for the Schema Question type with an 'acceptedAnswer' property.
-
-= 1.28.2 =
-
-(2018/06/28) Fixed an incorrect array element pointer when parsing nested shortcodes. Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
 
