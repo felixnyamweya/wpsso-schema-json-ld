@@ -99,16 +99,46 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
 
+			$get_posts_args = array(
+				'has_password'   => false,
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+				'paged'          => $wpsso_paged,
+				'post_status'    => 'publish',
+				'post_type'      => 'any',		// Post, page, or custom post type.
+				'posts_per_page' => $posts_per_page,
+			);
+
+			/**
+			 * Filter to allow changing of the 'orderby' and 'order' values.
+			 */
+			$get_posts_args = apply_filters( $wpsso->lca . '_json_itemlist_posts_args', $get_posts_args, $mod );
+
+			switch ( $get_posts_args['order'] ) {
+				case 'ASC':
+					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderAscending';
+					break;
+				case 'DESC':
+					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderDescending';
+					break;
+				default:
+					$json_data['itemListOrder'] = 'https://schema.org/ItemListUnordered';
+					break;
+			}
+
 			/**
 			 * Get the mod array for all posts.
 			 */
-			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, $get_posts_args );
 
 			if ( empty( $page_posts_mods ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
 				}
+
 				unset( $wpsso_paged );	// Unset the forced page number.
+
 				return $posts_count;
 			}
 
@@ -232,11 +262,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
 
 			if ( empty( $page_posts_mods ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
 					$wpsso->debug->mark( 'adding posts data' );	// end timer
 				}
+
 				unset( $wpsso_paged );	// unset the forced page number
+
 				return $posts_count;
 			}
 
@@ -250,27 +283,36 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			foreach ( $prop_name_type_ids as $prop_name => $prop_type_ids ) {
 
 				if ( empty( $prop_type_ids ) ) {		// false or empty array - allow any schema type
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'any schema type is allowed for prop_name ' . $prop_name );
 					}
+
 					$prop_type_ids = array( 'any' );
 
 				} elseif ( is_string( $prop_type_ids ) ) {	// convert value to an array
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'only schema type ' . $prop_type_ids . ' allowed for prop_name ' . $prop_name );
 					}
+
 					$prop_type_ids = array( $prop_type_ids );
 
 				} elseif ( ! is_array( $prop_type_ids ) ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'skipping prop_name ' . $prop_name . ': value must be false, string, or array of schema types' );
 					}
+
 					continue;
 				}
 
 				if ( empty( $json_data[$prop_name] ) ) {
+
 					$json_data[$prop_name] = array();
+
 				} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// Convert single value to an array.
+
 					$json_data[$prop_name] = array( $json_data[$prop_name] );
 				}
 
@@ -744,10 +786,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$json_data[] = $ret;	// add an item to the list
 			}
 
-			return 1;	// return count of videos added
+			return 1;	// Return count of videos added.
 		}
 
-		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged ) {
+		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, array $get_posts_args = array() ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -765,6 +807,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$is_archive = false;
 			}
 
+			$get_posts_args = array_merge( array(
+				'has_password'   => false,
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+				'paged'          => $wpsso_paged,
+				'post_status'    => 'publish',
+				'post_type'      => 'any',		// Post, page, or custom post type.
+				'posts_per_page' => $posts_per_page,
+			), $get_posts_args );
+
 			if ( $is_archive ) {
 
 				if ( $wpsso->debug->enabled ) {
@@ -775,16 +827,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 * Setup the query for a blog posts page in the back-end.
 				 */
 				if ( is_admin() && $mod['is_home_index'] ) {
-
-					$get_posts_args = apply_filters( $wpsso->lca . '_get_posts_args', array(
-						'has_password'   => false,
-						'orderby'        => 'date',
-						'order'          => 'DESC',
-						'paged'          => $wpsso_paged,
-						'post_status'    => 'publish',
-						'post_type'      => 'post',
-						'posts_per_page' => $posts_per_page,
-					), $mod );
 
 					global $wp_query;
 
@@ -832,7 +874,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
 				}
 
-				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged );
+				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged, $get_posts_args );
 
 			} else {
 				if ( $wpsso->debug->enabled ) {
