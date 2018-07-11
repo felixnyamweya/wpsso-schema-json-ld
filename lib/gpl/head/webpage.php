@@ -54,10 +54,9 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			if ( $this->p->schema->is_schema_type_child( $type_id, 'article' ) ) {
 
-				$org_logo_key  = 'org_banner_url';                       // Use a banner for all article sub-types.
-				$size_name     = $this->p->lca . '-schema-article';      // Same size, but minimum width is 696px.
-				$title_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-
+				$org_logo_key    = 'org_banner_url';                       // Use a banner for all article sub-types.
+				$size_name       = $this->p->lca . '-schema-article';      // Same size, but minimum width is 696px.
+				$title_max_len   = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 				$ret['headline'] = $this->p->page->get_title( $title_max_len, '...', $mod );
 
 			} else {
@@ -70,7 +69,6 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *      text
 			 */
 			$ret['text'] = $this->p->page->get_the_content( $mod );
-
 			$ret['text'] = $this->p->util->cleanup_html_tags( $ret['text'], true, $this->p->options['plugin_use_img_alt'] );
 
 			if ( empty( $ret['text'] ) ) { // Just in case.
@@ -98,14 +96,17 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *      publisher as https://schema.org/Organization
 			 */
 			if ( ! empty( $mod['obj'] ) ) {
+
 				/**
 				 * The get_options() method returns null if an index key is not found.
 				 * Return values are null, 'none', 'site', or number (including 0).
 				 */
 				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' );
+
 				if ( null === $org_id ) {
 					$org_id = 'site'; // Default.
 				}
+
 			} else {
 				$org_id = 'site'; // Default.
 			}
@@ -162,4 +163,3 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 		}
 	}
 }
-
