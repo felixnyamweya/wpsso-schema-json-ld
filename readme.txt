@@ -596,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.29.1-rc.1 (2018/07/12)**
+**Version 1.29.1-rc.2 (2018/07/13)**
 
 * *New Features*
 	* None
@@ -703,9 +703,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.29.1-rc.1 =
+= 1.29.1-rc.2 =
 
-(2018/07/12) Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
+(2018/07/13) Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
 
 = 1.29.0 =
 
