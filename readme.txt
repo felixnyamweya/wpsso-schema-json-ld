@@ -605,9 +605,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Added an optional `$get_posts_args` argument for the following methods:
-		* WpssoJsonSchema::get_page_posts_mods()
-	* Added three new filters:
+	* Added a `$get_posts_args` argument for the WpssoJsonSchema::get_page_posts_mods() method.
+	* Added new filters:
 		* 'wpsso_json_itemlist_posts_args' ( $get_posts_args, $mod )
 		* 'wpsso_json_prop_https_schema_org_additionaltype' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main )
 		* 'wpsso_json_prop_https_schema_org_sameas' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main )
