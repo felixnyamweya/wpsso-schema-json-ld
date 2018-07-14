@@ -84,6 +84,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	additionalType
 			 */
+			$ret['additionalType'] = array();
+
 			if ( is_object( $mod['obj'] ) ) {
 
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
@@ -95,6 +97,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						}
 					}
 				}
+			}
+
+			$ret['additionalType'] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_additionaltype',
+				$ret['additionalType'], $mod, $mt_og, $page_type_id, $is_main );
+
+			if ( empty( $ret['additionalType'] ) ) {
+				unset( $ret['additionalType'] );
 			}
 
 			/**
@@ -235,11 +244,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	potentialAction
 			 */
-			$action_data = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_potentialaction',
-				array(), $mod, $mt_og, $page_type_id, $is_main );
+			$ret['potentialAction'] = array();
 
-			if ( ! empty( $action_data ) ) {
-				$ret['potentialAction'] = $action_data;
+			$ret['potentialAction'] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_potentialaction',
+				$ret['potentialAction'], $mod, $mt_og, $page_type_id, $is_main );
+
+			if ( empty( $ret['potentialAction'] ) ) {
+				unset( $ret['potentialAction'] );
 			}
 
 			/**
