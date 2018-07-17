@@ -599,22 +599,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.30.0-dev.1 (2018/07/17)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
-	* None
+	* Maintenance release.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.29.1 (2018/07/14)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
 	* Added a `$get_posts_args` argument for the WpssoJsonSchema::get_page_posts_mods() method.
 	* Added new filters:
@@ -625,12 +625,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.29.0 (2018/07/02)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added support for the Schema QAPage type with a 'significantLink' property.
 	* Added support for the Schema Question type with an 'acceptedAnswer' property.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
 	* Added a new WpssoJsonSchema::add_page_links() method for the Schema QAPage type.
 	* Removed a check for the deprecated "Enable Plugin Shortcode(s)" option.
@@ -643,51 +643,51 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.28.2 (2018/06/28)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
 * *Bugfixes*
 	* Fixed an incorrect array element pointer when parsing nested shortcodes.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.28.1 (2018/06/24)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
 	* Fixed an incorrect object variable context in the WpssoJsonSchema get_page_posts_mods() method.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.28.0 (2018/06/23)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.27.0 (2018/06/16)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added the canonical, permalink, and shortlink URLs to the 'sameAs' property.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
 	* Refactored code in the WpssoJsonSchema class.
 
 **Version 1.26.0 (2018/05/07)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added support for the Schema HowTo type, with additional options in the Document SSO metabox (Pro version).
 		* How-To Makes 
@@ -697,28 +697,28 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* How-To Tools 
 		* How-To Steps 
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.25.0 (2018/05/02)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
 	* Added a "Person Information" section to the post Document SSO metabox for the https://schema.org/Person type.
 	* Added a "Person Information" section and "Job Title" option in the Users &gt; Your SSO settings page metabox.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 == Upgrade Notice ==
 
 = 1.30.0-dev.1 =
 
-(2018/07/17) None.
+(2018/07/17) Maintenance release.
 
 = 1.29.1 =
 
