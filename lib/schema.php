@@ -459,16 +459,21 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				 * Prevent duplicates by excluding text/html videos.
 				 */
 				foreach ( $mt_og['og:video'] as $num => $og_video ) {
+
 					if ( isset( $og_video['og:video:type'] ) && $og_video['og:video:type'] !== 'text/html' ) {
-						if ( SucomUtil::get_mt_media_url( $og_video, 'og:image' ) ) {
+
+						if ( SucomUtil::get_mt_media_url( $og_video ) ) {
 							$prev_count++;
 						}
+
 						$og_images[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
 					}
 				}
 
 				if ( $prev_count > 0 ) {
+
 					$max['schema_img_max'] -= $prev_count;
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max['schema_img_max'] . ')' );
 					}
@@ -485,20 +490,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'], $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'adding images to json data' );
 				}
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
+
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images );
+
 			} else {
 				$images_added = 0;
 			}
 
 			if ( ! $images_added && $mod['is_post'] ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'adding default image to json data' );
 				}
-				$og_images = $wpsso->media->get_default_images( 1, $size_name, true );
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images, 'og:image' );
+
+				$og_images    = $wpsso->media->get_default_images( 1, $size_name, true );
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images );
 			}
 
 			if ( ! $images_added ) {
@@ -689,16 +699,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		/**
 		 * Provide a single or two-dimension video array in $og_video.
 		 */
-		public static function add_video_list_data( &$json_data, $og_video, $prefix = 'og:video' ) {
+		public static function add_video_list_data( &$json_data, $og_video, $mt_prefix = 'og:video' ) {
 
 			$videos_added = 0;
 
 			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
 				foreach ( $og_video as $video ) {
-					$videos_added += self::add_single_video_data( $json_data, $video, $prefix, true );	// list_element = true
+					$videos_added += self::add_single_video_data( $json_data, $video, $mt_prefix, true );	// list_element = true
 				}
 			} elseif ( is_array( $og_video ) ) {
-				$videos_added += self::add_single_video_data( $json_data, $og_video, $prefix, true );		// list_element = true
+				$videos_added += self::add_single_video_data( $json_data, $og_video, $mt_prefix, true );	// list_element = true
 			}
 
 			return $videos_added;	// return count of videos added
@@ -720,12 +730,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *		[og:video:embed_url]   => https://player.vimeo.com/video/150575335?autoplay=1
 		 *		[og:video:has_image]   => 1
 		 *		[og:image:secure_url]  => https://i.vimeocdn.com/video/550095036_1280.jpg
-		 *		[og:image]             =>
+		 *		[og:image:url]         =>
 		 *		[og:image:width]       => 1280
 		 *		[og:image:height]      => 544
 		 *	)
 		 */
-		public static function add_single_video_data( &$json_data, $opts, $prefix = 'og:video', $list_element = true ) {
+		public static function add_single_video_data( &$json_data, $opts, $mt_prefix = 'og:video', $list_element = true ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -736,11 +746,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return 0;	// Return count of videos added.
 			}
 
-			$media_url = SucomUtil::get_mt_media_url( $opts, $prefix );
+			$media_url = SucomUtil::get_mt_media_url( $opts, $mt_prefix );
 
 			if ( empty( $media_url ) ) {
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: ' . $prefix . ' URL values are empty' );
+					$wpsso->debug->log( 'exiting early: ' . $mt_prefix . ' URL values are empty' );
 				}
 				return 0;	// Return count of videos added.
 			}
@@ -755,28 +765,28 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
-				'name'         => $prefix . ':title',
-				'description'  => $prefix . ':description',
-				'fileFormat'   => $prefix . ':type',	// mime type
-				'width'        => $prefix . ':width',
-				'height'       => $prefix . ':height',
-				'duration'     => $prefix . ':duration',
-				'uploadDate'   => $prefix . ':upload_date',
-				'thumbnailUrl' => $prefix . ':thumbnail_url',
-				'embedUrl'     => $prefix . ':embed_url',
+				'name'         => $mt_prefix . ':title',
+				'description'  => $mt_prefix . ':description',
+				'fileFormat'   => $mt_prefix . ':type',	// mime type
+				'width'        => $mt_prefix . ':width',
+				'height'       => $mt_prefix . ':height',
+				'duration'     => $mt_prefix . ':duration',
+				'uploadDate'   => $mt_prefix . ':upload_date',
+				'thumbnailUrl' => $mt_prefix . ':thumbnail_url',
+				'embedUrl'     => $mt_prefix . ':embed_url',
 			) );
 
-			if ( ! empty( $opts[$prefix . ':has_image'] ) ) {
-				if ( ! WpssoSchema::add_og_single_image_data( $ret['thumbnail'], $opts, 'og:image', false ) ) {	// list_element = false
+			if ( ! empty( $opts[$mt_prefix . ':has_image'] ) ) {
+				if ( ! WpssoSchema::add_og_single_image_data( $ret['thumbnail'], $opts, null, false ) ) {	// list_element = false
 					unset( $ret['thumbnail'] );
 				}
 			}
 
-			if ( ! empty( $opts[$prefix . ':tag'] ) ) {
-				if ( is_array( $opts[$prefix . ':tag'] ) ) {
-					$ret['keywords'] = implode( ', ', $opts[$prefix . ':tag'] );
+			if ( ! empty( $opts[$mt_prefix . ':tag'] ) ) {
+				if ( is_array( $opts[$mt_prefix . ':tag'] ) ) {
+					$ret['keywords'] = implode( ', ', $opts[$mt_prefix . ':tag'] );
 				} else {
-					$ret['keywords'] = $opts[$prefix . ':tag'];
+					$ret['keywords'] = $opts[$mt_prefix . ':tag'];
 				}
 			}
 

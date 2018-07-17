@@ -404,7 +404,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 
 				if ( ! empty( $og_images ) ) {
-					WpssoSchema::add_og_image_list_data( $prop_ref['image'], $og_images, 'og:image' );
+					WpssoSchema::add_og_image_list_data( $prop_ref['image'], $og_images );
 				}
 
 				$this->get_content_json_data( $content, $prop_ref, true );
