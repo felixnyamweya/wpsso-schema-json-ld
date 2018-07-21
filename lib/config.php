@@ -16,30 +16,30 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version' => '1.30.0-b.2',		// Plugin version.
+					'version'     => '1.30.0-rc.1',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
-					'short' => 'WPSSO JSON',	// Short plugin name.
-					'name' => 'WPSSO Schema JSON-LD Markup',
-					'desc' => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
-					'slug' => 'wpsso-schema-json-ld',
-					'base' => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
+					'short'       => 'WPSSO JSON',	// Short plugin name.
+					'name'        => 'WPSSO Schema JSON-LD Markup',
+					'desc'        => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
+					'slug'        => 'wpsso-schema-json-ld',
+					'base'        => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
 					'update_auth' => 'tid',
 					'text_domain' => 'wpsso-schema-json-ld',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.9.0-b.2',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
 					'lib' => array(
 						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'schema-json-ld' => 'Schema Markup',
+							'schema-json-ld'   => 'Schema Markup',
 							'schema-shortcode' => 'Schema Shortcode',
 						),
 						'shortcode' => array(
@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'user' => 'Extend User Settings',
 							),
 							'head' => array(
-								'webpage' => '(code) Schema Type WebPage (webpage)',
+								'webpage'                     => '(code) Schema Type WebPage (webpage)',
 								'webpage#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
 							),
 						),
@@ -63,40 +63,40 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'user' => 'Extend User Settings',
 							),
 							'head' => array(
-								'article' => '(code) Schema Type Article (article)',
-								'blog' => '(code) Schema Type Blog (blog)',
-								'collectionpage' => '(code) Schema Type Collection Page (webpage.collection)',
-								'course' => '(code) Schema Type Course (course)',
-								'creativework' => '(code) Schema Type Creative Work (creative.work)',
-								'event' => '(code) Schema Type Event (event)',
+								'article'           => '(code) Schema Type Article (article)',
+								'blog'              => '(code) Schema Type Blog (blog)',
+								'collectionpage'    => '(code) Schema Type Collection Page (webpage.collection)',
+								'course'            => '(code) Schema Type Course (course)',
+								'creativework'      => '(code) Schema Type Creative Work (creative.work)',
+								'event'             => '(code) Schema Type Event (event)',
 								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishment)',
-								'howto' => '(code) Schema Type How-To (howto)',
-								'itemlist' => '(code) Schema Type Item List (item.list)',
-								'jobposting' => '(code) Schema Type Job Posting (job.posting)',
-								'localbusiness' => '(code) Schema Type Local Business (local.business)',
-								'organization' => '(code) Schema Type Organization (organization)',
-								'person' => '(code) Schema Type Person (person)',
-								'place' => '(code) Schema Type Place (place)',
-								'product' => '(code) Schema Type Product (product)',
-								'profilepage' => '(code) Schema Type Profile Page (webpage.profile)',
-								'qapage' => '(code) Schema Type QAPage (webpage.qa)',
-								'question' => '(code) Schema Type Question (question)',
-								'recipe' => '(code) Schema Type Recipe (recipe)',
-								'review' => '(code) Schema Type Review (review)',
+								'howto'             => '(code) Schema Type How-To (howto)',
+								'itemlist'          => '(code) Schema Type Item List (item.list)',
+								'jobposting'        => '(code) Schema Type Job Posting (job.posting)',
+								'localbusiness'     => '(code) Schema Type Local Business (local.business)',
+								'organization'      => '(code) Schema Type Organization (organization)',
+								'person'            => '(code) Schema Type Person (person)',
+								'place'             => '(code) Schema Type Place (place)',
+								'product'           => '(code) Schema Type Product (product)',
+								'profilepage'       => '(code) Schema Type Profile Page (webpage.profile)',
+								'qapage'            => '(code) Schema Type QAPage (webpage.qa)',
+								'question'          => '(code) Schema Type Question (question)',
+								'recipe'            => '(code) Schema Type Recipe (recipe)',
+								'review'            => '(code) Schema Type Review (review)',
 								'searchresultspage' => '(code) Schema Type Search Results Page (webpage.search.results)',
-								'webpage' => '(code) Schema Type WebPage (webpage)',
-								'website' => '(code) Schema Type WebSite (website)',
+								'webpage'           => '(code) Schema Type WebPage (webpage)',
+								'website'           => '(code) Schema Type WebSite (website)',
 							),
 							'prop' => array(
 								'aggregaterating' => '(code) Property Aggregate Rating',
-								'review' => '(code) Property Reviews',
+								'review'          => '(code) Property Reviews',
 							),
 							'job' => array(
 								'simplejobboard' => '(plugin) Simple Job Board',
-								'wpjobmanager' => '(plugin) WP Job Manager',
+								'wpjobmanager'   => '(plugin) WP Job Manager',
 							),
 							'recipe' => array(
-								'wprecipemaker' => '(plugin) WP Recipe Maker',
+								'wprecipemaker'    => '(plugin) WP Recipe Maker',
 								'wpultimaterecipe' => '(plugin) WP Ultimate Recipe',
 							),
 							'review' => array(
