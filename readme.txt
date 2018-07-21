@@ -596,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.30.0-b.2 (2018/07/20)**
+**Version 1.30.0-rc.1 (2018/07/21)**
 
 * *New Features*
 	* None.
@@ -716,9 +716,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.30.0-b.2 =
+= 1.30.0-rc.1 =
 
-(2018/07/20) Maintenance release.
+(2018/07/21) Maintenance release.
 
 = 1.29.1 =
 
