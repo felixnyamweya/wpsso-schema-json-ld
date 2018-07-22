@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.7
 WC Tested Up To: 3.4.3
-Stable Tag: 1.29.1
+Stable Tag: 1.30.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -719,8 +719,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.30.0 =
 
 (2018/07/22) Maintenance release.
-
-= 1.29.1 =
-
-(2018/07/14) Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
 
