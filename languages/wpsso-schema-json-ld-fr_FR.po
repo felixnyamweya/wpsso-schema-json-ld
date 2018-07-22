@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.30.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
 "POT-Creation-Date: 2018-07-21 08:50-0400\n"
-"PO-Revision-Date: 2018-07-21 08:51-0400\n"
+"PO-Revision-Date: 2018-07-22 08:52-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -28,11 +28,11 @@ msgstr "Shortcode Schéma"
 #: lib/config-gettext-extract.php:5
 msgctxt "plugin description"
 msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more."
-msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
+msgstr "Extension d'ajout WPSSO Core pour balisage Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
 
 #: lib/filters.php:307
 msgid "The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
-msgstr "La version gratuite / standard WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans le balisage de Schéma JSON-LD."
+msgstr "La version gratuite / standard WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans le balisage Schéma JSON-LD."
 
 #: lib/filters.php:309
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
@@ -197,7 +197,7 @@ msgstr "Une liste d'instructions pour cette recette (exemple: \"battre les oeufs
 
 #: lib/filters.php:890
 msgid "The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup."
-msgstr "La taille de portion en volume ou en masse. Une taille de portion est requise pour inclure les informations nutritionnelles dans le balisage de Schéma Recipe."
+msgstr "La taille de portion en volume ou en masse. Une taille de portion est requise pour inclure les informations nutritionnelles dans le balisage Schéma Recipe."
 
 #: lib/filters.php:896
 msgid "The number of calories per serving."
@@ -301,7 +301,7 @@ msgstr "secs"
 #: lib/pro/admin/term.php:71 lib/pro/admin/user.php:69
 msgctxt "metabox title"
 msgid "Structured Data / Schema Markup"
-msgstr "Données structurées / balisage de Schéma"
+msgstr "Données structurées / balisage Schéma"
 
 #: lib/gpl/admin/post.php:114 lib/gpl/admin/term.php:63
 #: lib/gpl/admin/user.php:61 lib/pro/admin/post.php:125
@@ -785,7 +785,7 @@ msgstr "Le shortcode [%2$s] de %1$s avec \"%3$s\" comme attribut type du  n'est 
 #: lib/submenu/schema-json-ld.php:35
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
-msgstr "Balisage de Schéma JSON-LD"
+msgstr "Balisage Schéma JSON-LD"
 
 #: lib/submenu/schema-json-ld.php:44
 msgctxt "metabox tab"
@@ -849,7 +849,7 @@ msgstr "https://wpsso.com/extend/plugins/wpsso-schema-json-ld/"
 
 #. Description of the plugin/theme
 msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more."
-msgstr "Extension d'ajout WPSSO Core pour balisage de Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
+msgstr "Extension d'ajout WPSSO Core pour balisage Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
