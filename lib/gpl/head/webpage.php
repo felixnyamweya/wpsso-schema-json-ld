@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'json_data_https_schema_org_webpage' => array(
-					'json_data_https_schema_org_webpage' => 5,
+					'json_data_https_schema_org_webpage'     => 5,
 					'json_data_https_schema_org_blogposting' => 5,
 				),
 			) );

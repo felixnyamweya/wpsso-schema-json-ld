@@ -458,15 +458,15 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				/**
 				 * Prevent duplicates by excluding text/html videos.
 				 */
-				foreach ( $mt_og['og:video'] as $num => $og_video ) {
+				foreach ( $mt_og['og:video'] as $num => $og_single_video ) {
 
-					if ( isset( $og_video['og:video:type'] ) && $og_video['og:video:type'] !== 'text/html' ) {
+					if ( isset( $og_single_video['og:video:type'] ) && $og_single_video['og:video:type'] !== 'text/html' ) {
 
-						if ( SucomUtil::get_mt_media_url( $og_video ) ) {
+						if ( SucomUtil::get_mt_media_url( $og_single_video ) ) {
 							$prev_count++;
 						}
 
-						$og_images[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_video );
+						$og_images[] = SucomUtil::preg_grep_keys( '/^og:image/', $og_single_video );
 					}
 				}
 
@@ -697,18 +697,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		}
 
 		/**
-		 * Provide a single or two-dimension video array in $og_video.
+		 * Provide a single or two-dimension video array in $og_videos.
 		 */
-		public static function add_video_list_data( &$json_data, $og_video, $mt_prefix = 'og:video' ) {
+		public static function add_video_list_data( &$json_data, $og_videos, $mt_prefix = 'og:video' ) {
 
 			$videos_added = 0;
 
-			if ( isset( $og_video[0] ) && is_array( $og_video[0] ) ) {						// 2 dimensional array
-				foreach ( $og_video as $video ) {
-					$videos_added += self::add_single_video_data( $json_data, $video, $mt_prefix, true );	// list_element = true
+			if ( isset( $og_videos[0] ) && is_array( $og_videos[0] ) ) {	// 2 dimensional array.
+				foreach ( $og_videos as $og_single_video ) {
+					$videos_added += self::add_single_video_data( $json_data, $og_single_video, $mt_prefix, true );	// list_element is true.
 				}
-			} elseif ( is_array( $og_video ) ) {
-				$videos_added += self::add_single_video_data( $json_data, $og_video, $mt_prefix, true );	// list_element = true
+			} elseif ( is_array( $og_videos ) ) {
+				$videos_added += self::add_single_video_data( $json_data, $og_videos, $mt_prefix, true );	// list_element is true.
 			}
 
 			return $videos_added;	// return count of videos added
