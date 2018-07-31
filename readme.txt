@@ -10,8 +10,8 @@ Tags: knowledge graph, local seo, image seo, video seo, woocommerce, news seo, l
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
-Tested Up To: 4.9.7
-WC Tested Up To: 3.4.3
+Tested Up To: 4.9.8
+WC Tested Up To: 3.4.4
 Stable Tag: 1.30.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
