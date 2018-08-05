@@ -126,29 +126,43 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				if ( $mod['is_post'] ) {
 
+					/**
+					 * Add the permalink, which may be different than the shared URL and the canonical URL.
+					 */
 					$ret['sameAs'][] = get_permalink( $mod['id'] );
 
-					$ret['sameAs'][] = wp_get_shortlink( $mod['id'], 'post' );
-
 					/**
-					 * Some themes and plugins have been known to hook the WordPress 'get_shortlink' filter 
-					 * and return an empty URL to disable the WordPress shortlink meta tag. This breaks the 
-					 * WordPress wp_get_shortlink() function and is a violation of the WordPress theme 
-					 * guidelines.
-					 *
-					 * This method calls the WordPress wp_get_shortlink() function, and if an empty string 
-					 * is returned, calls an unfiltered version of the same function.
-					 *
-					 * $context = 'blog', 'post' (default), 'media', or 'query'
+					 * Add the shortlink / short URL, but only if the link rel shortlink tag is enabled.
 					 */
-					$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod['id'], 'post' );
+					$add_link_rel_shortlink = empty( $this->p->options['add_link_rel_shortlink'] ) ? false : true; 
 
-				} elseif ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
+					if ( apply_filters( $this->p->lca . '_add_link_rel_shortlink', $add_link_rel_shortlink, $mod ) ) {
 
-					$service_key = $this->p->options['plugin_shortener'];
+						$ret['sameAs'][] = wp_get_shortlink( $mod['id'], 'post' );
 
-					$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url',
-						$mt_og['og:url'], $service_key, $mod, $mod['name'] );
+						/**
+						 * Some themes and plugins have been known to hook the WordPress 'get_shortlink' filter 
+						 * and return an empty URL to disable the WordPress shortlink meta tag. This breaks the 
+						 * WordPress wp_get_shortlink() function and is a violation of the WordPress theme 
+						 * guidelines.
+						 *
+						 * This method calls the WordPress wp_get_shortlink() function, and if an empty string 
+						 * is returned, calls an unfiltered version of the same function.
+						 *
+						 * $context = 'blog', 'post' (default), 'media', or 'query'
+						 */
+						$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod['id'], 'post' );
+					}
+				}
+
+				/**
+				 * Add the shortened URL for posts (which may be different to the shortlink), terms, and users.
+				 */
+				if ( ! empty( $this->p->options['plugin_shortener'] ) && $this->p->options['plugin_shortener'] !== 'none' ) {
+					if ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
+						$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url',
+							$mt_og['og:url'], $this->p->options['plugin_shortener'], $mod, $mod['name'] );
+					}
 				}
 
 				/**
