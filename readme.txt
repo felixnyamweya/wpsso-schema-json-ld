@@ -596,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.30.1-b.1 (2018/08/04)**
+**Version 1.30.1-b.2 (2018/08/06)**
 
 * *New Features*
 	* None.
@@ -727,9 +727,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.30.1-b.1 =
+= 1.30.1-b.2 =
 
-(2018/08/04) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
+(2018/08/06) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
 
 = 1.30.0 =
 
