@@ -31,13 +31,17 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
 			}
 
+			$dots      = '...';
+			$r_cache   = true;
+			$do_encode = true;
+
 			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 
-			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false );
-			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, '...', $mod, true, false, true, 'og_title' );
-			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, '...', $mod );
+			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $r_cache, false, $do_encode, array( 'seo_desc', 'og_desc' ) );
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer end.

@@ -45,16 +45,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
-			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $r_cache, false, $do_encode, array( 'seo_desc', 'og_desc' ) );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $r_cache, false, $do_encode, array( 'seo_desc', 'og_desc' ) );
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
 
-			$days_sep  = ' '._x( 'days', 'option comment', 'wpsso-schema-json-ld' ).', ';
-			$hours_sep = ' '._x( 'hours', 'option comment', 'wpsso-schema-json-ld' ).', ';
-			$mins_sep  = ' '._x( 'mins', 'option comment', 'wpsso-schema-json-ld' ).', ';
-			$secs_sep  = ' '._x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
+			$days_sep  = ' ' . _x( 'days', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
+			$hours_sep = ' ' . _x( 'hours', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
+			$mins_sep  = ' ' . _x( 'mins', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
+			$secs_sep  = ' ' . _x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
 
 			/**
 			 * Organization variables.
@@ -165,7 +165,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'label' => _x( 'Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_pub_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_headline' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
@@ -187,7 +187,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['course'],
 					'label' => _x( 'Course Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_course_provider_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_course_provider_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_course_provider_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 
 				/**
@@ -202,13 +202,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_org_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_event_perf_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_event_perf_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_event_perf_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -284,19 +284,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['howto'],
 					'label' => _x( 'Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_prep_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
-						$form->get_no_input_value( '0', 'short' ).$hours_sep.
-						$form->get_no_input_value( '0', 'short' ).$mins_sep.
-						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+					'content' => $form->get_no_input_value( '0', 'short' ) . $days_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_howto_total_time' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
 					'label' => _x( 'Total Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_howto_total_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
-						$form->get_no_input_value( '0', 'short' ).$hours_sep.
-						$form->get_no_input_value( '0', 'short' ).$mins_sep.
-						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+					'content' => $form->get_no_input_value( '0', 'short' ) . $days_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_howto_supplies' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
@@ -336,21 +336,21 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_org_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_job_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_job_location_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_location_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_location_id', $place_addr_names, 'long_name' ).$plm_req_msg,
+					'content' => $form->get_no_select( 'schema_job_location_id', $place_addr_names, 'long_name' ) . $plm_req_msg,
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Base Salary', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_salary', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
-						$form->get_no_select( 'schema_job_salary_currency', $currencies, 'currency' ).' '.
-						_x( 'per', 'option comment', 'wpsso-schema-json-ld' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
+						$form->get_no_select( 'schema_job_salary_currency', $currencies, 'currency' ) . ' ' . 
+						_x( 'per', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
 						$form->get_no_select( 'schema_job_salary_period', $this->p->cf['form']['time_text'], 'short' ),
 				),
 				'schema_job_empl_type' => array(
@@ -370,15 +370,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema Organization
 				 */
 				'subsection_organization' => array(
-					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
+					'tr_class' => $schema_type_tr_class['organization'] . ' ' . $schema_type_tr_class['local_business'],
 					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_org_org_id' => array(
-					'tr_class' => $schema_type_tr_class['organization'].' '.$schema_type_tr_class['local_business'],
+					'tr_class' => $schema_type_tr_class['organization'] . ' ' . $schema_type_tr_class['local_business'],
 					'label' => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_org_org_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_org_org_id', $org_site_names, 'long_name' ).$org_req_msg,
+					'content' => $form->get_no_select( 'schema_org_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 
 				/**
@@ -406,7 +406,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_question_desc' => array(
 					'tr_class' => $schema_type_tr_class['question'],
-					'label' => _x( 'Q & A Heading / Desc.', 'option label', 'wpsso-schema-json-ld' ),
+					'label' => _x( 'Q & A Heading / Desc', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_question_desc', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
@@ -447,28 +447,28 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_prep_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
-						$form->get_no_input_value( '0', 'short' ).$hours_sep.
-						$form->get_no_input_value( '0', 'short' ).$mins_sep.
-						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+					'content' => $form->get_no_input_value( '0', 'short' ) . $days_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_recipe_cook_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Cooking Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_cook_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
-						$form->get_no_input_value( '0', 'short' ).$hours_sep.
-						$form->get_no_input_value( '0', 'short' ).$mins_sep.
-						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+					'content' => $form->get_no_input_value( '0', 'short' ) . $days_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_recipe_total_time' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Total Time', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_total_time', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '0', 'short' ).$days_sep.
-						$form->get_no_input_value( '0', 'short' ).$hours_sep.
-						$form->get_no_input_value( '0', 'short' ).$mins_sep.
-						$form->get_no_input_value( '0', 'short' ).$secs_sep,
+					'content' => $form->get_no_input_value( '0', 'short' ) . $days_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_recipe_ingredients' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
@@ -501,77 +501,77 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Calories', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_cal', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'calories', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_prot' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Protein', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_prot', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of protein', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_fib' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Fiber', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fib', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of fiber', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_carb' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Carbohydrates', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_carb', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of carbohydrates', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sugar' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Sugar', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sugar', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of sugar', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sod' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Sodium', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sod', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'milligrams of sodium', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_sat_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Saturated Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_sat_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of saturated fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_unsat_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Unsaturated Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_unsat_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of unsaturated fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_trans_fat' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Trans Fat', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_trans_fat', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'grams of trans fat', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_nutri_chol' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'label' => _x( 'Cholesterol', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_recipe_nutri_chol', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'medium' ).' '.
+					'content' => $form->get_no_input_value( '', 'medium' ) . ' ' . 
 						_x( 'milligrams of cholesterol', 'option comment', 'wpsso-schema-json-ld' ),
 				),
 
@@ -611,10 +611,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ).
-						' '._x( 'from', 'option comment', 'wpsso-schema-json-ld' ).' '.
-							$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ).
-						' '._x( 'to', 'option comment', 'wpsso-schema-json-ld' ).' '.
+					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ) . 
+						' ' . _x( 'from', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
+							$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ) . 
+						' ' . _x( 'to', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
 							$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
 				),
 				'schema_review_rating_alt_name' => array(
