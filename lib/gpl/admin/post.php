@@ -31,6 +31,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
 			}
 
+			$dots      = '...';
+			$r_cache   = true;
+			$do_encode = true;
+
 			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
 			$currencies          = SucomUtil::get_currency_abbrev();
 			$addl_type_max       = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
@@ -39,10 +43,10 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len    = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 
-			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, true, false, true, 'og_title', false );
-			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, '...', $mod, true, false, true, 'og_title' );
-			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, '...', $mod );
-			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod );
+			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $r_cache, false, $do_encode, array( 'seo_desc', 'og_desc' ) );
+			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $r_cache, false, $do_encode, 'og_title' );
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
@@ -582,7 +586,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_review_item_type' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Type', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank required',
 					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'schema_type' ),
 				),
 				'schema_review_item_name' => array(
@@ -594,7 +598,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'schema_review_item_url' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank',
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank required',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_item_image_url' => array(
