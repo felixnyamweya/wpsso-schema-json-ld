@@ -99,7 +99,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/**
 			 * Save and re-use the existing Schema Description field from WPSSO Core if available.
 			 */
-			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? $table_rows['schema_desc'] : array(
+			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? array( 'table_row' => $table_rows['schema_desc'] ) : array(
 				'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
 				'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 				'no_auto_draft' => true,

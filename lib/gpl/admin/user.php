@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 			/**
 			 * Save and re-use the existing Schema Description field from WPSSO Core if available.
 			 */
-			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? $table_rows['schema_desc'] : array(
+			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? array( 'table_row' => $table_rows['schema_desc'] ) : array(
 				'label' => _x( 'Profile Page Description', 'option label', 'wpsso-schema-json-ld' ),
 				'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
 				'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
