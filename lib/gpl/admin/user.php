@@ -48,7 +48,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 			}
 
 			/**
-			 * Remove the default schema rows so we can append a whole new set.
+			 * Save and re-use the existing Schema Description field from WPSSO Core if available.
+			 */
+			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? $table_rows['schema_desc'] : array(
+				'label' => _x( 'Profile Page Description', 'option label', 'wpsso-schema-json-ld' ),
+				'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
+				'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
+			);
+
+			/**
+			 * Remove the default schema rows so we can append a whole new set with a different order.
 			 */
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
 				if ( isset( $table_rows[$key] ) ) {
@@ -71,11 +80,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
-				'schema_desc' => array(
-					'label' => _x( 'Profile Page Description', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
-					'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
-				),
+				'schema_desc' => $schema_desc_row,
 				'schema_sameas_url' => array(
 					'label' => _x( 'Other Profile Page URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
