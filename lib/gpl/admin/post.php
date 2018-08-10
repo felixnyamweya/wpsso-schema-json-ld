@@ -40,8 +40,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$addl_type_max       = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
 			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
-			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 			$headline_max_len    = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
+			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
