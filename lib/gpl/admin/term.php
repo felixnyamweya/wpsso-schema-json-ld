@@ -43,35 +43,30 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
-			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $r_cache, false, $do_encode, array( 'seo_desc', 'og_desc' ) );
+			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, true, false );
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer end.
 			}
 
 			/**
-			 * Save and re-use the existing Schema Description field from WPSSO Core if available.
+			 * Save and remove specific rows so we can append a whole new set with a different order.
 			 */
-			$schema_desc_row = isset( $table_rows['schema_desc'] ) ? array( 'table_row' => $table_rows['schema_desc'] ) : array(
-				'label' => _x( 'Schema Description', 'option label', 'wpsso-schema-json-ld' ),
-				'th_class' => 'medium', 'tooltip' => 'meta-schema_desc', 'td_class' => 'blank',
-				'content' => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
-			);
+			$saved_table_rows = array();
 
-			/**
-			 * Remove the default schema rows so we can append a whole new set with a different order.
-			 */
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
 				if ( isset( $table_rows[$key] ) ) {
+					$saved_table_rows[$key] = $table_rows[$key];
 					unset( $table_rows[$key] );
 				}
 			}
 
 			$form_rows = array(
-				'subsection_schema' => array(
-					'td_class' => 'subsection', 'header' => 'h4',
-					'label' => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
-				),
+				'subsection_schema' => '',	// Placeholder.
+
+				/**
+				 * All Schema Types
+				 */
 				'schema_title' => array(
 					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
@@ -83,12 +78,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
-				'schema_desc' => $schema_desc_row,
+				'schema_desc' => '',	// Placeholder.
 				'schema_type' => array(
 					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
 					'content' => $form->get_select( 'schema_type', $schema_types,
-						'schema_type', '', true, false, true, 'unhide_rows' ) . ' ' .
+						'schema_type', '', true, $def_schema_type, $def_schema_type, 'unhide_rows' ) . ' ' .
 							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
 				),
 				'schema_addl_type_url' => array(
@@ -107,8 +102,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 
+			foreach ( $saved_table_rows as $key => $value ) {
+				$table_rows[$key] = $saved_table_rows[$key];
+			}
+
 			return SucomUtil::get_after_key( $table_rows, 'subsection_schema', '',
-				'<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
+				'<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg',
+					array( 'lca' => 'wpssojson' ) ) . '</td>' );
 		}
 	}
 }
