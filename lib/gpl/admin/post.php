@@ -59,7 +59,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/**
 			 * Organization variables.
 			 */
-			$org_req_msg    = $this->p->util->get_ext_req_msg( 'org' );
+			$org_req_msg    = $this->p->admin->get_ext_required_msg( 'org' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
 			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', true ); // $add_none is true.
 
