@@ -605,7 +605,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
 * *Developer Notes*
-	* None.
+	* Renamed the SucomForm::get_cache() method to WpssoUtil::get_form_cache() for WPSSO v4.10.0.
 
 **Version 1.30.0 (2018/07/22)**
 
@@ -729,5 +729,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.30.1 =
 
-(2018/08/11) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
+(2018/08/11) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs). Renamed the SucomForm::get_cache() method to WpssoUtil::get_form_cache() for WPSSO v4.10.0.
 
