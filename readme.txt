@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.8
 WC Tested Up To: 3.4.4
-Stable Tag: 1.30.0
+Stable Tag: 1.30.1
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -730,8 +730,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.30.1 =
 
 (2018/08/11) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
-
-= 1.30.0 =
-
-(2018/07/22) Maintenance release.
 
