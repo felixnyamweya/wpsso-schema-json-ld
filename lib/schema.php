@@ -115,14 +115,23 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$get_posts_args = apply_filters( $wpsso->lca . '_json_itemlist_posts_args', $get_posts_args, $mod );
 
 			switch ( $get_posts_args['order'] ) {
+
 				case 'ASC':
+
 					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderAscending';
+
 					break;
+
 				case 'DESC':
+
 					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderDescending';
+
 					break;
+
 				default:
+
 					$json_data['itemListOrder'] = 'https://schema.org/ItemListUnordered';
+
 					break;
 			}
 
@@ -806,14 +815,38 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$page_posts_mods = array();
 
 			if ( $is_main ) {
+
 				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'home is index and object is false (archive = true)' );
+					}
+
 					$is_archive = true;
+
 				} elseif ( empty( $mod['id'] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'mod id is empty and post type is archive (archive = true)' );
+					}
+
 					$is_archive = true;
+
 				} else {
+
+					if ( $wpsso->debug->enabled ) {
+						$wpsso->debug->log( 'is main is true (archive = true)' );
+					}
+
 					$is_archive = false;
 				}
+
 			} else {
+
+				if ( $wpsso->debug->enabled ) {
+					$wpsso->debug->log( 'is main is false (archive = false)' );
+				}
+
 				$is_archive = false;
 			}
 
