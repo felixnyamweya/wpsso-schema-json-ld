@@ -447,9 +447,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Property:
 			 *	image as https://schema.org/ImageObject
 			 */
-			$og_images = array();
+			$og_images  = array();
 			$prev_count = 0;
-			$max = $wpsso->util->get_max_nums( $mod, 'schema' );
+			$max_nums   = $wpsso->util->get_max_nums( $mod, 'schema' );
 
 			if ( empty( $size_name ) ) {
 				$size_name = $wpsso->lca . '-schema';
@@ -481,10 +481,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( $prev_count > 0 ) {
 
-					$max['schema_img_max'] -= $prev_count;
+					$max_nums['schema_img_max'] -= $prev_count;
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max['schema_img_max'] . ')' );
+						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max_nums['schema_img_max'] . ')' );
 					}
 				}
 			}
@@ -496,7 +496,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->log( 'adding all image(s)' );
 			}
 
-			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max['schema_img_max'], $size_name, $mod, true, 'schema' ) );
+			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max_nums['schema_img_max'], $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
 
@@ -770,7 +770,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			list( $video_type_id, $video_type_url ) = WpssoSchema::get_single_type_id_url( $json_data, false, false, 'video.object', $list_element );
 
 			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array(
-				'url' => esc_url_raw( $media_url ),
+				'url' => SucomUtil::esc_url_encode( $media_url ),
 			) );
 
 			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(

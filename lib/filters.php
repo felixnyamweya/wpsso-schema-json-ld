@@ -170,7 +170,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 */
 				if ( is_array( $mod_opts ) ) {	// Just in case
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $url ) {
-						$ret['sameAs'][] = esc_url_raw( $url );
+						$ret['sameAs'][] = SucomUtil::esc_url_encode( $url );
 					}
 				}
 
