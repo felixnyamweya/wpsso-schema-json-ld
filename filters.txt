@@ -7,7 +7,7 @@
 
 'wpsso_json_ld_search_url' ( $url, $mod, $add_page, $src_id )
 
-'wpsso_json_media_main_prop' ( $main_prop, $mod )	// empty string by default
+'wpsso_json_media_main_prop' ( $main_prop, $mod )	// Empty string by default.
 
 'wpsso_json_prop_https_schema_org_additionaltype' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main )
 
