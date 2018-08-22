@@ -835,7 +835,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				} else {
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'is main is true (archive = true)' );
+						$wpsso->debug->log( 'is main is true (archive = false)' );
 					}
 
 					$is_archive = false;
