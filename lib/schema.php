@@ -39,8 +39,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			global $wpsso_paged;
 
-			$wpsso_paged = 1;
-
+			$wpsso_paged    = 1;
 			$posts_per_page = is_numeric( $posts_per_page ) ? $posts_per_page : 200;	// Just in case.
 
 			/**
@@ -49,10 +48,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
 
 			if ( empty( $page_posts_mods ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
 				}
+
 				unset( $wpsso_paged );	// Unset the forced page number.
+
 				return $posts_count;
 			}
 
@@ -86,9 +88,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
-			$posts_count = 0;
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->mark();
+			}
 
-			$prop_name = 'itemListElement';
+			$prop_name   = 'itemListElement';
+			$posts_count = isset( $json_data[$prop_name] ) ? count( $json_data[$prop_name] ) : 0;
 
 			/**
 			 * Set the page number and the posts per page values.
@@ -220,20 +225,29 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->mark();
+			}
+
 			$posts_count = 0;
 
 			/**
 			 * Sanity checks.
 			 */
 			if ( empty( $page_type_id ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: page_type_id is empty' );
 				}
+
 				return $posts_count;
+
 			} elseif ( empty( $prop_name_type_ids ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: prop_name_type_ids is empty' );
 				}
+
 				return $posts_count;
 			}
 
@@ -241,10 +255,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Prevent recursion - i.e. webpage.collection in webpage.collection, etc.
 			 */
 			if ( isset( $added_page_type_ids[$page_type_id] ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: preventing recursion of page_type_id ' . $page_type_id );
 				}
+
 				return $posts_count;
+
 			} else {
 				$added_page_type_ids[$page_type_id] = true;
 			}
@@ -261,8 +278,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			global $wpsso_paged;
 
-			$wpsso_paged = 1;
-
+			$wpsso_paged    = 1;
 			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
 
 			/**
