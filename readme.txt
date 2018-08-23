@@ -596,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.30.2-dev.3 (2018/08/22)**
+**Version 1.30.2-dev.4 (2018/08/23)**
 
 * *New Features*
 	* None.
@@ -738,9 +738,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.30.2-dev.3 =
+= 1.30.2-dev.4 =
 
-(2018/08/22) Replaced calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
+(2018/08/23) Replaced calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
 
 = 1.30.1 =
 
