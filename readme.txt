@@ -596,7 +596,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.30.2-rc.1 (2018/08/24)**
+**Version 1.30.2 (2018/08/25)**
 
 * *New Features*
 	* None.
@@ -738,11 +738,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.30.2-rc.1 =
+= 1.30.2 =
 
-(2018/08/24) Replaced several calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
-
-= 1.30.1 =
-
-(2018/08/11) Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs). Renamed the SucomForm::get_cache() method to WpssoUtil::get_form_cache() for WPSSO v4.10.0.
+(2018/08/25) Replaced several calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
 
