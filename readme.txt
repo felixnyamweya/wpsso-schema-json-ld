@@ -36,7 +36,7 @@ WooCommerce product markup includes all product images, product variations, prod
 
 **A reliable WordPress plugin for today *and* tomorrow:**
 
-WPSSO Schema JSON-LD Markup is 100% compatible with the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in the upcoming release of WordPress 5.
+WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in the upcoming release of WordPress 5.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
