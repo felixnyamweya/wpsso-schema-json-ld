@@ -29,9 +29,9 @@
 
 <p>WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
-<p><strong>A Schema markup plugin for today <em>and</em> tomorrow:</strong></p>
+<p><strong>A reliable WordPress plugin for today <em>and</em> tomorrow:</strong></p>
 
-<p>WPSSO Schema JSON-LD Markup is 100% compatible with the upcoming <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in WordPress 5 (expected in August 2018)!</p>
+<p>WPSSO Schema JSON-LD Markup is 100% compatible with the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in the upcoming release of WordPress 5.</p>
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
