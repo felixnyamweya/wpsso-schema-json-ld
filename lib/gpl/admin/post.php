@@ -71,7 +71,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/**
 			 * Place / Location variables.
 			 */
-			$plm_req_msg      = $this->p->util->get_ext_req_msg( 'plm' );
+			$plm_req_msg      = $this->p->admin->get_ext_required_msg( 'plm' );
 			$plm_disable      = empty( $plm_req_msg ) ? false : true;
 			$place_addr_names = $this->p->util->get_form_cache( 'place_addr_names', true ); // $add_none is true.
 
