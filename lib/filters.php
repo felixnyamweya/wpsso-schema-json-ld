@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'add_schema_meta_array'            => '__return_false',
 					'add_schema_noscript_array'        => '__return_false',
 					'json_data_https_schema_org_thing' => 5,
-				), -1000 );	// make sure we run first
+				), -1000 );	// Make sure we run first.
 			}
 
 			$this->p->util->add_plugin_filters( $this, array(
@@ -42,10 +42,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			) );
 
 			if ( is_admin() ) {
-				$this->p->util->add_plugin_actions( $this, array(	// admin actions
+				$this->p->util->add_plugin_actions( $this, array(	// Admin actions.
 					'admin_post_head' => 1,
 				) );
-				$this->p->util->add_plugin_filters( $this, array(	// admin filters
+				$this->p->util->add_plugin_filters( $this, array(	// Admin filters.
 					'option_type'               => 2,
 					'post_cache_transient_keys' => 4,
 					'pub_google_rows'           => 2,
@@ -55,12 +55,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_gpl_features' => 4,
 					'status_pro_features' => 4,
-				), 10, 'wpssojson' );	// hook to wpssojson filters
+				), 10, 'wpssojson' );	// Hook to wpssojson filters.
 			}
 		}
 
+		/**
+		 * Remove AMP json data to prevent duplicate Schema JSON-LD markup.
+		 */
 		public function filter_amp_post_template_metadata( $metadata, $post_obj ) {
-			return array();	// remove the AMP json data to prevent duplicate JSON-LD blocks
+			return array();
 		}
 
 		/**
@@ -90,9 +93,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				$mod_opts = $mod['obj']->get_options( $mod['id'] );
 
-				if ( is_array( $mod_opts ) ) {	// just in case
+				if ( is_array( $mod_opts ) ) {	// Just in case.
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
-						if ( filter_var( $addl_type_url, FILTER_VALIDATE_URL ) !== false ) {	// just in case
+						if ( filter_var( $addl_type_url, FILTER_VALIDATE_URL ) !== false ) {	// Just in case.
 							$ret['additionalType'][] = $addl_type_url;
 						}
 					}
@@ -306,17 +309,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			$urls = $this->p->cf['plugin']['wpssojson']['url'];
-			$page_type_id = $this->p->schema->get_mod_schema_type( $mod, true );	// $ret_schema_id = true;
+			$urls          = $this->p->cf['plugin']['wpssojson']['url'];
+			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, true );	// $ret_schema_id is true.
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
-			$filter_name = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
-			$warn_msg = '';
+			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
+			$warn_msg      = '';
+			$dismiss_key   = false;
 
 			if ( has_filter( $filter_name ) ) {
 				return;
 			}
 
-			if ( ! $this->p->check->aop( 'wpssojson', true, $this->p->avail['*']['p_dir'] ) ) {
+			if ( ! $this->p->check->pp( 'wpssojson', true, $this->p->avail['*']['p_dir'] ) ) {
 
 				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
 				
@@ -329,7 +333,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( ! empty( $warn_msg ) ) {
 				$this->p->notice->warn( '<p class="top"><em>' . __( 'This notice is only shown to users with Administrative privileges.',
-					'wpsso-schema-json-ld' ) . '</em></p><p>' . $warn_msg . '</p>', true, $dismiss_key, true );	// can be dismissed
+					'wpsso-schema-json-ld' ) . '</em></p><p>' . $warn_msg . '</p>', true, $dismiss_key, true );	// Can be dismissed.
 			}
 		}
 
@@ -401,7 +405,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_review_rating':
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
-					return 'blank_num';	// must be numeric (blank or zero is ok)
+					return 'blank_num';	// Must be numeric (blank or zero is ok).
 					break;
 				case 'schema_review_item_url':
 				case 'schema_review_item_image_url':
@@ -846,7 +850,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_person_id':
 
-					$role_label_transl = _x( 'Person', 'user role', 'wpsso' );	// use the wpsso translation domain
+					$role_label_transl = _x( 'Person', 'user role', 'wpsso' );	// Use the wpsso translation domain.
 
 					$text = sprintf( __( 'Select a person from the list of eligible WordPress users &mdash; to be included in this list, a user must be members of the WordPress "%s" role.', 'wpsso-schema-json-ld' ), $role_label_transl );
 
@@ -1023,16 +1027,23 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Hooked to 'wpssojson_status_gpl_features'.
 		 */
 		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
+
 			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
+
 				if ( $sub === 'admin' ) { // Skip status for admin menus and tabs.
 					continue;
 				}
+
 				foreach ( $libs as $id_key => $label ) {
+
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
-					if ( $pkg['aop'] && ! empty( $info['lib']['pro'][$sub][$id] ) ) {
+
+					if ( $pkg['pp'] && ! empty( $info['lib']['pro'][$sub][$id] ) ) {
 						continue;
 					}
-					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl' . $sub . $id, false );	// $underscore = false
+
+					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl' . $sub . $id, false );	// $underscore is false.
+
 					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}
