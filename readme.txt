@@ -596,6 +596,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.30.3-dev.2 (2018/08/27)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Minor update for code style and changes in WPSSO v4.11.2.
+
 **Version 1.30.2 (2018/08/25)**
 
 * *New Features*
@@ -737,6 +748,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.30.3-dev.2 =
+
+(2018/08/27) Minor update for code style and changes in WPSSO v4.11.2.
 
 = 1.30.2 =
 
