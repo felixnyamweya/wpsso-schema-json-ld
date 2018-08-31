@@ -41,7 +41,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$headline_max_len    = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
@@ -71,9 +70,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			/**
 			 * Place / Location variables.
 			 */
-			$plm_req_msg      = $this->p->admin->get_ext_required_msg( 'plm' );
-			$plm_disable      = empty( $plm_req_msg ) ? false : true;
-			$place_addr_names = $this->p->util->get_form_cache( 'place_addr_names', true ); // $add_none is true.
+			$plm_req_msg     = $this->p->admin->get_ext_required_msg( 'plm' );
+			$plm_disable     = empty( $plm_req_msg ) ? false : true;
+			$plm_place_names = $this->p->util->get_form_cache( 'place_names', true ); // $add_none is true.
 
 			/**
 			 * Javascript classes to hide/show rows by selected schema type.
@@ -337,7 +336,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'label' => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_job_location_id', 'td_class' => 'blank',
-					'content' => $form->get_no_select( 'schema_job_location_id', $place_addr_names, 'long_name' ) . $plm_req_msg,
+					'content' => $form->get_no_select( 'schema_job_location_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
@@ -623,7 +622,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
 
 			foreach ( $saved_table_rows as $key => $value ) {
-				$table_rows[$key] = $saved_table_rows[$key];
+				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
 			return SucomUtil::get_after_key( $table_rows, 'subsection_schema', '',

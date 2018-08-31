@@ -15,5 +15,5 @@ $plugin_filepath = $plugin_dir . 'wpsso-schema-json-ld.php';
 require_once $plugin_dir . 'lib/config.php';
 
 WpssoJsonConfig::set_constants( $plugin_filepath );
-WpssoJsonConfig::require_libs( $plugin_filepath );	// includes the register.php class library
+WpssoJsonConfig::require_libs( $plugin_filepath );	// Includes the register.php class library.
 WpssoJsonRegister::network_uninstall();

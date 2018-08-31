@@ -98,7 +98,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 
 			foreach ( $saved_table_rows as $key => $value ) {
-				$table_rows[$key] = $saved_table_rows[$key];
+				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
 			return SucomUtil::get_after_key( $table_rows, 'subsection_schema', '',

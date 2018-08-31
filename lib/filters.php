@@ -820,7 +820,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_job_location_id':
 
-					$text = __( 'Optionally select a different address / place / location for the job location.', 'wpsso-schema-json-ld' );
+					$text = __( 'Optionally select a different place / location for the job location.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

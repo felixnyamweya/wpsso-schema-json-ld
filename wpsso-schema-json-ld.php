@@ -14,8 +14,8 @@
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.8
- * WC Tested Up To: 3.4.4
- * Version: 1.30.3-dev.2
+ * WC Tested Up To: 3.4.5
+ * Version: 1.30.3-dev.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
 			WpssoJsonConfig::set_constants( __FILE__ );
-			WpssoJsonConfig::require_libs( __FILE__ );	// includes the register.php class library
+			WpssoJsonConfig::require_libs( __FILE__ );	// Includes the register.php class library.
 			$this->reg = new WpssoJsonRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
@@ -248,5 +248,6 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 	}
 
         global $wpssojson;
+
 	$wpssojson =& WpssoJson::get_instance();
 }
