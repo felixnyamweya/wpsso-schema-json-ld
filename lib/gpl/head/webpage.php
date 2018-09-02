@@ -27,6 +27,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 		protected $p;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {

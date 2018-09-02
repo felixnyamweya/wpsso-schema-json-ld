@@ -16,6 +16,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		protected $p;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {

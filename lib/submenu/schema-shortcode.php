@@ -14,6 +14,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaShortcode' ) && class_exists( 'Wpsso
 	class WpssoJsonSubmenuSchemaShortcode extends WpssoAdmin {
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {

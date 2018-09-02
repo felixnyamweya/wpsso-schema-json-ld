@@ -21,6 +21,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 		private $content_depth      = 0;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
