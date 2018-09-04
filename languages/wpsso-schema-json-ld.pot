@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.30.3-dev.6\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.30.3-dev.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -804,13 +804,13 @@ msgid "adding schema for product model"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/pro/job/wpjobmanager.php:311
+#: lib/pro/job/wpjobmanager.php:312
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/pro/job/wpjobmanager.php:317
+#: lib/pro/job/wpjobmanager.php:320
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""
