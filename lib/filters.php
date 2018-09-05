@@ -43,16 +43,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			) );
 
 			if ( is_admin() ) {
+
 				$this->p->util->add_plugin_actions( $this, array(	// Admin actions.
 					'admin_post_head' => 1,
 				) );
+
 				$this->p->util->add_plugin_filters( $this, array(	// Admin filters.
 					'option_type'               => 2,
+					'save_post_options'         => 4,
 					'post_cache_transient_keys' => 4,
 					'pub_google_rows'           => 2,
-					'save_post_options'         => 4,
 					'messages_tooltip_meta'     => 2,
 				) );
+
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_gpl_features' => 4,
 					'status_pro_features' => 4,
@@ -304,6 +307,117 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
 
+		public function filter_get_md_defaults( $md_defs, $mod ) {
+
+			$timezone = get_option( 'timezone_string' );
+
+			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $ret_schema_id = true, $use_mod_opts = false
+
+			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
+				'USD' : $this->p->options['plugin_def_currency'];
+
+			$review_item_type = empty( $this->p->options['schema_review_item_type'] ) ?
+				'none' : $this->p->options['schema_review_item_type'];
+
+			$schema_md_defs = array(
+				'schema_type'                        => $schema_type,
+				'schema_title'                       => '',
+				'schema_title_alt'                   => '',
+				'schema_desc'                        => '',
+				'schema_pub_org_id'                  => 'site',			// Creative Work Publisher
+				'schema_headline'                    => '',			// Creative Work Headline
+				'schema_course_provider_id'          => 'none',			// Course Provider 
+				'schema_event_start_date'            => '',			// Event Start Date
+				'schema_event_start_time'            => 'none',			// Event Start Time
+				'schema_event_start_timezone'        => $timezone,		// Event Start Timezone
+				'schema_event_end_date'              => '',			// Event End Date
+				'schema_event_end_time'              => 'none',			// Event End Time
+				'schema_event_end_timezone'          => '',			// Event End Timezone
+				'schema_event_offers_start_date'     => '',			// Event Start Date
+				'schema_event_offers_start_time'     => 'none',			// Offers Start Time
+				'schema_event_offers_start_timezone' => $timezone,		// Offers Start Timezone
+				'schema_event_offers_end_date'       => '',			// Offers End Date
+				'schema_event_offers_end_time'       => 'none',			// Offers End Time
+				'schema_event_offers_end_timezone'   => '',			// Offers End Timezone
+				'schema_event_org_id'                => 'none',			// Event Organizer
+				'schema_event_perf_id'               => 'none',			// Event Performer
+				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
+				'schema_howto_prep_hours'            => 0,			// How-To Preparation Time (Hours)
+				'schema_howto_prep_mins'             => 0,			// How-To Preparation Time (Mins)
+				'schema_howto_prep_secs'             => 0,			// How-To Preparation Time (Secs)
+				'schema_howto_total_days'            => 0,			// How-To Total Time (Days)
+				'schema_howto_total_hours'           => 0,			// How-To Total Time (Hours)
+				'schema_howto_total_mins'            => 0,			// How-To Total Time (Mins)
+				'schema_howto_total_secs'            => 0,			// How-To Total Time (Secs)
+				'schema_howto_yield'                 => '',			// How-To Yield
+				'schema_job_title'                   => '',
+				'schema_job_org_id'                  => 'none',			// Hiring Organization
+				'schema_job_location_id'             => 'none',			// Job Location
+				'schema_job_salary'                  => '',			// Base Salary
+				'schema_job_salary_currency'         => $def_currency,		// Base Salary Currency
+				'schema_job_salary_period'           => 'year',			// Base Salary per Year, Month, Week, Hour
+				'schema_job_empl_type_full_time'     => 0,
+				'schema_job_empl_type_part_time'     => 0,
+				'schema_job_empl_type_contractor'    => 0,
+				'schema_job_empl_type_temporary'     => 0,
+				'schema_job_empl_type_intern'        => 0,
+				'schema_job_empl_type_volunteer'     => 0,
+				'schema_job_empl_type_per_diem'      => 0,
+				'schema_job_empl_type_other'         => 0,
+				'schema_job_expire_date'             => '',
+				'schema_job_expire_time'             => 'none',
+				'schema_job_expire_timezone'         => '',
+				'schema_org_org_id'                  => 'none',			// Organization
+				'schema_person_id'                   => 'none',			// Person
+				'schema_recipe_cook_method'          => '',			// Recipe Cooking Method
+				'schema_recipe_course'               => '',			// Recipe Course
+				'schema_recipe_cuisine'              => '',			// Recipe Cuisine
+				'schema_recipe_prep_days'            => 0,			// Recipe Preparation Time (Days)
+				'schema_recipe_prep_hours'           => 0,			// Recipe Preparation Time (Hours)
+				'schema_recipe_prep_mins'            => 0,			// Recipe Preparation Time (Mins)
+				'schema_recipe_prep_secs'            => 0,			// Recipe Preparation Time (Secs)
+				'schema_recipe_cook_days'            => 0,			// Recipe Cooking Time (Days)
+				'schema_recipe_cook_hours'           => 0,			// Recipe Cooking Time (Hours)
+				'schema_recipe_cook_mins'            => 0,			// Recipe Cooking Time (Mins)
+				'schema_recipe_cook_secs'            => 0,			// Recipe Cooking Time (Secs)
+				'schema_recipe_total_days'           => 0,			// How-To Total Time (Days)
+				'schema_recipe_total_hours'          => 0,			// How-To Total Time (Hours)
+				'schema_recipe_total_mins'           => 0,			// How-To Total Time (Mins)
+				'schema_recipe_total_secs'           => 0,			// How-To Total Time (Secs)
+				'schema_recipe_nutri_serv'           => '',			// Serving Size
+				'schema_recipe_nutri_cal'            => '',			// Calories
+				'schema_recipe_nutri_prot'           => '',			// Protein
+				'schema_recipe_nutri_fib'            => '',			// Fiber
+				'schema_recipe_nutri_carb'           => '',			// Carbohydrates
+				'schema_recipe_nutri_sugar'          => '',			// Sugar
+				'schema_recipe_nutri_sod'            => '',			// Sodium
+				'schema_recipe_nutri_fat'            => '',			// Fat
+				'schema_recipe_nutri_trans_fat'      => '',			// Trans Fat
+				'schema_recipe_nutri_sat_fat'        => '',			// Saturated Fat
+				'schema_recipe_nutri_unsat_fat'      => '',			// Unsaturated Fat
+				'schema_recipe_nutri_chol'           => '',			// Cholesterol
+				'schema_recipe_yield'                => '',			// Recipe Yield
+				'schema_review_item_type'            => $review_item_type,	// Reviewed Item Type
+				'schema_review_item_name'            => '',			// Reviewed Item Name
+				'schema_review_item_url'             => '',			// Reviewed Item URL
+				'schema_review_item_image_url'       => '',			// Reviewed Item Image URL
+				'schema_review_rating'               => '0.0',			// Reviewed Item Rating
+				'schema_review_rating_from'          => '1',			// Reviewed Item Rating (From)
+				'schema_review_rating_to'            => '5',			// Reviewed Item Rating (To)
+				'schema_review_rating_alt_name'      => '',			// Reviewed Item Rating Alternate Name
+			);
+
+			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
+				$schema_md_defs['schema_addl_type_url_' . $key_num] = '';
+			}
+
+			foreach ( range( 0, WPSSO_SCHEMA_SAMEAS_URL_MAX - 1, 1 ) as $key_num ) {
+				$schema_md_defs['schema_sameas_url_' . $key_num] = '';
+			}
+
+			return array_merge( $md_defs, $schema_md_defs );
+		}
+
 		public function action_admin_post_head( $mod ) {
 
 			if ( ! current_user_can( 'manage_options' ) ) {
@@ -546,117 +660,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			);
 
 			return $transient_keys;
-		}
-
-		public function filter_get_md_defaults( $md_defs, $mod ) {
-
-			$timezone = get_option( 'timezone_string' );
-
-			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $ret_schema_id = true, $use_mod_opts = false
-
-			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
-				'USD' : $this->p->options['plugin_def_currency'];
-
-			$review_item_type = empty( $this->p->options['schema_review_item_type'] ) ?
-				'none' : $this->p->options['schema_review_item_type'];
-
-			$schema_md_defs = array(
-				'schema_type'                        => $schema_type,
-				'schema_title'                       => '',
-				'schema_title_alt'                   => '',
-				'schema_desc'                        => '',
-				'schema_pub_org_id'                  => 'site',			// Creative Work Publisher
-				'schema_headline'                    => '',			// Creative Work Headline
-				'schema_course_provider_id'          => 'none',			// Course Provider 
-				'schema_event_start_date'            => '',			// Event Start Date
-				'schema_event_start_time'            => 'none',			// Event Start Time
-				'schema_event_start_timezone'        => $timezone,		// Event Start Timezone
-				'schema_event_end_date'              => '',			// Event End Date
-				'schema_event_end_time'              => 'none',			// Event End Time
-				'schema_event_end_timezone'          => '',			// Event End Timezone
-				'schema_event_offers_start_date'     => '',			// Event Start Date
-				'schema_event_offers_start_time'     => 'none',			// Offers Start Time
-				'schema_event_offers_start_timezone' => $timezone,		// Offers Start Timezone
-				'schema_event_offers_end_date'       => '',			// Offers End Date
-				'schema_event_offers_end_time'       => 'none',			// Offers End Time
-				'schema_event_offers_end_timezone'   => '',			// Offers End Timezone
-				'schema_event_org_id'                => 'none',			// Event Organizer
-				'schema_event_perf_id'               => 'none',			// Event Performer
-				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
-				'schema_howto_prep_hours'            => 0,			// How-To Preparation Time (Hours)
-				'schema_howto_prep_mins'             => 0,			// How-To Preparation Time (Mins)
-				'schema_howto_prep_secs'             => 0,			// How-To Preparation Time (Secs)
-				'schema_howto_total_days'            => 0,			// How-To Total Time (Days)
-				'schema_howto_total_hours'           => 0,			// How-To Total Time (Hours)
-				'schema_howto_total_mins'            => 0,			// How-To Total Time (Mins)
-				'schema_howto_total_secs'            => 0,			// How-To Total Time (Secs)
-				'schema_howto_yield'                 => '',			// How-To Yield
-				'schema_job_title'                   => '',
-				'schema_job_org_id'                  => 'none',			// Hiring Organization
-				'schema_job_location_id'             => 'none',			// Job Location
-				'schema_job_salary'                  => '',			// Base Salary
-				'schema_job_salary_currency'         => $def_currency,		// Base Salary Currency
-				'schema_job_salary_period'           => 'year',			// Base Salary per Year, Month, Week, Hour
-				'schema_job_empl_type_full_time'     => 0,
-				'schema_job_empl_type_part_time'     => 0,
-				'schema_job_empl_type_contractor'    => 0,
-				'schema_job_empl_type_temporary'     => 0,
-				'schema_job_empl_type_intern'        => 0,
-				'schema_job_empl_type_volunteer'     => 0,
-				'schema_job_empl_type_per_diem'      => 0,
-				'schema_job_empl_type_other'         => 0,
-				'schema_job_expire_date'             => '',
-				'schema_job_expire_time'             => 'none',
-				'schema_job_expire_timezone'         => '',
-				'schema_org_org_id'                  => 'none',			// Organization
-				'schema_person_id'                   => 'none',			// Person
-				'schema_recipe_cook_method'          => '',			// Recipe Cooking Method
-				'schema_recipe_course'               => '',			// Recipe Course
-				'schema_recipe_cuisine'              => '',			// Recipe Cuisine
-				'schema_recipe_prep_days'            => 0,			// Recipe Preparation Time (Days)
-				'schema_recipe_prep_hours'           => 0,			// Recipe Preparation Time (Hours)
-				'schema_recipe_prep_mins'            => 0,			// Recipe Preparation Time (Mins)
-				'schema_recipe_prep_secs'            => 0,			// Recipe Preparation Time (Secs)
-				'schema_recipe_cook_days'            => 0,			// Recipe Cooking Time (Days)
-				'schema_recipe_cook_hours'           => 0,			// Recipe Cooking Time (Hours)
-				'schema_recipe_cook_mins'            => 0,			// Recipe Cooking Time (Mins)
-				'schema_recipe_cook_secs'            => 0,			// Recipe Cooking Time (Secs)
-				'schema_recipe_total_days'           => 0,			// How-To Total Time (Days)
-				'schema_recipe_total_hours'          => 0,			// How-To Total Time (Hours)
-				'schema_recipe_total_mins'           => 0,			// How-To Total Time (Mins)
-				'schema_recipe_total_secs'           => 0,			// How-To Total Time (Secs)
-				'schema_recipe_nutri_serv'           => '',			// Serving Size
-				'schema_recipe_nutri_cal'            => '',			// Calories
-				'schema_recipe_nutri_prot'           => '',			// Protein
-				'schema_recipe_nutri_fib'            => '',			// Fiber
-				'schema_recipe_nutri_carb'           => '',			// Carbohydrates
-				'schema_recipe_nutri_sugar'          => '',			// Sugar
-				'schema_recipe_nutri_sod'            => '',			// Sodium
-				'schema_recipe_nutri_fat'            => '',			// Fat
-				'schema_recipe_nutri_trans_fat'      => '',			// Trans Fat
-				'schema_recipe_nutri_sat_fat'        => '',			// Saturated Fat
-				'schema_recipe_nutri_unsat_fat'      => '',			// Unsaturated Fat
-				'schema_recipe_nutri_chol'           => '',			// Cholesterol
-				'schema_recipe_yield'                => '',			// Recipe Yield
-				'schema_review_item_type'            => $review_item_type,	// Reviewed Item Type
-				'schema_review_item_name'            => '',			// Reviewed Item Name
-				'schema_review_item_url'             => '',			// Reviewed Item URL
-				'schema_review_item_image_url'       => '',			// Reviewed Item Image URL
-				'schema_review_rating'               => '0.0',			// Reviewed Item Rating
-				'schema_review_rating_from'          => '1',			// Reviewed Item Rating (From)
-				'schema_review_rating_to'            => '5',			// Reviewed Item Rating (To)
-				'schema_review_rating_alt_name'      => '',			// Reviewed Item Rating Alternate Name
-			);
-
-			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
-				$schema_md_defs['schema_addl_type_url_' . $key_num] = '';
-			}
-
-			foreach ( range( 0, WPSSO_SCHEMA_SAMEAS_URL_MAX - 1, 1 ) as $key_num ) {
-				$schema_md_defs['schema_sameas_url_' . $key_num] = '';
-			}
-
-			return array_merge( $md_defs, $schema_md_defs );
 		}
 
 		/**

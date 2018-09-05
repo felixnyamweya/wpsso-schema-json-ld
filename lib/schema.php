@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *
 		 * $json_data may be a null property, so do not force the array type on this method argument.
 		 */
-		public static function add_page_links( &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false ) {
+		public static function add_page_links( &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $ppp = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -40,13 +40,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			global $wpsso_paged;
 
-			$wpsso_paged    = 1;
-			$posts_per_page = is_numeric( $posts_per_page ) ? $posts_per_page : 200;	// Just in case.
+			$wpsso_paged = 1;
+
+			$ppp = is_numeric( $ppp ) ? $ppp : 200;	// Just in case.
 
 			/**
 			 * Get the mod array for all posts.
 			 */
-			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $ppp, $wpsso_paged );
 
 			if ( empty( $page_posts_mods ) ) {
 
@@ -71,9 +72,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$json_data[] = $post_sharing_url;
 
-				if ( $posts_count >= $posts_per_page ) {
+				if ( $posts_count >= $ppp ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
+						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 					}
 					break;	// Stop here.
 				}
@@ -85,7 +86,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		/**
 		 * Called by WpssoJsonProHeadItemList.
 		 */
-		public static function add_itemlist_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false ) {
+		public static function add_itemlist_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $ppp = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -103,7 +104,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso_paged = 1;
 
-			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
+			$ppp = self::get_posts_per_page( $mod, $page_type_id, $is_main, $ppp );
 
 			$posts_args = array(
 				'has_password'   => false,
@@ -111,8 +112,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'order'          => 'DESC',
 				'paged'          => $wpsso_paged,
 				'post_status'    => 'publish',
-				'post_type'      => 'any',		// Post, page, or custom post type.
-				'posts_per_page' => $posts_per_page,
+				'post_type'      => 'any',		// Return post, page, or any custom post type.
+				'posts_per_page' => $ppp,
 			);
 
 			/**
@@ -144,7 +145,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Get the mod array for all posts.
 			 */
-			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, $posts_args );
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $ppp, $wpsso_paged, $posts_args );
 
 			if ( empty( $page_posts_mods ) ) {
 
@@ -186,9 +187,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$json_data[$prop_name][] = $post_data;	// Add the post data.
 
-				if ( $prop_name_count >= $posts_per_page ) {
+				if ( $prop_name_count >= $ppp ) {
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
+						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 					}
 					break;	// Stop here.
 				}
@@ -220,7 +221,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *	$prop_name_type_ids = array( 'mentions' => false )
 		 *	$prop_name_type_ids = array( 'blogPosting' => 'blog.posting' )
 		 */
-		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $posts_per_page = false, array $prop_name_type_ids ) {
+		public static function add_posts_data( array &$json_data, array $mod, array $mt_og, $page_type_id, $is_main, $ppp = false, array $prop_name_type_ids ) {
 
 			static $added_page_type_ids = array();
 
@@ -279,13 +280,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			global $wpsso_paged;
 
-			$wpsso_paged    = 1;
-			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
+			$wpsso_paged = 1;
+
+			$ppp = self::get_posts_per_page( $mod, $page_type_id, $is_main, $ppp );
 
 			/**
 			 * Get the mod array for all posts.
 			 */
-			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged );
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $ppp, $wpsso_paged );
 
 			if ( empty( $page_posts_mods ) ) {
 
@@ -415,9 +417,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$json_data[$prop_name][] = $post_data;	// Add the post data.
 
-					if ( $prop_name_count >= $posts_per_page ) {
+					if ( $prop_name_count >= $ppp ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $posts_per_page . ' reached' );
+							$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 						}
 						break;	// Stop here.
 					}
@@ -825,7 +827,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return 1;	// Return count of videos added.
 		}
 
-		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, array $posts_args = array() ) {
+		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $ppp, $wpsso_paged, array $posts_args = array() ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -874,7 +876,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'paged'          => $wpsso_paged,
 				'post_status'    => 'publish',
 				'post_type'      => 'any',		// Post, page, or custom post type.
-				'posts_per_page' => $posts_per_page,
+				'posts_per_page' => $ppp,
 			), $posts_args );
 
 			if ( $is_archive ) {
@@ -913,7 +915,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 						$page_posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
 
-						if ( $have_num >= $posts_per_page ) {
+						if ( $have_num >= $ppp ) {
 							break;	// Stop here.
 						}
 					}
@@ -934,7 +936,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
 				}
 
-				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged, $posts_args );
+				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $ppp, $wpsso_paged, $posts_args );
 
 			} else {
 				if ( $wpsso->debug->enabled ) {
@@ -951,36 +953,36 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return $page_posts_mods;
 		}
 
-		private static function get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page = false ) {
+		private static function get_posts_per_page( $mod, $page_type_id, $is_main, $ppp = false ) {
 
 			$wpsso =& Wpsso::get_instance();
 
-			static $posts_per_page_max = null;
+			static $ppp_max = null;
 
-			if ( ! isset( $posts_per_page_max ) ) {	// Only set the value once
-				$posts_per_page_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
+			if ( ! isset( $ppp_max ) ) {	// Only set the value once.
+				$ppp_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
 			}
 
-			if ( ! is_numeric( $posts_per_page ) ) {	// get the default if no argument provided
-				$posts_per_page = get_option( 'posts_per_page' );
+			if ( ! is_numeric( $ppp ) ) {	// Get the default if no argument provided.
+				$ppp = get_option( 'posts_per_page' );
 			}
 
-			if ( $posts_per_page > $posts_per_page_max ) {
+			if ( $ppp > $ppp_max ) {
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'setting posts_per_page ' . $posts_per_page . ' to maximum of ' . $posts_per_page_max );
+					$wpsso->debug->log( 'setting posts_per_page ' . $ppp . ' to maximum of ' . $ppp_max );
 				}
 
-				$posts_per_page = $posts_per_page_max;
+				$ppp = $ppp_max;
 			}
 
-			$posts_per_page = (int) apply_filters( $wpsso->lca . '_posts_per_page', $posts_per_page, $mod, $page_type_id, $is_main );
+			$ppp = (int) apply_filters( $wpsso->lca . '_posts_per_page', $ppp, $mod, $page_type_id, $is_main );
 
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->log( 'posts_per_page after filter is ' . $posts_per_page );
+				$wpsso->debug->log( 'posts_per_page after filter is ' . $ppp );
 			}
 
-			return $posts_per_page;
+			return $ppp;
 		}
 	}
 }
