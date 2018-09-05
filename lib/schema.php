@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$posts_per_page = self::get_posts_per_page( $mod, $page_type_id, $is_main, $posts_per_page );
 
-			$get_posts_args = array(
+			$posts_args = array(
 				'has_password'   => false,
 				'orderby'        => 'date',
 				'order'          => 'DESC',
@@ -118,9 +118,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Filter to allow changing of the 'orderby' and 'order' values.
 			 */
-			$get_posts_args = apply_filters( $wpsso->lca . '_json_itemlist_posts_args', $get_posts_args, $mod );
+			$posts_args = apply_filters( $wpsso->lca . '_json_itemlist_posts_args', $posts_args, $mod );
 
-			switch ( $get_posts_args['order'] ) {
+			switch ( $posts_args['order'] ) {
 
 				case 'ASC':
 
@@ -144,7 +144,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Get the mod array for all posts.
 			 */
-			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, $get_posts_args );
+			$page_posts_mods = self::get_page_posts_mods( $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, $posts_args );
 
 			if ( empty( $page_posts_mods ) ) {
 
@@ -825,7 +825,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			return 1;	// Return count of videos added.
 		}
 
-		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, array $get_posts_args = array() ) {
+		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $posts_per_page, $wpsso_paged, array $posts_args = array() ) {
 
 			$wpsso =& Wpsso::get_instance();
 
@@ -867,7 +867,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$is_archive = false;
 			}
 
-			$get_posts_args = array_merge( array(
+			$posts_args = array_merge( array(
 				'has_password'   => false,
 				'orderby'        => 'date',
 				'order'          => 'DESC',
@@ -875,7 +875,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'post_status'    => 'publish',
 				'post_type'      => 'any',		// Post, page, or custom post type.
 				'posts_per_page' => $posts_per_page,
-			), $get_posts_args );
+			), $posts_args );
 
 			if ( $is_archive ) {
 
@@ -890,7 +890,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					global $wp_query;
 
-					$wp_query = new WP_Query( $get_posts_args );
+					$wp_query = new WP_Query( $posts_args );
 
 					$wp_query->is_home = true;
 				}
@@ -934,7 +934,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
 				}
 
-				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged, $get_posts_args );
+				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $posts_per_page, $wpsso_paged, $posts_args );
 
 			} else {
 				if ( $wpsso->debug->enabled ) {
