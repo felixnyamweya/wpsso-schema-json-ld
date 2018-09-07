@@ -429,7 +429,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
 			$warn_msg      = '';
-			$dismiss_key   = false;
+			$notice_key    = false;
 
 			if ( has_filter( $filter_name ) ) {
 				return;
@@ -443,12 +443,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				
 				$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
 
-				$dismiss_key = 'no_filter_' . $filter_name . '_' . $mod['name'] . '_' . $mod['id'];
+				$notice_key = 'no_filter_' . $filter_name . '_' . $mod['name'] . '_' . $mod['id'];
 			}
 
 			if ( ! empty( $warn_msg ) ) {
 				$this->p->notice->warn( '<p class="top"><em>' . __( 'This notice is only shown to users with Administrative privileges.',
-					'wpsso-schema-json-ld' ) . '</em></p><p>' . $warn_msg . '</p>', true, $dismiss_key, true );	// Can be dismissed.
+					'wpsso-schema-json-ld' ) . '</em></p><p>' . $warn_msg . '</p>', null, $notice_key, true );
 			}
 		}
 
