@@ -407,11 +407,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_alt_name'      => '',			// Reviewed Item Rating Alternate Name
 			);
 
-			foreach ( range( 0, WPSSO_SCHEMA_ADDL_TYPE_URL_MAX - 1, 1 ) as $key_num ) {
+			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
+
+			foreach ( range( 0, $addl_type_max - 1, 1 ) as $key_num ) {
 				$schema_md_defs['schema_addl_type_url_' . $key_num] = '';
 			}
 
-			foreach ( range( 0, WPSSO_SCHEMA_SAMEAS_URL_MAX - 1, 1 ) as $key_num ) {
+			$samas_max = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
+
+			foreach ( range( 0, $samas_max - 1, 1 ) as $key_num ) {
 				$schema_md_defs['schema_sameas_url_' . $key_num] = '';
 			}
 
@@ -591,17 +595,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 			}
 
-			foreach ( range( 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX - 1, 1 ) as $key_num ) {
+			$event_offers_max = SucomUtil::get_const( 'WPSSO_SCHEMA_EVENT_OFFERS_MAX', 10 );
 
-				$have_offer = false;
+			foreach ( range( 0, $event_offers_max - 1, 1 ) as $key_num ) {
+
+				$valid_offer = false;
 
 				foreach ( array( 'schema_event_offer_name', 'schema_event_offer_price' ) as $md_pre ) {
 					if ( isset( $md_opts[$md_pre . '_' . $key_num] ) && $md_opts[$md_pre . '_' . $key_num] !== '' ) {
-						$have_offer = true;
+						$valid_offer = true;
 					}
 				}
 
-				if ( ! $have_offer ) {
+				if ( ! $valid_offer ) {
 					unset( $md_opts['schema_event_offer_currency_' . $key_num] );
 					unset( $md_opts['schema_event_offer_avail_' . $key_num] );
 				}

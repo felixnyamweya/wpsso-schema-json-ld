@@ -957,23 +957,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
-			static $ppp_max = null;
-
-			if ( ! isset( $ppp_max ) ) {	// Only set the value once.
-				$ppp_max = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_PAGE_MAX', 10 );
-			}
-
 			if ( ! is_numeric( $ppp ) ) {	// Get the default if no argument provided.
 				$ppp = get_option( 'posts_per_page' );
-			}
-
-			if ( $ppp > $ppp_max ) {
-
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'setting posts_per_page ' . $ppp . ' to maximum of ' . $ppp_max );
-				}
-
-				$ppp = $ppp_max;
 			}
 
 			$ppp = (int) apply_filters( $wpsso->lca . '_posts_per_page', $ppp, $mod, $page_type_id, $is_main );

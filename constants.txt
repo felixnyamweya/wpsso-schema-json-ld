@@ -1,15 +1,16 @@
 
 /**
- * Hard-coded / fixed constants (values cannot be modified).
+ * Hard-coded / fixed constants. These values cannot be modified.
  */
 WPSSOJSON_FILEPATH
+WPSSOJSON_PLUGINBASE
 WPSSOJSON_PLUGINDIR
 WPSSOJSON_PLUGINSLUG
-WPSSOJSON_PLUGINBASE
 WPSSOJSON_URLPATH
+WPSSOJSON_VERSION
 
 /**
- * Variable constants (define in wp-config.php file to change default values).
+ * Variable constants. Define in your wp-config.php file to change the default value.
  */
 WPSSOJSON_SCHEMA_SHORTCODE_NAME			= 'schema'
 WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR		= '_'

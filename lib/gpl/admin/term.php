@@ -37,8 +37,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 			$do_encode = true;
 
 			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
-			$addl_type_max       = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
-			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 

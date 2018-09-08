@@ -38,8 +38,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
 			$currencies          = SucomUtil::get_currency_abbrev();
-			$addl_type_max       = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
-			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
+			$event_offers_max    = SucomUtil::get_const( 'WPSSO_SCHEMA_EVENT_OFFERS_MAX', 10 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$headline_max_len    = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
 
@@ -258,7 +257,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'select_options' => $this->p->cf['form']['item_availability'],
 							'select_default' => 'InStock',
 						),
-					), '', 'schema_event_offer', 0, WPSSO_SCHEMA_EVENT_OFFERS_MAX, 2 ),
+					), '', 'schema_event_offer', 0, $event_offers_max, 2 ),
 				),
 
 				/**

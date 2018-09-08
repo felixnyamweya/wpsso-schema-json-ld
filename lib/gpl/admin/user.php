@@ -36,7 +36,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 			$r_cache   = true;
 			$do_encode = true;
 
-			$sameas_max          = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 

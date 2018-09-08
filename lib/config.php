@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.30.3-rc.1',	// Plugin version.
+					'version'     => '1.30.3-rc.2',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.12.0-rc.1',
+						'min_version' => '4.12.0-rc.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -125,12 +125,12 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 				return;
 			}
 
-			define( 'WPSSOJSON_VERSION', self::$cf['plugin']['wpssojson']['version'] );						
 			define( 'WPSSOJSON_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOJSON_PLUGINBASE', self::$cf['plugin']['wpssojson']['base'] );		// wpsso-schema-json-ld/wpsso-schema-json-ld.php
 			define( 'WPSSOJSON_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOJSON_PLUGINSLUG', self::$cf['plugin']['wpssojson']['slug'] );		// wpsso-sp
-			define( 'WPSSOJSON_PLUGINBASE', self::$cf['plugin']['wpssojson']['base'] );		// wpsso-sp/wpsso-sp.php
+			define( 'WPSSOJSON_PLUGINSLUG', self::$cf['plugin']['wpssojson']['slug'] );		// wpsso-schema-json-ld
 			define( 'WPSSOJSON_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOJSON_VERSION', self::$cf['plugin']['wpssojson']['version'] );						
 
 			self::set_variable_constants();
 		}
