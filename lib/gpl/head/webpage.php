@@ -141,13 +141,21 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Check only published posts or other non-post objects.
 			 */
 			if ( 'publish' === $mod['post_status'] || ! $mod['is_post'] ) {
+
 				foreach ( array( 'image' ) as $prop_name ) {
+
 					if ( empty( $ret[ $prop_name ] ) ) {
+
 						if ( $this->p->debug->enabled ) {
 							$this->p->debug->log( 'creativework ' . $prop_name . ' value is empty and required' );
 						}
+
 						if ( $this->p->notice->is_admin_pre_notices() ) { // Skip if notices already shown.
-							$this->p->notice->err( $this->p->msgs->get( 'notice-missing-schema-' . $prop_name ) );
+
+							$notice_key = $mod['name'] . '-' . $mod['id'] . '-notice-missing-schema-' . $prop_name;
+							$error_msg  = $this->p->msgs->get( 'notice-missing-schema-' . $prop_name );
+
+							$this->p->notice->err( $error_msg, null, $notice_key );
 						}
 					}
 				}
