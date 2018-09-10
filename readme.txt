@@ -753,7 +753,3 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2018/09/09) Minor update for code style and changes in WPSSO v4.12.0.
 
-= 1.30.2 =
-
-(2018/08/25) Replaced several calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
-
