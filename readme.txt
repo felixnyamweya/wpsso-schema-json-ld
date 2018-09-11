@@ -241,9 +241,10 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 		* Review Rating 
 		* Rating Alt Name
 
-* Select any available Schema type or sub-type for your content, including the following and more:
+* Select any available Schema type or sub-type for your content, including the following and many more:
 
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork) 
+		* Schema Type [pending.schema.org/Answer](https://pending.schema.org/Article)
 		* Schema Type [schema.org/Article](https://schema.org/Article)
 			* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
 			* Schema Type [schema.org/Report](https://schema.org/Report)
@@ -289,7 +290,7 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 		* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
 		* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
 		* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
-		* Schema Type [schema.org/Question](https://schema.org/Question)
+		* Schema Type [pending.schema.org/Question](https://pending.schema.org/Question)
 		* Schema Type [schema.org/Review](https://schema.org/Review)
 			* Schema Type [schema.org/ClaimReview](https://schema.org/ClaimReview)
 		* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
@@ -303,7 +304,10 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 			* Schema Type [schema.org/AboutPage](https://schema.org/AboutPage)
 			* Schema Type [schema.org/CheckoutPage](https://schema.org/CheckoutPage)
 			* Schema Type [schema.org/CollectionPage](https://schema.org/CollectionPage)
+				* Schema Type [schema.org/ImageGallery](https://schema.org/ImageGallery)
+				* Schema Type [schema.org/VideoGallery](https://schema.org/VideoGallery)
 			* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
+			* Schema Type [pending.schema.org/FAQPage](https://pending.schema.org/FAQPage)
 			* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
 			* Schema Type [health-lifesci.schema.org/MedicalWebPage](https://health-lifesci.schema.org/MedicalWebPage)
 			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage)
@@ -596,6 +600,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.31.0-dev.2 (2018/09/11)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.30.3 (2018/09/09)**
 
 * *New Features*
@@ -748,6 +763,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.31.0-dev.2 =
+
+(2018/09/11) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
 
 = 1.30.3 =
 
