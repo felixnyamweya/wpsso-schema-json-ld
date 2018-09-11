@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.30.3',	// Plugin version.
+					'version'     => '1.31.0-dev.2',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.12.0',
+						'min_version' => '4.12.1-dev.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -63,33 +63,34 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'user' => 'Extend User Settings',
 							),
 							'head' => array(
-								'article'           => '(code) Schema Type Article (article)',
-								'blog'              => '(code) Schema Type Blog (blog)',
-								'collectionpage'    => '(code) Schema Type Collection Page (webpage.collection)',
-								'course'            => '(code) Schema Type Course (course)',
-								'creativework'      => '(code) Schema Type Creative Work (creative.work)',
-								'event'             => '(code) Schema Type Event (event)',
-								'foodestablishment' => '(code) Schema Type Food Establishment (food.establishment)',
-								'howto'             => '(code) Schema Type How-To (howto)',
-								'itemlist'          => '(code) Schema Type Item List (item.list)',
-								'jobposting'        => '(code) Schema Type Job Posting (job.posting)',
-								'localbusiness'     => '(code) Schema Type Local Business (local.business)',
-								'organization'      => '(code) Schema Type Organization (organization)',
-								'person'            => '(code) Schema Type Person (person)',
-								'place'             => '(code) Schema Type Place (place)',
-								'product'           => '(code) Schema Type Product (product)',
-								'profilepage'       => '(code) Schema Type Profile Page (webpage.profile)',
-								'qapage'            => '(code) Schema Type QAPage (webpage.qa)',
-								'question'          => '(code) Schema Type Question (question)',
-								'recipe'            => '(code) Schema Type Recipe (recipe)',
-								'review'            => '(code) Schema Type Review (review)',
-								'searchresultspage' => '(code) Schema Type Search Results Page (webpage.search.results)',
-								'webpage'           => '(code) Schema Type WebPage (webpage)',
-								'website'           => '(code) Schema Type WebSite (website)',
+								'article'           => '(code) Schema Type Article (schema_type:article)',
+								'blog'              => '(code) Schema Type Blog (schema_type:blog)',
+								'collectionpage'    => '(code) Schema Type Collection Page (schema_type:webpage.collection)',
+								'course'            => '(code) Schema Type Course (schema_type:course)',
+								'creativework'      => '(code) Schema Type Creative Work (schema_type:creative.work)',
+								'event'             => '(code) Schema Type Event (schema_type:event)',
+								'foodestablishment' => '(code) Schema Type Food Establishment (schema_type:food.establishment)',
+								'howto'             => '(code) Schema Type How-To (schema_type:howto)',
+								'itemlist'          => '(code) Schema Type Item List (schema_type:item.list)',
+								'jobposting'        => '(code) Schema Type Job Posting (schema_type:job.posting)',
+								'localbusiness'     => '(code) Schema Type Local Business (schema_type:local.business)',
+								'organization'      => '(code) Schema Type Organization (schema_type:organization)',
+								'person'            => '(code) Schema Type Person (schema_type:person)',
+								'place'             => '(code) Schema Type Place (schema_type:place)',
+								'product'           => '(code) Schema Type Product (schema_type:product)',
+								'profilepage'       => '(code) Schema Type Profile Page (schema_type:webpage.profile)',
+								'qapage'            => '(code) Schema Type QAPage (schema_type:webpage.qa)',
+								'question'          => '(code) Schema Type Question (schema_type:question)',
+								'recipe'            => '(code) Schema Type Recipe (schema_type:recipe)',
+								'review'            => '(code) Schema Type Review (schema_type:review)',
+								'searchresultspage' => '(code) Schema Type Search Results Page (schema_type:webpage.search.results)',
+								'webpage'           => '(code) Schema Type WebPage (schema_type:webpage)',
+								'website'           => '(code) Schema Type WebSite (schema_type:website)',
 							),
 							'prop' => array(
-								'aggregaterating' => '(code) Property Aggregate Rating',
-								'review'          => '(code) Property Reviews',
+								'aggregaterating' => '(code) Property aggregateRating',
+								'haspart'         => '(code) Property hasPart (Schema Blocks)',
+								'review'          => '(code) Property reviews',
 							),
 							'job' => array(
 								'simplejobboard' => '(plugin) Simple Job Board',

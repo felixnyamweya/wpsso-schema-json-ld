@@ -1068,13 +1068,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		private function filter_common_status_features( $features, $ext, $info, $pkg ) {
+
 			foreach ( $features as $key => $arr ) {
-				if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \((.+)\)$/', $key, $match ) ) {
-					$features[$key]['label'] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
+				if ( isset( $arr['sub'] ) && $arr['sub'] === 'head' ) {
+					if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \(schema_type:(.+)\)$/', $key, $match ) ) {
+						$features[$key]['label'] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
+					}
 				}
 			}
+
 			return $features;
 		}
 	}
 }
-
