@@ -32,16 +32,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
 			}
 
-			$dots      = '...';
-			$r_cache   = true;
-			$do_encode = true;
+			$dots       = '...';
+			$read_cache = true;
+			$do_encode  = true;
 
 			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 
-			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $r_cache, false, $do_encode, 'og_title' );
-			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $r_cache, false, $do_encode, 'og_title' );
+			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, false, $do_encode, 'og_title' );
+			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, false, $do_encode, 'og_title' );
 			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, true, false );
 
 			if ( $this->p->debug->enabled ) {

@@ -25,18 +25,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
-			$crawler_name = empty( $this->p->avail['*']['vary_ua'] ) ? 'none' : SucomUtil::get_crawler_name();
-
-			if ( $crawler_name === 'pinterest' ) {
-				// Pinterest does not read JSON-LD markup.
-			} else {
-				$this->p->util->add_plugin_filters( $this, array(
-					'add_schema_head_attributes'       => '__return_false',
-					'add_schema_meta_array'            => '__return_false',
-					'add_schema_noscript_array'        => '__return_false',
-					'json_data_https_schema_org_thing' => 5,
-				), -1000 );	// Make sure we run first.
-			}
+			$this->p->util->add_plugin_filters( $this, array(
+				'add_schema_head_attributes'       => '__return_false',
+				'add_schema_meta_array'            => '__return_false',
+				'add_schema_noscript_array'        => '__return_false',
+				'json_data_https_schema_org_thing' => 5,
+			), -1000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults' => 2,

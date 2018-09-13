@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.31.0-dev.2',	// Plugin version.
+					'version'     => '1.31.0-dev.4',	// Plugin version.
 					'opt_version' => '10',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.12.1-dev.2',
+						'min_version' => '4.12.1-dev.4',
 					),
 					'img' => array(
 						'icons' => array(
@@ -88,9 +88,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'website'           => '(code) Schema Type WebSite (schema_type:website)',
 							),
 							'prop' => array(
-								'aggregaterating' => '(code) Property aggregateRating',
-								'haspart'         => '(code) Property hasPart (Schema Blocks)',
-								'review'          => '(code) Property reviews',
+								'aggregaterating'  => '(code) Property aggregateRating',
+								'haspart_mentions' => '(code) Property hasPart and mentions for Schema Content Blocks',
+								'review'           => '(code) Property reviews',
 							),
 							'job' => array(
 								'simplejobboard' => '(plugin) Simple Job Board',
