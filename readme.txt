@@ -89,18 +89,18 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
-	* [schema.org/CollectionPage](https://schema.org/CollectionPage)
+	* [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes 3 Schema types)
 	* [schema.org/Course](https://schema.org/Course)
-	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 67 Schema types)
+	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 71 Schema types)
 	* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
 	* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
 	* [schema.org/HowTo](https://schema.org/HowTo) (includes 2 Schema types)
 	* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
 	* [schema.org/JobPosting](https://schema.org/JobPosting)
 	* [schema.org/LocalBusiness](https://schema.org/LocalBusiness) (includes 133 Schema types)
-	* [schema.org/Organization](https://schema.org/Organization) (includes 133 Schema types)
+	* [schema.org/Organization](https://schema.org/Organization) (includes 22 Schema types)
 	* [schema.org/Person](https://schema.org/Person)
-	* [schema.org/Place](https://schema.org/Place) (includes 173 Schema types)
+	* [schema.org/Place](https://schema.org/Place) (includes 176 Schema types)
 	* [schema.org/Product](https://schema.org/Product) (includes 9 Schema types)
 	* [schema.org/ProfilePage](https://schema.org/ProfilePage)
 	* [schema.org/QAPage](https://schema.org/QAPage)
@@ -108,8 +108,14 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 	* [schema.org/Recipe](https://schema.org/Recipe)
 	* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
 	* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
-	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
+	* [schema.org/WebPage](https://schema.org/WebPage) (includes 13 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
+
+* Detects JSON-LD scripts in post content (from Gutenberg block, for example) and includes their data in the Schema CreativeWork type and sub-types.
+
+* Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
+
+* Includes Review values (if available) in the main webpage Schema "review" property.
 
 * Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
 
@@ -244,7 +250,7 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 * Select any available Schema type or sub-type for your content, including the following and many more:
 
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork) 
-		* Schema Type [pending.schema.org/Answer](https://pending.schema.org/Article)
+		* Schema Type [pending.schema.org/Answer](https://pending.schema.org/Answer)
 		* Schema Type [schema.org/Article](https://schema.org/Article)
 			* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
 			* Schema Type [schema.org/Report](https://schema.org/Report)
@@ -333,6 +339,68 @@ WPSSO Schema JSON-LD Markup is 100% compatible with the new <a href="https://wor
 		* Schema Type [schema.org/SportsEvent](https://schema.org/SportsEvent)
 		* Schema Type [schema.org/TheaterEvent](https://schema.org/TheaterEvent)
 		* Schema Type [schema.org/VisualArtsEvent](https://schema.org/VisualArtsEvent)
+	* Schema Type [schema.org/Intangible](https://schema.org/Intangible)
+		* Schema Type [schema.org/Brand](https://schema.org/Brand)
+		* Schema Type [schema.org/Enumeration](https://schema.org/Enumeration)
+			* Schema Type [schema.org/Specialty](https://schema.org/Specialty)
+				* Schema Type [schema.org/MedicalSpecialty](https://schema.org/MedicalSpecialty)
+					* Schema Type [health-lifesci.schema.org/Anesthesia](https://health-lifesci.schema.org/Anesthesia)
+					* Schema Type [health-lifesci.schema.org/Cardiovascular](https://health-lifesci.schema.org/Cardiovascular)
+					* Schema Type [health-lifesci.schema.org/CommunityHealth](https://health-lifesci.schema.org/CommunityHealth)
+					* Schema Type [health-lifesci.schema.org/Dentistry](https://health-lifesci.schema.org/Dentistry)
+					* Schema Type [health-lifesci.schema.org/Dermatologic](https://health-lifesci.schema.org/Dermatologic)
+					* Schema Type [health-lifesci.schema.org/Dermatology](https://health-lifesci.schema.org/Dermatology)
+					* Schema Type [health-lifesci.schema.org/DietNutrition](https://health-lifesci.schema.org/DietNutrition)
+					* Schema Type [health-lifesci.schema.org/Emergency](https://health-lifesci.schema.org/Emergency)
+					* Schema Type [health-lifesci.schema.org/Endocrine](https://health-lifesci.schema.org/Endocrine)
+					* Schema Type [health-lifesci.schema.org/Gastroenterologic](https://health-lifesci.schema.org/Gastroenterologic)
+					* Schema Type [health-lifesci.schema.org/Genetic](https://health-lifesci.schema.org/Genetic)
+					* Schema Type [health-lifesci.schema.org/Geriatric](https://health-lifesci.schema.org/Geriatric)
+					* Schema Type [health-lifesci.schema.org/Gynecologic](https://health-lifesci.schema.org/Gynecologic)
+					* Schema Type [health-lifesci.schema.org/Hematologic](https://health-lifesci.schema.org/Hematologic)
+					* Schema Type [health-lifesci.schema.org/Infectious](https://health-lifesci.schema.org/Infectious)
+					* Schema Type [health-lifesci.schema.org/LaboratoryScience](https://health-lifesci.schema.org/LaboratoryScience)
+					* Schema Type [health-lifesci.schema.org/MedicalSpecialty](https://health-lifesci.schema.org/MedicalSpecialty)
+					* Schema Type [health-lifesci.schema.org/Midwifery](https://health-lifesci.schema.org/Midwifery)
+					* Schema Type [health-lifesci.schema.org/Musculoskeletal](https://health-lifesci.schema.org/Musculoskeletal)
+					* Schema Type [health-lifesci.schema.org/Neurologic](https://health-lifesci.schema.org/Neurologic)
+					* Schema Type [health-lifesci.schema.org/Nursing](https://health-lifesci.schema.org/Nursing)
+					* Schema Type [health-lifesci.schema.org/Obstetric](https://health-lifesci.schema.org/Obstetric)
+					* Schema Type [health-lifesci.schema.org/OccupationalTherapy](https://health-lifesci.schema.org/OccupationalTherapy)
+					* Schema Type [health-lifesci.schema.org/Oncologic](https://health-lifesci.schema.org/Oncologic)
+					* Schema Type [health-lifesci.schema.org/Optometric](https://health-lifesci.schema.org/Optometric)
+					* Schema Type [health-lifesci.schema.org/Otolaryngologic](https://health-lifesci.schema.org/Otolaryngologic)
+					* Schema Type [health-lifesci.schema.org/Pathology](https://health-lifesci.schema.org/Pathology)
+					* Schema Type [health-lifesci.schema.org/Pediatric](https://health-lifesci.schema.org/Pediatric)
+					* Schema Type [health-lifesci.schema.org/PharmacySpecialty](https://health-lifesci.schema.org/PharmacySpecialty)
+					* Schema Type [health-lifesci.schema.org/Physiotherapy](https://health-lifesci.schema.org/Physiotherapy)
+					* Schema Type [health-lifesci.schema.org/PlasticSurgery](https://health-lifesci.schema.org/PlasticSurgery)
+					* Schema Type [health-lifesci.schema.org/Podiatric](https://health-lifesci.schema.org/Podiatric)
+					* Schema Type [health-lifesci.schema.org/PrimaryCare](https://health-lifesci.schema.org/PrimaryCare)
+					* Schema Type [health-lifesci.schema.org/Psychiatric](https://health-lifesci.schema.org/Psychiatric)
+					* Schema Type [health-lifesci.schema.org/PublicHealth](https://health-lifesci.schema.org/PublicHealth)
+					* Schema Type [health-lifesci.schema.org/Pulmonary](https://health-lifesci.schema.org/Pulmonary)
+					* Schema Type [health-lifesci.schema.org/Radiography](https://health-lifesci.schema.org/Radiography)
+					* Schema Type [health-lifesci.schema.org/Renal](https://health-lifesci.schema.org/Renal)
+					* Schema Type [health-lifesci.schema.org/RespiratoryTherapy](https://health-lifesci.schema.org/RespiratoryTherapy)
+					* Schema Type [health-lifesci.schema.org/Rheumatologic](https://health-lifesci.schema.org/Rheumatologic)
+					* Schema Type [health-lifesci.schema.org/SpeechPathology](https://health-lifesci.schema.org/SpeechPathology)
+					* Schema Type [health-lifesci.schema.org/Surgical](https://health-lifesci.schema.org/Surgical)
+					* Schema Type [health-lifesci.schema.org/Toxicologic](https://health-lifesci.schema.org/Toxicologic)
+					* Schema Type [health-lifesci.schema.org/Urologic](https://health-lifesci.schema.org/Urologic)
+			* Schema Type [schema.org/ItemList](https://schema.org/ItemList)
+				* Schema Type [schema.org/BreadcrumbList](https://schema.org/BreadcrumbList)
+				* Schema Type [schema.org/HowToSection](https://schema.org/HowToSection)
+				* Schema Type [schema.org/HowToStep](https://schema.org/HowToStep)
+				* Schema Type [schema.org/OfferCatalog](https://schema.org/OfferCatalog)
+			* Schema Type [schema.org/JobPosting](https://schema.org/JobPosting)
+			* Schema Type [schema.org/Service](https://schema.org/Service)
+				* Schema Type [schema.org/BroadcastService](https://schema.org/BroadcastService)
+				* Schema Type [schema.org/CableOrSatelliteService](https://schema.org/CableOrSatelliteService)
+				* Schema Type [schema.org/FinancialProduct](https://schema.org/FinancialProduct)
+				* Schema Type [schema.org/FoodService](https://schema.org/FoodService)
+				* Schema Type [schema.org/GovernmentService](https://schema.org/GovernmentService)
+				* Schema Type [schema.org/TaxiService](https://schema.org/TaxiService)
 	* Schema Type [schema.org/Organization](https://schema.org/Organization)
 		* Schema Type [schema.org/Airline](https://schema.org/Airline)
 		* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
@@ -606,7 +674,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.31.0-dev.2 (2018/09/11)**
+**Version 1.31.0-dev.4 (2018/09/13)**
 
 * *New Features*
 	* None.
@@ -628,151 +696,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Minor update for code style and changes in WPSSO v4.12.0.
 
-**Version 1.30.2 (2018/08/25)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Replaced several calls to esc_url_raw() by SucomUtil::esc_url_encode() to encode foreign characters in URLs.
-* *Developer Notes*
-	* None.
-
-**Version 1.30.1 (2018/08/11)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed the Simple Job Board and WP Job Manager integration modules to use the Schema Type for their custom post types (CPTs).
-* *Developer Notes*
-	* Renamed the SucomForm::get_cache() method to WpssoUtil::get_form_cache() for WPSSO v4.10.0.
-
-**Version 1.30.0 (2018/07/22)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Maintenance release.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.29.1 (2018/07/14)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a 'itemListOrder' property to the Schema ItemList markup (Pro version).
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Added a `$posts_args` argument for the WpssoJsonSchema::get_page_posts_mods() method.
-	* Added new filters:
-		* 'wpsso_json_itemlist_posts_args' ( $posts_args, $mod )
-		* 'wpsso_json_prop_https_schema_org_additionaltype' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main )
-		* 'wpsso_json_prop_https_schema_org_sameas' ( $prop_data, $mod, $mt_og, $page_type_id, $is_main )
-
-**Version 1.29.0 (2018/07/02)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for the Schema QAPage type with a 'significantLink' property.
-	* Added support for the Schema Question type with an 'acceptedAnswer' property.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Added a new WpssoJsonSchema::add_page_links() method for the Schema QAPage type.
-	* Removed a check for the deprecated "Enable Plugin Shortcode(s)" option.
-	* Removed the following filters:
-		* 'wpsso_json_add_https_schema_org_blog_blogpost' ( $bool );
-		* 'wpsso_json_add_https_schema_org_collectionpage_mentions' ( $bool );
-		* 'wpsso_json_add_https_schema_org_searchresultspage_mentions' ( $bool );
-		* 'wpsso_json_add_https_schema_org_profilepage_mentions' ( $bool );
-
-**Version 1.28.2 (2018/06/28)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a new WpssoJsonSchema add_single_comment_reply_data() method to add review replies to the reviews.
-* *Bugfixes*
-	* Fixed an incorrect array element pointer when parsing nested shortcodes.
-* *Developer Notes*
-	* None.
-
-**Version 1.28.1 (2018/06/24)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed an incorrect object variable context in the WpssoJsonSchema get_page_posts_mods() method.
-* *Developer Notes*
-	* None.
-
-**Version 1.28.0 (2018/06/23)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a new "Rating Alt Name" option for the Schema Review and ClaimReview types.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.27.0 (2018/06/16)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added the canonical, permalink, and shortlink URLs to the 'sameAs' property.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Refactored code in the WpssoJsonSchema class.
-
-**Version 1.26.0 (2018/05/07)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for the Schema HowTo type, with additional options in the Document SSO metabox (Pro version).
-		* How-To Makes 
-		* How-To Preparation Time 
-		* How-To Total Time 
-		* How-To Supplies 
-		* How-To Tools 
-		* How-To Steps 
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.25.0 (2018/05/02)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for the https://schema.org/ItemList type, used by Google for its mobile carousel feature.
-	* Added a "Person Information" section to the post Document SSO metabox for the https://schema.org/Person type.
-	* Added a "Person Information" section and "Job Title" option in the Users &gt; Your SSO settings page metabox.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
-= 1.31.0-dev.2 =
+= 1.31.0-dev.4 =
 
-(2018/09/11) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
+(2018/09/13) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
 
 = 1.30.3 =
 
