@@ -681,6 +681,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup.
 	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
+	* Removed the Schema Review "Subject Type" and "Subject Image URL" options since these are available to Google from the "Subject Webpage URL".
 * *Bugfixes*
 	* None.
 * *Developer Notes*
