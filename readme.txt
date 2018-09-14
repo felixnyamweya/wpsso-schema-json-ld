@@ -111,7 +111,9 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 13 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
 
-* Detects JSON-LD scripts in post content (from Gutenberg block, for example) and includes their data in the Schema CreativeWork type and sub-types.
+* Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types (**NEW in v1.31.0**).
+
+* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup (**NEW in v1.31.0**).
 
 * Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
 
@@ -679,6 +681,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
+	* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup.
 	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
 * *Bugfixes*
 	* None.
