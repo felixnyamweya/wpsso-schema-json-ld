@@ -103,10 +103,6 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 						'schema_type_for_archive_page' => 'basic',
 					), $schema_types );
 
-					$table_rows['schema_review_item_type'] = $this->form->get_tr_hide( 'basic', 'schema_review_item_type' ).
-					$this->form->get_th_html( _x( 'Default Reviewed Item Type', 'option label', 'wpsso-schema-json-ld' ), '', 'schema_review_item_type' ).
-					'<td>'.$this->form->get_select( 'schema_review_item_type', $schema_types, 'schema_type' ).'</td>';
-
 					break;
 
 				case 'schema_json_ld-knowledge_graph':

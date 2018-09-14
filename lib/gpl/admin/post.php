@@ -577,12 +577,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_review_item_type' => array(
-					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Subject Type', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_type', 'td_class' => 'blank required',
-					'content' => $form->get_no_select( 'schema_review_item_type', $schema_types, 'schema_type' ),
-				),
 				'schema_review_item_name' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Name', 'option label', 'wpsso-schema-json-ld' ),
@@ -593,12 +587,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['review'],
 					'label' => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank required',
-					'content' => $form->get_no_input_value( '', 'wide' ),
-				),
-				'schema_review_item_image_url' => array(
-					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Subject Image URL', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_image_url', 'td_class' => 'blank',
 					'content' => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_rating' => array(	// Included as schema.org/Rating, not schema.org/aggregateRating.

@@ -310,9 +310,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
 				'USD' : $this->p->options['plugin_def_currency'];
 
-			$review_item_type = empty( $this->p->options['schema_review_item_type'] ) ?
-				'none' : $this->p->options['schema_review_item_type'];
-
 			$schema_md_defs = array(
 				'schema_type'                        => $schema_type,
 				'schema_title'                       => '',
@@ -391,14 +388,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_unsat_fat'      => '',			// Unsaturated Fat
 				'schema_recipe_nutri_chol'           => '',			// Cholesterol
 				'schema_recipe_yield'                => '',			// Recipe Yield
-				'schema_review_item_type'            => $review_item_type,	// Reviewed Item Type
-				'schema_review_item_name'            => '',			// Reviewed Item Name
-				'schema_review_item_url'             => '',			// Reviewed Item URL
-				'schema_review_item_image_url'       => '',			// Reviewed Item Image URL
-				'schema_review_rating'               => '0.0',			// Reviewed Item Rating
-				'schema_review_rating_from'          => '1',			// Reviewed Item Rating (From)
-				'schema_review_rating_to'            => '5',			// Reviewed Item Rating (To)
-				'schema_review_rating_alt_name'      => '',			// Reviewed Item Rating Alternate Name
+				'schema_review_item_name'            => '',			// Review Subject Name
+				'schema_review_item_url'             => '',			// Review Subject Webpage URL
+				'schema_review_rating'               => '0.0',			// Review Rating
+				'schema_review_rating_from'          => '1',			// Review Rating (From)
+				'schema_review_rating_to'            => '5',			// Review Rating (To)
+				'schema_review_rating_alt_name'      => '',			// Review Rating Alt Name
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
@@ -481,7 +476,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_type':
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
-				case 'schema_review_item_type':
 					return 'not_blank';
 					break;
 				case 'schema_event_offer_price':
@@ -521,7 +515,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'blank_num';	// Must be numeric (blank or zero is ok).
 					break;
 				case 'schema_review_item_url':
-				case 'schema_review_item_image_url':
 					return 'url';
 					break;
 				case 'schema_job_salary':
@@ -988,12 +981,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_review_item_type':
-
-					$text = __( 'Select a Schema type that best describes the subject being reviewed.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
 				case 'tooltip-meta-schema_review_item_name':
 
 					$text = __( 'The official and/or model name for the subject being reviewed.', 'wpsso-schema-json-ld' );
@@ -1003,12 +990,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_item_url':
 
 					$text = __( 'A webpage URL for the subject being reviewed.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_review_item_image_url':
-
-					$text = __( 'An image URL showing the subject being reviewed.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
