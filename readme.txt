@@ -242,10 +242,8 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 			* Trans Fat
 			* Cholesterol
 	* Review Information
-		* Subject Type 
 		* Subject Name 
 		* Subject Webpage URL 
-		* Subject Image URL 
 		* Review Rating 
 		* Rating Alt Name
 
@@ -682,7 +680,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * *Improvements*
 	* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup.
-	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
+	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -703,7 +701,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.31.0-dev.6 =
 
-(2018/09/14) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a Schema "hasPart" property (Pro version).
+(2018/09/14) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
 
 = 1.30.3 =
 
