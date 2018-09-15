@@ -674,7 +674,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.31.0-dev.6 (2018/09/14)**
+**Version 1.31.0-dev.7 (2018/09/14)**
 
 * *New Features*
 	* None.
@@ -700,7 +700,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.31.0-dev.6 =
+= 1.31.0-dev.7 =
 
 (2018/09/14) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
 
