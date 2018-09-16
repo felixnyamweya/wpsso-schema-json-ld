@@ -113,7 +113,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types (**NEW in v1.31.0**).
 
-* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup (**NEW in v1.31.0**).
+* Includes the Schema JSON-LD created by the Yoast SEO How-To and FAQ editor blocks into the main webpage Schema markup (**NEW in v1.31.0**).
 
 * Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
 
@@ -674,12 +674,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.31.0-rc.1 (2018/09/15)**
+**Version 1.31.0 (2018/09/16)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Includes the Schema JSON-LD created by the Yoast SEO Ho-To and FAQ editor blocks into the main webpage Schema markup.
+	* Includes the Schema JSON-LD created by the Yoast SEO How-To and FAQ editor blocks into the main webpage Schema markup.
 	* Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
 	* Removed the Schema Review "Subject Type" and "Subject Image URL" options since these are available to Google from the "Subject Webpage URL".
 * *Bugfixes*
@@ -687,24 +687,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.30.3 (2018/09/09)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Minor update for code style and changes in WPSSO v4.12.0.
-
 == Upgrade Notice ==
 
-= 1.31.0-rc.1 =
+= 1.31.0 =
 
-(2018/09/15) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
-
-= 1.30.3 =
-
-(2018/09/09) Minor update for code style and changes in WPSSO v4.12.0.
+(2018/09/16) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
 
