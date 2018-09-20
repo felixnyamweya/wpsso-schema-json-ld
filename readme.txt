@@ -111,9 +111,9 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 13 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
 
-* Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types (**NEW in v1.31.0**).
+* Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
-* Includes the Schema JSON-LD created by the Yoast SEO How-To and FAQ editor blocks into the main webpage Schema markup (**NEW in v1.31.0**).
+* Moves the Schema JSON-LD created by the Yoast SEO How-To and FAQ editor blocks into the main webpage Schema CreativeWork markup.
 
 * Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
 
@@ -674,6 +674,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.31.1-dev.2 (2018/09/20)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Removed JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.31.0 (2018/09/16)**
 
 * *New Features*
@@ -688,6 +699,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.31.1-dev.2 =
+
+(2018/09/20) Removed JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
 
 = 1.31.0 =
 
