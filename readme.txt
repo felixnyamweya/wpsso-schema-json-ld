@@ -674,7 +674,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.31.1-dev.2 (2018/09/20)**
+**Version 1.31.1-dev.3 (2018/09/21)**
 
 * *New Features*
 	* None.
@@ -700,9 +700,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.31.1-dev.2 =
+= 1.31.1-dev.3 =
 
-(2018/09/20) Removed JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
+(2018/09/21) Removed JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
 
 = 1.31.0 =
 
