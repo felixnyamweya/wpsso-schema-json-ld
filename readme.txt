@@ -24,11 +24,11 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
 
-**Select a default Schema type for posts, pages, custom post types, terms (category, tags, etc.), users, search results, etc.**
+**Select a better Schema type than "BlogPosting" for AMP enabled pages.**
 
-**Select a better Schema type than BlogPosting for AMP enabled pages.**
+**Select a default Schema type for posts, pages, custom post types, terms (category, tags, etc.), user pages, search result pages, etc.**
 
-**Most complete product markup for WooCommerce, including all variations (Pro version):**
+**Most complete product markup for WooCommerce, including all product variations (Pro version):**
 
 WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
