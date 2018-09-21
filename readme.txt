@@ -20,17 +20,15 @@ WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, L
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-**Provides *comprehensive* and *accurate* Schema JSON-LD markup for Google's Knowledge Graph and Rich Cards:**
+**Provides *accurate* and *comprehensive* Schema JSON-LD markup:**
 
-Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the list of features below for Free / Pro version details).
+Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
 
-**Includes special markup and optimization features for Pinterest:**
+**Select a default Schema type for posts, pages, custom post types, terms (category, tags, etc.), users, search results, etc.**
 
-As Pinterest does not currently read Schema JSON-LD markup, WPSSO Core and its WPSSO Schema JSON-LD Markup add-on include special features to provide different Schema meta tags for Pinterest, along with preventing conflicts between incompatible Pinterest and Facebook meta tag values.
+**Select a better Schema type than BlogPosting for AMP enabled pages.**
 
-**Allows selecting a different Schema than BlogPosting for your AMP pages.**
-
-**Complete product markup for WooCommerce, including all variations (Pro version):**
+**Most complete product markup for WooCommerce, including all variations (Pro version):**
 
 WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
@@ -55,7 +53,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
 
-* Provides complete image SEO markup with image information from the WordPress Media Library.
+* Provides complete image SEO markup with information from the WordPress Media Library.
 
 * Built-in support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
@@ -77,7 +75,6 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* Item Type for Other Archive Page
 	* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
 	* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
-	* Default Reviewed Item Type
 
 * Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
