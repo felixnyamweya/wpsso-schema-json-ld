@@ -701,7 +701,3 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2018/09/23) Removes duplicate JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
 
-= 1.31.0 =
-
-(2018/09/16) Added support for Schema scripts / blocks in Schema CreativeWork webpage content (Article, BlogPosting, etc.) added as a "hasPart" or "mentions" property (Pro version).
-
