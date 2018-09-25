@@ -89,6 +89,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'question'       => $this->p->schema->get_children_css_class( 'question', 'hide_schema_type' ),
 				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
+				'review_claim'   => $this->p->schema->get_children_css_class( 'review.claim', 'hide_schema_type' ),
 			);
 
 			if ( $this->p->debug->enabled ) {
@@ -585,15 +586,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_review_item_url' => array(
 					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_url', 'td_class' => 'blank required',
-					'content' => $form->get_no_input_value( '', 'wide' ),
+					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
 				'schema_review_rating' => array(	// Included as schema.org/Rating, not schema.org/aggregateRating.
 					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Review Rating', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ) . 
+					'content'  => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ) . 
 						' ' . _x( 'from', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
 							$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ) . 
 						' ' . _x( 'to', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
@@ -601,9 +602,24 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_review_rating_alt_name' => array(
 					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Rating Alt Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Review Rating Name', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_rating_alt_name', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '' ),
+					'content'  => $form->get_no_input_value( '' ),
+				),
+
+				/**
+				 * Schema Claim Review
+				 */
+				'subsection_review_claim' => array(
+					'tr_class' => $schema_type_tr_class['review_claim'],
+					'td_class' => 'subsection', 'header' => 'h5',
+					'label' => _x( 'Claim Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_review_claim_reviewed' => array(
+					'tr_class' => $schema_type_tr_class['review_claim'],
+					'label'    => _x( 'Specific Claims Reviewed', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_claim_reviewed',
+					'content'  => $form->get_no_textarea_value( '' ),
 				),
 			);
 

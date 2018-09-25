@@ -393,7 +393,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating'               => '0.0',			// Review Rating
 				'schema_review_rating_from'          => '1',			// Review Rating (From)
 				'schema_review_rating_to'            => '5',			// Review Rating (To)
-				'schema_review_rating_alt_name'      => '',			// Review Rating Alt Name
+				'schema_review_rating_alt_name'      => '',			// Review Rating Name
+				'schema_review_claim_reviewed'       => '',			// Summary of Claims Reviewed
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
@@ -454,6 +455,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			switch ( $base_key ) {
+
 				case 'schema_event_offer_name':
 				case 'schema_howto_step':
 				case 'schema_howto_supply':
@@ -471,13 +473,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_yield':		// Recipe Makes
 				case 'schema_review_item_name':
 				case 'schema_review_rating_alt_name':
+				case 'schema_review_claim_reviewed':
+
 					return 'one_line';
+
 					break;
+
 				case 'schema_type':
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
+
 					return 'not_blank';
+
 					break;
+
 				case 'schema_event_offer_price':
 				case 'schema_howto_prep_days':		// How-To Preparation Time
 				case 'schema_howto_prep_hours':
@@ -487,6 +496,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_howto_total_hours':
 				case 'schema_howto_total_mins':
 				case 'schema_howto_total_secs':
+				case 'schema_job_salary':
 				case 'schema_recipe_prep_days':		// Recipe Preparation Time
 				case 'schema_recipe_prep_hours':
 				case 'schema_recipe_prep_mins':
@@ -512,13 +522,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_review_rating':
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
+
 					return 'blank_num';	// Must be numeric (blank or zero is ok).
+
 					break;
+
 				case 'schema_review_item_url':
+
 					return 'url';
-					break;
-				case 'schema_job_salary':
-					return 'blank_num';
+
 					break;
 			}
 
@@ -1000,6 +1012,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_rating_alt_name':
 
 					$text = __( 'An alternate name / description for the rating value (example: False, Misleading, Accurate, etc.).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_reviewed':
+
+					$text = __( 'A short summary of the specific claims reviewed in a Schema ClaimReview.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
