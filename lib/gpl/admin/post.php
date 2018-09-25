@@ -578,12 +578,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection', 'header' => 'h5',
 					'label' => _x( 'Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_review_item_name' => array(
-					'tr_class' => $schema_type_tr_class['review'],
-					'label' => _x( 'Subject Name', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_item_name', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide' ),
-				),
 				'schema_review_item_url' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'label'    => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
@@ -619,7 +613,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class['review_claim'],
 					'label'    => _x( 'Specific Claims Reviewed', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_review_claim_reviewed',
-					'content'  => $form->get_no_textarea_value( '' ),
+					'content'  => $form->get_no_textarea_value( '', 'summary' ),
 				),
 			);
 

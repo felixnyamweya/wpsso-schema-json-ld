@@ -30,7 +30,7 @@ msgid ""
 "Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
-#: lib/filters.php:434
+#: lib/filters.php:433
 msgid ""
 "The Free / Standard version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
@@ -38,30 +38,30 @@ msgid ""
 "included in the Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters.php:436
+#: lib/filters.php:435
 msgid ""
 "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
 "of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</"
 "a>."
 msgstr ""
 
-#: lib/filters.php:438
+#: lib/filters.php:437
 msgid ""
 "If this Schema type is an important classification for your content, you "
 "should consider purchasing the Pro version."
 msgstr ""
 
-#: lib/filters.php:444
+#: lib/filters.php:443
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:704
+#: lib/filters.php:702
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:710
+#: lib/filters.php:708
 msgid ""
 "Additional (and optional) type URLs for the item, typically used to specify "
 "more precise types from an external vocabulary in microdata syntax. For "
@@ -69,268 +69,264 @@ msgid ""
 "www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
-#: lib/filters.php:716
+#: lib/filters.php:714
 msgid ""
 "Additional (and optional) webpage reference URLs that unambiguously indicate "
 "the item's identity. For example, the URL of the item's Wikipedia page, "
 "Wikidata entry, IMDB page, official website, etc."
 msgstr ""
 
-#: lib/filters.php:722
+#: lib/filters.php:720
 msgid ""
 "Select a publisher for the Schema Article item type and/or its sub-type "
 "(NewsArticle, TechArticle, etc)."
 msgstr ""
 
-#: lib/filters.php:728
+#: lib/filters.php:726
 msgid ""
 "A custom headline for the Schema CreativeWork item type and/or its sub-type."
 msgstr ""
 
-#: lib/filters.php:734
+#: lib/filters.php:732
 msgid ""
 "Select an organizer for the course service provider, service operator, or "
 "service performer (ie. the goods producer)."
 msgstr ""
 
-#: lib/filters.php:740
+#: lib/filters.php:738
 msgid "Select an organizer for the event."
 msgstr ""
 
-#: lib/filters.php:746
+#: lib/filters.php:744
 msgid "Select a performer for the event."
 msgstr ""
 
-#: lib/filters.php:752
+#: lib/filters.php:750
 msgid "Select the event start date and time."
 msgstr ""
 
-#: lib/filters.php:758
+#: lib/filters.php:756
 msgid "Select the event end date and time."
 msgstr ""
 
-#: lib/filters.php:764
+#: lib/filters.php:762
 msgid "The date and time when tickets go on sale."
 msgstr ""
 
-#: lib/filters.php:770
+#: lib/filters.php:768
 msgid "The date and time when tickets are no longer on sale."
 msgstr ""
 
-#: lib/filters.php:776
+#: lib/filters.php:774
 msgid ""
 "One or more offers for the event, including the offer name, price and "
 "currency."
 msgstr ""
 
-#: lib/filters.php:782
+#: lib/filters.php:780
 msgid "A list of steps to complete this How-To."
 msgstr ""
 
-#: lib/filters.php:788
+#: lib/filters.php:786
 msgid "A list of supplies that are consumed when completing this How-To."
 msgstr ""
 
-#: lib/filters.php:794
+#: lib/filters.php:792
 msgid "A list of tools or objects that are required to complete this How-To."
 msgstr ""
 
-#: lib/filters.php:801
+#: lib/filters.php:799
 msgid ""
 "The total time it takes to prepare the items before executing the "
 "instruction steps."
 msgstr ""
 
-#: lib/filters.php:808
+#: lib/filters.php:806
 msgid ""
 "The total time required to perform the all instructions (including any "
 "preparation time)."
 msgstr ""
 
-#: lib/filters.php:814
+#: lib/filters.php:812
 msgid ""
 "The quantity made when following these How-To instructions (example: \"a "
 "paper airplane\", \"10 personalized candles\", etc.)."
 msgstr ""
 
-#: lib/filters.php:820
+#: lib/filters.php:818
 msgid ""
 "The title of this job, which may be different than the WordPress post / page "
 "title."
 msgstr ""
 
-#: lib/filters.php:826
+#: lib/filters.php:824
 msgid "Optionally select a different organization for the hiring organization."
 msgstr ""
 
-#: lib/filters.php:832
+#: lib/filters.php:830
 msgid "Optionally select a different place / location for the job location."
 msgstr ""
 
-#: lib/filters.php:838
+#: lib/filters.php:836
 msgid ""
 "Optionally provide details on the base salary. The base salary must be "
 "numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency "
 "symbols, as these are not valid numeric values."
 msgstr ""
 
-#: lib/filters.php:844
+#: lib/filters.php:842
 msgid ""
 "Check one or more Google approved employment types (see <a href=\"%s"
 "\">Google's Job Posting guidelines</a> for more information)."
 msgstr ""
 
-#: lib/filters.php:850
+#: lib/filters.php:848
 msgid ""
 "Select a job posting expiration date and time. If a job posting never "
 "expires, or you do not know when the job will expire, do not select an "
 "expiration date and time."
 msgstr ""
 
-#: lib/filters.php:856
+#: lib/filters.php:854
 msgid ""
 "Optionally select a different organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
 "\"[None]\" to use the default organization details."
 msgstr ""
 
-#: lib/filters.php:862
+#: lib/filters.php:860
 msgctxt "user role"
 msgid "Person"
 msgstr ""
 
-#: lib/filters.php:864
+#: lib/filters.php:862
 msgid ""
 "Select a person from the list of eligible WordPress users &mdash; to be "
 "included in this list, a user must be members of the WordPress \"%s\" role."
 msgstr ""
 
-#: lib/filters.php:870
+#: lib/filters.php:868
 msgid "An optional heading / description of the question and it's answer."
 msgstr ""
 
-#: lib/filters.php:872
+#: lib/filters.php:870
 msgid ""
 "If the question is part of a larger group of questions on the same subject, "
 "then this would be an appropriate field to describe that subject (example: "
 "\"QA about a Flying Toaster\" )."
 msgstr ""
 
-#: lib/filters.php:878
+#: lib/filters.php:876
 msgid "A person's job title (for example, Financial Manager)."
 msgstr ""
 
-#: lib/filters.php:884
+#: lib/filters.php:882
 msgid ""
 "The cooking method used for this recipe (example: Baking, Frying, Steaming, "
 "etc.)"
 msgstr ""
 
-#: lib/filters.php:890
+#: lib/filters.php:888
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:896
+#: lib/filters.php:894
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:902
+#: lib/filters.php:900
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:908
+#: lib/filters.php:906
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:914
+#: lib/filters.php:912
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:920
+#: lib/filters.php:918
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:926
+#: lib/filters.php:924
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:932
+#: lib/filters.php:930
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:938
+#: lib/filters.php:936
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:944
+#: lib/filters.php:942
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:950
+#: lib/filters.php:948
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:956
+#: lib/filters.php:954
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:962
+#: lib/filters.php:960
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:968
+#: lib/filters.php:966
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:974
+#: lib/filters.php:972
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:980
+#: lib/filters.php:978
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:986
+#: lib/filters.php:984
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:992
+#: lib/filters.php:990
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:998
-msgid "The official and/or model name for the subject being reviewed."
-msgstr ""
-
-#: lib/filters.php:1004
+#: lib/filters.php:996
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:1010
+#: lib/filters.php:1002
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
 msgstr ""
 
-#: lib/filters.php:1014
+#: lib/filters.php:1006
 msgid ""
 "An alternate name / description for the rating value (example: False, "
 "Misleading, Accurate, etc.)."
 msgstr ""
 
-#: lib/filters.php:1020
+#: lib/filters.php:1012
 msgid ""
 "A short summary of the specific claims reviewed in a Schema ClaimReview."
 msgstr ""
@@ -748,40 +744,35 @@ msgstr ""
 
 #: lib/gpl/admin/post.php:583 lib/pro/admin/post.php:607
 msgctxt "option label"
-msgid "Subject Name"
+msgid "Subject Webpage URL"
 msgstr ""
 
 #: lib/gpl/admin/post.php:589 lib/pro/admin/post.php:613
 msgctxt "option label"
-msgid "Subject Webpage URL"
-msgstr ""
-
-#: lib/gpl/admin/post.php:595 lib/pro/admin/post.php:619
-msgctxt "option label"
 msgid "Review Rating"
 msgstr ""
 
-#: lib/gpl/admin/post.php:598 lib/pro/admin/post.php:623
+#: lib/gpl/admin/post.php:592 lib/pro/admin/post.php:617
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
-#: lib/gpl/admin/post.php:600 lib/pro/admin/post.php:626
+#: lib/gpl/admin/post.php:594 lib/pro/admin/post.php:620
 msgctxt "option comment"
 msgid "to"
 msgstr ""
 
-#: lib/gpl/admin/post.php:605 lib/pro/admin/post.php:632
+#: lib/gpl/admin/post.php:599 lib/pro/admin/post.php:626
 msgctxt "option label"
 msgid "Review Rating Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:616 lib/pro/admin/post.php:643
+#: lib/gpl/admin/post.php:610 lib/pro/admin/post.php:637
 msgctxt "metabox title"
 msgid "Claim Review Information"
 msgstr ""
 
-#: lib/gpl/admin/post.php:620 lib/pro/admin/post.php:647
+#: lib/gpl/admin/post.php:614 lib/pro/admin/post.php:641
 msgctxt "option label"
 msgid "Specific Claims Reviewed"
 msgstr ""

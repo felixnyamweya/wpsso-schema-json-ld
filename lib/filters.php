@@ -388,7 +388,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_unsat_fat'      => '',			// Unsaturated Fat
 				'schema_recipe_nutri_chol'           => '',			// Cholesterol
 				'schema_recipe_yield'                => '',			// Recipe Yield
-				'schema_review_item_name'            => '',			// Review Subject Name
 				'schema_review_item_url'             => '',			// Review Subject Webpage URL
 				'schema_review_rating'               => '0.0',			// Review Rating
 				'schema_review_rating_from'          => '1',			// Review Rating (From)
@@ -471,7 +470,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_instruction':
 				case 'schema_recipe_nutri_serv':
 				case 'schema_recipe_yield':		// Recipe Makes
-				case 'schema_review_item_name':
 				case 'schema_review_rating_alt_name':
 				case 'schema_review_claim_reviewed':
 
@@ -990,12 +988,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_recipe_yield':
 
 					$text = __( 'The quantity or servings made by this recipe (example: "5 servings", "Serves 4-6", "Yields 10 burgers", etc.).', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_review_item_name':
-
-					$text = __( 'The official and/or model name for the subject being reviewed.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
