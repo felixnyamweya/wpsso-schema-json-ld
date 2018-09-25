@@ -242,7 +242,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Subject Name 
 		* Subject Webpage URL 
 		* Review Rating 
-		* Rating Alt Name
+		* Review Rating Name
 
 * Select any available Schema type or sub-type for your content, including the following and many more:
 
@@ -671,6 +671,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.32.0-dev.1 (2018/09/24)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a new "Summary of Claims Reviewed" option in the Document SSO metabox for the Schema ClaimReview type.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.31.1 (2018/09/23)**
 
 * *New Features*
@@ -696,6 +707,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.32.0-dev.1 =
+
+(2018/09/24) Added a new "Summary of Claims Reviewed" option in the Document SSO metabox for the Schema ClaimReview type.
 
 = 1.31.1 =
 
