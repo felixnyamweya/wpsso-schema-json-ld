@@ -671,7 +671,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.32.0-dev.1 (2018/09/24)**
+**Version 1.32.0 (2018/09/26)**
 
 * *New Features*
 	* None.
@@ -708,11 +708,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.32.0-dev.1 =
+= 1.32.0 =
 
-(2018/09/24) Added a new "Summary of Claims Reviewed" option in the Document SSO metabox for the Schema ClaimReview type.
-
-= 1.31.1 =
-
-(2018/09/23) Removes duplicate JSON-LD scripts from the post content that have been added to the Schema CreativeWork markup under the "hasPart" or "mentions" property.
+(2018/09/26) Added a new "Summary of Claims Reviewed" option in the Document SSO metabox for the Schema ClaimReview type.
 
