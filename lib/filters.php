@@ -339,7 +339,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_time'       => 'none',			// Offers End Time
 				'schema_event_offers_end_timezone'   => $timezone,		// Offers End Timezone
 				'schema_event_org_id'                => 'none',			// Event Organizer
+				'schema_event_org_person_id'         => 'none',			// Event Organizer Person
 				'schema_event_perf_id'               => 'none',			// Event Performer
+				'schema_event_place_id'              => 'none',			// Event Venue
 				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
 				'schema_howto_prep_hours'            => 0,			// How-To Preparation Time (Hours)
 				'schema_howto_prep_mins'             => 0,			// How-To Preparation Time (Mins)
@@ -756,6 +758,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_event_perf_id':
 
 					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_event_place_id':
+
+					$text = __( 'Select a venue (aka place / location) for the event.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

@@ -205,6 +205,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_perf_id', 'td_class' => 'blank',
 					'content' => $form->get_no_select( 'schema_event_perf_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
+				'schema_event_place_id' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'label' => _x( 'Event Venue', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium', 'tooltip' => 'meta-schema_event_place_id', 'td_class' => 'blank',
+					'content' => $form->get_no_select( 'schema_event_place_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
+				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'label' => _x( 'Event Start', 'option label', 'wpsso-schema-json-ld' ),
