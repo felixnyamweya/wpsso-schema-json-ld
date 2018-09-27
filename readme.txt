@@ -673,7 +673,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.33.0-dev.1 (TBD)**
+**Version 1.33.0-dev.1 (2018/09/27)**
 
 * *New Features*
 	* None.
@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.33.0-dev.1 =
 
-(TBD) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
+(2018/09/27) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
 
 = 1.32.0 =
 
