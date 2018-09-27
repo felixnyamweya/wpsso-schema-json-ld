@@ -303,7 +303,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
 
+			/**
+			 * The timezone string will be empty if a UTC offset, instead
+			 * of a city, has selected in the WordPress settings.
+			 */
 			$timezone = get_option( 'timezone_string' );
+
+			if ( empty( $timezone ) ) {
+				$timezone = 'UTC';
+			}
 
 			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $ret_schema_id = true, $use_mod_opts = false
 
@@ -323,13 +331,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_start_timezone'        => $timezone,		// Event Start Timezone
 				'schema_event_end_date'              => '',			// Event End Date
 				'schema_event_end_time'              => 'none',			// Event End Time
-				'schema_event_end_timezone'          => '',			// Event End Timezone
+				'schema_event_end_timezone'          => $timezone,		// Event End Timezone
 				'schema_event_offers_start_date'     => '',			// Event Start Date
 				'schema_event_offers_start_time'     => 'none',			// Offers Start Time
 				'schema_event_offers_start_timezone' => $timezone,		// Offers Start Timezone
 				'schema_event_offers_end_date'       => '',			// Offers End Date
 				'schema_event_offers_end_time'       => 'none',			// Offers End Time
-				'schema_event_offers_end_timezone'   => '',			// Offers End Timezone
+				'schema_event_offers_end_timezone'   => $timezone,		// Offers End Timezone
 				'schema_event_org_id'                => 'none',			// Event Organizer
 				'schema_event_perf_id'               => 'none',			// Event Performer
 				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
@@ -357,7 +365,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_empl_type_other'         => 0,
 				'schema_job_expire_date'             => '',
 				'schema_job_expire_time'             => 'none',
-				'schema_job_expire_timezone'         => '',
+				'schema_job_expire_timezone'         => $timezone,
 				'schema_org_org_id'                  => 'none',			// Organization
 				'schema_person_id'                   => 'none',			// Person
 				'schema_recipe_cook_method'          => '',			// Recipe Cooking Method
@@ -583,11 +591,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 
 				if ( empty( $md_opts[$md_pre . '_date'] ) && empty( $md_opts[$md_pre . '_time'] ) ) {		// No date or time.
+
 					unset( $md_opts[$md_pre . '_timezone'] );
+
 					continue;
+
 				} elseif ( ! empty( $md_opts[$md_pre . '_date'] ) && empty( $md_opts[$md_pre . '_time'] ) ) {	// Date with no time.
+
 					$md_opts[$md_pre . '_time'] = '00:00';
+
 				} elseif ( empty( $md_opts[$md_pre . '_date'] ) && ! empty( $md_opts[$md_pre . '_time'] ) ) {	// Time with no date.
+
 					$md_opts[$md_pre . '_date'] = gmdate( 'Y-m-d', time() );
 				}
 			}
