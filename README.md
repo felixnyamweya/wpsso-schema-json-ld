@@ -199,6 +199,7 @@
 <ul>
 <li>Event Organizer</li>
 <li>Event Performer</li>
+<li>Event Venue</li>
 <li>Event Start (date, time, timezone)</li>
 <li>Event End (date, time, timezone)</li>
 <li>Offers Start (date, time, timezone)</li>

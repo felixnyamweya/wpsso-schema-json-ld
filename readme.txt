@@ -190,6 +190,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* Event Information
 		* Event Organizer
 		* Event Performer
+		* Event Venue
 		* Event Start (date, time, timezone)
 		* Event End (date, time, timezone)
 		* Offers Start (date, time, timezone)
@@ -672,6 +673,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.33.0-dev.1 (TBD)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.32.0 (2018/09/26)**
 
 * *New Features*
@@ -708,6 +720,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.33.0-dev.1 =
+
+(TBD) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
 
 = 1.32.0 =
 
