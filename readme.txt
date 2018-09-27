@@ -86,6 +86,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
+	* [schema.org/ClaimReview](https://schema.org/ClaimReview)
 	* [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes 3 Schema types)
 	* [schema.org/Course](https://schema.org/Course)
 	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 71 Schema types)
