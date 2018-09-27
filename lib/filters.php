@@ -33,7 +33,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			), -1000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'get_md_defaults' => 2,
+				'get_md_defaults'        => 2,
+				'rename_md_options_keys' => 1,
 			) );
 
 			if ( is_admin() ) {
@@ -338,9 +339,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_date'       => '',			// Offers End Date
 				'schema_event_offers_end_time'       => 'none',			// Offers End Time
 				'schema_event_offers_end_timezone'   => $timezone,		// Offers End Timezone
-				'schema_event_org_id'                => 'none',			// Event Organizer
-				'schema_event_org_person_id'         => 'none',			// Event Organizer Person
-				'schema_event_perf_id'               => 'none',			// Event Performer
+				'schema_event_organizer_org_id'      => 'none',			// Event Organizer Organization
+				'schema_event_organizer_person_id'   => 'none',			// Event Organizer Person
+				'schema_event_performer_org_id'      => 'none',			// Event Performer Organization
+				'schema_event_performer_person_id'   => 'none',			// Event Performer Person
 				'schema_event_place_id'              => 'none',			// Event Venue
 				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
 				'schema_howto_prep_hours'            => 0,			// How-To Preparation Time (Hours)
@@ -419,6 +421,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			return array_merge( $md_defs, $schema_md_defs );
+		}
+
+		public function filter_rename_md_options_keys( $options_keys ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$options_keys['wpssoplm'] = array(
+				10 => array(
+					'schema_event_org_id'  => 'schema_event_organizer_org_id',
+					'schema_event_perf_id' => 'schema_event_performer_org_id',
+				),
+			);
+
+			return $options_keys;
 		}
 
 		public function action_admin_post_head( $mod ) {
@@ -749,13 +767,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_event_org_id':
+				case 'tooltip-meta-schema_event_organizer_org_id':
 
 					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_event_perf_id':
+				case 'tooltip-meta-schema_event_performer_org_id':
 
 					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
 
@@ -763,7 +781,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_event_place_id':
 
-					$text = __( 'Select a venue (aka place / location) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a venue (place / location) for the event.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
