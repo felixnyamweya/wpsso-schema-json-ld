@@ -370,7 +370,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_expire_date'             => '',
 				'schema_job_expire_time'             => 'none',
 				'schema_job_expire_timezone'         => $timezone,
-				'schema_org_org_id'                  => 'none',			// Organization
+				'schema_organization_org_id'         => 'none',			// Organization
 				'schema_person_id'                   => 'none',			// Person
 				'schema_recipe_cook_method'          => '',			// Recipe Cooking Method
 				'schema_recipe_course'               => '',			// Recipe Course
@@ -430,9 +430,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$options_keys['wpssoplm'] = array(
-				10 => array(
+				11 => array(
 					'schema_event_org_id'  => 'schema_event_organizer_org_id',
 					'schema_event_perf_id' => 'schema_event_performer_org_id',
+					'schema_org_org_id'    => 'schema_organization_org_id',
 				),
 			);
 
@@ -889,7 +890,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_org_org_id':
+				case 'tooltip-meta-schema_organization_org_id':
 
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );
 

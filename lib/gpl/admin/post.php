@@ -212,13 +212,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'header'   => 'h5',
 					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_event_org_org_id' => array(
+				'schema_event_organizer_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_event_org_org_id',
-					'content'  => $form->get_no_select( 'schema_event_org_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'tooltip'  => 'meta-schema_event_organizer_org_id',
+					'content'  => $form->get_no_select( 'schema_event_organizer_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_event_performer_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -437,13 +437,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'header'   => 'h5',
 					'label'    => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_org_org_id' => array(
+				'schema_organization_org_id' => array(
 					'tr_class' => $schema_type_tr_class['organization'] . ' ' . $schema_type_tr_class['local_business'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_org_org_id',
-					'content'  => $form->get_no_select( 'schema_org_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'tooltip'  => 'meta-schema_organization_org_id',
+					'content'  => $form->get_no_select( 'schema_organization_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 
 				/**
