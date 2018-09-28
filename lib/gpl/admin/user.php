@@ -65,33 +65,42 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 				 * All Schema Types
 				 */
 				'schema_title' => array(
-					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_title',
+					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
-					'label' => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_title_alt',
+					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
 				'schema_desc' => '',	// Placeholder.
 				'schema_sameas_url' => array(
-					'label' => _x( 'Other Profile Page URLs', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Other Profile Page URLs', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_sameas_url',
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
 				),
 
 				/**
 				 * Schema Person
 				 */
 				'subsection_person' => array(
-					'td_class' => 'subsection', 'header' => 'h5',
-					'label' => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
+					'td_class' => 'subsection',
+					'header'   => 'h5',
+					'label'    => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_person_job_title' => array(
-					'label' => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_person_job_title', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide' ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_person_job_title',
+					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
 			);
 

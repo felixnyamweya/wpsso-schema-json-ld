@@ -67,35 +67,45 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 				 * All Schema Types
 				 */
 				'schema_title' => array(
-					'label' => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_title', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $def_schema_title, 'wide' ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_title',
+					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
 					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// Hide if titles are the same.
-					'label' => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_title_alt', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_title_alt',
+					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
 				'schema_desc' => '',	// Placeholder.
 				'schema_type' => array(
-					'label' => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_type', 'td_class' => 'blank',
-					'content' => $form->get_select( 'schema_type', $schema_types,
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_type',
+					'content'  => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, $def_schema_type, $def_schema_type, 'unhide_rows' ) . ' ' .
 							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
 				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
-					'label' => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_addl_type_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_addl_type_url',
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
 				),
 				'schema_sameas_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
-					'label' => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
-					'th_class' => 'medium', 'tooltip' => 'meta-schema_sameas_url', 'td_class' => 'blank',
-					'content' => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_sameas_url',
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
 				),
 			);
 
