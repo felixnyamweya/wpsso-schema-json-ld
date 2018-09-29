@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.8
 WC Tested Up To: 3.4.5
-Stable Tag: 1.32.0
+Stable Tag: 1.33.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -724,8 +724,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.33.0 =
 
 (2018/09/29) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
-
-= 1.32.0 =
-
-(2018/09/26) Added a new "Summary of Claims Reviewed" option in the Document SSO metabox for the Schema ClaimReview type.
 
