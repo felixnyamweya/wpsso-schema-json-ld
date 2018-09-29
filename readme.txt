@@ -673,7 +673,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.33.0-dev.2 (2018/09/28)**
+**Version 1.33.0 (2018/09/29)**
 
 * *New Features*
 	* None.
@@ -721,9 +721,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.33.0-dev.2 =
+= 1.33.0 =
 
-(2018/09/28) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
+(2018/09/29) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
 
 = 1.32.0 =
 
