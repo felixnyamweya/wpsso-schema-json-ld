@@ -82,6 +82,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			$ret['inLanguage'] = SucomUtil::get_locale( $mod );
 
+			if ( empty( $ret['inLanguage'] ) ) { // Just in case.
+				unset( $ret['inLanguage'] );
+			}
+
 			/**
 			 * Property:
 			 *      datePublished
