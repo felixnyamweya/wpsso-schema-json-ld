@@ -673,6 +673,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.34.0-dev.1 (2018/09/30)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.33.0 (2018/09/29)**
 
 * *New Features*
@@ -720,6 +731,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.34.0-dev.1 =
+
+(2018/09/30) Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.33.0 =
 
