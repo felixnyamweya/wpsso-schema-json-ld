@@ -42,9 +42,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 			$metabox_id = 'schema_json_ld';
 
 			$tabs = apply_filters( $this->p->lca.'_'.$metabox_id.'_tabs', array( 
-				'props' => _x( 'Schema Properties', 'metabox tab', 'wpsso-schema-json-ld' ),
-				'types' => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'props'           => _x( 'Schema Properties', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'types'           => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'knowledge_graph' => _x( 'Knowledge Graph', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'meta_defaults'   => _x( 'Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
 			) );
 
 			$table_rows = array();
@@ -108,6 +109,17 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaJsonLd' ) && class_exists( 'WpssoAdm
 				case 'schema_json_ld-knowledge_graph':
 
 					$this->add_schema_knowledge_graph_table_rows( $table_rows );
+
+					break;
+
+				case 'schema_json_ld-meta_defaults':
+
+					/**
+					 * Default currency.
+					 */
+					$table_rows['plugin_def_currency'] = '' .
+					$this->form->get_th_html( _x( 'Default Currency', 'option label', 'wpsso' ), '', 'plugin_def_currency' ).
+					'<td>'.$this->form->get_select( 'plugin_def_currency', SucomUtil::get_currencies() ).'</td>';
 
 					break;
 			}
