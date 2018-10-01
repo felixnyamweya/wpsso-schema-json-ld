@@ -699,7 +699,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* None.
+	* Renamed two post meta option keys:
+		* 'schema_event_place_id' to 'schema_event_location_id'.
+		* 'schema_job_org_id' to 'schema_job_hiring_org_id'.
 
 **Version 1.33.0 (2018/09/29)**
 
