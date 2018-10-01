@@ -673,14 +673,29 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.2 (2018/09/30)**
+**Version 1.34.0-dev.3 (2018/10/01)**
 
 * *New Features*
 	* None.
 * *Improvements*
+	* Added new Schema Event options in the Document SSO metabox:
+		* Event Organizer Person
+		* Event Performer Person
 	* Added a "Meta Defaults" tab in the SSO &gt; Schema Markup settings page to select default values:
 		* Default Currency
-		* Creative Work Publisher
+		* Creative Work Defaults
+			* Creative Work Publisher
+		* Course Defaults
+			* Course Provider
+		* Event Defaults
+			* Event Organizer Org.
+			* Event Organizer Person
+			* Event Performer Org.
+			* Event Performer Person
+			* Event Venue
+		* Job Posting Defaults
+			* Hiring Organization
+			* Job Location
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -734,9 +749,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.0-dev.2 =
+= 1.34.0-dev.3 =
 
-(2018/09/30) Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+(2018/10/01) Added new Schema Event options in the Document SSO metabox. Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.33.0 =
 
