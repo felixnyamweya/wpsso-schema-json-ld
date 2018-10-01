@@ -673,12 +673,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.1 (2018/09/30)**
+**Version 1.34.0-dev.2 (2018/09/30)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+	* Added a "Meta Defaults" tab in the SSO &gt; Schema Markup settings page to select default values:
+		* Default Currency
+		* Creative Work Publisher
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -732,7 +734,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.0-dev.1 =
+= 1.34.0-dev.2 =
 
 (2018/09/30) Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
