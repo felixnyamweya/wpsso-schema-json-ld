@@ -293,25 +293,25 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content'  => $form->get_no_mixed_multi( array(
 						'schema_event_offer_name' => array(
 							'input_title' => _x( 'Event Offer Name', 'option label', 'wpsso-schema-json-ld' ),
-							'input_type' => 'text',
+							'input_type'  => 'text',
 							'input_class' => 'long_name',
 						),
 						'schema_event_offer_price' => array(
 							'input_title' => _x( 'Event Offer Price', 'option label', 'wpsso-schema-json-ld' ),
-							'input_type' => 'text',
+							'input_type'  => 'text',
 							'input_class' => 'short',
 						),
 						'schema_event_offer_currency' => array(
-							'input_title' => _x( 'Event Offer Currency', 'option label', 'wpsso-schema-json-ld' ),
-							'input_type' => 'select',
-							'input_class' => 'currency',
+							'input_title'    => _x( 'Event Offer Currency', 'option label', 'wpsso-schema-json-ld' ),
+							'input_type'     => 'select',
+							'input_class'    => 'currency',
 							'select_options' => $currencies,
 							'select_default' => $this->p->options['plugin_def_currency'],
 						),
 						'schema_event_offer_avail' => array(
-							'input_title' => _x( 'Event Offer Availability', 'option label', 'wpsso-schema-json-ld' ),
-							'input_type' => 'select',
-							'input_class' => 'short',
+							'input_title'    => _x( 'Event Offer Availability', 'option label', 'wpsso-schema-json-ld' ),
+							'input_type'     => 'select',
+							'input_class'    => 'short',
 							'select_options' => $this->p->cf['form']['item_availability'],
 							'select_default' => 'InStock',
 						),

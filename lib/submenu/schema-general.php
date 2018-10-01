@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'props'           => _x( 'Schema Properties', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'types'           => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'knowledge_graph' => _x( 'Knowledge Graph', 'metabox tab', 'wpsso-schema-json-ld' ),
-				'meta_defaults'   => _x( 'Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'meta_defaults'   => _x( 'Custom Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
 			) );
 
 			$table_rows = array();
@@ -147,24 +147,15 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			$form_rows = array(
 
 				/**
-				 * Default currency.
-				 */
-				'plugin_def_currency' => array(
-					'label'   => _x( 'Default Currency', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip' => 'plugin_def_currency',
-					'content' => $this->form->get_select( 'plugin_def_currency', SucomUtil::get_currencies() ),
-				),
-
-				/**
 				 * CreativeWork defaults.
 				 */
 				'subsection_def_creative_work' => array(
-					'td_class' => 'subsection',
+					'td_class' => 'subsection top',
 					'header'   => 'h4',
-					'label'    => _x( 'Creative Work Defaults', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_pub_org_id' => array(
-					'label'    => _x( 'Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_pub_org_id',
 					'content'  => $this->form->get_select( 'schema_def_pub_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
@@ -176,10 +167,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'subsection_def_course' => array(
 					'td_class' => 'subsection',
 					'header'   => 'h4',
-					'label'    => _x( 'Course Defaults', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_course_provider_id' => array(
-					'label'    => _x( 'Course Provider', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Course Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_course_provider_id',
 					'content'  => $this->form->get_select( 'schema_def_course_provider_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
@@ -191,34 +182,34 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'subsection_def_event' => array(
 					'td_class' => 'subsection',
 					'header'   => 'h4',
-					'label'    => _x( 'Event Defaults', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_event_organizer_org_id' => array(
-					'label'    => _x( 'Event Organizer Org.', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Event Organizer Org.', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_organizer_org_id',
 					'content'  => $this->form->get_select( 'schema_def_event_organizer_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_event_organizer_person_id' => array(
-					'label'    => _x( 'Event Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Event Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_organizer_person_id',
 					'content'  => $this->form->get_select( 'schema_def_event_organizer_person_id',
 						$person_names, 'long_name' ),
 				),
 				'schema_def_event_performer_org_id' => array(
-					'label'    => _x( 'Event Performer Org.', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Event Performer Org.', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_performer_org_id',
 					'content'  => $this->form->get_select( 'schema_def_event_performer_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_event_performer_person_id' => array(
-					'label'    => _x( 'Event Performer Person', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Event Performer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_performer_person_id',
 					'content'  => $this->form->get_select( 'schema_def_event_performer_person_id',
 						$person_names, 'long_name' ),
 				),
 				'schema_def_event_location_id' => array(
-					'label'    => _x( 'Event Venue', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Event Venue', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_location_id',
 					'content'  => $this->form->get_select( 'schema_def_event_location_id',
 						$plm_place_names, 'long_name', '', true, $plm_disable ) . $plm_req_msg,
@@ -230,16 +221,16 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'subsection_def_job' => array(
 					'td_class' => 'subsection',
 					'header'   => 'h4',
-					'label'    => _x( 'Job Posting Defaults', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_job_hiring_org_id' => array(
-					'label'    => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_job_hiring_org_id',
 					'content'  => $this->form->get_select( 'schema_def_job_hiring_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_job_location_id' => array(
-					'label'    => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_job_location_id',
 					'content'  => $this->form->get_select( 'schema_def_job_location_id',
 						$plm_place_names, 'long_name', '', true, $plm_disable ) . $plm_req_msg,
