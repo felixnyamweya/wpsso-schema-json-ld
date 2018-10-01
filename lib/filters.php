@@ -755,13 +755,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_pub_org_id':
 
-					$text = __( 'Select a publisher for the Schema CreativeWork item type and/or its sub-type (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_headline':
 
-					$text = __( 'A custom headline for the Schema CreativeWork item type and/or its sub-type.', 'wpsso-schema-json-ld' );
+					$text = __( 'A custom headline for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -773,31 +773,31 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_event_organizer_org_id':
 
-					$text = __( 'Select an organizer (organization) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select an organizer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_event_organizer_person_id':
 
-					$text = __( 'Select an organizer (person) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select an organizer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_event_performer_org_id':
 
-					$text = __( 'Select a performer (organization) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a performer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_event_performer_person_id':
 
-					$text = __( 'Select a performer (person) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a performer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_event_location_id':
 
-					$text = __( 'Select a venue (place / location) for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a venue (place / location) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -877,13 +877,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_job_hiring_org_id':
 
-					$text = __( 'Optionally select a different organization for the hiring organization.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a organization for the Schema JobPosting hiring organization.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_job_location_id':
 
-					$text = __( 'Optionally select a different place / location for the job location.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a place / location for the Schema JobPosting job location.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -1086,7 +1086,55 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-schema_def_pub_org_id':
 
-					$text = __( 'Select a default publisher for the Schema CreativeWork item type and/or its sub-type (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_course_provider_id':
+
+					$text = __( 'Select a default organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_organizer_org_id':
+
+					$text = __( 'Select a default organizer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_organizer_person_id':
+
+					$text = __( 'Select a default organizer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_performer_org_id':
+
+					$text = __( 'Select a default performer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_performer_person_id':
+
+					$text = __( 'Select a default performer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_location_id':
+
+					$text = __( 'Select a default venue (place / location) for the Schema Event type.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_job_hiring_org_id':
+
+					$text = __( 'Select a default organization for the Schema JobPosting hiring organization.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_job_location_id':
+
+					$text = __( 'Select a default place / location for the Schema JobPosting job location.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

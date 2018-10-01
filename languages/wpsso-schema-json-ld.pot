@@ -78,13 +78,13 @@ msgstr ""
 
 #: lib/filters.php:758
 msgid ""
-"Select a publisher for the Schema CreativeWork item type and/or its sub-type "
+"Select a publisher for the Schema CreativeWork type and/or its sub-types "
 "(Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
 #: lib/filters.php:764
 msgid ""
-"A custom headline for the Schema CreativeWork item type and/or its sub-type."
+"A custom headline for the Schema CreativeWork type and/or its sub-types."
 msgstr ""
 
 #: lib/filters.php:770
@@ -94,23 +94,23 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:776
-msgid "Select an organizer (organization) for the event."
+msgid "Select an organizer (organization) for the Schema Event type."
 msgstr ""
 
 #: lib/filters.php:782
-msgid "Select an organizer (person) for the event."
+msgid "Select an organizer (person) for the Schema Event type."
 msgstr ""
 
 #: lib/filters.php:788
-msgid "Select a performer (organization) for the event."
+msgid "Select a performer (organization) for the Schema Event type."
 msgstr ""
 
 #: lib/filters.php:794
-msgid "Select a performer (person) for the event."
+msgid "Select a performer (person) for the Schema Event type."
 msgstr ""
 
 #: lib/filters.php:800
-msgid "Select a venue (place / location) for the event."
+msgid "Select a venue (place / location) for the Schema Event type."
 msgstr ""
 
 #: lib/filters.php:806
@@ -172,11 +172,11 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:880
-msgid "Optionally select a different organization for the hiring organization."
+msgid "Select a organization for the Schema JobPosting hiring organization."
 msgstr ""
 
 #: lib/filters.php:886
-msgid "Optionally select a different place / location for the job location."
+msgid "Select a place / location for the Schema JobPosting job location."
 msgstr ""
 
 #: lib/filters.php:892
@@ -345,8 +345,44 @@ msgstr ""
 
 #: lib/filters.php:1089
 msgid ""
-"Select a default publisher for the Schema CreativeWork item type and/or its "
-"sub-type (Article, BlogPosting, WebPage, etc)."
+"Select a default publisher for the Schema CreativeWork type and/or its sub-"
+"types (Article, BlogPosting, WebPage, etc)."
+msgstr ""
+
+#: lib/filters.php:1095
+msgid ""
+"Select a default organizer for the course service provider, service "
+"operator, or service performer (ie. the goods producer)."
+msgstr ""
+
+#: lib/filters.php:1101
+msgid "Select a default organizer (organization) for the Schema Event type."
+msgstr ""
+
+#: lib/filters.php:1107
+msgid "Select a default organizer (person) for the Schema Event type."
+msgstr ""
+
+#: lib/filters.php:1113
+msgid "Select a default performer (organization) for the Schema Event type."
+msgstr ""
+
+#: lib/filters.php:1119
+msgid "Select a default performer (person) for the Schema Event type."
+msgstr ""
+
+#: lib/filters.php:1125
+msgid "Select a default venue (place / location) for the Schema Event type."
+msgstr ""
+
+#: lib/filters.php:1131
+msgid ""
+"Select a default organization for the Schema JobPosting hiring organization."
+msgstr ""
+
+#: lib/filters.php:1137
+msgid ""
+"Select a default place / location for the Schema JobPosting job location."
 msgstr ""
 
 #: lib/gpl/admin/post.php:50 lib/pro/admin/post.php:70
