@@ -164,7 +164,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_creative_work' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_pub_org_id' => array(
@@ -191,7 +191,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_course' => array(
 					'tr_class' => $schema_type_tr_class['course'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_course_provider_id' => array(
@@ -209,32 +209,48 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_event' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_event_organizer_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Event Organizer', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Event Organizer Org.', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_organizer_org_id',
 					'content'  => $form->get_no_select( 'schema_event_organizer_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+				),
+				'schema_event_organizer_person_id' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Event Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_event_organizer_person_id',
+					'content'  => $form->get_no_select( 'schema_event_organizer_person_id', $person_names, 'long_name' ),
 				),
 				'schema_event_performer_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Event Performer', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Event Performer Org.', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_performer_org_id',
 					'content'  => $form->get_no_select( 'schema_event_performer_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
-				'schema_event_place_id' => array(
+				'schema_event_performer_person_id' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Event Performer Person', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_event_performer_person_id',
+					'content'  => $form->get_no_select( 'schema_event_performer_person_id', $person_names, 'long_name' ),
+				),
+				'schema_event_location_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Event Venue', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_event_place_id',
-					'content'  => $form->get_no_select( 'schema_event_place_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
+					'tooltip'  => 'meta-schema_event_location_id',
+					'content'  => $form->get_no_select( 'schema_event_location_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
 				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class['event'],
@@ -303,12 +319,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema How-To
+				 * Schema HowTo
 				 */
 				'subsection_howto' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'How-To Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_howto_yield' => array(
@@ -367,12 +383,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema Job Posting
+				 * Schema JobPosting
 				 */
 				'subsection_job' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_job_title' => array(
@@ -384,13 +400,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_job_title',
 					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
-				'schema_job_org_id' => array(
+				'schema_job_hiring_org_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_job_org_id',
-					'content'  => $form->get_no_select( 'schema_job_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'tooltip'  => 'meta-schema_job_hiring_org_id',
+					'content'  => $form->get_no_select( 'schema_job_hiring_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_job_location_id' => array(
 					'tr_class' => $schema_type_tr_class['job_posting'],
@@ -434,7 +450,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_organization' => array(
 					'tr_class' => $schema_type_tr_class['organization'] . ' ' . $schema_type_tr_class['local_business'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_organization_org_id' => array(
@@ -452,7 +468,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_person' => array(
 					'tr_class' => $schema_type_tr_class['person'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_person_id' => array(
@@ -470,7 +486,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_question' => array(
 					'tr_class' => $schema_type_tr_class['question'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_question_desc' => array(
@@ -488,7 +504,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_recipe' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Recipe Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_recipe_cuisine' => array(
@@ -696,7 +712,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_review' => array(
 					'tr_class' => $schema_type_tr_class['review'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_review_item_url' => array(
@@ -734,7 +750,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'subsection_review_claim' => array(
 					'tr_class' => $schema_type_tr_class['review_claim'],
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Claim Review Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_review_claim_reviewed' => array(

@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 				 */
 				'subsection_person' => array(
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_person_job_title' => array(

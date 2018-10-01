@@ -315,6 +315,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$timezone = 'UTC';
 			}
 
+			$opts        =& $this->p->options;	// Shortcute for plugin options array.
 			$schema_type = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 
 			$schema_md_defs = array(
@@ -322,9 +323,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title'                       => '',
 				'schema_title_alt'                   => '',
 				'schema_desc'                        => '',
-				'schema_pub_org_id'                  => $this->p->options['schema_def_pub_org_id'],	// Creative Work Publisher
+				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Creative Work Publisher
 				'schema_headline'                    => '',						// Creative Work Headline
-				'schema_course_provider_id'          => 'none',						// Course Provider 
+				'schema_course_provider_id'          => $opts['schema_def_course_provider_id'],		// Course Provider 
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
 				'schema_event_start_timezone'        => $timezone,					// Event Start Timezone
@@ -337,11 +338,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_date'       => '',						// Offers End Date
 				'schema_event_offers_end_time'       => 'none',						// Offers End Time
 				'schema_event_offers_end_timezone'   => $timezone,					// Offers End Timezone
-				'schema_event_organizer_org_id'      => 'none',						// Event Organizer Organization
-				'schema_event_organizer_person_id'   => 'none',						// Event Organizer Person
-				'schema_event_performer_org_id'      => 'none',						// Event Performer Organization
-				'schema_event_performer_person_id'   => 'none',						// Event Performer Person
-				'schema_event_place_id'              => 'none',						// Event Venue
+				'schema_event_organizer_org_id'      => $opts['schema_def_event_organizer_org_id'],	// Event Organizer Org.
+				'schema_event_organizer_person_id'   => $opts['schema_def_event_organizer_person_id'],	// Event Organizer Person
+				'schema_event_performer_org_id'      => $opts['schema_def_event_performer_org_id'],	// Event Performer Org.
+				'schema_event_performer_person_id'   => $opts['schema_def_event_performer_person_id'],	// Event Performer Person
+				'schema_event_location_id'           => $opts['schema_def_event_location_id'],		// Event Venue
 				'schema_howto_prep_days'             => 0,						// How-To Preparation Time (Days)
 				'schema_howto_prep_hours'            => 0,						// How-To Preparation Time (Hours)
 				'schema_howto_prep_mins'             => 0,						// How-To Preparation Time (Mins)
@@ -351,9 +352,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_howto_total_mins'            => 0,						// How-To Total Time (Mins)
 				'schema_howto_total_secs'            => 0,						// How-To Total Time (Secs)
 				'schema_howto_yield'                 => '',						// How-To Yield
-				'schema_job_title'                   => '',
-				'schema_job_org_id'                  => 'none',						// Hiring Organization
-				'schema_job_location_id'             => 'none',						// Job Location
+				'schema_job_title'                   => '',						// Job Title
+				'schema_job_hiring_org_id'           => $opts['schema_def_job_hiring_org_id'],		// Job Hiring Organization
+				'schema_job_location_id'             => $opts['schema_def_job_location_id'],		// Job Location
 				'schema_job_salary'                  => '',						// Base Salary
 				'schema_job_salary_currency'         => $this->p->options['plugin_def_currency'],	// Base Salary Currency
 				'schema_job_salary_period'           => 'year',						// Base Salary per Year, Month, Week, Hour
@@ -432,6 +433,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'schema_event_org_id'  => 'schema_event_organizer_org_id',
 					'schema_event_perf_id' => 'schema_event_performer_org_id',
 					'schema_org_org_id'    => 'schema_organization_org_id',
+				),
+				14 => array(
+					'schema_event_place_id' => 'schema_event_location_id',
+					'schema_job_org_id'     => 'schema_job_hiring_org_id',
 				),
 			);
 
@@ -768,17 +773,29 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_event_organizer_org_id':
 
-					$text = __( 'Select an organizer for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select an organizer (organization) for the event.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_event_organizer_person_id':
+
+					$text = __( 'Select an organizer (person) for the event.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_event_performer_org_id':
 
-					$text = __( 'Select a performer for the event.', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a performer (organization) for the event.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_event_place_id':
+				case 'tooltip-meta-schema_event_performer_person_id':
+
+					$text = __( 'Select a performer (person) for the event.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_event_location_id':
 
 					$text = __( 'Select a venue (place / location) for the event.', 'wpsso-schema-json-ld' );
 
@@ -858,7 +875,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_job_org_id':
+				case 'tooltip-meta-schema_job_hiring_org_id':
 
 					$text = __( 'Optionally select a different organization for the hiring organization.', 'wpsso-schema-json-ld' );
 

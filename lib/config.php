@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.34.0-dev.2',	// Plugin version.
-					'opt_version' => '13',		// Increment when changing default option values.
+					'version'     => '1.34.0-dev.3',	// Plugin version.
+					'opt_version' => '15',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
 					'desc'        => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					),
 					'lib' => array(
 						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'schema-json-ld'   => 'Schema Markup',
+							'schema-general'   => 'Schema Markup',
 							'schema-shortcode' => 'Schema Shortcode',
 						),
 						'shortcode' => array(
@@ -110,7 +110,19 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'opt' => array(						// Plugin options.
 				'defaults' => array(
-					'schema_def_pub_org_id' => 'site',	// Default Creative Work Publisher
+
+					/**
+					 * Meta Defaults
+					 */
+					'schema_def_pub_org_id'                  => 'site',	// Creative Work Publisher
+					'schema_def_course_provider_id'          => 'none',	// Course Provider 
+					'schema_def_event_organizer_org_id'      => 'none',	// Event Organizer Org.
+					'schema_def_event_organizer_person_id'   => 'none',	// Event Organizer Person
+					'schema_def_event_performer_org_id'      => 'none',	// Event Performer Org.
+					'schema_def_event_performer_person_id'   => 'none',	// Event Performer Person
+					'schema_def_event_location_id'           => 'none',	// Event Venue
+					'schema_def_job_hiring_org_id'           => 'none',	// Job Hiring Organization
+					'schema_def_job_location_id'             => 'none',	// Job Location
 				),
 			),
 			'menu' => array(
