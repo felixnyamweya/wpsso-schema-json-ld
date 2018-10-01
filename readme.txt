@@ -61,20 +61,41 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * Adds a Schema Markup settings page to the SSO menu with additional options:
 
-	* WebSite Alternate Name
-	* Organization Logo URL
-	* Organization Banner URL
-	* Maximum Images to Include
-	* Schema Image Dimensions
-	* Maximum Description Length
-	* Author / Person Name Format
-	* Item Type for Blog Front Page
-	* Item Type for Static Front Page
-	* Item Type for User / Author Page
-	* Item Type for Search Results Page
-	* Item Type for Other Archive Page
-	* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
-	* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
+	* Schema Properties
+		* WebSite Name
+		* WebSite Alternate Name
+		* WebSite Description
+		* Organization Logo URL
+		* Organization Banner URL
+		* Maximum Images to Include
+		* Schema Image Dimensions
+		* Maximum Description Length
+		* Author / Person Name Format
+	* Schema Types
+		* Item Type for Blog Front Page
+		* Item Type for Static Front Page
+		* Item Type for User / Author Page
+		* Item Type for Search Results Page
+		* Item Type for Other Archive Page
+		* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
+		* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
+	* Knowledge Graph
+		* Knowledge Graph for Home Page
+		* User for Person Social Profile
+	* Custom Meta Defaults
+		* Creative Work Information
+			* Default Creative Work Publisher
+		* Course Information
+			* Default Course Provider
+		* Event Information
+			* Default Event Organizer Org.
+			* Default Event Organizer Person
+			* Default Event Performer Org.
+			* Default Event Performer Person
+			* Default Event Venue
+		* Job Posting Information
+			* Default Hiring Organization
+			* Default Job Location
 
 * Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
@@ -188,8 +209,10 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* Course Information
 		* Course Provider
 	* Event Information
-		* Event Organizer
-		* Event Performer
+		* Event Organizer Org.
+		* Event Organizer Person
+		* Event Performer Org.
+		* Event Performer Person
 		* Event Venue
 		* Event Start (date, time, timezone)
 		* Event End (date, time, timezone)
@@ -681,21 +704,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added new Schema Event options in the Document SSO metabox:
 		* Event Organizer Person
 		* Event Performer Person
-	* Added a "Meta Defaults" tab in the SSO &gt; Schema Markup settings page to select default values:
-		* Default Currency
-		* Creative Work Defaults
-			* Creative Work Publisher
-		* Course Defaults
-			* Course Provider
-		* Event Defaults
-			* Event Organizer Org.
-			* Event Organizer Person
-			* Event Performer Org.
-			* Event Performer Person
-			* Event Venue
-		* Job Posting Defaults
-			* Hiring Organization
-			* Job Location
+	* Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page to select default values:
+		* Creative Work Information
+			* Default Creative Work Publisher
+		* Course Information
+			* Default Course Provider
+		* Event Information
+			* Default Event Organizer Org.
+			* Default Event Organizer Person
+			* Default Event Performer Org.
+			* Default Event Performer Person
+			* Default Event Venue
+		* Job Posting Information
+			* Default Hiring Organization
+			* Default Job Location
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -754,7 +776,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.34.0-dev.3 =
 
-(2018/10/01) Added new Schema Event options in the Document SSO metabox. Added a new "Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+(2018/10/01) Added new Schema Event options in the Document SSO metabox. Added a new "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.33.0 =
 
