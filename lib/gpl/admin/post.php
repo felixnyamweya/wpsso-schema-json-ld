@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$read_cache = true;
 			$do_encode  = true;
 
-			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
+			$schema_types        = $this->p->schema->get_schema_types_select( null, $add_none = true );
 			$currencies          = SucomUtil::get_currency_abbrev();
 			$event_offers_max    = SucomUtil::get_const( 'WPSSO_SCHEMA_EVENT_OFFERS_MAX', 10 );
 			$og_title_max_len    = $this->p->options['og_title_len'];
@@ -60,19 +60,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			 */
 			$org_req_msg    = $this->p->admin->get_ext_required_msg( 'org' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
-			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', true ); // $add_none is true.
+			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', $add_none = true );
 
 			/**
 			 * Person variables.
 			 */
-			$person_names = $this->p->util->get_form_cache( 'person_names', true ); // $add_none is true.
+			$person_names = $this->p->util->get_form_cache( 'person_names', $add_none = true );
 
 			/**
 			 * Place / Location variables.
 			 */
 			$plm_req_msg     = $this->p->admin->get_ext_required_msg( 'plm' );
 			$plm_disable     = empty( $plm_req_msg ) ? false : true;
-			$plm_place_names = $this->p->util->get_form_cache( 'place_names', true ); // $add_none is true.
+			$plm_place_names = $this->p->util->get_form_cache( 'place_names', $add_none = true );
 
 			/**
 			 * Javascript classes to hide/show rows by selected schema type.

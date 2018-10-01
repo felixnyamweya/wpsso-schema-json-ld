@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 			$read_cache = true;
 			$do_encode  = true;
 
-			$schema_types        = $this->p->schema->get_schema_types_select( null, true ); // $add_none is true.
+			$schema_types        = $this->p->schema->get_schema_types_select( null, $add_none = true );
 			$og_title_max_len    = $this->p->options['og_title_len'];
 			$schema_desc_max_len = $this->p->options['schema_desc_len'];
 

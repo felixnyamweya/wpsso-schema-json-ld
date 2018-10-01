@@ -49,6 +49,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'post_cache_transient_keys' => 4,
 					'pub_google_rows'           => 2,
 					'messages_tooltip_meta'     => 2,
+					'messages_tooltip_schema'   => 2,
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array(
@@ -314,51 +315,48 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$timezone = 'UTC';
 			}
 
-			$schema_type = $this->p->schema->get_mod_schema_type( $mod, true, false );	// $ret_schema_id = true, $use_mod_opts = false
-
-			$def_currency = empty( $this->p->options['plugin_def_currency'] ) ?
-				'USD' : $this->p->options['plugin_def_currency'];
+			$schema_type = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 
 			$schema_md_defs = array(
 				'schema_type'                        => $schema_type,
 				'schema_title'                       => '',
 				'schema_title_alt'                   => '',
 				'schema_desc'                        => '',
-				'schema_pub_org_id'                  => 'site',			// Creative Work Publisher
-				'schema_headline'                    => '',			// Creative Work Headline
-				'schema_course_provider_id'          => 'none',			// Course Provider 
-				'schema_event_start_date'            => '',			// Event Start Date
-				'schema_event_start_time'            => 'none',			// Event Start Time
-				'schema_event_start_timezone'        => $timezone,		// Event Start Timezone
-				'schema_event_end_date'              => '',			// Event End Date
-				'schema_event_end_time'              => 'none',			// Event End Time
-				'schema_event_end_timezone'          => $timezone,		// Event End Timezone
-				'schema_event_offers_start_date'     => '',			// Event Start Date
-				'schema_event_offers_start_time'     => 'none',			// Offers Start Time
-				'schema_event_offers_start_timezone' => $timezone,		// Offers Start Timezone
-				'schema_event_offers_end_date'       => '',			// Offers End Date
-				'schema_event_offers_end_time'       => 'none',			// Offers End Time
-				'schema_event_offers_end_timezone'   => $timezone,		// Offers End Timezone
-				'schema_event_organizer_org_id'      => 'none',			// Event Organizer Organization
-				'schema_event_organizer_person_id'   => 'none',			// Event Organizer Person
-				'schema_event_performer_org_id'      => 'none',			// Event Performer Organization
-				'schema_event_performer_person_id'   => 'none',			// Event Performer Person
-				'schema_event_place_id'              => 'none',			// Event Venue
-				'schema_howto_prep_days'             => 0,			// How-To Preparation Time (Days)
-				'schema_howto_prep_hours'            => 0,			// How-To Preparation Time (Hours)
-				'schema_howto_prep_mins'             => 0,			// How-To Preparation Time (Mins)
-				'schema_howto_prep_secs'             => 0,			// How-To Preparation Time (Secs)
-				'schema_howto_total_days'            => 0,			// How-To Total Time (Days)
-				'schema_howto_total_hours'           => 0,			// How-To Total Time (Hours)
-				'schema_howto_total_mins'            => 0,			// How-To Total Time (Mins)
-				'schema_howto_total_secs'            => 0,			// How-To Total Time (Secs)
-				'schema_howto_yield'                 => '',			// How-To Yield
+				'schema_pub_org_id'                  => $this->p->options['schema_def_pub_org_id'],	// Creative Work Publisher
+				'schema_headline'                    => '',						// Creative Work Headline
+				'schema_course_provider_id'          => 'none',						// Course Provider 
+				'schema_event_start_date'            => '',						// Event Start Date
+				'schema_event_start_time'            => 'none',						// Event Start Time
+				'schema_event_start_timezone'        => $timezone,					// Event Start Timezone
+				'schema_event_end_date'              => '',						// Event End Date
+				'schema_event_end_time'              => 'none',						// Event End Time
+				'schema_event_end_timezone'          => $timezone,					// Event End Timezone
+				'schema_event_offers_start_date'     => '',						// Event Start Date
+				'schema_event_offers_start_time'     => 'none',						// Offers Start Time
+				'schema_event_offers_start_timezone' => $timezone,					// Offers Start Timezone
+				'schema_event_offers_end_date'       => '',						// Offers End Date
+				'schema_event_offers_end_time'       => 'none',						// Offers End Time
+				'schema_event_offers_end_timezone'   => $timezone,					// Offers End Timezone
+				'schema_event_organizer_org_id'      => 'none',						// Event Organizer Organization
+				'schema_event_organizer_person_id'   => 'none',						// Event Organizer Person
+				'schema_event_performer_org_id'      => 'none',						// Event Performer Organization
+				'schema_event_performer_person_id'   => 'none',						// Event Performer Person
+				'schema_event_place_id'              => 'none',						// Event Venue
+				'schema_howto_prep_days'             => 0,						// How-To Preparation Time (Days)
+				'schema_howto_prep_hours'            => 0,						// How-To Preparation Time (Hours)
+				'schema_howto_prep_mins'             => 0,						// How-To Preparation Time (Mins)
+				'schema_howto_prep_secs'             => 0,						// How-To Preparation Time (Secs)
+				'schema_howto_total_days'            => 0,						// How-To Total Time (Days)
+				'schema_howto_total_hours'           => 0,						// How-To Total Time (Hours)
+				'schema_howto_total_mins'            => 0,						// How-To Total Time (Mins)
+				'schema_howto_total_secs'            => 0,						// How-To Total Time (Secs)
+				'schema_howto_yield'                 => '',						// How-To Yield
 				'schema_job_title'                   => '',
-				'schema_job_org_id'                  => 'none',			// Hiring Organization
-				'schema_job_location_id'             => 'none',			// Job Location
-				'schema_job_salary'                  => '',			// Base Salary
-				'schema_job_salary_currency'         => $def_currency,		// Base Salary Currency
-				'schema_job_salary_period'           => 'year',			// Base Salary per Year, Month, Week, Hour
+				'schema_job_org_id'                  => 'none',						// Hiring Organization
+				'schema_job_location_id'             => 'none',						// Job Location
+				'schema_job_salary'                  => '',						// Base Salary
+				'schema_job_salary_currency'         => $this->p->options['plugin_def_currency'],	// Base Salary Currency
+				'schema_job_salary_period'           => 'year',						// Base Salary per Year, Month, Week, Hour
 				'schema_job_empl_type_full_time'     => 0,
 				'schema_job_empl_type_part_time'     => 0,
 				'schema_job_empl_type_contractor'    => 0,
@@ -370,42 +368,42 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_expire_date'             => '',
 				'schema_job_expire_time'             => 'none',
 				'schema_job_expire_timezone'         => $timezone,
-				'schema_organization_org_id'         => 'none',			// Organization
-				'schema_person_id'                   => 'none',			// Person
-				'schema_recipe_cook_method'          => '',			// Recipe Cooking Method
-				'schema_recipe_course'               => '',			// Recipe Course
-				'schema_recipe_cuisine'              => '',			// Recipe Cuisine
-				'schema_recipe_prep_days'            => 0,			// Recipe Preparation Time (Days)
-				'schema_recipe_prep_hours'           => 0,			// Recipe Preparation Time (Hours)
-				'schema_recipe_prep_mins'            => 0,			// Recipe Preparation Time (Mins)
-				'schema_recipe_prep_secs'            => 0,			// Recipe Preparation Time (Secs)
-				'schema_recipe_cook_days'            => 0,			// Recipe Cooking Time (Days)
-				'schema_recipe_cook_hours'           => 0,			// Recipe Cooking Time (Hours)
-				'schema_recipe_cook_mins'            => 0,			// Recipe Cooking Time (Mins)
-				'schema_recipe_cook_secs'            => 0,			// Recipe Cooking Time (Secs)
-				'schema_recipe_total_days'           => 0,			// How-To Total Time (Days)
-				'schema_recipe_total_hours'          => 0,			// How-To Total Time (Hours)
-				'schema_recipe_total_mins'           => 0,			// How-To Total Time (Mins)
-				'schema_recipe_total_secs'           => 0,			// How-To Total Time (Secs)
-				'schema_recipe_nutri_serv'           => '',			// Serving Size
-				'schema_recipe_nutri_cal'            => '',			// Calories
-				'schema_recipe_nutri_prot'           => '',			// Protein
-				'schema_recipe_nutri_fib'            => '',			// Fiber
-				'schema_recipe_nutri_carb'           => '',			// Carbohydrates
-				'schema_recipe_nutri_sugar'          => '',			// Sugar
-				'schema_recipe_nutri_sod'            => '',			// Sodium
-				'schema_recipe_nutri_fat'            => '',			// Fat
-				'schema_recipe_nutri_trans_fat'      => '',			// Trans Fat
-				'schema_recipe_nutri_sat_fat'        => '',			// Saturated Fat
-				'schema_recipe_nutri_unsat_fat'      => '',			// Unsaturated Fat
-				'schema_recipe_nutri_chol'           => '',			// Cholesterol
-				'schema_recipe_yield'                => '',			// Recipe Yield
-				'schema_review_item_url'             => '',			// Review Subject Webpage URL
-				'schema_review_rating'               => '0.0',			// Review Rating
-				'schema_review_rating_from'          => '1',			// Review Rating (From)
-				'schema_review_rating_to'            => '5',			// Review Rating (To)
-				'schema_review_rating_alt_name'      => '',			// Review Rating Name
-				'schema_review_claim_reviewed'       => '',			// Summary of Claims Reviewed
+				'schema_organization_org_id'         => 'none',						// Organization
+				'schema_person_id'                   => 'none',						// Person
+				'schema_recipe_cook_method'          => '',						// Recipe Cooking Method
+				'schema_recipe_course'               => '',						// Recipe Course
+				'schema_recipe_cuisine'              => '',						// Recipe Cuisine
+				'schema_recipe_prep_days'            => 0,						// Recipe Preparation Time (Days)
+				'schema_recipe_prep_hours'           => 0,						// Recipe Preparation Time (Hours)
+				'schema_recipe_prep_mins'            => 0,						// Recipe Preparation Time (Mins)
+				'schema_recipe_prep_secs'            => 0,						// Recipe Preparation Time (Secs)
+				'schema_recipe_cook_days'            => 0,						// Recipe Cooking Time (Days)
+				'schema_recipe_cook_hours'           => 0,						// Recipe Cooking Time (Hours)
+				'schema_recipe_cook_mins'            => 0,						// Recipe Cooking Time (Mins)
+				'schema_recipe_cook_secs'            => 0,						// Recipe Cooking Time (Secs)
+				'schema_recipe_total_days'           => 0,						// How-To Total Time (Days)
+				'schema_recipe_total_hours'          => 0,						// How-To Total Time (Hours)
+				'schema_recipe_total_mins'           => 0,						// How-To Total Time (Mins)
+				'schema_recipe_total_secs'           => 0,						// How-To Total Time (Secs)
+				'schema_recipe_nutri_serv'           => '',						// Serving Size
+				'schema_recipe_nutri_cal'            => '',						// Calories
+				'schema_recipe_nutri_prot'           => '',						// Protein
+				'schema_recipe_nutri_fib'            => '',						// Fiber
+				'schema_recipe_nutri_carb'           => '',						// Carbohydrates
+				'schema_recipe_nutri_sugar'          => '',						// Sugar
+				'schema_recipe_nutri_sod'            => '',						// Sodium
+				'schema_recipe_nutri_fat'            => '',						// Fat
+				'schema_recipe_nutri_trans_fat'      => '',						// Trans Fat
+				'schema_recipe_nutri_sat_fat'        => '',						// Saturated Fat
+				'schema_recipe_nutri_unsat_fat'      => '',						// Unsaturated Fat
+				'schema_recipe_nutri_chol'           => '',						// Cholesterol
+				'schema_recipe_yield'                => '',						// Recipe Yield
+				'schema_review_item_url'             => '',						// Review Subject Webpage URL
+				'schema_review_rating'               => '0.0',						// Review Rating
+				'schema_review_rating_from'          => '1',						// Review Rating (From)
+				'schema_review_rating_to'            => '5',						// Review Rating (To)
+				'schema_review_rating_alt_name'      => '',						// Review Rating Name
+				'schema_review_claim_reviewed'       => '',						// Summary of Claims Reviewed
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
@@ -447,7 +445,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$urls          = $this->p->cf['plugin']['wpssojson']['url'];
-			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, true );	// $ret_schema_id is true.
+			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true );
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
 			$warn_msg      = '';
@@ -752,7 +750,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_pub_org_id':
 
-					$text = __( 'Select a publisher for the Schema Article item type and/or its sub-type (NewsArticle, TechArticle, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a publisher for the Schema CreativeWork item type and/or its sub-type (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -1053,11 +1051,33 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text = __( 'A short summary of the specific claims reviewed in a Schema ClaimReview.', 'wpsso-schema-json-ld' );
 
 				 	break;
+			}
+
+			return $text;
+		}
+
+		/**
+		 * Tooltips for the Meta Defaults tab in the Schema Markup settings page.
+		 */
+		public function filter_messages_tooltip_schema( $text, $idx ) {
+
+			if ( strpos( $idx, 'tooltip-schema_def_' ) !== 0 ) {
+				return $text;
+			}
+
+			switch ( $idx ) {
+
+				case 'tooltip-schema_def_pub_org_id':
+
+					$text = __( 'Select a default publisher for the Schema CreativeWork item type and/or its sub-type (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+
+				 	break;
 
 			}
 
 			return $text;
 		}
+
 
 		/**
 		 * Hooked to 'wpssojson_status_gpl_features'.
@@ -1090,6 +1110,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Hooked to 'wpssojson_status_pro_features'.
 		 */
 		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
+
 			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 

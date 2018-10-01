@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.34.0-dev.1',	// Plugin version.
-					'opt_version' => '12',		// Increment when changing default option values.
+					'version'     => '1.34.0-dev.2',	// Plugin version.
+					'opt_version' => '13',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
 					'desc'        => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
@@ -106,6 +106,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 						),
 					),
+				),
+			),
+			'opt' => array(						// Plugin options.
+				'defaults' => array(
+					'schema_def_pub_org_id' => 'site',	// Default Creative Work Publisher
 				),
 			),
 			'menu' => array(
