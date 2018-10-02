@@ -696,7 +696,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.3 (2018/10/01)**
+**Version 1.34.0-dev.4 (2018/10/01)**
 
 * *New Features*
 	* None.
@@ -774,7 +774,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.0-dev.3 =
+= 1.34.0-dev.4 =
 
 (2018/10/01) Added new Schema Event options in the Document SSO metabox. Added a new "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
