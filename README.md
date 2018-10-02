@@ -143,10 +143,11 @@
 <li><a href="https://schema.org/Product">schema.org/Product</a> (includes 9 Schema types)</li>
 <li><a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
 <li><a href="https://schema.org/QAPage">schema.org/QAPage</a></li>
-<li><a href="https://schema.org/Question">schema.org/Question</a></li>
+<li><a href="https://pending.schema.org/Question">pending.schema.org/Question</a></li>
 <li><a href="https://schema.org/Recipe">schema.org/Recipe</a></li>
 <li><a href="https://schema.org/Review">schema.org/Review</a> (includes 2 Schema types)</li>
 <li><a href="https://schema.org/SearchResultsPage">schema.org/SearchResultsPage</a></li>
+<li><a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a> (includes 4 Schema types)</li>
 <li><a href="https://schema.org/WebPage">schema.org/WebPage</a> (includes 13 Schema types)</li>
 <li><a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>

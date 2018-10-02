@@ -123,10 +123,11 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/Product](https://schema.org/Product) (includes 9 Schema types)
 	* [schema.org/ProfilePage](https://schema.org/ProfilePage)
 	* [schema.org/QAPage](https://schema.org/QAPage)
-	* [schema.org/Question](https://schema.org/Question)
+	* [pending.schema.org/Question](https://pending.schema.org/Question)
 	* [schema.org/Recipe](https://schema.org/Recipe)
 	* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
 	* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
+	* [schema.org/SoftwareApplication](https://schema.org/SoftwareApplication) (includes 4 Schema types)
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 13 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
 
@@ -696,11 +697,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.4 (2018/10/01)**
+**Version 1.34.0-dev.4 (2018/10/02)**
 
 * *New Features*
 	* None.
 * *Improvements*
+	* Added support for the Schema SoftwareApplication type.
 	* Added new Schema Event options in the Document SSO metabox:
 		* Event Organizer Person
 		* Event Performer Person
@@ -776,7 +778,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.34.0-dev.4 =
 
-(2018/10/01) Added new Schema Event options in the Document SSO metabox. Added a new "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+(2018/10/02) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.33.0 =
 
