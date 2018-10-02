@@ -860,7 +860,7 @@ msgctxt "metabox title"
 msgid "Question / Answer Information"
 msgstr ""
 
-#: lib/pro/head/product.php:191
+#: lib/pro/head/product.php:205
 msgid "adding schema for product model"
 msgstr ""
 
