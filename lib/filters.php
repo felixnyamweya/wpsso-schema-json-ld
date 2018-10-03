@@ -1073,7 +1073,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_software_app_os':
 
-					$text = sprintf( __( 'Operating systems supported (Example: %s, etc.).', 'wpsso-schema-json-ld' ), '"Windows 7", "OSX 10.6", "Android 1.6"' );
+					$text = sprintf( __( 'Operating system supported (example: %s, etc.).', 'wpsso-schema-json-ld' ), '"Windows 7", "OSX 10.6", "Android 1.6"' );
 
 				 	break;
 			}

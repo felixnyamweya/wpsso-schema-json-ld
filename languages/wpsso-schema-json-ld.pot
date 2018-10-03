@@ -344,7 +344,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:1076
-msgid "Operating systems supported (Example: %s, etc.)."
+msgid "Operating system supported (example: %s, etc.)."
 msgstr ""
 
 #: lib/filters.php:1097
