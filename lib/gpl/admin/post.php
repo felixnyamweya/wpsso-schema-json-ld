@@ -90,6 +90,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 				'review_claim'   => $this->p->schema->get_children_css_class( 'review.claim', 'hide_schema_type' ),
+				'software_app'   => $this->p->schema->get_children_css_class( 'software.application', 'hide_schema_type' ),
 			);
 
 			if ( $this->p->debug->enabled ) {
@@ -745,7 +746,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema Claim Review
+				 * Schema ClaimReview
 				 */
 				'subsection_review_claim' => array(
 					'tr_class' => $schema_type_tr_class['review_claim'],
@@ -759,6 +760,23 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium',
 					'tooltip'  => 'meta-schema_review_claim_reviewed',
 					'content'  => $form->get_no_textarea_value( '', 'summary' ),
+				),
+
+				/**
+				 * Schema SoftwareApplication
+				 */
+				'subsection_software_app' => array(
+					'tr_class' => $schema_type_tr_class['software_app'],
+					'td_class' => 'subsection',
+					'header'   => 'h4',
+					'label'    => _x( 'Software Application Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_software_app_reviewed' => array(
+					'tr_class' => $schema_type_tr_class['software_app'],
+					'label'    => _x( 'Operating System', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium',
+					'tooltip'  => 'meta-schema_software_app_os',
+					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
 			);
 

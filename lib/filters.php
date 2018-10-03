@@ -405,6 +405,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
 				'schema_review_claim_reviewed'       => '',						// Summary of Claims Reviewed
+				'schema_software_app_os'             => '',						// Summary of Claims Reviewed
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
@@ -504,6 +505,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_yield':		// Recipe Makes
 				case 'schema_review_rating_alt_name':
 				case 'schema_review_claim_reviewed':
+				case 'schema_software_app_os':
 
 					return 'one_line';
 
@@ -1066,6 +1068,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_claim_reviewed':
 
 					$text = __( 'A short summary of the specific claims reviewed in a Schema ClaimReview.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_software_app_os':
+
+					$text = sprintf( __( 'Operating systems supported (Example: %s, etc.).', 'wpsso-schema-json-ld' ), '"Windows 7", "OSX 10.6", "Android 1.6"' );
 
 				 	break;
 			}
