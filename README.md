@@ -322,10 +322,19 @@
 <li>Review Information
 
 <ul>
-<li>Subject Name </li>
 <li>Subject Webpage URL </li>
 <li>Review Rating </li>
 <li>Review Rating Name</li>
+</ul></li>
+<li>Claim Review Information
+
+<ul>
+<li>Specific Claims Reviewed</li>
+</ul></li>
+<li>Software Application Information
+
+<ul>
+<li>Operating System</li>
 </ul></li>
 </ul></li>
 <li><p>Select any available Schema type or sub-type for your content, including the following and many more:</p>
@@ -406,7 +415,13 @@
 </ul></li>
 <li>Schema Type <a href="https://schema.org/Sculpture">schema.org/Sculpture</a></li>
 <li>Schema Type <a href="https://schema.org/Series">schema.org/Series</a></li>
-<li>Schema Type <a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a></li>
+<li>Schema Type <a href="https://schema.org/SoftwareApplication">schema.org/SoftwareApplication</a>
+
+<ul>
+<li>Schema Type <a href="https://schema.org/MobileApplication">schema.org/MobileApplication</a></li>
+<li>Schema Type <a href="https://schema.org/VideoGame">schema.org/VideoGame</a></li>
+<li>Schema Type <a href="https://schema.org/WebApplication">schema.org/WebApplication</a></li>
+</ul></li>
 <li>Schema Type <a href="https://schema.org/SoftwareSourceCode">schema.org/SoftwareSourceCode</a></li>
 <li>Schema Type <a href="https://schema.org/TVSeason">schema.org/TVSeason</a></li>
 <li>Schema Type <a href="https://schema.org/TVSeries">schema.org/TVSeries</a></li>

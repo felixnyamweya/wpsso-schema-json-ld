@@ -265,10 +265,13 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 			* Trans Fat
 			* Cholesterol
 	* Review Information
-		* Subject Name 
 		* Subject Webpage URL 
 		* Review Rating 
 		* Review Rating Name
+	* Claim Review Information
+		* Specific Claims Reviewed
+	* Software Application Information
+		* Operating System
 
 * Select any available Schema type or sub-type for your content, including the following and many more:
 
@@ -325,6 +328,9 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
 		* Schema Type [schema.org/Series](https://schema.org/Series)
 		* Schema Type [schema.org/SoftwareApplication](https://schema.org/SoftwareApplication)
+			* Schema Type [schema.org/MobileApplication](https://schema.org/MobileApplication)
+			* Schema Type [schema.org/VideoGame](https://schema.org/VideoGame)
+			* Schema Type [schema.org/WebApplication](https://schema.org/WebApplication)
 		* Schema Type [schema.org/SoftwareSourceCode](https://schema.org/SoftwareSourceCode)
 		* Schema Type [schema.org/TVSeason](https://schema.org/TVSeason)
 		* Schema Type [schema.org/TVSeries](https://schema.org/TVSeries)
@@ -697,12 +703,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.4 (2018/10/02)**
+**Version 1.34.0-dev.6 (2018/10/03)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added support for the Schema SoftwareApplication type.
+	* Added a new "Operating System" option in the Document SSO metabox for the Schema SoftwareApplication type.
 	* Added new Schema Event options in the Document SSO metabox:
 		* Event Organizer Person
 		* Event Performer Person
@@ -776,9 +783,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.0-dev.4 =
+= 1.34.0-dev.6 =
 
-(2018/10/02) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
+(2018/10/03) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
 = 1.33.0 =
 
