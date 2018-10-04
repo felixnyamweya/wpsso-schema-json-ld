@@ -1171,7 +1171,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						continue;
 					}
 
-					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl' . $sub . $id, false );	// $underscore is false.
+					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl' . $sub . $id, $allow_underscore = false );
 
 					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
