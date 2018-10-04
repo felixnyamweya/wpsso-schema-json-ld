@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.8
 WC Tested Up To: 3.4.5
-Stable Tag: 1.33.0
+Stable Tag: 1.34.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -703,13 +703,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.0-dev.6 (2018/10/03)**
+**Version 1.34.0 (2018/10/04)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added support for the Schema SoftwareApplication type.
-	* Added a new "Operating System" option in the Document SSO metabox for the Schema SoftwareApplication type.
+	* Added an "Operating System" option in the Document SSO metabox for the Schema SoftwareApplication type.
 	* Added new Schema Event options in the Document SSO metabox:
 		* Event Organizer Person
 		* Event Performer Person
@@ -783,11 +783,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.0-dev.6 =
+= 1.34.0 =
 
-(2018/10/03) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
-
-= 1.33.0 =
-
-(2018/09/29) Added a new "Event Venue" selection in the Document SSO metabox for the Schema Event type.
+(2018/10/04) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
