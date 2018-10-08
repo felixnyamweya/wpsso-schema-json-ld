@@ -446,7 +446,7 @@ msgid "Same-As URLs"
 msgstr ""
 
 #: lib/gpl/admin/post.php:169 lib/pro/admin/post.php:183
-#: lib/submenu/schema-general.php:155
+#: lib/submenu/schema-general.php:157
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
@@ -462,7 +462,7 @@ msgid "Creative Work Headline"
 msgstr ""
 
 #: lib/gpl/admin/post.php:196 lib/pro/admin/post.php:208
-#: lib/submenu/schema-general.php:170
+#: lib/submenu/schema-general.php:172
 msgctxt "metabox title"
 msgid "Course Information"
 msgstr ""
@@ -473,7 +473,7 @@ msgid "Course Provider"
 msgstr ""
 
 #: lib/gpl/admin/post.php:214 lib/pro/admin/post.php:225
-#: lib/submenu/schema-general.php:185
+#: lib/submenu/schema-general.php:187
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
@@ -586,7 +586,7 @@ msgid "How-To Steps"
 msgstr ""
 
 #: lib/gpl/admin/post.php:393 lib/pro/admin/post.php:391
-#: lib/submenu/schema-general.php:224
+#: lib/submenu/schema-general.php:226
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -935,62 +935,62 @@ msgctxt "metabox tab"
 msgid "Custom Meta Defaults"
 msgstr ""
 
-#: lib/submenu/schema-general.php:79
+#: lib/submenu/schema-general.php:81
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:83
+#: lib/submenu/schema-general.php:85
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:87
+#: lib/submenu/schema-general.php:89
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-general.php:158
+#: lib/submenu/schema-general.php:160
 msgctxt "option label"
 msgid "Default Creative Work Publisher"
 msgstr ""
 
-#: lib/submenu/schema-general.php:173
+#: lib/submenu/schema-general.php:175
 msgctxt "option label"
 msgid "Default Course Provider"
 msgstr ""
 
-#: lib/submenu/schema-general.php:188
+#: lib/submenu/schema-general.php:190
 msgctxt "option label"
 msgid "Default Event Organizer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:194
+#: lib/submenu/schema-general.php:196
 msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:200
+#: lib/submenu/schema-general.php:202
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:206
+#: lib/submenu/schema-general.php:208
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:212
+#: lib/submenu/schema-general.php:214
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:227
+#: lib/submenu/schema-general.php:229
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:233
+#: lib/submenu/schema-general.php:235
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""

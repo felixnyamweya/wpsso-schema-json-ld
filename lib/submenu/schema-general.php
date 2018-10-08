@@ -51,8 +51,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			$table_rows = array();
 
 			foreach ( $tabs as $tab_key => $title ) {
-				$table_rows[$tab_key] = apply_filters( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows', 
-					$this->get_table_rows( $metabox_id, $tab_key ), $this->form );
+				
+				$filter_name = $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows';
+
+				$table_rows[ $tab_key ] = apply_filters( $filter_name, $this->get_table_rows( $metabox_id, $tab_key ), $this->form );
 			}
 
 			$this->p->util->do_metabox_tabbed( $metabox_id, $tabs, $table_rows );
