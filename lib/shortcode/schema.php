@@ -55,9 +55,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 		public function strip_shortcodes_preg( $preg_array ) {
 
-			$preg_array[] = '/\[\/?' .
-				WPSSOJSON_SCHEMA_SHORTCODE_NAME .
-				WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . '[0-9]+[^\]]*\]/';
+			$preg_array[] = '/\[\/?' . WPSSOJSON_SCHEMA_SHORTCODE_NAME . WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . '[0-9]+[^\]]*\]/';
 
 			return $preg_array;
 		}
