@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.16.1',
+						'min_version' => '4.16.2-dev.3',
 					),
 					'img' => array(
 						'icons' => array(
