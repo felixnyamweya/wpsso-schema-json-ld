@@ -703,6 +703,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.34.1-dev.2 (2018/10/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.34.0 (2018/10/04)**
 
 * *New Features*
@@ -782,6 +793,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.34.1-dev.2 =
+
+(2018/10/17) None.
 
 = 1.34.0 =
 
