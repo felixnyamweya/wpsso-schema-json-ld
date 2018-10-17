@@ -710,7 +710,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* None.
+	* Added fallback default values for event organizer and place IDs (Pro version).
 * *Developer Notes*
 	* None.
 
@@ -796,7 +796,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.34.1-dev.2 =
 
-(2018/10/17) None.
+(2018/10/17) Added fallback default values for event organizer and place IDs (Pro version).
 
 = 1.34.0 =
 
