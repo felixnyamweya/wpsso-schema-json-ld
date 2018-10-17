@@ -106,14 +106,13 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				 * The get_options() method returns null if an index key is not found.
 				 * Return values are null, 'none', 'site', or number (including 0).
 				 */
-				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id' );
-
-				if ( null === $org_id ) {
-					$org_id = 'site'; // Default.
-				}
-
+				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id', $filter_opts = true );
 			} else {
-				$org_id = 'site'; // Default.
+				$org_id = null;
+			}
+
+			if ( null === $org_id ) {
+				$org_id = empty( $this->p->options[ 'schema_def_pub_org_id' ] ) ? 'site' : $this->p->options[ 'schema_def_pub_org_id' ];
 			}
 
 			if ( $this->p->debug->enabled ) {

@@ -356,7 +356,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_hiring_org_id'           => $opts['schema_def_job_hiring_org_id'],		// Job Hiring Organization
 				'schema_job_location_id'             => $opts['schema_def_job_location_id'],		// Job Location
 				'schema_job_salary'                  => '',						// Base Salary
-				'schema_job_salary_currency'         => $this->p->options['plugin_def_currency'],	// Base Salary Currency
+				'schema_job_salary_currency'         => $opts['plugin_def_currency'],			// Base Salary Currency
 				'schema_job_salary_period'           => 'year',						// Base Salary per Year, Month, Week, Hour
 				'schema_job_empl_type_full_time'     => 0,
 				'schema_job_empl_type_part_time'     => 0,
@@ -420,7 +420,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$schema_md_defs['schema_sameas_url_' . $key_num] = '';
 			}
 
-			return array_merge( $md_defs, $schema_md_defs );
+			$md_defs = array_merge( $md_defs, $schema_md_defs );
+
+			return $md_defs;
 		}
 
 		public function filter_rename_md_options_keys( $options_keys ) {
@@ -512,8 +514,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					break;
 
 				case 'schema_type':
+				case 'schema_pub_org_id':
+				case 'schema_course_provider_id':
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
+				case 'schema_event_organizer_org_id':
+				case 'schema_event_organizer_person_id':
+				case 'schema_event_performer_org_id':
+				case 'schema_event_performer_person_id':
+				case 'schema_event_location_id':
+				case 'schema_job_hiring_org_id':
+				case 'schema_job_location_id':
+				case 'schema_job_salary_currency':
+				case 'schema_job_salary_period':
 
 					return 'not_blank';
 

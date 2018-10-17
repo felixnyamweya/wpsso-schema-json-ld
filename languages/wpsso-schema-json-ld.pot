@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.34.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.34.1-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -30,7 +30,7 @@ msgid ""
 "Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
-#: lib/filters.php:466
+#: lib/filters.php:468
 msgid ""
 "The Free / Standard version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
@@ -38,30 +38,30 @@ msgid ""
 "included in the Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters.php:468
+#: lib/filters.php:470
 msgid ""
 "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
 "of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</"
 "a>."
 msgstr ""
 
-#: lib/filters.php:470
+#: lib/filters.php:472
 msgid ""
 "If this Schema type is an important classification for your content, you "
 "should consider purchasing the Pro version."
 msgstr ""
 
-#: lib/filters.php:476
+#: lib/filters.php:478
 msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
-#: lib/filters.php:742
+#: lib/filters.php:755
 msgid ""
 "Select a Schema item type that best describes the main content of this "
 "webpage."
 msgstr ""
 
-#: lib/filters.php:748
+#: lib/filters.php:761
 msgid ""
 "Additional (and optional) type URLs for the item, typically used to specify "
 "more precise types from an external vocabulary in microdata syntax. For "
@@ -69,322 +69,322 @@ msgid ""
 "www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr ""
 
-#: lib/filters.php:754
+#: lib/filters.php:767
 msgid ""
 "Additional (and optional) webpage reference URLs that unambiguously indicate "
 "the item's identity. For example, the URL of the item's Wikipedia page, "
 "Wikidata entry, IMDB page, official website, etc."
 msgstr ""
 
-#: lib/filters.php:760
+#: lib/filters.php:773
 msgid ""
 "Select a publisher for the Schema CreativeWork type and/or its sub-types "
 "(Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
-#: lib/filters.php:766
+#: lib/filters.php:779
 msgid ""
 "A custom headline for the Schema CreativeWork type and/or its sub-types."
 msgstr ""
 
-#: lib/filters.php:772
+#: lib/filters.php:785
 msgid ""
 "Select an organizer for the course service provider, service operator, or "
 "service performer (ie. the goods producer)."
 msgstr ""
 
-#: lib/filters.php:778
+#: lib/filters.php:791
 msgid "Select an organizer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:784
+#: lib/filters.php:797
 msgid "Select an organizer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:790
+#: lib/filters.php:803
 msgid "Select a performer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:796
+#: lib/filters.php:809
 msgid "Select a performer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:802
+#: lib/filters.php:815
 msgid "Select a venue (place / location) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:808
+#: lib/filters.php:821
 msgid "Select the event start date and time."
 msgstr ""
 
-#: lib/filters.php:814
+#: lib/filters.php:827
 msgid "Select the event end date and time."
 msgstr ""
 
-#: lib/filters.php:820
+#: lib/filters.php:833
 msgid "The date and time when tickets go on sale."
 msgstr ""
 
-#: lib/filters.php:826
+#: lib/filters.php:839
 msgid "The date and time when tickets are no longer on sale."
 msgstr ""
 
-#: lib/filters.php:832
+#: lib/filters.php:845
 msgid ""
 "One or more offers for the event, including the offer name, price and "
 "currency."
 msgstr ""
 
-#: lib/filters.php:838
+#: lib/filters.php:851
 msgid "A list of steps to complete this How-To."
 msgstr ""
 
-#: lib/filters.php:844
+#: lib/filters.php:857
 msgid "A list of supplies that are consumed when completing this How-To."
 msgstr ""
 
-#: lib/filters.php:850
+#: lib/filters.php:863
 msgid "A list of tools or objects that are required to complete this How-To."
 msgstr ""
 
-#: lib/filters.php:857
+#: lib/filters.php:870
 msgid ""
 "The total time it takes to prepare the items before executing the "
 "instruction steps."
 msgstr ""
 
-#: lib/filters.php:864
+#: lib/filters.php:877
 msgid ""
 "The total time required to perform the all instructions (including any "
 "preparation time)."
 msgstr ""
 
-#: lib/filters.php:870
+#: lib/filters.php:883
 msgid ""
 "The quantity made when following these How-To instructions (example: \"a "
 "paper airplane\", \"10 personalized candles\", etc.)."
 msgstr ""
 
-#: lib/filters.php:876
+#: lib/filters.php:889
 msgid ""
 "The title of this job, which may be different than the WordPress post / page "
 "title."
 msgstr ""
 
-#: lib/filters.php:882
+#: lib/filters.php:895
 msgid "Select a organization for the Schema JobPosting hiring organization."
 msgstr ""
 
-#: lib/filters.php:888
+#: lib/filters.php:901
 msgid "Select a place / location for the Schema JobPosting job location."
 msgstr ""
 
-#: lib/filters.php:894
+#: lib/filters.php:907
 msgid ""
 "Optionally provide details on the base salary. The base salary must be "
 "numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency "
 "symbols, as these are not valid numeric values."
 msgstr ""
 
-#: lib/filters.php:900
+#: lib/filters.php:913
 msgid ""
 "Check one or more Google approved employment types (see <a href=\"%s"
 "\">Google's Job Posting guidelines</a> for more information)."
 msgstr ""
 
-#: lib/filters.php:906
+#: lib/filters.php:919
 msgid ""
 "Select a job posting expiration date and time. If a job posting never "
 "expires, or you do not know when the job will expire, do not select an "
 "expiration date and time."
 msgstr ""
 
-#: lib/filters.php:912
+#: lib/filters.php:925
 msgid ""
 "Optionally select a different organization for the Schema Organization item "
 "type and/or its sub-type (Airline, Corporation, School, etc). Select "
 "\"[None]\" to use the default organization details."
 msgstr ""
 
-#: lib/filters.php:918
+#: lib/filters.php:931
 msgctxt "user role"
 msgid "Person"
 msgstr ""
 
-#: lib/filters.php:920
+#: lib/filters.php:933
 msgid ""
 "Select a person from the list of eligible WordPress users &mdash; to be "
 "included in this list, a user must be members of the WordPress \"%s\" role."
 msgstr ""
 
-#: lib/filters.php:926
+#: lib/filters.php:939
 msgid "An optional heading / description of the question and it's answer."
 msgstr ""
 
-#: lib/filters.php:928
+#: lib/filters.php:941
 msgid ""
 "If the question is part of a larger group of questions on the same subject, "
 "then this would be an appropriate field to describe that subject (example: "
 "\"QA about a Flying Toaster\" )."
 msgstr ""
 
-#: lib/filters.php:934
+#: lib/filters.php:947
 msgid "A person's job title (for example, Financial Manager)."
 msgstr ""
 
-#: lib/filters.php:940
+#: lib/filters.php:953
 msgid ""
 "The cooking method used for this recipe (example: Baking, Frying, Steaming, "
 "etc.)"
 msgstr ""
 
-#: lib/filters.php:946
+#: lib/filters.php:959
 msgid "The total time it takes to cook this recipe."
 msgstr ""
 
-#: lib/filters.php:952
+#: lib/filters.php:965
 msgid ""
 "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main "
 "Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr ""
 
-#: lib/filters.php:958
+#: lib/filters.php:971
 msgid ""
 "The type of cuisine for this recipe (example: French, Indian, Italian, "
 "Japanese, Thai, etc.)."
 msgstr ""
 
-#: lib/filters.php:964
+#: lib/filters.php:977
 msgid ""
 "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt"
 "\", etc.)."
 msgstr ""
 
-#: lib/filters.php:970
+#: lib/filters.php:983
 msgid ""
 "A list of instructions for this recipe (example: \"beat eggs\", \"add and "
 "mix flour\", etc.)."
 msgstr ""
 
-#: lib/filters.php:976
+#: lib/filters.php:989
 msgid ""
 "The serving size in volume or mass. A serving size is required to include "
 "nutrition information in the Schema recipe markup."
 msgstr ""
 
-#: lib/filters.php:982
+#: lib/filters.php:995
 msgid "The number of calories per serving."
 msgstr ""
 
-#: lib/filters.php:988
+#: lib/filters.php:1001
 msgid "The number of grams of protein per serving."
 msgstr ""
 
-#: lib/filters.php:994
+#: lib/filters.php:1007
 msgid "The number of grams of fiber per serving."
 msgstr ""
 
-#: lib/filters.php:1000
+#: lib/filters.php:1013
 msgid "The number of grams of carbohydrates per serving."
 msgstr ""
 
-#: lib/filters.php:1006
+#: lib/filters.php:1019
 msgid "The number of grams of sugar per serving."
 msgstr ""
 
-#: lib/filters.php:1012
+#: lib/filters.php:1025
 msgid "The number of milligrams of sodium per serving."
 msgstr ""
 
-#: lib/filters.php:1018
+#: lib/filters.php:1031
 msgid "The number of grams of fat per serving."
 msgstr ""
 
-#: lib/filters.php:1024
+#: lib/filters.php:1037
 msgid "The number of grams of trans fat per serving."
 msgstr ""
 
-#: lib/filters.php:1030
+#: lib/filters.php:1043
 msgid "The number of grams of saturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:1036
+#: lib/filters.php:1049
 msgid "The number of grams of unsaturated fat per serving."
 msgstr ""
 
-#: lib/filters.php:1042
+#: lib/filters.php:1055
 msgid "The number of milligrams of cholesterol per serving."
 msgstr ""
 
-#: lib/filters.php:1048
+#: lib/filters.php:1061
 msgid ""
 "The quantity or servings made by this recipe (example: \"5 servings\", "
 "\"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr ""
 
-#: lib/filters.php:1054
+#: lib/filters.php:1067
 msgid "A webpage URL for the subject being reviewed."
 msgstr ""
 
-#: lib/filters.php:1060
+#: lib/filters.php:1073
 msgid ""
 "A rating for the subject being reviewed, along with the low/high rating "
 "scale (default is 1 to 5)."
 msgstr ""
 
-#: lib/filters.php:1064
+#: lib/filters.php:1077
 msgid ""
 "An alternate name / description for the rating value (example: False, "
 "Misleading, Accurate, etc.)."
 msgstr ""
 
-#: lib/filters.php:1070
+#: lib/filters.php:1083
 msgid ""
 "A short summary of the specific claims reviewed in a Schema ClaimReview."
 msgstr ""
 
-#: lib/filters.php:1076
+#: lib/filters.php:1089
 msgid "Operating system supported (example: %s, etc.)."
 msgstr ""
 
-#: lib/filters.php:1097
+#: lib/filters.php:1110
 msgid ""
 "Select a default publisher for the Schema CreativeWork type and/or its sub-"
 "types (Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
-#: lib/filters.php:1103
+#: lib/filters.php:1116
 msgid ""
 "Select a default organizer for the course service provider, service "
 "operator, or service performer (ie. the goods producer)."
 msgstr ""
 
-#: lib/filters.php:1109
+#: lib/filters.php:1122
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1115
+#: lib/filters.php:1128
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1121
+#: lib/filters.php:1134
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1127
+#: lib/filters.php:1140
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1133
+#: lib/filters.php:1146
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1139
+#: lib/filters.php:1152
 msgid ""
 "Select a default organization for the Schema JobPosting hiring organization."
 msgstr ""
 
-#: lib/filters.php:1145
+#: lib/filters.php:1158
 msgid ""
 "Select a default place / location for the Schema JobPosting job location."
 msgstr ""
