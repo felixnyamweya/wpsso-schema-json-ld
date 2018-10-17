@@ -107,6 +107,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				 * Return values are null, 'none', 'site', or number (including 0).
 				 */
 				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id', $filter_opts = true );
+
 			} else {
 				$org_id = null;
 			}
