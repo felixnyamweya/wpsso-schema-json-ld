@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.1-dev.4 (2018/10/19)**
+**Version 1.34.1-dev.5 (2018/10/19)**
 
 * *New Features*
 	* None.
@@ -794,7 +794,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.1-dev.4 =
+= 1.34.1-dev.5 =
 
 (2018/10/19) Added fallback default values for event organizer and place IDs (Pro version).
 
