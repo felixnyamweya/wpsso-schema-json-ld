@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.8
-WC Tested Up To: 3.4.5
+WC Tested Up To: 3.4.7
 Stable Tag: 1.34.0
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
@@ -659,7 +659,7 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the [WPSSO Core Pl
 
 * [Can I add custom Schema properties to the JSON-LD?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-custom-schema-properties-to-the-json-ld/)
 
-<h3>Documentation and Notes</h3>
+<h3>Advanced Documentation and Notes</h3>
 
 * [Developer Resources](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/)
 	* [Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/)
@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.1-dev.3 (2018/10/17)**
+**Version 1.34.1-dev.4 (2018/10/19)**
 
 * *New Features*
 	* None.
@@ -794,9 +794,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.1-dev.3 =
+= 1.34.1-dev.4 =
 
-(2018/10/17) Added fallback default values for event organizer and place IDs (Pro version).
+(2018/10/19) Added fallback default values for event organizer and place IDs (Pro version).
 
 = 1.34.0 =
 
