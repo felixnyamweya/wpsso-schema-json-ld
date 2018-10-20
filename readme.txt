@@ -172,7 +172,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 		* Bitly
 		* Facebook Embedded Videos
-		* Google URL Shortener
+		* Google Places
 		* Gravatar (Author Image)
 		* Ow.ly
 		* Slideshare Presentations
@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.1-dev.5 (2018/10/20)**
+**Version 1.34.1-dev.6 (2018/10/20)**
 
 * *New Features*
 	* None.
@@ -794,7 +794,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.1-dev.5 =
+= 1.34.1-dev.6 =
 
 (2018/10/20) Added fallback default values for event organizer and place IDs (Pro version).
 
