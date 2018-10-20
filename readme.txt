@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.1-dev.6 (2018/10/20)**
+**Version 1.34.1 (2018/10/20)**
 
 * *New Features*
 	* None.
@@ -794,11 +794,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.1-dev.6 =
+= 1.34.1 =
 
 (2018/10/20) Added fallback default values for event organizer and place IDs (Pro version).
-
-= 1.34.0 =
-
-(2018/10/04) Added support for the Schema SoftwareApplication type. Added new Schema Event options in the Document SSO metabox. Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page.
 
