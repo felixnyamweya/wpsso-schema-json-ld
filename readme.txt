@@ -703,6 +703,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.34.2-dev.7 (2018/10/22)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added support for the new WpssoPage get_the_text() method.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.34.1 (2018/10/20)**
 
 * *New Features*
@@ -793,6 +804,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.34.2-dev.7 =
+
+(2018/10/22) Added support for the new WpssoPage get_the_text() method.
 
 = 1.34.1 =
 
