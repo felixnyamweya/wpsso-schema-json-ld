@@ -54,8 +54,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 			$saved_table_rows = array();
 
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
+
 				if ( isset( $table_rows[$key] ) ) {
+
 					$saved_table_rows[$key] = $table_rows[$key];
+
 					unset( $table_rows[$key] );
 				}
 			}

@@ -69,8 +69,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *      text
 			 */
-			$ret['text'] = $this->p->page->get_the_content( $mod );
-			$ret['text'] = $this->p->util->cleanup_html_tags( $ret['text'], true, $this->p->options['plugin_use_img_alt'] );
+			$ret['text'] = $this->p->page->get_the_text( $mod );
 
 			if ( empty( $ret['text'] ) ) { // Just in case.
 				unset( $ret['text'] );
