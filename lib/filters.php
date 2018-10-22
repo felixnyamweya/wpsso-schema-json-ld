@@ -782,13 +782,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_headline':
 
-					$text = __( 'The headline for this Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+					$text = __( 'The headline for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_text':
 
-					$text = __( 'The complete textual and searchable content for this CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+					$text = __( 'The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

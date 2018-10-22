@@ -83,13 +83,13 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:785
-msgid "The headline for this Schema CreativeWork type and/or its sub-types."
+msgid "The headline for the Schema CreativeWork type and/or its sub-types."
 msgstr ""
 
 #: lib/filters.php:791
 msgid ""
-"The complete textual and searchable content for this CreativeWork type and/"
-"or its sub-types."
+"The complete textual and searchable content for the Schema CreativeWork type "
+"and/or its sub-types."
 msgstr ""
 
 #: lib/filters.php:797

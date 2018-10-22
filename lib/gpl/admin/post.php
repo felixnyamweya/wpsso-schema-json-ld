@@ -196,7 +196,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class'      => $schema_type_tr_class['creative_work'],
 					'th_class'      => 'medium',
 					'td_class'      => 'blank',
-					'label'         => _x( 'Creative Work Full Text', 'option label', 'wpsso' ),
+					'label'         => _x( 'Creative Work Full Text', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'       => 'meta-schema_text',
 					'content'       => $form->get_no_textarea_value( $def_schema_text, 'full_text' ),
 				),
