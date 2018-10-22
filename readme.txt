@@ -708,11 +708,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Added support for the new WpssoPage get_the_text() method.
+	* Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* None.
+	* Added support for the new WpssoPage get_the_text() method.
 
 **Version 1.34.1 (2018/10/20)**
 
@@ -807,7 +807,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.34.2-dev.7 =
 
-(2018/10/22) Added support for the new WpssoPage get_the_text() method.
+(2018/10/22) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 
 = 1.34.1 =
 
