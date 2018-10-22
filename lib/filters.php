@@ -239,7 +239,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret['name'] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
 
-			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_len'], '...', $mod, true, false, true, 'schema_title_alt' );
+			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_max_len'], '...', $mod, true, false, true, 'schema_title_alt' );
 
 			if ( $ret['name'] === $ret['alternateName'] ) {
 				unset( $ret['alternateName'] );
@@ -253,9 +253,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'getting schema description with custom meta fallback: schema_desc, seo_desc, og_desc' );
 			}
 
-			$md_idx = array( 'schema_desc', 'seo_desc', 'og_desc' );
-
-			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_len'], '...', $mod, true, false, true, $md_idx );
+			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_max_len'],
+				$dots = '...', $mod, $read_cache = true, $add_hashtags = false, $do_encode = true,
+					$md_idx = array( 'schema_desc', 'seo_desc', 'og_desc' ) );
 
 			/**
 			 * Property:
@@ -325,6 +325,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_desc'                        => '',
 				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Creative Work Publisher
 				'schema_headline'                    => '',						// Creative Work Headline
+				'schema_text'                        => '',						// Creative Work Full Text
 				'schema_course_provider_id'          => $opts['schema_def_course_provider_id'],		// Course Provider 
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
@@ -490,6 +491,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $base_key ) {
 
+				case 'schema_title':
+				case 'schema_title_alt':
+				case 'schema_desc':
+				case 'schema_headline':
+				case 'schema_text':
 				case 'schema_event_offer_name':
 				case 'schema_howto_step':
 				case 'schema_howto_supply':
@@ -776,7 +782,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_headline':
 
-					$text = __( 'A custom headline for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+					$text = __( 'The headline for this Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_text':
+
+					$text = __( 'The complete textual and searchable content for this CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

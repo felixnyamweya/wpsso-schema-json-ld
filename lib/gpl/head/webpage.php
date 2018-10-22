@@ -55,10 +55,11 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			if ( $this->p->schema->is_schema_type_child( $type_id, 'article' ) ) {
 
-				$org_logo_key    = 'org_banner_url';                       // Use a banner for all article sub-types.
-				$size_name       = $this->p->lca . '-schema-article';      // Same size, but minimum width is 696px.
-				$title_max_len   = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-				$ret['headline'] = $this->p->page->get_title( $title_max_len, '...', $mod );
+				$org_logo_key     = 'org_banner_url';                       // Use a banner for all article sub-types.
+				$size_name        = $this->p->lca . '-schema-article';      // Same size, but minimum width is 696px.
+				$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
+
+				$ret['headline'] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
 			} else {
 				$org_logo_key = 'org_logo_url';
@@ -69,10 +70,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *      text
 			 */
-			$ret['text'] = $this->p->page->get_the_text( $mod );
+			$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_idx = 'schema_text' );
 
-			if ( empty( $ret['text'] ) ) { // Just in case.
-				unset( $ret['text'] );
+			if ( empty( $ret[ 'text' ] ) ) { // Just in case.
+				unset( $ret[ 'text' ] );
 			}
 
 			/**

@@ -32,15 +32,16 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
 			}
 
-			$dots       = '...';
-			$read_cache = true;
-			$do_encode  = true;
+			$dots           = '...';
+			$read_cache     = true;
+			$no_hashtags    = false;
+			$maybe_hashtags = true;
+			$do_encode      = true;
 
-			$og_title_max_len    = $this->p->options['og_title_len'];
-			$schema_desc_max_len = $this->p->options['schema_desc_len'];
+			$og_title_max_len = $this->p->options['og_title_max_len'];
 
-			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, false, $do_encode, 'og_title' );
-			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, false, $do_encode, 'og_title' );
+			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
+			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark( 'setup post form variables' );	// Timer end.
@@ -53,11 +54,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 
 			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
 
-				if ( isset( $table_rows[$key] ) ) {
+				if ( isset( $table_rows[ $key ] ) ) {
 
-					$saved_table_rows[$key] = $table_rows[$key];
+					$saved_table_rows[ $key ] = $table_rows[ $key ];
 
-					unset ( $table_rows[$key] );
+					unset ( $table_rows[ $key ] );
 				}
 			}
 
@@ -109,13 +110,17 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 
 			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 
+			/**
+			 * Restore the saved rows.
+			 */
 			foreach ( $saved_table_rows as $key => $value ) {
 				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
-			return SucomUtil::get_after_key( $table_rows, 'subsection_schema', '',
-				'<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg',
-					array( 'lca' => 'wpssojson' ) ) . '</td>' );
+			SucomUtil::add_after_key( $table_rows, 'subsection_schema', '', '<td colspan="2">' .
+				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
+
+			return $table_rows;
 		}
 	}
 }
