@@ -162,9 +162,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 * Add the shortened URL for posts (which may be different to the shortlink), terms, and users.
 				 */
 				if ( ! empty( $this->p->options['plugin_shortener'] ) && $this->p->options['plugin_shortener'] !== 'none' ) {
+
 					if ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
-						$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url',
-							$mt_og['og:url'], $this->p->options['plugin_shortener'], $mod, $mod['name'] );
+
+						$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og['og:url'],
+							$this->p->options['plugin_shortener'], $mod );
 					}
 				}
 
@@ -172,6 +174,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 * Get additional sameAs URLs from the post/term/user custom meta.
 				 */
 				if ( is_array( $mod_opts ) ) {	// Just in case
+
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $url ) {
 						$ret['sameAs'][] = SucomUtil::esc_url_encode( $url );
 					}
