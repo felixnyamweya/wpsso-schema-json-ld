@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.2-dev.7 (2018/10/22)**
+**Version 1.34.2-dev.8 (2018/10/23)**
 
 * *New Features*
 	* None.
@@ -712,7 +712,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Added support for the new WpssoPage get_the_text() method.
+	* Added support for the new WpssoPage get_the_text() method in WPSSO Core v4.16.3.
 
 **Version 1.34.1 (2018/10/20)**
 
@@ -805,9 +805,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.2-dev.7 =
+= 1.34.2-dev.8 =
 
-(2018/10/22) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
+(2018/10/23) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 
 = 1.34.1 =
 
