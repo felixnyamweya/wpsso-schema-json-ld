@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.34.2-b.1 (2018/10/23)**
+**Version 1.34.2 (2018/10/24)**
 
 * *New Features*
 	* None.
@@ -805,11 +805,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.34.2-b.1 =
+= 1.34.2 =
 
-(2018/10/23) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
-
-= 1.34.1 =
-
-(2018/10/20) Added fallback default values for event organizer and place IDs (Pro version).
+(2018/10/24) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 
