@@ -33,7 +33,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaShortcode' ) && class_exists( 'Wpsso
 			) );
 		}
 
-		// called by the extended WpssoAdmin class
+		/**
+		 * Called by the extended WpssoAdmin class.
+		 */
 		protected function add_meta_boxes() {
 			add_meta_box( $this->pagehook.'_schema_shortcode',
 				_x( 'Schema Shortcode', 'metabox title', 'wpsso-schema-json-ld' ),

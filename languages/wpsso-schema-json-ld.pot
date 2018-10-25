@@ -451,7 +451,7 @@ msgid "Same-As URLs"
 msgstr ""
 
 #: lib/gpl/admin/post.php:175 lib/pro/admin/post.php:189
-#: lib/submenu/schema-general.php:157
+#: lib/submenu/schema-general.php:159
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
@@ -472,7 +472,7 @@ msgid "Creative Work Full Text"
 msgstr ""
 
 #: lib/gpl/admin/post.php:211 lib/pro/admin/post.php:222
-#: lib/submenu/schema-general.php:172
+#: lib/submenu/schema-general.php:174
 msgctxt "metabox title"
 msgid "Course Information"
 msgstr ""
@@ -483,7 +483,7 @@ msgid "Course Provider"
 msgstr ""
 
 #: lib/gpl/admin/post.php:229 lib/pro/admin/post.php:239
-#: lib/submenu/schema-general.php:187
+#: lib/submenu/schema-general.php:189
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
@@ -596,7 +596,7 @@ msgid "How-To Steps"
 msgstr ""
 
 #: lib/gpl/admin/post.php:408 lib/pro/admin/post.php:405
-#: lib/submenu/schema-general.php:226
+#: lib/submenu/schema-general.php:228
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -920,92 +920,92 @@ msgid ""
 "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""
 
-#: lib/submenu/schema-general.php:36
+#: lib/submenu/schema-general.php:38
 msgctxt "metabox title"
 msgid "Schema JSON-LD Markup"
 msgstr ""
 
-#: lib/submenu/schema-general.php:45
+#: lib/submenu/schema-general.php:47
 msgctxt "metabox tab"
 msgid "Schema Properties"
 msgstr ""
 
-#: lib/submenu/schema-general.php:46
+#: lib/submenu/schema-general.php:48
 msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr ""
 
-#: lib/submenu/schema-general.php:47
+#: lib/submenu/schema-general.php:49
 msgctxt "metabox tab"
 msgid "Knowledge Graph"
 msgstr ""
 
-#: lib/submenu/schema-general.php:48
+#: lib/submenu/schema-general.php:50
 msgctxt "metabox tab"
 msgid "Custom Meta Defaults"
 msgstr ""
 
-#: lib/submenu/schema-general.php:81
+#: lib/submenu/schema-general.php:83
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:85
+#: lib/submenu/schema-general.php:87
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:89
+#: lib/submenu/schema-general.php:91
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-general.php:160
+#: lib/submenu/schema-general.php:162
 msgctxt "option label"
 msgid "Default Creative Work Publisher"
 msgstr ""
 
-#: lib/submenu/schema-general.php:175
+#: lib/submenu/schema-general.php:177
 msgctxt "option label"
 msgid "Default Course Provider"
 msgstr ""
 
-#: lib/submenu/schema-general.php:190
+#: lib/submenu/schema-general.php:192
 msgctxt "option label"
 msgid "Default Event Organizer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:196
+#: lib/submenu/schema-general.php:198
 msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:202
+#: lib/submenu/schema-general.php:204
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:208
+#: lib/submenu/schema-general.php:210
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:214
+#: lib/submenu/schema-general.php:216
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:229
+#: lib/submenu/schema-general.php:231
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:235
+#: lib/submenu/schema-general.php:237
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""
 
-#: lib/submenu/schema-shortcode.php:39
+#: lib/submenu/schema-shortcode.php:41
 msgctxt "metabox title"
 msgid "Schema Shortcode"
 msgstr ""
