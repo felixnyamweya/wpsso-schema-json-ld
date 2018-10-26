@@ -34,9 +34,17 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 			$this->maybe_show_language_notice();
 
-			add_meta_box( $this->pagehook . '_schema_general', 
-				_x( 'Schema JSON-LD Markup', 'metabox title', 'wpsso-schema-json-ld' ),
-					array( $this, 'show_metabox_schema_general' ), $this->pagehook, 'normal' );
+			$metabox_id      = 'schema_general';
+			$metabox_title   = _x( 'Schema JSON-LD Markup', 'metabox title', 'wpsso-schema-json-ld' );
+			$metabox_screen  = $this->pagehook;
+			$metabox_context = 'normal';
+			$metabox_prio    = 'default';
+			$callback_args   = array(	// Second argument passed to the callback function / method.
+			);
+
+			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
+				array( $this, 'show_metabox_schema_general' ), $metabox_screen,
+					$metabox_context, $metabox_prio, $callback_args );
 		}
 
 		public function show_metabox_schema_general() {

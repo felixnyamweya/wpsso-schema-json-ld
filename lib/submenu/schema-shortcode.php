@@ -37,13 +37,24 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaShortcode' ) && class_exists( 'Wpsso
 		 * Called by the extended WpssoAdmin class.
 		 */
 		protected function add_meta_boxes() {
-			add_meta_box( $this->pagehook.'_schema_shortcode',
-				_x( 'Schema Shortcode', 'metabox title', 'wpsso-schema-json-ld' ),
-					array( $this, 'show_metabox_schema_shortcode' ), $this->pagehook, 'normal' );
+
+			$metabox_id      = 'schema_shortcode';
+			$metabox_title   = _x( 'Schema Shortcode', 'metabox title', 'wpsso-schema-json-ld' );
+			$metabox_screen  = $this->pagehook;
+			$metabox_context = 'normal';
+			$metabox_prio    = 'default';
+			$callback_args   = array(	// Second argument passed to the callback function / method.
+			);
+
+			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
+				array( $this, 'show_metabox_schema_shortcode' ), $metabox_screen,
+					$metabox_context, $metabox_prio, $callback_args );
 		}
 
 		public function filter_action_buttons( $action_buttons ) {
+
 			unset( $action_buttons[0] );
+
 			return $action_buttons;
 		}
 
