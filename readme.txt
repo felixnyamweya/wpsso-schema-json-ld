@@ -84,9 +84,8 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* User for Person Social Profile
 	* Custom Meta Defaults
 		* Creative Work Information
-			* Default Creative Work Publisher
-		* Course Information
-			* Default Course Provider
+			* Default Publisher
+			* Default Service Provider
 		* Event Information
 			* Default Event Organizer Org.
 			* Default Event Organizer Person
@@ -205,10 +204,10 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Microdata Type URLs
 		* Same-As URLs
 	* Creative Work Information
-		* Creative Work Publisher
-		* Creative Work Headline
-	* Course Information
-		* Course Provider
+		* Headline
+		* Full Text
+		* Publisher
+		* Service Provider
 	* Event Information
 		* Event Organizer Org.
 		* Event Organizer Person
@@ -234,6 +233,11 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Job Posting Base Salary
 		* Job Posting Employment Type
 		* Job Posting Expires
+	* Movie Information
+		* Cast Names
+		* Director Names
+		* Production Company
+		* Movie Runtime
 	* Organization Information
 		* Organization
 	* Person Information
@@ -703,12 +707,31 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.35.0-dev.1 (2018/10/29)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added new Schema Movie options in the Document SSO metabox:
+		* Cast Names
+		* Director Names
+		* Production Company
+		* Movie Runtime
+	* Renamed the "Course Provider" option in the Document SSO metabox to "Service Provider".
+	* Renamed the "Default Course Provider" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab to "Default Service Provider".
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Added support for new methods in WPSSO Core v4.16.4:
+		* WpssoSchema::add_data_time_from_assoc().
+		* WpssoSchema::check_itemprop_content_map().
+
 **Version 1.34.2 (2018/10/24)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
+	* Added a new "Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -737,7 +760,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Event Performer Person
 	* Added a "Custom Meta Defaults" tab in the SSO &gt; Schema Markup settings page to select default values:
 		* Creative Work Information
-			* Default Creative Work Publisher
+			* Default Publisher
 		* Course Information
 			* Default Course Provider
 		* Event Information
@@ -805,7 +828,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 1.35.0-dev.1 =
+
+(2018/10/29) Added new Schema Movie options in the Document SSO metabox. Renamed the "Course Provider" and "Default Course Provider" options.
+
 = 1.34.2 =
 
-(2018/10/24) Added a new "Creative Work Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
+(2018/10/24) Added a new "Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
 
