@@ -24,7 +24,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 	class WpssoJsonGplHeadWebPage {
 
-		protected $p;
+		private $p;
 
 		public function __construct( &$plugin ) {
 
@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			) );
 		}
 
-		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $type_id, $is_main ) {
+		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
@@ -50,21 +50,21 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			$ret = array();
 
-			/**
-			 * The blogposting type is a sub-type of article. Use the article image size and add the headline property.
-			 */
-			if ( $this->p->schema->is_schema_type_child( $type_id, 'article' ) ) {
-
-				$org_logo_key     = 'org_banner_url';                       // Use a banner for all article sub-types.
-				$size_name        = $this->p->lca . '-schema-article';      // Same size, but minimum width is 696px.
-				$headline_max_len = $this->p->cf['head']['limit_max']['schema_article_headline_len'];
-
-				$ret['headline'] = $this->p->page->get_title( $headline_max_len, '...', $mod );
-
+			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'article' ) ) {
+				$org_logo_key = 'org_banner_url';
+				$size_name    = $this->p->lca . '-schema-article';
 			} else {
 				$org_logo_key = 'org_logo_url';
 				$size_name    = $this->p->lca . '-schema';
 			}
+
+			/**
+			 * Property:
+			 * 	headline
+			 */
+			$headline_max_len  = $this->p->cf['head']['limit_max']['schema_headline_len'];
+
+			$ret[ 'headline' ] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
 			/**
 			 * Property:
@@ -80,10 +80,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *      inLanguage - only valid for CreativeWork and Event
 			 */
-			$ret['inLanguage'] = SucomUtil::get_locale( $mod );
+			$ret[ 'inLanguage' ] = SucomUtil::get_locale( $mod );
 
-			if ( empty( $ret['inLanguage'] ) ) { // Just in case.
-				unset( $ret['inLanguage'] );
+			if ( empty( $ret[ 'inLanguage' ] ) ) { // Just in case.
+				unset( $ret[ 'inLanguage' ] );
 			}
 
 			/**
@@ -98,41 +98,44 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
+			 *      copyrightYear
+			 */
+			if ( ! empty( $mod[ 'obj' ] ) ) {
+
+				foreach ( array(
+					'copyrightYear' => 'schema_copyright_year',
+				) as $itemprop_name => $md_idx ) {
+
+					$ret[ $itemprop_name ] = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
+	
+					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
+						unset( $ret[ $itemprop_name ] );
+					}
+				}
+			}
+
+			/**
+			 * Property:
 			 *      publisher
 			 */
-			foreach ( array(
-				'publisher' => 'schema_pub_org_id',
-			) as $itemprop_name => $md_idx ) {
+			if ( ! empty( $mod[ 'obj' ] ) ) {
 
-				if ( ! empty( $mod['obj'] ) ) {
+				foreach ( array(
+					'provider'  => 'schema_prov_org_id',
+					'publisher' => 'schema_pub_org_id',
+				) as $itemprop_name => $md_idx ) {
 	
-					/**
-					 * The get_options() method returns null if an index key is not found.
-					 * Return values are null, 'none', 'site', or number (including 0).
-					 */
-					$org_id = $mod['obj']->get_options( $mod['id'], $md_idx, $filter_opts = true );
+					$id = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
 	
-				} else {
-					$org_id = null;
-				}
+					if ( $id === null || $id === 'none' ) {
+						continue;
+					}
 	
-				if ( null === $org_id ) {
-					$org_id = empty( $this->p->options[ $md_idx ] ) ? 'none' : $this->p->options[ $md_idx ];
-				}
-	
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( $itemprop_name . ' organization ID is "' . $org_id . '"' );
-				}
-	
-				/**
-				 * $org_id can be 'none', 'site', or a number (including 0).
-				 * $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles.
-				 * do not provide localized option names - the method will fetch the localized values.
-				 */
-				WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $org_id, $org_logo_key, false ); // $list_element = false.
-	
-				if ( empty( $ret[ $itemprop_name ] ) ) {
-					unset( $ret[ $itemprop_name ] );
+					WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $id, $org_logo_key, false ); // $list_element = false.
+		
+					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
+						unset( $ret[ $itemprop_name ] );
+					}
 				}
 			}
 

@@ -163,7 +163,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_creative_work' => array(
 					'td_class' => 'subsection top',
-					'header'   => 'h4',
+					'header'   => 'h5',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_pub_org_id' => array(
@@ -184,7 +184,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_event' => array(
 					'td_class' => 'subsection',
-					'header'   => 'h4',
+					'header'   => 'h5',
 					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_event_organizer_org_id' => array(
@@ -223,7 +223,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_job' => array(
 					'td_class' => 'subsection',
-					'header'   => 'h4',
+					'header'   => 'h5',
 					'label'    => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_job_hiring_org_id' => array(

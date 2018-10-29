@@ -90,9 +90,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret['additionalType'] = array();
 
-			if ( is_object( $mod['obj'] ) ) {
+			if ( is_object( $mod[ 'obj' ] ) ) {
 
-				$mod_opts = $mod['obj']->get_options( $mod['id'] );
+				$mod_opts = $mod[ 'obj' ]->get_options( $mod['id'] );
 
 				if ( is_array( $mod_opts ) ) {	// Just in case.
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
@@ -122,9 +122,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret['sameAs'] = array();
 
-			if ( is_object( $mod['obj'] ) ) {
+			if ( is_object( $mod[ 'obj' ] ) ) {
 
-				$mod_opts = $mod['obj']->get_options( $mod['id'] );
+				$mod_opts = $mod[ 'obj' ]->get_options( $mod['id'] );
 
 				$ret['sameAs'][] = $this->p->util->get_canonical_url( $mod );
 
@@ -319,11 +319,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$timezone = 'UTC';
 			}
 
-			$opts        =& $this->p->options;	// Shortcute for plugin options array.
-			$schema_type = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
+			$opts               =& $this->p->options;	// Shortcute for plugin options array.
+			$def_copyright_year = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod['id'] ) ) : '';
+			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 
 			$schema_md_defs = array(
-				'schema_type'                        => $schema_type,
+				'schema_type'                        => $def_schema_type,
 				'schema_title'                       => '',
 				'schema_title_alt'                   => '',
 				'schema_desc'                        => '',
@@ -331,6 +332,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_text'                        => '',						// Full Text
 				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Publisher
 				'schema_prov_org_id'                 => $opts['schema_def_prov_org_id'],		// Service Provider
+				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
 				'schema_event_start_timezone'        => $timezone,					// Event Start Timezone
