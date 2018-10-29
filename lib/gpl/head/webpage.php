@@ -127,6 +127,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, $org_id, $org_logo_key, false ); // $list_element = false.
 
+			if ( empty( $ret['publisher'] ) ) {
+				unset( $ret['publisher'] );
+			}
+
 			/**
 			 * Property:
 			 *      author as https://schema.org/Person
