@@ -707,17 +707,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-dev.1 (2018/10/29)**
+**Version 1.35.0-dev.2 (2018/10/29)**
 
 * *New Features*
 	* None.
 * *Improvements*
+	* Added new Schema Creative Work options in the Document SSO metabox:
+		* Service Provider
+		* Copyright Year
 	* Added new Schema Movie options in the Document SSO metabox:
 		* Cast Names
 		* Director Names
 		* Production Company
 		* Movie Runtime
-	* Renamed the "Course Provider" option in the Document SSO metabox to "Service Provider".
+	* Renamed the "Course Provider" option in the Document SSO metabox to "Service Provider" for the Schema Creative Work type.
 	* Renamed the "Default Course Provider" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab to "Default Service Provider".
 * *Bugfixes*
 	* None.
@@ -828,7 +831,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-dev.1 =
+= 1.35.0-dev.2 =
 
 (2018/10/29) Added new Schema Movie options in the Document SSO metabox. Renamed the "Course Provider" and "Default Course Provider" options.
 
