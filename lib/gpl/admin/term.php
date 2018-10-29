@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'label'    => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_type',
 					'content'  => $form->get_select( 'schema_type', $schema_types,
-						'schema_type', '', true, $def_schema_type, $def_schema_type, 'unhide_rows' ) . ' ' .
+						'schema_type', '', true, $def_schema_type, $def_schema_type, 'on_change_unhide_rows' ) . ' ' .
 							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
 				),
 				'schema_addl_type_url' => array(
