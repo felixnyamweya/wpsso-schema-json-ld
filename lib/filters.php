@@ -34,6 +34,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults'        => 2,
+				'rename_options_keys'    => 1,
 				'rename_md_options_keys' => 1,
 			) );
 
@@ -326,10 +327,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title'                       => '',
 				'schema_title_alt'                   => '',
 				'schema_desc'                        => '',
-				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Creative Work Publisher
-				'schema_headline'                    => '',						// Creative Work Headline
-				'schema_text'                        => '',						// Creative Work Full Text
-				'schema_course_provider_id'          => $opts['schema_def_course_provider_id'],		// Course Provider 
+				'schema_headline'                    => '',						// Headline
+				'schema_text'                        => '',						// Full Text
+				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Publisher
+				'schema_prov_org_id'                 => $opts['schema_def_prov_org_id'],		// Service Provider
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
 				'schema_event_start_timezone'        => $timezone,					// Event Start Timezone
@@ -373,6 +374,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_job_expire_date'             => '',
 				'schema_job_expire_time'             => 'none',
 				'schema_job_expire_timezone'         => $timezone,
+				'schema_movie_prodco_org_id'         => 'none',						// Movie Production Company
+				'schema_movie_duration_days'         => 0,						// Movie Runtime (Days)
+				'schema_movie_duration_hours'        => 0,						// Movie Runtime (Hours)
+				'schema_movie_duration_mins'         => 0,						// Movie Runtime (Mins)
+				'schema_movie_duration_secs'         => 0,						// Movie Runtime (Secs)
 				'schema_organization_org_id'         => 'none',						// Organization
 				'schema_person_id'                   => 'none',						// Person
 				'schema_recipe_cook_method'          => '',						// Recipe Cooking Method
@@ -429,13 +435,28 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return $md_defs;
 		}
 
+		public function filter_rename_options_keys( $options_keys ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$options_keys[ 'wpssojson' ] = array(
+				16 => array(
+					'schema_def_course_provider_id' => 'schema_def_prov_org_id',
+				),
+			);
+
+			return $options_keys;
+		}
+
 		public function filter_rename_md_options_keys( $options_keys ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
-			$options_keys['wpssoplm'] = array(
+			$options_keys[ 'wpssojson' ] = array(
 				11 => array(
 					'schema_event_org_id'  => 'schema_event_organizer_org_id',
 					'schema_event_perf_id' => 'schema_event_performer_org_id',
@@ -444,6 +465,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				14 => array(
 					'schema_event_place_id' => 'schema_event_location_id',
 					'schema_job_org_id'     => 'schema_job_hiring_org_id',
+				),
+				16 => array(
+					'schema_course_provider_id' => 'schema_prov_org_id',
 				),
 			);
 
@@ -503,17 +527,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_howto_step':
 				case 'schema_howto_supply':
 				case 'schema_howto_tool':
-				case 'schema_howto_yield':		// How-To Makes
+				case 'schema_howto_yield':			// How-To Makes
 				case 'schema_job_title':
 				case 'schema_job_currency':
+				case 'schema_movie_actor_person_name':		// Movie Cast Names
+				case 'schema_movie_director_person_name':	// Movie Director Names
 				case 'schema_person_job_title':
 				case 'schema_recipe_cook_method':
 				case 'schema_recipe_course':
 				case 'schema_recipe_cuisine':
-				case 'schema_recipe_ingredient':
-				case 'schema_recipe_instruction':
+				case 'schema_recipe_ingredient':		// Recipe Ingredients
+				case 'schema_recipe_instruction':		// Recipe Instructions
 				case 'schema_recipe_nutri_serv':
-				case 'schema_recipe_yield':		// Recipe Makes
+				case 'schema_recipe_yield':			// Recipe Makes
 				case 'schema_review_rating_alt_name':
 				case 'schema_review_claim_reviewed':
 				case 'schema_software_app_os':
@@ -523,8 +549,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					break;
 
 				case 'schema_type':
+				case 'schema_prov_org_id':
 				case 'schema_pub_org_id':
-				case 'schema_course_provider_id':
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
 				case 'schema_event_organizer_org_id':
@@ -536,12 +562,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_job_location_id':
 				case 'schema_job_salary_currency':
 				case 'schema_job_salary_period':
+				case 'schema_movie_prodco_org_id':
 
 					return 'not_blank';
 
 					break;
 
-				case 'schema_event_offer_price':
 				case 'schema_howto_prep_days':		// How-To Preparation Time
 				case 'schema_howto_prep_hours':
 				case 'schema_howto_prep_mins':
@@ -550,7 +576,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_howto_total_hours':
 				case 'schema_howto_total_mins':
 				case 'schema_howto_total_secs':
-				case 'schema_job_salary':
+				case 'schema_movie_duration_days':	// Movie Runtime
+				case 'schema_movie_duration_hours':
+				case 'schema_movie_duration_mins':
+				case 'schema_movie_duration_secs':
 				case 'schema_recipe_prep_days':		// Recipe Preparation Time
 				case 'schema_recipe_prep_hours':
 				case 'schema_recipe_prep_mins':
@@ -563,6 +592,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_total_hours':
 				case 'schema_recipe_total_mins':
 				case 'schema_recipe_total_secs':
+
+					return 'pos_int';	// Must be a positive integer.
+
+					break;
+
+				case 'schema_event_offer_price':
+				case 'schema_job_salary':
 				case 'schema_recipe_nutri_cal':
 				case 'schema_recipe_nutri_prot':
 				case 'schema_recipe_nutri_fib':
@@ -777,6 +813,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-meta-schema_prov_org_id':	// Service Provider
+
+					$text = __( 'Select a service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
+
+				 	break;
+
 				case 'tooltip-meta-schema_pub_org_id':
 
 					$text = __( 'Select a publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
@@ -792,12 +834,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_text':
 
 					$text = __( 'The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_course_provider_id':
-
-					$text = __( 'Select an organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -935,6 +971,30 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-meta-schema_movie_actor_person_names':	// Cast Names
+
+					$text = __( 'The name of one or more actors appearing in the movie.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_movie_director_person_names':	// Director Names
+
+					$text = __( 'The movie director\'s name.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_movie_prodco_org_id':	// Movie Production Company
+
+					$text = __( 'The principle production company or studio responsible for the movie.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_movie_duration_time':	// Movie Runtime
+
+					$text = __( 'The total movie runtime from the start to the end of the credits.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
 				case 'tooltip-meta-schema_organization_org_id':
 
 					$text = __( 'Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select "[None]" to use the default organization details.', 'wpsso-schema-json-ld' );
@@ -987,7 +1047,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_recipe_ingredients':
+				case 'tooltip-meta-schema_recipe_ingredients':	// Recipe Ingredients
 
 					$text = __( 'A list of ingredients for this recipe (example: "1 cup flour", "1 tsp salt", etc.).', 'wpsso-schema-json-ld' );
 
@@ -1120,15 +1180,15 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $idx ) {
 
-				case 'tooltip-schema_def_pub_org_id':
+				case 'tooltip-schema_def_prov_org_id':
 
-					$text = __( 'Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a default service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_course_provider_id':
+				case 'tooltip-schema_def_pub_org_id':
 
-					$text = __( 'Select a default organizer for the course service provider, service operator, or service performer (ie. the goods producer).', 'wpsso-schema-json-ld' );
+					$text = __( 'Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
 
 				 	break;
 

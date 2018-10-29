@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.34.2',	// Plugin version.
-					'opt_version' => '15',		// Increment when changing default option values.
+					'version'     => '1.35.0-dev.1',	// Plugin version.
+					'opt_version' => '17',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
 					'desc'        => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
@@ -75,6 +75,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'itemlist'            => '(code) Schema Type Item List (schema_type:item.list)',
 								'jobposting'          => '(code) Schema Type Job Posting (schema_type:job.posting)',
 								'localbusiness'       => '(code) Schema Type Local Business (schema_type:local.business)',
+								'movie'               => '(code) Schema Type Movie (schema_type:movie)',
 								'organization'        => '(code) Schema Type Organization (schema_type:organization)',
 								'person'              => '(code) Schema Type Person (schema_type:person)',
 								'place'               => '(code) Schema Type Place (schema_type:place)',
@@ -115,8 +116,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					/**
 					 * Meta Defaults
 					 */
-					'schema_def_pub_org_id'                  => 'site',	// Default Creative Work Publisher
-					'schema_def_course_provider_id'          => 'none',	// Default Course Provider 
+					'schema_def_pub_org_id'                  => 'site',	// Default Publisher
+					'schema_def_prov_org_id'                 => 'none',	// Default Service Provider
 					'schema_def_event_organizer_org_id'      => 'none',	// Default Event Organizer Org.
 					'schema_def_event_organizer_person_id'   => 'none',	// Default Event Organizer Person
 					'schema_def_event_performer_org_id'      => 'none',	// Default Event Performer Org.

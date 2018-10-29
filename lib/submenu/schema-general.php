@@ -167,24 +167,15 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_pub_org_id' => array(
-					'label'    => _x( 'Default Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Default Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_pub_org_id',
 					'content'  => $this->form->get_select( 'schema_def_pub_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
 				),
-
-				/**
-				 * Course defaults.
-				 */
-				'subsection_def_course' => array(
-					'td_class' => 'subsection',
-					'header'   => 'h4',
-					'label'    => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
-				),
-				'schema_def_course_provider_id' => array(
-					'label'    => _x( 'Default Course Provider', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'schema_def_course_provider_id',
-					'content'  => $this->form->get_select( 'schema_def_course_provider_id',
+				'schema_def_prov_org_id' => array(
+					'label'    => _x( 'Default Service Provider', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'schema_def_prov_org_id',
+					'content'  => $this->form->get_select( 'schema_def_prov_org_id',
 						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
 				),
 

@@ -87,6 +87,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'howto'          => $this->p->schema->get_children_css_class( 'howto', 'hide_schema_type', '/^recipe$/' ),	// Exclude recipe.
 				'job_posting'    => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
+				'movie'          => $this->p->schema->get_children_css_class( 'movie', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'person'         => $this->p->schema->get_children_css_class( 'person', 'hide_schema_type' ),
 				'question'       => $this->p->schema->get_children_css_class( 'question', 'hide_schema_type' ),
@@ -174,20 +175,12 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'header'   => 'h4',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_pub_org_id' => array(
-					'tr_class' => $schema_type_tr_class['creative_work'],
-					'th_class' => 'medium',
-					'td_class' => 'blank',
-					'label'    => _x( 'Creative Work Publisher', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_pub_org_id',
-					'content'  => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
-				),
 				'schema_headline' => array(
 					'no_auto_draft' => true,
 					'tr_class'      => $schema_type_tr_class['creative_work'],
 					'th_class'      => 'medium',
 					'td_class'      => 'blank',
-					'label'         => _x( 'Creative Work Headline', 'option label', 'wpsso-schema-json-ld' ),
+					'label'         => _x( 'Headline', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'       => 'meta-schema_headline',
 					'content'       => $form->get_no_input_value( $def_schema_headline, 'wide' ),
 				),
@@ -196,27 +189,25 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class'      => $schema_type_tr_class['creative_work'],
 					'th_class'      => 'medium',
 					'td_class'      => 'blank',
-					'label'         => _x( 'Creative Work Full Text', 'option label', 'wpsso-schema-json-ld' ),
+					'label'         => _x( 'Full Text', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'       => 'meta-schema_text',
 					'content'       => $form->get_no_textarea_value( $def_schema_text, 'full_text' ),
 				),
-
-				/**
-				 * Schema Course
-				 */
-				'subsection_course' => array(
-					'tr_class' => $schema_type_tr_class['course'],
-					'td_class' => 'subsection',
-					'header'   => 'h4',
-					'label'    => _x( 'Course Information', 'metabox title', 'wpsso-schema-json-ld' ),
-				),
-				'schema_course_provider_id' => array(
-					'tr_class' => $schema_type_tr_class['course'],
+				'schema_pub_org_id' => array(
+					'tr_class' => $schema_type_tr_class['creative_work'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Course Provider', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_course_provider_id',
-					'content'  => $form->get_no_select( 'schema_course_provider_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'label'    => _x( 'Publisher', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_pub_org_id',
+					'content'  => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+				),
+				'schema_prov_org_id' => array(
+					'tr_class' => $schema_type_tr_class['creative_work'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Service Provider', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_prov_org_id',
+					'content'  => $form->get_no_select( 'schema_prov_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
 				),
 
 				/**
@@ -379,7 +370,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Supplies', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_howto_supplies',
-					'content'  => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_howto_tools' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
@@ -387,7 +378,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Tools', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_howto_tools',
-					'content'  => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_howto_steps' => array(
 					'tr_class' => $schema_type_tr_class['howto'],
@@ -395,7 +386,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Steps', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_howto_steps',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 5 ),	// $repeat = 5
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 5 ),
 				),
 
 				/**
@@ -458,6 +449,50 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label'    => _x( 'Job Posting Expires', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_job_expire',
 					'content'  => $form->get_no_date_time_iso( 'schema_job_expire' ),
+				),
+
+				/**
+				 * Schema Movie
+				 */
+				'subsection_movie' => array(
+					'tr_class' => $schema_type_tr_class['movie'],
+					'td_class' => 'subsection',
+					'header'   => 'h4',
+					'label'    => _x( 'Movie Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_movie_actor_person_names' => array(
+					'tr_class' => $schema_type_tr_class['movie'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Cast Names', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_movie_actor_person_names',		// Tooltip key is plural.
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 3 ),
+				),
+				'schema_movie_director_person_names' => array(
+					'tr_class' => $schema_type_tr_class['movie'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Director Names', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_movie_director_person_names',	// Tooltip key is plural.
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 2 ),
+				),
+				'schema_movie_prodco_org_id' => array(
+					'tr_class' => $schema_type_tr_class['movie'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Production Company', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_movie_prodco_org_id',
+					'content'  => $form->get_no_select( 'schema_movie_prodco_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+				),
+				'schema_movie_duration_time' => array(
+					'tr_class' => $schema_type_tr_class['movie'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Movie Runtime', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_movie_duration_time',
+					'content'  => $form->get_no_input_value( '0', 'short' ) . $hours_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $mins_sep . 
+						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 
 				/**
@@ -594,7 +629,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Recipe Ingredients', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_recipe_ingredients',
-					'content'  => $form->get_no_input_value( '', 'long_name', '', '', 5 ),	// $repeat = 5
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_recipe_instructions' => array(
 					'tr_class' => $schema_type_tr_class['recipe'],
@@ -602,7 +637,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Recipe Instructions', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_recipe_instructions',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 5 ),	// $repeat = 5
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 5 ),
 				),
 
 				/**

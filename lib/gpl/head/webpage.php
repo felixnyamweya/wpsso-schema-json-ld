@@ -98,37 +98,42 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
-			 *      publisher as https://schema.org/Organization
+			 *      publisher
 			 */
-			if ( ! empty( $mod['obj'] ) ) {
+			foreach ( array(
+				'publisher' => 'schema_pub_org_id',
+			) as $itemprop_name => $md_idx ) {
 
+				if ( ! empty( $mod['obj'] ) ) {
+	
+					/**
+					 * The get_options() method returns null if an index key is not found.
+					 * Return values are null, 'none', 'site', or number (including 0).
+					 */
+					$org_id = $mod['obj']->get_options( $mod['id'], $md_idx, $filter_opts = true );
+	
+				} else {
+					$org_id = null;
+				}
+	
+				if ( null === $org_id ) {
+					$org_id = empty( $this->p->options[ $md_idx ] ) ? 'none' : $this->p->options[ $md_idx ];
+				}
+	
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( $itemprop_name . ' organization ID is "' . $org_id . '"' );
+				}
+	
 				/**
-				 * The get_options() method returns null if an index key is not found.
-				 * Return values are null, 'none', 'site', or number (including 0).
+				 * $org_id can be 'none', 'site', or a number (including 0).
+				 * $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles.
+				 * do not provide localized option names - the method will fetch the localized values.
 				 */
-				$org_id = $mod['obj']->get_options( $mod['id'], 'schema_pub_org_id', $filter_opts = true );
-
-			} else {
-				$org_id = null;
-			}
-
-			if ( null === $org_id ) {
-				$org_id = empty( $this->p->options[ 'schema_def_pub_org_id' ] ) ? 'site' : $this->p->options[ 'schema_def_pub_org_id' ];
-			}
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( 'publisher / organization id is ' . $org_id );
-			}
-
-			/**
-			 * $org_id can be 'none', 'site', or a number (including 0).
-			 * $logo_key can be 'org_logo_url' or 'org_banner_url' (600x60px image) for Articles.
-			 * do not provide localized option names - the method will fetch the localized values.
-			 */
-			WpssoSchema::add_single_organization_data( $ret['publisher'], $mod, $org_id, $org_logo_key, false ); // $list_element = false.
-
-			if ( empty( $ret['publisher'] ) ) {
-				unset( $ret['publisher'] );
+				WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $org_id, $org_logo_key, false ); // $list_element = false.
+	
+				if ( empty( $ret[ $itemprop_name ] ) ) {
+					unset( $ret[ $itemprop_name ] );
+				}
 			}
 
 			/**
