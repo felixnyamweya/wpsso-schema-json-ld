@@ -46,7 +46,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 
 			$def_copyright_year   = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod['id'] ) ) : '';
 			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
-			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
+			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_text      = $this->p->page->get_the_text( $mod, $read_cache, 'none' );
@@ -332,7 +332,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'select_options' => $this->p->cf['form']['item_availability'],
 							'select_default' => 'InStock',
 						),
-					), '', 'schema_event_offer', 0, $event_offers_max, 2 ),
+					), '', 'schema_event_offer', $start_num = 0, $event_offers_max, 2 ),
 				),
 
 				/**
@@ -475,7 +475,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Cast Names', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_movie_actor_person_names',		// Tooltip key is plural.
+					'tooltip'  => 'meta-schema_movie_actor_person_names',
 					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 3 ),
 				),
 				'schema_movie_director_person_names' => array(
@@ -483,7 +483,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Director Names', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_movie_director_person_names',	// Tooltip key is plural.
+					'tooltip'  => 'meta-schema_movie_director_person_names',
 					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 2 ),
 				),
 				'schema_movie_prodco_org_id' => array(
@@ -792,9 +792,9 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_review_rating',
 					'content'  => $form->get_no_input_value( $form->defaults['schema_review_rating'], 'short' ) . 
 						' ' . _x( 'from', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
-							$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ) . 
+						$form->get_no_input_value( $form->defaults['schema_review_rating_from'], 'short' ) . 
 						' ' . _x( 'to', 'option comment', 'wpsso-schema-json-ld' ) . ' ' . 
-							$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
+						$form->get_no_input_value( $form->defaults['schema_review_rating_to'], 'short' ),
 				),
 				'schema_review_rating_alt_name' => array(
 					'tr_class' => $schema_type_tr_class['review'],
