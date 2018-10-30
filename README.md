@@ -230,12 +230,14 @@
 <ul>
 <li>Headline</li>
 <li>Full Text</li>
+<li>Language</li>
 <li>Publisher</li>
 <li>Service Provider</li>
 </ul></li>
 <li>Event Information
 
 <ul>
+<li>Event Language</li>
 <li>Event Organizer Org.</li>
 <li>Event Organizer Person</li>
 <li>Event Performer Org.</li>

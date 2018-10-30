@@ -206,9 +206,11 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* Creative Work Information
 		* Headline
 		* Full Text
+		* Language
 		* Publisher
 		* Service Provider
 	* Event Information
+		* Event Language
 		* Event Organizer Org.
 		* Event Organizer Person
 		* Event Performer Org.
@@ -707,14 +709,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-dev.4 (2018/10/30)**
+**Version 1.35.0-dev.5 (2018/10/30)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added new Schema Creative Work options in the Document SSO metabox:
+		* Language
 		* Service Provider
 		* Copyright Year
+	* Added new Schema Event options in the Document SSO metabox:
+		* Event Language
 	* Added new Schema Movie options in the Document SSO metabox:
 		* Cast Names
 		* Director Names
@@ -832,9 +837,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-dev.4 =
+= 1.35.0-dev.5 =
 
-(2018/10/30) Added new Schema Movie options in the Document SSO metabox. Renamed the "Course Provider" and "Default Course Provider" options.
+(2018/10/30) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
 
 = 1.34.2 =
 
