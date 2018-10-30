@@ -70,10 +70,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 				/**
 				 * All Schema Types
 				 */
+				'schema_type' => array(
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_type',
+					'content'  => $form->get_select( 'schema_type', $schema_types,
+						'schema_type', '', true, $def_schema_type, $def_schema_type, 'on_change_unhide_rows' ) . ' ' .
+							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
+				),
 				'schema_title' => array(
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_title',
 					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
@@ -81,20 +90,11 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// Hide if titles are the same.
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_title_alt',
 					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
 				'schema_desc' => '',	// Placeholder.
-				'schema_type' => array(
-					'th_class' => 'medium',
-					'td_class' => 'blank',
-					'label'    => _x( 'Schema Item Type', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_type',
-					'content'  => $form->get_select( 'schema_type', $schema_types,
-						'schema_type', '', true, $def_schema_type, $def_schema_type, 'on_change_unhide_rows' ) . ' ' .
-							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
-				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
 					'th_class' => 'medium',

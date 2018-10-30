@@ -71,14 +71,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 				'schema_title' => array(
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Schema Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Item Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_title',
 					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Schema Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_title_alt',
 					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),

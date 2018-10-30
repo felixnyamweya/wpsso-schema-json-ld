@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.35.0-dev.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.35.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -434,24 +434,24 @@ msgctxt "option comment"
 msgid "secs"
 msgstr ""
 
-#: lib/gpl/admin/post.php:130 lib/gpl/admin/term.php:76
-#: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:148
-#: lib/pro/admin/term.php:89 lib/pro/admin/user.php:87
+#: lib/gpl/admin/post.php:129 lib/gpl/admin/term.php:76
+#: lib/pro/admin/post.php:147 lib/pro/admin/term.php:89
 msgctxt "option label"
-msgid "Schema Item Name"
+msgid "Schema Type"
 msgstr ""
 
-#: lib/gpl/admin/post.php:139 lib/gpl/admin/term.php:84
-#: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:156
-#: lib/pro/admin/term.php:96 lib/pro/admin/user.php:93
+#: lib/gpl/admin/post.php:139 lib/gpl/admin/term.php:85
+#: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:155
+#: lib/pro/admin/term.php:96 lib/pro/admin/user.php:87
 msgctxt "option label"
-msgid "Schema Alternate Name"
+msgid "Item Name"
 msgstr ""
 
-#: lib/gpl/admin/post.php:147 lib/gpl/admin/term.php:92
-#: lib/pro/admin/post.php:163 lib/pro/admin/term.php:103
+#: lib/gpl/admin/post.php:148 lib/gpl/admin/term.php:93
+#: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:163
+#: lib/pro/admin/term.php:103 lib/pro/admin/user.php:93
 msgctxt "option label"
-msgid "Schema Item Type"
+msgid "Alternate Name"
 msgstr ""
 
 #: lib/gpl/admin/post.php:157 lib/gpl/admin/term.php:102
