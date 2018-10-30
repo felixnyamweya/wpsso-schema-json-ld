@@ -476,7 +476,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Cast Names', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_movie_actor_person_names',
-					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 3 ),
+					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_movie_director_person_names' => array(
 					'tr_class' => $schema_type_tr_class['movie'],

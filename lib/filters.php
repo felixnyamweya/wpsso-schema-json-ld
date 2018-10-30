@@ -981,7 +981,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_movie_director_person_names':	// Director Names
 
-					$text = __( 'The movie director\'s name.', 'wpsso-schema-json-ld' );
+					$text = __( 'The name of one or more directors of the movie.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
