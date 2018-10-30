@@ -133,6 +133,7 @@
 <li><a href="https://schema.org/ItemList">schema.org/ItemList</a> (includes 5 Schema types)</li>
 <li><a href="https://schema.org/JobPosting">schema.org/JobPosting</a></li>
 <li><a href="https://schema.org/LocalBusiness">schema.org/LocalBusiness</a> (includes 133 Schema types)</li>
+<li><a href="https://schema.org/Movie">schema.org/Movie</a></li>
 <li><a href="https://schema.org/Organization">schema.org/Organization</a> (includes 22 Schema types)</li>
 <li><a href="https://schema.org/Person">schema.org/Person</a></li>
 <li><a href="https://schema.org/Place">schema.org/Place</a> (includes 176 Schema types)</li>
@@ -217,11 +218,10 @@
 <li>All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 
 <ul>
-<li>Schema Item Name (aka Title)</li>
-<li>Schema Alternate Name</li>
-<li>Schema Description</li>
-<li>Main Entity of Page</li>
-<li>Schema Item Type</li>
+<li>Schema Type</li>
+<li>Item Name (aka Title)</li>
+<li>Alternate Name</li>
+<li>Description</li>
 <li>Microdata Type URLs</li>
 <li>Same-As URLs</li>
 </ul></li>

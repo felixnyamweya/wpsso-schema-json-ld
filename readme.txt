@@ -116,6 +116,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
 	* [schema.org/JobPosting](https://schema.org/JobPosting)
 	* [schema.org/LocalBusiness](https://schema.org/LocalBusiness) (includes 133 Schema types)
+	* [schema.org/Movie](https://schema.org/Movie)
 	* [schema.org/Organization](https://schema.org/Organization) (includes 22 Schema types)
 	* [schema.org/Person](https://schema.org/Person)
 	* [schema.org/Place](https://schema.org/Place) (includes 176 Schema types)
@@ -196,11 +197,10 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 * Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
-		* Schema Item Name (aka Title)
-		* Schema Alternate Name
-		* Schema Description
-		* Main Entity of Page
-		* Schema Item Type
+		* Schema Type
+		* Item Name (aka Title)
+		* Alternate Name
+		* Description
 		* Microdata Type URLs
 		* Same-As URLs
 	* Creative Work Information
@@ -707,7 +707,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-dev.3 (2018/10/29)**
+**Version 1.35.0-dev.4 (2018/10/30)**
 
 * *New Features*
 	* None.
@@ -722,6 +722,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Movie Runtime
 	* Renamed the "Course Provider" option in the Document SSO metabox to "Service Provider" for the Schema Creative Work type.
 	* Renamed the "Default Course Provider" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab to "Default Service Provider".
+	* Renamed and re-ordered some Schema option labels in the Document SSO metabox.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -831,9 +832,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-dev.3 =
+= 1.35.0-dev.4 =
 
-(2018/10/29) Added new Schema Movie options in the Document SSO metabox. Renamed the "Course Provider" and "Default Course Provider" options.
+(2018/10/30) Added new Schema Movie options in the Document SSO metabox. Renamed the "Course Provider" and "Default Course Provider" options.
 
 = 1.34.2 =
 
