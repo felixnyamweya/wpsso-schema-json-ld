@@ -78,12 +78,22 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
-			 *      inLanguage - only valid for CreativeWork and Event
+			 *	inLanguage
+			 *      copyrightYear
 			 */
-			$ret[ 'inLanguage' ] = SucomUtil::get_locale( $mod );
+			if ( ! empty( $mod[ 'obj' ] ) ) {
 
-			if ( empty( $ret[ 'inLanguage' ] ) ) { // Just in case.
-				unset( $ret[ 'inLanguage' ] );
+				foreach ( array(
+					'inLanguage'    => 'schema_lang',
+					'copyrightYear' => 'schema_copyright_year',
+				) as $itemprop_name => $md_idx ) {
+
+					$ret[ $itemprop_name ] = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
+	
+					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
+						unset( $ret[ $itemprop_name ] );
+					}
+				}
 			}
 
 			/**
@@ -95,24 +105,6 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				'datePublished' => 'article:published_time',
 				'dateModified'  => 'article:modified_time',
 			) );
-
-			/**
-			 * Property:
-			 *      copyrightYear
-			 */
-			if ( ! empty( $mod[ 'obj' ] ) ) {
-
-				foreach ( array(
-					'copyrightYear' => 'schema_copyright_year',
-				) as $itemprop_name => $md_idx ) {
-
-					$ret[ $itemprop_name ] = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
-	
-					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
-						unset( $ret[ $itemprop_name ] );
-					}
-				}
-			}
 
 			/**
 			 * Property:

@@ -322,6 +322,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$opts               =& $this->p->options;	// Shortcute for plugin options array.
 			$def_copyright_year = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod['id'] ) ) : '';
 			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
+			$def_lang           = SucomUtil::get_locale( $mod );
 
 			$schema_md_defs = array(
 				'schema_type'                        => $def_schema_type,
@@ -330,9 +331,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_desc'                        => '',
 				'schema_headline'                    => '',						// Headline
 				'schema_text'                        => '',						// Full Text
+				'schema_lang'                        => $def_lang,					// Language
 				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Publisher
 				'schema_prov_org_id'                 => $opts['schema_def_prov_org_id'],		// Service Provider
 				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
+				'schema_event_lang'                  => $def_lang,					// Event Language
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
 				'schema_event_start_timezone'        => $timezone,					// Event Start Timezone
@@ -551,8 +554,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					break;
 
 				case 'schema_type':
+				case 'schema_lang':
 				case 'schema_prov_org_id':
 				case 'schema_pub_org_id':
+				case 'schema_event_lang':
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
 				case 'schema_event_organizer_org_id':
@@ -836,6 +841,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_text':
 
 					$text = __( 'The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_lang':
+
+					$text = __( 'The language (aka locale) for the Schema CreativeWork content.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_event_lang':
+
+					$text = __( 'The language (aka locale) for the Schema Event performance.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

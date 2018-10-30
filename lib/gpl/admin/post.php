@@ -194,6 +194,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tooltip'       => 'meta-schema_text',
 					'content'       => $form->get_no_textarea_value( $def_schema_text, 'full_text' ),
 				),
+				'schema_lang' => array(
+					'tr_class' => $schema_type_tr_class['creative_work'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Language', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_lang',
+					'content'  => $form->get_no_select( 'schema_lang', SucomUtil::get_available_locales(), 'locale' ),
+				),
 				'schema_pub_org_id' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'th_class' => 'medium',
@@ -228,6 +236,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'subsection',
 					'header'   => 'h5',
 					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
+				),
+				'schema_event_lang' => array(
+					'tr_class' => $schema_type_tr_class['event'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Event Language', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_event_lang',
+					'content'  => $form->get_no_select( 'schema_event_lang', SucomUtil::get_available_locales(), 'locale' ),
 				),
 				'schema_event_organizer_org_id' => array(
 					'tr_class' => $schema_type_tr_class['event'],
