@@ -91,7 +91,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 					'schema_lang'            => 'inLanguage',
 					'schema_family_friendly' => 'isFamilyFriendly',
 					'schema_copyright_year'  => 'copyrightYear',
-				) as $md_key => $itemprop_name ) {
+				) as $md_key => $prop_name ) {
 
 					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
 	
@@ -99,7 +99,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 						continue;
 					}
 
-					switch ( $itemprop_name ) {
+					switch ( $prop_name ) {
 
 						case 'isFamilyFriendly':	// Must be a true or false boolean value.
 	
@@ -108,7 +108,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 							break;
 					}
 
-					$ret[ $itemprop_name ] = $md_val;
+					$ret[ $prop_name ] = $md_val;
 				}
 			}
 
@@ -136,7 +136,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				foreach ( array(
 					'schema_pub_org_id'  => 'publisher',
 					'schema_prov_org_id' => 'provider',
-				) as $md_key => $itemprop_name ) {
+				) as $md_key => $prop_name ) {
 	
 					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
 	
@@ -144,10 +144,10 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 						continue;
 					}
 	
-					WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
+					WpssoSchema::add_single_organization_data( $ret[ $prop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
 		
-					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
-						unset( $ret[ $itemprop_name ] );
+					if ( empty( $ret[ $prop_name ] ) ) {	// Just in case.
+						unset( $ret[ $prop_name ] );
 					}
 				}
 			}
