@@ -198,7 +198,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Type
-		* Item Name (aka Title)
+		* Name / Title
 		* Alternate Name
 		* Description
 		* Microdata Type URLs
@@ -207,6 +207,8 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Headline
 		* Full Text
 		* Language
+		* Family Friendly
+		* Copyright Year
 		* Publisher
 		* Service Provider
 	* Event Information
@@ -709,15 +711,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-dev.5 (2018/10/30)**
+**Version 1.35.0-b.1 (2018/10/31)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added new Schema Creative Work options in the Document SSO metabox:
 		* Language
-		* Service Provider
+		* Family Friendly
 		* Copyright Year
+		* Service Provider
 	* Added new Schema Event options in the Document SSO metabox:
 		* Event Language
 	* Added new Schema Movie options in the Document SSO metabox:
@@ -837,9 +840,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-dev.5 =
+= 1.35.0-b.1 =
 
-(2018/10/30) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
+(2018/10/31) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
 
 = 1.34.2 =
 
