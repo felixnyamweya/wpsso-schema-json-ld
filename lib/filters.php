@@ -259,7 +259,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_max_len'],
 				$dots = '...', $mod, $read_cache = true, $add_hashtags = false, $do_encode = true,
-					$md_idx = array( 'schema_desc', 'seo_desc', 'og_desc' ) );
+					$md_key = array( 'schema_desc', 'seo_desc', 'og_desc' ) );
 
 			/**
 			 * Property:
@@ -646,12 +646,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Check for default recipe values.
 			 */
-			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts ) as $md_idx => $value ) {
+			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts ) as $md_key => $value ) {
 
-				$md_opts[$md_idx] = (int) $value;
+				$md_opts[$md_key] = (int) $value;
 
-				if ( $md_opts[$md_idx] === $md_defs[$md_idx] ) {
-					unset( $md_opts[$md_idx] );
+				if ( $md_opts[$md_key] === $md_defs[$md_key] ) {
+					unset( $md_opts[$md_key] );
 				}
 			}
 
@@ -660,13 +660,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * If we have a review rating, then make sure there's a from/to as well.
 			 */
 			if ( empty( $md_opts['schema_review_rating'] ) ) {
-				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
-					unset( $md_opts[$md_idx] );
+				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_key ) {
+					unset( $md_opts[$md_key] );
 				}
 			} else {
-				foreach ( array( 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_idx ) {
-					if ( empty( $md_opts[$md_idx] ) && isset( $md_defs[$md_idx] ) ) {
-						$md_opts[$md_idx] = $md_defs[$md_idx];
+				foreach ( array( 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_key ) {
+					if ( empty( $md_opts[$md_key] ) && isset( $md_defs[$md_key] ) ) {
+						$md_opts[$md_key] = $md_defs[$md_key];
 					}
 				}
 			}
@@ -779,33 +779,41 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Filter the SSO > General > Google / Schema tab options.
 		 */
 		public function filter_pub_google_rows( $table_rows, $form ) {
-			foreach ( array_keys( $table_rows ) as $key ) {
-				switch ( $key ) {
+
+			foreach ( array_keys( $table_rows ) as $row_key ) {
+
+				switch ( $row_key ) {
+
 					/**
 					 * Keep these rows.
 					 */
 					case 'schema_knowledge_graph':
 					case 'schema_home_person_id':
+
 						break;
+
 					/**
 					 * Remove these rows.
 					 */
 					case 'subsection_google_schema':
-					case ( strpos( $key, 'schema_' ) === 0 ? true : false ):
-						unset( $table_rows[$key] );
+					case ( strpos( $row_key, 'schema_' ) === 0 ? true : false ):
+
+						unset( $table_rows[$row_key] );
+
 						break;
 				}
 			}
+
 			return $table_rows;
 		}
 
-		public function filter_messages_tooltip_meta( $text, $idx ) {
+		public function filter_messages_tooltip_meta( $text, $msg_key ) {
 
-			if ( strpos( $idx, 'tooltip-meta-schema_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-meta-schema_' ) !== 0 ) {
 				return $text;
 			}
 
-			switch ( $idx ) {
+			switch ( $msg_key ) {
 
 				case 'tooltip-meta-schema_type':		// Schema Type
 
@@ -1226,13 +1234,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		/**
 		 * Tooltips for the Meta Defaults tab in the Schema Markup settings page.
 		 */
-		public function filter_messages_tooltip_schema( $text, $idx ) {
+		public function filter_messages_tooltip_schema( $text, $msg_key ) {
 
-			if ( strpos( $idx, 'tooltip-schema_def_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-schema_def_' ) !== 0 ) {
 				return $text;
 			}
 
-			switch ( $idx ) {
+			switch ( $msg_key ) {
 
 				case 'tooltip-schema_def_prov_org_id':
 
@@ -1330,10 +1338,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 		private function filter_common_status_features( $features, $ext, $info, $pkg ) {
 
-			foreach ( $features as $key => $arr ) {
-				if ( isset( $arr['sub'] ) && $arr['sub'] === 'head' ) {
-					if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \(schema_type:(.+)\)$/', $key, $match ) ) {
-						$features[$key]['label'] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
+			foreach ( $features as $feature_key => $feature_info ) {
+
+				if ( isset( $feature_info['sub'] ) && $feature_info['sub'] === 'head' ) {
+
+					if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \(schema_type:(.+)\)$/', $feature_key, $match ) ) {
+
+						$features[$feature_key]['label'] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
 					}
 				}
 			}

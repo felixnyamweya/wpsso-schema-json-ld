@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *      text
 			 */
-			$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_idx = 'schema_text' );
+			$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_key = 'schema_text' );
 
 			if ( empty( $ret[ 'text' ] ) ) { // Just in case.
 				unset( $ret[ 'text' ] );
@@ -83,16 +83,32 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			if ( ! empty( $mod[ 'obj' ] ) ) {
 
+				/**
+				 * The meta data key is unique, but the Schema property name may be repeated
+				 * to add more than one value to a property array.
+				 */
 				foreach ( array(
-					'inLanguage'    => 'schema_lang',
-					'copyrightYear' => 'schema_copyright_year',
-				) as $itemprop_name => $md_idx ) {
+					'schema_lang'            => 'inLanguage',
+					'schema_family_friendly' => 'isFamilyFriendly',
+					'schema_copyright_year'  => 'copyrightYear',
+				) as $md_key => $itemprop_name ) {
 
-					$ret[ $itemprop_name ] = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
+					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
 	
-					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
-						unset( $ret[ $itemprop_name ] );
+					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
+						continue;
 					}
+
+					switch ( $itemprop_name ) {
+
+						case 'isFamilyFriendly':	// Must be a true or false boolean value.
+	
+							$md_val = empty( $md_val ) ? false : true;
+
+							break;
+					}
+
+					$ret[ $itemprop_name ] = $md_val;
 				}
 			}
 
@@ -108,22 +124,27 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
+			 *      provider
 			 *      publisher
 			 */
 			if ( ! empty( $mod[ 'obj' ] ) ) {
 
+				/**
+				 * The meta data key is unique, but the Schema property name may be repeated
+				 * to add more than one value to a property array.
+				 */
 				foreach ( array(
-					'provider'  => 'schema_prov_org_id',
-					'publisher' => 'schema_pub_org_id',
-				) as $itemprop_name => $md_idx ) {
+					'schema_pub_org_id'  => 'publisher',
+					'schema_prov_org_id' => 'provider',
+				) as $md_key => $itemprop_name ) {
 	
-					$id = $mod[ 'obj' ]->get_options( $mod['id'], $md_idx, $filter_opts = true, $def_fallback = true );
+					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
 	
-					if ( $id === null || $id === 'none' ) {
+					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
 						continue;
 					}
 	
-					WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $id, $org_logo_key, false ); // $list_element = false.
+					WpssoSchema::add_single_organization_data( $ret[ $itemprop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
 		
 					if ( empty( $ret[ $itemprop_name ] ) ) {	// Just in case.
 						unset( $ret[ $itemprop_name ] );
