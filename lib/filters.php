@@ -325,16 +325,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$def_lang           = SucomUtil::get_locale( $mod );
 
 			$schema_md_defs = array(
-				'schema_type'                        => $def_schema_type,
-				'schema_title'                       => '',
-				'schema_title_alt'                   => '',
-				'schema_desc'                        => '',
+				'schema_type'                        => $def_schema_type,				// Schema Type
+				'schema_title'                       => '',						// Name / Title
+				'schema_title_alt'                   => '',						// Alternate Name
+				'schema_desc'                        => '',						// Description
 				'schema_headline'                    => '',						// Headline
 				'schema_text'                        => '',						// Full Text
 				'schema_lang'                        => $def_lang,					// Language
+				'schema_family_friendly'             => 'none',						// Family Friendly
+				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
 				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Publisher
 				'schema_prov_org_id'                 => $opts['schema_def_prov_org_id'],		// Service Provider
-				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
 				'schema_event_lang'                  => $def_lang,					// Event Language
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
@@ -523,11 +524,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $base_key ) {
 
-				case 'schema_title':
-				case 'schema_title_alt':
-				case 'schema_desc':
-				case 'schema_headline':
-				case 'schema_text':
+				case 'schema_title':				// Name / Title
+				case 'schema_title_alt':			// Alternate Name
+				case 'schema_desc':				// Description
+				case 'schema_headline':				// Headline
+				case 'schema_text':				// Full Text
+				case 'schema_copyright_year':			// Copyright Year
 				case 'schema_event_offer_name':
 				case 'schema_howto_step':
 				case 'schema_howto_supply':
@@ -553,11 +555,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					break;
 
-				case 'schema_type':
-				case 'schema_lang':
-				case 'schema_prov_org_id':
-				case 'schema_pub_org_id':
-				case 'schema_event_lang':
+				case 'schema_type':				// Schema Type
+				case 'schema_lang':				// Language
+				case 'schema_family_friendly':			// Family Friendly is 'none', 0, or 1.
+				case 'schema_pub_org_id':			// Publisher
+				case 'schema_prov_org_id':			// Service Provider
+				case 'schema_event_lang':			// Event Language
 				case 'schema_event_offer_currency':
 				case 'schema_event_offer_avail':
 				case 'schema_event_organizer_org_id':
@@ -569,38 +572,38 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_job_location_id':
 				case 'schema_job_salary_currency':
 				case 'schema_job_salary_period':
-				case 'schema_movie_prodco_org_id':
+				case 'schema_movie_prodco_org_id':		// Production Company
 
 					return 'not_blank';
 
 					break;
 
-				case 'schema_howto_prep_days':		// How-To Preparation Time
+				case 'schema_howto_prep_days':			// How-To Preparation Time
 				case 'schema_howto_prep_hours':
 				case 'schema_howto_prep_mins':
 				case 'schema_howto_prep_secs':
-				case 'schema_howto_total_days':		// How-To Total Time
+				case 'schema_howto_total_days':			// How-To Total Time
 				case 'schema_howto_total_hours':
 				case 'schema_howto_total_mins':
 				case 'schema_howto_total_secs':
-				case 'schema_movie_duration_days':	// Movie Runtime
+				case 'schema_movie_duration_days':		// Movie Runtime
 				case 'schema_movie_duration_hours':
 				case 'schema_movie_duration_mins':
 				case 'schema_movie_duration_secs':
-				case 'schema_recipe_prep_days':		// Recipe Preparation Time
+				case 'schema_recipe_prep_days':			// Recipe Preparation Time
 				case 'schema_recipe_prep_hours':
 				case 'schema_recipe_prep_mins':
 				case 'schema_recipe_prep_secs':
-				case 'schema_recipe_cook_days':		// Recipe Cooking Time
+				case 'schema_recipe_cook_days':			// Recipe Cooking Time
 				case 'schema_recipe_cook_hours':
 				case 'schema_recipe_cook_mins':
 				case 'schema_recipe_cook_secs':
-				case 'schema_recipe_total_days':	// Recipe Total Time
+				case 'schema_recipe_total_days':		// Recipe Total Time
 				case 'schema_recipe_total_hours':
 				case 'schema_recipe_total_mins':
 				case 'schema_recipe_total_secs':
 
-					return 'pos_int';	// Must be a positive integer.
+					return 'pos_int';
 
 					break;
 
@@ -620,10 +623,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_review_rating_from':
 				case 'schema_review_rating_to':
 
-					return 'blank_num';	// Must be numeric (blank or zero is ok).
+					return 'blank_num';
 
 					break;
 
+				case 'schema_addl_type_url':			// Microdata Type URLs
+				case 'schema_sameas_url':			// Same-As URLs
 				case 'schema_review_item_url':
 
 					return 'url';
@@ -802,51 +807,81 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $idx ) {
 
-				case 'tooltip-meta-schema_type':
+				case 'tooltip-meta-schema_type':		// Schema Type
 
 					$text = __( 'Select a Schema item type that best describes the main content of this webpage.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_addl_type_url':
+				case 'tooltip-meta-schema_title':		// Name / Title
+
+					$text = __( 'A customized name / title for the Schema "name" property.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_title_alt':		// Alternate Name
+
+					$text = __( 'A customized alternate name / title for the Schema "alternateName" property.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_desc':		// Description
+
+					$text = __( 'A customized description for the Schema "description" property.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_addl_type_url':	// Microdata Type URLs
 
 					$text = sprintf( __( 'Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples).', 'wpsso-schema-json-ld' ), '<a href="http://www.productontology.org/">The Product Types Ontology</a>' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_sameas_url':
+				case 'tooltip-meta-schema_sameas_url':		// Same-As URLs
 
 					$text = __( 'Additional (and optional) webpage reference URLs that unambiguously indicate the item\'s identity. For example, the URL of the item\'s Wikipedia page, Wikidata entry, IMDB page, official website, etc.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_prov_org_id':	// Service Provider
-
-					$text = __( 'Select a service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_pub_org_id':
-
-					$text = __( 'Select a publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_headline':
+				case 'tooltip-meta-schema_headline':		// Headline
 
 					$text = __( 'The headline for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_text':
+				case 'tooltip-meta-schema_text':		// Full Text
 
 					$text = __( 'The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_lang':
+				case 'tooltip-meta-schema_lang':		// Language
 
 					$text = __( 'The language (aka locale) for the Schema CreativeWork content.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_family_friendly':	// Family Friendly
+
+					$text = __( 'The content is family friendly.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_pub_org_id':		// Publisher
+
+					$text = __( 'Select a publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_prov_org_id':		// Service Provider
+
+					$text = __( 'Select a service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_copyright_year':	// Copyright Year
+
+					$text = __( 'The year during which the claimed copyright was first asserted for this creative work.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -1002,13 +1037,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_movie_prodco_org_id':	// Movie Production Company
+				case 'tooltip-meta-schema_movie_prodco_org_id':		// Movie Production Company
 
 					$text = __( 'The principle production company or studio responsible for the movie.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_movie_duration_time':	// Movie Runtime
+				case 'tooltip-meta-schema_movie_duration_time':		// Movie Runtime
 
 					$text = __( 'The total movie runtime from the start to the end of the credits.', 'wpsso-schema-json-ld' );
 
@@ -1257,7 +1292,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			return $text;
 		}
-
 
 		/**
 		 * Hooked to 'wpssojson_status_gpl_features'.

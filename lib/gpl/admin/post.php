@@ -136,7 +136,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'no_auto_draft' => true,
 					'th_class'      => 'medium',
 					'td_class'      => 'blank',
-					'label'         => _x( 'Item Name', 'option label', 'wpsso-schema-json-ld' ),
+					'label'         => _x( 'Name / Title', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'       => 'meta-schema_title',
 					'content'       => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
@@ -202,6 +202,23 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_lang',
 					'content'  => $form->get_no_select( 'schema_lang', SucomUtil::get_available_locales(), 'locale' ),
 				),
+				'schema_family_friendly' => array(
+					'tr_class' => $schema_type_tr_class['creative_work'],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Family Friendly', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_family_friendly',
+					'content'  => $form->get_no_select_none( 'schema_family_friendly', $this->p->cf['form']['yes_no'], 'yes_no', '', $is_assoc = true ),
+				),
+				'schema_copyright_year' => array(
+					'no_auto_draft' => true,
+					'tr_class'      => $schema_type_tr_class['creative_work'],
+					'th_class'      => 'medium',
+					'td_class'      => 'blank',
+					'label'         => _x( 'Copyright Year', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'       => 'meta-schema_copyright_year',
+					'content'       => $form->get_no_input_value( $def_copyright_year, 'year' ),
+				),
 				'schema_pub_org_id' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],
 					'th_class' => 'medium',
@@ -217,15 +234,6 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label'    => _x( 'Service Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_prov_org_id',
 					'content'  => $form->get_no_select( 'schema_prov_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
-				),
-				'schema_copyright_year' => array(
-					'no_auto_draft' => true,
-					'tr_class'      => $schema_type_tr_class['creative_work'],
-					'th_class'      => 'medium',
-					'td_class'      => 'blank',
-					'label'         => _x( 'Copyright Year', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'       => 'meta-schema_copyright_year',
-					'content'       => $form->get_no_input_value( $def_copyright_year, 'short' ),
 				),
 
 				/**
