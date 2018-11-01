@@ -604,10 +604,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$media_key = key( $json_data[$main_prop] );	// media array key should be '0'
 
 					if ( ! isset( $json_data[$main_prop][$media_key]['mainEntityOfPage'] ) ) {
+
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' = ' . $mt_og['og:url'] );
 						}
+
 						$json_data[$main_prop][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
+
 					} elseif ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' already defined' );
 					}
