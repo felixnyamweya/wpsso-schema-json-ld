@@ -711,7 +711,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-b.3 (2018/11/01)**
+**Version 1.35.0-rc.1 (2018/11/02)**
 
 * *New Features*
 	* None.
@@ -840,9 +840,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-b.3 =
+= 1.35.0-rc.1 =
 
-(2018/11/01) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
+(2018/11/02) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
 
 = 1.34.2 =
 
