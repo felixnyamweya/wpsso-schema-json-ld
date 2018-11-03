@@ -28,20 +28,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$this->p->debug->mark();
 			}
 
-			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $depth ) {
+			foreach ( range( 0, WPSSOJSON_SCHEMA_SHORTCODE_DEPTH ) as $max_depth ) {
 				$this->tag_names[] = WPSSOJSON_SCHEMA_SHORTCODE_NAME .
-					( $depth ? WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . $depth : '' );
+					( $max_depth ? WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . $max_depth : '' );	// Exclude 0.
 			}
 
 			add_filter( 'no_texturize_shortcodes', array( $this, 'exclude_from_wptexturize' ) );
-			add_filter( 'sucom_strip_shortcodes_preg', array( $this, 'strip_shortcodes_preg' ) );
 
 			$this->add_shortcode();
-
-			$this->p->util->add_plugin_actions( $this, array(
-				'pre_apply_filters_text'   => 1,
-				'after_apply_filters_text' => 1,
-			) );
 		}
 
 		public function exclude_from_wptexturize( $shortcodes ) {
@@ -51,35 +45,6 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			}
 
 			return $shortcodes;
-		}
-
-		public function strip_shortcodes_preg( $preg_array ) {
-
-			$preg_array[] = '/\[\/?' . WPSSOJSON_SCHEMA_SHORTCODE_NAME . WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR . '[0-9]+[^\]]*\]/';
-
-			return $preg_array;
-		}
-
-		public function action_pre_apply_filters_text( $filter_name ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log_args( array(
-					'filter_name' => $filter_name,
-				) );
-			}
-
-			return $this->add_shortcode();
-		}
-
-		public function action_after_apply_filters_text( $filter_name ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log_args( array(
-					'filter_name' => $filter_name,
-				) );
-			}
-
-			return $this->remove_shortcode();
 		}
 
 		public function add_shortcode() {
@@ -162,9 +127,9 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$atts_string .= $key . '="' . $value . '" ';
 				}
 
-				$content = preg_replace( '/(^<\/p>|<p>$)/', '', $content ); // Fix extra paragraph prefix / suffix from wpautop.
 				$content = do_shortcode( $content );
-				$content = '<!-- ' . $tag . ' shortcode: ' . $atts_string . '-->' . $content . '<!-- /' . $tag . ' shortcode -->';
+
+				$content = '<!-- ' . $tag . ' shortcode: ' . $atts_string . ' -->' . $content . '<!-- /' . $tag . ' shortcode -->';
 
 				return $content;
 

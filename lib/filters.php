@@ -277,6 +277,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Get additional Schema properties from the optional post content shortcode.
 			 */
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'checking for schema shortcodes' );
+			}
+
 			if ( $mod['is_post'] ) {
 
 				$content = get_post_field( 'post_content', $mod['id'] );
@@ -289,15 +293,27 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
 
-					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {	// Does the content have a schema shortcode.
+					/**
+					 * Check if the shortcode is registered, and that the content has a schema shortcode.
+					 */
+					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
 
 						$content_data = $this->p->sc['schema']->get_content_json_data( $content );
 
 						if ( ! empty( $content_data ) ) {
 							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
 						}
+
+					} elseif ( $this->p->debug->enabled ) {
+						$this->p->debug->log( 'schema shortcode skipped - no schema shortcode in content' );
 					}
+
+				} elseif ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'schema shortcode skipped - schema class not loaded' );
 				}
+
+			} elseif ( $this->p->debug->enabled ) {
+				$this->p->debug->log( 'schema shortcode skipped - module is not a post object' );
 			}
 
 			if ( $this->p->debug->enabled ) {
