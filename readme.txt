@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 5.0
 WC Tested Up To: 3.5
-Stable Tag: 1.35.0
+Stable Tag: 1.35.1
 
 WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -711,6 +711,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.35.1 (2018/11/03)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* Fixed disabling of the schema shortcode when applying text filters (it should not be disabled).
+* *Developer Notes*
+	* None.
+
 **Version 1.35.0 (2018/11/03)**
 
 * *New Features*
@@ -840,7 +851,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0 =
+= 1.35.1 =
 
-(2018/11/03) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
+(2018/11/03) Fixed disabling of the schema shortcode when applying text filters (it should not be disabled).
 
