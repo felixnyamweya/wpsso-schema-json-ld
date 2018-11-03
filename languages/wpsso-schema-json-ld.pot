@@ -988,21 +988,21 @@ msgid "%s Location"
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:154
+#: lib/shortcode/schema.php:156
 msgid ""
 "%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required "
 "'prop' attribute value."
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag
-#: lib/shortcode/schema.php:178
+#: lib/shortcode/schema.php:180
 msgid ""
 "%1$s [%2$s] shortcode with a content is missing a required 'type' attribute "
 "value."
 msgstr ""
 
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
-#: lib/shortcode/schema.php:255
+#: lib/shortcode/schema.php:257
 msgid ""
 "%1$s [%2$s] shortcode type attribute \"%3$s\" is not a recognized value."
 msgstr ""

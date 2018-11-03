@@ -124,12 +124,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$atts_string = '';
 
 				foreach ( $atts as $key => $value ) {
-					$atts_string .= $key . '="' . $value . '" ';
+					$atts_string .= ' ' . $key . '="' . $value . '"';
 				}
 
-				$content = do_shortcode( $content );
+				if ( ! empty( $content ) ) {
+					$content = do_shortcode( $content );
+				}
 
-				$content = '<!-- ' . $tag . ' shortcode: ' . $atts_string . ' -->' . $content . '<!-- /' . $tag . ' shortcode -->';
+				$content = "\n" . '<!-- ' . $tag . ' shortcode:' . $atts_string . ' -->' . $content . "\n" . '<!-- /' . $tag . ' shortcode -->';
 
 				return $content;
 
