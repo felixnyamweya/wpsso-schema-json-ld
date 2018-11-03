@@ -711,7 +711,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.35.0-rc.1 (2018/11/02)**
+**Version 1.35.0 (2018/11/03)**
 
 * *New Features*
 	* None.
@@ -840,11 +840,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.35.0-rc.1 =
+= 1.35.0 =
 
-(2018/11/02) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
-
-= 1.34.2 =
-
-(2018/10/24) Added a new "Full Text" option in the Document SSO metabox for posts, pages, and custom post types.
+(2018/11/03) Added new Schema Creative Work, Event, and Movie options in the Document SSO metabox.
 
