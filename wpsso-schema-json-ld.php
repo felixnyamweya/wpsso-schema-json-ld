@@ -36,12 +36,16 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 	class WpssoJson {
 
 		/**
-		 * Class Object Variables
+		 * Wpsso plugin class object variable.
 		 */
-		public $p;			// Wpsso
-		public $reg;			// WpssoJsonRegister
-		public $filters;		// WpssoJsonFilters
-		public $schema;			// WpssoJsonSchema
+		public $p;		// Wpsso
+
+		/**
+		 * Library class object variables.
+		 */
+		public $filters;	// WpssoJsonFilters
+		public $reg;		// WpssoJsonRegister
+		public $schema;		// WpssoJsonSchema
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
@@ -53,8 +57,10 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public function __construct() {
 
 			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
+
 			WpssoJsonConfig::set_constants( __FILE__ );
 			WpssoJsonConfig::require_libs( __FILE__ );	// Includes the register.php class library.
+
 			$this->reg = new WpssoJsonRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
@@ -216,7 +222,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			$this->filters = new WpssoJsonFilters( $this->p );
-			$this->schema = new WpssoJsonSchema( $this->p );
+			$this->schema  = new WpssoJsonSchema( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
@@ -226,7 +232,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
+
 				$this->min_version_notice();
+
 				return;	// stop here
 			}
 		}
