@@ -761,6 +761,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 		 *		[og:video:embed_url]   => https://player.vimeo.com/video/150575335?autoplay=1
 		 *		[og:video:has_image]   => 1
 		 *		[og:image:secure_url]  => https://i.vimeocdn.com/video/550095036_1280.jpg
+		 *		[og:image:url]         => http://i.vimeocdn.com/video/550095036_1280.jpg
 		 *		[og:image:url]         =>
 		 *		[og:image:width]       => 1280
 		 *		[og:image:height]      => 544
