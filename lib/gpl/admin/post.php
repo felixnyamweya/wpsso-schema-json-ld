@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$og_title_max_len = $this->p->options['og_title_max_len'];
 			$headline_max_len = $this->p->cf['head']['limit_max']['schema_headline_len'];
 
-			$def_copyright_year   = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod['id'] ) ) : '';
+			$def_copyright_year   = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );

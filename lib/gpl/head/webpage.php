@@ -93,7 +93,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 					'schema_copyright_year'  => 'copyrightYear',
 				) as $md_key => $prop_name ) {
 
-					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
+					$md_val = $mod[ 'obj' ]->get_options( $mod[ 'id' ], $md_key, $filter_opts = true, $def_fallback = true );
 	
 					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
 						continue;
@@ -138,7 +138,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 					'schema_prov_org_id' => 'provider',
 				) as $md_key => $prop_name ) {
 	
-					$md_val = $mod[ 'obj' ]->get_options( $mod['id'], $md_key, $filter_opts = true, $def_fallback = true );
+					$md_val = $mod[ 'obj' ]->get_options( $mod[ 'id' ], $md_key, $filter_opts = true, $def_fallback = true );
 	
 					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
 						continue;
@@ -181,7 +181,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 						if ( $this->p->notice->is_admin_pre_notices() ) { // Skip if notices already shown.
 
-							$notice_key = $mod['name'] . '-' . $mod['id'] . '-notice-missing-schema-' . $prop_name;
+							$notice_key = $mod[ 'name' ] . '-' . $mod[ 'id' ] . '-notice-missing-schema-' . $prop_name;
 							$error_msg  = $this->p->msgs->get( 'notice-missing-schema-' . $prop_name );
 
 							$this->p->notice->err( $error_msg, null, $notice_key );

@@ -182,7 +182,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				) );
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'adding post id ' . $post_mod['id'] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
+					$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 				}
 
 				$json_data[$prop_name][] = $post_data;	// Add the post data.
@@ -355,7 +355,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $family_member_id === 'any' ) {
 
 							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'accepting post id ' . $post_mod['id'] . ': any schema type is allowed' );
+								$wpsso->debug->log( 'accepting post id ' . $post_mod[ 'id' ] . ': any schema type is allowed' );
 							}
 
 							$add_post_data = true;
@@ -364,7 +364,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						}
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting schema type for post id ' . $post_mod['id'] );
+							$wpsso->debug->log( 'getting schema type for post id ' . $post_mod[ 'id' ] );
 						}
 
 						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $ret_schema_id = true
@@ -378,7 +378,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						if ( $mod_is_child ) {
 
 							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'accepting post id ' . $post_mod['id'] . ': ' . $mod_type_id . ' is child of ' . $family_member_id );
+								$wpsso->debug->log( 'accepting post id ' . $post_mod[ 'id' ] . ': ' . $mod_type_id . ' is child of ' . $family_member_id );
 							}
 
 							$add_post_data = true;
@@ -386,25 +386,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							break;	// one positive match is enough
 
 						} elseif ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'post id ' . $post_mod['id'] . ' schema type ' . $mod_type_id . ' not a child of ' . $family_member_id );
+							$wpsso->debug->log( 'post id ' . $post_mod[ 'id' ] . ' schema type ' . $mod_type_id . ' not a child of ' . $family_member_id );
 						}
 					}
 
 					if ( ! $add_post_data ) {
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'skipping post id ' . $post_mod['id'] . ' for prop_name ' . $prop_name );
+							$wpsso->debug->log( 'skipping post id ' . $post_mod[ 'id' ] . ' for prop_name ' . $prop_name );
 						}
 						continue;
 					}
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod['id'] );
+						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod[ 'id' ] );
 					}
 
 					$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og is false.
 
 					if ( empty( $post_data ) ) {	// Prevent null assignment.
-						$wpsso->debug->log( 'single mod data for post id ' . $post_mod['id'] . ' is empty' );
+						$wpsso->debug->log( 'single mod data for post id ' . $post_mod[ 'id' ] . ' is empty' );
 						continue;	// Get the next post mod.
 					}
 
@@ -412,7 +412,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$prop_name_count++;
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'adding post id ' . $post_mod['id'] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
+						$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 					}
 
 					$json_data[$prop_name][] = $post_data;	// Add the post data.
@@ -594,7 +594,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			if ( ! empty( $main_prop ) ) {
 
 				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( $mod['name'] . ' id ' . $mod['id'] . ' ' . $main_prop . ' property is main entity' );
+					$wpsso->debug->log( $mod[ 'name' ] . ' id ' . $mod[ 'id' ] . ' ' . $main_prop . ' property is main entity' );
 				}
 
 				if ( ! empty( $json_data[$main_prop] ) && is_array( $json_data[$main_prop] ) ) {
@@ -622,18 +622,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
 
-			if ( ! $mod['is_post'] || ! $mod['id'] || ! comments_open( $mod['id'] ) ) {
+			if ( ! $mod['is_post'] || ! $mod[ 'id' ] || ! comments_open( $mod[ 'id' ] ) ) {
 				return;
 			}
 
-			$json_data['commentCount'] = get_comments_number( $mod['id'] );
+			$json_data['commentCount'] = get_comments_number( $mod[ 'id' ] );
 
 			/**
 			 * Only get parent comments. The add_single_comment_data() method 
 			 * will recurse and add the children.
 			 */
 			$comments = get_comments( array(
-				'post_id' => $mod['id'],
+				'post_id' => $mod[ 'id' ],
 				'status'  => 'approve',
 				'parent'  => 0,	// don't get replies
 				'order'   => 'DESC',
@@ -705,7 +705,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$replies_added = 0;
 
 			$replies = get_comments( array(
-				'post_id' => $mod['id'],
+				'post_id' => $mod[ 'id' ],
 				'status'  => 'approve',
 				'parent'  => $comment_id,	// Get only the replies for this comment.
 				'order'   => 'DESC',
@@ -839,7 +839,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( $is_main ) {
 
-				if ( $mod['is_home_index'] || ! is_object( $mod['obj'] ) ) {
+				if ( $mod['is_home_index'] || ! is_object( $mod[ 'obj' ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'home is index and object is false (archive = true)' );
@@ -847,7 +847,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$is_archive = true;
 
-				} elseif ( empty( $mod['id'] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
+				} elseif ( empty( $mod[ 'id' ] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'mod id is empty and post type is archive (archive = true)' );
@@ -934,13 +934,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'no posts to add' );
 				}
 
-			} elseif ( is_object( $mod['obj'] ) && method_exists( $mod['obj'], 'get_posts_mods' ) ) {
+			} elseif ( is_object( $mod[ 'obj' ] ) && method_exists( $mod[ 'obj' ], 'get_posts_mods' ) ) {
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'using module object to get posts mods' );
 				}
 
-				$page_posts_mods = $mod['obj']->get_posts_mods( $mod, $ppp, $wpsso_paged, $posts_args );
+				$page_posts_mods = $mod[ 'obj' ]->get_posts_mods( $mod, $ppp, $wpsso_paged, $posts_args );
 
 			} else {
 				if ( $wpsso->debug->enabled ) {

@@ -92,7 +92,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( is_object( $mod[ 'obj' ] ) ) {
 
-				$mod_opts = $mod[ 'obj' ]->get_options( $mod['id'] );
+				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
 				if ( is_array( $mod_opts ) ) {	// Just in case.
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( is_object( $mod[ 'obj' ] ) ) {
 
-				$mod_opts = $mod[ 'obj' ]->get_options( $mod['id'] );
+				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
 				$ret['sameAs'][] = $this->p->util->get_canonical_url( $mod );
 
@@ -133,7 +133,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					/**
 					 * Add the permalink, which may be different than the shared URL and the canonical URL.
 					 */
-					$ret['sameAs'][] = get_permalink( $mod['id'] );
+					$ret['sameAs'][] = get_permalink( $mod[ 'id' ] );
 
 					/**
 					 * Add the shortlink / short URL, but only if the link rel shortlink tag is enabled.
@@ -142,7 +142,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					if ( apply_filters( $this->p->lca . '_add_link_rel_shortlink', $add_link_rel_shortlink, $mod ) ) {
 
-						$ret['sameAs'][] = wp_get_shortlink( $mod['id'], 'post' );
+						$ret['sameAs'][] = wp_get_shortlink( $mod[ 'id' ], 'post' );
 
 						/**
 						 * Some themes and plugins have been known to hook the WordPress 'get_shortlink' filter 
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						 *
 						 * $context = 'blog', 'post' (default), 'media', or 'query'
 						 */
-						$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod['id'], 'post' );
+						$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod[ 'id' ], 'post' );
 					}
 				}
 
@@ -241,11 +241,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *	name
 			 *	alternateName
 			 */
-			$ret['name'] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
+			$ret[ 'name' ] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
 
 			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_max_len'], '...', $mod, true, false, true, 'schema_title_alt' );
 
-			if ( $ret['name'] === $ret['alternateName'] ) {
+			if ( $ret[ 'name' ] === $ret['alternateName'] ) {
 				unset( $ret['alternateName'] );
 			}
 
@@ -283,12 +283,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( $mod['is_post'] ) {
 
-				$content = get_post_field( 'post_content', $mod['id'] );
+				$content = get_post_field( 'post_content', $mod[ 'id' ] );
 
 				if ( empty( $content ) ) {
 
 					if ( $this->p->debug->enabled ) {
-						$this->p->debug->log( 'post_content for post id ' . $mod['id'] . ' is empty' );
+						$this->p->debug->log( 'post_content for post id ' . $mod[ 'id' ] . ' is empty' );
 					}
 
 				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
@@ -336,7 +336,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$opts               =& $this->p->options;	// Shortcute for plugin options array.
-			$def_copyright_year = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod['id'] ) ) : '';
+			$def_copyright_year = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_lang           = SucomUtil::get_locale( $mod );
 
@@ -502,7 +502,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			$urls          = $this->p->cf['plugin']['wpssojson']['url'];
+			$urls          = $this->p->cf[ 'plugin' ]['wpssojson']['url'];
 			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true );
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
@@ -513,7 +513,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			if ( ! $this->p->check->pp( 'wpssojson', true, $this->p->avail['*']['p_dir'] ) ) {
+			if ( ! $this->p->check->pp( 'wpssojson', true, $this->p->avail[ '*' ][ 'p_dir' ] ) ) {
 
 				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
 				
@@ -521,7 +521,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				
 				$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
 
-				$notice_key = 'no_filter_' . $filter_name . '_' . $mod['name'] . '_' . $mod['id'];
+				$notice_key = 'no_filter_' . $filter_name . '_' . $mod[ 'name' ] . '_' . $mod[ 'id' ];
 			}
 
 			if ( ! empty( $warn_msg ) ) {
@@ -747,9 +747,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$cache_md5_pre = $this->p->lca . '_h_';
 			$cache_method = 'WpssoHead::get_head_array';
 
-			$year  = get_the_time( 'Y', $mod['id'] );
-			$month = get_the_time( 'm', $mod['id'] );
-			$day   = get_the_time( 'd', $mod['id'] );
+			$year  = get_the_time( 'Y', $mod[ 'id' ] );
+			$month = get_the_time( 'm', $mod[ 'id' ] );
+			$day   = get_the_time( 'd', $mod[ 'id' ] );
 
 			$home_url  = home_url( '/' );
 			$year_url  = get_year_link( $year );
@@ -767,8 +767,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Clear term archive page meta tags (and json markup).
 			 */
-			foreach ( get_post_taxonomies( $mod['id'] ) as $tax_name ) {
-				foreach ( wp_get_post_terms( $mod['id'], $tax_name ) as $term ) {
+			foreach ( get_post_taxonomies( $mod[ 'id' ] ) as $tax_name ) {
+				foreach ( wp_get_post_terms( $mod[ 'id' ], $tax_name ) as $term ) {
 					$transient_keys[] = array(
 						'id'   => $cache_md5_pre . md5( $cache_method . '(term:' . $term->term_id . '_tax:' . $tax_name . ')' ),
 						'pre'  => $cache_md5_pre,
@@ -780,7 +780,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			/**
 			 * Clear author archive page meta tags (and json markup).
 			 */
-			$author_id = get_post_field( 'post_author', $mod['id'] );
+			$author_id = get_post_field( 'post_author', $mod[ 'id' ] );
 
 			$transient_keys[] = array(
 				'id'   => $cache_md5_pre . md5( $cache_method . '(user:' . $author_id . ')' ),
@@ -1322,7 +1322,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 */
 		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
 
-			foreach ( $info['lib']['gpl'] as $sub => $libs ) {
+			foreach ( $info[ 'lib' ][ 'gpl' ] as $sub => $libs ) {
 
 				if ( $sub === 'admin' ) { // Skip status for admin menus and tabs.
 					continue;
@@ -1332,7 +1332,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 
-					if ( $pkg['pp'] && ! empty( $info['lib']['pro'][$sub][$id] ) ) {
+					if ( $pkg[ 'pp' ] && ! empty( $info[ 'lib' ][ 'pro' ][$sub][$id] ) ) {
 						continue;
 					}
 

@@ -137,9 +137,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static function get_version( $add_slug = false ) {
 
 			$ext  = 'wpssojson';
-			$info =& self::$cf['plugin'][$ext];
+			$info =& self::$cf[ 'plugin' ][$ext];
 
-			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
+			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -149,11 +149,11 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			}
 
 			define( 'WPSSOJSON_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOJSON_PLUGINBASE', self::$cf['plugin']['wpssojson']['base'] );		// wpsso-schema-json-ld/wpsso-schema-json-ld.php
+			define( 'WPSSOJSON_PLUGINBASE', self::$cf[ 'plugin' ]['wpssojson'][ 'base' ] );		// wpsso-schema-json-ld/wpsso-schema-json-ld.php
 			define( 'WPSSOJSON_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOJSON_PLUGINSLUG', self::$cf['plugin']['wpssojson']['slug'] );		// wpsso-schema-json-ld
+			define( 'WPSSOJSON_PLUGINSLUG', self::$cf[ 'plugin' ]['wpssojson'][ 'slug' ] );		// wpsso-schema-json-ld
 			define( 'WPSSOJSON_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOJSON_VERSION', self::$cf['plugin']['wpssojson']['version'] );						
+			define( 'WPSSOJSON_VERSION', self::$cf[ 'plugin' ]['wpssojson'][ 'version' ] );						
 
 			self::set_variable_constants();
 		}
