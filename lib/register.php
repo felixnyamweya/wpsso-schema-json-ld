@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'][ 'version' ];	// only our config
+			$version = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'version' ];	// only our config
 
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssojson', $version );

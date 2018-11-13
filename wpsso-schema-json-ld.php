@@ -98,7 +98,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			self::wpsso_init_textdomain();
 
-			$info = WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'];
+			$info = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ];
 
 			$die_msg = __( '%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-schema-json-ld' );
 
@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 				deactivate_plugins( $info[ 'base' ], true );	// $silent is true
 
-				wp_die( '<p>' . sprintf( $die_msg, $info[ 'name' ], $info['req'][ 'name' ], $info['req'][ 'short' ], $info[ 'short' ] ) . '</p>' );
+				wp_die( '<p>' . sprintf( $die_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $info[ 'short' ] ) . '</p>' );
 
 			} else {
 
@@ -125,7 +125,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info[ 'base' ] ) );
 
 				echo '<div class="notice notice-error error"><p>';
-				echo sprintf( $error_msg, $info[ 'name' ], $info['req'][ 'name' ], $info['req'][ 'short' ], $deactivate_url, $info[ 'short' ] );
+				echo sprintf( $error_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $deactivate_url, $info[ 'short' ] );
 				echo '</p></div>';
 			}
 		}
@@ -139,9 +139,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		 */
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
 
-			$info = WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'];
+			$info = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ];
 
-			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
+			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
 				$this->have_req_min = false;
 				return $cf;
 			}
@@ -160,11 +160,11 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			foreach ( array( 'gpl', 'pro' ) as $lib ) {
 				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
-					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'][ 'lib' ][$lib][$sub] ) ||
-						! is_array( WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'][ 'lib' ][$lib][$sub] ) ) {
+					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ||
+						! is_array( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ) {
 						continue;
 					}
-					foreach ( WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'][ 'lib' ][$lib][$sub] as $id_key => $label ) {
+					foreach ( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] as $id_key => $label ) {
 						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 						$avail[$sub][$id] = true;
 					}
@@ -241,12 +241,11 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 		private function min_version_notice() {
 
-			$info = WpssoJsonConfig::$cf[ 'plugin' ]['wpssojson'];
-
-			$have_version = $this->p->cf[ 'plugin' ][ 'wpsso' ][ 'version' ];
+			$info = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ];
 
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
-				'wpsso-schema-json-ld' ), $info[ 'name' ], $info[ 'version' ], $info['req'][ 'short' ], $info['req']['min_version'], $have_version );
+				'wpsso-schema-json-ld' ), $info[ 'name' ], $info[ 'version' ], $info[ 'req' ][ 'short' ], $info[ 'req' ][ 'min_version' ],
+					$this->p->cf[ 'plugin' ][ 'wpsso' ][ 'version' ] );
 
 			if ( is_admin() ) {
 

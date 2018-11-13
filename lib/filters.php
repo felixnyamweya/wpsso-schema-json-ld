@@ -502,7 +502,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			$urls          = $this->p->cf[ 'plugin' ]['wpssojson']['url'];
+			$urls          = $this->p->cf[ 'plugin' ][ 'wpssojson' ]['url'];
 			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true );
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
