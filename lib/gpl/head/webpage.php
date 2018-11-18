@@ -124,8 +124,8 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
-			 *      provider
 			 *      publisher
+			 *      provider
 			 */
 			if ( ! empty( $mod[ 'obj' ] ) ) {
 

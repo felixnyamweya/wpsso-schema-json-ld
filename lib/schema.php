@@ -661,7 +661,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				/**
 				 * If not adding a list element, inherit the existing schema type url (if one exists).
 				 */
-				if ( ! $list_element && ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) !== false ) {
+				if ( ! $list_element && false !== ( $comment_type_url = WpssoSchema::get_data_type_url( $json_data ) ) ) {
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'using inherited schema type url = ' . $comment_type_url );

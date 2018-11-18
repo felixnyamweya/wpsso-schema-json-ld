@@ -237,7 +237,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						$this->p->debug->log( 'setting type_url for type = ' . $value );
 					}
 
-					if ( filter_var( $value, FILTER_VALIDATE_URL ) !== false ) {
+					if ( false !== filter_var( $value, FILTER_VALIDATE_URL ) ) {
 						$type_url = $value;
 					} else {
 						$type_url = $this->p->schema->get_schema_type_url( $value );

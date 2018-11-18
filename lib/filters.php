@@ -96,7 +96,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				if ( is_array( $mod_opts ) ) {	// Just in case.
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
-						if ( filter_var( $addl_type_url, FILTER_VALIDATE_URL ) !== false ) {	// Just in case.
+						if ( false !== filter_var( $addl_type_url, FILTER_VALIDATE_URL ) ) {	// Just in case.
 							$ret['additionalType'][] = $addl_type_url;
 						}
 					}
