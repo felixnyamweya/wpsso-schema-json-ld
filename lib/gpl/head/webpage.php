@@ -78,6 +78,16 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
+			 *      keywords
+			 */
+			$ret[ 'keywords' ] = $this->p->page->get_keywords( $mod, $read_cache = true, $md_key = 'schema_keywords' );
+
+			if ( empty( $ret[ 'keywords' ] ) ) { // Just in case.
+				unset( $ret[ 'keywords' ] );
+			}
+
+			/**
+			 * Property:
 			 *	inLanguage
 			 *      copyrightYear
 			 */

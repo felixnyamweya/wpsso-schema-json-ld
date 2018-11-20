@@ -49,7 +49,8 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
-			$def_schema_text      = $this->p->page->get_the_text( $mod, $read_cache, 'none' );
+			$def_schema_text      = $this->p->page->get_the_text( $mod, $read_cache, $md_key = 'none' );
+			$def_schema_keywords  = $this->p->page->get_keywords( $mod, $read_cache, $md_key = 'none' );
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod['post_type'] ) );
@@ -193,6 +194,15 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'label'         => _x( 'Full Text', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'       => 'meta-schema_text',
 					'content'       => $form->get_no_textarea_value( $def_schema_text, 'full_text' ),
+				),
+				'schema_keywords' => array(
+					'no_auto_draft' => true,
+					'tr_class'      => $schema_type_tr_class['creative_work'],
+					'th_class'      => 'medium',
+					'td_class'      => 'blank',
+					'label'         => _x( 'Keywords', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'       => 'meta-schema_keywords',
+					'content'       => $form->get_no_input_value( $def_schema_keywords, 'wide' ),
 				),
 				'schema_lang' => array(
 					'tr_class' => $schema_type_tr_class['creative_work'],

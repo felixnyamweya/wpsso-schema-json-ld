@@ -347,6 +347,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_desc'                        => '',						// Description
 				'schema_headline'                    => '',						// Headline
 				'schema_text'                        => '',						// Full Text
+				'schema_keywords'                    => '',						// Keywords
 				'schema_lang'                        => $def_lang,					// Language
 				'schema_family_friendly'             => 'none',						// Family Friendly
 				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
@@ -568,6 +569,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_software_app_os':
 
 					return 'one_line';
+
+					break;
+
+				case 'schema_keywords':				// Keywords
+
+					return 'csv_blank';
 
 					break;
 
@@ -876,6 +883,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_text':		// Full Text
 
 					$text = __( 'The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_keywords':		// Keywords
+
+					$text = __( 'Comma delimited list of keywords or tags describing the Schema CreativeWork content.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
