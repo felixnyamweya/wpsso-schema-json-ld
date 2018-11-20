@@ -711,6 +711,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.36.0-dev.1 (2018/11/20)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
+	* Added a "keywords" property in the Schema CreativeWork type markup.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.35.1 (2018/11/03)**
 
 * *New Features*
@@ -850,6 +862,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.36.0-dev.1 =
+
+(2018/11/20) Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
 
 = 1.35.1 =
 
