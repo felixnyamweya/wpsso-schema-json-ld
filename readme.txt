@@ -206,6 +206,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* Creative Work Information
 		* Headline
 		* Full Text
+		* Keywords
 		* Language
 		* Family Friendly
 		* Copyright Year

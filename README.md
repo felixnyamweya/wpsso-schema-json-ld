@@ -230,6 +230,7 @@
 <ul>
 <li>Headline</li>
 <li>Full Text</li>
+<li>Keywords</li>
 <li>Language</li>
 <li>Family Friendly</li>
 <li>Copyright Year</li>
