@@ -179,7 +179,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			/**
 			 * Check only published posts or other non-post objects.
 			 */
-			if ( 'publish' === $mod['post_status'] || ! $mod['is_post'] ) {
+			if ( 'publish' === $mod[ 'post_status' ] || ! $mod[ 'is_post' ] ) {
 
 				foreach ( array( 'image' ) as $prop_name ) {
 

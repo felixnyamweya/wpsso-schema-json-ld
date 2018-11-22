@@ -529,7 +529,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$images_added = 0;
 			}
 
-			if ( ! $images_added && $mod['is_post'] ) {
+			if ( ! $images_added && $mod[ 'is_post' ] ) {
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'adding default image to json data' );
@@ -587,7 +587,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * then set the first media array element mainEntityOfPage to the page url, and set the page mainEntityOfPage
 			 * property to false (so it doesn't get defined later).
 			 */
-			$main_prop = $mod['is_post'] && $mod['post_type'] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
+			$main_prop = $mod[ 'is_post' ] && $mod[ 'post_type' ] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
 
 			$main_prop = apply_filters( $wpsso->lca . '_json_media_main_prop', $main_prop, $mod );
 
@@ -622,7 +622,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 		public static function add_comment_list_data( &$json_data, $mod ) {
 
-			if ( ! $mod['is_post'] || ! $mod[ 'id' ] || ! comments_open( $mod[ 'id' ] ) ) {
+			if ( ! $mod[ 'is_post' ] || ! $mod[ 'id' ] || ! comments_open( $mod[ 'id' ] ) ) {
 				return;
 			}
 
@@ -847,7 +847,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$is_archive = true;
 
-				} elseif ( empty( $mod[ 'id' ] ) && ! empty( $mod['post_type'] ) && is_post_type_archive() ) {
+				} elseif ( empty( $mod[ 'id' ] ) && ! empty( $mod[ 'post_type' ] ) && is_post_type_archive() ) {
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'mod id is empty and post type is archive (archive = true)' );

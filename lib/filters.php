@@ -128,7 +128,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				$ret['sameAs'][] = $this->p->util->get_canonical_url( $mod );
 
-				if ( $mod['is_post'] ) {
+				if ( $mod[ 'is_post' ] ) {
 
 					/**
 					 * Add the permalink, which may be different than the shared URL and the canonical URL.
@@ -196,7 +196,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 								$this->p->debug->log( 'skipping sameAs url - value is empty' );
 							}
 
-						} elseif ( $ret['url'] === $url ) {
+						} elseif ( $ret[ 'url' ] === $url ) {
 
 							if ( $this->p->debug->enabled ) {
 								$this->p->debug->log( 'skipping sameAs url - value is "url" property (' . $url . ')' );
@@ -281,7 +281,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'checking for schema shortcodes' );
 			}
 
-			if ( $mod['is_post'] ) {
+			if ( $mod[ 'is_post' ] ) {
 
 				$content = get_post_field( 'post_content', $mod[ 'id' ] );
 
@@ -336,7 +336,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$opts               =& $this->p->options;	// Shortcute for plugin options array.
-			$def_copyright_year = $mod['is_post'] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
+			$def_copyright_year = $mod[ 'is_post' ] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_lang           = SucomUtil::get_locale( $mod );
 
@@ -503,7 +503,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				return;
 			}
 
-			$urls          = $this->p->cf[ 'plugin' ][ 'wpssojson' ]['url'];
+			$urls          = $this->p->cf[ 'plugin' ][ 'wpssojson' ][ 'url' ];
 			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true );
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
 			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
