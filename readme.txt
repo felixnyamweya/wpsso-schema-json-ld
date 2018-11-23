@@ -34,7 +34,7 @@ WooCommerce product markup includes all product images, product variations, prod
 
 **A reliable WordPress plugin for today *and* tomorrow:**
 
-WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in the upcoming release of WordPress 5.0.
+WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg block editor</a> in the upcoming release of WordPress v5.0.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -712,13 +712,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.36.0-dev.5 (2018/11/22)**
+**Version 1.36.0-b.1 (2018/11/23)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
 	* Added a "keywords" property in the Schema CreativeWork type markup.
+	* Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -864,9 +864,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.36.0-dev.5 =
+= 1.36.0-b.1 =
 
-(2018/11/22) Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
+(2018/11/23) Added a "keywords" property in the Schema CreativeWork type markup. Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
 
 = 1.35.1 =
 
