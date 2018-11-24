@@ -917,7 +917,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							$wpsso->debug->log( 'getting mod for post id ' . $post->ID );
 						}
 
-						$page_posts_mods[] = $wpsso->m['util']['post']->get_mod( $post->ID );
+						$page_posts_mods[] = $wpsso->m[ 'util' ][ 'post' ]->get_mod( $post->ID );
 
 						if ( $have_num >= $ppp ) {
 							break;	// Stop here.
