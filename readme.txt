@@ -712,7 +712,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.36.0-rc.2 (2018/11/24)**
+**Version 1.36.0 (2018/11/25)**
 
 * *New Features*
 	* None.
@@ -864,11 +864,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.36.0-rc.2 =
+= 1.36.0 =
 
-(2018/11/24) Added a "keywords" property in the Schema CreativeWork type markup. Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
-
-= 1.35.1 =
-
-(2018/11/03) Fixed disabling of the schema shortcode when applying text filters (it should not be disabled).
+(2018/11/25) Added a "keywords" property in the Schema CreativeWork type markup. Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
 
