@@ -97,23 +97,42 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'version' ];	// only our config
+			if ( class_exists( 'Wpsso' ) ) {
 
-			if ( class_exists( 'WpssoUtil' ) ) {
-				WpssoUtil::save_all_times( 'wpssojson', $version );
+				if ( class_exists( 'WpssoUtil' ) ) {	// Just in case.
+
+					$version = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'version' ];
+
+					WpssoUtil::save_all_times( 'wpssojson', $version );
+				}
+
+				$wpsso =& Wpsso::get_instance();
+
+				$clear_other = empty( $wpsso->options['plugin_clear_on_activate'] ) ? false : true;
+
+				$wpsso->util->schedule_clear_all_cache( $user_id = get_current_user_id(), $clear_other );
+
 			} else {
-				WpssoJson::required_notice( true );			// $deactivate = true
+				WpssoJson::required_notice( $deactivate = true );
 			}
 		}
 
 		private function deactivate_plugin() {
-			// nothing to do
+
+			if ( class_exists( 'Wpsso' ) ) {
+
+				$wpsso =& Wpsso::get_instance();
+
+				$clear_other = empty( $wpsso->options['plugin_clear_on_deactivate'] ) ? false : true;
+
+				$wpsso->util->schedule_clear_all_cache( $user_id = get_current_user_id(), $clear_other );
+			}
 		}
 
 		private static function uninstall_plugin() {
-			delete_post_meta_by_key( '_wpsso_wpproductreview' );	// re-created automatically
-			delete_post_meta_by_key( '_wpsso_wprecipemaker' );	// re-created automatically
-			delete_post_meta_by_key( '_wpsso_wpultimaterecipe' );	// re-created automatically
+			delete_post_meta_by_key( '_wpsso_wpproductreview' );	// Re-created automatically.
+			delete_post_meta_by_key( '_wpsso_wprecipemaker' );	// Re-created automatically.
+			delete_post_meta_by_key( '_wpsso_wpultimaterecipe' );	// Re-created automatically.
 		}
 	}
 }
