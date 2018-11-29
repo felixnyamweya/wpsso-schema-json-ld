@@ -516,7 +516,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( ! $this->p->check->pp( 'wpssojson', true, $this->p->avail[ '*' ][ 'p_dir' ] ) ) {
 
-				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
+				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> - only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
 				
 				$warn_msg .= sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ) . ' ';
 				
@@ -1096,7 +1096,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					$role_label_transl = _x( 'Person', 'user role', 'wpsso' );	// Use the wpsso translation domain.
 
-					$text = sprintf( __( 'Select a person from the list of eligible WordPress users &mdash; to be included in this list, a user must be members of the WordPress "%s" role.', 'wpsso-schema-json-ld' ), $role_label_transl );
+					$text = sprintf( __( 'Select a person from the list of eligible WordPress users. To be included in this list, a user must be member of the WordPress "%s" role.', 'wpsso-schema-json-ld' ), $role_label_transl );
 
 				 	break;
 

@@ -33,9 +33,9 @@ msgstr ""
 #: lib/filters.php:519
 msgid ""
 "The Free / Standard version of WPSSO JSON does not include support for the "
-"Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema "
-"properties <em>url</em>, <em>name</em>, and <em>description</em> will be "
-"included in the Schema JSON-LD markup."
+"Schema type <a href=\"%1$s\">%1$s</a> - only the basic Schema properties "
+"<em>url</em>, <em>name</em>, and <em>description</em> will be included in "
+"the Schema JSON-LD markup."
 msgstr ""
 
 #: lib/filters.php:521
@@ -272,8 +272,8 @@ msgstr ""
 
 #: lib/filters.php:1099
 msgid ""
-"Select a person from the list of eligible WordPress users &mdash; to be "
-"included in this list, a user must be members of the WordPress \"%s\" role."
+"Select a person from the list of eligible WordPress users. To be included in "
+"this list, a user must be member of the WordPress \"%s\" role."
 msgstr ""
 
 #: lib/filters.php:1105
