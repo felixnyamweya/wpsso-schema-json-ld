@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.36.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-11-21 13:38-0800\n"
-"PO-Revision-Date: 2018-11-21 13:38-0800\n"
+"POT-Creation-Date: 2018-11-29 08:55-0600\n"
+"PO-Revision-Date: 2018-11-29 08:56-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -31,8 +31,8 @@ msgid "WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Ev
 msgstr "Extension d'ajout WPSSO Core pour balisage Schéma JSON-LD d'article, événement, entreprise locale, produit, recette, critique et bien plus."
 
 #: lib/filters.php:519
-msgid "The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> &mdash; only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
-msgstr "La version gratuite / standard WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> &mdash; seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans le balisage Schéma JSON-LD."
+msgid "The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> - only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
+msgstr "La version gratuite / standard WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> - seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans le balisage Schéma JSON-LD."
 
 #: lib/filters.php:521
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
@@ -220,8 +220,8 @@ msgid "Person"
 msgstr "Personne"
 
 #: lib/filters.php:1099
-msgid "Select a person from the list of eligible WordPress users &mdash; to be included in this list, a user must be members of the WordPress \"%s\" role."
-msgstr "Sélectionnez une personne dans la liste des utilisateurs WordPress éligibles & mdash; pour être inclus dans cette liste, un utilisateur doit être membre du rôle WordPress \"%s\"."
+msgid "Select a person from the list of eligible WordPress users. To be included in this list, a user must be member of the WordPress \"%s\" role."
+msgstr "Sélectionnez une personne dans la liste des utilisateurs WordPress éligibles. Pour être inclus dans cette liste, un utilisateur doit être membre du rôle WordPress \"%s\"."
 
 #: lib/filters.php:1105
 msgid "An optional heading / description of the question and it's answer."
