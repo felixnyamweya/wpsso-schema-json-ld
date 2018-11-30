@@ -1265,11 +1265,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 */
 		public function filter_messages_tooltip_schema( $text, $msg_key ) {
 
-			if ( strpos( $msg_key, 'tooltip-schema_def_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-schema_' ) !== 0 ) {
 				return $text;
 			}
 
 			switch ( $msg_key ) {
+
+				case 'tooltip-schema_add_text_prop':
+
+					$text = __( 'Add a text property to the Schema CreativeWork type with the complete textual content of the post / page.', 'wpsso-schema-json-ld' );
+
+				 	break;
 
 				case 'tooltip-schema_def_prov_org_id':
 

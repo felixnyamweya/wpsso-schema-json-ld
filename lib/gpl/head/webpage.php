@@ -70,10 +70,13 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 *      text
 			 */
-			$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_key = 'schema_text' );
+			if ( ! empty( $this->p->options[ 'schema_add_text_prop' ] ) ) {
 
-			if ( empty( $ret[ 'text' ] ) ) { // Just in case.
-				unset( $ret[ 'text' ] );
+				$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_key = 'schema_text' );
+
+				if ( empty( $ret[ 'text' ] ) ) { // Just in case.
+					unset( $ret[ 'text' ] );
+				}
 			}
 
 			/**

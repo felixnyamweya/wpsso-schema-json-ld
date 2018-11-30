@@ -408,42 +408,48 @@ msgstr ""
 
 #: lib/filters.php:1276
 msgid ""
+"Add a text property to the Schema CreativeWork type with the complete "
+"textual content of the post / page."
+msgstr ""
+
+#: lib/filters.php:1282
+msgid ""
 "Select a default service provider, service operator, or service performer "
 "(example: \"Netflix\")."
 msgstr ""
 
-#: lib/filters.php:1282
+#: lib/filters.php:1288
 msgid ""
 "Select a default publisher for the Schema CreativeWork type and/or its sub-"
 "types (Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
-#: lib/filters.php:1288
+#: lib/filters.php:1294
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1294
+#: lib/filters.php:1300
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1300
+#: lib/filters.php:1306
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1306
+#: lib/filters.php:1312
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1312
+#: lib/filters.php:1318
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1318
+#: lib/filters.php:1324
 msgid ""
 "Select a default organization for the Schema JobPosting hiring organization."
 msgstr ""
 
-#: lib/filters.php:1324
+#: lib/filters.php:1330
 msgid ""
 "Select a default place / location for the Schema JobPosting job location."
 msgstr ""
@@ -505,7 +511,7 @@ msgid "Same-As URLs"
 msgstr ""
 
 #: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:195
-#: lib/submenu/schema-general.php:167
+#: lib/submenu/schema-general.php:171
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
@@ -551,7 +557,7 @@ msgid "Service Provider"
 msgstr ""
 
 #: lib/gpl/admin/post.php:256 lib/pro/admin/post.php:265
-#: lib/submenu/schema-general.php:188
+#: lib/submenu/schema-general.php:192
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
@@ -669,7 +675,7 @@ msgid "How-To Steps"
 msgstr ""
 
 #: lib/gpl/admin/post.php:443 lib/pro/admin/post.php:435
-#: lib/submenu/schema-general.php:227
+#: lib/submenu/schema-general.php:231
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -1058,47 +1064,52 @@ msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-general.php:170
+#: lib/submenu/schema-general.php:105
+msgctxt "option label"
+msgid "Add CreativeWork Text Property"
+msgstr ""
+
+#: lib/submenu/schema-general.php:174
 msgctxt "option label"
 msgid "Default Publisher"
 msgstr ""
 
-#: lib/submenu/schema-general.php:176
+#: lib/submenu/schema-general.php:180
 msgctxt "option label"
 msgid "Default Service Provider"
 msgstr ""
 
-#: lib/submenu/schema-general.php:191
+#: lib/submenu/schema-general.php:195
 msgctxt "option label"
 msgid "Default Event Organizer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:197
+#: lib/submenu/schema-general.php:201
 msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:203
+#: lib/submenu/schema-general.php:207
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:209
+#: lib/submenu/schema-general.php:213
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:215
+#: lib/submenu/schema-general.php:219
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:230
+#: lib/submenu/schema-general.php:234
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:236
+#: lib/submenu/schema-general.php:240
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""
