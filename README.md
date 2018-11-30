@@ -66,23 +66,29 @@
 <li>Maximum Images to Include</li>
 <li>Schema Image Dimensions</li>
 <li>Maximum Description Length</li>
-<li>Author / Person Name Format</li>
+<li>Add CreativeWork Text Property</li>
 </ul></li>
 <li>Schema Types
 
 <ul>
-<li>Item Type for Blog Front Page</li>
-<li>Item Type for Static Front Page</li>
-<li>Item Type for User / Author Page</li>
-<li>Item Type for Search Results Page</li>
-<li>Item Type for Other Archive Page</li>
-<li>Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types</li>
-<li>Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies</li>
+<li>Type for Blog Front Page</li>
+<li>Type for Static Front Page</li>
+<li>Type for User / Author Page</li>
+<li>Type for Search Results Page</li>
+<li>Type for Other Archive Page</li>
+<li>Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types</li>
+<li>Type by Term Taxonomy for Categories, Tags, and custom term taxonomies</li>
 </ul></li>
 <li>Knowledge Graph
 
 <ul>
-<li>Knowledge Graph for Home Page</li>
+<li>Knowledge Graph for Home Page
+
+<ul>
+<li>Include WebSite Information for Google Search</li>
+<li>Include Organization Social Profile for a Business Site</li>
+<li>Include Person Social Profile for a Personal Site</li>
+</ul></li>
 <li>User for Person Social Profile</li>
 </ul></li>
 <li>Custom Meta Defaults
@@ -212,7 +218,7 @@
 <li>WP Ultimate Recipe</li>
 </ul></li>
 </ul></li>
-<li><p>Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:</p>
+<li><p>Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema type selected:</p>
 
 <ul>
 <li>All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">

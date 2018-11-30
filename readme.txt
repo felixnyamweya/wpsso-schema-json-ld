@@ -70,17 +70,20 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Maximum Images to Include
 		* Schema Image Dimensions
 		* Maximum Description Length
-		* Author / Person Name Format
+		* Add CreativeWork Text Property
 	* Schema Types
-		* Item Type for Blog Front Page
-		* Item Type for Static Front Page
-		* Item Type for User / Author Page
-		* Item Type for Search Results Page
-		* Item Type for Other Archive Page
-		* Item Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
-		* Item Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
+		* Type for Blog Front Page
+		* Type for Static Front Page
+		* Type for User / Author Page
+		* Type for Search Results Page
+		* Type for Other Archive Page
+		* Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
+		* Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
 	* Knowledge Graph
 		* Knowledge Graph for Home Page
+			* Include WebSite Information for Google Search
+			* Include Organization Social Profile for a Business Site
+			* Include Person Social Profile for a Personal Site
 		* User for Person Social Profile
 	* Custom Meta Defaults
 		* Creative Work Information
@@ -194,7 +197,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* WP Recipe Maker
 		* WP Ultimate Recipe
 
-* Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema Item Type selected:
+* Includes additional customizable option values in the Document SSO (Social and Search Optimization) metabox, displayed or hidden based on the Schema type selected:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Type
