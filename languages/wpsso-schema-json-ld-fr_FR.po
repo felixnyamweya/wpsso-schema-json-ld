@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.36.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-11-29 08:55-0600\n"
-"PO-Revision-Date: 2018-11-29 08:56-0600\n"
+"POT-Creation-Date: 2018-11-30 15:22-0600\n"
+"PO-Revision-Date: 2018-11-30 15:25-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -332,38 +332,42 @@ msgid "Operating system supported (example: %s, etc.)."
 msgstr "Système d'exploitation pris en charge (exemple: %s, etc.)."
 
 #: lib/filters.php:1276
+msgid "Add a text property to the Schema CreativeWork type with the complete textual content of the post / page."
+msgstr "Ajoutez une propriété text au type de Schéma CreativeWork avec le contenu textuel complet de l'article / page."
+
+#: lib/filters.php:1282
 msgid "Select a default service provider, service operator, or service performer (example: \"Netflix\")."
 msgstr "Sélectionnez un fournisseur de services, un opérateur de service ou un prestataire de services par défaut (exemple: \"Netflix\")."
 
-#: lib/filters.php:1282
+#: lib/filters.php:1288
 msgid "Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc)."
 msgstr "Sélectionnez un éditeur par défaut pour le type de Schéma CreativeWork et/ou ses sous-types (Article, BlogPosting, WebPage, etc)."
 
-#: lib/filters.php:1288
+#: lib/filters.php:1294
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (organisation) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1294
+#: lib/filters.php:1300
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (personne) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1300
+#: lib/filters.php:1306
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr "Sélectionnez un interprète (organisation) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1306
+#: lib/filters.php:1312
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr "Sélectionnez un interprète (personne) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1312
+#: lib/filters.php:1318
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr "Sélectionnez une place par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1318
+#: lib/filters.php:1324
 msgid "Select a default organization for the Schema JobPosting hiring organization."
 msgstr "Sélectionnez une organisation d'embauche par défaut pour le type de Schéma JobPosting."
 
-#: lib/filters.php:1324
+#: lib/filters.php:1330
 msgid "Select a default place / location for the Schema JobPosting job location."
 msgstr "Sélectionnez un emplacement de travail par défaut pour le type de Schéma JobPosting."
 
@@ -425,7 +429,7 @@ msgid "Same-As URLs"
 msgstr "URLs Same-As"
 
 #: lib/gpl/admin/post.php:178 lib/pro/admin/post.php:195
-#: lib/submenu/schema-general.php:167
+#: lib/submenu/schema-general.php:171
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr "Informations sur l'oeuvre créative"
@@ -471,7 +475,7 @@ msgid "Service Provider"
 msgstr "Fournisseur de service"
 
 #: lib/gpl/admin/post.php:256 lib/pro/admin/post.php:265
-#: lib/submenu/schema-general.php:188
+#: lib/submenu/schema-general.php:192
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr "Informations sur l'événement"
@@ -589,7 +593,7 @@ msgid "How-To Steps"
 msgstr "Les étapes du How-To"
 
 #: lib/gpl/admin/post.php:443 lib/pro/admin/post.php:435
-#: lib/submenu/schema-general.php:227
+#: lib/submenu/schema-general.php:231
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr "Informations sur l'affichage d'emploi"
@@ -973,47 +977,52 @@ msgctxt "option label"
 msgid "WebSite Description"
 msgstr "Description du site Web"
 
-#: lib/submenu/schema-general.php:170
+#: lib/submenu/schema-general.php:105
+msgctxt "option label"
+msgid "Add CreativeWork Text Property"
+msgstr "Ajouter la propriété CreativeWork text"
+
+#: lib/submenu/schema-general.php:174
 msgctxt "option label"
 msgid "Default Publisher"
 msgstr "Éditeur par défaut"
 
-#: lib/submenu/schema-general.php:176
+#: lib/submenu/schema-general.php:180
 msgctxt "option label"
 msgid "Default Service Provider"
 msgstr "Fournisseur de service par défaut"
 
-#: lib/submenu/schema-general.php:191
+#: lib/submenu/schema-general.php:195
 msgctxt "option label"
 msgid "Default Event Organizer Org."
 msgstr "Organisation par défaut pour l'organisateur de l'événement"
 
-#: lib/submenu/schema-general.php:197
+#: lib/submenu/schema-general.php:201
 msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr "Personne par défaut pour l'organisateur de l'événement"
 
-#: lib/submenu/schema-general.php:203
+#: lib/submenu/schema-general.php:207
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr "Organization par défaut pour l'interprète de l'événement"
 
-#: lib/submenu/schema-general.php:209
+#: lib/submenu/schema-general.php:213
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr "Personne par défaut pour l'interprète de l'événement"
 
-#: lib/submenu/schema-general.php:215
+#: lib/submenu/schema-general.php:219
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr "Place par défaut pour l'événement"
 
-#: lib/submenu/schema-general.php:230
+#: lib/submenu/schema-general.php:234
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr "Organisation d'embauche par défaut"
 
-#: lib/submenu/schema-general.php:236
+#: lib/submenu/schema-general.php:240
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr "Lieu de travail par défaut"
