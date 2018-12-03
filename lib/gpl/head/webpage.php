@@ -60,24 +60,26 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
-			 * 	headline
-			 */
-			$headline_max_len  = $this->p->cf['head']['limit_max']['schema_headline_len'];
-
-			$ret[ 'headline' ] = $this->p->page->get_title( $headline_max_len, '...', $mod );
-
-			/**
-			 * Property:
 			 *      text
 			 */
 			if ( ! empty( $this->p->options[ 'schema_add_text_prop' ] ) ) {
 
-				$ret[ 'text' ] = $this->p->page->get_the_text( $mod, $read_cache = true, $md_key = 'schema_text' );
+				$text_max_len = $this->p->options['schema_text_max_len'];
+
+				$ret[ 'text' ] = $this->p->page->get_text( $text_max_len, '...', $mod );
 
 				if ( empty( $ret[ 'text' ] ) ) { // Just in case.
 					unset( $ret[ 'text' ] );
 				}
 			}
+
+			/**
+			 * Property:
+			 * 	headline
+			 */
+			$headline_max_len = $this->p->cf['head']['limit_max']['schema_headline_len'];
+
+			$ret[ 'headline' ] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
 			/**
 			 * Property:

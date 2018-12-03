@@ -1277,6 +1277,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-schema_text_max_len':
+
+					$text = sprintf( __( 'The maximum length of text used for the Schema CreativeWork text property value (the default is %1$d characters).', 'wpsso' ), $this->p->opt->get_defaults( 'schema_text_max_len' ) );
+
+				 	break;
+
 				case 'tooltip-schema_def_prov_org_id':
 
 					$text = __( 'Select a default service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );

@@ -105,6 +105,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					$this->form->get_th_html( _x( 'Add CreativeWork Text Property', 'option label', 'wpsso' ), '', 'schema_add_text_prop' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
+					$table_rows['schema_text_max_len'] = $this->form->get_tr_hide( 'basic', 'schema_text_max_len' ) . 
+					$this->form->get_th_html( _x( 'Maximum Text Property Length', 'option label', 'wpsso' ), '', 'schema_text_max_len' ) . 
+					'<td>' . $this->form->get_input( 'schema_text_max_len', 'short' ) . ' ' . _x( 'characters or less', 'option comment', 'wpsso' ) . '</td>';
+
 					break;
 
 				case 'schema_general-types':

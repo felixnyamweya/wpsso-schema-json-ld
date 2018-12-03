@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.36.1-dev.1',	// Plugin version.
-					'opt_version' => '18',		// Increment when changing default option values.
+					'version'     => '1.36.1-dev.2',	// Plugin version.
+					'opt_version' => '19',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
 					'desc'        => 'WPSSO Core add-on to provide Schema JSON-LD / SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.17.2-dev.1',
+						'min_version' => '4.17.2-dev.2',
 					),
 					'img' => array(
 						'icons' => array(
@@ -113,6 +113,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			'opt' => array(						// Plugin options.
 				'defaults' => array(
 					'schema_add_text_prop' => 0,		// Add CreativeWork Text Property
+					'schema_text_max_len'  => 10000,	// Maximum Text Property Length
 
 					/**
 					 * Custom Meta Defaults

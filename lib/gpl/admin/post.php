@@ -38,18 +38,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 			$maybe_hashtags = true;
 			$do_encode      = true;
 
-			$schema_types     = $this->p->schema->get_schema_types_select( null, $add_none = true );
-			$currencies       = SucomUtil::get_currency_abbrev();
-			$event_offers_max = SucomUtil::get_const( 'WPSSO_SCHEMA_EVENT_OFFERS_MAX', 10 );
+			$schema_types = $this->p->schema->get_schema_types_select( null, $add_none = true );
+			$currencies   = SucomUtil::get_currency_abbrev();
+
 			$og_title_max_len = $this->p->options['og_title_max_len'];
 			$headline_max_len = $this->p->cf['head']['limit_max']['schema_headline_len'];
+			$text_max_len     = $this->p->options['schema_text_max_len'];
 
 			$def_copyright_year   = $mod[ 'is_post' ] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
-			$def_schema_text      = $this->p->page->get_the_text( $mod, $read_cache, $md_key = 'none' );
+			$def_schema_text      = $this->p->page->get_text( $text_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, $md_key = 'none' );
 			$def_schema_keywords  = $this->p->page->get_keywords( $mod, $read_cache, $md_key = 'none' );
 
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
@@ -366,7 +367,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 							'select_options' => $this->p->cf['form']['item_availability'],
 							'select_default' => 'InStock',
 						),
-					), '', 'schema_event_offer', $start_num = 0, $event_offers_max, 2 ),
+					), '', 'schema_event_offer', $start_num = 0, 10, 2 ),
 				),
 
 				/**
