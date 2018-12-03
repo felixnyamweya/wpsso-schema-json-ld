@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'opt' => array(						// Plugin options.
 				'defaults' => array(
-					'schema_add_text_prop' => 0,		// Add CreativeWork Text Property
+					'schema_add_text_prop' => 1,		// Add CreativeWork Text Property
 					'schema_text_max_len'  => 10000,	// Maximum Text Property Length
 
 					/**
