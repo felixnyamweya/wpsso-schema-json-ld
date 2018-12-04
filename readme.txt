@@ -720,7 +720,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a "Add CreativeWork Text Property" and "Maximum Text Property Length" option in the SSO &gt; Schema Markup settings page.
+	* Added two new options in the SSO &gt; Schema Markup settings page:
+		* "Add CreativeWork Text Property"
+		* "Maximum Text Property Length"
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -880,7 +882,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.36.1-dev.3 =
 
-(2018/12/04) Added a "Add CreativeWork Text Property" and "Maximum Text Property Length" option in the SSO &gt; Schema Markup settings page.
+(2018/12/04) Added two new options in the SSO &gt; Schema Markup settings page.
 
 = 1.36.0 =
 
