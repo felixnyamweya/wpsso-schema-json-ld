@@ -715,7 +715,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.36.1-dev.3 (2018/12/04)**
+**Version 1.36.1 (2018/12/05)**
 
 * *New Features*
 	* None.
@@ -880,9 +880,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.36.1-dev.3 =
+= 1.36.1 =
 
-(2018/12/04) Added two new options in the SSO &gt; Schema Markup settings page.
+(2018/12/05) Added two new options in the SSO &gt; Schema Markup settings page.
 
 = 1.36.0 =
 
