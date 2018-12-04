@@ -715,12 +715,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.36.1-dev.2 (2018/12/03)**
+**Version 1.36.1-dev.3 (2018/12/04)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Add CreativeWork Text Property" option in the SSO &gt; Schema Markup settings page (unchecked by default).
+	* Added a "Add CreativeWork Text Property" and "Maximum Text Property Length" option in the SSO &gt; Schema Markup settings page.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -878,9 +878,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.36.1-dev.2 =
+= 1.36.1-dev.3 =
 
-(2018/12/03) Added a new "Add CreativeWork Text Property" option in the SSO &gt; Schema Markup settings page (unchecked by default).
+(2018/12/04) Added a "Add CreativeWork Text Property" and "Maximum Text Property Length" option in the SSO &gt; Schema Markup settings page.
 
 = 1.36.0 =
 
