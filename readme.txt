@@ -114,6 +114,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/Course](https://schema.org/Course)
 	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 71 Schema types)
 	* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
+	* [pending.schema.org/FAQPage](https://pending.schema.org/FAQPage)
 	* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
 	* [schema.org/HowTo](https://schema.org/HowTo) (includes 2 Schema types)
 	* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
@@ -126,7 +127,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 	* [schema.org/Product](https://schema.org/Product) (includes 9 Schema types)
 	* [schema.org/ProfilePage](https://schema.org/ProfilePage)
 	* [schema.org/QAPage](https://schema.org/QAPage)
-	* [pending.schema.org/Question](https://pending.schema.org/Question)
+	* [schema.org/Question](https://schema.org/Question) and Answer
 	* [schema.org/Recipe](https://schema.org/Recipe)
 	* [schema.org/Review](https://schema.org/Review) (includes 2 Schema types)
 	* [schema.org/SearchResultsPage](https://schema.org/SearchResultsPage)
@@ -288,7 +289,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 * Select any available Schema type or sub-type for your content, including the following and many more:
 
 	* Schema Type [schema.org/CreativeWork](https://schema.org/CreativeWork) 
-		* Schema Type [pending.schema.org/Answer](https://pending.schema.org/Answer)
+		* Schema Type [schema.org/Answer](https://schema.org/Answer)
 		* Schema Type [schema.org/Article](https://schema.org/Article)
 			* Schema Type [schema.org/NewsArticle](https://schema.org/NewsArticle)
 			* Schema Type [schema.org/Report](https://schema.org/Report)
@@ -334,7 +335,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Schema Type [schema.org/Photograph](https://schema.org/Photograph)
 		* Schema Type [schema.org/PublicationIssue](https://schema.org/PublicationIssue)
 		* Schema Type [schema.org/PublicationVolume](https://schema.org/PublicationVolume)
-		* Schema Type [pending.schema.org/Question](https://pending.schema.org/Question)
+		* Schema Type [schema.org/Question](https://schema.org/Question)
 		* Schema Type [schema.org/Review](https://schema.org/Review)
 			* Schema Type [schema.org/ClaimReview](https://schema.org/ClaimReview)
 		* Schema Type [schema.org/Sculpture](https://schema.org/Sculpture)
@@ -715,12 +716,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.36.2-dev.1 (2018/12/09)**
+**Version 1.37.0-dev.1 (2018/12/09)**
 
 * *New Features*
-	* None.
+	* Added a module for the Schema FAQPage type (Pro version).
 * *Improvements*
-	* None.
+	* Updated the Schema QAPage and Comment / Answer type modules (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -753,9 +754,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.36.2-dev.1 =
+= 1.37.0-dev.1 =
 
-(2018/12/09) None.
+(2018/12/09) Added a module for the Schema FAQPage type (Pro version). Updated the Schema QAPage and Comment / Answer type modules (Pro version).
 
 = 1.36.1 =
 
