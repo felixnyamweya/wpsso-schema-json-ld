@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.36.1',	// Plugin version.
+					'version'     => '1.36.2-dev.1',	// Plugin version.
 					'opt_version' => '19',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -70,6 +70,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'course'              => '(code) Schema Type Course (schema_type:course)',
 								'creativework'        => '(code) Schema Type Creative Work (schema_type:creative.work)',
 								'event'               => '(code) Schema Type Event (schema_type:event)',
+								'faqpage'             => '(code) Schema Type FAQPage (schema_type:webpage.faq)',
 								'foodestablishment'   => '(code) Schema Type Food Establishment (schema_type:food.establishment)',
 								'howto'               => '(code) Schema Type How-To (schema_type:howto)',
 								'itemlist'            => '(code) Schema Type Item List (schema_type:item.list)',
