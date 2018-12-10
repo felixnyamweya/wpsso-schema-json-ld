@@ -717,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.37.0-dev.2 (2018/12/10)**
+**Version 1.37.0 (2018/12/10)**
 
 * *New Features*
 	* Added a module for the Schema FAQPage type (Pro version).
@@ -755,11 +755,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.37.0-dev.2 =
+= 1.37.0 =
 
 (2018/12/10) Added a module for the Schema FAQPage type (Pro version). Updated the Schema QAPage and Comment / Answer type modules (Pro version).
-
-= 1.36.1 =
-
-(2018/12/05) Added two new options in the SSO &gt; Schema Markup settings page.
 
