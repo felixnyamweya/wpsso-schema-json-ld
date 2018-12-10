@@ -580,13 +580,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema QAPage
 				 */
 				'subsection_qa' => array(
-					'tr_class' => $schema_type_tr_class['qapage'],
+					'tr_class' => $schema_type_tr_class[ 'qapage' ],
 					'td_class' => 'subsection',
 					'header'   => 'h5',
 					'label'    => _x( 'QA Page Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_qa_desc' => array(
-					'tr_class' => $schema_type_tr_class['qapage'],
+					'tr_class' => $schema_type_tr_class[ 'qapage' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'QA Heading / Desc', 'option label', 'wpsso-schema-json-ld' ),
