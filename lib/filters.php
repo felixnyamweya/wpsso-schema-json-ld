@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	additionalType
 			 */
-			$ret['additionalType'] = array();
+			$ret[ 'additionalType' ] = array();
 
 			if ( is_object( $mod[ 'obj' ] ) ) {
 
@@ -97,17 +97,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				if ( is_array( $mod_opts ) ) {	// Just in case.
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
 						if ( false !== filter_var( $addl_type_url, FILTER_VALIDATE_URL ) ) {	// Just in case.
-							$ret['additionalType'][] = $addl_type_url;
+							$ret[ 'additionalType' ][] = $addl_type_url;
 						}
 					}
 				}
 			}
 
-			$ret['additionalType'] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_additionaltype',
-				$ret['additionalType'], $mod, $mt_og, $page_type_id, $is_main );
+			$ret[ 'additionalType' ] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_additionaltype',
+				$ret[ 'additionalType' ], $mod, $mt_og, $page_type_id, $is_main );
 
-			if ( empty( $ret['additionalType'] ) ) {
-				unset( $ret['additionalType'] );
+			if ( empty( $ret[ 'additionalType' ] ) ) {
+				unset( $ret[ 'additionalType' ] );
 			}
 
 			/**
@@ -120,20 +120,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	sameAs
 			 */
-			$ret['sameAs'] = array();
+			$ret[ 'sameAs' ] = array();
 
 			if ( is_object( $mod[ 'obj' ] ) ) {
 
 				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
-				$ret['sameAs'][] = $this->p->util->get_canonical_url( $mod );
+				$ret[ 'sameAs' ][] = $this->p->util->get_canonical_url( $mod );
 
 				if ( $mod[ 'is_post' ] ) {
 
 					/**
 					 * Add the permalink, which may be different than the shared URL and the canonical URL.
 					 */
-					$ret['sameAs'][] = get_permalink( $mod[ 'id' ] );
+					$ret[ 'sameAs' ][] = get_permalink( $mod[ 'id' ] );
 
 					/**
 					 * Add the shortlink / short URL, but only if the link rel shortlink tag is enabled.
@@ -142,7 +142,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					if ( apply_filters( $this->p->lca . '_add_link_rel_shortlink', $add_link_rel_shortlink, $mod ) ) {
 
-						$ret['sameAs'][] = wp_get_shortlink( $mod[ 'id' ], 'post' );
+						$ret[ 'sameAs' ][] = wp_get_shortlink( $mod[ 'id' ], 'post' );
 
 						/**
 						 * Some themes and plugins have been known to hook the WordPress 'get_shortlink' filter 
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						 *
 						 * $context = 'blog', 'post' (default), 'media', or 'query'
 						 */
-						$ret['sameAs'][] = SucomUtilWP::wp_get_shortlink( $mod[ 'id' ], 'post' );
+						$ret[ 'sameAs' ][] = SucomUtilWP::wp_get_shortlink( $mod[ 'id' ], 'post' );
 					}
 				}
 
@@ -166,7 +166,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					if ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
 
-						$ret['sameAs'][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og['og:url'],
+						$ret[ 'sameAs' ][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og['og:url'],
 							$this->p->options['plugin_shortener'], $mod );
 					}
 				}
@@ -177,18 +177,18 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				if ( is_array( $mod_opts ) ) {	// Just in case
 
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_sameas_url_[0-9]+$/', $mod_opts ) as $url ) {
-						$ret['sameAs'][] = SucomUtil::esc_url_encode( $url );
+						$ret[ 'sameAs' ][] = SucomUtil::esc_url_encode( $url );
 					}
 				}
 
 				/**
 				 * Sanitize the sameAs array - make sure URLs are valid and remove any duplicates.
 				 */
-				if ( ! empty( $ret['sameAs'] ) ) {
+				if ( ! empty( $ret[ 'sameAs' ] ) ) {
 
 					$added_urls = array();
 
-					foreach ( $ret['sameAs'] as $num => $url ) {
+					foreach ( $ret[ 'sameAs' ] as $num => $url ) {
 
 						if ( empty( $url ) ) {
 
@@ -221,19 +221,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 							continue;	// Get the next url.
 						}
 
-						unset( $ret['sameAs'][$num] );	// Remove the duplicate / invalid url.
+						unset( $ret[ 'sameAs' ][$num] );	// Remove the duplicate / invalid url.
 					}
 
-					$ret['sameAs'] = array_values( $ret['sameAs'] );	// Reindex / renumber the array.
+					$ret[ 'sameAs' ] = array_values( $ret[ 'sameAs' ] );	// Reindex / renumber the array.
 				}
 			}
 
 
-			$ret['sameAs'] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_sameas',
-				$ret['sameAs'], $mod, $mt_og, $page_type_id, $is_main );
+			$ret[ 'sameAs' ] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_sameas',
+				$ret[ 'sameAs' ], $mod, $mt_og, $page_type_id, $is_main );
 
-			if ( empty( $ret['sameAs'] ) ) {
-				unset( $ret['sameAs'] );
+			if ( empty( $ret[ 'sameAs' ] ) ) {
+				unset( $ret[ 'sameAs' ] );
 			}
 
 			/**
