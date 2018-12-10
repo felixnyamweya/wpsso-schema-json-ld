@@ -492,6 +492,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				16 => array(
 					'schema_course_provider_id' => 'schema_prov_org_id',
 				),
+				20 => array(
+					'schema_question_desc' => 'schema_qa_desc',
+				),
 			);
 
 			return $options_keys;
@@ -1143,7 +1146,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_question_desc':
+				case 'tooltip-meta-schema_qa_desc':
 
 			 		$text = __( 'An optional heading / description of the question and it\'s answer.',
 						'wpsso-schema-json-ld' ) . ' ';

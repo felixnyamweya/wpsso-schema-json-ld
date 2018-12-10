@@ -93,7 +93,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'movie'          => $this->p->schema->get_children_css_class( 'movie', 'hide_schema_type' ),
 				'organization'   => $this->p->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
 				'person'         => $this->p->schema->get_children_css_class( 'person', 'hide_schema_type' ),
-				'question'       => $this->p->schema->get_children_css_class( 'question', 'hide_schema_type' ),
+				'qapage'         => $this->p->schema->get_children_css_class( 'webpage.qa', 'hide_schema_type' ),
 				'recipe'         => $this->p->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
 				'review'         => $this->p->schema->get_children_css_class( 'review', 'hide_schema_type' ),
 				'review_claim'   => $this->p->schema->get_children_css_class( 'review.claim', 'hide_schema_type' ),
@@ -577,20 +577,20 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 
 				/**
-				 * Schema Question
+				 * Schema QAPage
 				 */
-				'subsection_question' => array(
-					'tr_class' => $schema_type_tr_class['question'],
+				'subsection_qa' => array(
+					'tr_class' => $schema_type_tr_class['qapage'],
 					'td_class' => 'subsection',
 					'header'   => 'h5',
-					'label'    => _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'QA Page Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_question_desc' => array(
-					'tr_class' => $schema_type_tr_class['question'],
+				'schema_qa_desc' => array(
+					'tr_class' => $schema_type_tr_class['qapage'],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Q & A Heading / Desc', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_question_desc',
+					'label'    => _x( 'QA Heading / Desc', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_qa_desc',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
 
