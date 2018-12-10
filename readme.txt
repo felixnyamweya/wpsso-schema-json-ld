@@ -71,6 +71,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Schema Image Dimensions
 		* Maximum Description Length
 		* Add CreativeWork Text Property
+		* Maximum Text Property Length
 	* Schema Types
 		* Type for Blog Front Page
 		* Type for Static Front Page
@@ -716,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.37.0-dev.1 (2018/12/09)**
+**Version 1.37.0-dev.2 (2018/12/10)**
 
 * *New Features*
 	* Added a module for the Schema FAQPage type (Pro version).
@@ -754,9 +755,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.37.0-dev.1 =
+= 1.37.0-dev.2 =
 
-(2018/12/09) Added a module for the Schema FAQPage type (Pro version). Updated the Schema QAPage and Comment / Answer type modules (Pro version).
+(2018/12/10) Added a module for the Schema FAQPage type (Pro version). Updated the Schema QAPage and Comment / Answer type modules (Pro version).
 
 = 1.36.1 =
 
