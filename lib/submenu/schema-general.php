@@ -101,7 +101,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 					$this->add_schema_item_props_table_rows( $table_rows );
 
-					$table_rows[ 'schema_add_text_prop' ] = '' . 
+					$table_rows[ 'schema_add_text_prop' ] = $this->form->get_tr_hide( 'basic', 'schema_add_text_prop' ) .
 					$this->form->get_th_html( _x( 'Add CreativeWork Text Property', 'option label', 'wpsso' ), '', 'schema_add_text_prop' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
