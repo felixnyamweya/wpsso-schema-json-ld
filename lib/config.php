@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.37.1-dev.3',	// Plugin version.
+					'version'     => '1.37.1-dev.4',	// Plugin version.
 					'opt_version' => '20',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.18.0-dev.3',
+						'min_version' => '4.18.0-dev.4',
 					),
 					'img' => array(
 						'icons' => array(
@@ -194,8 +194,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOJSON_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOJSON_PLUGINDIR . 'lib/actions.php';
 			require_once WPSSOJSON_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOJSON_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOJSON_PLUGINDIR . 'lib/schema.php';
 
 			add_filter( 'wpssojson_load_lib', array( 'WpssoJsonConfig', 'load_lib' ), 10, 3 );

@@ -30,7 +30,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'add_schema_meta_array'            => '__return_false',
 				'add_schema_noscript_array'        => '__return_false',
 				'json_data_https_schema_org_thing' => 5,
-			), -1000 );	// Make sure we run first.
+			), -10000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults'        => 2,
@@ -40,11 +40,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			if ( is_admin() ) {
 
-				$this->p->util->add_plugin_actions( $this, array(	// Admin actions.
-					'admin_post_head' => 1,
-				) );
-
-				$this->p->util->add_plugin_filters( $this, array(	// Admin filters.
+				$this->p->util->add_plugin_filters( $this, array(
 					'option_type'               => 2,
 					'save_post_options'         => 4,
 					'post_cache_transient_keys' => 4,
@@ -498,40 +494,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			);
 
 			return $options_keys;
-		}
-
-		public function action_admin_post_head( $mod ) {
-
-			if ( ! current_user_can( 'manage_options' ) ) {
-				return;
-			}
-
-			$urls          = $this->p->cf[ 'plugin' ][ 'wpssojson' ][ 'url' ];
-			$page_type_id  = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true );
-			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
-			$filter_name   = $this->p->schema->get_json_data_filter( $mod, $page_type_url );
-			$warn_msg      = '';
-			$notice_key    = false;
-
-			if ( has_filter( $filter_name ) ) {
-				return;
-			}
-
-			if ( ! $this->p->check->pp( 'wpssojson', true, $this->p->avail[ '*' ][ 'p_dir' ] ) ) {
-
-				$warn_msg = sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> - only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
-				
-				$warn_msg .= sprintf( __( 'The <a href="%1$s">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $page_type_url ) . ' ';
-				
-				$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the Pro version.', 'wpsso-schema-json-ld' ), $page_type_url );
-
-				$notice_key = 'no_filter_' . $filter_name . '_' . $mod[ 'name' ] . '_' . $mod[ 'id' ];
-			}
-
-			if ( ! empty( $warn_msg ) ) {
-				$this->p->notice->warn( '<p class="top"><em>' . __( 'This notice is only shown to users with Administrative privileges.',
-					'wpsso-schema-json-ld' ) . '</em></p><p>' . $warn_msg . '</p>', null, $notice_key, true );
-			}
 		}
 
 		public function filter_option_type( $type, $base_key ) {
