@@ -44,7 +44,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Tried three other plugins before this one - for our Woocommerce site, this was by far the best one. Thanks!" - [EntoMarket](https://wordpress.org/support/topic/tried-three-other-plugins-before-this-one/)
 
-<h3>WPSSO JSON Free / Standard Features</h3>
+<h3>WPSSO JSON Standard Features</h3>
 
 * Extends the features of the WPSSO Core Free or Pro plugin.
 
@@ -102,7 +102,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
 
-<h3>WPSSO JSON Pro / Additional Features</h3>
+<h3>WPSSO JSON Additional Features (Pro version)</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
@@ -717,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.37.1-dev.3 (2018/12/10)**
+**Version 1.37.1-dev.4 (2018/12/10)**
 
 * *New Features*
 	* None.
@@ -726,7 +726,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_submit_button_rows' for WPSSO Core v4.18.0.
+	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
+	* Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
 
 **Version 1.37.0 (2018/12/10)**
 
@@ -766,9 +767,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.37.1-dev.3 =
+= 1.37.1-dev.4 =
 
-(2018/12/10) Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_submit_button_rows' for WPSSO Core v4.18.0.
+(2018/12/10) Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
 
 = 1.37.0 =
 
