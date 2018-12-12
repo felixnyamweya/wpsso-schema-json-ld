@@ -717,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.37.1-dev.5 (2018/12/11)**
+**Version 1.37.1-b.1 (2018/12/12)**
 
 * *New Features*
 	* None.
@@ -726,8 +726,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
 	* Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
+	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
 
 **Version 1.37.0 (2018/12/10)**
 
@@ -767,9 +767,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.37.1-dev.5 =
+= 1.37.1-b.1 =
 
-(2018/12/11) Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
+(2018/12/12) Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
 
 = 1.37.0 =
 
