@@ -252,8 +252,8 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Organization
 	* Person Information
 		* Person
-	* Question / Answer Information
-		* Q & A Heading / Description
+	* QA Page Information
+		* QA Heading
 	* Recipe Information
 		* Recipe Cuisine 
 		* Recipe Course 
@@ -717,12 +717,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.37.1-b.1 (2018/12/12)**
+**Version 1.38.0-b.2 (2018/12/13)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added support for new Schema Product type properties (Pro version):
+		* gtin8
+		* gtin12
+		* gtin13
+		* gtin14
 * *Bugfixes*
 	* Fixed missing 'sku' property in the Schema Product markup (Pro version).
 * *Developer Notes*
@@ -767,9 +771,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.37.1-b.1 =
+= 1.38.0-b.2 =
 
-(2018/12/12) Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
+(2018/12/13) Added support for new Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
 
 = 1.37.0 =
 
