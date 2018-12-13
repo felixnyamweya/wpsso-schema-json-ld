@@ -589,7 +589,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class[ 'qapage' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'QA Heading / Desc', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'QA Heading', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_qa_desc',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
