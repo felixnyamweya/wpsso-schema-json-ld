@@ -138,7 +138,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
-* Moves the Schema JSON-LD created by the Yoast SEO How-To and FAQ editor blocks into the main webpage Schema CreativeWork markup.
+* Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.
 
 * Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
 
