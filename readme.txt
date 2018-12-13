@@ -717,16 +717,18 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.38.0-b.2 (2018/12/13)**
+**Version 1.38.0-b.3 (2018/12/13)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added support for new Schema Product type properties (Pro version):
+		* ean
 		* gtin8
 		* gtin12
 		* gtin13
 		* gtin14
+		* productID
 * *Bugfixes*
 	* Fixed missing 'sku' property in the Schema Product markup (Pro version).
 * *Developer Notes*
@@ -771,7 +773,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.38.0-b.2 =
+= 1.38.0-b.3 =
 
 (2018/12/13) Added support for new Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
 
