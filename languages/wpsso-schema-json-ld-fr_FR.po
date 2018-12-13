@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.37.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.38.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2018-12-12 08:39-0800\n"
-"PO-Revision-Date: 2018-12-12 08:39-0800\n"
+"POT-Creation-Date: 2018-12-13 11:13-0800\n"
+"PO-Revision-Date: 2018-12-13 11:14-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -691,8 +691,8 @@ msgstr "Informations sur la page QA"
 
 #: lib/gpl/admin/post.php:592 lib/pro/admin/post.php:574
 msgctxt "option label"
-msgid "QA Heading / Desc"
-msgstr "QA en-tête / desc"
+msgid "QA Heading"
+msgstr "En-tête QA"
 
 #: lib/gpl/admin/post.php:604 lib/pro/admin/post.php:586
 msgctxt "metabox title"
@@ -909,7 +909,7 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
 
-#: lib/pro/head/product.php:205
+#: lib/pro/head/product.php:221
 msgid "adding schema for product model"
 msgstr "ajout de schéma pour modèle de produit"
 
