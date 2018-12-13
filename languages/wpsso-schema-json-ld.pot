@@ -993,7 +993,7 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
-#: lib/pro/head/product.php:205
+#: lib/pro/head/product.php:209
 msgid "adding schema for product model"
 msgstr ""
 
