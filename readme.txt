@@ -724,7 +724,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* None.
+	* Fixed missing 'sku' property in the Schema Product markup (Pro version).
 * *Developer Notes*
 	* Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
 	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
