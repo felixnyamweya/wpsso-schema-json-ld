@@ -722,7 +722,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Added support for new Schema Product type properties (Pro version):
+	* Added support for additional Schema Product type properties (Pro version):
 		* ean
 		* gtin8
 		* gtin12
@@ -775,7 +775,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.38.0-rc.1 =
 
-(2018/12/14) Added support for new Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
+(2018/12/14) Added support for additional Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
 
 = 1.37.0 =
 
