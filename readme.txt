@@ -717,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.38.0-rc.2 (2018/12/14)**
+**Version 1.38.0 (2018/12/14)**
 
 * *New Features*
 	* None.
@@ -746,38 +746,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.36.1 (2018/12/05)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added two new options in the SSO &gt; Schema Markup settings page:
-		* "Add CreativeWork Text Property"
-		* "Maximum Text Property Length"
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.36.0 (2018/11/25)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a "keywords" property in the Schema CreativeWork type markup.
-	* Added a "Keywords" option in the Document SSO metabox for the Schema CreativeWork type and its sub-types.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
-= 1.38.0-rc.2 =
+= 1.38.0 =
 
 (2018/12/14) Added support for additional Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
-
-= 1.37.0 =
-
-(2018/12/10) Added a module for the Schema FAQPage type (Pro version). Updated the Schema QAPage and Comment / Answer type modules (Pro version).
 
