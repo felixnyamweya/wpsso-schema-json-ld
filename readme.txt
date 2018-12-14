@@ -717,7 +717,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.38.0-b.3 (2018/12/13)**
+**Version 1.38.0-rc.1 (2018/12/14)**
 
 * *New Features*
 	* None.
@@ -773,9 +773,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.38.0-b.3 =
+= 1.38.0-rc.1 =
 
-(2018/12/13) Added support for new Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
+(2018/12/14) Added support for new Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
 
 = 1.37.0 =
 
