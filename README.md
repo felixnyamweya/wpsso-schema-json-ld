@@ -165,7 +165,7 @@
 <li><p>The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.</p>
 
 <ul>
-<li><p><strong>Integration with 3rd Party Plugins</strong></p>
+<li><p><strong>Integration with 3rd Party Plugins:</strong></p>
 
 <ul>
 <li>All in One SEO Pack</li>
@@ -189,7 +189,7 @@
 <li>Yoast SEO (aka WordPress SEO)</li>
 <li>Yotpo Social Reviews for WooCommerce</li>
 </ul></li>
-<li><p><strong>Integration with Service APIs</strong></p>
+<li><p><strong>Integration with Service APIs:</strong></p>
 
 <ul>
 <li>Bitly</li>
@@ -210,7 +210,7 @@
 <li><p>WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:</p>
 
 <ul>
-<li><p><strong>Integration with 3rd Party Plugins</strong></p>
+<li><p><strong>Integration with 3rd Party Plugins:</strong></p>
 
 <ul>
 <li>Simple Job Board</li>

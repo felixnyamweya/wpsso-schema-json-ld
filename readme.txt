@@ -150,7 +150,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
 
-	* **Integration with 3rd Party Plugins**
+	* **Integration with 3rd Party Plugins:**
 
 		* All in One SEO Pack
 		* bbPress
@@ -173,7 +173,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 		* Yoast SEO (aka WordPress SEO)
 		* Yotpo Social Reviews for WooCommerce
 
-	* **Integration with Service APIs**
+	* **Integration with Service APIs:**
 
 		* Bitly
 		* Facebook Embedded Videos
@@ -191,7 +191,7 @@ WPSSO Schema JSON-LD Markup is *extremely fast* and 100% compatible with the new
 
 * WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
 
-	* **Integration with 3rd Party Plugins** 
+	* **Integration with 3rd Party Plugins:** 
 
 		* Simple Job Board
 		* WP Job Manager
