@@ -95,7 +95,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			$prop_name   = 'itemListElement';
-			$posts_count = isset( $json_data[$prop_name] ) ? count( $json_data[$prop_name] ) : 0;
+			$posts_count = isset( $json_data[ $prop_name ] ) ? count( $json_data[ $prop_name ] ) : 0;
 
 			/**
 			 * Set the page number and the posts per page values.
@@ -125,19 +125,19 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				case 'ASC':
 
-					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderAscending';
+					$json_data[ 'itemListOrder' ] = 'https://schema.org/ItemListOrderAscending';
 
 					break;
 
 				case 'DESC':
 
-					$json_data['itemListOrder'] = 'https://schema.org/ItemListOrderDescending';
+					$json_data[ 'itemListOrder' ] = 'https://schema.org/ItemListOrderDescending';
 
 					break;
 
 				default:
 
-					$json_data['itemListOrder'] = 'https://schema.org/ItemListUnordered';
+					$json_data[ 'itemListOrder' ] = 'https://schema.org/ItemListUnordered';
 
 					break;
 			}
@@ -256,7 +256,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * Prevent recursion - i.e. webpage.collection in webpage.collection, etc.
 			 */
-			if ( isset( $added_page_type_ids[$page_type_id] ) ) {
+			if ( isset( $added_page_type_ids[ $page_type_id ] ) ) {
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: preventing recursion of page_type_id ' . $page_type_id );
@@ -847,10 +847,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$is_archive = true;
 
-				} elseif ( empty( $mod[ 'id' ] ) && ! empty( $mod[ 'post_type' ] ) && is_post_type_archive() ) {
+				} elseif ( $mod[ 'is_post_type_archive' ] ) {
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'mod id is empty and post type is archive (archive = true)' );
+						$wpsso->debug->log( 'post type is archive (archive = true)' );
 					}
 
 					$is_archive = true;
