@@ -25,7 +25,11 @@
 
 <p><strong>Most complete product markup for WooCommerce, including all product variations (Pro version):</strong></p>
 
-<p>WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
+<p>The WooCommerce plugin provides incomplete and incorrect Schema markup for Google Rich Cards.</p>
+
+<p>The Schema markup provided by the WPSSO JSON add-on includes <em>complete</em> and <em>correct</em> markup for Google Rich Cards with additional product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, sale prices, and much, much more.</p>
+
+<p>Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 

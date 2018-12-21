@@ -30,7 +30,11 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Most complete product markup for WooCommerce, including all product variations (Pro version):**
 
-WooCommerce product markup includes all product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, and much more. Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+The WooCommerce plugin provides incomplete and incorrect Schema markup for Google Rich Cards.
+
+The Schema markup provided by the WPSSO JSON add-on includes *complete* and *correct* markup for Google Rich Cards with additional product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, sale prices, and much, much more.
+
+Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -718,7 +722,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added a new filter for 'woocommerce_structured_data_product_limited' to remove the incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -757,7 +761,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.38.1-dev.1 =
 
-(2018/12/21) Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core 4.18.2.
+(2018/12/21) Added a new filter for 'woocommerce_structured_data_product_limited' to remove the incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
 
 = 1.38.0 =
 
