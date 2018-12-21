@@ -717,16 +717,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.38.1-dev.1 (2018/12/21)**
+**Version 1.38.1-dev.2 (2018/12/21)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new filter for 'woocommerce_structured_data_product_limited' to remove the incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
+	* Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). 
+	* Added a filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core 4.18.2.
+	* Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core v4.18.2.
 
 **Version 1.38.0 (2018/12/14)**
 
@@ -759,9 +760,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.38.1-dev.1 =
+= 1.38.1-dev.2 =
 
-(2018/12/21) Added a new filter for 'woocommerce_structured_data_product_limited' to remove the incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
+(2018/12/21) Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). Added a new filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
 
 = 1.38.0 =
 
