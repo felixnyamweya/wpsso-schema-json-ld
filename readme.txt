@@ -713,6 +713,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.38.1-dev.1 (2018/12/21)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core 4.18.2.
+
 **Version 1.38.0 (2018/12/14)**
 
 * *New Features*
@@ -743,6 +754,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.38.1-dev.1 =
+
+(2018/12/21) Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core 4.18.2.
 
 = 1.38.0 =
 
