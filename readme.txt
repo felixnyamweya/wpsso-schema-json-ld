@@ -713,7 +713,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.38.1-rc.1 (2018/12/22)**
+**Version 1.38.1 (2018/12/22)**
 
 * *New Features*
 	* None.
@@ -756,7 +756,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.38.1-rc.1 =
+= 1.38.1 =
 
 (2018/12/22) Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). Added a new filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
 
