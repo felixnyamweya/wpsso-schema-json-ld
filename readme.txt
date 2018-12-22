@@ -12,7 +12,7 @@ Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 5.0
 WC Tested Up To: 3.5
-Stable Tag: 1.38.0
+Stable Tag: 1.38.1
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -759,8 +759,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.38.1 =
 
 (2018/12/22) Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). Added a new filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
-
-= 1.38.0 =
-
-(2018/12/14) Added support for additional Schema Product type properties (Pro version). Fixed missing 'sku' property in the Schema Product markup (Pro version).
 
