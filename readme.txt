@@ -20,19 +20,17 @@ WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, 
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-schema-json-ld/assets/icon-256x256.png"></p>
 
-**Provides *accurate* and *comprehensive* Schema JSON-LD markup:**
+**Offers *accurate* and *comprehensive* Schema JSON-LD markup:**
 
 Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
 
-**Select a better Schema type than "BlogPosting" for AMP enabled pages.**
+**Provides Schema markup for posts, pages, custom post types, AMP pages, terms (category, tags, etc.), user pages, search result pages, etc.**
 
-**Select a default Schema type for posts, pages, custom post types, terms (category, tags, etc.), user pages, search result pages, etc.**
-
-**Most complete product markup for WooCommerce, including all product variations (Pro version):**
+**Most complete Schema product markup for WooCommerce (Pro version):**
 
 The WooCommerce plugin provides incomplete and incorrect Schema markup for Google Rich Cards.
 
-The Schema markup provided by the WPSSO JSON add-on includes *complete* and *correct* markup for Google Rich Cards with additional product images, product variations, product attributes (weight, size, color, material, etc), product reviews, product ratings, sale prices, and much, much more.
+The Schema markup provided by the WPSSO JSON add-on includes *complete* and *correct* markup for Google Rich Cards with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
