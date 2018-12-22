@@ -116,7 +116,6 @@
 </ul></li>
 </ul></li>
 </ul></li>
-<li><p>Download the Free version from <a href="https://surniaulula.github.io/wpsso-schema-json-ld/">GitHub</a> or <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WordPress.org</a>.</p></li>
 </ul>
 
 <h3>WPSSO JSON Additional Features (Pro version)</h3>

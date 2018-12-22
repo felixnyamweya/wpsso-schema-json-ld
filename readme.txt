@@ -98,8 +98,6 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 			* Default Hiring Organization
 			* Default Job Location
 
-* Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/) or [WordPress.org](https://wordpress.org/plugins/wpsso-schema-json-ld/).
-
 <h3>WPSSO JSON Additional Features (Pro version)</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
