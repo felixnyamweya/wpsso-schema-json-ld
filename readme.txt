@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Rich Cards (Structured Data, Rich Snippets) and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Knowledge Graph, MarketPlace, Rich Card SEO and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -24,7 +24,7 @@ WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, 
 
 Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
 
-**Provides Schema markup for posts, pages, custom post types, AMP pages, terms (category, tags, etc.), user pages, search result pages, etc.**
+**Provides Schema JSON-LD markup for posts, pages, custom post types, AMP pages, terms (category, tags, etc.), user pages, search result pages, etc.**
 
 **Most complete Schema product markup for WooCommerce (Pro version):**
 
@@ -46,7 +46,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 * Extends the features of the WPSSO Core Free or Pro plugin.
 
-* Provides Schema / Structured Data / SEO JSON-LD markup for the following Schema types (all other Schema types are available in the Pro version):
+* Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Pro version):
 
 	* [schema.org/BlogPosting](https://schema.org/BlogPosting)
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
@@ -102,7 +102,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
-* Provides Schema / Structured Data / SEO JSON-LD markup for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
+* Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
 
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
