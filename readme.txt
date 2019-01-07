@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Knowledge Graph, MarketPlace, Rich Card SEO and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google's Knowledge Graph, MarketPlace, Rich Card SEO + Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
