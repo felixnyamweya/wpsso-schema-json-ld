@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup for Google&#039;s Knowledge Graph, MarketPlace, Rich Card SEO + Pinterest Rich Pins</h1>
+<h1>WPSSO Schema JSON-LD Markup for Google Knowledge Graph, MarketPlace, Rich Card SEO, and Pinterest Rich Pins</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
