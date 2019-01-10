@@ -1,4 +1,4 @@
-<h1>WPSSO Schema JSON-LD Markup for Google Knowledge Graph, MarketPlace, Rich Card SEO, and Pinterest Rich Pins</h1>
+<h1>WPSSO Schema JSON-LD Markup for Google Knowledge Graph, Merchant, Rich Card SEO, and Pinterest Rich Pins</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
@@ -8,7 +8,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>google, knowledge graph, marketplace, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>google, knowledge graph, merchant, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto</td></tr>
 </table>
 
 <h2>Description</h2>

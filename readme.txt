@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Knowledge Graph, MarketPlace, Rich Card SEO, and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Knowledge Graph, Merchant, Rich Card SEO, and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: google, knowledge graph, marketplace, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
+Tags: google, knowledge graph, merchant, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
