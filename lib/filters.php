@@ -434,7 +434,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
 				'schema_review_claim_reviewed'       => '',						// Summary of Claims Reviewed
-				'schema_software_app_os'             => '',						// Summary of Claims Reviewed
+				'schema_software_app_os'             => '',						// Operating System
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
