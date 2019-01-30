@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'version'     => '1.38.1',	// Plugin version.
 					'opt_version' => '20',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
-					'name'        => 'WPSSO Schema JSON-LD Markup',
+					'name'        => 'WPSSO Schema JSON-LD Markup [Add-on]',
 					'desc'        => 'WPSSO Core add-on offers Schema JSON-LD / Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
 					'slug'        => 'wpsso-schema-json-ld',
 					'base'        => 'wpsso-schema-json-ld/wpsso-schema-json-ld.php',
