@@ -713,6 +713,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.38.2 (2019/01/31)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release for WPSSO Core v4.22.0.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Updated the required minimum PHP version from 5.4 to 5.5.
+
 **Version 1.38.1 (2018/12/22)**
 
 * *New Features*
@@ -756,7 +767,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.38.1 =
+= 1.38.2 =
 
-(2018/12/22) Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). Added a new filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
+(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
 
