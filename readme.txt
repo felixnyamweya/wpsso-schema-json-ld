@@ -713,6 +713,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.39.0-dev.1 (2019/02/01)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.38.2 (2019/01/31)**
 
 * *New Features*
@@ -766,6 +777,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.39.0-dev.1 =
+
+(2019/02/01) Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant.
 
 = 1.38.2 =
 
