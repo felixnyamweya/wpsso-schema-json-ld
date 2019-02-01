@@ -718,7 +718,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant.
+	* Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -780,7 +780,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.39.0-dev.1 =
 
-(2019/02/01) Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant.
+(2019/02/01) Added a non-standard 'itemGroupId' property for offers in the Schema Product markup for Google Merchant (Pro version).
 
 = 1.38.2 =
 
