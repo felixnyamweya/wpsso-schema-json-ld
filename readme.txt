@@ -713,17 +713,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.39.0-dev.1 (2019/02/01)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 **Version 1.38.2 (2019/01/31)**
 
 * *New Features*
@@ -777,10 +766,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
-
-= 1.39.0-dev.1 =
-
-(2019/02/01) None.
 
 = 1.38.2 =
 
