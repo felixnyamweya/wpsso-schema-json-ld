@@ -3,8 +3,8 @@ Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
 Domain Path: /languages
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl.txt
+License: Nontransferable License for WordPress Site Address URL
+License URI: https://wpsso/wp-content/plugins/wpsso-schema-json-ld/license/pro.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: google, knowledge graph, merchant, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
