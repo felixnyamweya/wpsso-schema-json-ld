@@ -1,8 +1,8 @@
-# Copyright (C) 2019 WPSSO Schema JSON-LD Markup Pro
-# This file is distributed under the same license as the WPSSO Schema JSON-LD Markup Pro package.
+# Copyright (C) 2019 WPSSO Schema JSON-LD Markup
+# This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup Pro 1.38.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.38.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -1166,14 +1166,14 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:248
+#: wpsso-schema-json-ld.php:256
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Schema JSON-LD Markup Pro"
+msgid "WPSSO Schema JSON-LD Markup"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

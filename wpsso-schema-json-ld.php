@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Schema JSON-LD Markup Pro
+ * Plugin Name: WPSSO Schema JSON-LD Markup
  * Plugin Slug: wpsso-schema-json-ld
  * Text Domain: wpsso-schema-json-ld
  * Domain Path: /languages
@@ -153,20 +153,28 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['json'] = false;	// Signal that this extension / add-on is not available.
+
+				$avail[ 'p_ext' ][ 'json' ] = false;	// Signal that this extension / add-on is not available.
+
 				return $avail;
 			}
 
-			$avail['p_ext']['json'] = true;	// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'json' ] = true;	// Signal that this extension / add-on is available.
 
 			foreach ( array( 'gpl', 'pro' ) as $lib ) {
+
 				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
+
 					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ||
 						! is_array( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ) {
+
 						continue;
 					}
+
 					foreach ( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] as $id_key => $label ) {
+
 						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
+
 						$avail[$sub][$id] = true;
 					}
 				}
@@ -174,27 +182,27 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			// Simple Job Board
 			if ( class_exists( 'Simple_Job_Board' ) ) {
-				$avail['job'][ 'any' ] = $avail['job']['simplejobboard'] = true;
+				$avail[ 'job' ][ 'any' ] = $avail[ 'job' ][ 'simplejobboard' ] = true;
 			}
 
 			// WP Job Manager
 			if ( class_exists( 'WP_Job_Manager' ) ) {
-				$avail['job'][ 'any' ] = $avail['job']['wpjobmanager'] = true;
+				$avail[ 'job' ][ 'any' ] = $avail[ 'job' ][ 'wpjobmanager' ] = true;
 			}
 
 			// WP Recipe Maker
 			if ( class_exists( 'WP_Recipe_Maker' ) ) {
-				$avail['recipe'][ 'any' ] = $avail['recipe']['wprecipemaker'] = true;
+				$avail[ 'recipe' ][ 'any' ] = $avail[ 'recipe' ][ 'wprecipemaker' ] = true;
 			}
 
 			// WP Ultimate Recipe 
 			if ( class_exists( 'WPUltimateRecipe' ) ) {
-				$avail['recipe'][ 'any' ] = $avail['recipe']['wpultimaterecipe'] = true;
+				$avail[ 'recipe' ][ 'any' ] = $avail[ 'recipe' ][ 'wpultimaterecipe' ] = true;
 			}
 
 			// WP Product Review
 			if ( class_exists( 'WPPR' ) ) {
-				$avail['review'][ 'any' ] = $avail['review']['wpproductreview'] = true;
+				$avail[ 'review' ][ 'any' ] = $avail[ 'review' ][ 'wpproductreview' ] = true;
 			}
 
 			return $avail;
