@@ -719,6 +719,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * *Improvements*
 	* Moved the product brand string value to a https://schema.org/Brand name.
+	* Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -780,7 +781,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.39.0-dev.5 =
 
-(2019/02/07) Moved the product brand string value to a https://schema.org/Brand name.
+(2019/02/07) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
 
 = 1.38.2 =
 
