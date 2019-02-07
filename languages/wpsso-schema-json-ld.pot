@@ -1013,7 +1013,7 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
-#: lib/gettext-pro.php:121 lib/pro/head/product.php:259
+#: lib/gettext-pro.php:121 lib/pro/head/product.php:260
 msgid "adding schema for product model"
 msgstr ""
 
