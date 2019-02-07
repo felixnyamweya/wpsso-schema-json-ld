@@ -713,6 +713,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.39.0-dev.5 (2019/02/07)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Moved the product brand string value to a https://schema.org/Brand name.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.38.2 (2019/01/31)**
 
 * *New Features*
@@ -766,6 +777,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.39.0-dev.5 =
+
+(2019/02/07) Moved the product brand string value to a https://schema.org/Brand name.
 
 = 1.38.2 =
 
