@@ -713,7 +713,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.39.0-dev.5 (2019/02/07)**
+**Version 1.39.0-dev.6 (2019/02/08)**
 
 * *New Features*
 	* None.
@@ -779,9 +779,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.39.0-dev.5 =
+= 1.39.0-dev.6 =
 
-(2019/02/07) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
+(2019/02/08) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
 
 = 1.38.2 =
 
