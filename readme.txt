@@ -713,7 +713,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.39.0-rc.2 (2019/02/10)**
+**Version 1.39.0 (2019/02/11)**
 
 * *New Features*
 	* None.
@@ -779,11 +779,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.39.0-rc.2 =
+= 1.39.0 =
 
-(2019/02/10) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
-
-= 1.38.2 =
-
-(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
+(2019/02/11) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
 
