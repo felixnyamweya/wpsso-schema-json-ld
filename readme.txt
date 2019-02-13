@@ -381,7 +381,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 	* Schema Type [schema.org/Intangible](https://schema.org/Intangible)
 		* Schema Type [schema.org/Brand](https://schema.org/Brand)
 		* Schema Type [schema.org/Enumeration](https://schema.org/Enumeration)
-			* Schema Type [schema.org/MedicalEnumeration](https://schema.org/MedicalEnumeration)
+			* Schema Type [health-lifesci.schema.org/MedicalEnumeration](https://health-lifesci.schema.org/MedicalEnumeration)
 				* Schema Type [schema.org/MedicalSpecialty](https://schema.org/MedicalSpecialty)
 					* Schema Type [health-lifesci.schema.org/Anesthesia](https://health-lifesci.schema.org/Anesthesia)
 					* Schema Type [health-lifesci.schema.org/Cardiovascular](https://health-lifesci.schema.org/Cardiovascular)

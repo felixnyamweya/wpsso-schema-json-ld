@@ -487,7 +487,7 @@
 <li>Schema Type <a href="https://schema.org/Enumeration">schema.org/Enumeration</a>
 
 <ul>
-<li>Schema Type <a href="https://schema.org/MedicalEnumeration">schema.org/MedicalEnumeration</a>
+<li>Schema Type <a href="https://health-lifesci.schema.org/MedicalEnumeration">health-lifesci.schema.org/MedicalEnumeration</a>
 
 <ul>
 <li>Schema Type <a href="https://schema.org/MedicalSpecialty">schema.org/MedicalSpecialty</a>
