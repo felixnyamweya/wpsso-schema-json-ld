@@ -13,7 +13,7 @@
  * INSTALL, RUN, COPY, OR OTHERWISE USE THE WPSSO SCHEMA JSON-LD MARKUP (WPSSO
  * JSON) PRO APPLICATION.
  *
- * Copyright 2016-2018 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2016-2019 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
