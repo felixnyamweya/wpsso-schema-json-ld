@@ -10,7 +10,7 @@ Tags: google, knowledge graph, merchant, rich cards, rich pins, local seo, image
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.8
-Tested Up To: 5.0
+Tested Up To: 5.1
 WC Tested Up To: 3.5
 Stable Tag: 1.39.0
 
