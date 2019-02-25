@@ -121,7 +121,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			$posts_args = apply_filters( $wpsso->lca . '_json_itemlist_posts_args', $posts_args, $mod );
 
-			switch ( $posts_args['order'] ) {
+			switch ( $posts_args[ 'order' ] ) {
 
 				case 'ASC':
 
@@ -162,13 +162,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->log( 'page_posts_mods array has ' . count( $page_posts_mods ) . ' elements' );
 			}
 
-			if ( empty( $json_data[$prop_name] ) ) {
-				$json_data[$prop_name] = array();
-			} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// Convert single value to an array.
-				$json_data[$prop_name] = array( $json_data[$prop_name] );
+			if ( empty( $json_data[ $prop_name ] ) ) {
+				$json_data[ $prop_name ] = array();
+			} elseif ( ! is_array( $json_data[ $prop_name ] ) ) {	// Convert single value to an array.
+				$json_data[ $prop_name ] = array( $json_data[ $prop_name ] );
 			}
 
-			$prop_name_count = count( $json_data[$prop_name] );	// Initialize the posts counter.
+			$prop_name_count = count( $json_data[ $prop_name ] );	// Initialize the posts counter.
 
 			foreach ( $page_posts_mods as $post_mod ) {
 
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 				}
 
-				$json_data[$prop_name][] = $post_data;	// Add the post data.
+				$json_data[ $prop_name ][] = $post_data;	// Add the post data.
 
 				if ( $prop_name_count >= $ppp ) {
 					if ( $wpsso->debug->enabled ) {
@@ -200,13 +200,13 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
 				}
 
-				$json_data[$prop_name] = (array) apply_filters( $filter_name, $json_data[$prop_name], $mod, $mt_og, $page_type_id, $is_main );
+				$json_data[ $prop_name ] = (array) apply_filters( $filter_name, $json_data[ $prop_name ], $mod, $mt_og, $page_type_id, $is_main );
 
-				if ( empty( $json_data[$prop_name] ) ) {
+				if ( empty( $json_data[ $prop_name ] ) ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'json data prop_name ' . $prop_name . ' is empty' );
 					}
-					unset( $json_data[$prop_name] );
+					unset( $json_data[ $prop_name ] );
 				}
 			}
 
@@ -265,7 +265,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return $posts_count;
 
 			} else {
-				$added_page_type_ids[$page_type_id] = true;
+				$added_page_type_ids[ $page_type_id ] = true;
 			}
 
 			/**
@@ -335,16 +335,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					continue;
 				}
 
-				if ( empty( $json_data[$prop_name] ) ) {
+				if ( empty( $json_data[ $prop_name ] ) ) {
 
-					$json_data[$prop_name] = array();
+					$json_data[ $prop_name ] = array();
 
-				} elseif ( ! is_array( $json_data[$prop_name] ) ) {	// Convert single value to an array.
+				} elseif ( ! is_array( $json_data[ $prop_name ] ) ) {	// Convert single value to an array.
 
-					$json_data[$prop_name] = array( $json_data[$prop_name] );
+					$json_data[ $prop_name ] = array( $json_data[ $prop_name ] );
 				}
 
-				$prop_name_count = count( $json_data[$prop_name] );	// Initialize the posts counter.
+				$prop_name_count = count( $json_data[ $prop_name ] );	// Initialize the posts counter.
 
 				foreach ( $page_posts_mods as $post_mod ) {
 
@@ -415,7 +415,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 					}
 
-					$json_data[$prop_name][] = $post_data;	// Add the post data.
+					$json_data[ $prop_name ][] = $post_data;	// Add the post data.
 
 					if ( $prop_name_count >= $ppp ) {
 						if ( $wpsso->debug->enabled ) {
@@ -431,18 +431,20 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'applying ' . $filter_name . ' filters' );
 				}
 
-				$json_data[$prop_name] = (array) apply_filters( $filter_name, $json_data[$prop_name], $mod, $mt_og, $page_type_id, $is_main );
+				$json_data[ $prop_name ] = (array) apply_filters( $filter_name, $json_data[ $prop_name ], $mod, $mt_og, $page_type_id, $is_main );
 
-				if ( empty( $json_data[$prop_name] ) ) {
+				if ( empty( $json_data[ $prop_name ] ) ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'json data prop_name ' . $prop_name . ' is empty' );
 					}
-					unset( $json_data[$prop_name] );
+
+					unset( $json_data[ $prop_name ] );
 				}
 			}
 
 			unset( $wpsso_paged );
-			unset( $added_page_type_ids[$page_type_id] );
+			unset( $added_page_type_ids[ $page_type_id ] );
 
 			/**
 			 * End timer.
@@ -481,14 +483,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->log( 'getting preview image(s)' );
 			}
 
-			if ( ! empty( $mt_og['og:video'] ) && is_array( $mt_og['og:video'] ) ) {
+			if ( ! empty( $mt_og[ 'og:video' ] ) && is_array( $mt_og[ 'og:video' ] ) ) {
 
 				/**
 				 * Prevent duplicates by excluding text/html videos.
 				 */
-				foreach ( $mt_og['og:video'] as $num => $og_single_video ) {
+				foreach ( $mt_og[ 'og:video' ] as $num => $og_single_video ) {
 
-					if ( isset( $og_single_video['og:video:type'] ) && $og_single_video['og:video:type'] !== 'text/html' ) {
+					if ( isset( $og_single_video[ 'og:video:type' ] ) && $og_single_video[ 'og:video:type' ] !== 'text/html' ) {
 
 						if ( SucomUtil::get_mt_media_url( $og_single_video ) ) {
 							$prev_count++;
@@ -500,10 +502,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( $prev_count > 0 ) {
 
-					$max_nums['schema_img_max'] -= $prev_count;
+					$max_nums[ 'schema_img_max' ] -= $prev_count;
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max_nums['schema_img_max'] . ')' );
+						$wpsso->debug->log( $prev_count . ' preview images found (schema_img_max adjusted to ' . $max_nums[ 'schema_img_max' ] . ')' );
 					}
 				}
 			}
@@ -515,7 +517,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->log( 'adding all image(s)' );
 			}
 
-			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max_nums['schema_img_max'], $size_name, $mod, true, 'schema' ) );
+			$og_images = array_merge( $og_images, $wpsso->og->get_all_images( $max_nums[ 'schema_img_max' ], $size_name, $mod, true, 'schema' ) );
 
 			if ( ! empty( $og_images ) ) {
 
@@ -523,7 +525,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding images to json data' );
 				}
 
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images );
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data[ 'image' ], $og_images );
 
 			} else {
 				$images_added = 0;
@@ -536,11 +538,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 
 				$og_images    = $wpsso->media->get_default_images( 1, $size_name, true );
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data['image'], $og_images );
+				$images_added = WpssoSchema::add_og_image_list_data( $json_data[ 'image' ], $og_images );
 			}
 
 			if ( ! $images_added ) {
-				unset( $json_data['image'] );	// prevent null assignment
+				unset( $json_data[ 'image' ] );	// prevent null assignment
 			}
 
 			if ( $wpsso->debug->enabled ) {
@@ -559,17 +561,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding all video(s)' );
 				}
 
-				if ( ! empty( $mt_og['og:video'] ) ) {
+				if ( ! empty( $mt_og[ 'og:video' ] ) ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'adding videos to json data' );
 					}
-					$videos_added = WpssoJsonSchema::add_video_list_data( $json_data['video'], $mt_og['og:video'], 'og:video' );
+					$videos_added = WpssoJsonSchema::add_video_list_data( $json_data[ 'video' ], $mt_og[ 'og:video' ], 'og:video' );
 				} else {
 					$videos_added = 0;
 				}
 
 				if ( ! $videos_added ) {
-					unset( $json_data['video'] );	// prevent null assignment
+					unset( $json_data[ 'video' ] );	// prevent null assignment
 				}
 
 				if ( $wpsso->debug->enabled ) {
@@ -587,7 +589,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * then set the first media array element mainEntityOfPage to the page url, and set the page mainEntityOfPage
 			 * property to false (so it doesn't get defined later).
 			 */
-			$main_prop = $mod[ 'is_post' ] && $mod[ 'post_type' ] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod['post_mime'] ) : '';
+			$main_prop = $mod[ 'is_post' ] && $mod[ 'post_type' ] === 'attachment' ? preg_replace( '/\/.*$/', '', $mod[ 'post_mime' ] ) : '';
 
 			$main_prop = apply_filters( $wpsso->lca . '_json_media_main_prop', $main_prop, $mod );
 
@@ -597,25 +599,25 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( $mod[ 'name' ] . ' id ' . $mod[ 'id' ] . ' ' . $main_prop . ' property is main entity' );
 				}
 
-				if ( ! empty( $json_data[$main_prop] ) && is_array( $json_data[$main_prop] ) ) {
+				if ( ! empty( $json_data[ $main_prop ] ) && is_array( $json_data[ $main_prop ] ) ) {
 
-					reset( $json_data[$main_prop] );
+					reset( $json_data[ $main_prop ] );
 
-					$media_key = key( $json_data[$main_prop] );	// media array key should be '0'
+					$media_key = key( $json_data[ $main_prop ] );	// media array key should be '0'
 
-					if ( ! isset( $json_data[$main_prop][$media_key]['mainEntityOfPage'] ) ) {
+					if ( ! isset( $json_data[ $main_prop ][ $media_key ][ 'mainEntityOfPage' ] ) ) {
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' = ' . $mt_og['og:url'] );
+							$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' = ' . $mt_og[ 'og:url' ] );
 						}
 
-						$json_data[$main_prop][$media_key]['mainEntityOfPage'] = $mt_og['og:url'];
+						$json_data[ $main_prop ][ $media_key ][ 'mainEntityOfPage' ] = $mt_og[ 'og:url' ];
 
 					} elseif ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'mainEntityOfPage for ' . $main_prop . ' key ' . $media_key . ' already defined' );
 					}
 
-					$json_data['mainEntityOfPage'] = false;
+					$json_data[ 'mainEntityOfPage' ] = false;
 				}
 			}
 		}
@@ -626,7 +628,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				return;
 			}
 
-			$json_data['commentCount'] = get_comments_number( $mod[ 'id' ] );
+			$json_data[ 'commentCount' ] = get_comments_number( $mod[ 'id' ] );
 
 			/**
 			 * Only get parent comments. The add_single_comment_data() method 
@@ -642,9 +644,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( is_array( $comments ) ) {
 				foreach( $comments as $num => $cmt ) {
-					$comments_added = self::add_single_comment_data( $json_data['comment'], $mod, $cmt->comment_ID );
+					$comments_added = self::add_single_comment_data( $json_data[ 'comment' ], $mod, $cmt->comment_ID );
 					if ( ! $comments_added ) {
-						unset( $json_data['comment'] );
+						unset( $json_data[ 'comment' ] );
 					}
 				}
 			}
@@ -682,10 +684,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				$comments_added++;
 
-				$replies_added = self::add_single_comment_reply_data( $ret['comment'], $mod, $cmt->comment_ID );
+				$replies_added = self::add_single_comment_reply_data( $ret[ 'comment' ], $mod, $cmt->comment_ID );
 
 				if ( ! $replies_added ) {
-					unset( $ret['comment'] );
+					unset( $ret[ 'comment' ] );
 				}
 
 				if ( empty( $list_element ) ) {
@@ -808,17 +810,17 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				'embedUrl'     => $mt_prefix . ':embed_url',
 			) );
 
-			if ( ! empty( $opts[$mt_prefix . ':has_image'] ) ) {
-				if ( ! WpssoSchema::add_og_single_image_data( $ret['thumbnail'], $opts, null, false ) ) {	// list_element = false
-					unset( $ret['thumbnail'] );
+			if ( ! empty( $opts[ $mt_prefix . ':has_image' ] ) ) {
+				if ( ! WpssoSchema::add_og_single_image_data( $ret[ 'thumbnail' ], $opts, null, false ) ) {	// list_element = false
+					unset( $ret[ 'thumbnail' ] );
 				}
 			}
 
-			if ( ! empty( $opts[$mt_prefix . ':tag'] ) ) {
-				if ( is_array( $opts[$mt_prefix . ':tag'] ) ) {
-					$ret['keywords'] = implode( ', ', $opts[$mt_prefix . ':tag'] );
+			if ( ! empty( $opts[ $mt_prefix . ':tag' ] ) ) {
+				if ( is_array( $opts[ $mt_prefix . ':tag' ] ) ) {
+					$ret[ 'keywords' ] = implode( ', ', $opts[ $mt_prefix . ':tag' ] );
 				} else {
-					$ret['keywords'] = $opts[$mt_prefix . ':tag'];
+					$ret[ 'keywords' ] = $opts[ $mt_prefix . ':tag' ];
 				}
 			}
 
@@ -839,7 +841,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			if ( $is_main ) {
 
-				if ( $mod['is_home_index'] || ! is_object( $mod[ 'obj' ] ) ) {
+				if ( $mod[ 'is_home_index' ] || ! is_object( $mod[ 'obj' ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'home is index and object is false (archive = true)' );
@@ -892,7 +894,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				/**
 				 * Setup the query for a blog posts page in the back-end.
 				 */
-				if ( is_admin() && $mod['is_home_index'] ) {
+				if ( is_admin() && $mod[ 'is_home_index' ] ) {
 
 					global $wp_query;
 

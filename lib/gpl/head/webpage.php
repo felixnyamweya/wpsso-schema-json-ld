@@ -176,6 +176,16 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 
 			/**
 			 * Property:
+			 *      thumbnailURL
+			 */
+			$ret[ 'thumbnailUrl' ] = $this->p->og->get_thumbnail_url( $this->p->lca . '-thumbnail', $mod, $md_pre = 'schema' );
+
+			if ( empty( $ret[ 'thumbnailUrl' ] ) ) {
+				unset( $ret[ 'thumbnailUrl' ] );
+			}
+
+			/**
+			 * Property:
 			 *      image as https://schema.org/ImageObject
 			 *      video as https://schema.org/VideoObject
 			 */
