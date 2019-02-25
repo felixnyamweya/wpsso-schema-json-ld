@@ -720,6 +720,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.40.0-dev.1 (2019/02/25)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.39.0 (2019/02/11)**
 
 * *New Features*
@@ -785,6 +796,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.40.0-dev.1 =
+
+(2019/02/25) Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
 
 = 1.39.0 =
 
