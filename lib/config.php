@@ -132,7 +132,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'menu' => array(
 				'dashicons' => array(
-					'schema-shortcode' => 'info',
+					'schema-shortcode' => 'sos',
 				),
 			),
 		);
