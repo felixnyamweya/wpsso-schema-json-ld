@@ -30,7 +30,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 The WooCommerce plugin offers incomplete Schema markup for Google's Product Rich Card requirements.
 
-The Schema markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
