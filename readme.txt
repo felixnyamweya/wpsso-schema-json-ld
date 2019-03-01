@@ -720,7 +720,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.40.0-rc.1 (2019/02/28)**
+**Version 1.40.0 (2019/03/01)**
 
 * *New Features*
 	* None.
@@ -743,65 +743,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.38.2 (2019/01/31)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Maintenance release for WPSSO Core v4.22.0.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Updated the required minimum PHP version from 5.4 to 5.5.
-
-**Version 1.38.1 (2018/12/22)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Fixed the missing "itemListElement" property value in the WooCommerce Shop page (Pro version). 
-	* Added a filter to remove incorrect Schema markup provided by WooCommerce in the Shop page (Pro version).
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Added support for the new $mod 'is_post_type_archive' array element in WPSSO Core v4.18.2.
-
-**Version 1.38.0 (2018/12/14)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for additional Schema Product type properties (Pro version):
-		* ean
-		* gtin8
-		* gtin12
-		* gtin13
-		* gtin14
-		* productID
-* *Bugfixes*
-	* Fixed missing 'sku' property in the Schema Product markup (Pro version).
-* *Developer Notes*
-	* Moved action hooks from WpssoJsonFilters to a new WpssoJsonActions library class.
-	* Renamed the 'wpsso_action_buttons' filter hook to 'wpsso_form_button_rows' for WPSSO Core v4.18.0.
-
-**Version 1.37.0 (2018/12/10)**
-
-* *New Features*
-	* Added a module for the Schema FAQPage type (Pro version).
-* *Improvements*
-	* Updated the Schema QAPage and Comment / Answer type modules (Pro version).
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
-= 1.40.0-rc.1 =
+= 1.40.0 =
 
-(2019/02/28) Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
-
-= 1.39.0 =
-
-(2019/02/11) Moved the product brand string value to a https://schema.org/Brand name. Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
+(2019/03/01) Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
 
