@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Schema JSON-LD Markup</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.39.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.40.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
