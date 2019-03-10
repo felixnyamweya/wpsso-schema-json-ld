@@ -30,7 +30,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Card requirements.
 
-The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
@@ -719,6 +719,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 <p>Under the SSO &gt; Update Manager settings page, select the "Development and Up" version filter for WPSSO Core and all its extensions (to satisfy any version dependencies). Save the plugin settings, and click the "Check for Updates" button to fetch the latest / current WPSSO version information. When new Development versions are available, they will automatically appear under your WordPress Dashboard &gt; Updates page. You can always re-select the "Stable / Production" version filter at any time to re-install the last stable / production version of a plugin.</p>
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 1.40.1-dev.3 (2019/03/09)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added an 'mpn' property for the Schema Product type and its sub-types.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
 
 **Version 1.40.0 (2019/03/01)**
 
