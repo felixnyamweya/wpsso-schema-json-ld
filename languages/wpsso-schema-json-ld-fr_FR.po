@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.38.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.40.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-02-02 10:50-0800\n"
-"PO-Revision-Date: 2019-02-02 10:50-0800\n"
+"POT-Creation-Date: 2019-03-09 17:33-0800\n"
+"PO-Revision-Date: 2019-03-09 17:33-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -400,14 +400,14 @@ msgctxt "option comment"
 msgid "secs"
 msgstr "secs"
 
-#: lib/gettext-pro.php:11 lib/gettext-pro.php:116 lib/gpl/admin/post.php:131
+#: lib/gettext-pro.php:11 lib/gettext-pro.php:111 lib/gpl/admin/post.php:131
 #: lib/gpl/admin/term.php:76 lib/pro/admin/post.php:152
 #: lib/pro/admin/term.php:89
 msgctxt "option label"
 msgid "Schema Type"
 msgstr "Type de Schéma"
 
-#: lib/gettext-pro.php:12 lib/gettext-pro.php:111 lib/gettext-pro.php:117
+#: lib/gettext-pro.php:12 lib/gettext-pro.php:112 lib/gettext-pro.php:116
 #: lib/gpl/admin/post.php:141 lib/gpl/admin/term.php:85
 #: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:160
 #: lib/pro/admin/term.php:96 lib/pro/admin/user.php:87
@@ -415,7 +415,7 @@ msgctxt "option label"
 msgid "Name / Title"
 msgstr "Nom / titre"
 
-#: lib/gettext-pro.php:13 lib/gettext-pro.php:112 lib/gettext-pro.php:118
+#: lib/gettext-pro.php:13 lib/gettext-pro.php:113 lib/gettext-pro.php:117
 #: lib/gpl/admin/post.php:150 lib/gpl/admin/term.php:93
 #: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:168
 #: lib/pro/admin/term.php:103 lib/pro/admin/user.php:93
@@ -423,14 +423,14 @@ msgctxt "option label"
 msgid "Alternate Name"
 msgstr "Autre nom"
 
-#: lib/gettext-pro.php:14 lib/gettext-pro.php:119 lib/gpl/admin/post.php:159
+#: lib/gettext-pro.php:14 lib/gettext-pro.php:114 lib/gpl/admin/post.php:159
 #: lib/gpl/admin/term.php:102 lib/pro/admin/post.php:176
 #: lib/pro/admin/term.php:111
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr "URLs de type microdonnées"
 
-#: lib/gettext-pro.php:15 lib/gettext-pro.php:120 lib/gpl/admin/post.php:167
+#: lib/gettext-pro.php:15 lib/gettext-pro.php:115 lib/gpl/admin/post.php:167
 #: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:183
 #: lib/pro/admin/term.php:118
 msgctxt "option label"
@@ -609,7 +609,7 @@ msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr "Informations sur l'affichage d'emploi"
 
-#: lib/gettext-pro.php:49 lib/gettext-pro.php:115 lib/gpl/admin/post.php:451
+#: lib/gettext-pro.php:49 lib/gettext-pro.php:120 lib/gpl/admin/post.php:451
 #: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:441
 #: lib/pro/admin/user.php:115
 msgctxt "option label"
@@ -681,7 +681,7 @@ msgctxt "option label"
 msgid "Organization"
 msgstr "Organisation"
 
-#: lib/gettext-pro.php:63 lib/gettext-pro.php:114 lib/gpl/admin/post.php:568
+#: lib/gettext-pro.php:63 lib/gettext-pro.php:119 lib/gpl/admin/post.php:568
 #: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:550
 #: lib/pro/admin/user.php:111
 msgctxt "metabox title"
@@ -924,12 +924,12 @@ msgctxt "option label"
 msgid "Operating System"
 msgstr "Système d'exploitation"
 
-#: lib/gettext-pro.php:113 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
+#: lib/gettext-pro.php:118 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
 msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
 
-#: lib/gettext-pro.php:121 lib/pro/head/product.php:250
+#: lib/gettext-pro.php:121 lib/pro/head/product.php:291
 msgid "adding schema for product model"
 msgstr "ajout de schéma pour modèle de produit"
 
@@ -1073,7 +1073,7 @@ msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-schema-json-ld.php:248
+#: wpsso-schema-json-ld.php:256
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
