@@ -720,12 +720,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.40.1-dev.3 (2019/03/09)**
+**Version 1.40.1-b.1 (2019/03/10)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added an 'mpn' property for the Schema Product type and its sub-types.
+	* Added an 'mpn' property (aka Manufacturer Part Number) for the Schema Product type and its sub-types.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -755,6 +755,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.40.1-b.1 =
+
+(2019/03/10) Added an 'mpn' property (aka Manufacturer Part Number) for the Schema Product type and its sub-types.
 
 = 1.40.0 =
 
