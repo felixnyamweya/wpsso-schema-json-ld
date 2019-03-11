@@ -12,7 +12,7 @@ Requires PHP: 5.5
 Requires At Least: 3.8
 Tested Up To: 5.1
 WC Tested Up To: 3.5
-Stable Tag: 1.40.0
+Stable Tag: 1.40.1
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -759,8 +759,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.40.1 =
 
 (2019/03/11) Added an 'mpn' property (aka Manufacturer Part Number) for the Schema Product type and its sub-types.
-
-= 1.40.0 =
-
-(2019/03/01) Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
 
