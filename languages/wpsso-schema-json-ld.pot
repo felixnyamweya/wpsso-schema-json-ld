@@ -688,7 +688,7 @@ msgid "How-To Steps"
 msgstr ""
 
 #: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:435
-#: lib/submenu/schema-general.php:235
+#: lib/submenu/schema-general.php:233
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -1124,27 +1124,27 @@ msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:211
+#: lib/submenu/schema-general.php:210
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:217
+#: lib/submenu/schema-general.php:216
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:223
+#: lib/submenu/schema-general.php:221
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:238
+#: lib/submenu/schema-general.php:236
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:244
+#: lib/submenu/schema-general.php:242
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""

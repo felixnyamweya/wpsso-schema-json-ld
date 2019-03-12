@@ -204,8 +204,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'schema_def_event_organizer_person_id' => array(
 					'label'    => _x( 'Default Event Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_organizer_person_id',
-					'content'  => $this->form->get_select( 'schema_def_event_organizer_person_id',
-						$person_names, 'long_name' ),
+					'content'  => $this->form->get_select( 'schema_def_event_organizer_person_id', $person_names, 'long_name' ),
 				),
 				'schema_def_event_performer_org_id' => array(
 					'label'    => _x( 'Default Event Performer Org.', 'option label', 'wpsso-schema-json-ld' ),
@@ -216,8 +215,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'schema_def_event_performer_person_id' => array(
 					'label'    => _x( 'Default Event Performer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_performer_person_id',
-					'content'  => $this->form->get_select( 'schema_def_event_performer_person_id',
-						$person_names, 'long_name' ),
+					'content'  => $this->form->get_select( 'schema_def_event_performer_person_id', $person_names, 'long_name' ),
 				),
 				'schema_def_event_location_id' => array(
 					'label'    => _x( 'Default Event Venue', 'option label', 'wpsso-schema-json-ld' ),
