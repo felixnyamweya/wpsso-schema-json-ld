@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: google, knowledge graph, merchant, rich cards, rich pins, local seo, image seo, video seo, woocommerce, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
-Requires PHP: 5.5
+Requires PHP: 5.6
 Requires At Least: 3.8
 Tested Up To: 5.1
 WC Tested Up To: 3.5
