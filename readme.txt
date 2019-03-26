@@ -28,7 +28,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Most complete Schema product markup for WooCommerce (Pro version):**
 
-The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Card requirements.
+> The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Card requirements.
 
 The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
