@@ -725,7 +725,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Updated Schema Product markup to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
+	* Updated Schema Product markup (Pro version) to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -769,7 +769,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.41.0-dev.1 =
 
-(2019/03/29) Updated Schema Product markup to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
+(2019/03/29) Updated Schema Product markup (Pro version) to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
 
 = 1.40.1 =
 
