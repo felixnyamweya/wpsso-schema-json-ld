@@ -720,12 +720,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.41.0-dev.1 (2019/03/29)**
+**Version 1.41.0-dev.2 (2019/03/30)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Updated Schema Product markup (Pro version) to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
+	* Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers / WooCommerce product variations (Pro version).
+	* Added product reviews from the Yotpo Social Reviews for WooCommerce API (Pro version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -767,9 +768,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.41.0-dev.1 =
+= 1.41.0-dev.2 =
 
-(2019/03/29) Updated Schema Product markup (Pro version) to use the Schema AggregateOffer type for multiple offers (aka WooCommerce product variations).
+(2019/03/30) Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers. Added product reviews from the Yotpo Social Reviews for WooCommerce API.
 
 = 1.40.1 =
 
