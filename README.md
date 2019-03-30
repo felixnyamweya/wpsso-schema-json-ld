@@ -25,7 +25,7 @@
 
 <p><em>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers incomplete Schema markup for Google's Product Rich Card requirements.</em></p>
 
-<p>The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes <em>complete and correct</em> markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as Schema AggregateOffer for Google Search and Product Rich Card (includes the product variation group high price, low price, and currency).</p>
+<p>The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes <em>complete and correct</em> markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).</p>
 
 <p>Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
@@ -153,6 +153,7 @@
 <li><a href="https://schema.org/WebPage">schema.org/WebPage</a> (includes 13 Schema types)</li>
 <li><a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
+<li><p>WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).</p></li>
 <li><p>Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.</p></li>
 <li><p>Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.</p></li>
 <li><p>Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.</p></li>
