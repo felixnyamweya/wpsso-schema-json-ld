@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Knowledge Graph, Merchant, Rich Card SEO, and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Rich Results / Rich Cards SEO and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -30,7 +30,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 *The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Card requirements.*
 
-The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as Schema AggregateOffer for Google Search and Product Rich Card (includes the product variation group high price, low price, and currency).
+The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as Schema AggregateOffer for Google Search and Product Rich Card (includes the product variation group high price, low price, and currency).
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
