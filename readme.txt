@@ -727,12 +727,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers / WooCommerce product variations (Pro version).
 	* Added product reviews from the Yotpo Social Reviews for WooCommerce API (Pro version).
+	* Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers / WooCommerce product variations (Pro version).
+	* Removed the Schema ProductModel objects and the 'itemOffered' property from Schema Product offers (not currently supported by Google).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* None.
+	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
 **Version 1.40.1 (2019/03/11)**
 
@@ -772,7 +773,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.41.0-dev.6 =
 
-(2019/03/31) Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers. Added product reviews from the Yotpo Social Reviews for WooCommerce API.
+(2019/03/31) Added product reviews from the Yotpo Social Reviews for WooCommerce API. Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers.
 
 = 1.40.1 =
 
