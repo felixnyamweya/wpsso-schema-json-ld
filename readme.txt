@@ -722,7 +722,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.41.0-b.1 (2019/03/31)**
+**Version 1.41.0 (2019/03/31)**
 
 * *New Features*
 	* None.
@@ -771,7 +771,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.41.0-b.1 =
+= 1.41.0 =
 
 (2019/03/31) Added product reviews from the Yotpo Social Reviews for WooCommerce API. Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers.
 
