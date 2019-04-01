@@ -12,7 +12,7 @@ Requires PHP: 5.6
 Requires At Least: 3.8
 Tested Up To: 5.1
 WC Tested Up To: 3.5
-Stable Tag: 1.40.1
+Stable Tag: 1.41.0
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -757,25 +757,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Added a new 'WPSSO_SCHEMA_PRODUCT_VALID_MAX_TIME' constant to define a Schema 'priceValidUntil' property default value (default is 1 year).
 
-**Version 1.39.0 (2019/02/11)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Moved the product brand string value to a https://schema.org/Brand name.
-	* Added a 'priceValidUntil' property to all products to avoid a warning from the Google validator.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
 = 1.41.0 =
 
 (2019/03/31) Added product reviews from the Yotpo Social Reviews for WooCommerce API. Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers.
-
-= 1.40.1 =
-
-(2019/03/11) Added an 'mpn' property (aka Manufacturer Part Number) for the Schema Product type and its sub-types.
 
