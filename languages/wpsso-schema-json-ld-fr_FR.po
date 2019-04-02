@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.40.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.41.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-03-09 17:33-0800\n"
-"PO-Revision-Date: 2019-03-09 17:33-0800\n"
+"POT-Creation-Date: 2019-04-01 11:38-0700\n"
+"PO-Revision-Date: 2019-04-01 11:38-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -604,7 +604,7 @@ msgid "How-To Steps"
 msgstr "Etapes pour How-To"
 
 #: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:435
-#: lib/submenu/schema-general.php:235
+#: lib/submenu/schema-general.php:233
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr "Informations sur l'affichage d'emploi"
@@ -929,9 +929,9 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
 
-#: lib/gettext-pro.php:121 lib/pro/head/product.php:291
-msgid "adding schema for product model"
-msgstr "ajout de schéma pour modèle de produit"
+#: lib/gettext-pro.php:121 lib/pro/head/product.php:353
+msgid "adding schema for product offer"
+msgstr "ajout de schéma pour offre de produit"
 
 #. translators: %s is the WP Job Manager plugin name
 #: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:312
@@ -1035,27 +1035,27 @@ msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr "Personne par défaut pour l'organisateur de l'événement"
 
-#: lib/submenu/schema-general.php:211
+#: lib/submenu/schema-general.php:210
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr "Organization par défaut pour l'interprète de l'événement"
 
-#: lib/submenu/schema-general.php:217
+#: lib/submenu/schema-general.php:216
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr "Personne par défaut pour l'interprète de l'événement"
 
-#: lib/submenu/schema-general.php:223
+#: lib/submenu/schema-general.php:221
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr "Place par défaut pour l'événement"
 
-#: lib/submenu/schema-general.php:238
+#: lib/submenu/schema-general.php:236
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr "Organisation d'embauche par défaut"
 
-#: lib/submenu/schema-general.php:244
+#: lib/submenu/schema-general.php:242
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr "Lieu de travail par défaut"
