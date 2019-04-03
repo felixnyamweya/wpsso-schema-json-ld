@@ -118,6 +118,5 @@ _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Other Profile Page URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'Job Title', 'option label', 'wpsso-schema-json-ld' );
-__( 'adding schema for product offer', 'wpsso-schema-json-ld' );
 _x( '%s Organization', 'option value', 'wpsso-schema-json-ld' );
 _x( '%s Location', 'option value', 'wpsso-schema-json-ld' );

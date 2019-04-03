@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.41.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.42.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -1013,18 +1013,14 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
-#: lib/gettext-pro.php:121 lib/pro/head/product.php:353
-msgid "adding schema for product offer"
-msgstr ""
-
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:312
+#: lib/gettext-pro.php:121 lib/pro/job/wpjobmanager.php:312
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:123 lib/pro/job/wpjobmanager.php:320
+#: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:320
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""
