@@ -721,6 +721,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.42.0-dev.1 (2019/04/03)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
+
 **Version 1.41.0 (2019/03/31)**
 
 * *New Features*
@@ -757,6 +768,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'WPSSO_SCHEMA_PRODUCT_VALID_MAX_TIME' constant to define a Schema 'priceValidUntil' property default value (default is 1 year).
 
 == Upgrade Notice ==
+
+= 1.42.0-dev.1 =
+
+(2019/04/03) Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
 
 = 1.41.0 =
 
