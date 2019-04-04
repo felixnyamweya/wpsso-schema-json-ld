@@ -105,7 +105,7 @@ _x( 'from', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'to', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'Review Rating Name', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Claim Review Information', 'metabox title', 'wpsso-schema-json-ld' );
-_x( 'Specific Claims Reviewed', 'option label', 'wpsso-schema-json-ld' );
+_x( 'Summary of Claim', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Software Application Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'Operating System', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' );

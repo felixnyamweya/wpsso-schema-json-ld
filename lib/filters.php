@@ -433,7 +433,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_from'          => '1',						// Review Rating (From)
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
-				'schema_review_claim_reviewed'       => '',						// Summary of Claims Reviewed
+				'schema_review_claim_reviewed'       => '',						// Summary of Claim
+				'schema_review_claim_by_type'        => 'website',					// Claimed by Type
+				'schema_review_claim_by_name'        => '',						// Claimed by Name
 				'schema_software_app_os'             => '',						// Operating System
 			);
 
@@ -531,6 +533,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_yield':			// Recipe Makes
 				case 'schema_review_rating_alt_name':
 				case 'schema_review_claim_reviewed':
+				case 'schema_review_claim_by_name':
 				case 'schema_software_app_os':
 
 					return 'one_line';
@@ -561,6 +564,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_job_salary_currency':
 				case 'schema_job_salary_period':
 				case 'schema_movie_prodco_org_id':		// Production Company
+				case 'schema_review_claim_by_type':
 
 					return 'not_blank';
 
@@ -1211,7 +1215,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_review_claim_reviewed':
 
-					$text = __( 'A short summary of the specific claims reviewed in a Schema ClaimReview.', 'wpsso-schema-json-ld' );
+					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_by_type':
+
+					$text = __( '', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_by_name':
+
+					$text = __( '', 'wpsso-schema-json-ld' );
 
 				 	break;
 

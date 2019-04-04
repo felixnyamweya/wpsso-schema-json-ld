@@ -851,10 +851,14 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				),
 				'schema_review_claim_reviewed' => array(
 					'tr_class' => $schema_type_tr_class[ 'review_claim' ],
-					'label'    => _x( 'Specific Claims Reviewed', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Summary of Claim', 'option label', 'wpsso-schema-json-ld' ),
 					'th_class' => 'medium',
 					'tooltip'  => 'meta-schema_review_claim_reviewed',
 					'content'  => $form->get_no_textarea_value( '', 'summary' ),
+				),
+				'schema_review_claim_by_type' => array(
+				),
+				'schema_review_claim_by_name' => array(
 				),
 
 				/**
