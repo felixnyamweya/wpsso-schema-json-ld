@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.41.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.42.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-04-01 11:38-0700\n"
-"PO-Revision-Date: 2019-04-01 11:38-0700\n"
+"POT-Creation-Date: 2019-04-04 08:38-0700\n"
+"PO-Revision-Date: 2019-04-04 08:38-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -929,18 +929,14 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
 
-#: lib/gettext-pro.php:121 lib/pro/head/product.php:353
-msgid "adding schema for product offer"
-msgstr "ajout de schéma pour offre de produit"
-
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:312
+#: lib/gettext-pro.php:121 lib/pro/job/wpjobmanager.php:316
 msgctxt "option value"
 msgid "%s Organization"
 msgstr "Organisation de %s"
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:123 lib/pro/job/wpjobmanager.php:320
+#: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:324
 msgctxt "option value"
 msgid "%s Location"
 msgstr "Lieu de %s"
@@ -1065,15 +1061,15 @@ msgctxt "metabox title"
 msgid "Schema Shortcode"
 msgstr "Shortcode Schéma"
 
-#: wpsso-schema-json-ld.php:104
+#: wpsso-schema-json-ld.php:103
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-schema-json-ld.php:106
+#: wpsso-schema-json-ld.php:105
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-schema-json-ld.php:256
+#: wpsso-schema-json-ld.php:255
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
