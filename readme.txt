@@ -280,7 +280,9 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Review Rating 
 		* Review Rating Name
 	* Claim Review Information
-		* Specific Claims Reviewed
+		* Summary of Claim
+		* Claimed by Type
+		* Claimed by Name
 	* Software Application Information
 		* Operating System
 
@@ -721,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.0-dev.2 (2019/04/04)**
+**Version 1.42.0-dev.3 (2019/04/04)**
 
 * *New Features*
 	* None.
@@ -769,7 +771,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.0-dev.2 =
+= 1.42.0-dev.3 =
 
 (2019/04/04) Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
 
