@@ -721,7 +721,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.0-dev.1 (2019/04/03)**
+**Version 1.42.0-dev.2 (2019/04/04)**
 
 * *New Features*
 	* None.
@@ -769,9 +769,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.0-dev.1 =
+= 1.42.0-dev.2 =
 
-(2019/04/03) Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
+(2019/04/04) Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
 
 = 1.41.0 =
 
