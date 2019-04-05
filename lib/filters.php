@@ -1228,7 +1228,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' ) . ' ';
 
-					$text = __( 'The summary should be less than 75 characters to minimize wrapping on mobile devices.', 'wpsso-schema-json-ld' );
+					$text .= __( 'The summary should be less than 75 characters to minimize wrapping on mobile devices.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
