@@ -283,6 +283,8 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Claim Author Type
 		* Claim Author Name
 		* Claim Summary
+		* Claim Made on Date
+		* First Appearance URL
 	* Software Application Information
 		* Operating System
 
@@ -731,6 +733,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added new ClaimReview options in the SSO metabox:
 		* Claim Author Type
 		* Claim Author Name
+		* Claim Summary
+		* Claim Made on Date
+		* First Appearance URL
 * *Bugfixes*
 	* None.
 * *Developer Notes*
