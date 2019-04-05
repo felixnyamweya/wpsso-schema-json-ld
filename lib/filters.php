@@ -433,13 +433,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_from'          => '1',						// Review Rating (From)
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
-				'schema_review_claim_author_type'    => 'none',						// Claim Author Type
-				'schema_review_claim_author_name'    => '',						// Claim Author Name
-				'schema_review_claim_author_url'     => '',						// Claim Author URL
-				'schema_review_claim_reviewed'       => '',						// Claim Summary
+				'schema_review_claim_reviewed'       => '',						// Claim Short Summary
 				'schema_review_claim_made_date'      => '',						// Claim Made on Date
 				'schema_review_claim_made_time'      => 'none',						// Claim Made on Time
 				'schema_review_claim_made_timezone'  => $timezone,					// Claim Made on Timezone
+				'schema_review_claim_author_type'    => 'none',						// Claim Author Type
+				'schema_review_claim_author_name'    => '',						// Claim Author Name
+				'schema_review_claim_author_url'     => '',						// Claim Author URL
 				'schema_review_claim_first_url'      => '',						// First Appearance URL
 				'schema_software_app_os'             => '',						// Operating System
 			);
@@ -1224,6 +1224,20 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
+				case 'tooltip-meta-schema_review_claim_reviewed':	// Claim Short Summary
+
+					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text = __( 'The summary should be less than 75 characters to minimize wrapping on mobile devices.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_made':		// Claim Made on Date
+
+					$text = __( 'The date when the claim was made or entered public discourse (for example, when it became popular in social networks).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
 				case 'tooltip-meta-schema_review_claim_author_type':	// Claim Author Type
 
 					$text = __( 'The publisher of the claim - the publisher can be a person or an organization.', 'wpsso-schema-json-ld' );
@@ -1239,20 +1253,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_review_claim_author_url':	// Claim Author URL
 
 					$text = __( 'The home page of the organization making the claim, or another definitive URL that provides information about the author making the claim, such as a person or organization\'s Wikipedia or Wikidata page.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_review_claim_reviewed':	// Claim Summary
-
-					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' ) . ' ';
-
-					$text = __( 'The summary should be less than 75 characters to minimize wrapping on mobile devices.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-meta-schema_review_claim_made':		// Claim Made on Date
-
-					$text = __( 'The date when the claim was made or entered public discourse (for example, when it became popular in social networks).', 'wpsso-schema-json-ld' );
 
 				 	break;
 

@@ -388,36 +388,36 @@ msgstr ""
 
 #: lib/filters.php:1229
 msgid ""
-"The publisher of the claim - the publisher can be a person or an "
-"organization."
-msgstr ""
-
-#: lib/filters.php:1235
-msgid "The name of the person or organization that is making the claim."
-msgstr ""
-
-#: lib/filters.php:1241
-msgid ""
-"The home page of the organization making the claim, or another definitive "
-"URL that provides information about the author making the claim, such as a "
-"person or organization's Wikipedia or Wikidata page."
-msgstr ""
-
-#: lib/filters.php:1247
-msgid ""
 "A short summary of specific claim(s) reviewed in the Schema ClaimReview."
 msgstr ""
 
-#: lib/filters.php:1249
+#: lib/filters.php:1231
 msgid ""
 "The summary should be less than 75 characters to minimize wrapping on mobile "
 "devices."
 msgstr ""
 
-#: lib/filters.php:1255
+#: lib/filters.php:1237
 msgid ""
 "The date when the claim was made or entered public discourse (for example, "
 "when it became popular in social networks)."
+msgstr ""
+
+#: lib/filters.php:1243
+msgid ""
+"The publisher of the claim - the publisher can be a person or an "
+"organization."
+msgstr ""
+
+#: lib/filters.php:1249
+msgid "The name of the person or organization that is making the claim."
+msgstr ""
+
+#: lib/filters.php:1255
+msgid ""
+"The home page of the organization making the claim, or another definitive "
+"URL that provides information about the author making the claim, such as a "
+"person or organization's Wikipedia or Wikidata page."
 msgstr ""
 
 #: lib/filters.php:1261
@@ -1032,31 +1032,31 @@ msgstr ""
 #: lib/gettext-pro.php:108 lib/gpl/admin/post.php:856
 #: lib/pro/admin/post.php:811
 msgctxt "option label"
-msgid "Claim Author Type"
+msgid "Claim Short Summary"
 msgstr ""
 
 #: lib/gettext-pro.php:109 lib/gpl/admin/post.php:864
 #: lib/pro/admin/post.php:818
 msgctxt "option label"
-msgid "Claim Author Name"
+msgid "Claim Made on Date"
 msgstr ""
 
 #: lib/gettext-pro.php:110 lib/gpl/admin/post.php:872
 #: lib/pro/admin/post.php:825
 msgctxt "option label"
-msgid "Claim Author URL"
+msgid "Claim Author Type"
 msgstr ""
 
 #: lib/gettext-pro.php:111 lib/gpl/admin/post.php:880
 #: lib/pro/admin/post.php:832
 msgctxt "option label"
-msgid "Claim Summary"
+msgid "Claim Author Name"
 msgstr ""
 
 #: lib/gettext-pro.php:112 lib/gpl/admin/post.php:888
 #: lib/pro/admin/post.php:839
 msgctxt "option label"
-msgid "Claim Made on Date"
+msgid "Claim Author URL"
 msgstr ""
 
 #: lib/gettext-pro.php:113 lib/gpl/admin/post.php:896
