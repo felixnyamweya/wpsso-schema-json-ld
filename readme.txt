@@ -276,7 +276,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 			* Trans Fat
 			* Cholesterol
 	* Review Information
-		* Subject Webpage URL 
+		* Review Subject URL 
 		* Review Rating 
 		* Review Rating Name
 	* Claim Review Information
@@ -723,12 +723,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.0-dev.3 (2019/04/04)**
+**Version 1.42.0-dev.4 (2019/04/05)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added new ClaimReview options in the SSO metabox:
+		* Claim Author Type
+		* Claim Author Name
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -771,9 +773,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.0-dev.3 =
+= 1.42.0-dev.4 =
 
-(2019/04/04) Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
+(2019/04/05) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.0.
 
 = 1.41.0 =
 
