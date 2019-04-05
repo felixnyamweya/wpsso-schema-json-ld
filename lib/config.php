@@ -26,12 +26,12 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'update_auth' => 'tid',
 					'text_domain' => 'wpsso-schema-json-ld',
 					'domain_path' => '/languages',
-					'req' => array(
+					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
 						'min_version' => '4.27.0-dev.4',
 					),
-					'img' => array(
+					'assets' => array(
 						'icons' => array(
 							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
