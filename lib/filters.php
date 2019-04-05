@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					/**
 					 * Add the shortlink / short URL, but only if the link rel shortlink tag is enabled.
 					 */
-					$add_link_rel_shortlink = empty( $this->p->options['add_link_rel_shortlink'] ) ? false : true; 
+					$add_link_rel_shortlink = empty( $this->p->options[ 'add_link_rel_shortlink' ] ) ? false : true; 
 
 					if ( apply_filters( $this->p->lca . '_add_link_rel_shortlink', $add_link_rel_shortlink, $mod ) ) {
 
@@ -158,12 +158,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				/**
 				 * Add the shortened URL for posts (which may be different to the shortlink), terms, and users.
 				 */
-				if ( ! empty( $this->p->options['plugin_shortener'] ) && $this->p->options['plugin_shortener'] !== 'none' ) {
+				if ( ! empty( $this->p->options[ 'plugin_shortener' ] ) && $this->p->options[ 'plugin_shortener' ] !== 'none' ) {
 
-					if ( ! empty( $mt_og['og:url'] ) ) {	// Just in case.
+					if ( ! empty( $mt_og[ 'og:url' ] ) ) {	// Just in case.
 
-						$ret[ 'sameAs' ][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og['og:url'],
-							$this->p->options['plugin_shortener'], $mod );
+						$ret[ 'sameAs' ][] = apply_filters( $this->p->lca . '_get_short_url', $mt_og[ 'og:url' ],
+							$this->p->options[ 'plugin_shortener' ], $mod );
 					}
 				}
 
@@ -239,10 +239,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret[ 'name' ] = $this->p->page->get_title( 0, '', $mod, true, false, true, 'schema_title', false );
 
-			$ret['alternateName'] = $this->p->page->get_title( $this->p->options['og_title_max_len'], '...', $mod, true, false, true, 'schema_title_alt' );
+			$ret[ 'alternateName' ] = $this->p->page->get_title( $this->p->options[ 'og_title_max_len' ], '...', $mod, true, false, true, 'schema_title_alt' );
 
-			if ( $ret[ 'name' ] === $ret['alternateName'] ) {
-				unset( $ret['alternateName'] );
+			if ( $ret[ 'name' ] === $ret[ 'alternateName' ] ) {
+				unset( $ret[ 'alternateName' ] );
 			}
 
 			/**
@@ -253,7 +253,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'getting schema description with custom meta fallback: schema_desc, seo_desc, og_desc' );
 			}
 
-			$ret['description'] = $this->p->page->get_description( $this->p->options['schema_desc_max_len'],
+			$ret[ 'description' ] = $this->p->page->get_description( $this->p->options[ 'schema_desc_max_len' ],
 				$dots = '...', $mod, $read_cache = true, $add_hashtags = false, $do_encode = true,
 					$md_key = array( 'schema_desc', 'seo_desc', 'og_desc' ) );
 
@@ -261,13 +261,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 *	potentialAction
 			 */
-			$ret['potentialAction'] = array();
+			$ret[ 'potentialAction' ] = array();
 
-			$ret['potentialAction'] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_potentialaction',
-				$ret['potentialAction'], $mod, $mt_og, $page_type_id, $is_main );
+			$ret[ 'potentialAction' ] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_potentialaction',
+				$ret[ 'potentialAction' ], $mod, $mt_og, $page_type_id, $is_main );
 
-			if ( empty( $ret['potentialAction'] ) ) {
-				unset( $ret['potentialAction'] );
+			if ( empty( $ret[ 'potentialAction' ] ) ) {
+				unset( $ret[ 'potentialAction' ] );
 			}
 
 			/**
@@ -287,14 +287,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						$this->p->debug->log( 'post_content for post id ' . $mod[ 'id' ] . ' is empty' );
 					}
 
-				} elseif ( isset( $this->p->sc['schema'] ) && is_object( $this->p->sc['schema'] ) ) {	// Is the schema shortcode class loaded.
+				} elseif ( isset( $this->p->sc[ 'schema' ] ) && is_object( $this->p->sc[ 'schema' ] ) ) {	// Is the schema shortcode class loaded.
 
 					/**
 					 * Check if the shortcode is registered, and that the content has a schema shortcode.
 					 */
 					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
 
-						$content_data = $this->p->sc['schema']->get_content_json_data( $content );
+						$content_data = $this->p->sc[ 'schema' ]->get_content_json_data( $content );
 
 						if ( ! empty( $content_data ) ) {
 							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
@@ -347,8 +347,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_lang'                        => $def_lang,					// Language
 				'schema_family_friendly'             => 'none',						// Family Friendly
 				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year
-				'schema_pub_org_id'                  => $opts['schema_def_pub_org_id'],			// Publisher
-				'schema_prov_org_id'                 => $opts['schema_def_prov_org_id'],		// Service Provider
+				'schema_pub_org_id'                  => $opts[ 'schema_def_pub_org_id' ],		// Publisher
+				'schema_prov_org_id'                 => $opts[ 'schema_def_prov_org_id' ],		// Service Provider
 				'schema_event_lang'                  => $def_lang,					// Event Language
 				'schema_event_start_date'            => '',						// Event Start Date
 				'schema_event_start_time'            => 'none',						// Event Start Time
@@ -362,11 +362,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_event_offers_end_date'       => '',						// Offers End Date
 				'schema_event_offers_end_time'       => 'none',						// Offers End Time
 				'schema_event_offers_end_timezone'   => $timezone,					// Offers End Timezone
-				'schema_event_organizer_org_id'      => $opts['schema_def_event_organizer_org_id'],	// Event Organizer Org.
-				'schema_event_organizer_person_id'   => $opts['schema_def_event_organizer_person_id'],	// Event Organizer Person
-				'schema_event_performer_org_id'      => $opts['schema_def_event_performer_org_id'],	// Event Performer Org.
-				'schema_event_performer_person_id'   => $opts['schema_def_event_performer_person_id'],	// Event Performer Person
-				'schema_event_location_id'           => $opts['schema_def_event_location_id'],		// Event Venue
+				'schema_event_organizer_org_id'      => $opts[ 'schema_def_event_organizer_org_id' ],	// Event Organizer Org.
+				'schema_event_organizer_person_id'   => $opts[ 'schema_def_event_organizer_person_id' ],// Event Organizer Person
+				'schema_event_performer_org_id'      => $opts[ 'schema_def_event_performer_org_id' ],	// Event Performer Org.
+				'schema_event_performer_person_id'   => $opts[ 'schema_def_event_performer_person_id' ],// Event Performer Person
+				'schema_event_location_id'           => $opts[ 'schema_def_event_location_id' ],	// Event Venue
 				'schema_howto_prep_days'             => 0,						// How-To Preparation Time (Days)
 				'schema_howto_prep_hours'            => 0,						// How-To Preparation Time (Hours)
 				'schema_howto_prep_mins'             => 0,						// How-To Preparation Time (Mins)
@@ -377,10 +377,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_howto_total_secs'            => 0,						// How-To Total Time (Secs)
 				'schema_howto_yield'                 => '',						// How-To Yield
 				'schema_job_title'                   => '',						// Job Title
-				'schema_job_hiring_org_id'           => $opts['schema_def_job_hiring_org_id'],		// Job Hiring Organization
-				'schema_job_location_id'             => $opts['schema_def_job_location_id'],		// Job Location
+				'schema_job_hiring_org_id'           => $opts[ 'schema_def_job_hiring_org_id' ],	// Job Hiring Organization
+				'schema_job_location_id'             => $opts[ 'schema_def_job_location_id' ],		// Job Location
 				'schema_job_salary'                  => '',						// Base Salary
-				'schema_job_salary_currency'         => $opts['plugin_def_currency'],			// Base Salary Currency
+				'schema_job_salary_currency'         => $opts[ 'plugin_def_currency' ],			// Base Salary Currency
 				'schema_job_salary_period'           => 'year',						// Base Salary per Year, Month, Week, Hour
 				'schema_job_empl_type_full_time'     => 0,
 				'schema_job_empl_type_part_time'     => 0,
@@ -435,20 +435,25 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
 				'schema_review_claim_author_type'    => 'none',						// Claim Author Type
 				'schema_review_claim_author_name'    => '',						// Claim Author Name
+				'schema_review_claim_author_url'     => '',						// Claim Author URL
 				'schema_review_claim_reviewed'       => '',						// Claim Summary
+				'schema_review_claim_made_date'      => '',						// Claim Made on Date
+				'schema_review_claim_made_time'      => 'none',						// Claim Made on Time
+				'schema_review_claim_made_timezone'  => $timezone,					// Claim Made on Timezone
+				'schema_review_claim_first_url'      => '',						// First Appearance URL
 				'schema_software_app_os'             => '',						// Operating System
 			);
 
 			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
 
 			foreach ( range( 0, $addl_type_max - 1, 1 ) as $key_num ) {
-				$schema_md_defs['schema_addl_type_url_' . $key_num] = '';
+				$schema_md_defs[ 'schema_addl_type_url_' . $key_num] = '';
 			}
 
 			$samas_max = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
 
 			foreach ( range( 0, $samas_max - 1, 1 ) as $key_num ) {
-				$schema_md_defs['schema_sameas_url_' . $key_num] = '';
+				$schema_md_defs[ 'schema_sameas_url_' . $key_num] = '';
 			}
 
 			$md_defs = array_merge( $md_defs, $schema_md_defs );
@@ -622,6 +627,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_addl_type_url':			// Microdata Type URLs
 				case 'schema_sameas_url':			// Same-As URLs
 				case 'schema_review_item_url':
+				case 'schema_review_claim_author_url':		// Claim Author URL
+				case 'schema_review_claim_first_url':		// First Appearance URL
 
 					return 'url';
 
@@ -651,7 +658,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * If the review rating is 0, remove the review rating options.
 			 * If we have a review rating, then make sure there's a from/to as well.
 			 */
-			if ( empty( $md_opts['schema_review_rating'] ) ) {
+			if ( empty( $md_opts[ 'schema_review_rating' ] ) ) {
 				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_key ) {
 					unset( $md_opts[$md_key] );
 				}
@@ -678,19 +685,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					}
 				}
 
-				if ( empty( $md_opts[$md_pre . '_date'] ) && empty( $md_opts[$md_pre . '_time'] ) ) {		// No date or time.
+				if ( empty( $md_opts[$md_pre . '_date' ] ) && empty( $md_opts[$md_pre . '_time' ] ) ) {		// No date or time.
 
-					unset( $md_opts[$md_pre . '_timezone'] );
+					unset( $md_opts[$md_pre . '_timezone' ] );
 
 					continue;
 
-				} elseif ( ! empty( $md_opts[$md_pre . '_date'] ) && empty( $md_opts[$md_pre . '_time'] ) ) {	// Date with no time.
+				} elseif ( ! empty( $md_opts[$md_pre . '_date' ] ) && empty( $md_opts[$md_pre . '_time' ] ) ) {	// Date with no time.
 
-					$md_opts[$md_pre . '_time'] = '00:00';
+					$md_opts[$md_pre . '_time' ] = '00:00';
 
-				} elseif ( empty( $md_opts[$md_pre . '_date'] ) && ! empty( $md_opts[$md_pre . '_time'] ) ) {	// Time with no date.
+				} elseif ( empty( $md_opts[$md_pre . '_date' ] ) && ! empty( $md_opts[$md_pre . '_time' ] ) ) {	// Time with no date.
 
-					$md_opts[$md_pre . '_date'] = gmdate( 'Y-m-d', time() );
+					$md_opts[$md_pre . '_date' ] = gmdate( 'Y-m-d', time() );
 				}
 			}
 
@@ -707,8 +714,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				}
 
 				if ( ! $valid_offer ) {
-					unset( $md_opts['schema_event_offer_currency_' . $key_num] );
-					unset( $md_opts['schema_event_offer_avail_' . $key_num] );
+					unset( $md_opts[ 'schema_event_offer_currency_' . $key_num] );
+					unset( $md_opts[ 'schema_event_offer_avail_' . $key_num] );
 				}
 			}
 
@@ -1217,27 +1224,48 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_review_claim_reviewed':
-
-					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
 				case 'tooltip-meta-schema_review_claim_author_type':	// Claim Author Type
 
-					$text = __( '', 'wpsso-schema-json-ld' );
+					$text = __( 'The publisher of the claim - the publisher can be a person or an organization.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_review_claim_author_name':	// Claim Author Name
 
-					$text = __( '', 'wpsso-schema-json-ld' );
+					$text = __( 'The name of the person or organization that is making the claim.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_author_url':	// Claim Author URL
+
+					$text = __( 'The home page of the organization making the claim, or another definitive URL that provides information about the author making the claim, such as a person or organization\'s Wikipedia or Wikidata page.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_reviewed':	// Claim Summary
+
+					$text = __( 'A short summary of specific claim(s) reviewed in the Schema ClaimReview.', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text = __( 'The summary should be less than 75 characters to minimize wrapping on mobile devices.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_made':		// Claim Made on Date
+
+					$text = __( 'The date when the claim was made or entered public discourse (for example, when it became popular in social networks).', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_claim_first_url':	// First Appearance URL
+
+					$text = __( 'An optional webpage URL where this specific claim first appeared.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
 				case 'tooltip-meta-schema_software_app_os':
 
-					$text = sprintf( __( 'Operating system supported (example: %s, etc.).', 'wpsso-schema-json-ld' ), '"Windows 7", "OSX 10.6", "Android 1.6"' );
+					$text = sprintf( __( 'Operating system supported (example: %s, etc.).', 'wpsso-schema-json-ld' ),
+						'"Windows 7", "OSX 10.6", "Android 1.6"' );
 
 				 	break;
 			}
@@ -1366,11 +1394,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			foreach ( $features as $feature_key => $feature_info ) {
 
-				if ( isset( $feature_info['sub'] ) && $feature_info['sub'] === 'head' ) {
+				if ( isset( $feature_info[ 'sub' ] ) && $feature_info[ 'sub' ] === 'head' ) {
 
 					if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \(schema_type:(.+)\)$/', $feature_key, $match ) ) {
 
-						$features[$feature_key]['label'] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
+						$features[$feature_key][ 'label' ] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
 					}
 				}
 			}
