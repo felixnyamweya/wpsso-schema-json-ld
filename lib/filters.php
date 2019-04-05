@@ -428,14 +428,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_unsat_fat'      => '',						// Unsaturated Fat
 				'schema_recipe_nutri_chol'           => '',						// Cholesterol
 				'schema_recipe_yield'                => '',						// Recipe Yield
-				'schema_review_item_url'             => '',						// Review Subject Webpage URL
+				'schema_review_item_url'             => '',						// Review Subject URL
 				'schema_review_rating'               => '0.0',						// Review Rating
 				'schema_review_rating_from'          => '1',						// Review Rating (From)
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
 				'schema_review_claim_reviewed'       => '',						// Summary of Claim
-				'schema_review_claim_by_type'        => 'website',					// Claimed by Type
-				'schema_review_claim_by_name'        => '',						// Claimed by Name
+				'schema_review_claim_author_type'    => 'organization',					// Claim Author Type
+				'schema_review_claim_author_name'    => '',						// Claim Author Name
 				'schema_software_app_os'             => '',						// Operating System
 			);
 
@@ -533,7 +533,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_recipe_yield':			// Recipe Makes
 				case 'schema_review_rating_alt_name':
 				case 'schema_review_claim_reviewed':
-				case 'schema_review_claim_by_name':
+				case 'schema_review_claim_author_name':		// Claim Author Name
 				case 'schema_software_app_os':
 
 					return 'one_line';
@@ -564,7 +564,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_job_salary_currency':
 				case 'schema_job_salary_period':
 				case 'schema_movie_prodco_org_id':		// Production Company
-				case 'schema_review_claim_by_type':
+				case 'schema_review_claim_author_type':		// Claim Author Type
 
 					return 'not_blank';
 
@@ -1219,13 +1219,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_review_claim_by_type':
+				case 'tooltip-meta-schema_review_claim_author_type':	// Claim Author Type
 
 					$text = __( '', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_review_claim_by_name':
+				case 'tooltip-meta-schema_review_claim_author_name':	// Claim Author Name
 
 					$text = __( '', 'wpsso-schema-json-ld' );
 

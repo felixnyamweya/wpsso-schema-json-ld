@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.42.0-dev.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.42.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -484,14 +484,14 @@ msgctxt "option comment"
 msgid "secs"
 msgstr ""
 
-#: lib/gettext-pro.php:11 lib/gettext-pro.php:111 lib/gpl/admin/post.php:131
+#: lib/gettext-pro.php:11 lib/gettext-pro.php:113 lib/gpl/admin/post.php:131
 #: lib/gpl/admin/term.php:76 lib/pro/admin/post.php:152
 #: lib/pro/admin/term.php:89
 msgctxt "option label"
 msgid "Schema Type"
 msgstr ""
 
-#: lib/gettext-pro.php:12 lib/gettext-pro.php:112 lib/gettext-pro.php:116
+#: lib/gettext-pro.php:12 lib/gettext-pro.php:114 lib/gettext-pro.php:118
 #: lib/gpl/admin/post.php:141 lib/gpl/admin/term.php:85
 #: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:160
 #: lib/pro/admin/term.php:96 lib/pro/admin/user.php:87
@@ -499,7 +499,7 @@ msgctxt "option label"
 msgid "Name / Title"
 msgstr ""
 
-#: lib/gettext-pro.php:13 lib/gettext-pro.php:113 lib/gettext-pro.php:117
+#: lib/gettext-pro.php:13 lib/gettext-pro.php:115 lib/gettext-pro.php:119
 #: lib/gpl/admin/post.php:150 lib/gpl/admin/term.php:93
 #: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:168
 #: lib/pro/admin/term.php:103 lib/pro/admin/user.php:93
@@ -507,14 +507,14 @@ msgctxt "option label"
 msgid "Alternate Name"
 msgstr ""
 
-#: lib/gettext-pro.php:14 lib/gettext-pro.php:114 lib/gpl/admin/post.php:159
+#: lib/gettext-pro.php:14 lib/gettext-pro.php:116 lib/gpl/admin/post.php:159
 #: lib/gpl/admin/term.php:102 lib/pro/admin/post.php:176
 #: lib/pro/admin/term.php:111
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr ""
 
-#: lib/gettext-pro.php:15 lib/gettext-pro.php:115 lib/gpl/admin/post.php:167
+#: lib/gettext-pro.php:15 lib/gettext-pro.php:117 lib/gpl/admin/post.php:167
 #: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:183
 #: lib/pro/admin/term.php:118
 msgctxt "option label"
@@ -693,7 +693,7 @@ msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
 
-#: lib/gettext-pro.php:49 lib/gettext-pro.php:120 lib/gpl/admin/post.php:451
+#: lib/gettext-pro.php:49 lib/gettext-pro.php:122 lib/gpl/admin/post.php:451
 #: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:441
 #: lib/pro/admin/user.php:115
 msgctxt "option label"
@@ -765,7 +765,7 @@ msgctxt "option label"
 msgid "Organization"
 msgstr ""
 
-#: lib/gettext-pro.php:63 lib/gettext-pro.php:119 lib/gpl/admin/post.php:568
+#: lib/gettext-pro.php:63 lib/gettext-pro.php:121 lib/gpl/admin/post.php:568
 #: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:550
 #: lib/pro/admin/user.php:111
 msgctxt "metabox title"
@@ -957,7 +957,7 @@ msgstr ""
 #: lib/gettext-pro.php:102 lib/gpl/admin/post.php:818
 #: lib/pro/admin/post.php:776
 msgctxt "option label"
-msgid "Subject Webpage URL"
+msgid "Review Subject URL"
 msgstr ""
 
 #: lib/gettext-pro.php:103 lib/gpl/admin/post.php:826
@@ -996,31 +996,43 @@ msgctxt "option label"
 msgid "Summary of Claim"
 msgstr ""
 
-#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:871
-#: lib/pro/admin/post.php:827
+#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:861
+#: lib/pro/admin/post.php:818
+msgctxt "option label"
+msgid "Claim Author Type"
+msgstr ""
+
+#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:868
+#: lib/pro/admin/post.php:825
+msgctxt "option label"
+msgid "Claim Author Name"
+msgstr ""
+
+#: lib/gettext-pro.php:111 lib/gpl/admin/post.php:881
+#: lib/pro/admin/post.php:837
 msgctxt "metabox title"
 msgid "Software Application Information"
 msgstr ""
 
-#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:875
-#: lib/pro/admin/post.php:832
+#: lib/gettext-pro.php:112 lib/gpl/admin/post.php:885
+#: lib/pro/admin/post.php:842
 msgctxt "option label"
 msgid "Operating System"
 msgstr ""
 
-#: lib/gettext-pro.php:118 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
+#: lib/gettext-pro.php:120 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
 msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:121 lib/pro/job/wpjobmanager.php:316
+#: lib/gettext-pro.php:123 lib/pro/job/wpjobmanager.php:316
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:122 lib/pro/job/wpjobmanager.php:324
+#: lib/gettext-pro.php:124 lib/pro/job/wpjobmanager.php:324
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""

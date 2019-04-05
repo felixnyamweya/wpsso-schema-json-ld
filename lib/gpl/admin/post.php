@@ -815,7 +815,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class[ 'review' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank required',
-					'label'    => _x( 'Subject Webpage URL', 'option label', 'wpsso-schema-json-ld' ),
+					'label'    => _x( 'Review Subject URL', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_review_item_url',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
@@ -856,9 +856,19 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_review_claim_reviewed',
 					'content'  => $form->get_no_textarea_value( '', 'summary' ),
 				),
-				'schema_review_claim_by_type' => array(
+				'schema_review_claim_author_type' => array(
+					'tr_class' => $schema_type_tr_class[ 'review_claim' ],
+					'label'    => _x( 'Claim Author Type', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium',
+					'tooltip'  => 'meta-schema_review_claim_author_type',
+					'content'  => '',
 				),
-				'schema_review_claim_by_name' => array(
+				'schema_review_claim_author_name' => array(
+					'tr_class' => $schema_type_tr_class[ 'review_claim' ],
+					'label'    => _x( 'Claim Author Name', 'option label', 'wpsso-schema-json-ld' ),
+					'th_class' => 'medium',
+					'tooltip'  => 'meta-schema_review_claim_author_name',
+					'content'  => $form->get_no_input_value( '' ),
 				),
 
 				/**
