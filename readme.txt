@@ -35,7 +35,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
-&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Forget everything else this is the best schema plugin - Sincerely, we bought other expensive plugins that we had to abandon due to the lack of important features, but with this [WPSSO JSON] we get all that we need - and our schema has more features than the competition!" - [zuki305](https://wordpress.org/support/topic/forget-everything-else-this-is-the-best-schema-plugin/)
+&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Forget everything else this is the best schema plugin - Sincerely, we bought other plugins that we had to abandon due to the lack of important features, but with this [WPSSO JSON] we get all that we need - and our schema has more features than the competition!" - [zuki305](https://wordpress.org/support/topic/forget-everything-else-this-is-the-best-schema-plugin/)
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Tried three other plugins before this one - for our Woocommerce site, this was by far the best one. Thanks!" - [EntoMarket](https://wordpress.org/support/topic/tried-three-other-plugins-before-this-one/)
 
