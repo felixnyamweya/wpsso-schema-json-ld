@@ -370,75 +370,81 @@ msgstr ""
 
 #: lib/filters.php:1208
 msgid ""
-"A rating for the subject being reviewed, along with the low/high rating "
+"A rating for the subject being reviewed, along with the low / high rating "
 "scale (default is 1 to 5)."
 msgstr ""
 
-#: lib/filters.php:1212
+#: lib/filters.php:1210
+msgid ""
+"If you are reviewing a claim, the following rating scale is used: 1 = False, "
+"2 = Mostly false, 3 = Half true, 4 = Mostly true, 5 = True."
+msgstr ""
+
+#: lib/filters.php:1216
 msgid ""
 "An alternate name / description for the rating value (example: False, "
 "Misleading, Accurate, etc.)."
 msgstr ""
 
-#: lib/filters.php:1218
+#: lib/filters.php:1222
 msgid ""
 "A short summary of specific claim(s) reviewed in the Schema ClaimReview."
 msgstr ""
 
-#: lib/filters.php:1236
+#: lib/filters.php:1240
 msgid "Operating system supported (example: %s, etc.)."
 msgstr ""
 
-#: lib/filters.php:1257
+#: lib/filters.php:1261
 msgid ""
 "Add a text property to the Schema CreativeWork type with the complete "
 "textual content of the post / page."
 msgstr ""
 
-#: lib/filters.php:1263
+#: lib/filters.php:1267
 msgid ""
 "The maximum length used for the Schema CreativeWork text property value (the "
 "default is %d characters)."
 msgstr ""
 
-#: lib/filters.php:1269
+#: lib/filters.php:1273
 msgid ""
 "Select a default service provider, service operator, or service performer "
 "(example: \"Netflix\")."
 msgstr ""
 
-#: lib/filters.php:1275
+#: lib/filters.php:1279
 msgid ""
 "Select a default publisher for the Schema CreativeWork type and/or its sub-"
 "types (Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
-#: lib/filters.php:1281
+#: lib/filters.php:1285
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1287
+#: lib/filters.php:1291
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1293
+#: lib/filters.php:1297
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1299
+#: lib/filters.php:1303
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1305
+#: lib/filters.php:1309
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1311
+#: lib/filters.php:1315
 msgid ""
 "Select a default organization for the Schema JobPosting hiring organization."
 msgstr ""
 
-#: lib/filters.php:1317
+#: lib/filters.php:1321
 msgid ""
 "Select a default place / location for the Schema JobPosting job location."
 msgstr ""
@@ -484,14 +490,14 @@ msgctxt "option comment"
 msgid "secs"
 msgstr ""
 
-#: lib/gettext-pro.php:11 lib/gettext-pro.php:113 lib/gpl/admin/post.php:131
+#: lib/gettext-pro.php:11 lib/gettext-pro.php:115 lib/gpl/admin/post.php:131
 #: lib/gpl/admin/term.php:76 lib/pro/admin/post.php:152
 #: lib/pro/admin/term.php:89
 msgctxt "option label"
 msgid "Schema Type"
 msgstr ""
 
-#: lib/gettext-pro.php:12 lib/gettext-pro.php:114 lib/gettext-pro.php:118
+#: lib/gettext-pro.php:12 lib/gettext-pro.php:116 lib/gettext-pro.php:120
 #: lib/gpl/admin/post.php:141 lib/gpl/admin/term.php:85
 #: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:160
 #: lib/pro/admin/term.php:96 lib/pro/admin/user.php:87
@@ -499,7 +505,7 @@ msgctxt "option label"
 msgid "Name / Title"
 msgstr ""
 
-#: lib/gettext-pro.php:13 lib/gettext-pro.php:115 lib/gettext-pro.php:119
+#: lib/gettext-pro.php:13 lib/gettext-pro.php:117 lib/gettext-pro.php:121
 #: lib/gpl/admin/post.php:150 lib/gpl/admin/term.php:93
 #: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:168
 #: lib/pro/admin/term.php:103 lib/pro/admin/user.php:93
@@ -507,14 +513,14 @@ msgctxt "option label"
 msgid "Alternate Name"
 msgstr ""
 
-#: lib/gettext-pro.php:14 lib/gettext-pro.php:116 lib/gpl/admin/post.php:159
+#: lib/gettext-pro.php:14 lib/gettext-pro.php:118 lib/gpl/admin/post.php:159
 #: lib/gpl/admin/term.php:102 lib/pro/admin/post.php:176
 #: lib/pro/admin/term.php:111
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr ""
 
-#: lib/gettext-pro.php:15 lib/gettext-pro.php:117 lib/gpl/admin/post.php:167
+#: lib/gettext-pro.php:15 lib/gettext-pro.php:119 lib/gpl/admin/post.php:167
 #: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:183
 #: lib/pro/admin/term.php:118
 msgctxt "option label"
@@ -693,7 +699,7 @@ msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
 
-#: lib/gettext-pro.php:49 lib/gettext-pro.php:122 lib/gpl/admin/post.php:451
+#: lib/gettext-pro.php:49 lib/gettext-pro.php:124 lib/gpl/admin/post.php:451
 #: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:441
 #: lib/pro/admin/user.php:115
 msgctxt "option label"
@@ -765,7 +771,7 @@ msgctxt "option label"
 msgid "Organization"
 msgstr ""
 
-#: lib/gettext-pro.php:63 lib/gettext-pro.php:121 lib/gpl/admin/post.php:568
+#: lib/gettext-pro.php:63 lib/gettext-pro.php:123 lib/gpl/admin/post.php:568
 #: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:550
 #: lib/pro/admin/user.php:111
 msgctxt "metabox title"
@@ -957,31 +963,31 @@ msgstr ""
 #: lib/gettext-pro.php:102 lib/gpl/admin/post.php:818
 #: lib/pro/admin/post.php:776
 msgctxt "option label"
-msgid "Review Subject URL"
-msgstr ""
-
-#: lib/gettext-pro.php:103 lib/gpl/admin/post.php:826
-#: lib/pro/admin/post.php:783
-msgctxt "option label"
 msgid "Review Rating"
 msgstr ""
 
-#: lib/gettext-pro.php:104 lib/gpl/admin/post.php:829
-#: lib/pro/admin/post.php:786
+#: lib/gettext-pro.php:103 lib/gpl/admin/post.php:821
+#: lib/pro/admin/post.php:779
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
-#: lib/gettext-pro.php:105 lib/gpl/admin/post.php:831
-#: lib/pro/admin/post.php:788
+#: lib/gettext-pro.php:104 lib/gpl/admin/post.php:823
+#: lib/pro/admin/post.php:781
 msgctxt "option comment"
 msgid "to"
+msgstr ""
+
+#: lib/gettext-pro.php:105 lib/gpl/admin/post.php:830
+#: lib/pro/admin/post.php:787
+msgctxt "option label"
+msgid "Review Rating Name"
 msgstr ""
 
 #: lib/gettext-pro.php:106 lib/gpl/admin/post.php:838
 #: lib/pro/admin/post.php:794
 msgctxt "option label"
-msgid "Review Rating Name"
+msgid "Review Subject URL"
 msgstr ""
 
 #: lib/gettext-pro.php:107 lib/gpl/admin/post.php:850
@@ -990,49 +996,61 @@ msgctxt "metabox title"
 msgid "Claim Review Information"
 msgstr ""
 
-#: lib/gettext-pro.php:108 lib/gpl/admin/post.php:854
+#: lib/gettext-pro.php:108 lib/gpl/admin/post.php:856
 #: lib/pro/admin/post.php:811
-msgctxt "option label"
-msgid "Summary of Claim"
-msgstr ""
-
-#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:861
-#: lib/pro/admin/post.php:818
 msgctxt "option label"
 msgid "Claim Author Type"
 msgstr ""
 
-#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:868
-#: lib/pro/admin/post.php:825
+#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:864
+#: lib/pro/admin/post.php:818
 msgctxt "option label"
 msgid "Claim Author Name"
 msgstr ""
 
-#: lib/gettext-pro.php:111 lib/gpl/admin/post.php:881
-#: lib/pro/admin/post.php:837
+#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:872
+#: lib/pro/admin/post.php:825
+msgctxt "option label"
+msgid "Claim Summary"
+msgstr ""
+
+#: lib/gettext-pro.php:111 lib/gpl/admin/post.php:880
+#: lib/pro/admin/post.php:832
+msgctxt "option label"
+msgid "Claim Made on Date"
+msgstr ""
+
+#: lib/gettext-pro.php:112 lib/gpl/admin/post.php:888
+#: lib/pro/admin/post.php:839
+msgctxt "option label"
+msgid "Claim First Appearance URL"
+msgstr ""
+
+#: lib/gettext-pro.php:113 lib/gpl/admin/post.php:900
+#: lib/pro/admin/post.php:851
 msgctxt "metabox title"
 msgid "Software Application Information"
 msgstr ""
 
-#: lib/gettext-pro.php:112 lib/gpl/admin/post.php:885
-#: lib/pro/admin/post.php:842
+#: lib/gettext-pro.php:114 lib/gpl/admin/post.php:906
+#: lib/pro/admin/post.php:856
 msgctxt "option label"
 msgid "Operating System"
 msgstr ""
 
-#: lib/gettext-pro.php:120 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
+#: lib/gettext-pro.php:122 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
 msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:123 lib/pro/job/wpjobmanager.php:316
+#: lib/gettext-pro.php:125 lib/pro/job/wpjobmanager.php:316
 msgctxt "option value"
 msgid "%s Organization"
 msgstr ""
 
 #. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:124 lib/pro/job/wpjobmanager.php:324
+#: lib/gettext-pro.php:126 lib/pro/job/wpjobmanager.php:324
 msgctxt "option value"
 msgid "%s Location"
 msgstr ""

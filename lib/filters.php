@@ -433,9 +433,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_review_rating_from'          => '1',						// Review Rating (From)
 				'schema_review_rating_to'            => '5',						// Review Rating (To)
 				'schema_review_rating_alt_name'      => '',						// Review Rating Name
-				'schema_review_claim_reviewed'       => '',						// Summary of Claim
-				'schema_review_claim_author_type'    => 'organization',					// Claim Author Type
+				'schema_review_claim_author_type'    => 'none',						// Claim Author Type
 				'schema_review_claim_author_name'    => '',						// Claim Author Name
+				'schema_review_claim_reviewed'       => '',						// Claim Summary
 				'schema_software_app_os'             => '',						// Operating System
 			);
 
@@ -1205,7 +1205,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_review_rating':
 
-					$text = __( 'A rating for the subject being reviewed, along with the low/high rating scale (default is 1 to 5).', 'wpsso-schema-json-ld' );
+					$text = __( 'A rating for the subject being reviewed, along with the low / high rating scale (default is 1 to 5).', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text .= __( 'If you are reviewing a claim, the following rating scale is used: 1 = False, 2 = Mostly false, 3 = Half true, 4 = Mostly true, 5 = True.', 'wpsso-schema-json-ld' );
+
+				 	break;
 
 				case 'tooltip-meta-schema_review_rating_alt_name':
 
