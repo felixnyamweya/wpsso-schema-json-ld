@@ -280,9 +280,9 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Review Rating 
 		* Review Rating Name
 	* Claim Review Information
-		* Summary of Claim
-		* Claimed by Type
-		* Claimed by Name
+		* Claim Author Type
+		* Claim Author Name
+		* Claim Summary
 	* Software Application Information
 		* Operating System
 
