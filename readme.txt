@@ -728,7 +728,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.0-dev.6 (2019/04/05)**
+**Version 1.42.0-rc.1 (2019/04/06)**
 
 * *New Features*
 	* None.
@@ -782,9 +782,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.0-dev.6 =
+= 1.42.0-rc.1 =
 
-(2019/04/05) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.0.
+(2019/04/06) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.0.
 
 = 1.41.0 =
 
