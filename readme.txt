@@ -743,7 +743,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.0.
+	* Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.1.
 
 **Version 1.41.0 (2019/03/31)**
 
@@ -784,5 +784,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.42.0 =
 
-(2019/04/06) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.0.
+(2019/04/06) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.1.
 
