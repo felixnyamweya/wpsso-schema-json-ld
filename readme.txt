@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.1.1
 WC Tested Up To: 3.5
-Stable Tag: 1.41.0
+Stable Tag: 1.42.0
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
