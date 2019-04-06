@@ -415,8 +415,8 @@ msgstr ""
 
 #: lib/filters.php:1255
 msgid ""
-"The home page of the organization making the claim, or another definitive "
-"URL that provides information about the author making the claim, such as a "
+"The home page of the organization making the claim or another definitive URL "
+"that provides information about the author making the claim, such as a "
 "person or organization's Wikipedia or Wikidata page."
 msgstr ""
 

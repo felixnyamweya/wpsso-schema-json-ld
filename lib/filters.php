@@ -1252,7 +1252,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_review_claim_author_url':	// Claim Author URL
 
-					$text = __( 'The home page of the organization making the claim, or another definitive URL that provides information about the author making the claim, such as a person or organization\'s Wikipedia or Wikidata page.', 'wpsso-schema-json-ld' );
+					$text = __( 'The home page of the organization making the claim or another definitive URL that provides information about the author making the claim, such as a person or organization\'s Wikipedia or Wikidata page.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
