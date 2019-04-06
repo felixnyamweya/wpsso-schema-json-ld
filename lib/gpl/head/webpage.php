@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			if ( ! empty( $this->p->options[ 'schema_add_text_prop' ] ) ) {
 
-				$text_max_len = $this->p->options['schema_text_max_len'];
+				$text_max_len = $this->p->options[ 'schema_text_max_len' ];
 
 				$ret[ 'text' ] = $this->p->page->get_text( $text_max_len, '...', $mod );
 
@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 * Property:
 			 * 	headline
 			 */
-			$headline_max_len = $this->p->cf['head']['limit_max']['schema_headline_len'];
+			$headline_max_len = $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
 
 			$ret[ 'headline' ] = $this->p->page->get_title( $headline_max_len, '...', $mod );
 
