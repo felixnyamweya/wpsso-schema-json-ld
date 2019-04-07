@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filters' );
+				$this->p->debug->mark( 'common json data filter' );
 			}
 
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
@@ -313,7 +313,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filters' );
+				$this->p->debug->mark( 'common json data filter' );
 			}
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
