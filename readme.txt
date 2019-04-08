@@ -735,7 +735,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed a "The review field is recommended" warning from the Google testing tool for webpages without any reviews.
+	* Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
 * *Developer Notes*
 	* None.
 
@@ -795,7 +795,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.42.1-dev.1 =
 
-(2019/04/08) Fixed a "The review field is recommended" warning from the Google testing tool for webpages without any reviews.
+(2019/04/08) Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
 
 = 1.42.0 =
 
