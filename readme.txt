@@ -139,11 +139,13 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 * Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.
 
-* Includes Aggregate Rating values (if available) in the main webpage Schema "aggregateRating" property.
-
-* Includes Review values (if available) in the main webpage Schema "review" property.
-
 * Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
+
+* Fixes common Google testing tool warnings like "aggregateRating field is recommended" and "review field is recommended".
+
+* Includes Aggregate Rating values (if available from WordPress) in the main webpage Schema "aggregateRating" property.
+
+* Includes Review values (if available from WordPress) in the main webpage Schema "review" property.
 
 * WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
