@@ -728,6 +728,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.42.1-dev.1 (2019/04/08)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* Fixed a "The review field is recommended" warning from the Google testing tool for webpages without any reviews.
+* *Developer Notes*
+	* None.
+
 **Version 1.42.0 (2019/04/06)**
 
 * *New Features*
@@ -781,6 +792,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'WPSSO_SCHEMA_PRODUCT_VALID_MAX_TIME' constant to define a Schema 'priceValidUntil' property default value (default is 1 year).
 
 == Upgrade Notice ==
+
+= 1.42.1-dev.1 =
+
+(2019/04/08) Fixed a "The review field is recommended" warning from the Google testing tool for webpages without any reviews.
 
 = 1.42.0 =
 
