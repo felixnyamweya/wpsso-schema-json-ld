@@ -133,19 +133,21 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 	* [schema.org/WebPage](https://schema.org/WebPage) (includes 13 Schema types)
 	* [schema.org/WebSite](https://schema.org/WebSite)
 
+* Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
+
 * WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).
 
-* Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
-
-* Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.
-
-* Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
+* Fixes common Google testing tool warnings for WooCommerce products, like "Missing Product ID", "brand field is recommended", etc.
 
 * Fixes common Google testing tool warnings like "aggregateRating field is recommended" and "review field is recommended".
 
 * Includes Aggregate Rating values (if available from WordPress) in the main webpage Schema "aggregateRating" property.
 
 * Includes Review values (if available from WordPress) in the main webpage Schema "review" property.
+
+* Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.
+
+* Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
 * WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
 
