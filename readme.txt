@@ -732,7 +732,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.1-dev.2 (2019/04/09)**
+**Version 1.42.1 (2019/04/09)**
 
 * *New Features*
 	* None.
@@ -797,7 +797,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.1-dev.2 =
+= 1.42.1 =
 
 (2019/04/09) Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
 
