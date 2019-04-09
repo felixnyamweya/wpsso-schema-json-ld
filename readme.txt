@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.1.1
 WC Tested Up To: 3.5
-Stable Tag: 1.42.0
+Stable Tag: 1.42.1
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -800,8 +800,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.42.1 =
 
 (2019/04/09) Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
-
-= 1.42.0 =
-
-(2019/04/06) Added new ClaimReview options in the SSO metabox. Moved methods create aggregate offers and single offers to the WpssoSchema class in WPSSO Core v4.27.1.
 
