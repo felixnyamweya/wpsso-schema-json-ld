@@ -732,6 +732,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.42.2-dev.1 (2019/04/11)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* Fixed the addition of default 'aggregateRating' and 'review' property values to the main entity and specific Schema types (Brand, CreativeWork, Event, Offer, Organization, Place, Product, and Service).
+* *Developer Notes*
+	* None.
+
 **Version 1.42.1 (2019/04/09)**
 
 * *New Features*
@@ -796,6 +807,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added a new 'WPSSO_SCHEMA_PRODUCT_VALID_MAX_TIME' constant to define a Schema 'priceValidUntil' property default value (default is 1 year).
 
 == Upgrade Notice ==
+
+= 1.42.2-dev.1 =
+
+(2019/04/11) Fixed the addition of default 'aggregateRating' and 'review' property values to the main entity and specific Schema types.
 
 = 1.42.1 =
 
