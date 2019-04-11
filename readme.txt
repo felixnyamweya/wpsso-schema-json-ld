@@ -732,14 +732,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.2-rc.1 (2019/04/11)**
+**Version 1.42.2 (2019/04/11)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed the addition of default 'aggregateRating' and 'review' property values to the main entity and specific Schema types (Brand, CreativeWork, Event, Offer, Organization, Place, Product, and Service).
+	* Fixed the addition of default 'aggregateRating' and 'review' property values to only the main entity and specific Schema types (Brand, CreativeWork, Event, Offer, Organization, Place, Product, and Service).
 * *Developer Notes*
 	* None.
 
@@ -784,35 +784,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
-**Version 1.40.1 (2019/03/11)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added an 'mpn' property (aka Manufacturer Part Number) for the Schema Product type and its sub-types.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
-**Version 1.40.0 (2019/03/01)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a 'thumbnailUrl' property for the Schema CreativeWork type and its sub-types.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Added a new 'WPSSO_SCHEMA_PRODUCT_VALID_MAX_TIME' constant to define a Schema 'priceValidUntil' property default value (default is 1 year).
-
 == Upgrade Notice ==
 
-= 1.42.2-rc.1 =
+= 1.42.2 =
 
-(2019/04/11) Fixed the addition of default 'aggregateRating' and 'review' property values to the main entity and specific Schema types.
-
-= 1.42.1 =
-
-(2019/04/09) Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
+(2019/04/11) Fixed the addition of default 'aggregateRating' and 'review' property values to only the main entity and specific Schema types.
 
