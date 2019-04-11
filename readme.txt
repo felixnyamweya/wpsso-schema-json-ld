@@ -732,7 +732,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.2-dev.1 (2019/04/11)**
+**Version 1.42.2-rc.1 (2019/04/11)**
 
 * *New Features*
 	* None.
@@ -808,7 +808,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.2-dev.1 =
+= 1.42.2-rc.1 =
 
 (2019/04/11) Fixed the addition of default 'aggregateRating' and 'review' property values to the main entity and specific Schema types.
 
