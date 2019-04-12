@@ -104,7 +104,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						'shortcode' => array(
 							'schema' => 'Schema Shortcode',
 						),
-						'submenu' => array(	// Note that submenu elements must have unique keys.
+						'submenu' => array(
 							'schema-general'   => 'Schema Markup',
 							'schema-shortcode' => 'Schema Shortcode',
 						),
