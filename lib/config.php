@@ -38,13 +38,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'schema-general'   => 'Schema Markup',
-							'schema-shortcode' => 'Schema Shortcode',
-						),
-						'shortcode' => array(
-							'schema' => 'Schema Shortcode',
-						),
 						'gpl' => array(
 							'admin' => array(
 								'post' => 'Extend Post Settings',
@@ -107,6 +100,13 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							'review' => array(
 								'wpproductreview' => '(plugin) WP Product Review',
 							),
+						),
+						'shortcode' => array(
+							'schema' => 'Schema Shortcode',
+						),
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'schema-general'   => 'Schema Markup',
+							'schema-shortcode' => 'Schema Shortcode',
 						),
 					),
 				),
