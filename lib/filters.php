@@ -332,9 +332,22 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			}
 
 			$opts               =& $this->p->options;	// Shortcute for plugin options array.
-			$def_copyright_year = $mod[ 'is_post' ] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_lang           = SucomUtil::get_locale( $mod );
+
+			$def_copyright_year = '';
+			
+			if ( $mod[ 'is_post' ] ) {
+
+				$def_copyright_year = trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) );
+
+				/**
+				 * Check for a WordPress bug that returns -0001 for the year of a draft post.
+				 */
+				if ( $def_copyright_year === '-0001' ) {
+					$def_copyright_year = '';
+				}
+			}
 
 			$schema_md_defs = array(
 				'schema_type'                        => $def_schema_type,				// Schema Type
