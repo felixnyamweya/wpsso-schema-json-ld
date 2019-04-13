@@ -334,9 +334,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$opts               =& $this->p->options;	// Shortcute for plugin options array.
 			$def_schema_type    = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_lang           = SucomUtil::get_locale( $mod );
-
 			$def_copyright_year = '';
-			
+
 			if ( $mod[ 'is_post' ] ) {
 
 				$def_copyright_year = trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) );
