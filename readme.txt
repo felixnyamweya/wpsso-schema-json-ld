@@ -732,6 +732,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.42.3-dev.4 (2019/04/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+
 **Version 1.42.2 (2019/04/11)**
 
 * *New Features*
@@ -785,6 +796,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
 == Upgrade Notice ==
+
+= 1.42.3-dev.4 =
+
+(2019/04/17) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
 
 = 1.42.2 =
 
