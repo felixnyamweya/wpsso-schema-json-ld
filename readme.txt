@@ -27,17 +27,17 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
-* A value for the headline field is required.
-* A value for the image field is required.
-* A value for the logo field is required.
-* A value for the publisher field is required.
-* The aggregateRating field is recommended.
-* The brand field is recommended.
-* The headline field is recommended.
-* The image field is recommended.
-* The mainEntityOfPage field is recommended.
-* The review field is recommended.
-* This Product is missing a global identifier.
+* *A value for the headline field is required.*
+* *A value for the image field is required.*
+* *A value for the logo field is required.*
+* *A value for the publisher field is required.*
+* *The aggregateRating field is recommended.*
+* *The brand field is recommended.*
+* *The headline field is recommended.*
+* *The image field is recommended.*
+* *The mainEntityOfPage field is recommended.*
+* *The review field is recommended.*
+* *This Product is missing a global identifier.*
 * etc.
 
 **Complete Schema product markup for WooCommerce (Pro version):**

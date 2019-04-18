@@ -24,17 +24,17 @@
 <p><strong>Fixes ALL Google Search Console / Structured Data Testing Tool errors:</strong></p>
 
 <ul>
-<li>A value for the headline field is required.</li>
-<li>A value for the image field is required.</li>
-<li>A value for the logo field is required.</li>
-<li>A value for the publisher field is required.</li>
-<li>The aggregateRating field is recommended.</li>
-<li>The brand field is recommended.</li>
-<li>The headline field is recommended.</li>
-<li>The image field is recommended.</li>
-<li>The mainEntityOfPage field is recommended.</li>
-<li>The review field is recommended.</li>
-<li>This Product is missing a global identifier.</li>
+<li><em>A value for the headline field is required.</em></li>
+<li><em>A value for the image field is required.</em></li>
+<li><em>A value for the logo field is required.</em></li>
+<li><em>A value for the publisher field is required.</em></li>
+<li><em>The aggregateRating field is recommended.</em></li>
+<li><em>The brand field is recommended.</em></li>
+<li><em>The headline field is recommended.</em></li>
+<li><em>The image field is recommended.</em></li>
+<li><em>The mainEntityOfPage field is recommended.</em></li>
+<li><em>The review field is recommended.</em></li>
+<li><em>This Product is missing a global identifier.</em></li>
 <li>etc.</li>
 </ul>
 
