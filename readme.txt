@@ -21,13 +21,13 @@ WPSSO Core add-on offers Schema JSON-LD / Google Rich Results markup for Article
 
 **Offers *accurate* and *comprehensive* Schema JSON-LD markup:**
 
-Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
+Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings), customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
 
 **Provides Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.**
 
-**Most complete Schema product markup for WooCommerce (Pro version):**
+**Complete Schema product markup for WooCommerce (Pro version):**
 
-*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Results requirements.*
+*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements.*
 
 The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).
 
@@ -118,7 +118,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
-* Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for Google's mobile carousel feature:
+* Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings) feature:
 
 	* [schema.org/Article](https://schema.org/Article) (includes 8 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
