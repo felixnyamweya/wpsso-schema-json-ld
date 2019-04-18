@@ -40,7 +40,7 @@
 
 <p><strong>Better Schema product markup for WooCommerce (Pro version):</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers incomplete Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements -- by contrast, <strong>the Schema markup from WPSSO JSON Pro includes <em>complete and correct</em> markup for Google's Product Rich Results</strong>, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
+<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers incomplete Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements -- by contrast, <strong>WPSSO JSON Pro includes <em>complete and correct</em> markup for Google's Product Rich Results</strong>, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
 
 <p>Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
