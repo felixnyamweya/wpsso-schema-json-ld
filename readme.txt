@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Rich Results / Rich Cards SEO and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Rich Results SEO and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -6,14 +6,14 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
-Tags: schema.org, google rich cards, knowledge graph, pinterest rich pins, woocommerce, rich results, local seo, image seo, video seo, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
+Tags: schema.org, rich results, structured data, knowledge graph, rich pins, rich cards, woocommerce, pinterest, local seo, image seo, video seo, news seo, ld+json, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.1.1
 WC Tested Up To: 3.5
 Stable Tag: 1.42.2
 
-WPSSO Core add-on offers Schema JSON-LD / Google Rich Card markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
+WPSSO Core add-on offers Schema JSON-LD / Google Rich Results markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
 == Description ==
 
@@ -27,7 +27,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Most complete Schema product markup for WooCommerce (Pro version):**
 
-*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Card requirements.*
+*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Results requirements.*
 
 The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *complete and correct* markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).
 
