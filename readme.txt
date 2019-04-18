@@ -125,7 +125,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 	* [schema.org/Course](https://schema.org/Course)
 	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 71 Schema types)
 	* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
-	* [pending.schema.org/FAQPage](https://pending.schema.org/FAQPage)
+	* [schema.org/FAQPage](https://schema.org/FAQPage)
 	* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
 	* [schema.org/HowTo](https://schema.org/HowTo) (includes 2 Schema types)
 	* [schema.org/ItemList](https://schema.org/ItemList) (includes 5 Schema types)
@@ -377,7 +377,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 				* Schema Type [schema.org/ImageGallery](https://schema.org/ImageGallery)
 				* Schema Type [schema.org/VideoGallery](https://schema.org/VideoGallery)
 			* Schema Type [schema.org/ContactPage](https://schema.org/ContactPage)
-			* Schema Type [pending.schema.org/FAQPage](https://pending.schema.org/FAQPage)
+			* Schema Type [schema.org/FAQPage](https://schema.org/FAQPage)
 			* Schema Type [schema.org/ItemPage](https://schema.org/ItemPage)
 			* Schema Type [health-lifesci.schema.org/MedicalWebPage](https://health-lifesci.schema.org/MedicalWebPage)
 			* Schema Type [schema.org/ProfilePage](https://schema.org/ProfilePage)
@@ -745,7 +745,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.3-dev.5 (2019/04/18)**
+**Version 1.42.3-b.1 (2019/04/19)**
 
 * *New Features*
 	* None.
@@ -811,9 +811,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.3-dev.5 =
+= 1.42.3-b.1 =
 
-(2019/04/18) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+(2019/04/19) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
 
 = 1.42.2 =
 

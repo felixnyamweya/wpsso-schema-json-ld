@@ -149,7 +149,7 @@
 <li><a href="https://schema.org/Course">schema.org/Course</a></li>
 <li><a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a> (includes 71 Schema types)</li>
 <li><a href="https://schema.org/Event">schema.org/Event</a> (includes 19 Schema types)</li>
-<li><a href="https://pending.schema.org/FAQPage">pending.schema.org/FAQPage</a></li>
+<li><a href="https://schema.org/FAQPage">schema.org/FAQPage</a></li>
 <li><a href="https://schema.org/FoodEstablishment">schema.org/FoodEstablishment</a> (includes 9 Schema types)</li>
 <li><a href="https://schema.org/HowTo">schema.org/HowTo</a> (includes 2 Schema types)</li>
 <li><a href="https://schema.org/ItemList">schema.org/ItemList</a> (includes 5 Schema types)</li>
@@ -474,7 +474,7 @@
 <li>Schema Type <a href="https://schema.org/VideoGallery">schema.org/VideoGallery</a></li>
 </ul></li>
 <li>Schema Type <a href="https://schema.org/ContactPage">schema.org/ContactPage</a></li>
-<li>Schema Type <a href="https://pending.schema.org/FAQPage">pending.schema.org/FAQPage</a></li>
+<li>Schema Type <a href="https://schema.org/FAQPage">schema.org/FAQPage</a></li>
 <li>Schema Type <a href="https://schema.org/ItemPage">schema.org/ItemPage</a></li>
 <li>Schema Type <a href="https://health-lifesci.schema.org/MedicalWebPage">health-lifesci.schema.org/MedicalWebPage</a></li>
 <li>Schema Type <a href="https://schema.org/ProfilePage">schema.org/ProfilePage</a></li>
