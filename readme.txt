@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Rich Results SEO and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Rich Results / SEO and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -745,16 +745,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.3-dev.4 (2019/04/17)**
+**Version 1.42.3-dev.5 (2019/04/18)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* None.
+	* Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
 * *Developer Notes*
 	* Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+	* Updated calls to add/get_single methods from WpssoSchema to the new WpssoSchemaSingle class.
 
 **Version 1.42.2 (2019/04/11)**
 
@@ -810,9 +811,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.3-dev.4 =
+= 1.42.3-dev.5 =
 
-(2019/04/17) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+(2019/04/18) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
 
 = 1.42.2 =
 
