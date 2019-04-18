@@ -159,7 +159,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 						continue;
 					}
 	
-					WpssoSchema::add_single_organization_data( $ret[ $prop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
+					WpssoSchemaSingle::add_organization_data( $ret[ $prop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
 		
 					if ( empty( $ret[ $prop_name ] ) ) {	// Just in case.
 						unset( $ret[ $prop_name ] );

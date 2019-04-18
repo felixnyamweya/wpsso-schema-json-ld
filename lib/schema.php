@@ -401,7 +401,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod[ 'id' ] );
 					}
 
-					$post_data = WpssoSchema::get_single_mod_data( $post_mod, false, $page_type_id );	// $mt_og is false.
+					$post_data = WpssoSchemaCache::get_single( $post_mod, false, $page_type_id );	// $mt_og is false.
 
 					if ( empty( $post_data ) ) {	// Prevent null assignment.
 						$wpsso->debug->log( 'single mod data for post id ' . $post_mod[ 'id' ] . ' is empty' );
@@ -792,7 +792,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			/**
 			 * If not adding a list element, inherit the existing schema type url (if one exists).
 			 */
-			list( $video_type_id, $video_type_url ) = WpssoSchema::get_single_type_id_url( $json_data, false, false, 'video.object', $list_element );
+			list( $video_type_id, $video_type_url ) = WpssoSchemaSingle::get_type_id_url( $json_data, false, false, 'video.object', $list_element );
 
 			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array(
 				'url' => SucomUtil::esc_url_encode( $media_url ),
