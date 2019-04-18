@@ -25,12 +25,6 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Includes Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.**
 
-**Complete Schema product markup for WooCommerce (Pro version):**
-
-*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Results requirements* -- by contrast, the Schema JSON-LD markup provided by WPSSO JSON Pro includes *complete and correct* markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product), with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
-
-Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
-
 **Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
 * A value for the headline field is required.
@@ -45,6 +39,12 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 * The review field is recommended.
 * This Product is missing a global identifier.
 * etc.
+
+**Complete Schema product markup for WooCommerce (Pro version):**
+
+*The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for Google's Product Rich Results requirements* -- by contrast, the Schema JSON-LD markup provided by WPSSO JSON Pro includes *complete and correct* markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product), with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+
+Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
