@@ -495,7 +495,7 @@ msgstr ""
 #: lib/gettext-config.php:8
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Rich Card markup for Articles, "
+"WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, "
 "Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
@@ -1247,7 +1247,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Rich Card markup for Articles, "
+"WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, "
 "Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
