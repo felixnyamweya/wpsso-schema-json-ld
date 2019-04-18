@@ -29,19 +29,21 @@
 
 <p>Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
-<p><strong>Fixes Google Search Console / Structured Data Testing Tool warnings:</strong></p>
+<p><strong>Fixes ALL Google Search Console / Structured Data Testing Tool errors and warnings:</strong></p>
 
 <ul>
 <li>A value for the headline field is required.</li>
+<li>A value for the image field is required.</li>
 <li>A value for the logo field is required.</li>
 <li>A value for the publisher field is required.</li>
 <li>The aggregateRating field is recommended.</li>
 <li>The brand field is recommended.</li>
 <li>The headline field is recommended.</li>
+<li>The image field is recommended.</li>
 <li>The mainEntityOfPage field is recommended.</li>
 <li>The review field is recommended.</li>
 <li>This Product is missing a global identifier.</li>
-<li>And many more.</li>
+<li>etc.</li>
 </ul>
 
 <h3>Users Love the WPSSO JSON Add-on</h3>

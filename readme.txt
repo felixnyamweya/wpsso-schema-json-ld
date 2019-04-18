@@ -33,18 +33,20 @@ The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes *comple
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
-**Fixes Google Search Console / Structured Data Testing Tool warnings:**
+**Fixes ALL Google Search Console / Structured Data Testing Tool errors and warnings:**
 
 * A value for the headline field is required.
+* A value for the image field is required.
 * A value for the logo field is required.
 * A value for the publisher field is required.
 * The aggregateRating field is recommended.
 * The brand field is recommended.
 * The headline field is recommended.
+* The image field is recommended.
 * The mainEntityOfPage field is recommended.
 * The review field is recommended.
 * This Product is missing a global identifier.
-* And many more.
+* etc.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
