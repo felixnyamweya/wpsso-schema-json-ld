@@ -31,7 +31,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
-**Fixes ALL Google Search Console / Structured Data Testing Tool errors and warnings:**
+**Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
 * A value for the headline field is required.
 * A value for the image field is required.
