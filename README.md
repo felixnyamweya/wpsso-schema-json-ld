@@ -19,7 +19,7 @@
 
 <p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive eCommerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for Google's mobile carousel, customized property values, and much, much more (see the complete list of features below for Free / Pro version details).</p>
 
-<p><strong>Provides Schema JSON-LD markup for posts, pages, custom post types, AMP pages, terms (category, tags, etc.), user pages, search result pages, etc.</strong></p>
+<p><strong>Provides Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.</strong></p>
 
 <p><strong>Most complete Schema product markup for WooCommerce (Pro version):</strong></p>
 
@@ -28,6 +28,21 @@
 <p>The Schema JSON-LD markup provided by the WPSSO JSON Pro add-on includes <em>complete and correct</em> markup for Google Rich Results / Rich Cards, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more. WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results / Product Rich Card (includes the product variation group high price, low price, and currency).</p>
 
 <p>Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
+
+<p><strong>Fixes Google Search Console / Structured Data Testing Tool warnings:</strong></p>
+
+<ul>
+<li>A value for the headline field is required.</li>
+<li>A value for the logo field is required.</li>
+<li>A value for the publisher field is required.</li>
+<li>The aggregateRating field is recommended.</li>
+<li>The brand field is recommended.</li>
+<li>The headline field is recommended.</li>
+<li>The mainEntityOfPage field is recommended.</li>
+<li>The review field is recommended.</li>
+<li>This Product is missing a global identifier.</li>
+<li>And many more.</li>
+</ul>
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
