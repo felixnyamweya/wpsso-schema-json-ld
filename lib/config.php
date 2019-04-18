@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.42.3-dev.5',	// Plugin version.
+					'version'     => '1.42.3-b.1',	// Plugin version.
 					'opt_version' => '21',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.29.0-dev.5',
+						'min_version' => '4.29.0-b.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -86,7 +86,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'prop' => array(
 								'aggregaterating'  => '(code) Property aggregateRating',
-								'haspart_mentions' => '(code) Property hasPart and mentions for JSON-LD in Content',
+								'haspart_mentions' => '(code) Property hasPart and mentions for Schema JSON-LD in Content',
 								'review'           => '(code) Property reviews',
 							),
 							'job' => array(
