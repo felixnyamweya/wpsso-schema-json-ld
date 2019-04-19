@@ -10,7 +10,7 @@ Tags: schema.org, rich results, structured data, knowledge graph, rich pins, ric
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.1.1
-WC Tested Up To: 3.5
+WC Tested Up To: 3.6
 Stable Tag: 1.42.2
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Results markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
@@ -25,26 +25,26 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Includes Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.**
 
-**Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
-
-* *A value for the headline field is required.*
-* *A value for the image field is required.*
-* *A value for the logo field is required.*
-* *A value for the publisher field is required.*
-* *The aggregateRating field is recommended.*
-* *The brand field is recommended.*
-* *The headline field is recommended.*
-* *The image field is recommended.*
-* *The mainEntityOfPage field is recommended.*
-* *The review field is recommended.*
-* *This Product is missing a global identifier.*
-* etc.
-
 **Better Schema product markup for WooCommerce (Pro version):**
 
 The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers incomplete Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements -- by contrast, **WPSSO JSON Pro includes *complete and correct* markup for Google's Product Rich Results**, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 Additional e-Commerce plugins are also supported, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+
+**Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
+
+* A value for the *headline* field is required.
+* A value for the *image* field is required.
+* A value for the *logo* field is required.
+* A value for the *publisher* field is required.
+* The *aggregateRating* field is recommended.
+* The *brand* field is recommended.
+* The *headline* field is recommended.
+* The *image* field is recommended.
+* The *mainEntityOfPage* field is recommended.
+* The *review *field is recommended.
+* This Product is missing a global identifier.
+* etc.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -745,7 +745,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.3-b.1 (2019/04/19)**
+**Version 1.42.3-rc.1 (2019/04/19)**
 
 * *New Features*
 	* None.
@@ -811,7 +811,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.3-b.1 =
+= 1.42.3-rc.1 =
 
 (2019/04/19) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
 
