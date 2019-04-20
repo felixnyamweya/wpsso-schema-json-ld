@@ -745,7 +745,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.3-rc.1 (2019/04/19)**
+**Version 1.42.3-rc.2 (2019/04/20)**
 
 * *New Features*
 	* None.
@@ -811,9 +811,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.3-rc.1 =
+= 1.42.3-rc.2 =
 
-(2019/04/19) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+(2019/04/20) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
 
 = 1.42.2 =
 
