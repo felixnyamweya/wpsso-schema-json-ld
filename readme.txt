@@ -42,7 +42,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 * The *headline* field is recommended.
 * The *image* field is recommended.
 * The *mainEntityOfPage* field is recommended.
-* The *review *field is recommended.
+* The *review* field is recommended.
 * This Product is missing a global identifier.
 * etc.
 
@@ -813,7 +813,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.42.3-rc.2 =
 
-(2019/04/20) Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
+(2019/04/20) Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
 
 = 1.42.2 =
 
