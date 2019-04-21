@@ -745,7 +745,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.42.3-rc.2 (2019/04/20)**
+**Version 1.42.3 (2019/04/21)**
 
 * *New Features*
 	* None.
@@ -811,11 +811,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.42.3-rc.2 =
+= 1.42.3 =
 
-(2019/04/20) Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
-
-= 1.42.2 =
-
-(2019/04/11) Fixed the addition of default 'aggregateRating' and 'review' property values to only the main entity and specific Schema types.
+(2019/04/21) Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
 
