@@ -1296,67 +1296,77 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-schema_add_text_prop':
-
-					$text = __( 'Add a text property to the Schema CreativeWork type with the complete textual content of the post / page.', 'wpsso-schema-json-ld' );
-
-				 	break;
-
-				case 'tooltip-schema_text_max_len':
+				case 'tooltip-schema_text_max_len':	// Maximum Text Property Length.
 
 					$text = sprintf( __( 'The maximum length used for the Schema CreativeWork text property value (the default is %d characters).', 'wpsso-schema-json-ld' ), $this->p->opt->get_defaults( 'schema_text_max_len' ) );
 
 				 	break;
 
-				case 'tooltip-schema_def_prov_org_id':
+				case 'tooltip-schema_add_text_prop':	// Add CreativeWork Text Property.
 
-					$text = __( 'Select a default service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
+					$text = __( 'Add a text property to the Schema CreativeWork type with the complete textual content of the post / page.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_pub_org_id':
+				case 'tooltip-schema_add_aggr_rating_prop':	// Fallback to 5 Star AggregateRating.
+
+					$text = __( 'When one or more customer ratings for the webpage content are found, then these customer ratings will be used to calculate an aggregate rating value.', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text .= __( 'If this option is enabled and a rating value for the webpage content is NOT available, then a generic 5 star rating from the site organization is added by default.', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text .= sprintf( __( 'Rating and review features for the webpage content are available from several supported plugin, including: %s.', 'wpsso-schema-json-ld' ), '<a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>, <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a>, <a href="https://wordpress.org/plugins/yotpo-social-reviews-for-woocommerce/">Yotpo Social Reviews for WooCommerce</a>' ) . ' ';
+
+				 	break;
+
+				case 'tooltip-schema_def_pub_org_id':	// Default Publisher.
 
 					$text = __( 'Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_event_organizer_org_id':
+				case 'tooltip-schema_def_prov_org_id':	// Default Service Provider.
+
+					$text = __( 'Select a default service provider, service operator, or service performer (example: "Netflix").', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-schema_def_event_organizer_org_id':	// Default Event Organizer Org.
 
 					$text = __( 'Select a default organizer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_event_organizer_person_id':
+				case 'tooltip-schema_def_event_organizer_person_id':	// // Default Event Organizer Person.
 
 					$text = __( 'Select a default organizer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_event_performer_org_id':
+				case 'tooltip-schema_def_event_performer_org_id':	// Default Event Performer Org.
 
 					$text = __( 'Select a default performer (organization) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_event_performer_person_id':
+				case 'tooltip-schema_def_event_performer_person_id':	// Default Event Performer Person.
 
 					$text = __( 'Select a default performer (person) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_event_location_id':
+				case 'tooltip-schema_def_event_location_id':	// Default Event Venue.
 
 					$text = __( 'Select a default venue (place / location) for the Schema Event type.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_job_hiring_org_id':
+				case 'tooltip-schema_def_job_hiring_org_id':	// Default Job Hiring Organization.
 
 					$text = __( 'Select a default organization for the Schema JobPosting hiring organization.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-schema_def_job_location_id':
+				case 'tooltip-schema_def_job_location_id':	// Default Job Location.
 
 					$text = __( 'Select a default place / location for the Schema JobPosting job location.', 'wpsso-schema-json-ld' );
 

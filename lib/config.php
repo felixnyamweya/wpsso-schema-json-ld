@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.42.3',	// Plugin version.
+					'version'     => '1.43.0-dev.1',	// Plugin version.
 					'opt_version' => '21',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -113,21 +113,22 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'opt' => array(						// Plugin options.
 				'defaults' => array(
-					'schema_add_text_prop' => 1,		// Add CreativeWork Text Property
-					'schema_text_max_len'  => 10000,	// Maximum Text Property Length
+					'schema_text_max_len'  => 10000,	// Maximum Text Property Length.
+					'schema_add_text_prop' => 1,		// Add CreativeWork Text Property.
+					'schema_add_aggr_rating_prop' => 1,	// Fallback to 5 Star AggregateRating.
 
 					/**
 					 * Custom Meta Defaults
 					 */
-					'schema_def_pub_org_id'                  => 'site',	// Default Publisher
-					'schema_def_prov_org_id'                 => 'none',	// Default Service Provider
+					'schema_def_pub_org_id'                  => 'site',	// Default Publisher.
+					'schema_def_prov_org_id'                 => 'none',	// Default Service Provider.
 					'schema_def_event_organizer_org_id'      => 'none',	// Default Event Organizer Org.
-					'schema_def_event_organizer_person_id'   => 'none',	// Default Event Organizer Person
+					'schema_def_event_organizer_person_id'   => 'none',	// Default Event Organizer Person.
 					'schema_def_event_performer_org_id'      => 'none',	// Default Event Performer Org.
-					'schema_def_event_performer_person_id'   => 'none',	// Default Event Performer Person
-					'schema_def_event_location_id'           => 'none',	// Default Event Venue
-					'schema_def_job_hiring_org_id'           => 'none',	// Default Job Hiring Organization
-					'schema_def_job_location_id'             => 'none',	// Default Job Location
+					'schema_def_event_performer_person_id'   => 'none',	// Default Event Performer Person.
+					'schema_def_event_location_id'           => 'none',	// Default Event Venue.
+					'schema_def_job_hiring_org_id'           => 'none',	// Default Job Hiring Organization.
+					'schema_def_job_location_id'             => 'none',	// Default Job Location.
 				),
 			),
 			'menu' => array(
