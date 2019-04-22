@@ -81,8 +81,9 @@
 <li>Maximum Images to Include</li>
 <li>Schema Image Dimensions</li>
 <li>Maximum Description Length</li>
-<li>Add CreativeWork Text Property</li>
 <li>Maximum Text Property Length</li>
+<li>Add CreativeWork Text Property</li>
+<li>Fallback to 5 Star AggregateRating</li>
 </ul></li>
 <li>Schema Types
 

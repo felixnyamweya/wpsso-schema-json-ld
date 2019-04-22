@@ -82,8 +82,9 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Maximum Images to Include
 		* Schema Image Dimensions
 		* Maximum Description Length
-		* Add CreativeWork Text Property
 		* Maximum Text Property Length
+		* Add CreativeWork Text Property
+		* Fallback to 5 Star AggregateRating
 	* Schema Types
 		* Type for Blog Front Page
 		* Type for Static Front Page
@@ -745,6 +746,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.43.0-dev.1 (2019/04/22)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added a new "Fallback to 5 Star AggregateRating" option in the SSO &gt; Schema Markup settings page.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.42.3 (2019/04/21)**
 
 * *New Features*
@@ -810,6 +822,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
 == Upgrade Notice ==
+
+= 1.43.0-dev.1 =
+
+(2019/04/22) Added a new "Fallback to 5 Star AggregateRating" option in the SSO &gt; Schema Markup settings page.
 
 = 1.42.3 =
 
