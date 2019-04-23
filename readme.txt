@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup for Google Rich Results / SEO and Pinterest Rich Pins ===
+=== WPSSO Schema JSON-LD Markup for Google Rich Results SEO and Pinterest Rich Pins ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -13,7 +13,7 @@ Tested Up To: 5.1.1
 WC Tested Up To: 3.6
 Stable Tag: 1.42.3
 
-WPSSO Core add-on offers Schema JSON-LD / Google Rich Results markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
+WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
 == Description ==
 
