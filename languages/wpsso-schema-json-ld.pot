@@ -448,9 +448,9 @@ msgstr ""
 
 #: lib/filters.php:1315
 msgid ""
-"If this option is enabled and a rating value for the webpage content is NOT "
-"available, then a generic 5 star rating from the site organization is added "
-"by default."
+"When this option is enabled and a rating value for the webpage content is "
+"NOT available, then a generic 5 star rating from the site organization is "
+"added by default."
 msgstr ""
 
 #: lib/filters.php:1317
@@ -1190,7 +1190,7 @@ msgstr ""
 
 #: lib/submenu/schema-general.php:113
 msgctxt "option label"
-msgid "Fallback to 5 Star AggregateRating"
+msgid "Fallback to 5 Star Aggregate Rating"
 msgstr ""
 
 #: lib/submenu/schema-general.php:182

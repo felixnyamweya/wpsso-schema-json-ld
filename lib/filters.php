@@ -1308,11 +1308,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-schema_add_aggr_rating_prop':	// Fallback to 5 Star AggregateRating.
+				case 'tooltip-schema_add_aggr_rating_prop':	// Fallback to 5 Star Aggregate Rating.
 
 					$text = __( 'When one or more customer ratings for the webpage content are found, then these customer ratings will be used to calculate an aggregate rating value.', 'wpsso-schema-json-ld' ) . ' ';
 
-					$text .= __( 'If this option is enabled and a rating value for the webpage content is NOT available, then a generic 5 star rating from the site organization is added by default.', 'wpsso-schema-json-ld' ) . ' ';
+					$text .= __( 'When this option is enabled and a rating value for the webpage content is NOT available, then a generic 5 star rating from the site organization is added by default.', 'wpsso-schema-json-ld' ) . ' ';
 
 					$text .= sprintf( __( 'Rating and review features for the webpage content are available from several supported plugin, including: %s.', 'wpsso-schema-json-ld' ), '<a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>, <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a>, <a href="https://wordpress.org/plugins/yotpo-social-reviews-for-woocommerce/">Yotpo Social Reviews for WooCommerce</a>' ) . ' ';
 

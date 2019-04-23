@@ -115,7 +115,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 				'defaults' => array(
 					'schema_text_max_len'  => 10000,	// Maximum Text Property Length.
 					'schema_add_text_prop' => 1,		// Add CreativeWork Text Property.
-					'schema_add_aggr_rating_prop' => 1,	// Fallback to 5 Star AggregateRating.
+					'schema_add_aggr_rating_prop' => 1,	// Fallback to 5 Star Aggregate Rating.
 
 					/**
 					 * Custom Meta Defaults

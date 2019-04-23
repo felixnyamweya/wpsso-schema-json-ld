@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
 					$table_rows[ 'schema_add_aggr_rating_prop' ] = $this->form->get_tr_hide( 'basic', 'schema_add_aggr_rating_prop' ) .
-					$this->form->get_th_html( _x( 'Fallback to 5 Star AggregateRating', 'option label', 'wpsso' ), '', 'schema_add_aggr_rating_prop' ) . 
+					$this->form->get_th_html( _x( 'Fallback to 5 Star Aggregate Rating', 'option label', 'wpsso' ), '', 'schema_add_aggr_rating_prop' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_aggr_rating_prop' ) . '</td>';
 
 					break;
