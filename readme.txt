@@ -84,7 +84,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Maximum Description Length
 		* Maximum Text Property Length
 		* Add CreativeWork Text Property
-		* Fallback to 5 Star AggregateRating
+		* Fallback to 5 Star Aggregate Rating
 	* Schema Types
 		* Type for Blog Front Page
 		* Type for Static Front Page
@@ -751,7 +751,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Fallback to 5 Star AggregateRating" option in the SSO &gt; Schema Markup settings page.
+	* Added a new "Fallback to 5 Star Aggregate Rating" option in the SSO &gt; Schema Markup settings page.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -825,7 +825,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.43.0-dev.2 =
 
-(2019/04/23) Added a new "Fallback to 5 Star AggregateRating" option in the SSO &gt; Schema Markup settings page.
+(2019/04/23) Added a new "Fallback to 5 Star Aggregate Rating" option in the SSO &gt; Schema Markup settings page.
 
 = 1.42.3 =
 
