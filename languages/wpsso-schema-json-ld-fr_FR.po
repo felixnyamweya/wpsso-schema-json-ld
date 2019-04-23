@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.42.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-04-23 16:21-0700\n"
-"PO-Revision-Date: 2019-04-23 16:26-0700\n"
+"POT-Creation-Date: 2019-04-23 16:29-0700\n"
+"PO-Revision-Date: 2019-04-23 16:33-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -354,15 +354,15 @@ msgstr "Ajoutez une propriété text au type de Schéma CreativeWork avec le con
 
 #: lib/filters.php:1313
 msgid "When one or more customer ratings for the webpage content are found, then these customer ratings will be used to calculate an aggregate rating value."
-msgstr ""
+msgstr "Lorsqu'une ou plusieurs notes de clients pour le contenu de la page Web sont trouvées, ces notes sont utilisées pour calculer une valeur de note agrégée."
 
 #: lib/filters.php:1315
-msgid "If this option is enabled and a rating value for the webpage content is NOT available, then a generic 5 star rating from the site organization is added by default."
+msgid "When this option is enabled and a rating value for the webpage content is NOT available, then a generic 5 star rating from the site organization is added by default."
 msgstr "Lorsque cette option est activée et qu'une note pour le contenu de la page Web n'est PAS disponible, une note générique 5 étoiles de l'organisation du site est ajoutée par défaut."
 
 #: lib/filters.php:1317
 msgid "Rating and review features for the webpage content are available from several supported plugin, including: %s."
-msgstr ""
+msgstr "Les fonctionnalités de notes et critiques du contenu de la page Web sont disponibles à partir de plusieurs extensions, notamment: %s."
 
 #: lib/filters.php:1323
 msgid "Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc)."
@@ -1083,7 +1083,7 @@ msgstr "Ajouter la propriété CreativeWork text"
 
 #: lib/submenu/schema-general.php:113
 msgctxt "option label"
-msgid "Fallback to 5 Star AggregateRating"
+msgid "Fallback to 5 Star Aggregate Rating"
 msgstr "Retour à une note agrégée 5 étoiles"
 
 #: lib/submenu/schema-general.php:182
