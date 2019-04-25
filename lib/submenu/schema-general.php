@@ -116,7 +116,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
 					$table_rows[ 'schema_add_5_star_rating' ] = '' .
-					$this->form->get_th_html( _x( 'Add Schema 5 Star Rating If None',
+					$this->form->get_th_html( _x( 'Add 5 Star Rating If No Rating',
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_add_5_star_rating' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_5_star_rating' ) . '</td>';
 

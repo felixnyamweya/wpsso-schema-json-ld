@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-04-25 11:00-0700\n"
-"PO-Revision-Date: 2019-04-25 11:04-0700\n"
+"POT-Creation-Date: 2019-04-25 15:56-0700\n"
+"PO-Revision-Date: 2019-04-25 15:56-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1079,8 +1079,8 @@ msgstr "Ajouter la propriété CreativeWork text"
 
 #: lib/submenu/schema-general.php:119
 msgctxt "option label"
-msgid "Add Schema 5 Star Rating If None"
-msgstr "Ajouter 5 étoiles au Schéma si aucune note"
+msgid "Add 5 Star Rating If No Rating"
+msgstr "Ajouter note 5 étoiles si aucune note"
 
 #: lib/submenu/schema-general.php:189
 msgctxt "option label"

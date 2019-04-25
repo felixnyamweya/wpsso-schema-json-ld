@@ -1308,7 +1308,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-schema_add_5_star_rating':	// Add Schema 5 Star Rating If None.
+				case 'tooltip-schema_add_5_star_rating':	// Add 5 Star Rating If No Rating.
 
 					$text .= __( 'When this option is enabled, and a rating for the webpage content is NOT available, then a generic 5 star rating from the site organization is added to the main Schema type markup.', 'wpsso-schema-json-ld' ) . ' ';
 
