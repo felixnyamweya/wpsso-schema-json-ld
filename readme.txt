@@ -84,7 +84,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* Maximum Description Length
 		* Maximum Text Property Length
 		* Add CreativeWork Text Property
-		* Add Schema 5 Star Rating If None
+		* Add 5 Star Rating If No Rating
 	* Schema Types
 		* Type for Blog Front Page
 		* Type for Static Front Page
@@ -746,12 +746,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.43.0-dev.4 (2019/04/24)**
+**Version 1.43.0-dev.5 (2019/04/25)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Add Schema 5 Star Rating If None" option in the SSO &gt; Schema Markup settings page.
+	* Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -823,9 +823,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.43.0-dev.4 =
+= 1.43.0-dev.5 =
 
-(2019/04/24) Added a new "Add Schema 5 Star Rating If None" option in the SSO &gt; Schema Markup settings page.
+(2019/04/25) Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
 
 = 1.42.3 =
 

@@ -83,7 +83,7 @@
 <li>Maximum Description Length</li>
 <li>Maximum Text Property Length</li>
 <li>Add CreativeWork Text Property</li>
-<li>Add Schema 5 Star Rating If None</li>
+<li>Add 5 Star Rating If No Rating</li>
 </ul></li>
 <li>Schema Types
 
