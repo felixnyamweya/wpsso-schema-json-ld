@@ -88,30 +88,37 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					$site_desc_key     = SucomUtil::get_key_locale( 'site_desc', $this->form->options );
 
 					$table_rows['site_name'] = $this->form->get_tr_hide( 'basic', $site_name_key ) . 
-					$this->form->get_th_html( _x( 'WebSite Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $atts_locale ) . 
+					$this->form->get_th_html( _x( 'WebSite Name',
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $atts_locale ) . 
 					'<td>' . $this->form->get_input( $site_name_key, 'long_name', '', 0, $def_site_name ) . '</td>';
 
 					$table_rows['site_name_alt'] = $this->form->get_tr_hide( 'basic', $site_name_alt_key ) . 
-					$this->form->get_th_html( _x( 'WebSite Alternate Name', 'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $atts_locale ) . 
+					$this->form->get_th_html( _x( 'WebSite Alternate Name',
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $atts_locale ) . 
 					'<td>' . $this->form->get_input( $site_name_alt_key, 'long_name' ) . '</td>';
 
 					$table_rows['site_desc'] = $this->form->get_tr_hide( 'basic', $site_desc_key ) . 
-					$this->form->get_th_html( _x( 'WebSite Description', 'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $atts_locale ) . 
+					$this->form->get_th_html( _x( 'WebSite Description',
+						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $atts_locale ) . 
 					'<td>' . $this->form->get_textarea( $site_desc_key, '', '', 0, $def_site_desc ) . '</td>';
 
 					$this->add_schema_item_props_table_rows( $table_rows );
 
 					$table_rows['schema_text_max_len'] = $this->form->get_tr_hide( 'basic', 'schema_text_max_len' ) . 
-					$this->form->get_th_html( _x( 'Maximum Text Property Length', 'option label', 'wpsso' ), '', 'schema_text_max_len' ) . 
-					'<td>' . $this->form->get_input( 'schema_text_max_len', 'short' ) . ' ' . _x( 'characters or less', 'option comment', 'wpsso' ) . '</td>';
+					$this->form->get_th_html( _x( 'Maximum Text Property Length',
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_text_max_len' ) . 
+					'<td>' . $this->form->get_input( 'schema_text_max_len', 'short' ) . ' ' .
+					_x( 'characters or less', 'option comment', 'wpsso-schema-json-ld' ) . '</td>';
 
 					$table_rows[ 'schema_add_text_prop' ] = $this->form->get_tr_hide( 'basic', 'schema_add_text_prop' ) .
-					$this->form->get_th_html( _x( 'Add CreativeWork Text Property', 'option label', 'wpsso' ), '', 'schema_add_text_prop' ) . 
+					$this->form->get_th_html( _x( 'Add CreativeWork Text Property',
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_add_text_prop' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
-					$table_rows[ 'schema_add_aggr_rating_prop' ] = $this->form->get_tr_hide( 'basic', 'schema_add_aggr_rating_prop' ) .
-					$this->form->get_th_html( _x( 'Fallback to 5 Star Aggregate Rating', 'option label', 'wpsso' ), '', 'schema_add_aggr_rating_prop' ) . 
-					'<td>' . $this->form->get_checkbox( 'schema_add_aggr_rating_prop' ) . '</td>';
+					$table_rows[ 'schema_add_5_star_rating' ] = '' .
+					$this->form->get_th_html( _x( 'Add Schema 5 Star Rating If None',
+						'option label', 'wpsso-schema-json-ld' ), '', 'schema_add_5_star_rating' ) . 
+					'<td>' . $this->form->get_checkbox( 'schema_add_5_star_rating' ) . '</td>';
 
 					break;
 

@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.43.0-dev.3',	// Plugin version.
+					'version'     => '1.43.0-dev.4',	// Plugin version.
 					'opt_version' => '21',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.29.1-dev.3',
+						'min_version' => '4.29.1-dev.4',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -113,9 +113,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			),
 			'opt' => array(						// Plugin options.
 				'defaults' => array(
-					'schema_text_max_len'  => 10000,	// Maximum Text Property Length.
-					'schema_add_text_prop' => 1,		// Add CreativeWork Text Property.
-					'schema_add_aggr_rating_prop' => 1,	// Fallback to 5 Star Aggregate Rating.
+					'schema_text_max_len'      => 10000,	// Maximum Text Property Length.
+					'schema_add_text_prop'     => 1,	// Add CreativeWork Text Property.
+					'schema_add_5_star_rating' => 1,	// Add Schema 5 Star Rating If None.
 
 					/**
 					 * Custom Meta Defaults

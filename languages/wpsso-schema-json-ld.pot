@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0-dev.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -442,61 +442,55 @@ msgstr ""
 
 #: lib/filters.php:1313
 msgid ""
-"When one or more customer ratings for the webpage content are found, then "
-"these customer ratings will be used to calculate an aggregate rating value."
+"When this option is enabled, and a rating for the webpage content is NOT "
+"available, then a generic 5 star rating from the site organization is added "
+"to the main Schema type markup."
 msgstr ""
 
 #: lib/filters.php:1315
-msgid ""
-"When this option is enabled and a rating value for the webpage content is "
-"NOT available, then a generic 5 star rating from the site organization is "
-"added by default."
-msgstr ""
-
-#: lib/filters.php:1317
 msgid ""
 "Rating and review features for the webpage content are available from "
 "several supported plugin, including: %s."
 msgstr ""
 
-#: lib/filters.php:1323
+#: lib/filters.php:1321
 msgid ""
 "Select a default publisher for the Schema CreativeWork type and/or its sub-"
 "types (Article, BlogPosting, WebPage, etc)."
 msgstr ""
 
-#: lib/filters.php:1329
+#: lib/filters.php:1327
 msgid ""
 "Select a default service provider, service operator, or service performer "
 "(example: \"Netflix\")."
 msgstr ""
 
-#: lib/filters.php:1335
+#: lib/filters.php:1333
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1341
+#: lib/filters.php:1339
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1347
+#: lib/filters.php:1345
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1353
+#: lib/filters.php:1351
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1359
+#: lib/filters.php:1357
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr ""
 
-#: lib/filters.php:1365
+#: lib/filters.php:1363
 msgid ""
 "Select a default organization for the Schema JobPosting hiring organization."
 msgstr ""
 
-#: lib/filters.php:1371
+#: lib/filters.php:1369
 msgid ""
 "Select a default place / location for the Schema JobPosting job location."
 msgstr ""
@@ -580,7 +574,7 @@ msgid "Same-As URLs"
 msgstr ""
 
 #: lib/gettext-pro.php:16 lib/gpl/admin/post.php:179 lib/pro/admin/post.php:195
-#: lib/submenu/schema-general.php:179
+#: lib/submenu/schema-general.php:186
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
@@ -626,7 +620,7 @@ msgid "Service Provider"
 msgstr ""
 
 #: lib/gettext-pro.php:25 lib/gpl/admin/post.php:257 lib/pro/admin/post.php:265
-#: lib/submenu/schema-general.php:200
+#: lib/submenu/schema-general.php:207
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
@@ -746,7 +740,7 @@ msgid "How-To Steps"
 msgstr ""
 
 #: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:435
-#: lib/submenu/schema-general.php:237
+#: lib/submenu/schema-general.php:244
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -1163,77 +1157,77 @@ msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:95
+#: lib/submenu/schema-general.php:96
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:99
+#: lib/submenu/schema-general.php:101
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-general.php:105
+#: lib/submenu/schema-general.php:108
 msgctxt "option label"
 msgid "Maximum Text Property Length"
 msgstr ""
 
-#: lib/submenu/schema-general.php:106
+#: lib/submenu/schema-general.php:111
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-general.php:109
+#: lib/submenu/schema-general.php:114
 msgctxt "option label"
 msgid "Add CreativeWork Text Property"
 msgstr ""
 
-#: lib/submenu/schema-general.php:113
+#: lib/submenu/schema-general.php:119
 msgctxt "option label"
-msgid "Fallback to 5 Star Aggregate Rating"
+msgid "Add Schema 5 Star Rating If None"
 msgstr ""
 
-#: lib/submenu/schema-general.php:182
+#: lib/submenu/schema-general.php:189
 msgctxt "option label"
 msgid "Default Publisher"
 msgstr ""
 
-#: lib/submenu/schema-general.php:188
+#: lib/submenu/schema-general.php:195
 msgctxt "option label"
 msgid "Default Service Provider"
 msgstr ""
 
-#: lib/submenu/schema-general.php:203
+#: lib/submenu/schema-general.php:210
 msgctxt "option label"
 msgid "Default Event Organizer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:209
+#: lib/submenu/schema-general.php:216
 msgctxt "option label"
 msgid "Default Event Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:214
+#: lib/submenu/schema-general.php:221
 msgctxt "option label"
 msgid "Default Event Performer Org."
 msgstr ""
 
-#: lib/submenu/schema-general.php:220
+#: lib/submenu/schema-general.php:227
 msgctxt "option label"
 msgid "Default Event Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:225
+#: lib/submenu/schema-general.php:232
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:240
+#: lib/submenu/schema-general.php:247
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:246
+#: lib/submenu/schema-general.php:253
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""
