@@ -746,7 +746,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.43.0-dev.5 (2019/04/25)**
+**Version 1.43.0-b.1 (2019/04/26)**
 
 * *New Features*
 	* None.
@@ -823,9 +823,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.43.0-dev.5 =
+= 1.43.0-b.1 =
 
-(2019/04/25) Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
+(2019/04/26) Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
 
 = 1.42.3 =
 
