@@ -222,6 +222,51 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 */
 			WpssoJsonSchema::add_comment_list_data( $ret, $mod );
 
+			/**
+			 * Prevent a "The aggregateRating field is recommended" warning from the Google testing tool.
+			 */
+			if ( $is_main ) {
+
+				if ( empty( $ret[ 'aggregateRating' ] ) ) {
+
+					if ( ! empty( $this->p->options[ 'schema_add_5_star_rating' ] ) ) {
+
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'adding a default aggregate rating value' );
+						}
+
+						$ret[ 'aggregateRating' ] = WpssoSchema::get_schema_type_context( 'https://schema.org/AggregateRating', array(
+							'ratingValue' => 5,
+							'ratingCount' => 1,
+							'worstRating' => 1,
+							'bestRating'  => 5,
+						) );
+					}
+				}
+			}
+
+			/**
+			 * Prevent a "The review field is recommended" warning from the Google testing tool.
+			 */
+			if ( $is_main ) {
+
+				if ( empty( $ret[ 'review' ] ) ) {
+
+					if ( ! empty( $this->p->options[ 'schema_add_5_star_rating' ] ) ) {
+
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'adding a default review value' );
+						}
+
+						$ret[ 'review' ][] = WpssoSchema::get_schema_type_context( 'https://schema.org/Review', array(
+							'author' => WpssoSchema::get_schema_type_context( 'https://schema.org/Organization', array(
+								'name' => SucomUtil::get_site_name( $this->p->options, $mod ),
+							) ),
+						) );
+					}
+				}
+			}
+
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
 		}
 	}
