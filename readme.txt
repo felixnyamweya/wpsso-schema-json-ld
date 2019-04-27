@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: schema.org, rich results, structured data, knowledge graph, rich pins, rich cards, woocommerce, pinterest, local seo, image seo, video seo, news seo, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
 Requires At Least: 3.8
-Tested Up To: 5.1.1
+Tested Up To: 5.2
 WC Tested Up To: 3.6
 Stable Tag: 1.42.3
 
@@ -746,7 +746,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.43.0-rc.1 (2019/04/27)**
+**Version 1.43.0 (2019/04/27)**
 
 * *New Features*
 	* None.
@@ -823,11 +823,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.43.0-rc.1 =
+= 1.43.0 =
 
 (2019/04/27) Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
-
-= 1.42.3 =
-
-(2019/04/21) Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
 
