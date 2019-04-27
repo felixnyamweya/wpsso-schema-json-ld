@@ -12,9 +12,9 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
  * Requires At Least: 3.8
- * Tested Up To: 5.1.1
+ * Tested Up To: 5.2
  * WC Tested Up To: 3.6
- * Version: 1.43.0-rc.1
+ * Version: 1.43.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
