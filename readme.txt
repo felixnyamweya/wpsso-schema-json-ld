@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2
 WC Tested Up To: 3.6
-Stable Tag: 1.42.3
+Stable Tag: 1.43.0
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
