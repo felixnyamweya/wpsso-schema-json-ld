@@ -746,6 +746,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.44.0-dev.1 (2019/04/30)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Renamed the WpssoJsonGplHeadWebPage class to WpssoJsonGplHeadCreativeWork.
+
 **Version 1.43.0 (2019/04/27)**
 
 * *New Features*
@@ -822,6 +833,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
 == Upgrade Notice ==
+
+= 1.44.0-dev.1 =
+
+(2019/04/30) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type.
 
 = 1.43.0 =
 
