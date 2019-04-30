@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.43.0',	// Plugin version.
+					'version'     => '1.44.0-dev.1',	// Plugin version.
 					'opt_version' => '22',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.29.1',
+						'min_version' => '4.29.2-dev.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -45,8 +45,8 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'user' => 'Extend User Settings',
 							),
 							'head' => array(
-								'webpage'                     => '(code) Schema Type WebPage (webpage)',
-								'webpage#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
+								'creativework'                     => '(code) Schema Type WebPage (webpage)',
+								'creativework#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
 							),
 						),
 						'pro' => array(

@@ -20,11 +20,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
+if ( ! class_exists( 'WpssoJsonGplHeadCreativeWork' ) ) {
 
-	class WpssoJsonGplHeadWebPage {
+	class WpssoJsonGplHeadCreativeWork {
 
 		private $p;
+		private $org_logo_key;
+		private $size_name;
 
 		public function __construct( &$plugin ) {
 
@@ -34,12 +36,27 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->mark();
 			}
 
+			$this->size_name    = $this->p->lca . '-schema';
+			$this->org_logo_key = 'org_logo_url';
+
 			$this->p->util->add_plugin_filters( $this, array(
-				'json_data_https_schema_org_webpage' => array(
-					'json_data_https_schema_org_webpage'     => 5,
-					'json_data_https_schema_org_blogposting' => 5,
-				),
+				'json_data_https_schema_org_blogposting' => 5,
+				'json_data_https_schema_org_webpage'     => 5,
 			) );
+		}
+
+		public function filter_json_data_https_schema_org_blogposting( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$this->size_name    = $this->p->lca . '-schema-article';
+			$this->org_logo_key = 'org_banner_url';	// 600x60px banner image for Google.
+
+			$json_data = $this->get_json_data_https_schema_org_creativework( $json_data, $mod, $mt_og, $page_type_id, $is_main );
+
+			return $json_data;
 		}
 
 		public function filter_json_data_https_schema_org_webpage( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
@@ -48,15 +65,22 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$ret = array();
+			$json_data = $this->get_json_data_https_schema_org_creativework( $json_data, $mod, $mt_og, $page_type_id, $is_main );
 
-			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'article' ) ) {
-				$org_logo_key = 'org_banner_url';
-				$size_name    = $this->p->lca . '-schema-article';
-			} else {
-				$org_logo_key = 'org_logo_url';
-				$size_name    = $this->p->lca . '-schema';
+			if ( ! empty( $json_data[ 'image' ][ 0 ] ) ) {
+				$json_data[ 'primaryImageOfPage' ] = $json_data[ 'image' ][ 0 ];
 			}
+
+			return $json_data;
+		}
+
+		private function get_json_data_https_schema_org_creativework( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$ret = array();
 
 			/**
 			 * Property:
@@ -159,7 +183,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 						continue;
 					}
 	
-					WpssoSchemaSingle::add_organization_data( $ret[ $prop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
+					WpssoSchemaSingle::add_organization_data( $ret[ $prop_name ], $mod, $md_val, $this->org_logo_key, $list_element = false );
 		
 					if ( empty( $ret[ $prop_name ] ) ) {	// Just in case.
 						unset( $ret[ $prop_name ] );
@@ -189,7 +213,7 @@ if ( ! class_exists( 'WpssoJsonGplHeadWebPage' ) ) {
 			 *      image as https://schema.org/ImageObject
 			 *      video as https://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $this->size_name );
 
 			/**
 			 * Check only published posts or other non-post objects.
