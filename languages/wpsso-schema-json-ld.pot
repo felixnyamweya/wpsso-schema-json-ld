@@ -13,7 +13,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/actions.php:53
+#: lib/actions.php:52
+msgid "This notice is only shown to users with Administrative privileges."
+msgstr ""
+
+#: lib/actions.php:56
 msgid ""
 "The Free / Standard version of WPSSO JSON does not include support for the "
 "Schema type <a href=\"%1$s\">%1$s</a> - only the basic Schema properties "
@@ -21,21 +25,17 @@ msgid ""
 "the Schema JSON-LD markup."
 msgstr ""
 
-#: lib/actions.php:55
+#: lib/actions.php:58
 msgid ""
 "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection "
 "of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</"
 "a>."
 msgstr ""
 
-#: lib/actions.php:57
+#: lib/actions.php:60
 msgid ""
 "If this Schema type is an important classification for your content, you "
 "should consider purchasing the Pro version."
-msgstr ""
-
-#: lib/actions.php:63
-msgid "This notice is only shown to users with Administrative privileges."
 msgstr ""
 
 #: lib/filters.php:831
