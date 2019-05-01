@@ -746,7 +746,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.44.0-dev.1 (2019/04/30)**
+**Version 1.44.0-dev.2 (2019/04/30)**
 
 * *New Features*
 	* None.
@@ -834,7 +834,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.44.0-dev.1 =
+= 1.44.0-dev.2 =
 
 (2019/04/30) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type.
 
