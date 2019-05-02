@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-04-25 15:56-0700\n"
-"PO-Revision-Date: 2019-04-25 15:56-0700\n"
+"POT-Creation-Date: 2019-05-01 21:05-0700\n"
+"PO-Revision-Date: 2019-05-01 21:05-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -15,21 +15,21 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/actions.php:53
+#: lib/actions.php:52
+msgid "This notice is only shown to users with Administrative privileges."
+msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
+
+#: lib/actions.php:56
 msgid "The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href=\"%1$s\">%1$s</a> - only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup."
 msgstr "La version gratuite / standard WPSSO JSON n'inclut pas de support spécifique / personnalisé pour le type de Schéma <a href=\"%1$s\">%1$s</a> - seulement les propriétés de Schéma de base <em>url</em>, <em>name</em>, et <em>description</em> seront inclues dans le balisage Schéma JSON-LD."
 
-#: lib/actions.php:55
+#: lib/actions.php:58
 msgid "The <a href=\"%1$s\">Pro version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href=\"%2$s\">%2$s</a>."
 msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande sélection de types de Schéma, y compris le type de Schéma <a href=\"%2$s\">%2$s</a>."
 
-#: lib/actions.php:57
+#: lib/actions.php:60
 msgid "If this Schema type is an important classification for your content, you should consider purchasing the Pro version."
 msgstr "Si ce type de Schéma est une classification importante pour votre contenu, vous devriez considérer l'achat de la version Pro."
-
-#: lib/actions.php:63
-msgid "This notice is only shown to users with Administrative privileges."
-msgstr "Cet avis apparaît uniquement aux utilisateurs avec privilèges administratifs."
 
 #: lib/filters.php:831
 msgid "Select a Schema item type that best describes the main content of this webpage."
