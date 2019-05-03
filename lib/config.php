@@ -85,9 +85,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'website'             => '(code) Schema Type WebSite (schema_type:website)',
 							),
 							'prop' => array(
-								'aggregaterating'  => '(code) Property aggregateRating',
-								'haspart_mentions' => '(code) Property hasPart and mentions for Schema JSON-LD in Content',
-								'review'           => '(code) Property reviews',
+								'aggregaterating'  => '(plus) Property aggregateRating',
+								'haspart_mentions' => '(plus) Property hasPart and mentions for Schema JSON-LD in Content',
+								'review'           => '(plus) Property reviews',
 							),
 						),
 						'shortcode' => array(
