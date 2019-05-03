@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-05-01 21:05-0700\n"
-"PO-Revision-Date: 2019-05-01 21:05-0700\n"
+"POT-Creation-Date: 2019-05-03 12:16-0700\n"
+"PO-Revision-Date: 2019-05-03 12:16-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -995,18 +995,6 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
 
-#. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:126 lib/pro/job/wpjobmanager.php:316
-msgctxt "option value"
-msgid "%s Organization"
-msgstr "Organisation de %s"
-
-#. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:127 lib/pro/job/wpjobmanager.php:324
-msgctxt "option value"
-msgid "%s Location"
-msgstr "Lieu de %s"
-
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 #: lib/shortcode/schema.php:156
 msgid "%1$s [%2$s] shortcode with a type value of \"%3$s\" is missing a required 'prop' attribute value."
@@ -1140,7 +1128,7 @@ msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-schema-json-ld.php:255
+#: wpsso-schema-json-ld.php:232
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
