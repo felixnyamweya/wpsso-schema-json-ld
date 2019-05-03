@@ -142,7 +142,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			$info = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -164,44 +166,19 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
 
-					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ||
-						! is_array( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] ) ) {
+					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] ) ||
+						! is_array( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] ) ) {
 
 						continue;
 					}
 
-					foreach ( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][$lib][$sub] as $id_key => $label ) {
+					foreach ( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] as $id_key => $label ) {
 
 						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 
-						$avail[$sub][$id] = true;
+						$avail[ $sub ][ $id ] = true;
 					}
 				}
-			}
-
-			// Simple Job Board
-			if ( class_exists( 'Simple_Job_Board' ) ) {
-				$avail[ 'job' ][ 'any' ] = $avail[ 'job' ][ 'simplejobboard' ] = true;
-			}
-
-			// WP Job Manager
-			if ( class_exists( 'WP_Job_Manager' ) ) {
-				$avail[ 'job' ][ 'any' ] = $avail[ 'job' ][ 'wpjobmanager' ] = true;
-			}
-
-			// WP Recipe Maker
-			if ( class_exists( 'WP_Recipe_Maker' ) ) {
-				$avail[ 'recipe' ][ 'any' ] = $avail[ 'recipe' ][ 'wprecipemaker' ] = true;
-			}
-
-			// WP Ultimate Recipe 
-			if ( class_exists( 'WPUltimateRecipe' ) ) {
-				$avail[ 'recipe' ][ 'any' ] = $avail[ 'recipe' ][ 'wpultimaterecipe' ] = true;
-			}
-
-			// WP Product Review
-			if ( class_exists( 'WPPR' ) ) {
-				$avail[ 'review' ][ 'any' ] = $avail[ 'review' ][ 'wpproductreview' ] = true;
 			}
 
 			return $avail;

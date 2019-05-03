@@ -1095,18 +1095,6 @@ msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""
 
-#. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:126 lib/pro/job/wpjobmanager.php:316
-msgctxt "option value"
-msgid "%s Organization"
-msgstr ""
-
-#. translators: %s is the WP Job Manager plugin name
-#: lib/gettext-pro.php:127 lib/pro/job/wpjobmanager.php:324
-msgctxt "option value"
-msgid "%s Location"
-msgstr ""
-
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 #: lib/shortcode/schema.php:156
 msgid ""
@@ -1249,7 +1237,7 @@ msgid ""
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:255
+#: wpsso-schema-json-ld.php:232
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

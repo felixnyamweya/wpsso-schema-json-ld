@@ -130,10 +130,6 @@ if ( ! class_exists( 'WpssoJsonRegister' ) ) {
 		}
 
 		private static function uninstall_plugin() {
-
-			delete_post_meta_by_key( '_wpsso_wpproductreview' );	// Re-created automatically.
-			delete_post_meta_by_key( '_wpsso_wprecipemaker' );	// Re-created automatically.
-			delete_post_meta_by_key( '_wpsso_wpultimaterecipe' );	// Re-created automatically.
 		}
 	}
 }

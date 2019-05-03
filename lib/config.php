@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.29.2-rc.1',
+						'min_version' => '4.30.0-rc.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -88,17 +88,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'aggregaterating'  => '(code) Property aggregateRating',
 								'haspart_mentions' => '(code) Property hasPart and mentions for Schema JSON-LD in Content',
 								'review'           => '(code) Property reviews',
-							),
-							'job' => array(
-								'simplejobboard' => '(plugin) Simple Job Board',
-								'wpjobmanager'   => '(plugin) WP Job Manager',
-							),
-							'recipe' => array(
-								'wprecipemaker'    => '(plugin) WP Recipe Maker',
-								'wpultimaterecipe' => '(plugin) WP Ultimate Recipe',
-							),
-							'review' => array(
-								'wpproductreview' => '(plugin) WP Product Review',
 							),
 						),
 						'shortcode' => array(
