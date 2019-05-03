@@ -163,59 +163,6 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 
 * Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
-* WPSSO Core Pro and the WPSSO JSON Pro add-on integrate with many 3rd party plugins and services for additional image, video, e-commerce product details, SEO settings, etc. <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/social/wpsso-json-pinterest-recipe-pin-zoomed.png">
-
-* The following modules are included with the Pro version of WPSSO Core, and are automatically loaded if/when the supported plugins and/or services are required.
-
-	* **Integration with 3rd Party Plugins:**
-
-		* All in One SEO Pack
-		* bbPress
-		* BuddyPress (including Group Forum Topics)
-		* Co-Authors Plus (including Guest Authors)
-		* Easy Digital Downloads
-		* Gravity Forms + GravityView
-		* HeadSpace2 SEO
-		* MarketPress - WordPress eCommerce
-		* NextCellent Gallery - NextGEN Legacy
-		* NextGEN Gallery
-		* Polylang
-		* rtMedia for WordPress, BuddyPress and bbPress
-		* The Events Calendar
-		* The SEO Framework
-		* WooCommerce (versions 1, 2, and 3)
-		* WP eCommerce
-		* WP Meta SEO
-		* WP-PostRatings
-		* Yoast SEO (aka WordPress SEO)
-		* Yotpo Social Reviews for WooCommerce
-
-	* **Integration with Service APIs:**
-
-		* Bitly
-		* Facebook Embedded Videos
-		* Google Places
-		* Gravatar (Author Image)
-		* Ow.ly
-		* Slideshare Presentations
-		* Soundcloud Tracks (for Twitter Player Card)
-		* TinyURL
-		* Vimeo Videos
-		* Wistia Videos
-		* WordPress Video Shortcode (and Self-Hosted Videos)
-		* Your Own URL Shortener (YOURLS)
-		* YouTube Videos and Playlists
-
-* WPSSO JSON Pro includes additional 3rd party integration modules to extend Schema markup:
-
-	* **Integration with 3rd Party Plugins:** 
-
-		* Simple Job Board
-		* WP Job Manager
-		* WP Product Review
-		* WP Recipe Maker
-		* WP Ultimate Recipe
-
 * Includes additional customizable option values in the Document SSO metabox, displayed or hidden based on the Schema type selected:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
@@ -756,6 +703,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * *Developer Notes*
 	* Renamed the WpssoJsonGplHeadWebPage class to WpssoJsonGplHeadCreativeWork.
+	* Moved the following 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro:
+		* Simple Job Board
+		* WP Job Manager
+		* WP Product Review
+		* WP Recipe Maker
+		* WP Ultimate Recipe
 
 **Version 1.43.0 (2019/04/27)**
 
@@ -836,7 +789,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.44.0-rc.1 =
 
-(2019/05/03) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type.
+(2019/05/03) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type. Moved several 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro.
 
 = 1.43.0 =
 
