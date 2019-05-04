@@ -693,7 +693,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.44.0-rc.1 (2019/05/03)**
+**Version 1.44.0 (2019/05/04)**
 
 * *New Features*
 	* None.
@@ -703,7 +703,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * *Developer Notes*
 	* Renamed the WpssoJsonGplHeadWebPage class to WpssoJsonGplHeadCreativeWork.
-	* Moved the following 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro:
+	* Moved the 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro:
 		* Simple Job Board
 		* WP Job Manager
 		* WP Product Review
@@ -787,11 +787,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.44.0-rc.1 =
+= 1.44.0 =
 
-(2019/05/03) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type. Moved several 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro.
-
-= 1.43.0 =
-
-(2019/04/27) Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
+(2019/05/04) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type. Moved 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro.
 
