@@ -695,6 +695,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-dev.1 (TBD)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.44.0 (2019/05/04)**
 
 * *New Features*
@@ -788,6 +799,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(TBD) None.
 
 = 1.44.0 =
 
