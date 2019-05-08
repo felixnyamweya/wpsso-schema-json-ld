@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-types':
 
-					$schema_types = $this->p->schema->get_schema_types_select( null, true );	// $add_none = true
+					$schema_types = $this->p->schema->get_schema_types_select( null, $add_none = true );
 
 					/**
 					 * Show all by default, except for the archive, user, and search types.
