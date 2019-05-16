@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				'creative_work'  => $this->p->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
 				'course'         => $this->p->schema->get_children_css_class( 'course', 'hide_schema_type' ),
 				'event'          => $this->p->schema->get_children_css_class( 'event', 'hide_schema_type' ),
-				'howto'          => $this->p->schema->get_children_css_class( 'howto', 'hide_schema_type', '/^recipe$/' ),	// Exclude recipe.
+				'how_to'         => $this->p->schema->get_children_css_class( 'how.to', 'hide_schema_type', '/^recipe$/' ),	// Exclude recipe.
 				'job_posting'    => $this->p->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
 				'local_business' => $this->p->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
 				'movie'          => $this->p->schema->get_children_css_class( 'movie', 'hide_schema_type' ),
@@ -374,13 +374,13 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 				 * Schema HowTo
 				 */
 				'subsection_howto' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'td_class' => 'subsection',
 					'header'   => 'h5',
 					'label'    => _x( 'How-To Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_howto_yield' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Makes', 'option label', 'wpsso-schema-json-ld' ),
@@ -388,7 +388,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content'  => $form->get_no_input_value( '', 'long_name' ),
 				),
 				'schema_howto_prep_time' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Preparation Time', 'option label', 'wpsso-schema-json-ld' ),
@@ -399,7 +399,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_howto_total_time' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Total Time', 'option label', 'wpsso-schema-json-ld' ),
@@ -410,7 +410,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 						$form->get_no_input_value( '0', 'short' ) . $secs_sep,
 				),
 				'schema_howto_supplies' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Supplies', 'option label', 'wpsso-schema-json-ld' ),
@@ -418,7 +418,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_howto_tools' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Tools', 'option label', 'wpsso-schema-json-ld' ),
@@ -426,7 +426,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'content'  => $form->get_no_input_value( '', 'long_name', '', '', $repeat = 5 ),
 				),
 				'schema_howto_steps' => array(
-					'tr_class' => $schema_type_tr_class[ 'howto' ],
+					'tr_class' => $schema_type_tr_class[ 'how_to' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Steps', 'option label', 'wpsso-schema-json-ld' ),
