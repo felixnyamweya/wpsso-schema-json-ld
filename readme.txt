@@ -695,14 +695,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.0-b.2 (2019/05/17)**
+**Version 1.45.0-b.3 (2019/05/17)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Updated the HowTo markup with the new Schema types HowToStep, HowToDirection, HowToSupply, and HowToTool.
 * *Bugfixes*
 	* Fixed the HowTo selection and its options display in the Document SSO metabox.
+	* Fixed adding an array element to a possible json data string value. 
 * *Developer Notes*
 	* Update for code changes in WPSSO Core v4.31.0.
 
@@ -800,7 +801,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.0-b.2 =
+= 1.45.0-b.3 =
 
 (2019/05/17) Fixed the HowTo selection and its options display in the Document SSO metabox. Update for code changes in WPSSO Core v4.31.0.
 
