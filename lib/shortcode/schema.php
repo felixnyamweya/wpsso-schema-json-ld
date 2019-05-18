@@ -239,6 +239,8 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 
 					if ( false !== filter_var( $value, FILTER_VALIDATE_URL ) ) {
 						$type_url = $value;
+					} elseif ( preg_match('/^\p{Lu}/u', $value ) ) {	// Check if first character is upper case.
+						$type_url = 'https://schema.org/' . $value;
 					} else {
 						$type_url = $this->p->schema->get_schema_type_url( $value );
 					}
