@@ -142,7 +142,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			/**
 			 * When a schema type id is selected, a prop attribute value must be specified as well.
 			 */
-			if ( ! empty( $atts['type'] ) && empty( $atts['prop'] ) && empty( $atts['prop_name'] ) ) {
+			if ( ! empty( $atts[ 'type' ] ) && empty( $atts[ 'prop' ] ) && empty( $atts[ 'prop_name' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'exiting early: [' . $tag . '] shortcode with type is missing a prop attribute value' );
@@ -156,7 +156,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$error_msg = __( '%1$s [%2$s] shortcode with a type value of "%3$s" is missing a required \'prop\' attribute value.',
 						'wpsso-schema-json-ld' );
 
-					$this->p->notice->err( sprintf( $error_msg, $info[ 'short' ], $tag, $atts['type'] ) );
+					$this->p->notice->err( sprintf( $error_msg, $info[ 'short' ], $tag, $atts[ 'type' ] ) );
 				}
 
 				return false;
@@ -166,7 +166,7 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 			 * When there's content (for a description), the schema type id must be specified -
 			 * otherwise it would apply to the main schema, where there is already a description.
 			 */
-			if ( ! empty( $content ) && empty( $atts['type'] ) ) {
+			if ( ! empty( $content ) && empty( $atts[ 'type' ] ) ) {
 
 				if ( $this->p->debug->enabled ) {
 					$this->p->debug->log( 'exiting early: [' . $tag . '] shortcode with content is missing a type attribute value' );
@@ -348,29 +348,31 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					$prop_content =& $content;
 				}
 
-				if ( ! isset( $prop_ref['description'] ) ) {
+				if ( ! isset( $prop_ref[ 'description' ] ) ) {
 
-					$prop_ref['description'] = $this->p->util->cleanup_html_tags( $prop_content );
+					$prop_ref[ 'description' ] = $this->p->util->cleanup_html_tags( $prop_content );
 
-					if ( empty( $prop_ref['description'] ) ) {
+					if ( empty( $prop_ref[ 'description' ] ) ) {
+
 						if ( $this->p->debug->enabled ) {
 							$this->p->debug->log( 'unsetting empty description property' );
 						}
-						unset( $prop_ref['description'] );
+
+						unset( $prop_ref[ 'description' ] );
 					}
 				}
 
 				$og_videos = $this->p->media->get_content_videos( 1, false, false, $prop_content );
 
 				if ( ! empty( $og_videos ) ) {
-					WpssoJsonSchema::add_video_list_data( $prop_ref['video'], $og_videos, 'og:video' );
+					WpssoJsonSchema::add_video_list_data( $prop_ref[ 'video' ], $og_videos, 'og:video' );
 				}
 
 				$size_name = $this->p->lca . '-schema';
 				$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 
 				if ( ! empty( $og_images ) ) {
-					WpssoSchema::add_og_image_list_data( $prop_ref['image'], $og_images );
+					WpssoSchema::add_og_image_list_data( $prop_ref[ 'image' ], $og_images );
 				}
 
 				$this->get_content_json_data( $content, $prop_ref, true );

@@ -690,14 +690,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					unset( $ret[ 'comment' ] );
 				}
 
-				if ( empty( $list_element ) ) {
+				if ( empty( $list_element ) ) {		// Add a single item.
 					$json_data = $ret;
+				} elseif ( is_array( $json_data ) ) {	// Just in case.
+					$json_data[] = $ret;		// Add an item to the list.
 				} else {
-					$json_data[] = $ret;	// add an item to the list
+					$json_data = array( $ret );	// Add an item to the list.
 				}
 			}
 
-			return $comments_added;	// return count of comments added
+			return $comments_added;	// Return count of comments added.
 		}
 
 		public static function add_single_comment_reply_data( &$json_data, $mod, $comment_id ) {
@@ -824,10 +826,12 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 			}
 
-			if ( empty( $list_element ) ) {
+			if ( empty( $list_element ) ) {		// Add a single item.
 				$json_data = $ret;
+			} elseif ( is_array( $json_data ) ) {	// Just in case.
+				$json_data[] = $ret;		// Add an item to the list.
 			} else {
-				$json_data[] = $ret;	// add an item to the list
+				$json_data = array( $ret );	// Add an item to the list.
 			}
 
 			return 1;	// Return count of videos added.
