@@ -695,15 +695,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.0-b.3 (2019/05/17)**
+**Version 1.45.0-rc.1 (2019/05/17)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Updated the HowTo markup with the new Schema types HowToStep, HowToDirection, HowToSupply, and HowToTool.
+	* Updated the HowTo markup with the new Schema types HowToStep, HowToSupply, and HowToTool.
 * *Bugfixes*
 	* Fixed the HowTo selection and its options display in the Document SSO metabox.
 	* Fixed adding an array element to a possible json data string value. 
+	* Fixed the WpssoJsonProPropHasPartMentions::maybe_add_single_data() method to handle nested @graph arrays.
 * *Developer Notes*
 	* Update for code changes in WPSSO Core v4.31.0.
 
@@ -801,7 +802,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.0-b.3 =
+= 1.45.0-rc.1 =
 
 (2019/05/17) Fixed the HowTo selection and its options display in the Document SSO metabox. Update for code changes in WPSSO Core v4.31.0.
 
