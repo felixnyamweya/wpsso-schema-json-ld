@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.45.0-rc.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.45.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -567,525 +567,525 @@ msgid "Microdata Type URLs"
 msgstr ""
 
 #: lib/gettext-pro.php:15 lib/gettext-pro.php:120 lib/gpl/admin/post.php:167
-#: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:183
-#: lib/pro/admin/term.php:118
+#: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:184
+#: lib/pro/admin/term.php:119
 msgctxt "option label"
 msgid "Same-As URLs"
 msgstr ""
 
-#: lib/gettext-pro.php:16 lib/gpl/admin/post.php:179 lib/pro/admin/post.php:195
+#: lib/gettext-pro.php:16 lib/gpl/admin/post.php:179 lib/pro/admin/post.php:197
 #: lib/submenu/schema-general.php:186
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
 
-#: lib/gettext-pro.php:17 lib/gpl/admin/post.php:186 lib/pro/admin/post.php:201
+#: lib/gettext-pro.php:17 lib/gpl/admin/post.php:186 lib/pro/admin/post.php:203
 msgctxt "option label"
 msgid "Headline"
 msgstr ""
 
-#: lib/gettext-pro.php:18 lib/gpl/admin/post.php:195 lib/pro/admin/post.php:209
+#: lib/gettext-pro.php:18 lib/gpl/admin/post.php:195 lib/pro/admin/post.php:211
 msgctxt "option label"
 msgid "Full Text"
 msgstr ""
 
-#: lib/gettext-pro.php:19 lib/gpl/admin/post.php:204 lib/pro/admin/post.php:217
+#: lib/gettext-pro.php:19 lib/gpl/admin/post.php:204 lib/pro/admin/post.php:219
 msgctxt "option label"
 msgid "Keywords"
 msgstr ""
 
-#: lib/gettext-pro.php:20 lib/gpl/admin/post.php:212 lib/pro/admin/post.php:224
+#: lib/gettext-pro.php:20 lib/gpl/admin/post.php:212 lib/pro/admin/post.php:226
 msgctxt "option label"
 msgid "Language"
 msgstr ""
 
-#: lib/gettext-pro.php:21 lib/gpl/admin/post.php:220 lib/pro/admin/post.php:231
+#: lib/gettext-pro.php:21 lib/gpl/admin/post.php:220 lib/pro/admin/post.php:233
 msgctxt "option label"
 msgid "Family Friendly"
 msgstr ""
 
-#: lib/gettext-pro.php:22 lib/gpl/admin/post.php:229 lib/pro/admin/post.php:239
+#: lib/gettext-pro.php:22 lib/gpl/admin/post.php:229 lib/pro/admin/post.php:241
 msgctxt "option label"
 msgid "Copyright Year"
 msgstr ""
 
-#: lib/gettext-pro.php:23 lib/gpl/admin/post.php:237 lib/pro/admin/post.php:246
+#: lib/gettext-pro.php:23 lib/gpl/admin/post.php:237 lib/pro/admin/post.php:248
 msgctxt "option label"
 msgid "Publisher"
 msgstr ""
 
-#: lib/gettext-pro.php:24 lib/gpl/admin/post.php:245 lib/pro/admin/post.php:253
+#: lib/gettext-pro.php:24 lib/gpl/admin/post.php:245 lib/pro/admin/post.php:255
 msgctxt "option label"
 msgid "Service Provider"
 msgstr ""
 
-#: lib/gettext-pro.php:25 lib/gpl/admin/post.php:257 lib/pro/admin/post.php:265
+#: lib/gettext-pro.php:25 lib/gpl/admin/post.php:257 lib/pro/admin/post.php:267
 #: lib/submenu/schema-general.php:207
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
 
-#: lib/gettext-pro.php:26 lib/gpl/admin/post.php:263 lib/pro/admin/post.php:270
+#: lib/gettext-pro.php:26 lib/gpl/admin/post.php:263 lib/pro/admin/post.php:272
 msgctxt "option label"
 msgid "Event Language"
 msgstr ""
 
-#: lib/gettext-pro.php:27 lib/gpl/admin/post.php:271 lib/pro/admin/post.php:277
+#: lib/gettext-pro.php:27 lib/gpl/admin/post.php:271 lib/pro/admin/post.php:279
 msgctxt "option label"
 msgid "Event Organizer Org."
 msgstr ""
 
-#: lib/gettext-pro.php:28 lib/gpl/admin/post.php:279 lib/pro/admin/post.php:284
+#: lib/gettext-pro.php:28 lib/gpl/admin/post.php:279 lib/pro/admin/post.php:286
 msgctxt "option label"
 msgid "Event Organizer Person"
 msgstr ""
 
-#: lib/gettext-pro.php:29 lib/gpl/admin/post.php:287 lib/pro/admin/post.php:291
+#: lib/gettext-pro.php:29 lib/gpl/admin/post.php:287 lib/pro/admin/post.php:293
 msgctxt "option label"
 msgid "Event Performer Org."
 msgstr ""
 
-#: lib/gettext-pro.php:30 lib/gpl/admin/post.php:295 lib/pro/admin/post.php:298
+#: lib/gettext-pro.php:30 lib/gpl/admin/post.php:295 lib/pro/admin/post.php:300
 msgctxt "option label"
 msgid "Event Performer Person"
 msgstr ""
 
-#: lib/gettext-pro.php:31 lib/gpl/admin/post.php:303 lib/pro/admin/post.php:305
+#: lib/gettext-pro.php:31 lib/gpl/admin/post.php:303 lib/pro/admin/post.php:307
 msgctxt "option label"
 msgid "Event Venue"
 msgstr ""
 
-#: lib/gettext-pro.php:32 lib/gpl/admin/post.php:311 lib/pro/admin/post.php:312
+#: lib/gettext-pro.php:32 lib/gpl/admin/post.php:311 lib/pro/admin/post.php:314
 msgctxt "option label"
 msgid "Event Start"
 msgstr ""
 
-#: lib/gettext-pro.php:33 lib/gpl/admin/post.php:319 lib/pro/admin/post.php:319
+#: lib/gettext-pro.php:33 lib/gpl/admin/post.php:319 lib/pro/admin/post.php:321
 msgctxt "option label"
 msgid "Event End"
 msgstr ""
 
-#: lib/gettext-pro.php:34 lib/gpl/admin/post.php:327 lib/pro/admin/post.php:326
+#: lib/gettext-pro.php:34 lib/gpl/admin/post.php:327 lib/pro/admin/post.php:328
 msgctxt "option label"
 msgid "Offers Start"
 msgstr ""
 
-#: lib/gettext-pro.php:35 lib/gpl/admin/post.php:335 lib/pro/admin/post.php:333
+#: lib/gettext-pro.php:35 lib/gpl/admin/post.php:335 lib/pro/admin/post.php:335
 msgctxt "option label"
 msgid "Offers End"
 msgstr ""
 
-#: lib/gettext-pro.php:36 lib/gpl/admin/post.php:343 lib/pro/admin/post.php:340
+#: lib/gettext-pro.php:36 lib/gpl/admin/post.php:343 lib/pro/admin/post.php:342
 msgctxt "option label"
 msgid "Event Offers"
 msgstr ""
 
-#: lib/gettext-pro.php:37 lib/gpl/admin/post.php:347 lib/pro/admin/post.php:344
+#: lib/gettext-pro.php:37 lib/gpl/admin/post.php:347 lib/pro/admin/post.php:346
 msgctxt "option label"
 msgid "Event Offer Name"
 msgstr ""
 
-#: lib/gettext-pro.php:38 lib/gpl/admin/post.php:352 lib/pro/admin/post.php:349
+#: lib/gettext-pro.php:38 lib/gpl/admin/post.php:352 lib/pro/admin/post.php:351
 msgctxt "option label"
 msgid "Event Offer Price"
 msgstr ""
 
-#: lib/gettext-pro.php:39 lib/gpl/admin/post.php:357 lib/pro/admin/post.php:354
+#: lib/gettext-pro.php:39 lib/gpl/admin/post.php:357 lib/pro/admin/post.php:356
 msgctxt "option label"
 msgid "Event Offer Currency"
 msgstr ""
 
-#: lib/gettext-pro.php:40 lib/gpl/admin/post.php:364 lib/pro/admin/post.php:361
+#: lib/gettext-pro.php:40 lib/gpl/admin/post.php:364 lib/pro/admin/post.php:363
 msgctxt "option label"
 msgid "Event Offer Availability"
 msgstr ""
 
-#: lib/gettext-pro.php:41 lib/gpl/admin/post.php:380 lib/pro/admin/post.php:377
+#: lib/gettext-pro.php:41 lib/gpl/admin/post.php:380 lib/pro/admin/post.php:379
 msgctxt "metabox title"
 msgid "How-To Information"
 msgstr ""
 
-#: lib/gettext-pro.php:42 lib/gpl/admin/post.php:386 lib/pro/admin/post.php:382
+#: lib/gettext-pro.php:42 lib/gpl/admin/post.php:386 lib/pro/admin/post.php:384
 msgctxt "option label"
 msgid "How-To Makes"
 msgstr ""
 
 #: lib/gettext-pro.php:43 lib/gettext-pro.php:72 lib/gpl/admin/post.php:394
-#: lib/gpl/admin/post.php:642 lib/pro/admin/post.php:389
-#: lib/pro/admin/post.php:617
+#: lib/gpl/admin/post.php:642 lib/pro/admin/post.php:391
+#: lib/pro/admin/post.php:622
 msgctxt "option label"
 msgid "Preparation Time"
 msgstr ""
 
 #: lib/gettext-pro.php:44 lib/gettext-pro.php:74 lib/gpl/admin/post.php:405
-#: lib/gpl/admin/post.php:664 lib/pro/admin/post.php:399
-#: lib/pro/admin/post.php:637
+#: lib/gpl/admin/post.php:664 lib/pro/admin/post.php:401
+#: lib/pro/admin/post.php:642
 msgctxt "option label"
 msgid "Total Time"
 msgstr ""
 
-#: lib/gettext-pro.php:45 lib/gpl/admin/post.php:416 lib/pro/admin/post.php:409
+#: lib/gettext-pro.php:45 lib/gpl/admin/post.php:416 lib/pro/admin/post.php:411
 msgctxt "option label"
 msgid "How-To Supplies"
 msgstr ""
 
-#: lib/gettext-pro.php:46 lib/gpl/admin/post.php:424 lib/pro/admin/post.php:416
+#: lib/gettext-pro.php:46 lib/gpl/admin/post.php:424 lib/pro/admin/post.php:419
 msgctxt "option label"
 msgid "How-To Tools"
 msgstr ""
 
-#: lib/gettext-pro.php:47 lib/gpl/admin/post.php:432 lib/pro/admin/post.php:423
+#: lib/gettext-pro.php:47 lib/gpl/admin/post.php:432 lib/pro/admin/post.php:427
 msgctxt "option label"
 msgid "How-To Steps"
 msgstr ""
 
-#: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:435
+#: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:440
 #: lib/submenu/schema-general.php:244
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
 
 #: lib/gettext-pro.php:49 lib/gettext-pro.php:125 lib/gpl/admin/post.php:451
-#: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:441
-#: lib/pro/admin/user.php:115
+#: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:446
+#: lib/pro/admin/user.php:116
 msgctxt "option label"
 msgid "Job Title"
 msgstr ""
 
-#: lib/gettext-pro.php:50 lib/gpl/admin/post.php:459 lib/pro/admin/post.php:448
+#: lib/gettext-pro.php:50 lib/gpl/admin/post.php:459 lib/pro/admin/post.php:453
 msgctxt "option label"
 msgid "Hiring Organization"
 msgstr ""
 
-#: lib/gettext-pro.php:51 lib/gpl/admin/post.php:467 lib/pro/admin/post.php:455
+#: lib/gettext-pro.php:51 lib/gpl/admin/post.php:467 lib/pro/admin/post.php:460
 msgctxt "option label"
 msgid "Job Location"
 msgstr ""
 
-#: lib/gettext-pro.php:52 lib/gpl/admin/post.php:475 lib/pro/admin/post.php:462
+#: lib/gettext-pro.php:52 lib/gpl/admin/post.php:475 lib/pro/admin/post.php:467
 msgctxt "option label"
 msgid "Base Salary"
 msgstr ""
 
-#: lib/gettext-pro.php:53 lib/gpl/admin/post.php:479 lib/pro/admin/post.php:466
+#: lib/gettext-pro.php:53 lib/gpl/admin/post.php:479 lib/pro/admin/post.php:471
 msgctxt "option comment"
 msgid "per"
 msgstr ""
 
-#: lib/gettext-pro.php:54 lib/gpl/admin/post.php:486 lib/pro/admin/post.php:472
+#: lib/gettext-pro.php:54 lib/gpl/admin/post.php:486 lib/pro/admin/post.php:477
 msgctxt "option label"
 msgid "Employment Type"
 msgstr ""
 
-#: lib/gettext-pro.php:55 lib/gpl/admin/post.php:494 lib/pro/admin/post.php:479
+#: lib/gettext-pro.php:55 lib/gpl/admin/post.php:494 lib/pro/admin/post.php:484
 msgctxt "option label"
 msgid "Job Posting Expires"
 msgstr ""
 
-#: lib/gettext-pro.php:56 lib/gpl/admin/post.php:506 lib/pro/admin/post.php:491
+#: lib/gettext-pro.php:56 lib/gpl/admin/post.php:506 lib/pro/admin/post.php:496
 msgctxt "metabox title"
 msgid "Movie Information"
 msgstr ""
 
-#: lib/gettext-pro.php:57 lib/gpl/admin/post.php:512 lib/pro/admin/post.php:496
+#: lib/gettext-pro.php:57 lib/gpl/admin/post.php:512 lib/pro/admin/post.php:501
 msgctxt "option label"
 msgid "Cast Names"
 msgstr ""
 
-#: lib/gettext-pro.php:58 lib/gpl/admin/post.php:520 lib/pro/admin/post.php:504
+#: lib/gettext-pro.php:58 lib/gpl/admin/post.php:520 lib/pro/admin/post.php:509
 msgctxt "option label"
 msgid "Director Names"
 msgstr ""
 
-#: lib/gettext-pro.php:59 lib/gpl/admin/post.php:528 lib/pro/admin/post.php:512
+#: lib/gettext-pro.php:59 lib/gpl/admin/post.php:528 lib/pro/admin/post.php:517
 msgctxt "option label"
 msgid "Production Company"
 msgstr ""
 
-#: lib/gettext-pro.php:60 lib/gpl/admin/post.php:536 lib/pro/admin/post.php:519
+#: lib/gettext-pro.php:60 lib/gpl/admin/post.php:536 lib/pro/admin/post.php:524
 msgctxt "option label"
 msgid "Movie Runtime"
 msgstr ""
 
-#: lib/gettext-pro.php:61 lib/gpl/admin/post.php:550 lib/pro/admin/post.php:533
+#: lib/gettext-pro.php:61 lib/gpl/admin/post.php:550 lib/pro/admin/post.php:538
 msgctxt "metabox title"
 msgid "Organization Information"
 msgstr ""
 
-#: lib/gettext-pro.php:62 lib/gpl/admin/post.php:556 lib/pro/admin/post.php:538
+#: lib/gettext-pro.php:62 lib/gpl/admin/post.php:556 lib/pro/admin/post.php:543
 msgctxt "option label"
 msgid "Organization"
 msgstr ""
 
 #: lib/gettext-pro.php:63 lib/gettext-pro.php:124 lib/gpl/admin/post.php:568
-#: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:550
-#: lib/pro/admin/user.php:111
+#: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:555
+#: lib/pro/admin/user.php:112
 msgctxt "metabox title"
 msgid "Person Information"
 msgstr ""
 
-#: lib/gettext-pro.php:64 lib/gpl/admin/post.php:574 lib/pro/admin/post.php:555
+#: lib/gettext-pro.php:64 lib/gpl/admin/post.php:574 lib/pro/admin/post.php:560
 msgctxt "option label"
 msgid "Person"
 msgstr ""
 
-#: lib/gettext-pro.php:65 lib/gpl/admin/post.php:586 lib/pro/admin/post.php:567
+#: lib/gettext-pro.php:65 lib/gpl/admin/post.php:586 lib/pro/admin/post.php:572
 msgctxt "metabox title"
 msgid "QA Page Information"
 msgstr ""
 
-#: lib/gettext-pro.php:66 lib/gpl/admin/post.php:592 lib/pro/admin/post.php:572
+#: lib/gettext-pro.php:66 lib/gpl/admin/post.php:592 lib/pro/admin/post.php:577
 msgctxt "option label"
 msgid "QA Heading"
 msgstr ""
 
-#: lib/gettext-pro.php:67 lib/gpl/admin/post.php:604 lib/pro/admin/post.php:584
+#: lib/gettext-pro.php:67 lib/gpl/admin/post.php:604 lib/pro/admin/post.php:589
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr ""
 
-#: lib/gettext-pro.php:68 lib/gpl/admin/post.php:610 lib/pro/admin/post.php:589
+#: lib/gettext-pro.php:68 lib/gpl/admin/post.php:610 lib/pro/admin/post.php:594
 msgctxt "option label"
 msgid "Recipe Cuisine"
 msgstr ""
 
-#: lib/gettext-pro.php:69 lib/gpl/admin/post.php:618 lib/pro/admin/post.php:596
+#: lib/gettext-pro.php:69 lib/gpl/admin/post.php:618 lib/pro/admin/post.php:601
 msgctxt "option label"
 msgid "Recipe Course"
 msgstr ""
 
-#: lib/gettext-pro.php:70 lib/gpl/admin/post.php:626 lib/pro/admin/post.php:603
+#: lib/gettext-pro.php:70 lib/gpl/admin/post.php:626 lib/pro/admin/post.php:608
 msgctxt "option label"
 msgid "Recipe Makes"
 msgstr ""
 
-#: lib/gettext-pro.php:71 lib/gpl/admin/post.php:634 lib/pro/admin/post.php:610
+#: lib/gettext-pro.php:71 lib/gpl/admin/post.php:634 lib/pro/admin/post.php:615
 msgctxt "option label"
 msgid "Cooking Method"
 msgstr ""
 
-#: lib/gettext-pro.php:73 lib/gpl/admin/post.php:653 lib/pro/admin/post.php:627
+#: lib/gettext-pro.php:73 lib/gpl/admin/post.php:653 lib/pro/admin/post.php:632
 msgctxt "option label"
 msgid "Cooking Time"
 msgstr ""
 
-#: lib/gettext-pro.php:75 lib/gpl/admin/post.php:675 lib/pro/admin/post.php:647
+#: lib/gettext-pro.php:75 lib/gpl/admin/post.php:675 lib/pro/admin/post.php:652
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr ""
 
-#: lib/gettext-pro.php:76 lib/gpl/admin/post.php:683 lib/pro/admin/post.php:654
+#: lib/gettext-pro.php:76 lib/gpl/admin/post.php:683 lib/pro/admin/post.php:660
 msgctxt "option label"
 msgid "Recipe Instructions"
 msgstr ""
 
-#: lib/gettext-pro.php:77 lib/gpl/admin/post.php:695 lib/pro/admin/post.php:666
+#: lib/gettext-pro.php:77 lib/gpl/admin/post.php:695 lib/pro/admin/post.php:673
 msgctxt "metabox title"
 msgid "Nutrition Information per Serving"
 msgstr ""
 
-#: lib/gettext-pro.php:78 lib/gpl/admin/post.php:701 lib/pro/admin/post.php:671
+#: lib/gettext-pro.php:78 lib/gpl/admin/post.php:701 lib/pro/admin/post.php:678
 msgctxt "option label"
 msgid "Serving Size"
 msgstr ""
 
-#: lib/gettext-pro.php:79 lib/gpl/admin/post.php:709 lib/pro/admin/post.php:678
+#: lib/gettext-pro.php:79 lib/gpl/admin/post.php:709 lib/pro/admin/post.php:685
 msgctxt "option label"
 msgid "Calories"
 msgstr ""
 
-#: lib/gettext-pro.php:80 lib/gpl/admin/post.php:712 lib/pro/admin/post.php:681
+#: lib/gettext-pro.php:80 lib/gpl/admin/post.php:712 lib/pro/admin/post.php:688
 msgctxt "option comment"
 msgid "calories"
 msgstr ""
 
-#: lib/gettext-pro.php:81 lib/gpl/admin/post.php:718 lib/pro/admin/post.php:686
+#: lib/gettext-pro.php:81 lib/gpl/admin/post.php:718 lib/pro/admin/post.php:693
 msgctxt "option label"
 msgid "Protein"
 msgstr ""
 
-#: lib/gettext-pro.php:82 lib/gpl/admin/post.php:721 lib/pro/admin/post.php:689
+#: lib/gettext-pro.php:82 lib/gpl/admin/post.php:721 lib/pro/admin/post.php:696
 msgctxt "option comment"
 msgid "grams of protein"
 msgstr ""
 
-#: lib/gettext-pro.php:83 lib/gpl/admin/post.php:727 lib/pro/admin/post.php:694
+#: lib/gettext-pro.php:83 lib/gpl/admin/post.php:727 lib/pro/admin/post.php:701
 msgctxt "option label"
 msgid "Fiber"
 msgstr ""
 
-#: lib/gettext-pro.php:84 lib/gpl/admin/post.php:730 lib/pro/admin/post.php:697
+#: lib/gettext-pro.php:84 lib/gpl/admin/post.php:730 lib/pro/admin/post.php:704
 msgctxt "option comment"
 msgid "grams of fiber"
 msgstr ""
 
-#: lib/gettext-pro.php:85 lib/gpl/admin/post.php:736 lib/pro/admin/post.php:702
+#: lib/gettext-pro.php:85 lib/gpl/admin/post.php:736 lib/pro/admin/post.php:709
 msgctxt "option label"
 msgid "Carbohydrates"
 msgstr ""
 
-#: lib/gettext-pro.php:86 lib/gpl/admin/post.php:739 lib/pro/admin/post.php:705
+#: lib/gettext-pro.php:86 lib/gpl/admin/post.php:739 lib/pro/admin/post.php:712
 msgctxt "option comment"
 msgid "grams of carbohydrates"
 msgstr ""
 
-#: lib/gettext-pro.php:87 lib/gpl/admin/post.php:745 lib/pro/admin/post.php:710
+#: lib/gettext-pro.php:87 lib/gpl/admin/post.php:745 lib/pro/admin/post.php:717
 msgctxt "option label"
 msgid "Sugar"
 msgstr ""
 
-#: lib/gettext-pro.php:88 lib/gpl/admin/post.php:748 lib/pro/admin/post.php:713
+#: lib/gettext-pro.php:88 lib/gpl/admin/post.php:748 lib/pro/admin/post.php:720
 msgctxt "option comment"
 msgid "grams of sugar"
 msgstr ""
 
-#: lib/gettext-pro.php:89 lib/gpl/admin/post.php:754 lib/pro/admin/post.php:718
+#: lib/gettext-pro.php:89 lib/gpl/admin/post.php:754 lib/pro/admin/post.php:725
 msgctxt "option label"
 msgid "Sodium"
 msgstr ""
 
-#: lib/gettext-pro.php:90 lib/gpl/admin/post.php:757 lib/pro/admin/post.php:721
+#: lib/gettext-pro.php:90 lib/gpl/admin/post.php:757 lib/pro/admin/post.php:728
 msgctxt "option comment"
 msgid "milligrams of sodium"
 msgstr ""
 
-#: lib/gettext-pro.php:91 lib/gpl/admin/post.php:763 lib/pro/admin/post.php:726
+#: lib/gettext-pro.php:91 lib/gpl/admin/post.php:763 lib/pro/admin/post.php:733
 msgctxt "option label"
 msgid "Fat"
 msgstr ""
 
-#: lib/gettext-pro.php:92 lib/gpl/admin/post.php:766 lib/pro/admin/post.php:729
+#: lib/gettext-pro.php:92 lib/gpl/admin/post.php:766 lib/pro/admin/post.php:736
 msgctxt "option comment"
 msgid "grams of fat"
 msgstr ""
 
-#: lib/gettext-pro.php:93 lib/gpl/admin/post.php:772 lib/pro/admin/post.php:734
+#: lib/gettext-pro.php:93 lib/gpl/admin/post.php:772 lib/pro/admin/post.php:741
 msgctxt "option label"
 msgid "Saturated Fat"
 msgstr ""
 
-#: lib/gettext-pro.php:94 lib/gpl/admin/post.php:775 lib/pro/admin/post.php:737
+#: lib/gettext-pro.php:94 lib/gpl/admin/post.php:775 lib/pro/admin/post.php:744
 msgctxt "option comment"
 msgid "grams of saturated fat"
 msgstr ""
 
-#: lib/gettext-pro.php:95 lib/gpl/admin/post.php:781 lib/pro/admin/post.php:742
+#: lib/gettext-pro.php:95 lib/gpl/admin/post.php:781 lib/pro/admin/post.php:749
 msgctxt "option label"
 msgid "Unsaturated Fat"
 msgstr ""
 
-#: lib/gettext-pro.php:96 lib/gpl/admin/post.php:784 lib/pro/admin/post.php:745
+#: lib/gettext-pro.php:96 lib/gpl/admin/post.php:784 lib/pro/admin/post.php:752
 msgctxt "option comment"
 msgid "grams of unsaturated fat"
 msgstr ""
 
-#: lib/gettext-pro.php:97 lib/gpl/admin/post.php:790 lib/pro/admin/post.php:750
+#: lib/gettext-pro.php:97 lib/gpl/admin/post.php:790 lib/pro/admin/post.php:757
 msgctxt "option label"
 msgid "Trans Fat"
 msgstr ""
 
-#: lib/gettext-pro.php:98 lib/gpl/admin/post.php:793 lib/pro/admin/post.php:753
+#: lib/gettext-pro.php:98 lib/gpl/admin/post.php:793 lib/pro/admin/post.php:760
 msgctxt "option comment"
 msgid "grams of trans fat"
 msgstr ""
 
-#: lib/gettext-pro.php:99 lib/gpl/admin/post.php:799 lib/pro/admin/post.php:758
+#: lib/gettext-pro.php:99 lib/gpl/admin/post.php:799 lib/pro/admin/post.php:765
 msgctxt "option label"
 msgid "Cholesterol"
 msgstr ""
 
 #: lib/gettext-pro.php:100 lib/gpl/admin/post.php:802
-#: lib/pro/admin/post.php:761
+#: lib/pro/admin/post.php:768
 msgctxt "option comment"
 msgid "milligrams of cholesterol"
 msgstr ""
 
 #: lib/gettext-pro.php:101 lib/gpl/admin/post.php:812
-#: lib/pro/admin/post.php:771
+#: lib/pro/admin/post.php:778
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr ""
 
 #: lib/gettext-pro.php:102 lib/gpl/admin/post.php:818
-#: lib/pro/admin/post.php:776
+#: lib/pro/admin/post.php:783
 msgctxt "option label"
 msgid "Review Rating"
 msgstr ""
 
 #: lib/gettext-pro.php:103 lib/gpl/admin/post.php:821
-#: lib/pro/admin/post.php:779
+#: lib/pro/admin/post.php:786
 msgctxt "option comment"
 msgid "from"
 msgstr ""
 
 #: lib/gettext-pro.php:104 lib/gpl/admin/post.php:823
-#: lib/pro/admin/post.php:781
+#: lib/pro/admin/post.php:788
 msgctxt "option comment"
 msgid "to"
 msgstr ""
 
 #: lib/gettext-pro.php:105 lib/gpl/admin/post.php:830
-#: lib/pro/admin/post.php:787
+#: lib/pro/admin/post.php:794
 msgctxt "option label"
 msgid "Review Rating Name"
 msgstr ""
 
 #: lib/gettext-pro.php:106 lib/gpl/admin/post.php:838
-#: lib/pro/admin/post.php:794
+#: lib/pro/admin/post.php:801
 msgctxt "option label"
 msgid "Review Subject URL"
 msgstr ""
 
 #: lib/gettext-pro.php:107 lib/gpl/admin/post.php:850
-#: lib/pro/admin/post.php:806
+#: lib/pro/admin/post.php:813
 msgctxt "metabox title"
 msgid "Claim Review Information"
 msgstr ""
 
 #: lib/gettext-pro.php:108 lib/gpl/admin/post.php:856
-#: lib/pro/admin/post.php:811
+#: lib/pro/admin/post.php:818
 msgctxt "option label"
 msgid "Claim Short Summary"
 msgstr ""
 
 #: lib/gettext-pro.php:109 lib/gpl/admin/post.php:864
-#: lib/pro/admin/post.php:818
+#: lib/pro/admin/post.php:825
 msgctxt "option label"
 msgid "Claim Made on Date"
 msgstr ""
 
 #: lib/gettext-pro.php:110 lib/gpl/admin/post.php:872
-#: lib/pro/admin/post.php:825
+#: lib/pro/admin/post.php:832
 msgctxt "option label"
 msgid "Claim Author Type"
 msgstr ""
 
 #: lib/gettext-pro.php:111 lib/gpl/admin/post.php:880
-#: lib/pro/admin/post.php:832
+#: lib/pro/admin/post.php:839
 msgctxt "option label"
 msgid "Claim Author Name"
 msgstr ""
 
 #: lib/gettext-pro.php:112 lib/gpl/admin/post.php:888
-#: lib/pro/admin/post.php:839
+#: lib/pro/admin/post.php:846
 msgctxt "option label"
 msgid "Claim Author URL"
 msgstr ""
 
 #: lib/gettext-pro.php:113 lib/gpl/admin/post.php:896
-#: lib/pro/admin/post.php:846
+#: lib/pro/admin/post.php:853
 msgctxt "option label"
 msgid "First Appearance URL"
 msgstr ""
 
 #: lib/gettext-pro.php:114 lib/gpl/admin/post.php:908
-#: lib/pro/admin/post.php:858
+#: lib/pro/admin/post.php:865
 msgctxt "metabox title"
 msgid "Software Application Information"
 msgstr ""
 
 #: lib/gettext-pro.php:115 lib/gpl/admin/post.php:914
-#: lib/pro/admin/post.php:863
+#: lib/pro/admin/post.php:870
 msgctxt "option label"
 msgid "Operating System"
 msgstr ""
