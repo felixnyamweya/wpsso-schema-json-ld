@@ -702,8 +702,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Updated the HowTo markup with the new Schema types HowToStep, HowToSupply, and HowToTool.
 * *Bugfixes*
-	* Fixed the HowTo selection and its options display in the Document SSO metabox.
 	* Fixed adding an array element to a possible json data string value. 
+	* Fixed the HowTo selection and its options display in the Document SSO metabox.
 	* Fixed the WpssoJsonProPropHasPartMentions::maybe_add_single_data() method to handle nested @graph arrays.
 * *Developer Notes*
 	* Update for code changes in WPSSO Core v4.31.0.
