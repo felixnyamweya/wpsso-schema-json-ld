@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.0-rc.1 (2019/05/19)**
+**Version 1.45.0 (2019/05/20)**
 
 * *New Features*
 	* None.
@@ -736,77 +736,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.42.3 (2019/04/21)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed an "Array to string conversion" error from the WP Recipe Maker integration module (Pro version).
-* *Developer Notes*
-	* Added more debug logging in the WpssoJsonProPropAggregateRating and WpssoJsonProPropReview classes (Pro version).
-	* Updated calls to add/get_single methods from WpssoSchema to the new WpssoSchemaSingle class.
-
-**Version 1.42.2 (2019/04/11)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed the addition of default 'aggregateRating' and 'review' property values to only the main entity and specific Schema types (Brand, CreativeWork, Event, Offer, Organization, Place, Product, and Service).
-* *Developer Notes*
-	* None.
-
-**Version 1.42.1 (2019/04/09)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed the "aggregateRating field is recommended" and "review field is recommended" warnings from Google for webpages without any ratings or reviews.
-* *Developer Notes*
-	* None.
-
-**Version 1.42.0 (2019/04/06)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added new ClaimReview options in the SSO metabox:
-		* Claim Short Summary
-		* Claim Made on Date
-		* Claim Author Type
-		* Claim Author Name
-		* Claim Author URL
-		* First Appearance URL
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Moved methods create aggregate offers and single offers (for Schema Product and SoftwareApplication) to the WpssoSchema class in WPSSO Core v4.27.1.
-
-**Version 1.41.0 (2019/03/31)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added product reviews from the Yotpo Social Reviews for WooCommerce API (Pro version).
-	* Updated the Schema Product markup to use the Schema AggregateOffer type for multiple product offers / WooCommerce product variations (Pro version).
-	* Removed the Schema ProductModel objects and the 'itemOffered' property from Schema Product offers (not currently supported by Google).
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Refactored the WpssoJsonProHeadProduct class to remove Schema ProductModel markup, add more variable product properties to each Schema Offer, and optimize the creation of offers for single and variable products (lib/pro/head/product.php).
-
 == Upgrade Notice ==
 
-= 1.45.0-rc.1 =
+= 1.45.0 =
 
-(2019/05/19) Fixed the HowTo selection and its options display in the Document SSO metabox. Update for code changes in WPSSO Core v4.31.0.
-
-= 1.44.0 =
-
-(2019/05/04) Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type. Moved 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro.
+(2019/05/20) Fixed the HowTo selection and its options display in the Document SSO metabox. Update for code changes in WPSSO Core v4.31.0.
 
