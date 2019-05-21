@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.45.1-dev.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.45.1-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -632,22 +632,22 @@ msgstr ""
 
 #: lib/gettext-pro.php:27 lib/gpl/admin/post.php:271 lib/pro/admin/post.php:279
 msgctxt "option label"
-msgid "Event Organizer Org."
+msgid "Organizer Org"
 msgstr ""
 
 #: lib/gettext-pro.php:28 lib/gpl/admin/post.php:279 lib/pro/admin/post.php:286
 msgctxt "option label"
-msgid "Event Organizer Person"
+msgid "Organizer Person"
 msgstr ""
 
 #: lib/gettext-pro.php:29 lib/gpl/admin/post.php:287 lib/pro/admin/post.php:293
 msgctxt "option label"
-msgid "Event Performer Org."
+msgid "Performer Org"
 msgstr ""
 
 #: lib/gettext-pro.php:30 lib/gpl/admin/post.php:295 lib/pro/admin/post.php:300
 msgctxt "option label"
-msgid "Event Performer Person"
+msgid "Performer Person"
 msgstr ""
 
 #: lib/gettext-pro.php:31 lib/gpl/admin/post.php:303 lib/pro/admin/post.php:307
@@ -1187,22 +1187,22 @@ msgstr ""
 
 #: lib/submenu/schema-general.php:210
 msgctxt "option label"
-msgid "Default Event Organizer Org."
+msgid "Default Organizer Org"
 msgstr ""
 
 #: lib/submenu/schema-general.php:216
 msgctxt "option label"
-msgid "Default Event Organizer Person"
+msgid "Default Organizer Person"
 msgstr ""
 
 #: lib/submenu/schema-general.php:221
 msgctxt "option label"
-msgid "Default Event Performer Org."
+msgid "Default Performer Org"
 msgstr ""
 
 #: lib/submenu/schema-general.php:227
 msgctxt "option label"
-msgid "Default Event Performer Person"
+msgid "Default Performer Person"
 msgstr ""
 
 #: lib/submenu/schema-general.php:232
