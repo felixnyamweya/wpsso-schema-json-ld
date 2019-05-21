@@ -120,10 +120,10 @@
 <li>Event Information
 
 <ul>
-<li>Default Event Organizer Org.</li>
-<li>Default Event Organizer Person</li>
-<li>Default Event Performer Org.</li>
-<li>Default Event Performer Person</li>
+<li>Default Organizer Org.</li>
+<li>Default Organizer Person</li>
+<li>Default Performer Org.</li>
+<li>Default Performer Person</li>
 <li>Default Event Venue</li>
 </ul></li>
 <li>Job Posting Information

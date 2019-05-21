@@ -104,10 +104,10 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 			* Default Publisher
 			* Default Service Provider
 		* Event Information
-			* Default Event Organizer Org.
-			* Default Event Organizer Person
-			* Default Event Performer Org.
-			* Default Event Performer Person
+			* Default Organizer Org.
+			* Default Organizer Person
+			* Default Performer Org.
+			* Default Performer Person
 			* Default Event Venue
 		* Job Posting Information
 			* Default Hiring Organization
@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.1-dev.1 (2019/05/21)**
+**Version 1.45.1-dev.2 (2019/05/21)**
 
 * *New Features*
 	* None.
@@ -749,7 +749,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.1-dev.1 =
+= 1.45.1-dev.2 =
 
 (2019/05/21) Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
