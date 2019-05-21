@@ -695,6 +695,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.45.1-dev.1 (2019/05/21)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
+* *Developer Notes*
+	* None.
+
 **Version 1.45.0 (2019/05/20)**
 
 * *New Features*
@@ -737,6 +748,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.45.1-dev.1 =
+
+(2019/05/21) Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
 = 1.45.0 =
 
