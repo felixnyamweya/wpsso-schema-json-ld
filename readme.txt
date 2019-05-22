@@ -199,7 +199,7 @@ Additional e-Commerce plugins are also supported, including Easy Digital Downloa
 		* How-To Total Time 
 		* How-To Supplies 
 		* How-To Tools 
-		* How-To Steps 
+		* How-To Steps (step name, direction text)
 	* Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 		* Job Posting Job Title
 		* Job Posting Hiring Organization
@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.1-dev.2 (2019/05/21)**
+**Version 1.45.1-dev.3 (2019/05/22)**
 
 * *New Features*
 	* None.
@@ -749,9 +749,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.1-dev.2 =
+= 1.45.1-dev.3 =
 
-(2019/05/21) Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
+(2019/05/22) Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
 = 1.45.0 =
 
