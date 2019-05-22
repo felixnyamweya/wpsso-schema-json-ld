@@ -700,7 +700,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added a How-To Direction Text option for How-To Steps.
 * *Bugfixes*
 	* Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 * *Developer Notes*
@@ -751,7 +751,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.45.1-dev.3 =
 
-(2019/05/22) Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
+(2019/05/22) Added a How-To Direction Text option for How-To Steps. Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
 = 1.45.0 =
 
