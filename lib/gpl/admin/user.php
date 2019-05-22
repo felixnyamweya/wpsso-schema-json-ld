@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminUser' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Other Profile Page URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_sameas_url',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 
 				/**

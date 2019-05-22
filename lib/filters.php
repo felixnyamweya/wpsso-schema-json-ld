@@ -532,7 +532,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_text':				// Full Text.
 				case 'schema_copyright_year':			// Copyright Year.
 				case 'schema_event_offer_name':
-				case 'schema_howto_step':			// How-To Steps.
+				case 'schema_howto_step':			// How-To Step Name.
+				case 'schema_howto_step_text':			// How-To Direction Text.
 				case 'schema_howto_supply':			// How-To Supplies.
 				case 'schema_howto_tool':			// How-To Tools.
 				case 'schema_howto_yield':			// How-To Makes.
@@ -976,9 +977,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_howto_steps':
+				case 'tooltip-meta-schema_howto_steps':	// How-To Steps.
 
-					$text = __( 'A list of steps to complete this How-To.', 'wpsso-schema-json-ld' );
+					$text = __( 'A list of steps to complete this How-To, including the How-To Step Name and (optionally) a longer How-To Direction Text.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

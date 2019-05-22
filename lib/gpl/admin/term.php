@@ -101,7 +101,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_addl_type_url',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 				'schema_sameas_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminTerm' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_sameas_url',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 			);
 

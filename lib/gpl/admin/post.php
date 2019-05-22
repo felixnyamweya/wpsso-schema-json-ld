@@ -158,7 +158,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_addl_type_url',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 				'schema_sameas_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
@@ -166,7 +166,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_sameas_url',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', 2 ),
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 
 				/**
@@ -431,7 +431,18 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'How-To Steps', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_howto_steps',
-					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 5 ),
+					'content'  => $form->get_no_mixed_multi( array(
+						'schema_howto_step' => array(
+							'input_title' => _x( 'How-To Step Name', 'option label', 'wpsso-schema-json-ld' ),
+							'input_type'  => 'text',
+							'input_class' => 'howto_step required',
+						),
+						'schema_howto_step_text' => array(
+							'input_title' => _x( 'How-To Direction Text', 'option label', 'wpsso-schema-json-ld' ),
+							'input_type'  => 'textarea',
+							'input_class' => 'howto_step_text',
+						),
+					), '', 'schema_howto_steps', $start_num = 0, $howto_steps_max, $show_first = 5 ),
 				),
 
 				/**
@@ -829,7 +840,7 @@ if ( ! class_exists( 'WpssoJsonGplAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Review Rating Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_review_rating_alt_name',
-					'content'  => $form->get_no_input_value( '' ),
+					'content'  => $form->get_no_input_value(),
 				),
 				'schema_review_item_url' => array(
 					'tr_class' => $schema_type_tr_class[ 'review' ],
