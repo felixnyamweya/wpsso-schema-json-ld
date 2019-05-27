@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.43.1\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 1.45.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-05-21 09:46-0700\n"
-"PO-Revision-Date: 2019-05-21 09:48-0700\n"
+"POT-Creation-Date: 2019-05-27 06:40-0700\n"
+"PO-Revision-Date: 2019-05-27 06:43-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -31,368 +31,368 @@ msgstr "La <a href=\"%1$s\">version Pro de WPSSO JSON</a> comprend une grande s�
 msgid "If this Schema type is an important classification for your content, you should consider purchasing the Pro version."
 msgstr "Si ce type de Schéma est une classification importante pour votre contenu, vous devriez considérer l'achat de la version Pro."
 
-#: lib/filters.php:831
+#: lib/filters.php:832
 msgid "Select a Schema item type that best describes the main content of this webpage."
 msgstr "Sélectionnez le type de Schéma qui décrit le contenu principal de cette page Web."
 
-#: lib/filters.php:837
+#: lib/filters.php:838
 msgid "A customized name / title for the Schema \"name\" property."
 msgstr "Un nom / titre personnalisé pour la propriété de Schéma \"name\"."
 
-#: lib/filters.php:843
+#: lib/filters.php:844
 msgid "A customized alternate name / title for the Schema \"alternateName\" property."
 msgstr "Un nom / titre personnalisé alternatif pour la propriété Schéma \"alternateName\"."
 
-#: lib/filters.php:849
+#: lib/filters.php:850
 msgid "A customized description for the Schema \"description\" property."
 msgstr "Une description personnalisée pour la propriété de Schéma \"description\"."
 
-#: lib/filters.php:855
+#: lib/filters.php:856
 msgid "Additional (and optional) type URLs for the item, typically used to specify more precise types from an external vocabulary in microdata syntax. For example, an additional Schema type URL for a product item could be http://www.productontology.org/id/Hammer (see %s for more examples)."
 msgstr "URLs de type supplémentaire (optionnel) pour l'élément, généralement utilisée pour spécifier des types plus précis d'un vocabulaire externe de microdata. Par exemple, un URL de type de Schéma supplémentaire pour un produit pourrait être http://www.productontology.org/id/Hammer (voir %s pour d'autres exemples)."
 
-#: lib/filters.php:861
+#: lib/filters.php:862
 msgid "Additional (and optional) webpage reference URLs that unambiguously indicate the item's identity. For example, the URL of the item's Wikipedia page, Wikidata entry, IMDB page, official website, etc."
 msgstr "URL de référence de page Web supplémentaires (et facultatives) indiquant de manière non ambiguë l'identité de l'élément. Par exemple, l'URL de la page Wikipedia de l'élément, l'entrée Wikidata, la page IMDB, le site officiel, etc."
 
-#: lib/filters.php:867
+#: lib/filters.php:868
 msgid "The headline for the Schema CreativeWork type and/or its sub-types."
 msgstr "Une manchette pour le type Schéma CreativeWork et/ou ses sous-types."
 
-#: lib/filters.php:873
+#: lib/filters.php:874
 msgid "The complete textual and searchable content for the Schema CreativeWork type and/or its sub-types."
 msgstr "Contenu textuel complet et pouvant être recherché pour le type de Schéma CreativeWork et/ou ses sous-types."
 
-#: lib/filters.php:879
+#: lib/filters.php:880
 msgid "Comma delimited list of keywords or tags describing the Schema CreativeWork content."
 msgstr "Liste de mots clés ou balises, séparés par des virgules, décrivant le contenu pour le type de Schéma CreativeWork."
 
-#: lib/filters.php:885
+#: lib/filters.php:886
 msgid "The language (aka locale) for the Schema CreativeWork content."
 msgstr "La langue (région) du contenu pour le type d Schéma CreativeWork."
 
-#: lib/filters.php:891
+#: lib/filters.php:892
 msgid "The content is family friendly."
 msgstr "Le contenu est favorable à la famille."
 
-#: lib/filters.php:897
+#: lib/filters.php:898
 msgid "Select a publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc)."
 msgstr "Sélectionnez un éditeur pour le type de Schéma CreativeWork et/ou ses sous-types (Article, BlogPosting, WebPage, etc)."
 
-#: lib/filters.php:903
+#: lib/filters.php:904
 msgid "Select a service provider, service operator, or service performer (example: \"Netflix\")."
 msgstr "Sélectionnez un fournisseur de services, un opérateur de service ou un prestataire de services (exemple: \"Netflix\")."
 
-#: lib/filters.php:909
+#: lib/filters.php:910
 msgid "The year during which the claimed copyright was first asserted for this creative work."
 msgstr "Année au cours de laquelle le droit d'auteur a été déclaré pour la première fois pour cette œuvre créative."
 
-#: lib/filters.php:915
+#: lib/filters.php:916
 msgid "The language (aka locale) for the Schema Event performance."
 msgstr "La langue (ou locale) de la performance pour le Schéma de l'événement."
 
-#: lib/filters.php:921
+#: lib/filters.php:922
 msgid "Select an organizer (organization) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (organisation) pour le type de Schéma Event."
 
-#: lib/filters.php:927
+#: lib/filters.php:928
 msgid "Select an organizer (person) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (personne) pour le type de Schéma Event."
 
-#: lib/filters.php:933
+#: lib/filters.php:934
 msgid "Select a performer (organization) for the Schema Event type."
 msgstr "Sélectionnez un interprète (organisation) pour le type de Schéma Event."
 
-#: lib/filters.php:939
+#: lib/filters.php:940
 msgid "Select a performer (person) for the Schema Event type."
 msgstr "Sélectionnez un interprète (personne) pour le type de Schéma Event."
 
-#: lib/filters.php:945
+#: lib/filters.php:946
 msgid "Select a venue (place / location) for the Schema Event type."
 msgstr "Sélectionnez une place pour le type de Schéma Event."
 
-#: lib/filters.php:951
+#: lib/filters.php:952
 msgid "Select the event start date and time."
 msgstr "Sélectionnez la date et l'heure de début pour l'événement."
 
-#: lib/filters.php:957
+#: lib/filters.php:958
 msgid "Select the event end date and time."
 msgstr "Sélectionnez la date et l'heure de fin pour l'événement."
 
-#: lib/filters.php:963
+#: lib/filters.php:964
 msgid "The date and time when tickets go on sale."
 msgstr "La date et l'heure auxquelles les billets sont en vente."
 
-#: lib/filters.php:969
+#: lib/filters.php:970
 msgid "The date and time when tickets are no longer on sale."
 msgstr "La date et l'heure auxquelles les billets ne sont plus en vente."
 
-#: lib/filters.php:975
+#: lib/filters.php:976
 msgid "One or more offers for the event, including the offer name, price and currency."
 msgstr "Une ou plusieurs offres pour l'événement, y compris le nom de l'offre, le prix et la devise."
 
-#: lib/filters.php:981
-msgid "A list of steps to complete this How-To."
-msgstr "Une liste d'étapes pour compléter ce How-To."
+#: lib/filters.php:982
+msgid "A list of steps to complete this How-To, including the How-To Step Name and (optionally) a longer How-To Direction Text."
+msgstr "Liste des étapes à suivre pour compléter ce How-To, y compris le nom de l’étape et un texte (facultatif) de direction plus long."
 
-#: lib/filters.php:987
+#: lib/filters.php:988
 msgid "A list of supplies that are consumed when completing this How-To."
 msgstr "Une liste des fournitures consommées lors de l'exécution du How-To."
 
-#: lib/filters.php:993
+#: lib/filters.php:994
 msgid "A list of tools or objects that are required to complete this How-To."
 msgstr "Une liste d'outils ou d'objets requis pour compléter ce How-To."
 
-#: lib/filters.php:1000
+#: lib/filters.php:1001
 msgid "The total time it takes to prepare the items before executing the instruction steps."
 msgstr "Le temps total nécessaire pour préparer les éléments avant d'exécuter les étapes d'instruction."
 
-#: lib/filters.php:1007
+#: lib/filters.php:1008
 msgid "The total time required to perform the all instructions (including any preparation time)."
 msgstr "Le temps total requis pour exécuter toutes les instructions (y compris le temps de préparation)."
 
-#: lib/filters.php:1013
+#: lib/filters.php:1014
 msgid "The quantity made when following these How-To instructions (example: \"a paper airplane\", \"10 personalized candles\", etc.)."
 msgstr "La quantité faite en suivant ces instructions du How-To (exemple: \"un avion en papier\", \"10 bougies personnalisées\", etc.)."
 
-#: lib/filters.php:1019
+#: lib/filters.php:1020
 msgid "The title of this job, which may be different than the WordPress post / page title."
 msgstr "Le titre de ce poste, qui peut être différent du titre d'article / page WordPress."
 
-#: lib/filters.php:1025
+#: lib/filters.php:1026
 msgid "Select a organization for the Schema JobPosting hiring organization."
 msgstr "Sélectionnez une organisation d'embauche pour le type de Schéma JobPosting."
 
-#: lib/filters.php:1031
+#: lib/filters.php:1032
 msgid "Select a place / location for the Schema JobPosting job location."
 msgstr "Sélectionnez un emplacement de travail pour le type de Schéma JobPosting."
 
-#: lib/filters.php:1037
+#: lib/filters.php:1038
 msgid "Optionally provide details on the base salary. The base salary must be numeric, like 120000, 50.00, etc. Do not use spaces, commas, or currency symbols, as these are not valid numeric values."
 msgstr "En option, fournir des détails sur le salaire de base. Le salaire de base doit être numérique, comme 120000, 50.00, etc. N'utilisez pas d'espaces, de virgules ou de symboles monétaires, car ce ne sont pas des valeurs numériques valides."
 
-#: lib/filters.php:1043
+#: lib/filters.php:1044
 msgid "Check one or more Google approved employment types (see <a href=\"%s\">Google's Job Posting guidelines</a> for more information)."
 msgstr "Cochez un ou plusieurs types d'emploi approuvés par Google (voir <a href=\"%s\">les consignes relatives à l'affichage des offres d'emploi Google</a> pour plus d'informations)."
 
-#: lib/filters.php:1049
+#: lib/filters.php:1050
 msgid "Select a job posting expiration date and time. If a job posting never expires, or you do not know when the job will expire, do not select an expiration date and time."
 msgstr "Sélectionnez une date et heure d'expiration pour l'offre d'emploi. Si cette offre d'emploi n'expire jamais, ou si vous ne savez pas quand cette offre expirera, ne sélectionnez pas de date et heure d'expiration."
 
-#: lib/filters.php:1055
+#: lib/filters.php:1056
 msgid "The name of one or more actors appearing in the movie."
 msgstr "Le nom d'un ou plusieurs acteurs apparaissant dans le film."
 
-#: lib/filters.php:1061
+#: lib/filters.php:1062
 msgid "The name of one or more directors of the movie."
 msgstr "Le nom d'un ou plusieurs réalisateurs du film."
 
-#: lib/filters.php:1067
+#: lib/filters.php:1068
 msgid "The principle production company or studio responsible for the movie."
 msgstr "La société de production principale ou le studio responsable du film."
 
-#: lib/filters.php:1073
+#: lib/filters.php:1074
 msgid "The total movie runtime from the start to the end of the credits."
 msgstr "La durée totale du film du début à la fin du générique."
 
-#: lib/filters.php:1079
+#: lib/filters.php:1080
 msgid "Optionally select a different organization for the Schema Organization item type and/or its sub-type (Airline, Corporation, School, etc). Select \"[None]\" to use the default organization details."
 msgstr "Sélectionnez une organisation différente et optionnelle pour le type d'élément Schéma Organisation et/ou son sous-type (Airline, Corporation, School, etc.). Sélectionnez \"[Aucun]\" pour utiliser les détails de l'organisation par défaut."
 
-#: lib/filters.php:1085
+#: lib/filters.php:1086
 msgctxt "user role"
 msgid "Person"
 msgstr "Personne"
 
-#: lib/filters.php:1087
+#: lib/filters.php:1088
 msgid "Select a person from the list of eligible WordPress users. To be included in this list, a user must be member of the WordPress \"%s\" role."
 msgstr "Sélectionnez une personne dans la liste des utilisateurs WordPress éligibles. Pour être inclus dans cette liste, un utilisateur doit être membre du rôle WordPress \"%s\"."
 
-#: lib/filters.php:1093
+#: lib/filters.php:1094
 msgid "An optional heading / description of the question and it's answer."
 msgstr "Un en-tête / description facultatif de la question et sa réponse."
 
-#: lib/filters.php:1095
+#: lib/filters.php:1096
 msgid "If the question is part of a larger group of questions on the same subject, then this would be an appropriate field to describe that subject (example: \"QA about a Flying Toaster\" )."
 msgstr "Si la question fait partie d'un plus grand groupe de questions sur le même sujet, ce serait un champ approprié pour décrire ce sujet (exemple: \"QA sur un grille-pain volant\")."
 
-#: lib/filters.php:1101
+#: lib/filters.php:1102
 msgid "A person's job title (for example, Financial Manager)."
 msgstr "Le titre d'emploi d'une personne (par exemple, Directeur Financier)."
 
-#: lib/filters.php:1107
+#: lib/filters.php:1108
 msgid "The cooking method used for this recipe (example: Baking, Frying, Steaming, etc.)"
 msgstr "La méthode de cuisson utilisée pour cette recette (exemple: friture, cuisson à la vapeur, etc.)"
 
-#: lib/filters.php:1113
+#: lib/filters.php:1114
 msgid "The total time it takes to cook this recipe."
 msgstr "Le temps total qu'il faut pour la cuisson de cette recette."
 
-#: lib/filters.php:1119
+#: lib/filters.php:1120
 msgid "The course name for this recipe (example: Appetizer, Entr&eacute;e, Main Course / Main Dish, Dessert, Side-dish, etc.)."
 msgstr "Le nom du cours pour cette recette (exemple: Apéritif, Entrée, Plat principal, Dessert, Plat d'accompagnement, etc.)."
 
-#: lib/filters.php:1125
+#: lib/filters.php:1126
 msgid "The type of cuisine for this recipe (example: French, Indian, Italian, Japanese, Thai, etc.)."
 msgstr "Le type de cuisine pour cette recette (exemple: Français, Indien, Italien, Japonais, Thaï, etc.)."
 
-#: lib/filters.php:1131
+#: lib/filters.php:1132
 msgid "A list of ingredients for this recipe (example: \"1 cup flour\", \"1 tsp salt\", etc.)."
 msgstr "Une liste d'ingrédients pour cette recette (exemple : \"1 tasse de farine\", \"1 c. à thé de sel\", etc.)."
 
-#: lib/filters.php:1137
+#: lib/filters.php:1138
 msgid "A list of instructions for this recipe (example: \"beat eggs\", \"add and mix flour\", etc.)."
 msgstr "Une liste d'instructions pour cette recette (exemple: \"battre les oeufs\", \"ajouter et mélanger la farine\", etc.)."
 
-#: lib/filters.php:1143
+#: lib/filters.php:1144
 msgid "The serving size in volume or mass. A serving size is required to include nutrition information in the Schema recipe markup."
 msgstr "La taille de portion en volume ou en masse. Une taille de portion est requise pour inclure les informations nutritionnelles dans le balisage Schéma Recipe."
 
-#: lib/filters.php:1149
+#: lib/filters.php:1150
 msgid "The number of calories per serving."
 msgstr "Le nombre de calories par portion."
 
-#: lib/filters.php:1155
+#: lib/filters.php:1156
 msgid "The number of grams of protein per serving."
 msgstr "Le nombre de grammes de protéines par portion."
 
-#: lib/filters.php:1161
+#: lib/filters.php:1162
 msgid "The number of grams of fiber per serving."
 msgstr "Le nombre de grammes de fibres par portion."
 
-#: lib/filters.php:1167
+#: lib/filters.php:1168
 msgid "The number of grams of carbohydrates per serving."
 msgstr "Le nombre de grammes de glucides par portion."
 
-#: lib/filters.php:1173
+#: lib/filters.php:1174
 msgid "The number of grams of sugar per serving."
 msgstr "Le nombre de grammes de sucre par portion."
 
-#: lib/filters.php:1179
+#: lib/filters.php:1180
 msgid "The number of milligrams of sodium per serving."
 msgstr "Le nombre de milligrammes de sodium par portion."
 
-#: lib/filters.php:1185
+#: lib/filters.php:1186
 msgid "The number of grams of fat per serving."
 msgstr "Le nombre de grammes de matières grasses par portion."
 
-#: lib/filters.php:1191
+#: lib/filters.php:1192
 msgid "The number of grams of trans fat per serving."
 msgstr "Le nombre de grammes de gras trans par portion."
 
-#: lib/filters.php:1197
+#: lib/filters.php:1198
 msgid "The number of grams of saturated fat per serving."
 msgstr "Le nombre de grammes de gras saturés par portion."
 
-#: lib/filters.php:1203
+#: lib/filters.php:1204
 msgid "The number of grams of unsaturated fat per serving."
 msgstr "Le nombre de grammes de gras insaturée par portion."
 
-#: lib/filters.php:1209
+#: lib/filters.php:1210
 msgid "The number of milligrams of cholesterol per serving."
 msgstr "Le nombre de milligrammes de cholestérol par portion."
 
-#: lib/filters.php:1215
+#: lib/filters.php:1216
 msgid "The quantity or servings made by this recipe (example: \"5 servings\", \"Serves 4-6\", \"Yields 10 burgers\", etc.)."
 msgstr "La quantité ou les portions fournie par cette recette (exemple : \"5 portions\", \"10 burgers\", etc.)."
 
-#: lib/filters.php:1221
+#: lib/filters.php:1222
 msgid "A webpage URL for the subject being reviewed."
 msgstr "L'URL de la page Web pour le sujet de l'évaluation."
 
-#: lib/filters.php:1227
+#: lib/filters.php:1228
 msgid "A rating for the subject being reviewed, along with the low / high rating scale (default is 1 to 5)."
 msgstr "Une note pour le sujet de l'évaluation, ainsi que la note min / max de l'échelle (1 à 5 par défaut)."
 
-#: lib/filters.php:1229
+#: lib/filters.php:1230
 msgid "If you are reviewing a claim, the following rating scale is used: 1 = False, 2 = Mostly false, 3 = Half true, 4 = Mostly true, 5 = True."
 msgstr "Si vous évaluez une déclaration, l'échelle suivante est utilisée: 1 = faux, 2 = généralement faux, 3 = à moitié vrai, 4 = essentiellement vrai, 5 = vrai."
 
-#: lib/filters.php:1235
+#: lib/filters.php:1236
 msgid "An alternate name / description for the rating value (example: False, Misleading, Accurate, etc.)."
 msgstr "Un autre nom / description pour la note de l'évaluation (exemple: Faux, Trompeur, Précis, etc.)."
 
-#: lib/filters.php:1241
+#: lib/filters.php:1242
 msgid "A short summary of specific claim(s) reviewed in the Schema ClaimReview."
 msgstr "Un bref résumé des déclarations spécifiques évaluées dans le Schéma ClaimReview."
 
-#: lib/filters.php:1243
+#: lib/filters.php:1244
 msgid "The summary should be less than 75 characters to minimize wrapping on mobile devices."
 msgstr "Le résumé devrait comporter moins de 75 caractères pour minimiser le retour à la ligne sur les appareils mobiles."
 
-#: lib/filters.php:1249
+#: lib/filters.php:1250
 msgid "The date when the claim was made or entered public discourse (for example, when it became popular in social networks)."
 msgstr "Date à laquelle la déclaration a été faite ou est entrée dans le discours public (par exemple, quand elle est devenue populaire dans les réseaux sociaux)."
 
-#: lib/filters.php:1255
+#: lib/filters.php:1256
 msgid "The publisher of the claim - the publisher can be a person or an organization."
 msgstr "L'éditeur de la déclaration - l'éditeur peut être une personne ou une organisation."
 
-#: lib/filters.php:1261
+#: lib/filters.php:1262
 msgid "The name of the person or organization that is making the claim."
 msgstr "Le nom de la personne ou de l'organisation qui fait cette déclaration."
 
-#: lib/filters.php:1267
+#: lib/filters.php:1268
 msgid "The home page of the organization making the claim or another definitive URL that provides information about the author making the claim, such as a person or organization's Wikipedia or Wikidata page."
 msgstr "La page d'accueil de l'organisation à l'origine de la déclaration ou une autre URL définitive fournissant des informations sur l'auteur de la revendication, telle que la page Wikipedia ou la page Wikidata d'une personne ou d'une organisation."
 
-#: lib/filters.php:1273
+#: lib/filters.php:1274
 msgid "An optional webpage URL where this specific claim first appeared."
 msgstr "URL facultative d'une page Web ou cette déclaration spécifique est apparue la première foi."
 
-#: lib/filters.php:1279
+#: lib/filters.php:1280
 msgid "Operating system supported (example: %s, etc.)."
 msgstr "Système d'exploitation pris en charge (exemple: %s, etc.)."
 
-#: lib/filters.php:1301
+#: lib/filters.php:1302
 msgid "The maximum length used for the Schema CreativeWork text property value (the default is %d characters)."
 msgstr "La longueur maximale utilisée pour la valeur de la propriété Schéma CreativeWork text (la valeur par défaut est %d caractères)."
 
-#: lib/filters.php:1307
+#: lib/filters.php:1308
 msgid "Add a text property to the Schema CreativeWork type with the complete textual content of the post / page."
 msgstr "Ajoutez une propriété text au type de Schéma CreativeWork avec le contenu textuel complet de l'article / page."
 
-#: lib/filters.php:1313
+#: lib/filters.php:1314
 msgid "When this option is enabled, and a rating for the webpage content is NOT available, then a generic 5 star rating from the site organization is added to the main Schema type markup."
 msgstr "Lorsque cette option est activée, et qu'une note pour le contenu de la page Web n'est PAS disponible, une note générique 5 étoiles de l'organisation du site est ajoutée au balisage du type de Schéma principale."
 
-#: lib/filters.php:1315
+#: lib/filters.php:1316
 msgid "Rating and review features for the webpage content are available from several supported plugin, including: %s."
 msgstr "Les fonctionnalités de notes et critiques du contenu de la page Web sont disponibles à partir de plusieurs extensions, notamment: %s."
 
-#: lib/filters.php:1321
+#: lib/filters.php:1322
 msgid "Select a default publisher for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc)."
 msgstr "Sélectionnez un éditeur par défaut pour le type de Schéma CreativeWork et/ou ses sous-types (Article, BlogPosting, WebPage, etc)."
 
-#: lib/filters.php:1327
+#: lib/filters.php:1328
 msgid "Select a default service provider, service operator, or service performer (example: \"Netflix\")."
 msgstr "Sélectionnez un fournisseur de services, un opérateur de service ou un prestataire de services par défaut (exemple: \"Netflix\")."
 
-#: lib/filters.php:1333
+#: lib/filters.php:1334
 msgid "Select a default organizer (organization) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (organisation) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1339
+#: lib/filters.php:1340
 msgid "Select a default organizer (person) for the Schema Event type."
 msgstr "Sélectionnez un organisateur (personne) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1345
+#: lib/filters.php:1346
 msgid "Select a default performer (organization) for the Schema Event type."
 msgstr "Sélectionnez un interprète (organisation) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1351
+#: lib/filters.php:1352
 msgid "Select a default performer (person) for the Schema Event type."
 msgstr "Sélectionnez un interprète (personne) par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1357
+#: lib/filters.php:1358
 msgid "Select a default venue (place / location) for the Schema Event type."
 msgstr "Sélectionnez une place par défaut pour le type de Schéma Event."
 
-#: lib/filters.php:1363
+#: lib/filters.php:1364
 msgid "Select a default organization for the Schema JobPosting hiring organization."
 msgstr "Sélectionnez une organisation d'embauche par défaut pour le type de Schéma JobPosting."
 
-#: lib/filters.php:1369
+#: lib/filters.php:1370
 msgid "Select a default place / location for the Schema JobPosting job location."
 msgstr "Sélectionnez un emplacement de travail par défaut pour le type de Schéma JobPosting."
 
@@ -436,14 +436,14 @@ msgctxt "option comment"
 msgid "secs"
 msgstr "secs"
 
-#: lib/gettext-pro.php:11 lib/gettext-pro.php:116 lib/gpl/admin/post.php:131
+#: lib/gettext-pro.php:11 lib/gettext-pro.php:118 lib/gpl/admin/post.php:131
 #: lib/gpl/admin/term.php:76 lib/pro/admin/post.php:152
 #: lib/pro/admin/term.php:89
 msgctxt "option label"
 msgid "Schema Type"
 msgstr "Type de Schéma"
 
-#: lib/gettext-pro.php:12 lib/gettext-pro.php:117 lib/gettext-pro.php:121
+#: lib/gettext-pro.php:12 lib/gettext-pro.php:119 lib/gettext-pro.php:123
 #: lib/gpl/admin/post.php:141 lib/gpl/admin/term.php:85
 #: lib/gpl/admin/user.php:74 lib/pro/admin/post.php:160
 #: lib/pro/admin/term.php:96 lib/pro/admin/user.php:87
@@ -451,7 +451,7 @@ msgctxt "option label"
 msgid "Name / Title"
 msgstr "Nom / titre"
 
-#: lib/gettext-pro.php:13 lib/gettext-pro.php:118 lib/gettext-pro.php:122
+#: lib/gettext-pro.php:13 lib/gettext-pro.php:120 lib/gettext-pro.php:124
 #: lib/gpl/admin/post.php:150 lib/gpl/admin/term.php:93
 #: lib/gpl/admin/user.php:81 lib/pro/admin/post.php:168
 #: lib/pro/admin/term.php:103 lib/pro/admin/user.php:93
@@ -459,14 +459,14 @@ msgctxt "option label"
 msgid "Alternate Name"
 msgstr "Autre nom"
 
-#: lib/gettext-pro.php:14 lib/gettext-pro.php:119 lib/gpl/admin/post.php:159
+#: lib/gettext-pro.php:14 lib/gettext-pro.php:121 lib/gpl/admin/post.php:159
 #: lib/gpl/admin/term.php:102 lib/pro/admin/post.php:176
 #: lib/pro/admin/term.php:111
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr "URLs de type microdonnées"
 
-#: lib/gettext-pro.php:15 lib/gettext-pro.php:120 lib/gpl/admin/post.php:167
+#: lib/gettext-pro.php:15 lib/gettext-pro.php:122 lib/gpl/admin/post.php:167
 #: lib/gpl/admin/term.php:110 lib/pro/admin/post.php:184
 #: lib/pro/admin/term.php:119
 msgctxt "option label"
@@ -610,16 +610,16 @@ msgctxt "option label"
 msgid "How-To Makes"
 msgstr "Le How-To crée"
 
-#: lib/gettext-pro.php:43 lib/gettext-pro.php:72 lib/gpl/admin/post.php:394
-#: lib/gpl/admin/post.php:642 lib/pro/admin/post.php:391
-#: lib/pro/admin/post.php:622
+#: lib/gettext-pro.php:43 lib/gettext-pro.php:74 lib/gpl/admin/post.php:394
+#: lib/gpl/admin/post.php:653 lib/pro/admin/post.php:391
+#: lib/pro/admin/post.php:632
 msgctxt "option label"
 msgid "Preparation Time"
 msgstr "Temps de préparation"
 
-#: lib/gettext-pro.php:44 lib/gettext-pro.php:74 lib/gpl/admin/post.php:405
-#: lib/gpl/admin/post.php:664 lib/pro/admin/post.php:401
-#: lib/pro/admin/post.php:642
+#: lib/gettext-pro.php:44 lib/gettext-pro.php:76 lib/gpl/admin/post.php:405
+#: lib/gpl/admin/post.php:675 lib/pro/admin/post.php:401
+#: lib/pro/admin/post.php:652
 msgctxt "option label"
 msgid "Total Time"
 msgstr "Temps total"
@@ -639,358 +639,370 @@ msgctxt "option label"
 msgid "How-To Steps"
 msgstr "Etapes pour How-To"
 
-#: lib/gettext-pro.php:48 lib/gpl/admin/post.php:444 lib/pro/admin/post.php:440
+#: lib/gettext-pro.php:48 lib/gpl/admin/post.php:436 lib/pro/admin/post.php:431
+msgctxt "option label"
+msgid "How-To Step Name"
+msgstr "Nom d'étape pour How-To"
+
+#: lib/gettext-pro.php:49 lib/gpl/admin/post.php:441 lib/pro/admin/post.php:436
+msgctxt "option label"
+msgid "How-To Direction Text"
+msgstr "Texte de direction pour How-To"
+
+#: lib/gettext-pro.php:50 lib/gpl/admin/post.php:455 lib/pro/admin/post.php:450
 #: lib/submenu/schema-general.php:244
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr "Informations sur l'affichage d'emploi"
 
-#: lib/gettext-pro.php:49 lib/gettext-pro.php:125 lib/gpl/admin/post.php:451
-#: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:446
+#: lib/gettext-pro.php:51 lib/gettext-pro.php:127 lib/gpl/admin/post.php:462
+#: lib/gpl/admin/user.php:105 lib/pro/admin/post.php:456
 #: lib/pro/admin/user.php:116
 msgctxt "option label"
 msgid "Job Title"
 msgstr "Titre du poste"
 
-#: lib/gettext-pro.php:50 lib/gpl/admin/post.php:459 lib/pro/admin/post.php:453
+#: lib/gettext-pro.php:52 lib/gpl/admin/post.php:470 lib/pro/admin/post.php:463
 msgctxt "option label"
 msgid "Hiring Organization"
 msgstr "Organisation d'embauche"
 
-#: lib/gettext-pro.php:51 lib/gpl/admin/post.php:467 lib/pro/admin/post.php:460
+#: lib/gettext-pro.php:53 lib/gpl/admin/post.php:478 lib/pro/admin/post.php:470
 msgctxt "option label"
 msgid "Job Location"
 msgstr "Lieu de travail"
 
-#: lib/gettext-pro.php:52 lib/gpl/admin/post.php:475 lib/pro/admin/post.php:467
+#: lib/gettext-pro.php:54 lib/gpl/admin/post.php:486 lib/pro/admin/post.php:477
 msgctxt "option label"
 msgid "Base Salary"
 msgstr "Salaire de base"
 
-#: lib/gettext-pro.php:53 lib/gpl/admin/post.php:479 lib/pro/admin/post.php:471
+#: lib/gettext-pro.php:55 lib/gpl/admin/post.php:490 lib/pro/admin/post.php:481
 msgctxt "option comment"
 msgid "per"
 msgstr "par"
 
-#: lib/gettext-pro.php:54 lib/gpl/admin/post.php:486 lib/pro/admin/post.php:477
+#: lib/gettext-pro.php:56 lib/gpl/admin/post.php:497 lib/pro/admin/post.php:487
 msgctxt "option label"
 msgid "Employment Type"
 msgstr "Type d'emploi"
 
-#: lib/gettext-pro.php:55 lib/gpl/admin/post.php:494 lib/pro/admin/post.php:484
+#: lib/gettext-pro.php:57 lib/gpl/admin/post.php:505 lib/pro/admin/post.php:494
 msgctxt "option label"
 msgid "Job Posting Expires"
 msgstr "L'offre d'emploi expire"
 
-#: lib/gettext-pro.php:56 lib/gpl/admin/post.php:506 lib/pro/admin/post.php:496
+#: lib/gettext-pro.php:58 lib/gpl/admin/post.php:517 lib/pro/admin/post.php:506
 msgctxt "metabox title"
 msgid "Movie Information"
 msgstr "Informations sur le film"
 
-#: lib/gettext-pro.php:57 lib/gpl/admin/post.php:512 lib/pro/admin/post.php:501
+#: lib/gettext-pro.php:59 lib/gpl/admin/post.php:523 lib/pro/admin/post.php:511
 msgctxt "option label"
 msgid "Cast Names"
 msgstr "Noms de casting"
 
-#: lib/gettext-pro.php:58 lib/gpl/admin/post.php:520 lib/pro/admin/post.php:509
+#: lib/gettext-pro.php:60 lib/gpl/admin/post.php:531 lib/pro/admin/post.php:519
 msgctxt "option label"
 msgid "Director Names"
 msgstr "Noms de réalisateur"
 
-#: lib/gettext-pro.php:59 lib/gpl/admin/post.php:528 lib/pro/admin/post.php:517
+#: lib/gettext-pro.php:61 lib/gpl/admin/post.php:539 lib/pro/admin/post.php:527
 msgctxt "option label"
 msgid "Production Company"
 msgstr "Société de production"
 
-#: lib/gettext-pro.php:60 lib/gpl/admin/post.php:536 lib/pro/admin/post.php:524
+#: lib/gettext-pro.php:62 lib/gpl/admin/post.php:547 lib/pro/admin/post.php:534
 msgctxt "option label"
 msgid "Movie Runtime"
 msgstr "Durée du film"
 
-#: lib/gettext-pro.php:61 lib/gpl/admin/post.php:550 lib/pro/admin/post.php:538
+#: lib/gettext-pro.php:63 lib/gpl/admin/post.php:561 lib/pro/admin/post.php:548
 msgctxt "metabox title"
 msgid "Organization Information"
 msgstr "Informations sur l'organisation"
 
-#: lib/gettext-pro.php:62 lib/gpl/admin/post.php:556 lib/pro/admin/post.php:543
+#: lib/gettext-pro.php:64 lib/gpl/admin/post.php:567 lib/pro/admin/post.php:553
 msgctxt "option label"
 msgid "Organization"
 msgstr "Organisation"
 
-#: lib/gettext-pro.php:63 lib/gettext-pro.php:124 lib/gpl/admin/post.php:568
-#: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:555
+#: lib/gettext-pro.php:65 lib/gettext-pro.php:126 lib/gpl/admin/post.php:579
+#: lib/gpl/admin/user.php:100 lib/pro/admin/post.php:565
 #: lib/pro/admin/user.php:112
 msgctxt "metabox title"
 msgid "Person Information"
 msgstr "Informations sur la personne"
 
-#: lib/gettext-pro.php:64 lib/gpl/admin/post.php:574 lib/pro/admin/post.php:560
+#: lib/gettext-pro.php:66 lib/gpl/admin/post.php:585 lib/pro/admin/post.php:570
 msgctxt "option label"
 msgid "Person"
 msgstr "Personne"
 
-#: lib/gettext-pro.php:65 lib/gpl/admin/post.php:586 lib/pro/admin/post.php:572
+#: lib/gettext-pro.php:67 lib/gpl/admin/post.php:597 lib/pro/admin/post.php:582
 msgctxt "metabox title"
 msgid "QA Page Information"
 msgstr "Informations sur la page QA"
 
-#: lib/gettext-pro.php:66 lib/gpl/admin/post.php:592 lib/pro/admin/post.php:577
+#: lib/gettext-pro.php:68 lib/gpl/admin/post.php:603 lib/pro/admin/post.php:587
 msgctxt "option label"
 msgid "QA Heading"
 msgstr "En-tête QA"
 
-#: lib/gettext-pro.php:67 lib/gpl/admin/post.php:604 lib/pro/admin/post.php:589
+#: lib/gettext-pro.php:69 lib/gpl/admin/post.php:615 lib/pro/admin/post.php:599
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr "Informations sur la recette"
 
-#: lib/gettext-pro.php:68 lib/gpl/admin/post.php:610 lib/pro/admin/post.php:594
+#: lib/gettext-pro.php:70 lib/gpl/admin/post.php:621 lib/pro/admin/post.php:604
 msgctxt "option label"
 msgid "Recipe Cuisine"
 msgstr "Cuisine de la recette"
 
-#: lib/gettext-pro.php:69 lib/gpl/admin/post.php:618 lib/pro/admin/post.php:601
+#: lib/gettext-pro.php:71 lib/gpl/admin/post.php:629 lib/pro/admin/post.php:611
 msgctxt "option label"
 msgid "Recipe Course"
 msgstr "Cours de la recette"
 
-#: lib/gettext-pro.php:70 lib/gpl/admin/post.php:626 lib/pro/admin/post.php:608
+#: lib/gettext-pro.php:72 lib/gpl/admin/post.php:637 lib/pro/admin/post.php:618
 msgctxt "option label"
 msgid "Recipe Makes"
 msgstr "La recette crée"
 
-#: lib/gettext-pro.php:71 lib/gpl/admin/post.php:634 lib/pro/admin/post.php:615
+#: lib/gettext-pro.php:73 lib/gpl/admin/post.php:645 lib/pro/admin/post.php:625
 msgctxt "option label"
 msgid "Cooking Method"
 msgstr "Méthode de cuisson"
 
-#: lib/gettext-pro.php:73 lib/gpl/admin/post.php:653 lib/pro/admin/post.php:632
+#: lib/gettext-pro.php:75 lib/gpl/admin/post.php:664 lib/pro/admin/post.php:642
 msgctxt "option label"
 msgid "Cooking Time"
 msgstr "Temps de cuisson"
 
-#: lib/gettext-pro.php:75 lib/gpl/admin/post.php:675 lib/pro/admin/post.php:652
+#: lib/gettext-pro.php:77 lib/gpl/admin/post.php:686 lib/pro/admin/post.php:662
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr "Ingrédients de recette"
 
-#: lib/gettext-pro.php:76 lib/gpl/admin/post.php:683 lib/pro/admin/post.php:660
+#: lib/gettext-pro.php:78 lib/gpl/admin/post.php:694 lib/pro/admin/post.php:670
 msgctxt "option label"
 msgid "Recipe Instructions"
 msgstr "Instructions de recette"
 
-#: lib/gettext-pro.php:77 lib/gpl/admin/post.php:695 lib/pro/admin/post.php:673
+#: lib/gettext-pro.php:79 lib/gpl/admin/post.php:706 lib/pro/admin/post.php:683
 msgctxt "metabox title"
 msgid "Nutrition Information per Serving"
 msgstr "Informations nutritionnelle par portion"
 
-#: lib/gettext-pro.php:78 lib/gpl/admin/post.php:701 lib/pro/admin/post.php:678
+#: lib/gettext-pro.php:80 lib/gpl/admin/post.php:712 lib/pro/admin/post.php:688
 msgctxt "option label"
 msgid "Serving Size"
 msgstr "Taille de portion"
 
-#: lib/gettext-pro.php:79 lib/gpl/admin/post.php:709 lib/pro/admin/post.php:685
+#: lib/gettext-pro.php:81 lib/gpl/admin/post.php:720 lib/pro/admin/post.php:695
 msgctxt "option label"
 msgid "Calories"
 msgstr "Calories"
 
-#: lib/gettext-pro.php:80 lib/gpl/admin/post.php:712 lib/pro/admin/post.php:688
+#: lib/gettext-pro.php:82 lib/gpl/admin/post.php:723 lib/pro/admin/post.php:698
 msgctxt "option comment"
 msgid "calories"
 msgstr "calories"
 
-#: lib/gettext-pro.php:81 lib/gpl/admin/post.php:718 lib/pro/admin/post.php:693
+#: lib/gettext-pro.php:83 lib/gpl/admin/post.php:729 lib/pro/admin/post.php:703
 msgctxt "option label"
 msgid "Protein"
 msgstr "Protéine"
 
-#: lib/gettext-pro.php:82 lib/gpl/admin/post.php:721 lib/pro/admin/post.php:696
+#: lib/gettext-pro.php:84 lib/gpl/admin/post.php:732 lib/pro/admin/post.php:706
 msgctxt "option comment"
 msgid "grams of protein"
 msgstr "grammes de protéines"
 
-#: lib/gettext-pro.php:83 lib/gpl/admin/post.php:727 lib/pro/admin/post.php:701
+#: lib/gettext-pro.php:85 lib/gpl/admin/post.php:738 lib/pro/admin/post.php:711
 msgctxt "option label"
 msgid "Fiber"
 msgstr "Fibre"
 
-#: lib/gettext-pro.php:84 lib/gpl/admin/post.php:730 lib/pro/admin/post.php:704
+#: lib/gettext-pro.php:86 lib/gpl/admin/post.php:741 lib/pro/admin/post.php:714
 msgctxt "option comment"
 msgid "grams of fiber"
 msgstr "grammes de fibres"
 
-#: lib/gettext-pro.php:85 lib/gpl/admin/post.php:736 lib/pro/admin/post.php:709
+#: lib/gettext-pro.php:87 lib/gpl/admin/post.php:747 lib/pro/admin/post.php:719
 msgctxt "option label"
 msgid "Carbohydrates"
 msgstr "Glucides"
 
-#: lib/gettext-pro.php:86 lib/gpl/admin/post.php:739 lib/pro/admin/post.php:712
+#: lib/gettext-pro.php:88 lib/gpl/admin/post.php:750 lib/pro/admin/post.php:722
 msgctxt "option comment"
 msgid "grams of carbohydrates"
 msgstr "grammes de glucides"
 
-#: lib/gettext-pro.php:87 lib/gpl/admin/post.php:745 lib/pro/admin/post.php:717
+#: lib/gettext-pro.php:89 lib/gpl/admin/post.php:756 lib/pro/admin/post.php:727
 msgctxt "option label"
 msgid "Sugar"
 msgstr "Sucre"
 
-#: lib/gettext-pro.php:88 lib/gpl/admin/post.php:748 lib/pro/admin/post.php:720
+#: lib/gettext-pro.php:90 lib/gpl/admin/post.php:759 lib/pro/admin/post.php:730
 msgctxt "option comment"
 msgid "grams of sugar"
 msgstr "grammes de sucre"
 
-#: lib/gettext-pro.php:89 lib/gpl/admin/post.php:754 lib/pro/admin/post.php:725
+#: lib/gettext-pro.php:91 lib/gpl/admin/post.php:765 lib/pro/admin/post.php:735
 msgctxt "option label"
 msgid "Sodium"
 msgstr "Sodium"
 
-#: lib/gettext-pro.php:90 lib/gpl/admin/post.php:757 lib/pro/admin/post.php:728
+#: lib/gettext-pro.php:92 lib/gpl/admin/post.php:768 lib/pro/admin/post.php:738
 msgctxt "option comment"
 msgid "milligrams of sodium"
 msgstr "milligrammes de sodium"
 
-#: lib/gettext-pro.php:91 lib/gpl/admin/post.php:763 lib/pro/admin/post.php:733
+#: lib/gettext-pro.php:93 lib/gpl/admin/post.php:774 lib/pro/admin/post.php:743
 msgctxt "option label"
 msgid "Fat"
 msgstr "Gras"
 
-#: lib/gettext-pro.php:92 lib/gpl/admin/post.php:766 lib/pro/admin/post.php:736
+#: lib/gettext-pro.php:94 lib/gpl/admin/post.php:777 lib/pro/admin/post.php:746
 msgctxt "option comment"
 msgid "grams of fat"
 msgstr "grammes de matières grasses"
 
-#: lib/gettext-pro.php:93 lib/gpl/admin/post.php:772 lib/pro/admin/post.php:741
+#: lib/gettext-pro.php:95 lib/gpl/admin/post.php:783 lib/pro/admin/post.php:751
 msgctxt "option label"
 msgid "Saturated Fat"
 msgstr "Gras saturée"
 
-#: lib/gettext-pro.php:94 lib/gpl/admin/post.php:775 lib/pro/admin/post.php:744
+#: lib/gettext-pro.php:96 lib/gpl/admin/post.php:786 lib/pro/admin/post.php:754
 msgctxt "option comment"
 msgid "grams of saturated fat"
 msgstr "grammes de gras saturés"
 
-#: lib/gettext-pro.php:95 lib/gpl/admin/post.php:781 lib/pro/admin/post.php:749
+#: lib/gettext-pro.php:97 lib/gpl/admin/post.php:792 lib/pro/admin/post.php:759
 msgctxt "option label"
 msgid "Unsaturated Fat"
 msgstr "Grais insaturées"
 
-#: lib/gettext-pro.php:96 lib/gpl/admin/post.php:784 lib/pro/admin/post.php:752
+#: lib/gettext-pro.php:98 lib/gpl/admin/post.php:795 lib/pro/admin/post.php:762
 msgctxt "option comment"
 msgid "grams of unsaturated fat"
 msgstr "grammes de gras insaturés"
 
-#: lib/gettext-pro.php:97 lib/gpl/admin/post.php:790 lib/pro/admin/post.php:757
+#: lib/gettext-pro.php:99 lib/gpl/admin/post.php:801 lib/pro/admin/post.php:767
 msgctxt "option label"
 msgid "Trans Fat"
 msgstr "Gras trans"
 
-#: lib/gettext-pro.php:98 lib/gpl/admin/post.php:793 lib/pro/admin/post.php:760
+#: lib/gettext-pro.php:100 lib/gpl/admin/post.php:804
+#: lib/pro/admin/post.php:770
 msgctxt "option comment"
 msgid "grams of trans fat"
 msgstr "grammes de gras trans"
 
-#: lib/gettext-pro.php:99 lib/gpl/admin/post.php:799 lib/pro/admin/post.php:765
+#: lib/gettext-pro.php:101 lib/gpl/admin/post.php:810
+#: lib/pro/admin/post.php:775
 msgctxt "option label"
 msgid "Cholesterol"
 msgstr "Cholestérol"
 
-#: lib/gettext-pro.php:100 lib/gpl/admin/post.php:802
-#: lib/pro/admin/post.php:768
+#: lib/gettext-pro.php:102 lib/gpl/admin/post.php:813
+#: lib/pro/admin/post.php:778
 msgctxt "option comment"
 msgid "milligrams of cholesterol"
 msgstr "milligrammes de cholestérol"
 
-#: lib/gettext-pro.php:101 lib/gpl/admin/post.php:812
-#: lib/pro/admin/post.php:778
+#: lib/gettext-pro.php:103 lib/gpl/admin/post.php:823
+#: lib/pro/admin/post.php:788
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr "Informations sur l'évaluation"
 
-#: lib/gettext-pro.php:102 lib/gpl/admin/post.php:818
-#: lib/pro/admin/post.php:783
+#: lib/gettext-pro.php:104 lib/gpl/admin/post.php:829
+#: lib/pro/admin/post.php:793
 msgctxt "option label"
 msgid "Review Rating"
 msgstr "Note de l'évaluation"
 
-#: lib/gettext-pro.php:103 lib/gpl/admin/post.php:821
-#: lib/pro/admin/post.php:786
+#: lib/gettext-pro.php:105 lib/gpl/admin/post.php:832
+#: lib/pro/admin/post.php:796
 msgctxt "option comment"
 msgid "from"
 msgstr "de"
 
-#: lib/gettext-pro.php:104 lib/gpl/admin/post.php:823
-#: lib/pro/admin/post.php:788
+#: lib/gettext-pro.php:106 lib/gpl/admin/post.php:834
+#: lib/pro/admin/post.php:798
 msgctxt "option comment"
 msgid "to"
 msgstr "à"
 
-#: lib/gettext-pro.php:105 lib/gpl/admin/post.php:830
-#: lib/pro/admin/post.php:794
+#: lib/gettext-pro.php:107 lib/gpl/admin/post.php:841
+#: lib/pro/admin/post.php:804
 msgctxt "option label"
 msgid "Review Rating Name"
 msgstr "Un nom pour la note"
 
-#: lib/gettext-pro.php:106 lib/gpl/admin/post.php:838
-#: lib/pro/admin/post.php:801
+#: lib/gettext-pro.php:108 lib/gpl/admin/post.php:849
+#: lib/pro/admin/post.php:811
 msgctxt "option label"
 msgid "Review Subject URL"
 msgstr "URL du sujet de l'évaluation"
 
-#: lib/gettext-pro.php:107 lib/gpl/admin/post.php:850
-#: lib/pro/admin/post.php:813
+#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:861
+#: lib/pro/admin/post.php:823
 msgctxt "metabox title"
 msgid "Claim Review Information"
 msgstr "Informations sur l'évaluation de déclaration"
 
-#: lib/gettext-pro.php:108 lib/gpl/admin/post.php:856
-#: lib/pro/admin/post.php:818
+#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:867
+#: lib/pro/admin/post.php:828
 msgctxt "option label"
 msgid "Claim Short Summary"
 msgstr "Bref résumé de la déclaration"
 
-#: lib/gettext-pro.php:109 lib/gpl/admin/post.php:864
-#: lib/pro/admin/post.php:825
+#: lib/gettext-pro.php:111 lib/gpl/admin/post.php:875
+#: lib/pro/admin/post.php:835
 msgctxt "option label"
 msgid "Claim Made on Date"
 msgstr "Déclaration faite à la date"
 
-#: lib/gettext-pro.php:110 lib/gpl/admin/post.php:872
-#: lib/pro/admin/post.php:832
+#: lib/gettext-pro.php:112 lib/gpl/admin/post.php:883
+#: lib/pro/admin/post.php:842
 msgctxt "option label"
 msgid "Claim Author Type"
 msgstr "Type d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:111 lib/gpl/admin/post.php:880
-#: lib/pro/admin/post.php:839
+#: lib/gettext-pro.php:113 lib/gpl/admin/post.php:891
+#: lib/pro/admin/post.php:849
 msgctxt "option label"
 msgid "Claim Author Name"
 msgstr "Nom d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:112 lib/gpl/admin/post.php:888
-#: lib/pro/admin/post.php:846
+#: lib/gettext-pro.php:114 lib/gpl/admin/post.php:899
+#: lib/pro/admin/post.php:856
 msgctxt "option label"
 msgid "Claim Author URL"
 msgstr "URL d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:113 lib/gpl/admin/post.php:896
-#: lib/pro/admin/post.php:853
+#: lib/gettext-pro.php:115 lib/gpl/admin/post.php:907
+#: lib/pro/admin/post.php:863
 msgctxt "option label"
 msgid "First Appearance URL"
 msgstr "URL de la première apparence"
 
-#: lib/gettext-pro.php:114 lib/gpl/admin/post.php:908
-#: lib/pro/admin/post.php:865
+#: lib/gettext-pro.php:116 lib/gpl/admin/post.php:919
+#: lib/pro/admin/post.php:875
 msgctxt "metabox title"
 msgid "Software Application Information"
 msgstr "Informations sur l'application logicielle"
 
-#: lib/gettext-pro.php:115 lib/gpl/admin/post.php:914
-#: lib/pro/admin/post.php:870
+#: lib/gettext-pro.php:117 lib/gpl/admin/post.php:925
+#: lib/pro/admin/post.php:880
 msgctxt "option label"
 msgid "Operating System"
 msgstr "Système d'exploitation"
 
-#: lib/gettext-pro.php:123 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
+#: lib/gettext-pro.php:125 lib/gpl/admin/user.php:89 lib/pro/admin/user.php:100
 msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr "Autres URLs de page de profil"
