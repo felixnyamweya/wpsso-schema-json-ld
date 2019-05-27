@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.1-dev.4 (2019/05/22)**
+**Version 1.45.1-dev.5 (2019/05/27)**
 
 * *New Features*
 	* None.
@@ -749,9 +749,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.1-dev.4 =
+= 1.45.1-dev.5 =
 
-(2019/05/22) Added a "How-To Direction Text" option for How-To Steps. Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
+(2019/05/27) Added a "How-To Direction Text" option for How-To Steps. Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
 = 1.45.0 =
 
