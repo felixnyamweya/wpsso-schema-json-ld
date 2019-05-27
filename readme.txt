@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.1-rc.1 (2019/05/27)**
+**Version 1.45.1 (2019/05/27)**
 
 * *New Features*
 	* None.
@@ -749,11 +749,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.1-rc.1 =
+= 1.45.1 =
 
 (2019/05/27) Added a "How-To Direction Text" option for How-To Steps. Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
-
-= 1.45.0 =
-
-(2019/05/20) Fixed the HowTo selection and its options display in the Document SSO metabox. Update for code changes in WPSSO Core v4.31.0.
 
