@@ -695,7 +695,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.2-dev.6 (2019/05/29)**
+**Version 1.45.2-b.1 (2019/05/30)**
 
 * *New Features*
 	* None.
@@ -760,9 +760,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.2-dev.6 =
+= 1.45.2-b.1 =
 
-(2019/05/29) Added support for Schema Place mid-day closure.
+(2019/05/30) Added support for Schema Place mid-day closure.
 
 = 1.45.1 =
 
