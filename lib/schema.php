@@ -272,7 +272,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * Begin timer.
 			 */
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->mark( 'adding posts data' );	// begin timer
+				$wpsso->debug->mark( 'adding posts data' );	// Begin timer.
 			}
 
 			/**
@@ -293,10 +293,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: page_posts_mods array is empty' );
-					$wpsso->debug->mark( 'adding posts data' );	// end timer
+					$wpsso->debug->mark( 'adding posts data' );	// End timer.
 				}
 
-				unset( $wpsso_paged );	// unset the forced page number
+				unset( $wpsso_paged );	// Unset the forced page number.
 
 				return $posts_count;
 			}
@@ -310,7 +310,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 */
 			foreach ( $prop_name_type_ids as $prop_name => $prop_type_ids ) {
 
-				if ( empty( $prop_type_ids ) ) {		// false or empty array - allow any schema type
+				if ( empty( $prop_type_ids ) ) {		// False or empty array - allow any schema type.
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'any schema type is allowed for prop_name ' . $prop_name );
@@ -318,7 +318,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 					$prop_type_ids = array( 'any' );
 
-				} elseif ( is_string( $prop_type_ids ) ) {	// convert value to an array
+				} elseif ( is_string( $prop_type_ids ) ) {	// Convert value to an array.
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'only schema type ' . $prop_type_ids . ' allowed for prop_name ' . $prop_name );
@@ -383,7 +383,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 							$add_post_data = true;
 
-							break;	// one positive match is enough
+							break;	// One positive match is enough.
 
 						} elseif ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'post id ' . $post_mod[ 'id' ] . ' schema type ' . $mod_type_id . ' not a child of ' . $family_member_id );
@@ -450,7 +450,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			 * End timer.
 			 */
 			if ( $wpsso->debug->enabled ) {
-				$wpsso->debug->mark( 'adding posts data' );	// end timer
+				$wpsso->debug->mark( 'adding posts data' );	// End timer.
 			}
 
 			return $posts_count;
