@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.1
 WC Tested Up To: 3.6
-Stable Tag: 1.45.1
+Stable Tag: 1.45.2
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -747,24 +747,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* WP Recipe Maker
 		* WP Ultimate Recipe
 
-**Version 1.43.0 (2019/04/27)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a new "Add 5 Star Rating If No Rating" option in the SSO &gt; Schema Markup settings page.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
 = 1.45.2 =
 
 (2019/05/31) Fixed the Schema QAPage markup to include Schema Question type posts in the 'mainEntity' property. Added support for Schema Place mid-day closure.
-
-= 1.45.1 =
-
-(2019/05/27) Added a "How-To Direction Text" option for How-To Steps. Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
 
