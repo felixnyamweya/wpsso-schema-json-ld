@@ -695,14 +695,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.45.2-b.1 (2019/05/30)**
+**Version 1.45.2-rc.1 (2019/05/31)**
 
 * *New Features*
 	* None.
 * *Improvements*
 	* Added support for Schema Place mid-day closure.
 * *Bugfixes*
-	* None.
+	* Fixed the Schema QAPage markup to include Schema Question type posts in the 'mainEntity' property.
 * *Developer Notes*
 	* None.
 
@@ -760,9 +760,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.45.2-b.1 =
+= 1.45.2-rc.1 =
 
-(2019/05/30) Added support for Schema Place mid-day closure.
+(2019/05/31) Fixed the Schema QAPage markup to include Schema Question type posts in the 'mainEntity' property. Added support for Schema Place mid-day closure.
 
 = 1.45.1 =
 
