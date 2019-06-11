@@ -163,7 +163,7 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 
 * Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
-* Includes additional customizable option values in the Document SSO metabox, displayed or hidden based on the Schema type selected:
+* Includes additional customizable option values in the Document SSO metabox, shown based on the selected Schema type:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
 		* Schema Type
