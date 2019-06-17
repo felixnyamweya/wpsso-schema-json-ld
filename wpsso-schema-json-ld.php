@@ -14,7 +14,7 @@
  * Requires At Least: 3.8
  * Tested Up To: 5.2.1
  * WC Tested Up To: 3.6
- * Version: 1.45.2
+ * Version: 2.0.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -162,7 +162,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$avail[ 'p_ext' ][ 'json' ] = true;	// Signal that this extension / add-on is available.
 
-			foreach ( array( 'gpl', 'pro' ) as $lib ) {
+			foreach ( array( 'pro', 'std' ) as $lib ) {
 
 				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
 

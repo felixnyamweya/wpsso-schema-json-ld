@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '1.45.2',	// Plugin version.
+					'version'     => '2.0.0-dev.1',	// Plugin version.
 					'opt_version' => '24',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.31.2',
+						'min_version' => '5.0.0-dev.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -38,17 +38,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'gpl' => array(
-							'admin' => array(
-								'post' => 'Extend Post Settings',
-								'term' => 'Extend Term Settings',
-								'user' => 'Extend User Settings',
-							),
-							'head' => array(
-								'creativework'                     => '(code) Schema Type WebPage (webpage)',
-								'creativework#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
-							),
-						),
 						'pro' => array(
 							'admin' => array(
 								'post' => 'Extend Post Settings',
@@ -92,6 +81,17 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'shortcode' => array(
 							'schema' => 'Schema Shortcode',
+						),
+						'std' => array(
+							'admin' => array(
+								'post' => 'Extend Post Settings',
+								'term' => 'Extend Term Settings',
+								'user' => 'Extend User Settings',
+							),
+							'head' => array(
+								'creativework'                     => '(code) Schema Type WebPage (webpage)',
+								'creativework#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
+							),
 						),
 						'submenu' => array(
 							'schema-general'   => 'Schema Markup',

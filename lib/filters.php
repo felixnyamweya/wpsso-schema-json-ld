@@ -50,8 +50,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				) );
 
 				$this->p->util->add_plugin_filters( $this, array(
-					'status_gpl_features' => 4,
 					'status_pro_features' => 4,
+					'status_std_features' => 4,
 				), 10, 'wpssojson' );	// Hook to wpssojson filters.
 			}
 		}
@@ -1377,11 +1377,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		/**
-		 * Hooked to 'wpssojson_status_gpl_features'.
+		 * Hooked to 'wpssojson_status_pro_features'.
 		 */
-		public function filter_status_gpl_features( $features, $ext, $info, $pkg ) {
+		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
 
-			foreach ( $info[ 'lib' ][ 'gpl' ] as $sub => $libs ) {
+			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
+		}
+
+		/**
+		 * Hooked to 'wpssojson_status_std_features'.
+		 */
+		public function filter_status_std_features( $features, $ext, $info, $pkg ) {
+
+			foreach ( $info[ 'lib' ][ 'std' ] as $sub => $libs ) {
 
 				if ( $sub === 'admin' ) { // Skip status for admin menus and tabs.
 					continue;
@@ -1395,19 +1403,11 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						continue;
 					}
 
-					$classname = SucomUtil::sanitize_classname( 'wpssojsongpl' . $sub . $id, $allow_underscore = false );
+					$classname = SucomUtil::sanitize_classname( 'wpssojsonstd' . $sub . $id, $allow_underscore = false );
 
 					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}
-			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
-		}
-
-		/**
-		 * Hooked to 'wpssojson_status_pro_features'.
-		 */
-		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
-
 			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 
