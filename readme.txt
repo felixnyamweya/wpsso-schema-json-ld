@@ -113,7 +113,7 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 			* Default Hiring Organization
 			* Default Job Location
 
-<h3>WPSSO JSON Additional Features (Pro version)</h3>
+<h3>WPSSO JSON Pro / Premium Features</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
@@ -695,6 +695,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-dev.1 (2019/06/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v5.0.0.
+
 **Version 1.45.2 (2019/05/31)**
 
 * *New Features*
@@ -748,6 +759,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* WP Ultimate Recipe
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
 
 = 1.45.2 =
 
