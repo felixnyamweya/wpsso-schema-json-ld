@@ -219,7 +219,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Family Friendly', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_family_friendly',
-					'content'  => $form->get_no_select_none( 'schema_family_friendly', $this->p->cf[ 'form' ][ 'yes_no' ], 'yes_no', '', $is_assoc = true ),
+					'content'  => $form->get_no_select_none( 'schema_family_friendly',
+						$this->p->cf[ 'form' ][ 'yes_no' ], 'yes_no', '', $is_assoc = true ),
 				),
 				'schema_copyright_year' => array(
 					'no_auto_draft' => true,
@@ -236,7 +237,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_pub_org_id',
-					'content'  => $form->get_no_select( 'schema_pub_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_pub_org_id',
+						$org_site_names, 'long_name' ) . $org_req_msg,
 				),
 				'schema_prov_org_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'creative_work' ],
@@ -244,7 +246,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Service Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_prov_org_id',
-					'content'  => $form->get_no_select( 'schema_prov_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_prov_org_id',
+						$org_site_names, 'long_name' ) . $org_req_msg,
 				),
 
 				/**

@@ -357,7 +357,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_text'                        => '',						// Full Text.
 				'schema_keywords'                    => '',						// Keywords.
 				'schema_lang'                        => $def_lang,					// Language.
-				'schema_family_friendly'             => 'none',						// Family Friendly.
+				'schema_family_friendly'             => $opts[ 'schema_def_family_friendly' ],		// Family Friendly.
 				'schema_copyright_year'              => $def_copyright_year,				// Copyright Year.
 				'schema_pub_org_id'                  => $opts[ 'schema_def_pub_org_id' ],		// Publisher.
 				'schema_prov_org_id'                 => $opts[ 'schema_def_prov_org_id' ],		// Service Provider.
@@ -889,7 +889,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_family_friendly':	// Family Friendly
 
-					$text = __( 'The content is family friendly.', 'wpsso-schema-json-ld' );
+					$text = __( 'The content of this Schema CreativeWork is family friendly.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
@@ -1314,6 +1314,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					$text .= __( 'When this option is enabled, and a rating for the webpage content is NOT available, then a generic 5 star rating from the site organization is added to the main Schema type markup.', 'wpsso-schema-json-ld' ) . ' ';
 
 					$text .= sprintf( __( 'Rating and review features for the webpage content are available from several supported plugin, including: %s.', 'wpsso-schema-json-ld' ), '<a href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>, <a href="https://wordpress.org/plugins/wpsso-ratings-and-reviews/">WPSSO Ratings and Reviews</a>, <a href="https://wordpress.org/plugins/yotpo-social-reviews-for-woocommerce/">Yotpo Social Reviews for WooCommerce</a>' ) . ' ';
+
+				 	break;
+
+				case 'tooltip-schema_def_family_friendly':	// Default Family Friendly.
+
+					$text = __( 'Select a default family friendly value for the Schema CreativeWork type and/or its sub-types (Article, BlogPosting, WebPage, etc).', 'wpsso-schema-json-ld' );
 
 				 	break;
 

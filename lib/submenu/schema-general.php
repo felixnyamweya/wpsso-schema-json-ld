@@ -185,6 +185,12 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					'header'   => 'h5',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
+				'schema_def_family_friendly' => array(
+					'label'    => _x( 'Default Family Friendly', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'schema_def_family_friendly',
+					'content'  => $this->form->get_select_none( 'schema_def_family_friendly',
+						$this->p->cf[ 'form' ][ 'yes_no' ], 'yes_no', '', $is_assoc = true ),
+				),
 				'schema_def_pub_org_id' => array(
 					'label'    => _x( 'Default Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_pub_org_id',

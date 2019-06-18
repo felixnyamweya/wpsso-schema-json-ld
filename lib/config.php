@@ -109,6 +109,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					/**
 					 * Custom Meta Defaults
 					 */
+					'schema_def_family_friendly'             => 'none',	// Default Family Friendly.
 					'schema_def_pub_org_id'                  => 'site',	// Default Publisher.
 					'schema_def_prov_org_id'                 => 'none',	// Default Service Provider.
 					'schema_def_event_organizer_org_id'      => 'none',	// Default Event Organizer Org.
