@@ -203,9 +203,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$json_data[ $prop_name ] = (array) apply_filters( $filter_name, $json_data[ $prop_name ], $mod, $mt_og, $page_type_id, $is_main );
 
 				if ( empty( $json_data[ $prop_name ] ) ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'json data prop_name ' . $prop_name . ' is empty' );
 					}
+
 					unset( $json_data[ $prop_name ] );
 				}
 			}
@@ -776,9 +778,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( empty( $opts ) || ! is_array( $opts ) ) {
+
 				if ( $wpsso->debug->enabled ) {
 					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );
 				}
+
 				return 0;	// Return count of videos added.
 			}
 
@@ -841,6 +845,10 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			$wpsso =& Wpsso::get_instance();
 
+			if ( $wpsso->debug->enabled ) {
+				$wpsso->debug->mark();
+			}
+
 			$page_posts_mods = array();
 
 			if ( $is_main ) {
@@ -848,7 +856,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				if ( $mod[ 'is_home_index' ] || ! is_object( $mod[ 'obj' ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
-						$wpsso->debug->log( 'home is index and object is false (archive = true)' );
+						$wpsso->debug->log( 'home is index or object is false (archive = true)' );
 					}
 
 					$is_archive = true;
@@ -896,15 +904,21 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				}
 
 				/**
-				 * Setup the query for a blog posts page in the back-end.
+				 * Setup the query for archive pages in the back-end.
 				 */
-				if ( is_admin() && $mod[ 'is_home_index' ] ) {
+				if ( ! SucomUtilWP::doing_frontend() ) {
+
+					if ( $mod[ 'is_post_type_archive' ] ) {
+						$posts_args[ 'post_type' ] = $mod[ 'post_type' ];
+					}
 
 					global $wp_query;
 
 					$wp_query = new WP_Query( $posts_args );
-
-					$wp_query->is_home = true;
+				
+					if ( $mod[ 'is_home_index' ] ) {
+						$wp_query->is_home = true;
+					}
 				}
 
 				$have_num = 0;
