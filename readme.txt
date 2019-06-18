@@ -101,6 +101,7 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 		* User for Person Social Profile
 	* Custom Meta Defaults
 		* Creative Work Information
+			* Default Family Friendly
 			* Default Publisher
 			* Default Service Provider
 		* Event Information
@@ -695,12 +696,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.2 (2019/06/17)**
+**Version 2.0.0-dev.2 (2019/06/18)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -762,7 +763,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.0.0-dev.2 =
 
-(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
+(2019/06/18) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
 = 1.45.2 =
 
