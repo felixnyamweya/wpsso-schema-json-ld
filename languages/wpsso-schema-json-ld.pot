@@ -444,15 +444,15 @@ msgstr ""
 
 #: lib/filters.php:1314
 msgid ""
-"When this option is enabled, and a rating for the webpage content is NOT "
-"available, then a generic 5 star rating from the site organization is added "
-"to the main Schema type markup."
+"When a rating value for the webpage content is not available, a 5 star "
+"rating from the site organization can be added to the main Schema type "
+"markup."
 msgstr ""
 
 #: lib/filters.php:1316
 msgid ""
-"Rating and review features for the webpage content are available from "
-"several supported plugin, including: %s."
+"Rating and review features for the webpage are available from several "
+"supported plugins, including %s."
 msgstr ""
 
 #: lib/filters.php:1322
