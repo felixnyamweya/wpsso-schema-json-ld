@@ -688,7 +688,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-schema-json-ld/)
 
-<h3>Development Updates for Pro Version</h3>
+<h3>Development Updates for Pro / Premium Version</h3>
 
 <p>Development, alpha, beta, and release candidate updates are available to Pro version customers.</p>
 
@@ -696,7 +696,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.2 (2019/06/18)**
+**Version 2.0.0-dev.3 (2019/06/20)**
 
 * *New Features*
 	* None.
@@ -761,9 +761,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-dev.2 =
+= 2.0.0-dev.3 =
 
-(2019/06/18) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
+(2019/06/20) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
 = 1.45.2 =
 
