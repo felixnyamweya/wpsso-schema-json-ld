@@ -28,31 +28,38 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 
 		public function filter_post_edit_rows( $table_rows, $form, $head, $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
-			}
-
 			$dots           = '...';
 			$read_cache     = true;
 			$no_hashtags    = false;
 			$maybe_hashtags = true;
 			$do_encode      = true;
 
+			/**
+			 * Select option arrays.
+			 */
 			$schema_types = $this->p->schema->get_schema_types_select( null, $add_none = true );
 			$currencies   = SucomUtil::get_currency_abbrev();
 
+			/**
+			 * Maximum option lengths.
+			 */
 			$og_title_max_len = $this->p->options[ 'og_title_max_len' ];
 			$headline_max_len = $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
 			$text_max_len     = $this->p->options[ 'schema_text_max_len' ];
 
+			/**
+			 * Default option values.
+			 */
 			$def_copyright_year   = $mod[ 'is_post' ] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
-			$def_schema_type      = $this->p->schema->get_mod_schema_type( $mod, $get_schema_id = true, $use_mod_opts = false );
 			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_text      = $this->p->page->get_text( $text_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, $md_key = 'none' );
 			$def_schema_keywords  = $this->p->page->get_keywords( $mod, $read_cache, $md_key = 'none' );
 
+			/**
+			 * Translated text strings.
+			 */
 			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
 				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod[ 'post_type' ] ) );
 
@@ -100,10 +107,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				'software_app'   => $this->p->schema->get_children_css_class( 'software.application', 'hide_schema_type' ),
 			);
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// Timer end.
-			}
-
 			/**
 			 * Save and remove specific rows so we can append a whole new set with a different order.
 			 */
@@ -127,12 +130,10 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				 */
 				'schema_type' => array(
 					'th_class' => 'medium',
-					'td_class' => 'blank',
 					'label'    => _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_type',
 					'content'  => $form->get_select( 'schema_type', $schema_types,
-						'schema_type', '', true, $def_schema_type, $def_schema_type, 'on_change_unhide_rows' ) . ' ' .
-							$this->p->msgs->get( 'pro-select-msg', array( 'lca' => 'wpssojson' ) ),
+						'schema_type', '', true, false, true, 'on_change_unhide_rows' ),
 				),
 				'schema_title' => array(
 					'no_auto_draft' => true,

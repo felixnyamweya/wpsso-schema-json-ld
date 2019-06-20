@@ -28,24 +28,22 @@ if ( ! class_exists( 'WpssoJsonStdAdminUser' ) ) {
 
 		public function filter_user_edit_rows( $table_rows, $form, $head, $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// Timer begin.
-			}
-
 			$dots           = '...';
 			$read_cache     = true;
 			$no_hashtags    = false;
 			$maybe_hashtags = true;
 			$do_encode      = true;
 
+			/**
+			 * Maximum option lengths.
+			 */
 			$og_title_max_len = $this->p->options['og_title_max_len'];
 
+			/**
+			 * Default option values.
+			 */
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'setup post form variables' );	// Timer end.
-			}
 
 			/**
 			 * Save and remove specific rows so we can append a whole new set with a different order.
