@@ -445,7 +445,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 							'input_type'  => 'textarea',
 							'input_class' => 'wide howto_step_text',
 						),
-					), '', 'schema_howto_steps', $start_num = 0, $howto_steps_max, $show_first = 5 ),
+					), '', 'schema_howto_steps', $start_num = 0, $max_input = 5, $show_first = 5 ),
 				),
 
 				/**

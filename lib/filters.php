@@ -60,6 +60,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * Remove AMP json data to prevent duplicate Schema JSON-LD markup.
 		 */
 		public function filter_amp_post_template_metadata( $metadata, $post_obj ) {
+
 			return array();
 		}
 
