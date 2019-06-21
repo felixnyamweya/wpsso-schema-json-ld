@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '2.0.0-dev.3',	// Plugin version.
+					'version'     => '2.0.0-dev.4',	// Plugin version.
 					'opt_version' => '25',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '5.0.0-dev.3',
+						'min_version' => '5.0.0-dev.4',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -45,12 +45,9 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'user' => 'Extend User Settings',
 							),
 							'head' => array(
-								'article'             => '(code) Schema Type Article (schema_type:article)',
-								'blog'                => '(code) Schema Type Blog (schema_type:blog)',
 								'claimreview'         => '(code) Schema Type Claim Review (schema_type:review.claim)',
 								'collectionpage'      => '(code) Schema Type Collection Page (schema_type:webpage.collection)',
 								'course'              => '(code) Schema Type Course (schema_type:course)',
-								'creativework'        => '(code) Schema Type Creative Work (schema_type:creative.work)',
 								'event'               => '(code) Schema Type Event (schema_type:event)',
 								'faqpage'             => '(code) Schema Type FAQPage (schema_type:webpage.faq)',
 								'foodestablishment'   => '(code) Schema Type Food Establishment (schema_type:food.establishment)',
@@ -75,7 +72,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'prop' => array(
 								'aggregaterating'  => '(plus) Property aggregateRating',
-								'haspart_mentions' => '(plus) Property hasPart and mentions for Schema JSON-LD in Content',
+								'haspart_mentions' => '(plus) Property hasPart and mentions',
 								'review'           => '(plus) Property reviews',
 							),
 						),
@@ -87,10 +84,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'post' => 'Extend Post Settings',
 								'term' => 'Extend Term Settings',
 								'user' => 'Extend User Settings',
-							),
-							'head' => array(
-								'creativework'                     => '(code) Schema Type WebPage (webpage)',
-								'creativework#blogposting:no_load' => '(code) Schema Type Blog Posting (blog.posting)',
 							),
 						),
 						'submenu' => array(

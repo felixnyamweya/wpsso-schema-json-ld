@@ -26,10 +26,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 9000, 2 );
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'add_schema_head_attributes'       => '__return_false',
-				'add_schema_meta_array'            => '__return_false',
-				'add_schema_noscript_array'        => '__return_false',
-				'json_data_https_schema_org_thing' => 5,
+				'add_schema_head_attributes'              => '__return_false',
+				'add_schema_meta_array'                   => '__return_false',
+				'add_schema_noscript_array'               => '__return_false',
+				'json_data_https_schema_org_blog'         => 5,
+				'json_data_https_schema_org_creativework' => 5,
+				'json_data_https_schema_org_thing'        => 5,
 			), -10000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
@@ -64,6 +66,227 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			return array();
 		}
 
+		public function filter_json_data_https_schema_org_blog( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$ppp = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_BLOG_MAX', false );
+
+			$prop_name_type_ids = array( 'blogPost' => 'blog.posting' );	// Allow only posts of schema blog.posting type to be added.
+
+			WpssoJsonSchema::add_posts_data( $json_data, $mod, $mt_og, $page_type_id, $is_main, $ppp, $prop_name_type_ids );
+
+			return $json_data;
+		}
+
+		public function filter_json_data_https_schema_org_creativework( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			$ret = array();
+
+			/**
+			 * The Schema Article type must use a minimum image
+			 * width of 696px and a publisher logo of 600x60px for
+			 * Google.
+			 */
+			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'article' ) ) {
+
+				$org_logo_key = 'org_banner_url';
+				$size_name    = $this->p->lca . '-schema-article';
+
+			} else {
+
+				$org_logo_key = 'org_logo_url';
+				$size_name    = $this->p->lca . '-schema';
+			}
+
+			/**
+			 * Property:
+			 *      text
+			 */
+			if ( ! empty( $this->p->options[ 'schema_add_text_prop' ] ) ) {
+
+				$text_max_len = $this->p->options[ 'schema_text_max_len' ];
+
+				$ret[ 'text' ] = $this->p->page->get_text( $text_max_len, '...', $mod );
+
+				if ( empty( $ret[ 'text' ] ) ) { // Just in case.
+					unset( $ret[ 'text' ] );
+				}
+			}
+
+			/**
+			 * Property:
+			 * 	headline
+			 */
+			if ( ! empty( $mod[ 'obj' ] ) )	{ // Just in case.
+				$ret[ 'headline' ] = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_headline' );	// Returns null if index key is not found.
+			}
+
+			if ( ! empty( $ret[ 'headline' ] ) ) {	// Must be a non-empty string.
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'found custom meta headline = ' . $ret[ 'headline' ] );
+				}
+
+			} else {
+
+				$headline_max_len= $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
+
+				$ret[ 'headline' ] = $this->p->page->get_title( $headline_max_len, '...', $mod );
+			}
+
+			/**
+			 * Property:
+			 *      keywords
+			 */
+			$ret[ 'keywords' ] = $this->p->page->get_keywords( $mod, $read_cache = true, $md_key = 'schema_keywords' );
+
+			if ( empty( $ret[ 'keywords' ] ) ) { // Just in case.
+				unset( $ret[ 'keywords' ] );
+			}
+
+			/**
+			 * Property:
+			 *	inLanguage
+			 *      copyrightYear
+			 */
+			if ( ! empty( $mod[ 'obj' ] ) ) {
+
+				/**
+				 * The meta data key is unique, but the Schema property name may be repeated
+				 * to add more than one value to a property array.
+				 */
+				foreach ( array(
+					'schema_lang'            => 'inLanguage',
+					'schema_family_friendly' => 'isFamilyFriendly',
+					'schema_copyright_year'  => 'copyrightYear',
+				) as $md_key => $prop_name ) {
+
+					$md_val = $mod[ 'obj' ]->get_options( $mod[ 'id' ], $md_key, $filter_opts = true, $def_fallback = true );
+
+					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
+						continue;
+					}
+
+					switch ( $prop_name ) {
+
+						case 'isFamilyFriendly':	// Must be a true or false boolean value.
+	
+							$md_val = empty( $md_val ) ? false : true;
+
+							break;
+					}
+
+					$ret[ $prop_name ] = $md_val;
+				}
+			}
+
+			/**
+			 * Property:
+			 *      dateCreated
+			 *      datePublished
+			 *      dateModified
+			 */
+			WpssoSchema::add_data_itemprop_from_assoc( $ret, $mt_og, array(
+				'dateCreated'   => 'article:published_time',	// In WordPress, created and published times are the same.
+				'datePublished' => 'article:published_time',
+				'dateModified'  => 'article:modified_time',
+			) );
+
+			/**
+			 * Property:
+			 *      provider
+			 *      publisher
+			 */
+			if ( ! empty( $mod[ 'obj' ] ) ) {
+
+				/**
+				 * The meta data key is unique, but the Schema property name may be repeated
+				 * to add more than one value to a property array.
+				 */
+				foreach ( array(
+					'schema_pub_org_id'  => 'publisher',
+					'schema_prov_org_id' => 'provider',
+				) as $md_key => $prop_name ) {
+	
+					$md_val = $mod[ 'obj' ]->get_options( $mod[ 'id' ], $md_key, $filter_opts = true, $def_fallback = true );
+	
+					if ( $md_val === null || $md_val === '' || $md_val === 'none' ) {
+						continue;
+					}
+	
+					WpssoSchemaSingle::add_organization_data( $ret[ $prop_name ], $mod, $md_val, $org_logo_key, $list_element = false );
+		
+					if ( empty( $ret[ $prop_name ] ) ) {	// Just in case.
+						unset( $ret[ $prop_name ] );
+					}
+				}
+			}
+
+			/**
+			 * Property:
+			 *      author as https://schema.org/Person
+			 *      contributor as https://schema.org/Person
+			 */
+			WpssoSchema::add_author_coauthor_data( $ret, $mod );
+
+			/**
+			 * Property:
+			 *      thumbnailURL
+			 */
+			$ret[ 'thumbnailUrl' ] = $this->p->og->get_thumbnail_url( $this->p->lca . '-thumbnail', $mod, $md_pre = 'schema' );
+
+			if ( empty( $ret[ 'thumbnailUrl' ] ) ) {
+				unset( $ret[ 'thumbnailUrl' ] );
+			}
+
+			/**
+			 * Property:
+			 *      image as https://schema.org/ImageObject
+			 *      video as https://schema.org/VideoObject
+			 */
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
+
+			/**
+			 * Check only published posts or other non-post objects.
+			 */
+			if ( 'publish' === $mod[ 'post_status' ] || ! $mod[ 'is_post' ] ) {
+
+				foreach ( array( 'image' ) as $prop_name ) {
+
+					if ( empty( $ret[ $prop_name ] ) ) {
+
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( 'creativework ' . $prop_name . ' value is empty and required' );
+						}
+
+						if ( $this->p->notice->is_admin_pre_notices() ) { // Skip if notices already shown.
+
+							$notice_key = $mod[ 'name' ] . '-' . $mod[ 'id' ] . '-notice-missing-schema-' . $prop_name;
+							$error_msg  = $this->p->msgs->get( 'notice-missing-schema-' . $prop_name );
+
+							$this->p->notice->err( $error_msg, null, $notice_key );
+						}
+					}
+				}
+			}
+
+			/**
+			 * Property:
+			 *      commentCount
+			 *      comment as https://schema.org/Comment
+			 */
+			WpssoJsonSchema::add_comment_list_data( $ret, $mod );
+
+			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
+		}
+
 		/**
 		 * Common filter for all Schema types.
 		 *
@@ -74,7 +297,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filter' );
+				$this->p->debug->mark();
 			}
 
 			$page_type_url = $this->p->schema->get_schema_type_url( $page_type_id );
@@ -199,7 +422,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 								$this->p->debug->log( 'skipping sameAs url - value is "url" property (' . $url . ')' );
 							}
 
-						} elseif ( isset( $added_urls[$url] ) ) {	// Already added.
+						} elseif ( isset( $added_urls[ $url ] ) ) {	// Already added.
 
 							if ( $this->p->debug->enabled ) {
 								$this->p->debug->log( 'skipping sameAs url - value already added (' . $url . ')' );
@@ -213,12 +436,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 						} else {	// Mark the url as already added and get the next url.
 
-							$added_urls[$url] = true;
+							$added_urls[ $url ] = true;
 
 							continue;	// Get the next url.
 						}
 
-						unset( $ret[ 'sameAs' ][$num] );	// Remove the duplicate / invalid url.
+						unset( $ret[ 'sameAs' ][ $num ] );	// Remove the duplicate / invalid url.
 					}
 
 					$ret[ 'sameAs' ] = array_values( $ret[ 'sameAs' ] );	// Reindex / renumber the array.
@@ -311,10 +534,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			} elseif ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'schema shortcode skipped - module is not a post object' );
-			}
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark( 'common json data filter' );
 			}
 
 			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
@@ -661,10 +880,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			foreach ( SucomUtil::preg_grep_keys( '/^schema_recipe_(prep|cook|total)_(days|hours|mins|secs)$/', $md_opts ) as $md_key => $value ) {
 
-				$md_opts[$md_key] = (int) $value;
+				$md_opts[ $md_key ] = (int) $value;
 
-				if ( $md_opts[$md_key] === $md_defs[$md_key] ) {
-					unset( $md_opts[$md_key] );
+				if ( $md_opts[ $md_key ] === $md_defs[ $md_key ] ) {
+					unset( $md_opts[ $md_key ] );
 				}
 			}
 
@@ -674,12 +893,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			if ( empty( $md_opts[ 'schema_review_rating' ] ) ) {
 				foreach ( array( 'schema_review_rating', 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_key ) {
-					unset( $md_opts[$md_key] );
+					unset( $md_opts[ $md_key ] );
 				}
 			} else {
 				foreach ( array( 'schema_review_rating_from', 'schema_review_rating_to' ) as $md_key ) {
-					if ( empty( $md_opts[$md_key] ) && isset( $md_defs[$md_key] ) ) {
-						$md_opts[$md_key] = $md_defs[$md_key];
+					if ( empty( $md_opts[ $md_key ] ) && isset( $md_defs[ $md_key ] ) ) {
+						$md_opts[ $md_key ] = $md_defs[ $md_key ];
 					}
 				}
 			}
@@ -691,27 +910,27 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				 */
 				foreach ( array( 'date', 'time', 'timezone' ) as $md_ext ) {
 
-					if ( isset( $md_opts[$md_pre . '_' . $md_ext] ) &&
-						( $md_opts[$md_pre . '_' . $md_ext] === $md_defs[$md_pre . '_' . $md_ext] ||
-							$md_opts[$md_pre . '_' . $md_ext] === 'none' ) ) {
+					if ( isset( $md_opts[ $md_pre . '_' . $md_ext ] ) &&
+						( $md_opts[ $md_pre . '_' . $md_ext ] === $md_defs[ $md_pre . '_' . $md_ext ] ||
+							$md_opts[ $md_pre . '_' . $md_ext ] === 'none' ) ) {
 
-						unset( $md_opts[$md_pre . '_' . $md_ext] );
+						unset( $md_opts[ $md_pre . '_' . $md_ext ] );
 					}
 				}
 
-				if ( empty( $md_opts[$md_pre . '_date' ] ) && empty( $md_opts[$md_pre . '_time' ] ) ) {		// No date or time.
+				if ( empty( $md_opts[ $md_pre . '_date' ] ) && empty( $md_opts[ $md_pre . '_time' ] ) ) {		// No date or time.
 
-					unset( $md_opts[$md_pre . '_timezone' ] );
+					unset( $md_opts[ $md_pre . '_timezone' ] );
 
 					continue;
 
-				} elseif ( ! empty( $md_opts[$md_pre . '_date' ] ) && empty( $md_opts[$md_pre . '_time' ] ) ) {	// Date with no time.
+				} elseif ( ! empty( $md_opts[ $md_pre . '_date' ] ) && empty( $md_opts[ $md_pre . '_time' ] ) ) {	// Date with no time.
 
-					$md_opts[$md_pre . '_time' ] = '00:00';
+					$md_opts[ $md_pre . '_time' ] = '00:00';
 
-				} elseif ( empty( $md_opts[$md_pre . '_date' ] ) && ! empty( $md_opts[$md_pre . '_time' ] ) ) {	// Time with no date.
+				} elseif ( empty( $md_opts[ $md_pre . '_date' ] ) && ! empty( $md_opts[ $md_pre . '_time' ] ) ) {	// Time with no date.
 
-					$md_opts[$md_pre . '_date' ] = gmdate( 'Y-m-d', time() );
+					$md_opts[ $md_pre . '_date' ] = gmdate( 'Y-m-d', time() );
 				}
 			}
 
@@ -722,7 +941,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$valid_offer = false;
 
 				foreach ( array( 'schema_event_offer_name', 'schema_event_offer_price' ) as $md_pre ) {
-					if ( isset( $md_opts[$md_pre . '_' . $key_num] ) && $md_opts[$md_pre . '_' . $key_num] !== '' ) {
+					if ( isset( $md_opts[ $md_pre . '_' . $key_num] ) && $md_opts[ $md_pre . '_' . $key_num] !== '' ) {
 						$valid_offer = true;
 					}
 				}
@@ -811,7 +1030,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					case 'subsection_google_schema':
 					case ( strpos( $row_key, 'schema_' ) === 0 ? true : false ):
 
-						unset( $table_rows[$row_key] );
+						unset( $table_rows[ $row_key ] );
 
 						break;
 				}
@@ -1396,6 +1615,29 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 */
 		public function filter_status_std_features( $features, $ext, $info, $pkg ) {
 
+			$features = array(
+
+				/**
+				 * The Schema Article markup is handled by the CreativeWork filter. 
+				 */
+				'(code) Schema Type Article (schema_type:article)' => array(
+					'sub'    => 'head',
+					'status' => has_filter( $this->p->lca . '_json_data_https_schema_org_creativework' ) ? 'on' : 'off',
+				),
+				'(code) Schema Type Blog (schema_type:blog)' => array(
+					'sub'    => 'head',
+					'status' => has_filter( $this->p->lca . '_json_data_https_schema_org_blog' ) ? 'on' : 'off',
+				),
+				'(code) Schema Type CreativeWork (schema_type:creative.work)' => array(
+					'sub'    => 'head',
+					'status' => has_filter( $this->p->lca . '_json_data_https_schema_org_creativework' ) ? 'on' : 'off',
+				),
+				'(code) Schema Type Thing (schema_type:thing)' => array(
+					'sub'    => 'head',
+					'status' => has_filter( $this->p->lca . '_json_data_https_schema_org_thing' ) ? 'on' : 'off',
+				),
+			);
+
 			foreach ( $info[ 'lib' ][ 'std' ] as $sub => $libs ) {
 
 				if ( $sub === 'admin' ) { // Skip status for admin menus and tabs.
@@ -1406,15 +1648,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
 
-					if ( $pkg[ 'pp' ] && ! empty( $info[ 'lib' ][ 'pro' ][$sub][$id] ) ) {
+					if ( $pkg[ 'pp' ] && ! empty( $info[ 'lib' ][ 'pro' ][ $sub ][ $id ] ) ) {
 						continue;
 					}
 
 					$classname = SucomUtil::sanitize_classname( 'wpssojsonstd' . $sub . $id, $allow_underscore = false );
 
-					$features[$label] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
+					$features[ $label ] = array( 'status' => class_exists( $classname ) ? 'on' : 'off' );
 				}
 			}
+
 			return $this->filter_common_status_features( $features, $ext, $info, $pkg );
 		}
 
@@ -1426,7 +1669,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					if ( preg_match( '/^\(([a-z\-]+)\) (Schema Type .+) \(schema_type:(.+)\)$/', $feature_key, $match ) ) {
 
-						$features[$feature_key][ 'label' ] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
+						$features[ $feature_key ][ 'label' ] = $match[2] . ' (' . $this->p->schema->count_schema_type_children( $match[3] ) . ')';
 					}
 				}
 			}

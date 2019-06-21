@@ -28,6 +28,10 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 
 		public function filter_post_edit_rows( $table_rows, $form, $head, $mod ) {
 
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
 			$dots           = '...';
 			$read_cache     = true;
 			$no_hashtags    = false;
@@ -122,6 +126,9 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				}
 			}
 
+			/**
+			 * Metabox form rows.
+			 */
 			$form_rows = array(
 				'subsection_schema' => '',	// Placeholder.
 
@@ -941,7 +948,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
-			SucomUtil::add_after_key( $table_rows, 'subsection_schema', '', '<td colspan="2">' .
+			SucomUtil::add_after_key( $table_rows, 'schema_type', '', '<td colspan="2">' .
 				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
 
 			return $table_rows;

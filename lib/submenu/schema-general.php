@@ -156,6 +156,10 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 		private function add_schema_meta_defaults_table_rows( array &$table_rows ) {
 
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
 			/**
 			 * Organization variables.
 			 */
@@ -175,6 +179,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			$plm_disable     = empty( $plm_req_msg ) ? false : true;
 			$plm_place_names = $this->p->util->get_form_cache( 'place_names', $add_none = true );
 
+			/**
+			 * Metabox form rows.
+			 */
 			$form_rows = array(
 
 				/**
