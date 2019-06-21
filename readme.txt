@@ -62,8 +62,10 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 
 * Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Pro version):
 
-	* [schema.org/BlogPosting](https://schema.org/BlogPosting)
-	* [schema.org/WebPage](https://schema.org/WebPage) (includes 10 Schema types)
+	* [schema.org/Article](https://schema.org/Article) (includes 19 Schema types)
+	* [schema.org/Blog](https://schema.org/Blog)
+	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 86 Schema types)
+	* [schema.org/Thing](https://schema.org/Thing) (includes 478 Schema types)
 
 * Provides complete image SEO markup with information from the WordPress Media Library.
 
@@ -120,12 +122,9 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 
 * Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings) feature:
 
-	* [schema.org/Article](https://schema.org/Article) (includes 19 Schema types)
-	* [schema.org/Blog](https://schema.org/Blog)
 	* [schema.org/ClaimReview](https://schema.org/ClaimReview)
 	* [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes 3 Schema types)
 	* [schema.org/Course](https://schema.org/Course)
-	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 86 Schema types)
 	* [schema.org/Event](https://schema.org/Event) (includes 19 Schema types)
 	* [schema.org/FAQPage](https://schema.org/FAQPage)
 	* [schema.org/FoodEstablishment](https://schema.org/FoodEstablishment) (includes 9 Schema types)
@@ -677,11 +676,11 @@ The [WPSSO JSON Pro add-on](https://wpsso.com/extend/plugins/wpsso-schema-json-l
 == Screenshots ==
 
 01. WPSSO JSON settings page with options for site name, alternate name, logo, banner, image size, and Schema types for posts, pages, custom post types, etc.
-02. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Article (Pro version).
-03. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Recipe (Pro version).
-04. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Review (Pro version).
-05. WPSSO JSON example for the Schema type https://schema.org/Recipe on Pinterest (Pro version).
-06. WPSSO JSON example for the Schema type https://schema.org/TechArticle in Google's Structured Data Testing Tool (Pro version).
+02. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Article.
+03. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Recipe.
+04. WPSSO JSON options in the Document SSO metabox for the Schema type https://schema.org/Review.
+05. WPSSO JSON example for the Schema type https://schema.org/Recipe on Pinterest.
+06. WPSSO JSON example for the Schema type https://schema.org/TechArticle in Google's Structured Data Testing Tool.
 
 == Changelog ==
 
@@ -707,7 +706,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-dev.3 (2019/06/20)**
+**Version 2.0.0-dev.4 (2019/06/20)**
 
 * *New Features*
 	* None.
@@ -772,7 +771,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-dev.3 =
+= 2.0.0-dev.4 =
 
 (2019/06/20) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
