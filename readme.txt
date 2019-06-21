@@ -56,7 +56,7 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin is heaven sent. I know little about SSO and this has taken care of everything. The support makes this an even better plugin to have. Keep up the great work!" - [kevanchetty](https://wordpress.org/support/topic/best-plugin-and-support-10/)
 
-<h3>WPSSO JSON Standard Features</h3>
+<h3>WPSSO JSON Free / Standard Features</h3>
 
 * Extends the features of the WPSSO Core Free or Pro plugin.
 
