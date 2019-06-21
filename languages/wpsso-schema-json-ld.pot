@@ -27,15 +27,15 @@ msgstr ""
 
 #: lib/actions.php:58
 msgid ""
-"The <a href=\"%1$s\">Premium version of WPSSO JSON</a> includes a wide "
-"selection of supported Schema types, including the Schema type <a href=\"%2$s"
-"\">%2$s</a>."
+"The <a href=\"%1$s\">%2$s version of WPSSO JSON</a> includes a wide "
+"selection of supported Schema types, including the Schema type <a href=\"%3$s"
+"\">%3$s</a>."
 msgstr ""
 
 #: lib/actions.php:60
 msgid ""
 "If this Schema type is an important classification for your content, you "
-"should consider purchasing the Premium version."
+"should consider purchasing the %1$s version."
 msgstr ""
 
 #: lib/filters.php:1052
