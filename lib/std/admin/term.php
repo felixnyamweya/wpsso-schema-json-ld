@@ -128,8 +128,11 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
-			SucomUtil::add_after_key( $table_rows, 'schema_type', '', '<td colspan="2">' .
-				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
+			SucomUtil::add_after_key( $table_rows, 'schema_type', 'wpssojson-pro-feature-msg',
+				'<td colspan="2">' .
+				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) .
+				'</td>'
+			);
 
 			return $table_rows;
 		}

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.0.0-dev.5\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.0.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -521,27 +521,27 @@ msgid ""
 msgstr ""
 
 #: lib/gettext-pro.php:6 lib/pro/admin/post.php:93 lib/std/admin/post.php:67
-msgid "Save a draft version or publish the %s to update this value."
-msgstr ""
-
-#: lib/gettext-pro.php:7 lib/pro/admin/post.php:96 lib/std/admin/post.php:70
 msgctxt "option comment"
 msgid "days"
 msgstr ""
 
-#: lib/gettext-pro.php:8 lib/pro/admin/post.php:97 lib/std/admin/post.php:71
+#: lib/gettext-pro.php:7 lib/pro/admin/post.php:94 lib/std/admin/post.php:68
 msgctxt "option comment"
 msgid "hours"
 msgstr ""
 
-#: lib/gettext-pro.php:9 lib/pro/admin/post.php:98 lib/std/admin/post.php:72
+#: lib/gettext-pro.php:8 lib/pro/admin/post.php:95 lib/std/admin/post.php:69
 msgctxt "option comment"
 msgid "mins"
 msgstr ""
 
-#: lib/gettext-pro.php:10 lib/pro/admin/post.php:99 lib/std/admin/post.php:73
+#: lib/gettext-pro.php:9 lib/pro/admin/post.php:96 lib/std/admin/post.php:70
 msgctxt "option comment"
 msgid "secs"
+msgstr ""
+
+#: lib/gettext-pro.php:10 lib/pro/admin/post.php:98 lib/std/admin/post.php:72
+msgid "Save a draft version or publish the %s to update this value."
 msgstr ""
 
 #: lib/gettext-pro.php:11 lib/gettext-pro.php:118 lib/pro/admin/post.php:166

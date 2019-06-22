@@ -64,13 +64,13 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			/**
 			 * Translated text strings.
 			 */
-			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.',
-				'wpsso-schema-json-ld' ), SucomUtil::titleize( $mod[ 'post_type' ] ) );
-
 			$days_sep  = ' ' . _x( 'days', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
 			$hours_sep = ' ' . _x( 'hours', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
 			$mins_sep  = ' ' . _x( 'mins', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
 			$secs_sep  = ' ' . _x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
+
+			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.', 'wpsso-schema-json-ld' ),
+				SucomUtil::titleize( $mod[ 'post_type' ] ) );
 
 			/**
 			 * Organization variables.
@@ -948,8 +948,11 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				$table_rows[ $key ] = $saved_table_rows[ $key ];
 			}
 
-			SucomUtil::add_after_key( $table_rows, 'schema_type', '', '<td colspan="2">' .
-				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>' );
+			SucomUtil::add_after_key( $table_rows, 'schema_type', 'wpssojson-pro-feature-msg',
+				'<td colspan="2">' .
+				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) .
+				'</td>'
+			);
 
 			return $table_rows;
 		}

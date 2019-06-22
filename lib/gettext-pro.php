@@ -3,11 +3,11 @@
 /**
  * Extract of translatable text strings from the lib/pro classes.
  */
-__( 'Save a draft version or publish the %s to update this value.', 'wpsso-schema-json-ld' );
 _x( 'days', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'hours', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'mins', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
+__( 'Save a draft version or publish the %s to update this value.', 'wpsso-schema-json-ld' );
 _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Name / Title', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' );
