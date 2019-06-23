@@ -706,7 +706,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-b.1 (2019/06/23)**
+**Version 2.0.0-rc.1 (2019/06/23)**
 
 * *New Features*
 	* None.
@@ -771,7 +771,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.0-b.1 =
+= 2.0.0-rc.1 =
 
 (2019/06/23) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
