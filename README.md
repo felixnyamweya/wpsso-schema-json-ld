@@ -142,7 +142,6 @@
 <h3>WPSSO JSON Pro / Premium Features</h3>
 
 <ul>
-<li><p>Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).</p></li>
 <li><p>Provides Schema JSON-LD markup (aka Structured Data) for <em>all Schema types and sub-types</em>, including <a href="https://schema.org/ItemList">schema.org/ItemList</a> for <a href="https://developers.google.com/search/docs/guides/mark-up-listings">Google's Carousel Rich Results</a> feature:</p>
 
 <ul>
@@ -851,9 +850,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core Plugin</a> (Free or Pro version).</p>
-
-<p>The <a href="https://wpsso.com/extend/plugins/wpsso-schema-json-ld/">WPSSO JSON Pro add-on</a> uses WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>.</p>
+<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (Standard or Premium version).</p>
 
 
 <h2>Installation</h2>
