@@ -66,7 +66,8 @@
 <li><a href="https://schema.org/CreativeWork">schema.org/CreativeWork</a> (includes 86 Schema types)</li>
 <li><a href="https://schema.org/Thing">schema.org/Thing</a> (includes 478 Schema types)</li>
 </ul></li>
-<li><p>Provides complete image SEO markup with information from the WordPress Media Library.</p></li>
+<li><p>Optinally customize the Schema type for each individual posts, pages, custom post types, tags, categories, custom taxonomy / terms, and attachment pages.</p></li>
+<li><p>Provides complete Schema ImageObject SEO markup with information from the WordPress Media Library (name, alternateName, alternativeHeadline, caption, description, fileFormat, width, height, keywords).</p></li>
 <li><p>Built-in support for Automattic's <a href="https://wordpress.org/plugins/amp/">Accelerated Mobile Pages (AMP)</a> plugin.</p></li>
 <li><p>Includes contributor markup for <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a> authors and guest authors (<a href="https://wpsso.com/">WPSSO Core Premium plugin</a> required).</p></li>
 <li><p>Adds a Schema Markup settings page to the SSO menu with additional options:</p>
@@ -171,7 +172,7 @@
 <li><a href="https://schema.org/WebSite">schema.org/WebSite</a></li>
 </ul></li>
 <li><p>Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).</p></li>
-<li><p>WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Product Rich Results (includes the product variation group high price, low price, and currency).</p></li>
+<li><p>WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results (includes the product variation group high price, low price, and currency).</p></li>
 <li><p>Fixes common Google testing tool warnings for WooCommerce products, like "Missing Product ID", "brand field is recommended", etc.</p></li>
 <li><p>Fixes common Google testing tool warnings like "aggregateRating field is recommended" and "review field is recommended".</p></li>
 <li><p>Includes Aggregate Rating values (if available from WordPress) in the main webpage Schema "aggregateRating" property.</p></li>

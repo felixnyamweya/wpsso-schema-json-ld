@@ -67,7 +67,9 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 	* [schema.org/CreativeWork](https://schema.org/CreativeWork) (includes 86 Schema types)
 	* [schema.org/Thing](https://schema.org/Thing) (includes 478 Schema types)
 
-* Provides complete image SEO markup with information from the WordPress Media Library.
+* Optinally customize the Schema type for each individual posts, pages, custom post types, tags, categories, custom taxonomy / terms, and attachment pages.
+
+* Provides complete Schema ImageObject SEO markup with information from the WordPress Media Library (name, alternateName, alternativeHeadline, caption, description, fileFormat, width, height, keywords).
 
 * Built-in support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
@@ -147,7 +149,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 
 * Provides complete video SEO markup with information from video service APIs (Facebook, Slideshare, Soundcloud, Vimeo, Wistia, YouTube).
 
-* WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Product Rich Results (includes the product variation group high price, low price, and currency).
+* WooCommerce product variations are grouped by currency and added as a Schema AggregateOffer for Google's Rich Results (includes the product variation group high price, low price, and currency).
 
 * Fixes common Google testing tool warnings for WooCommerce products, like "Missing Product ID", "brand field is recommended", etc.
 
