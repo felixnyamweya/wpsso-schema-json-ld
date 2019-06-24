@@ -116,7 +116,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Default Hiring Organization
 			* Default Job Location
 
-<h3>WPSSO JSON Pro / Premium Features</h3>
+<h3>WPSSO JSON Premium Features</h3>
 
 * Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings) feature:
 
@@ -689,12 +689,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev &lt; a (alpha) &lt; b (beta) &lt; rc (release candidate).
 
-<h3>Free / Standard Add-on Repositories</h3>
+<h3>Standard Add-on Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-schema-json-ld/)
 
-<h3>Development Updates for Pro / Premium Version</h3>
+<h3>Development Updates for Premium Add-on</h3>
 
 <p>Development, alpha, beta, and release candidate updates are available to Premium add-on customers.</p>
 
