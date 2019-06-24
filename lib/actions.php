@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoJsonActions' ) ) {
 
 			if ( ! current_user_can( 'manage_options' ) ) {
 				return;
-			} elseif ( $this->p->check->pp( 'wpssojson', true, $this->p->avail[ '*' ][ 'p_dir' ] ) ) {
+			} elseif ( $this->p->check->pp( 'wpssojson' ) ) {
 				return;
 			}
 

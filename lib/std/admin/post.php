@@ -47,9 +47,11 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			/**
 			 * Maximum option lengths.
 			 */
-			$og_title_max_len = $this->p->options[ 'og_title_max_len' ];
-			$headline_max_len = $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
-			$text_max_len     = $this->p->options[ 'schema_text_max_len' ];
+			$og_title_max_len        = $this->p->options[ 'og_title_max_len' ];
+			$schema_headline_max_len = $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
+			$schema_desc_max_len     = $this->p->options[ 'schema_desc_max_len' ];
+			$schema_desc_md_key      = array( 'seo_desc', 'og_desc' );
+			$schema_text_max_len     = $this->p->options[ 'schema_text_max_len' ];
 
 			/**
 			 * Default option values.
@@ -57,8 +59,9 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			$def_copyright_year   = $mod[ 'is_post' ] ? trim( get_post_time( 'Y', $gmt = true, $mod[ 'id' ] ) ) : '';
 			$def_schema_title     = $this->p->page->get_title( $max_len = 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
-			$def_schema_headline  = $this->p->page->get_title( $headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
-			$def_schema_text      = $this->p->page->get_text( $text_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, $md_key = 'none' );
+			$def_schema_headline  = $this->p->page->get_title( $schema_headline_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, $schema_desc_md_key );
+			$def_schema_text      = $this->p->page->get_text( $schema_text_max_len, '', $mod, $read_cache, $no_hashtags, $do_encode, $md_key = 'none' );
 			$def_schema_keywords  = $this->p->page->get_keywords( $mod, $read_cache, $md_key = 'none' );
 
 			/**
@@ -116,7 +119,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			 */
 			$saved_table_rows = array();
 
-			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
+			foreach ( array( 'subsection_schema' ) as $key ) {
 
 				if ( isset( $table_rows[ $key ] ) ) {
 
@@ -125,6 +128,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					unset( $table_rows[ $key ] );
 				}
 			}
+
+			unset( $table_rows[ 'schema_desc' ] );	// Remove and re-create.
 
 			/**
 			 * Metabox form rows.
@@ -159,7 +164,14 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tooltip'       => 'meta-schema_title_alt',
 					'content'       => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
-				'schema_desc' => '',	// Placeholder.
+				'schema_desc' => array(
+					'no_auto_draft' => true,
+					'th_class'      => 'medium',
+					'td_class'      => 'blank',
+					'label'         => _x( 'Description', 'option label', 'wpsso' ),
+					'tooltip'       => 'meta-schema_desc',
+					'content'       => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
+				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
 					'th_class' => 'medium',

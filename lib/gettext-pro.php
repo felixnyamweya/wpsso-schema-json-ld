@@ -11,6 +11,8 @@ __( 'Save a draft version or publish the %s to update this value.', 'wpsso-schem
 _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Name / Title', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' );
+// translators: please ignore - translation uses a different text domain
+_x( 'Description', 'option label', 'wpsso' );
 _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' );
