@@ -19,15 +19,13 @@ msgstr ""
 
 #: lib/actions.php:59
 msgid ""
-"The Free / Standard version of WPSSO JSON does not include support for the "
-"Schema type <a href=\"%1$s\">%1$s</a> - only the basic Schema properties "
-"<em>url</em>, <em>name</em>, and <em>description</em> will be included in "
-"the Schema JSON-LD markup."
+"The WPSSO JSON %1$s add-on does not include support for the Schema type <a "
+"href=\"%2$s\">%2$s</a>."
 msgstr ""
 
 #: lib/actions.php:61
 msgid ""
-"The <a href=\"%1$s\">%2$s version of WPSSO JSON</a> includes a wide "
+"The <a href=\"%1$s\">WPSSO JSON %2$s add-on</a> includes an extensive "
 "selection of supported Schema types, including the Schema type <a href=\"%3$s"
 "\">%3$s</a>."
 msgstr ""
@@ -35,7 +33,7 @@ msgstr ""
 #: lib/actions.php:63
 msgid ""
 "If this Schema type is an important classification for your content, you "
-"should consider purchasing the %1$s version."
+"should consider purchasing the %1$s add-on."
 msgstr ""
 
 #: lib/filters.php:1058

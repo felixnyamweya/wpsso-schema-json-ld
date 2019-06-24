@@ -56,11 +56,11 @@ if ( ! class_exists( 'WpssoJsonActions' ) ) {
 			
 			$warn_msg .= '<p>';
 
-			$warn_msg .= sprintf( __( 'The Free / Standard version of WPSSO JSON does not include support for the Schema type <a href="%1$s">%1$s</a> - only the basic Schema properties <em>url</em>, <em>name</em>, and <em>description</em> will be included in the Schema JSON-LD markup.', 'wpsso-schema-json-ld' ), $page_type_url ) . ' ';
+			$warn_msg .= sprintf( __( 'The WPSSO JSON %1$s add-on does not include support for the Schema type <a href="%2$s">%2$s</a>.', 'wpsso-schema-json-ld' ), $std_transl, $page_type_url ) . ' ';
 				
-			$warn_msg .= sprintf( __( 'The <a href="%1$s">%2$s version of WPSSO JSON</a> includes a wide selection of supported Schema types, including the Schema type <a href="%3$s">%3$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $pro_transl, $page_type_url ) . ' ';
+			$warn_msg .= sprintf( __( 'The <a href="%1$s">WPSSO JSON %2$s add-on</a> includes an extensive selection of supported Schema types, including the Schema type <a href="%3$s">%3$s</a>.', 'wpsso-schema-json-ld' ), $urls['purchase'], $pro_transl, $page_type_url ) . ' ';
 				
-			$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the %1$s version.', 'wpsso-schema-json-ld' ), $pro_transl );
+			$warn_msg .= sprintf( __( 'If this Schema type is an important classification for your content, you should consider purchasing the %1$s add-on.', 'wpsso-schema-json-ld' ), $pro_transl );
 
 			$warn_msg .= '</p>';
 
