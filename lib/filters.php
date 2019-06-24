@@ -866,6 +866,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					return 'url';
 
 					break;
+
+				case 'schema_howto_step_section':		// How-To Section.
+
+					return 'checkbox';
+
+					break;
 			}
 
 			return $type;
