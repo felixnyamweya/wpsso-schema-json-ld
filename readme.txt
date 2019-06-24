@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.1
 WC Tested Up To: 3.6
-Stable Tag: 1.45.2
+Stable Tag: 2.0.0
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -752,30 +752,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Update for code changes in WPSSO Core v4.31.0.
 
-**Version 1.44.0 (2019/05/04)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for the Schema 'primaryImageOfPage' property for the Schema WebPage type.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Renamed the WpssoJsonGplHeadWebPage class to WpssoJsonGplHeadCreativeWork.
-	* Moved the 3rd party integration modules from WPSSO JSON Pro to WPSSO Core Pro:
-		* Simple Job Board
-		* WP Job Manager
-		* WP Product Review
-		* WP Recipe Maker
-		* WP Ultimate Recipe
-
 == Upgrade Notice ==
 
 = 2.0.0 =
 
 (2019/06/24) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
-
-= 1.45.2 =
-
-(2019/05/31) Fixed the Schema QAPage markup to include Schema Question type posts in the 'mainEntity' property. Added support for Schema Place mid-day closure.
 
