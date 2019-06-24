@@ -44,7 +44,7 @@ The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce
 * This Product is missing a global identifier.
 * etc.
 
-Additional e-Commerce plugins are also supported in the WPSSO Core Premium version, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+Additional e-Commerce plugins are also provided by the WPSSO Core Premium version, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -58,7 +58,7 @@ Additional e-Commerce plugins are also supported in the WPSSO Core Premium versi
 
 <h3>WPSSO JSON Free / Standard Features</h3>
 
-* Extends the features of the WPSSO Core.
+* Extends the features of the WPSSO Core plugin.
 
 * Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Premium version):
 
@@ -71,7 +71,7 @@ Additional e-Commerce plugins are also supported in the WPSSO Core Premium versi
 
 * Built-in support for Automattic's [Accelerated Mobile Pages (AMP)](https://wordpress.org/plugins/amp/) plugin.
 
-* Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Pro plugin](https://wpsso.com/) required).
+* Includes contributor markup for [Co-Authors Plus](https://wordpress.org/plugins/co-authors-plus/) authors and guest authors ([WPSSO Core Premium plugin](https://wpsso.com/) required).
 
 * Adds a Schema Markup settings page to the SSO menu with additional options:
 
@@ -696,7 +696,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Development Updates for Pro / Premium Version</h3>
 
-<p>Development, alpha, beta, and release candidate updates are available to Pro version customers.</p>
+<p>Development, alpha, beta, and release candidate updates are available to Premium version customers.</p>
 
 <p>Under the SSO &gt; Update Manager settings page, select the "Development and Up" version filter for WPSSO Core and all its extensions (to satisfy any version dependencies). Save the plugin settings, and click the "Check for Updates" button to fetch the latest / current WPSSO version information. When new Development versions are available, they will automatically appear under your WordPress Dashboard &gt; Updates page. You can always re-select the "Stable / Production" version filter at any time to re-install the last stable / production version of a plugin.</p>
 
