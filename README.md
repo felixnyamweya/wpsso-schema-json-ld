@@ -17,13 +17,13 @@
 
 <p><strong>Offers <em>accurate</em> and <em>comprehensive</em> Schema JSON-LD markup:</strong></p>
 
-<p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive e-Commerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for <a href="https://developers.google.com/search/docs/guides/mark-up-listings">Google's Carousel Rich Results</a>, customized property values, and much, much more (see the complete list of features below for Standard / Premium version details).</p>
+<p>Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive e-Commerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for <a href="https://developers.google.com/search/docs/guides/mark-up-listings">Google's Carousel Rich Results</a>, customized property values, and much, much more (see the complete list of features below for Standard / Premium add-on details).</p>
 
 <p><strong>Includes Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.</strong></p>
 
 <p><strong>Better Schema product markup for WooCommerce:</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers <em>incomplete</em> Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements, where-as the <strong>WPSSO JSON Premium add-on includes <em>complete and correct</em> markup for Google's Product Rich Results</strong> (WPSSO Core Premium also required), with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
+<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers <em>incomplete</em> Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements, where-as the <strong>WPSSO Core Premium plugin and its WPSSO JSON Premium add-on include <em>complete and correct</em> Facebook Product meta tags and Schema Product markup for Google's Rich Results</strong>, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
 
 <p><strong>Fixes ALL Google Search Console / Structured Data Testing Tool errors:</strong></p>
 
@@ -42,7 +42,7 @@
 <li>etc.</li>
 </ul>
 
-<p>Additional e-Commerce plugins are also provided by the WPSSO Core Premium version, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
+<p>Additional e-Commerce plugins are also provided with the WPSSO Core Premium plugin, including Easy Digital Downloads, MarketPress, and WP eCommerce.</p>
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -58,7 +58,7 @@
 
 <ul>
 <li><p>Extends the features of the WPSSO Core plugin.</p></li>
-<li><p>Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Premium version):</p>
+<li><p>Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Premium add-on):</p>
 
 <ul>
 <li><a href="https://schema.org/Article">schema.org/Article</a> (includes 19 Schema types)</li>
@@ -850,7 +850,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (Standard or Premium version).</p>
+<p>WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
 
 <h2>Installation</h2>
