@@ -21,13 +21,13 @@ WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, 
 
 **Offers *accurate* and *comprehensive* Schema JSON-LD markup:**
 
-Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive e-Commerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings), customized property values, and much, much more (see the complete list of features below for Free / Pro version details).
+Including image SEO, video SEO, local business, organization, publisher, person, author and co-authors, extensive e-Commerce product markup, product variations, product ratings, aggregate ratings, reviews, recipe information, event details, collection pages, profile pages, search pages, item lists for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings), customized property values, and much, much more (see the complete list of features below for Standard / Premium version details).
 
 **Includes Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.**
 
-**Better Schema product markup for WooCommerce (Pro version):**
+**Better Schema product markup for WooCommerce:**
 
-The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements, where-as the **WPSSO JSON Pro add-on includes *complete and correct* markup for Google's Product Rich Results**, with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements, where-as the **WPSSO JSON Premium add-on includes *complete and correct* markup for Google's Product Rich Results** (WPSSO Core Premium also required), with additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 **Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
@@ -44,7 +44,7 @@ The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce
 * This Product is missing a global identifier.
 * etc.
 
-Additional e-Commerce plugins are also supported in the Pro version, including Easy Digital Downloads, MarketPress, and WP eCommerce.
+Additional e-Commerce plugins are also supported in the WPSSO Core Premium version, including Easy Digital Downloads, MarketPress, and WP eCommerce.
 
 <h3>Users Love the WPSSO JSON Add-on</h3>
 
@@ -58,9 +58,9 @@ Additional e-Commerce plugins are also supported in the Pro version, including E
 
 <h3>WPSSO JSON Free / Standard Features</h3>
 
-* Extends the features of the WPSSO Core Free or Pro plugin.
+* Extends the features of the WPSSO Core.
 
-* Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Pro version):
+* Provides Schema JSON-LD markup (aka Structured Data) for the following Schema types (other Schema types are available in the Premium version):
 
 	* [schema.org/Article](https://schema.org/Article) (includes 19 Schema types)
 	* [schema.org/Blog](https://schema.org/Blog)
