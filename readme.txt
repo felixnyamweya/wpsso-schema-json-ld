@@ -747,41 +747,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Maintenance release for WPSSO Core v5.0.0.
 
-**Version 1.45.2 (2019/05/31)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added support for Schema Place mid-day closure.
-* *Bugfixes*
-	* Fixed the Schema QAPage markup to include Schema Question type posts in the 'mainEntity' property.
-* *Developer Notes*
-	* None.
-
-**Version 1.45.1 (2019/05/27)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Added a "How-To Direction Text" option for How-To Steps.
-* *Bugfixes*
-	* Fixed the HowToStep markup for Google by adding an 'itemListElement' property.
-* *Developer Notes*
-	* None.
-
-**Version 1.45.0 (2019/05/20)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Updated the HowTo markup with the new Schema types HowToStep, HowToSupply, and HowToTool.
-* *Bugfixes*
-	* Fixed adding an array element to a possible json data string value. 
-	* Fixed the HowTo selection and its options display in the Document SSO metabox.
-	* Fixed the WpssoJsonProPropHasPartMentions::maybe_add_single_data() method to handle nested @graph arrays.
-* *Developer Notes*
-	* Update for code changes in WPSSO Core v4.31.0.
-
 == Upgrade Notice ==
 
 = 2.1.0-dev.1 =
