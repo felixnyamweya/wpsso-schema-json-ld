@@ -199,7 +199,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* How-To Total Time 
 		* How-To Supplies 
 		* How-To Tools 
-		* How-To Steps (step name, direction text)
+		* How-To Steps (section name, section description, step name, and direction text)
 	* Job Posting Information <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-recipe.png">
 		* Job Posting Job Title
 		* Job Posting Hiring Organization
@@ -420,10 +420,20 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 					* Schema Type [health-lifesci.schema.org/WesternConventional](https://health-lifesci.schema.org/WesternConventional)
 			* Schema Type [schema.org/ItemList](https://schema.org/ItemList)
 				* Schema Type [schema.org/BreadcrumbList](https://schema.org/BreadcrumbList)
-				* Schema Type [schema.org/HowToSection](https://schema.org/HowToSection)
-				* Schema Type [schema.org/HowToStep](https://schema.org/HowToStep)
 				* Schema Type [schema.org/OfferCatalog](https://schema.org/OfferCatalog)
 			* Schema Type [schema.org/JobPosting](https://schema.org/JobPosting)
+			* Schema Type [schema.org/ListItem](https://schema.org/ListItem)
+				* Schema Type [schema.org/HowToDirection](https://schema.org/HowToDirection)
+				* Schema Type [schema.org/HowToItem](https://schema.org/HowToItem)
+					* Schema Type [schema.org/HowToSupply](https://schema.org/HowToSupply)
+					* Schema Type [schema.org/HowToTool](https://schema.org/HowToTool)
+				* Schema Type [schema.org/HowToSection](https://schema.org/HowToSection)
+				* Schema Type [schema.org/HowToStep](https://schema.org/HowToStep)
+				* Schema Type [schema.org/HowToTip](https://schema.org/HowToTip)
+			* Schema Type [schema.org/Offer](https://schema.org/Offer)
+				* Schema Type [schema.org/AggregateOffer](https://schema.org/AggregateOffer)
+			* Schema Type [schema.org/Rating](https://schema.org/Rating)
+				* Schema Type [schema.org/AggregateRating](https://schema.org/AggregateRating)
 			* Schema Type [schema.org/Service](https://schema.org/Service)
 				* Schema Type [schema.org/BroadcastService](https://schema.org/BroadcastService)
 				* Schema Type [schema.org/CableOrSatelliteService](https://schema.org/CableOrSatelliteService)
@@ -431,6 +441,11 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 				* Schema Type [schema.org/FoodService](https://schema.org/FoodService)
 				* Schema Type [schema.org/GovernmentService](https://schema.org/GovernmentService)
 				* Schema Type [schema.org/TaxiService](https://schema.org/TaxiService)
+			* Schema Type [schema.org/Trip](https://schema.org/Trip)
+				* Schema Type [schema.org/BusTrip](https://schema.org/BusTrip)
+				* Schema Type [schema.org/Flight](https://schema.org/Flight)
+				* Schema Type [schema.org/TrainTrip](https://schema.org/TrainTrip)
+				* Schema Type [schema.org/TouristTrip](https://schema.org/TouristTrip)
 	* Schema Type [schema.org/Organization](https://schema.org/Organization)
 		* Schema Type [schema.org/Airline](https://schema.org/Airline)
 		* Schema Type [schema.org/Corporation](https://schema.org/Corporation)
@@ -466,6 +481,9 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 				* Schema Type [schema.org/MeetingRoom](https://schema.org/MeetingRoom)
 			* Schema Type [schema.org/Room](https://schema.org/Suite)
 		* Schema Type [schema.org/AdministrativeArea](https://schema.org/AdministrativeArea)
+			* Schema Type [schema.org/City](https://schema.org/City)
+			* Schema Type [schema.org/Country](https://schema.org/Country)
+			* Schema Type [schema.org/State](https://schema.org/State)
 		* Schema Type [schema.org/CivicStructure](https://schema.org/CivicStructure)
 			* Schema Type [schema.org/Airport](https://schema.org/Airport)
 			* Schema Type [schema.org/Aquarium](https://schema.org/Aquarium)
@@ -625,6 +643,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Schema Type [schema.org/ApartmentComplex](https://schema.org/ApartmentComplex)
 			* Schema Type [schema.org/GatedResidenceCommunity](https://schema.org/GatedResidenceCommunity)
 		* Schema Type [schema.org/TouristAttraction](https://schema.org/TouristAttraction)
+		* Schema Type [schema.org/TouristDestination](https://schema.org/TouristDestination)
 	* Schema Type [schema.org/Product](https://schema.org/Product)
 		* Schema Type [schema.org/IndividualProduct](https://schema.org/IndividualProduct)
 		* Schema Type [schema.org/ProductModel](https://schema.org/ProductModel)
@@ -704,6 +723,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.1.0-dev.1 (2019/06/25)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 2.0.0 (2019/06/24)**
 
 * *New Features*
@@ -753,6 +783,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update for code changes in WPSSO Core v4.31.0.
 
 == Upgrade Notice ==
+
+= 2.1.0-dev.1 =
+
+(2019/06/25) None.
 
 = 2.0.0 =
 
