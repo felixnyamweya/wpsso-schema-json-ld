@@ -715,15 +715,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-schema-json-ld/)
 
-<h3>Development Updates for Premium Add-on</h3>
+<h3>Development Updates for the Premium Add-on</h3>
 
-<p>Development, alpha, beta, and release candidate updates are available to Premium add-on customers.</p>
+<p>Development, alpha, beta, and release candidate updates are available for Premium add-on customers.</p>
 
 <p>Under the SSO &gt; Update Manager settings page, select the "Development and Up" version filter for WPSSO Core and all its extensions (to satisfy any version dependencies). Save the plugin settings, and click the "Check for Updates" button to fetch the latest / current WPSSO version information. When new Development versions are available, they will automatically appear under your WordPress Dashboard &gt; Updates page. You can always re-select the "Stable / Production" version filter at any time to re-install the last stable / production version of a plugin.</p>
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.1.0-dev.1 (2019/06/25)**
+**Version 2.1.0-dev.2 (2019/06/25)**
 
 * *New Features*
 	* None.
@@ -749,7 +749,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.1.0-dev.1 =
+= 2.1.0-dev.2 =
 
 (2019/06/25) Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 
