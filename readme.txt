@@ -709,6 +709,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
+	* Renamed "Pro" distribution to "Premium".
+	* Renamed "Free" distribution to "Standard".
 	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab.
 * *Bugfixes*
 	* None.
