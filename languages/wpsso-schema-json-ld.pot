@@ -23,14 +23,16 @@ msgid ""
 "href=\"%2$s\">%2$s</a>."
 msgstr ""
 
-#: lib/actions.php:61
+#. translators: %1$s is the purchase URL, %2$s is the word "Premium", %3$s is the schema.org type URL.
+#: lib/actions.php:62
 msgid ""
 "The <a href=\"%1$s\">WPSSO JSON %2$s add-on</a> includes an extensive "
 "selection of supported Schema types, including the Schema type <a href=\"%3$s"
 "\">%3$s</a>."
 msgstr ""
 
-#: lib/actions.php:63
+#. translators: %1$s is the word "Premium".
+#: lib/actions.php:65
 msgid ""
 "If this Schema type is an important classification for your content, you "
 "should consider purchasing the %1$s add-on."
@@ -565,7 +567,7 @@ msgctxt "option label"
 msgid "Alternate Name"
 msgstr ""
 
-#. translators: please ignore - translation uses a different text domain
+#. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:15 lib/pro/admin/post.php:194 lib/std/admin/post.php:171
 msgctxt "option label"
 msgid "Description"
