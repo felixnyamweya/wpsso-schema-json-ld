@@ -728,7 +728,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -786,7 +786,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.1.0-dev.1 =
 
-(2019/06/25) None.
+(2019/06/25) Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 
 = 2.0.0 =
 
