@@ -463,12 +463,12 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 							'input_default' => 0,
 						),
 						'schema_howto_step' => array(
-							'input_title' => _x( 'How-To Step Name', 'option label', 'wpsso-schema-json-ld' ),
+							'input_title' => _x( 'Section Name or Step Name', 'option label', 'wpsso-schema-json-ld' ),
 							'input_type'  => 'text',
 							'input_class' => 'wide howto_step_name required',
 						),
 						'schema_howto_step_text' => array(
-							'input_title' => _x( 'How-To Direction Text', 'option label', 'wpsso-schema-json-ld' ),
+							'input_title' => _x( 'Section Description or Direction Text', 'option label', 'wpsso-schema-json-ld' ),
 							'input_type'  => 'textarea',
 							'input_class' => 'wide howto_step_text',
 						),
