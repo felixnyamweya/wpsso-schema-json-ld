@@ -867,7 +867,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 					break;
 
-				case 'schema_howto_step_section':		// How-To Section.
+				case 'schema_howto_step_section':		// How-To Section (radio buttons).
 
 					return 'checkbox';
 
@@ -1203,19 +1203,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_howto_steps':	// How-To Steps.
+				case 'tooltip-meta-schema_howto_steps':		// How-To Steps.
 
-					$text = __( 'A list of steps to complete this How-To, including the How-To Step Name and (optionally) a longer How-To Direction Text.', 'wpsso-schema-json-ld' );
+					$text = __( 'A list of steps to complete this How-To, including the How-To Step Name and (optionally) a longer How-To Direction Text.', 'wpsso-schema-json-ld' ) . ' ';
+
+					$text .= __( 'You can also (optionally) define one or more How-To Sections to group individual steps.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_howto_supplies':
+				case 'tooltip-meta-schema_howto_supplies':	// How-To Supplies
 
 					$text = __( 'A list of supplies that are consumed when completing this How-To.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
-				case 'tooltip-meta-schema_howto_tools':
+				case 'tooltip-meta-schema_howto_tools':		// How-To Tools
 
 					$text = __( 'A list of tools or objects that are required to complete this How-To.', 'wpsso-schema-json-ld' );
 
