@@ -455,7 +455,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'How-To Steps', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_howto_steps',
 					'content'  => $form->get_no_mixed_multi( array(
-						/*
 						'schema_howto_step_section' => array(
 							'input_type'    => 'radio',
 							'input_class'   => 'wide howto_step_section',
@@ -463,7 +462,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 							'input_values'  => array( 0, 1 ),
 							'input_default' => 0,
 						),
-						*/
 						'schema_howto_step' => array(
 							'input_title' => _x( 'How-To Step Name', 'option label', 'wpsso-schema-json-ld' ),
 							'input_type'  => 'text',
