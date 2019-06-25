@@ -734,7 +734,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 2.0.0 (2019/06/24)**
+**Version 2.0.1 (2019/06/24)**
 
 * *New Features*
 	* None.
@@ -743,7 +743,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed "Free" distribution to "Standard".
 	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab.
 * *Bugfixes*
-	* None.
+	* Fixed an incorrect filter name in the WpssoJsonProHeadWebpage class (Premium add-on).
 * *Developer Notes*
 	* Maintenance release for WPSSO Core v5.0.0.
 
@@ -788,7 +788,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2019/06/25) Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 
-= 2.0.0 =
+= 2.0.1 =
 
 (2019/06/24) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
