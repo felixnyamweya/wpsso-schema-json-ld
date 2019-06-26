@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
 					'version'     => '2.1.0-dev.2',	// Plugin version.
-					'opt_version' => '25',		// Increment when changing default option values.
+					'opt_version' => '26',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
 					'desc'        => 'WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, Events, Local Business, Products, Recipes, Reviews and many more.',
