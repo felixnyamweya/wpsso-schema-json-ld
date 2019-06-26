@@ -723,12 +723,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.1.0-dev.2 (2019/06/25)**
+**Version 2.1.0-dev.3 (2019/06/26)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
+	* Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -749,9 +749,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.1.0-dev.2 =
+= 2.1.0-dev.3 =
 
-(2019/06/25) Added a new "Step or Section" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
+(2019/06/26) Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 
 = 2.0.1 =
 
