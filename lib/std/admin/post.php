@@ -458,7 +458,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 						'schema_howto_step_section' => array(
 							'input_type'    => 'radio',
 							'input_class'   => 'wide howto_step_section',
-							'input_content' => _x( '%1$s Step or %2$s Section', 'option label', 'wpsso-schema-json-ld' ),
+							'input_content' => _x( '%1$s Step or %2$s Section Information', 'option label', 'wpsso-schema-json-ld' ),
 							'input_values'  => array( 0, 1 ),
 							'input_default' => 0,
 						),

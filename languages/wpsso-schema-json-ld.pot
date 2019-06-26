@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.1.0-dev.2\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.1.0-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -761,7 +761,7 @@ msgstr ""
 
 #: lib/gettext-pro.php:50 lib/pro/admin/post.php:461 lib/std/admin/post.php:461
 msgctxt "option label"
-msgid "%1$s Step or %2$s Section"
+msgid "%1$s Step or %2$s Section Information"
 msgstr ""
 
 #: lib/gettext-pro.php:51 lib/pro/admin/post.php:466 lib/std/admin/post.php:466
