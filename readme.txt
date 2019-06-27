@@ -729,6 +729,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * *Improvements*
 	* Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
+	* Updated the WebSite (Front Page) Knowledge Graph option label and link.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
