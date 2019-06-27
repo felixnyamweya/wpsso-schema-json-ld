@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.1.0-dev.3 (2019/06/26)**
+**Version 2.1.0-dev.4 (2019/06/26)**
 
 * *New Features*
 	* None.
@@ -749,7 +749,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.1.0-dev.3 =
+= 2.1.0-dev.4 =
 
 (2019/06/26) Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 
