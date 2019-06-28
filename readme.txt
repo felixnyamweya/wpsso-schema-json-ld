@@ -100,8 +100,8 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 	* Knowledge Graph
 		* Knowledge Graph for Home Page
 			* Include WebSite Information for Google Search
-			* Include Organization Social Profile for a Business Site
-			* Include Person Social Profile for a Personal Site
+			* Include Organization Social Profile for a Business Website
+			* Include Person Social Profile for a Personal Website
 		* User for Person Social Profile
 	* Custom Meta Defaults
 		* Creative Work Information
