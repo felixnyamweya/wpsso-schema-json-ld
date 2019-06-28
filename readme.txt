@@ -27,7 +27,7 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Better Schema product markup for WooCommerce:**
 
-The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements, where-as the **WPSSO Core Premium plugin and its WPSSO JSON Premium add-on include *complete and correct* Facebook Product meta tags and Schema Product markup for Google's Rich Results**, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements, where-as the **WPSSO Core Premium plugin and its WPSSO JSON Premium add-on provide *complete and correct* Facebook Product meta tags and Schema Product markup for Google's Rich Results**, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
 
 **Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
@@ -715,9 +715,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [GitHub](https://surniaulula.github.io/wpsso-schema-json-ld/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-schema-json-ld/)
 
-<h3>Development Updates for the Premium Add-on</h3>
+<h3>Development Updates for Premium Users</h3>
 
-<p>Development, alpha, beta, and release candidate updates are available for Premium add-on customers.</p>
+<p>Development, alpha, beta, and release candidate updates are available for Premium users.</p>
 
 <p>Under the SSO &gt; Update Manager settings page, select the "Development and Up" version filter for WPSSO Core and all its extensions (to satisfy any version dependencies). Save the plugin settings, and click the "Check for Updates" button to fetch the latest / current WPSSO version information. When new Development versions are available, they will automatically appear under your WordPress Dashboard &gt; Updates page. You can always re-select the "Stable / Production" version filter at any time to re-install the last stable / production version of a plugin.</p>
 

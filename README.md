@@ -23,7 +23,7 @@
 
 <p><strong>Better Schema product markup for WooCommerce:</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers <em>incomplete</em> Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements, where-as the <strong>WPSSO Core Premium plugin and its WPSSO JSON Premium add-on include <em>complete and correct</em> Facebook Product meta tags and Schema Product markup for Google's Rich Results</strong>, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
+<p>The <a href="https://wordpress.org/plugins/woocommerce/">WooCommerce plugin by Automattic</a> offers <em>incomplete</em> Schema markup for <a href="https://developers.google.com/search/docs/data-types/product">Google's Product Rich Results</a> requirements, where-as the <strong>WPSSO Core Premium plugin and its WPSSO JSON Premium add-on provide <em>complete and correct</em> Facebook Product meta tags and Schema Product markup for Google's Rich Results</strong>, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.</p>
 
 <p><strong>Fixes ALL Google Search Console / Structured Data Testing Tool errors:</strong></p>
 
