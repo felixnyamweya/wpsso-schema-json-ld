@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.2
 WC Tested Up To: 3.6
-Stable Tag: 2.0.1
+Stable Tag: 2.1.0
 
 WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
@@ -753,8 +753,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 2.1.0 =
 
 (2019/06/29) Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
-
-= 2.0.1 =
-
-(2019/06/24) Added a new "Default Family Friendly" option. Maintenance release for WPSSO Core v5.0.0.
 
