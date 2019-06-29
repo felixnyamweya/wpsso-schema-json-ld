@@ -723,6 +723,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.2.0-dev.1 (TBD)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Moved to WpssoSchemaSingle::add_video_data_mt().
+
 **Version 2.1.0 (2019/06/29)**
 
 * *New Features*
@@ -749,6 +760,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 2.2.0-dev.1 =
+
+(TBD) None.
 
 = 2.1.0 =
 
