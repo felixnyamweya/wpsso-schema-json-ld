@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.1 (TBD)**
+**Version 2.2.0-dev.1 (2019/06/29)**
 
 * *New Features*
 	* None.
@@ -732,7 +732,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Moved to WpssoSchemaSingle::add_video_data_mt().
+	* Schema method standardization and "@id" optimizations.
+		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
+		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 **Version 2.1.0 (2019/06/29)**
 
@@ -763,7 +765,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.2.0-dev.1 =
 
-(TBD) None.
+(2019/06/29) Schema method standardization and "@id" optimizations.
 
 = 2.1.0 =
 
