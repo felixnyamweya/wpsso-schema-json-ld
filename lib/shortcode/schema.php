@@ -367,14 +367,14 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 				$og_videos = $this->p->media->get_content_videos( 1, false, false, $prop_content );
 
 				if ( ! empty( $og_videos ) ) {
-					WpssoJsonSchema::add_video_list_data( $prop_ref[ 'video' ], $og_videos, 'og:video' );
+					WpssoSchema::add_videos_data_mt( $prop_ref[ 'video' ], $og_videos, 'og:video' );
 				}
 
 				$size_name = $this->p->lca . '-schema';
 				$og_images = $this->p->media->get_content_images( 1, $size_name, false, false, false, $prop_content );
 
 				if ( ! empty( $og_images ) ) {
-					WpssoSchema::add_og_image_list_data( $prop_ref[ 'image' ], $og_images );
+					WpssoSchema::add_images_data_mt( $prop_ref[ 'image' ], $og_images );
 				}
 
 				$this->get_content_json_data( $content, $prop_ref, true );

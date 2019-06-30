@@ -393,9 +393,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					}
 
 					if ( ! $add_post_data ) {
+
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'skipping post id ' . $post_mod[ 'id' ] . ' for prop_name ' . $prop_name );
 						}
+
 						continue;
 					}
 
@@ -406,7 +408,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$post_data = WpssoSchemaCache::get_single( $post_mod, false, $page_type_id );	// $mt_og is false.
 
 					if ( empty( $post_data ) ) {	// Prevent null assignment.
+
 						$wpsso->debug->log( 'single mod data for post id ' . $post_mod[ 'id' ] . ' is empty' );
+
 						continue;	// Get the next post mod.
 					}
 
@@ -420,9 +424,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$json_data[ $prop_name ][] = $post_data;	// Add the post data.
 
 					if ( $prop_name_count >= $ppp ) {
+
 						if ( $wpsso->debug->enabled ) {
 							$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 						}
+
 						break;	// Stop here.
 					}
 				}
@@ -527,7 +533,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding images to json data' );
 				}
 
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data[ 'image' ], $og_images );
+				$images_added = WpssoSchema::add_images_data_mt( $json_data[ 'image' ], $og_images );
 
 			} else {
 				$images_added = 0;
@@ -539,8 +545,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding default image to json data' );
 				}
 
-				$og_images    = $wpsso->media->get_default_images( 1, $size_name, true );
-				$images_added = WpssoSchema::add_og_image_list_data( $json_data[ 'image' ], $og_images );
+				$og_images = $wpsso->media->get_default_images( 1, $size_name, true );
+
+				$images_added = WpssoSchema::add_images_data_mt( $json_data[ 'image' ], $og_images );
 			}
 
 			if ( ! $images_added ) {
@@ -567,7 +574,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'adding videos to json data' );
 					}
-					$videos_added = WpssoJsonSchema::add_video_list_data( $json_data[ 'video' ], $mt_og[ 'og:video' ], 'og:video' );
+					$videos_added = WpssoSchema::add_videos_data_mt( $json_data[ 'video' ], $mt_og[ 'og:video' ], 'og:video' );
 				} else {
 					$videos_added = 0;
 				}
@@ -731,114 +738,6 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			return $replies_added;	// Return count of replies added.
-		}
-
-		/**
-		 * Provide a single or two-dimension video array in $og_videos.
-		 */
-		public static function add_video_list_data( &$json_data, $og_videos, $mt_prefix = 'og:video' ) {
-
-			$videos_added = 0;
-
-			if ( isset( $og_videos[0] ) && is_array( $og_videos[0] ) ) {	// 2 dimensional array.
-				foreach ( $og_videos as $og_single_video ) {
-					$videos_added += self::add_single_video_data( $json_data, $og_single_video, $mt_prefix, true );	// list_element is true.
-				}
-			} elseif ( is_array( $og_videos ) ) {
-				$videos_added += self::add_single_video_data( $json_data, $og_videos, $mt_prefix, true );	// list_element is true.
-			}
-
-			return $videos_added;	// return count of videos added
-		}
-
-		/**
-		 * Pass a single dimension video array in $opts.
-		 *
-		 * Example $opts array:
-		 *
-		 *	Array (
-		 *		[og:video:title]       => An Example Title
-		 *		[og:video:description] => An example description...
-		 *		[og:video:secure_url]  => https://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
-		 *		[og:video:url]         => http://vimeo.com/moogaloop.swf?clip_id=150575335&autoplay=1
-		 *		[og:video:type]        => application/x-shockwave-flash
-		 *		[og:video:width]       => 1280
-		 *		[og:video:height]      => 544
-		 *		[og:video:embed_url]   => https://player.vimeo.com/video/150575335?autoplay=1
-		 *		[og:video:has_image]   => 1
-		 *		[og:image:secure_url]  => https://i.vimeocdn.com/video/550095036_1280.jpg
-		 *		[og:image:url]         => http://i.vimeocdn.com/video/550095036_1280.jpg
-		 *		[og:image:url]         =>
-		 *		[og:image:width]       => 1280
-		 *		[og:image:height]      => 544
-		 *	)
-		 */
-		public static function add_single_video_data( &$json_data, $opts, $mt_prefix = 'og:video', $list_element = true ) {
-
-			$wpsso =& Wpsso::get_instance();
-
-			if ( empty( $opts ) || ! is_array( $opts ) ) {
-
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: options array is empty or not an array' );
-				}
-
-				return 0;	// Return count of videos added.
-			}
-
-			$media_url = SucomUtil::get_mt_media_url( $opts, $mt_prefix );
-
-			if ( empty( $media_url ) ) {
-				if ( $wpsso->debug->enabled ) {
-					$wpsso->debug->log( 'exiting early: ' . $mt_prefix . ' URL values are empty' );
-				}
-				return 0;	// Return count of videos added.
-			}
-
-			/**
-			 * If not adding a list element, inherit the existing schema type url (if one exists).
-			 */
-			list( $video_type_id, $video_type_url ) = WpssoSchemaSingle::get_type_id_url( $json_data, false, false, 'video.object', $list_element );
-
-			$ret = WpssoSchema::get_schema_type_context( $video_type_url, array(
-				'url' => SucomUtil::esc_url_encode( $media_url ),
-			) );
-
-			WpssoSchema::add_data_itemprop_from_assoc( $ret, $opts, array(
-				'name'         => $mt_prefix . ':title',
-				'description'  => $mt_prefix . ':description',
-				'fileFormat'   => $mt_prefix . ':type',	// mime type
-				'width'        => $mt_prefix . ':width',
-				'height'       => $mt_prefix . ':height',
-				'duration'     => $mt_prefix . ':duration',
-				'uploadDate'   => $mt_prefix . ':upload_date',
-				'thumbnailUrl' => $mt_prefix . ':thumbnail_url',
-				'embedUrl'     => $mt_prefix . ':embed_url',
-			) );
-
-			if ( ! empty( $opts[ $mt_prefix . ':has_image' ] ) ) {
-				if ( ! WpssoSchema::add_og_single_image_data( $ret[ 'thumbnail' ], $opts, null, false ) ) {	// list_element = false
-					unset( $ret[ 'thumbnail' ] );
-				}
-			}
-
-			if ( ! empty( $opts[ $mt_prefix . ':tag' ] ) ) {
-				if ( is_array( $opts[ $mt_prefix . ':tag' ] ) ) {
-					$ret[ 'keywords' ] = implode( ', ', $opts[ $mt_prefix . ':tag' ] );
-				} else {
-					$ret[ 'keywords' ] = $opts[ $mt_prefix . ':tag' ];
-				}
-			}
-
-			if ( empty( $list_element ) ) {		// Add a single item.
-				$json_data = $ret;
-			} elseif ( is_array( $json_data ) ) {	// Just in case.
-				$json_data[] = $ret;		// Add an item to the list.
-			} else {
-				$json_data = array( $ret );	// Add an item to the list.
-			}
-
-			return 1;	// Return count of videos added.
 		}
 
 		private static function get_page_posts_mods( array $mod, $page_type_id, $is_main, $ppp, $wpsso_paged, array $posts_args = array() ) {
