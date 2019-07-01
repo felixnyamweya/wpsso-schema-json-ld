@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.1 (2019/06/29)**
+**Version 2.2.0-dev.2 (2019/07/01)**
 
 * *New Features*
 	* None.
@@ -763,9 +763,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.1 =
+= 2.2.0-dev.2 =
 
-(2019/06/29) Schema method standardization and "@id" optimizations.
+(2019/07/01) Schema method standardization and "@id" optimizations.
 
 = 2.1.0 =
 
