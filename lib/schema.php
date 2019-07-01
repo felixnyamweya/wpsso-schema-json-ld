@@ -66,16 +66,18 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			foreach ( $page_posts_mods as $post_mod ) {
 
-				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
-
 				$posts_count++;
+
+				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
 
 				$json_data[] = $post_sharing_url;
 
 				if ( $posts_count >= $ppp ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 					}
+
 					break;	// Stop here.
 				}
 			}
@@ -94,7 +96,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$wpsso->debug->mark();
 			}
 
-			$prop_name   = 'itemListElement';
+			$prop_name = 'itemListElement';
+
 			$posts_count = isset( $json_data[ $prop_name ] ) ? count( $json_data[ $prop_name ] ) : 0;
 
 			/**
@@ -172,11 +175,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			foreach ( $page_posts_mods as $post_mod ) {
 
-				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
-
 				$posts_count++;
 
-				$post_data = WpssoSchema::get_schema_type_context( 'https://schema.org/ListItem', array(
+				$post_sharing_url = $wpsso->util->get_sharing_url( $post_mod );
+
+				$post_json_data = WpssoSchema::get_schema_type_context( 'https://schema.org/ListItem', array(
 					'position' => $posts_count,
 					'url'      => $post_sharing_url,
 				) );
@@ -185,7 +188,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 				}
 
-				$json_data[ $prop_name ][] = $post_data;	// Add the post data.
+				$json_data[ $prop_name ][] = $post_json_data;	// Add the post data.
 
 				if ( $prop_name_count >= $ppp ) {
 					if ( $wpsso->debug->enabled ) {
@@ -405,9 +408,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod[ 'id' ] );
 					}
 
-					$post_data = WpssoSchemaCache::get_single( $post_mod, false, $page_type_id );	// $mt_og is false.
+					$post_json_data = WpssoSchemaCache::get_mod_json_data( $post_mod, false, $page_type_id );	// $mt_og is false.
 
-					if ( empty( $post_data ) ) {	// Prevent null assignment.
+					if ( empty( $post_json_data ) ) {	// Prevent null assignment.
 
 						$wpsso->debug->log( 'single mod data for post id ' . $post_mod[ 'id' ] . ' is empty' );
 
@@ -415,13 +418,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 					}
 
 					$posts_count++;
+
 					$prop_name_count++;
 
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'adding post id ' . $post_mod[ 'id' ] . ' to ' . $prop_name . ' as array element #' . $prop_name_count );
 					}
 
-					$json_data[ $prop_name ][] = $post_data;	// Add the post data.
+					$json_data[ $prop_name ][] = $post_json_data;	// Add the post data.
 
 					if ( $prop_name_count >= $ppp ) {
 
@@ -452,6 +456,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 			}
 
 			unset( $wpsso_paged );
+
 			unset( $added_page_type_ids[ $page_type_id ] );
 
 			/**
