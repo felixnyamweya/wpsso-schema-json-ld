@@ -723,12 +723,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.5 (2019/07/02)**
+**Version 2.2.0-dev.6 (2019/07/02)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -763,9 +763,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.5 =
+= 2.2.0-dev.6 =
 
-(2019/07/02) Refactored several Schema methods for standardization and "@id" optimizations.
+(2019/07/02) WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
 
 = 2.1.0 =
 
