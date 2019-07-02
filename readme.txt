@@ -732,7 +732,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Schema method standardization and "@id" optimizations:
+	* Refactored several Schema methods for standardization and "@id" optimizations:
 		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
@@ -765,7 +765,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.2.0-dev.4 =
 
-(2019/07/02) Schema method standardization and "@id" optimizations.
+(2019/07/02) Refactored several Schema methods for standardization and "@id" optimizations.
 
 = 2.1.0 =
 
