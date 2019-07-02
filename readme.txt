@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.2 (2019/07/01)**
+**Version 2.2.0-dev.3 (2019/07/01)**
 
 * *New Features*
 	* None.
@@ -732,7 +732,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Schema method standardization and "@id" optimizations.
+	* Schema method standardization and "@id" optimizations:
 		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
@@ -763,7 +763,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.2 =
+= 2.2.0-dev.3 =
 
 (2019/07/01) Schema method standardization and "@id" optimizations.
 
