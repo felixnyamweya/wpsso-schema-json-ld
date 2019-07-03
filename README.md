@@ -179,6 +179,24 @@
 <li><p>Includes Review values (if available from WordPress) in the main webpage Schema "review" property.</p></li>
 <li><p>Supports the Schema JSON-LD created by the Yoast SEO How-To and FAQ blocks by moving it into the main webpage Schema CreativeWork markup.</p></li>
 <li><p>Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.</p></li>
+<li><p>Supports additional WooCommerce product attributes, including single attribute values for the main product, variable product attributes, and default product attribute values:</p>
+
+<ul>
+<li>Brand</li>
+<li>Color</li>
+<li>Condition</li>
+<li>MPN</li>
+<li>EAN</li>
+<li>GTIN-8</li>
+<li>GTIN-12</li>
+<li>GTIN-13</li>
+<li>GTIN-14</li>
+<li>ISBN</li>
+<li>Material</li>
+<li>Size</li>
+<li>Target Gender</li>
+<li>Volume (ml)</li>
+</ul></li>
 <li><p>Includes additional customizable option values in the Document SSO metabox, shown based on the selected Schema type:</p>
 
 <ul>

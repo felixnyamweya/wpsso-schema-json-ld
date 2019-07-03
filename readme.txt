@@ -163,6 +163,23 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 
 * Detects JSON-LD scripts in post content (from Gutenberg editor blocks, for example) and includes their data in the Schema CreativeWork type / sub-types.
 
+* Supports additional WooCommerce product attributes, including single attribute values for the main product, variable product attributes, and default product attribute values:
+
+	* Brand
+	* Color
+	* Condition
+	* MPN
+	* EAN
+	* GTIN-8
+	* GTIN-12
+	* GTIN-13
+	* GTIN-14
+	* ISBN
+	* Material
+	* Size
+	* Target Gender
+	* Volume (ml)
+
 * Includes additional customizable option values in the Document SSO metabox, shown based on the selected Schema type:
 
 	* All Schema Types <img class="readme-example" src="https://surniaulula.github.io/wpsso-schema-json-ld/images/settings/wpsso-json-social-metabox-product.png">
@@ -723,7 +740,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.7 (2019/07/03)**
+**Version 2.2.0-dev.8 (2019/07/03)**
 
 * *New Features*
 	* None.
@@ -763,7 +780,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.7 =
+= 2.2.0-dev.8 =
 
 (2019/07/03) WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
 
