@@ -723,7 +723,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.6 (2019/07/02)**
+**Version 2.2.0-dev.7 (2019/07/03)**
 
 * *New Features*
 	* None.
@@ -763,9 +763,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.6 =
+= 2.2.0-dev.7 =
 
-(2019/07/02) WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
+(2019/07/03) WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
 
 = 2.1.0 =
 
