@@ -740,11 +740,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.8 (2019/07/03)**
+**Version 2.2.0-b.1 (2019/07/03)**
 
 * *New Features*
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
 * *Improvements*
+	* Added Schema Product markup for length (cm), size, and volume (ml) as an "additionalProperty".
 	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
 * *Bugfixes*
 	* None.
@@ -780,7 +781,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-dev.8 =
+= 2.2.0-b.1 =
 
 (2019/07/03) Added support for a WooCommerce "Volume" (in milliliters) product attribute. WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
 
