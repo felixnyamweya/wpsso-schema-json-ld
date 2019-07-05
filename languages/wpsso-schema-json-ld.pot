@@ -594,7 +594,7 @@ msgid "Same-As URLs"
 msgstr ""
 
 #: lib/gettext-pro.php:18 lib/pro/admin/post.php:222 lib/std/admin/post.php:199
-#: lib/submenu/schema-general.php:241
+#: lib/submenu/schema-general.php:237
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr ""
@@ -640,7 +640,7 @@ msgid "Service Provider"
 msgstr ""
 
 #: lib/gettext-pro.php:27 lib/pro/admin/post.php:295 lib/std/admin/post.php:280
-#: lib/submenu/schema-general.php:268
+#: lib/submenu/schema-general.php:264
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr ""
@@ -775,7 +775,7 @@ msgid "Section Description or Direction Text"
 msgstr ""
 
 #: lib/gettext-pro.php:53 lib/pro/admin/post.php:485 lib/std/admin/post.php:485
-#: lib/submenu/schema-general.php:305
+#: lib/submenu/schema-general.php:301
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr ""
@@ -1162,17 +1162,17 @@ msgstr ""
 
 #: lib/submenu/schema-general.php:55
 msgctxt "metabox tab"
-msgid "Schema Props"
+msgid "Knowledge Graph"
 msgstr ""
 
 #: lib/submenu/schema-general.php:56
 msgctxt "metabox tab"
-msgid "Schema Types"
+msgid "Schema Props"
 msgstr ""
 
 #: lib/submenu/schema-general.php:57
 msgctxt "metabox tab"
-msgid "Knowledge Graph"
+msgid "Schema Types"
 msgstr ""
 
 #: lib/submenu/schema-general.php:58
@@ -1190,87 +1190,97 @@ msgctxt "metabox tab"
 msgid "Meta Defaults"
 msgstr ""
 
-#: lib/submenu/schema-general.php:93
+#: lib/submenu/schema-general.php:99
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:98
+#: lib/submenu/schema-general.php:104
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr ""
 
-#: lib/submenu/schema-general.php:103
+#: lib/submenu/schema-general.php:109
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr ""
 
-#: lib/submenu/schema-general.php:110
+#: lib/submenu/schema-general.php:116
 msgctxt "option label"
 msgid "Maximum Text Property Length"
 msgstr ""
 
-#: lib/submenu/schema-general.php:113
+#: lib/submenu/schema-general.php:119
 msgctxt "option comment"
 msgid "characters or less"
 msgstr ""
 
-#: lib/submenu/schema-general.php:116
+#: lib/submenu/schema-general.php:122
 msgctxt "option label"
 msgid "Add CreativeWork Text Property"
 msgstr ""
 
-#: lib/submenu/schema-general.php:121
+#: lib/submenu/schema-general.php:127
 msgctxt "option label"
 msgid "Add 5 Star Rating If No Rating"
 msgstr ""
 
-#: lib/submenu/schema-general.php:244
+#: lib/submenu/schema-general.php:142
+msgctxt "metabox title"
+msgid "Product Attribute Names"
+msgstr ""
+
+#: lib/submenu/schema-general.php:163
+msgctxt "metabox title"
+msgid "Custom Field Names"
+msgstr ""
+
+#: lib/submenu/schema-general.php:240
 msgctxt "option label"
 msgid "Default Family Friendly"
 msgstr ""
 
-#: lib/submenu/schema-general.php:250
+#: lib/submenu/schema-general.php:246
 msgctxt "option label"
 msgid "Default Publisher"
 msgstr ""
 
-#: lib/submenu/schema-general.php:256
+#: lib/submenu/schema-general.php:252
 msgctxt "option label"
 msgid "Default Service Provider"
 msgstr ""
 
-#: lib/submenu/schema-general.php:271
+#: lib/submenu/schema-general.php:267
 msgctxt "option label"
 msgid "Default Organizer Org"
 msgstr ""
 
-#: lib/submenu/schema-general.php:277
+#: lib/submenu/schema-general.php:273
 msgctxt "option label"
 msgid "Default Organizer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:282
+#: lib/submenu/schema-general.php:278
 msgctxt "option label"
 msgid "Default Performer Org"
 msgstr ""
 
-#: lib/submenu/schema-general.php:288
+#: lib/submenu/schema-general.php:284
 msgctxt "option label"
 msgid "Default Performer Person"
 msgstr ""
 
-#: lib/submenu/schema-general.php:293
+#: lib/submenu/schema-general.php:289
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr ""
 
-#: lib/submenu/schema-general.php:308
+#: lib/submenu/schema-general.php:304
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr ""
 
-#: lib/submenu/schema-general.php:314
+#: lib/submenu/schema-general.php:310
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr ""

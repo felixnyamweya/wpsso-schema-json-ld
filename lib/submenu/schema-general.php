@@ -52,9 +52,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			$metabox_id = 'schema_general';
 
 			$tabs = apply_filters( $this->p->lca . '_' . $metabox_id . '_tabs', array( 
+				'knowledge_graph' => _x( 'Knowledge Graph', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'props'           => _x( 'Schema Props', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'types'           => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
-				'knowledge_graph' => _x( 'Knowledge Graph', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'integration'     => _x( 'Integration', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'custom_meta'     => _x( 'Custom Meta', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'meta_defaults'   => _x( 'Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
@@ -78,6 +78,12 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 			switch ( $metabox_id . '-' . $tab_key ) {
 
+				case 'schema_general-knowledge_graph':
+
+					$this->add_schema_knowledge_graph_table_rows( $table_rows );
+
+					break;
+
 				case 'schema_general-props':
 
 					$atts_locale = array( 'is_locale' => true );
@@ -89,24 +95,24 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					$site_name_alt_key = SucomUtil::get_key_locale( 'site_name_alt', $this->form->options );
 					$site_desc_key     = SucomUtil::get_key_locale( 'site_desc', $this->form->options );
 
-					$table_rows['site_name'] = $this->form->get_tr_hide( 'basic', $site_name_key ) . 
+					$table_rows[ 'site_name' ] = '' .
 					$this->form->get_th_html( _x( 'WebSite Name',
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_name', $atts_locale ) . 
 					'<td>' . $this->form->get_input( $site_name_key, 'long_name', '', 0, $def_site_name ) . '</td>';
 
-					$table_rows['site_name_alt'] = $this->form->get_tr_hide( 'basic', $site_name_alt_key ) . 
+					$table_rows[ 'site_name_alt' ] = '' .
 					$this->form->get_th_html( _x( 'WebSite Alternate Name',
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_name_alt', $atts_locale ) . 
 					'<td>' . $this->form->get_input( $site_name_alt_key, 'long_name' ) . '</td>';
 
-					$table_rows['site_desc'] = $this->form->get_tr_hide( 'basic', $site_desc_key ) . 
+					$table_rows[ 'site_desc' ] = '' .
 					$this->form->get_th_html( _x( 'WebSite Description',
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $atts_locale ) . 
 					'<td>' . $this->form->get_textarea( $site_desc_key, '', '', 0, $def_site_desc ) . '</td>';
 
 					$this->add_schema_item_props_table_rows( $table_rows );
 
-					$table_rows['schema_text_max_len'] = $this->form->get_tr_hide( 'basic', 'schema_text_max_len' ) . 
+					$table_rows[ 'schema_text_max_len' ] = $this->form->get_tr_hide( 'basic', 'schema_text_max_len' ) . 
 					$this->form->get_th_html( _x( 'Maximum Text Property Length',
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_text_max_len' ) . 
 					'<td>' . $this->form->get_input( 'schema_text_max_len', 'short' ) . ' ' .
@@ -117,7 +123,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_add_text_prop' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_text_prop' ) . '</td>';
 
-					$table_rows[ 'schema_add_5_star_rating' ] = '' .
+					$table_rows[ 'schema_add_5_star_rating' ] = $this->form->get_tr_hide( 'basic', 'schema_add_5_star_rating' ) .
 					$this->form->get_th_html( _x( 'Add 5 Star Rating If No Rating',
 						'option label', 'wpsso-schema-json-ld' ), '', 'schema_add_5_star_rating' ) . 
 					'<td>' . $this->form->get_checkbox( 'schema_add_5_star_rating' ) . '</td>';
@@ -126,27 +132,14 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-types':
 
-					$schema_types = $this->p->schema->get_schema_types_select( null, $add_none = true );
-
-					/**
-					 * Show all by default, except for the archive, user, and search types.
-					 */
-					$this->add_schema_item_types_table_rows( $table_rows, array(
-						'schema_type_for_user_page'    => 'basic',
-						'schema_type_for_search_page'  => 'basic',
-						'schema_type_for_archive_page' => 'basic',
-						'schema_type_for_ttn'          => 'basic',
-					), $schema_types );
-
-					break;
-
-				case 'schema_general-knowledge_graph':
-
-					$this->add_schema_knowledge_graph_table_rows( $table_rows );
+					$this->add_schema_item_types_table_rows( $table_rows );
 
 					break;
 
 				case 'schema_general-integration':
+
+					$table_rows[ 'subsection_product_attr' ] = '<td colspan="2" class="subsection top"><h4>' .
+						_x( 'Product Attribute Names', 'metabox title', 'wpsso' ) . '</h4></td>';
 
 					if ( ! $is_pp = $this->p->check->is_pp() ) {
 						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
@@ -165,6 +158,9 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 					break;
 
 				case 'schema_general-custom_meta':
+
+					$table_rows[ 'subsection_custom_fields' ] = '<td colspan="2" class="subsection top"><h4>' .
+						_x( 'Custom Field Names', 'metabox title', 'wpsso' ) . '</h4></td>';
 
 					if ( ! $is_pp = $this->p->check->is_pp() ) {
 						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
@@ -237,7 +233,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_creative_work' => array(
 					'td_class' => 'subsection top',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_family_friendly' => array(
@@ -264,7 +260,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_event' => array(
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Event Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_event_organizer_org_id' => array(
@@ -301,7 +297,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				 */
 				'subsection_def_job' => array(
 					'td_class' => 'subsection',
-					'header'   => 'h5',
+					'header'   => 'h4',
 					'label'    => _x( 'Job Posting Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
 				'schema_def_job_hiring_org_id' => array(
