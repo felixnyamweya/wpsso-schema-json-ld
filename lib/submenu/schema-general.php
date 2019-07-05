@@ -132,59 +132,25 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-types':
 
-					$this->add_schema_item_types_table_rows( $table_rows );
+					$this->add_schema_item_types_table_rows( $table_rows, $hide_in_basic = false );
 
 					break;
 
 				case 'schema_general-integration':
 
-					$table_rows[ 'subsection_product_attr' ] = '<td colspan="2" class="subsection top"><h4>' .
-						_x( 'Product Attribute Names', 'metabox title', 'wpsso' ) . '</h4></td>';
-
-					if ( ! $is_pp = $this->p->check->is_pp() ) {
-						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
-					}
-
 					/**
 					 * Product attribute names.
 					 */
-					foreach ( $this->p->cf[ 'form' ][ 'product_attr_labels' ] as $opt_key => $opt_label ) {
-
-						$table_rows[ $opt_key ] = $this->form->get_th_html( _x( $opt_label, 'option label', 'wpsso' ), '', $opt_key ) . 
-							( $is_pp ? '<td>' . $this->form->get_input( $opt_key ) . '</td>' : '<td class="blank">' .
-								$this->form->get_no_input( $opt_key ) . '</td>' );
-					}
+					$this->add_advanced_product_attr_table_rows( $table_rows, $this->form, $hide_in_basic = false, $is_top_section = true );
 
 					break;
 
 				case 'schema_general-custom_meta':
 
-					$table_rows[ 'subsection_custom_fields' ] = '<td colspan="2" class="subsection top"><h4>' .
-						_x( 'Custom Field Names', 'metabox title', 'wpsso' ) . '</h4></td>';
-
-					if ( ! $is_pp = $this->p->check->is_pp() ) {
-						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
-					}
-
 					/**
-					 * Custom fields.
+					 * Custom field names.
 					 */
-					$cf_md_keys = (array) apply_filters( $this->p->lca . '_cf_md_keys', $this->p->cf[ 'opt' ][ 'cf_md_key' ] );
-
-					foreach ( $cf_md_keys as $opt_key => $cf_md_key ) {
-
-						if ( ! empty( $this->p->cf[ 'form' ][ 'cf_labels' ][ $opt_key ] ) ) {
-
-							if ( empty( $cf_md_key ) ) {
-								$this->form->options[ $opt_key ] = '';
-							}
-
-							$table_rows[ $opt_key ] = $this->form->get_th_html( _x( $this->p->cf[ 'form' ][ 'cf_labels' ][ $opt_key ],
-								'option label', 'wpsso' ), '', $opt_key ) . ( $is_pp ? '<td>' . $this->form->get_input( $opt_key,
-									'', '', 0, '', ( empty( $cf_md_key ) ? true : false ) ) . '</td>' : '<td class="blank">' .
-										$this->form->get_no_input( $opt_key ) . '</td>' );
-						}
-					}
+					$this->add_advanced_custom_fields_table_rows( $table_rows, $this->form, $hide_in_basic = false, $is_top_section = true );
 
 					break;
 

@@ -46,7 +46,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					'option_type'               => 2,
 					'save_post_options'         => 4,
 					'post_cache_transient_keys' => 4,
-					'pub_google_rows'           => 2,
 					'messages_tooltip_meta'     => 2,
 					'messages_tooltip_schema'   => 2,
 				) );
@@ -1011,38 +1010,6 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			);
 
 			return $transient_keys;
-		}
-
-		/**
-		 * Filter the SSO > General > Google / Schema tab options.
-		 */
-		public function filter_pub_google_rows( $table_rows, $form ) {
-
-			foreach ( array_keys( $table_rows ) as $row_key ) {
-
-				switch ( $row_key ) {
-
-					/**
-					 * Keep these rows.
-					 */
-					case 'schema_knowledge_graph':
-					case 'schema_home_person_id':
-
-						break;
-
-					/**
-					 * Remove these rows.
-					 */
-					case 'subsection_google_schema':
-					case ( strpos( $row_key, 'schema_' ) === 0 ? true : false ):
-
-						unset( $table_rows[ $row_key ] );
-
-						break;
-				}
-			}
-
-			return $table_rows;
 		}
 
 		public function filter_messages_tooltip_meta( $text, $msg_key ) {
