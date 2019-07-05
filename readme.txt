@@ -77,6 +77,12 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 
 * Adds a Schema Markup settings page to the SSO menu with additional options:
 
+	* Knowledge Graph
+		* Knowledge Graph for Home Page
+			* Include WebSite Information for Google Search
+			* Include Organization Social Profile for a Business Website
+			* Include Person Social Profile for a Personal Website
+		* User for Person Social Profile
 	* Schema Properties
 		* WebSite Name
 		* WebSite Alternate Name
@@ -97,12 +103,52 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Type for Other Archive Page
 		* Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
 		* Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
-	* Knowledge Graph
-		* Knowledge Graph for Home Page
-			* Include WebSite Information for Google Search
-			* Include Organization Social Profile for a Business Website
-			* Include Person Social Profile for a Personal Website
-		* User for Person Social Profile
+	* Integration (WPSSO Core Premium required)
+		* Product Attribute Names
+			* Product Brand Attribute Name 
+			* Product Color Attribute Name 
+			* Product Condition Attribute Name 
+			* Product MPN Attribute Name 
+			* Product EAN Attribute Name 
+			* Product GTIN-8 Attribute Name 
+			* Product GTIN-12 Attribute Name 
+			* Product GTIN-13 Attribute Name 
+			* Product GTIN-14 Attribute Name 
+			* Product ISBN Attribute Name 
+			* Product Material Attribute Name 
+			* Product Size Attribute Name 
+			* Product Target Gender Attr. Name
+			* Product Volume (ml) Attribute Name
+	* Custom Meta (WPSSO Core Premium required)
+		* Custom Field Names
+			* Microdata Type URLs Custom Field 
+			* How-To Steps Custom Field 
+			* How-To Supplies Custom Field 
+			* How-To Tools Custom Field 
+			* Image URL Custom Field 
+			* Product Availability Custom Field
+			* Product Brand Custom Field 
+			* Product Color Custom Field 
+			* Product Condition Custom Field 
+			* Product Currency Custom Field
+			* Product EAN Custom Field 
+			* Product GTIN-8 Custom Field 
+			* Product GTIN-12 Custom Field 
+			* Product GTIN-13 Custom Field 
+			* Product GTIN-14 Custom Field 
+			* Product ISBN Custom Field 
+			* Product Material Custom Field 
+			* Product MPN Custom Field 
+			* Product Price Custom Field 
+			* Product Size Custom Field 
+			* Product SKU Custom Field 
+			* Product Target Gender Custom Field 
+			* Product Volume (ml) Custom Field 
+			* Recipe Ingredients Custom Field 
+			* Recipe Instructions Custom Field 
+			* Same-As URLs Custom Field 
+			* Video Embed HTML Custom Field 
+			* Video URL Custom Field
 	* Meta Defaults
 		* Creative Work Information
 			* Default Family Friendly

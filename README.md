@@ -73,6 +73,18 @@
 <li><p>Adds a Schema Markup settings page to the SSO menu with additional options:</p>
 
 <ul>
+<li>Knowledge Graph
+
+<ul>
+<li>Knowledge Graph for Home Page
+
+<ul>
+<li>Include WebSite Information for Google Search</li>
+<li>Include Organization Social Profile for a Business Website</li>
+<li>Include Person Social Profile for a Personal Website</li>
+</ul></li>
+<li>User for Person Social Profile</li>
+</ul></li>
 <li>Schema Properties
 
 <ul>
@@ -99,17 +111,63 @@
 <li>Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types</li>
 <li>Type by Term Taxonomy for Categories, Tags, and custom term taxonomies</li>
 </ul></li>
-<li>Knowledge Graph
+<li>Integration (WPSSO Core Premium required)
 
 <ul>
-<li>Knowledge Graph for Home Page
+<li>Product Attribute Names
 
 <ul>
-<li>Include WebSite Information for Google Search</li>
-<li>Include Organization Social Profile for a Business Website</li>
-<li>Include Person Social Profile for a Personal Website</li>
+<li>Product Brand Attribute Name </li>
+<li>Product Color Attribute Name </li>
+<li>Product Condition Attribute Name </li>
+<li>Product MPN Attribute Name </li>
+<li>Product EAN Attribute Name </li>
+<li>Product GTIN-8 Attribute Name </li>
+<li>Product GTIN-12 Attribute Name </li>
+<li>Product GTIN-13 Attribute Name </li>
+<li>Product GTIN-14 Attribute Name </li>
+<li>Product ISBN Attribute Name </li>
+<li>Product Material Attribute Name </li>
+<li>Product Size Attribute Name </li>
+<li>Product Target Gender Attr. Name</li>
+<li>Product Volume (ml) Attribute Name</li>
 </ul></li>
-<li>User for Person Social Profile</li>
+</ul></li>
+<li>Custom Meta (WPSSO Core Premium required)
+
+<ul>
+<li>Custom Field Names
+
+<ul>
+<li>Microdata Type URLs Custom Field </li>
+<li>How-To Steps Custom Field </li>
+<li>How-To Supplies Custom Field </li>
+<li>How-To Tools Custom Field </li>
+<li>Image URL Custom Field </li>
+<li>Product Availability Custom Field</li>
+<li>Product Brand Custom Field </li>
+<li>Product Color Custom Field </li>
+<li>Product Condition Custom Field </li>
+<li>Product Currency Custom Field</li>
+<li>Product EAN Custom Field </li>
+<li>Product GTIN-8 Custom Field </li>
+<li>Product GTIN-12 Custom Field </li>
+<li>Product GTIN-13 Custom Field </li>
+<li>Product GTIN-14 Custom Field </li>
+<li>Product ISBN Custom Field </li>
+<li>Product Material Custom Field </li>
+<li>Product MPN Custom Field </li>
+<li>Product Price Custom Field </li>
+<li>Product Size Custom Field </li>
+<li>Product SKU Custom Field </li>
+<li>Product Target Gender Custom Field </li>
+<li>Product Volume (ml) Custom Field </li>
+<li>Recipe Ingredients Custom Field </li>
+<li>Recipe Instructions Custom Field </li>
+<li>Same-As URLs Custom Field </li>
+<li>Video Embed HTML Custom Field </li>
+<li>Video URL Custom Field</li>
+</ul></li>
 </ul></li>
 <li>Meta Defaults
 
