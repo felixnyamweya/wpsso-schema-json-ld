@@ -786,7 +786,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-rc.1 (2019/07/05)**
+**Version 2.2.0-rc.2 (2019/07/05)**
 
 * *New Features*
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
@@ -828,7 +828,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-rc.1 =
+= 2.2.0-rc.2 =
 
 (2019/07/05) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
 
