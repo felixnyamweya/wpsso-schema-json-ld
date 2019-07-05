@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Schema JSON-LD Markup 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-07-02 17:20-0700\n"
-"PO-Revision-Date: 2019-07-02 17:20-0700\n"
+"POT-Creation-Date: 2019-07-05 07:25-0700\n"
+"PO-Revision-Date: 2019-07-05 07:26-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -490,10 +490,10 @@ msgid "Same-As URLs"
 msgstr "URLs Same-As"
 
 #: lib/gettext-pro.php:18 lib/pro/admin/post.php:222 lib/std/admin/post.php:199
-#: lib/submenu/schema-general.php:193
+#: lib/submenu/schema-general.php:237
 msgctxt "metabox title"
 msgid "Creative Work Information"
-msgstr "Informations sur l'oeuvre créative"
+msgstr "Informations d'oeuvre créative"
 
 #: lib/gettext-pro.php:19 lib/pro/admin/post.php:228 lib/std/admin/post.php:206
 msgctxt "option label"
@@ -536,10 +536,10 @@ msgid "Service Provider"
 msgstr "Fournisseur de service"
 
 #: lib/gettext-pro.php:27 lib/pro/admin/post.php:295 lib/std/admin/post.php:280
-#: lib/submenu/schema-general.php:220
+#: lib/submenu/schema-general.php:264
 msgctxt "metabox title"
 msgid "Event Information"
-msgstr "Informations sur l'événement"
+msgstr "Informations d'événement"
 
 #: lib/gettext-pro.php:28 lib/pro/admin/post.php:300 lib/std/admin/post.php:286
 msgctxt "option label"
@@ -619,7 +619,7 @@ msgstr "Disponibilité de l'offre pour l'événement"
 #: lib/gettext-pro.php:43 lib/pro/admin/post.php:407 lib/std/admin/post.php:403
 msgctxt "metabox title"
 msgid "How-To Information"
-msgstr "Informations sur le How-To"
+msgstr "Informations de How-To"
 
 #: lib/gettext-pro.php:44 lib/pro/admin/post.php:412 lib/std/admin/post.php:409
 msgctxt "option label"
@@ -671,10 +671,10 @@ msgid "Section Description or Direction Text"
 msgstr "Description de section ou texte de direction"
 
 #: lib/gettext-pro.php:53 lib/pro/admin/post.php:485 lib/std/admin/post.php:485
-#: lib/submenu/schema-general.php:257
+#: lib/submenu/schema-general.php:301
 msgctxt "metabox title"
 msgid "Job Posting Information"
-msgstr "Informations sur l'affichage d'emploi"
+msgstr "Informations d'affichage d'emploi"
 
 #: lib/gettext-pro.php:54 lib/gettext-pro.php:130 lib/pro/admin/post.php:491
 #: lib/pro/admin/user.php:125 lib/std/admin/post.php:492
@@ -716,7 +716,7 @@ msgstr "L'offre d'emploi expire"
 #: lib/gettext-pro.php:61 lib/pro/admin/post.php:541 lib/std/admin/post.php:547
 msgctxt "metabox title"
 msgid "Movie Information"
-msgstr "Informations sur le film"
+msgstr "Informations de film"
 
 #: lib/gettext-pro.php:62 lib/pro/admin/post.php:546 lib/std/admin/post.php:553
 msgctxt "option label"
@@ -741,7 +741,7 @@ msgstr "Durée du film"
 #: lib/gettext-pro.php:66 lib/pro/admin/post.php:583 lib/std/admin/post.php:591
 msgctxt "metabox title"
 msgid "Organization Information"
-msgstr "Informations sur l'organisation"
+msgstr "Informations d'organisation"
 
 #: lib/gettext-pro.php:67 lib/pro/admin/post.php:588 lib/std/admin/post.php:597
 msgctxt "option label"
@@ -753,7 +753,7 @@ msgstr "Organisation"
 #: lib/std/admin/user.php:105
 msgctxt "metabox title"
 msgid "Person Information"
-msgstr "Informations sur la personne"
+msgstr "Informations de personne"
 
 #: lib/gettext-pro.php:69 lib/pro/admin/post.php:605 lib/std/admin/post.php:615
 msgctxt "option label"
@@ -763,7 +763,7 @@ msgstr "Personne"
 #: lib/gettext-pro.php:70 lib/pro/admin/post.php:617 lib/std/admin/post.php:627
 msgctxt "metabox title"
 msgid "QA Page Information"
-msgstr "Informations sur la page QA"
+msgstr "Informations de page QA"
 
 #: lib/gettext-pro.php:71 lib/pro/admin/post.php:622 lib/std/admin/post.php:633
 msgctxt "option label"
@@ -773,7 +773,7 @@ msgstr "En-tête QA"
 #: lib/gettext-pro.php:72 lib/pro/admin/post.php:634 lib/std/admin/post.php:645
 msgctxt "metabox title"
 msgid "Recipe Information"
-msgstr "Informations sur la recette"
+msgstr "Informations de recette"
 
 #: lib/gettext-pro.php:73 lib/pro/admin/post.php:639 lib/std/admin/post.php:651
 msgctxt "option label"
@@ -940,7 +940,7 @@ msgstr "milligrammes de cholestérol"
 #: lib/std/admin/post.php:853
 msgctxt "metabox title"
 msgid "Review Information"
-msgstr "Informations sur l'évaluation"
+msgstr "Informations d'évaluation"
 
 #: lib/gettext-pro.php:107 lib/pro/admin/post.php:828
 #: lib/std/admin/post.php:859
@@ -976,7 +976,7 @@ msgstr "URL du sujet de l'évaluation"
 #: lib/std/admin/post.php:891
 msgctxt "metabox title"
 msgid "Claim Review Information"
-msgstr "Informations sur l'évaluation de déclaration"
+msgstr "Informations d'évaluation de déclaration"
 
 #: lib/gettext-pro.php:113 lib/pro/admin/post.php:863
 #: lib/std/admin/post.php:897
@@ -1053,105 +1053,125 @@ msgstr "Balisage Schéma JSON-LD"
 
 #: lib/submenu/schema-general.php:55
 msgctxt "metabox tab"
-msgid "Schema Properties"
-msgstr "Propriétés de Schéma"
+msgid "Knowledge Graph"
+msgstr "Knowledge Graph"
 
 #: lib/submenu/schema-general.php:56
+msgctxt "metabox tab"
+msgid "Schema Props"
+msgstr "Prop. de Schéma"
+
+#: lib/submenu/schema-general.php:57
 msgctxt "metabox tab"
 msgid "Schema Types"
 msgstr "Types de Schéma"
 
-#: lib/submenu/schema-general.php:57
-msgctxt "metabox tab"
-msgid "Knowledge Graph"
-msgstr "Knowledge Graph"
-
 #: lib/submenu/schema-general.php:58
 msgctxt "metabox tab"
-msgid "Custom Meta Defaults"
-msgstr "Défauts pour méta"
+msgid "Integration"
+msgstr "Intégration"
 
-#: lib/submenu/schema-general.php:91
+#: lib/submenu/schema-general.php:59
+msgctxt "metabox tab"
+msgid "Custom Meta"
+msgstr "Méta personnalisé"
+
+#: lib/submenu/schema-general.php:60
+msgctxt "metabox tab"
+msgid "Meta Defaults"
+msgstr "Défauts de méta"
+
+#: lib/submenu/schema-general.php:99
 msgctxt "option label"
 msgid "WebSite Name"
 msgstr "Nom du site Web"
 
-#: lib/submenu/schema-general.php:96
+#: lib/submenu/schema-general.php:104
 msgctxt "option label"
 msgid "WebSite Alternate Name"
 msgstr "Autre nom du site Web"
 
-#: lib/submenu/schema-general.php:101
+#: lib/submenu/schema-general.php:109
 msgctxt "option label"
 msgid "WebSite Description"
 msgstr "Description du site Web"
 
-#: lib/submenu/schema-general.php:108
+#: lib/submenu/schema-general.php:116
 msgctxt "option label"
 msgid "Maximum Text Property Length"
 msgstr "Longueur maximale de la propriété text"
 
-#: lib/submenu/schema-general.php:111
+#: lib/submenu/schema-general.php:119
 msgctxt "option comment"
 msgid "characters or less"
 msgstr "caractères ou moins"
 
-#: lib/submenu/schema-general.php:114
+#: lib/submenu/schema-general.php:122
 msgctxt "option label"
 msgid "Add CreativeWork Text Property"
 msgstr "Ajouter la propriété CreativeWork text"
 
-#: lib/submenu/schema-general.php:119
+#: lib/submenu/schema-general.php:127
 msgctxt "option label"
 msgid "Add 5 Star Rating If No Rating"
 msgstr "Ajouter note 5 étoiles si aucune note"
 
-#: lib/submenu/schema-general.php:196
+#: lib/submenu/schema-general.php:142
+msgctxt "metabox title"
+msgid "Product Attribute Names"
+msgstr "Noms d'attributs de produit"
+
+#: lib/submenu/schema-general.php:163
+msgctxt "metabox title"
+msgid "Custom Field Names"
+msgstr "Noms de champs personnalisés"
+
+#: lib/submenu/schema-general.php:240
 msgctxt "option label"
 msgid "Default Family Friendly"
 msgstr "Favorable à la famille par défaut"
 
-#: lib/submenu/schema-general.php:202
+#: lib/submenu/schema-general.php:246
 msgctxt "option label"
 msgid "Default Publisher"
 msgstr "Éditeur par défaut"
 
-#: lib/submenu/schema-general.php:208
+#: lib/submenu/schema-general.php:252
 msgctxt "option label"
 msgid "Default Service Provider"
 msgstr "Fournisseur de service par défaut"
 
-#: lib/submenu/schema-general.php:223
+#: lib/submenu/schema-general.php:267
 msgctxt "option label"
 msgid "Default Organizer Org"
 msgstr "Org. par défaut pour l'organisateur"
 
-#: lib/submenu/schema-general.php:229
+#: lib/submenu/schema-general.php:273
 msgctxt "option label"
 msgid "Default Organizer Person"
 msgstr "Personne par défaut pour l'organisateur"
 
-#: lib/submenu/schema-general.php:234
+#: lib/submenu/schema-general.php:278
 msgctxt "option label"
 msgid "Default Performer Org"
 msgstr "Org. par défaut pour l'interprète"
 
-#: lib/submenu/schema-general.php:240
+#: lib/submenu/schema-general.php:284
 msgctxt "option label"
 msgid "Default Performer Person"
 msgstr "Personne par défaut pour l'interprète"
 
-#: lib/submenu/schema-general.php:245
+#: lib/submenu/schema-general.php:289
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr "Place par défaut pour l'événement"
 
-#: lib/submenu/schema-general.php:260
+#: lib/submenu/schema-general.php:304
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr "Organisation d'embauche par défaut"
 
-#: lib/submenu/schema-general.php:266
+#: lib/submenu/schema-general.php:310
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr "Lieu de travail par défaut"
