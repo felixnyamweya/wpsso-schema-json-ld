@@ -103,7 +103,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Include Organization Social Profile for a Business Website
 			* Include Person Social Profile for a Personal Website
 		* User for Person Social Profile
-	* Custom Meta Defaults
+	* Meta Defaults
 		* Creative Work Information
 			* Default Family Friendly
 			* Default Publisher
@@ -740,12 +740,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-b.1 (2019/07/03)**
+**Version 2.2.0-b.2 (2019/07/04)**
 
 * *New Features*
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
 * *Improvements*
 	* Added Schema Product markup for length (cm), size, and volume (ml) as an "additionalProperty".
+	* Added a new "Integration" and "Custom Meta" tab with options from the SSO &gt; Advanced settings page.
 	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
 * *Bugfixes*
 	* None.
@@ -773,7 +774,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* Renamed "Pro" distribution to "Premium".
 	* Renamed "Free" distribution to "Standard".
-	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Custom Meta Defaults tab.
+	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Meta Defaults tab.
 * *Bugfixes*
 	* Fixed an incorrect filter name in the WpssoJsonProHeadWebpage class (Premium add-on).
 * *Developer Notes*
@@ -781,9 +782,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-b.1 =
+= 2.2.0-b.2 =
 
-(2019/07/03) Added support for a WooCommerce "Volume" (in milliliters) product attribute. WooCommerce attributes used for variations are now excluded from the main Schema Product markup and used in each Schema Offer markup instead.
+(2019/07/04) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
 
 = 2.1.0 =
 
