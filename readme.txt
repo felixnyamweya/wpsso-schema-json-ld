@@ -786,13 +786,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-b.2 (2019/07/04)**
+**Version 2.2.0-rc.1 (2019/07/05)**
 
 * *New Features*
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
 * *Improvements*
 	* Added Schema Product markup for length (cm), size, and volume (ml) as an "additionalProperty".
-	* Added a new "Integration" and "Custom Meta" tab with options from the SSO &gt; Advanced settings page.
+	* Added a new "Integration" and "Custom Meta" tab with options from the SSO &gt; Advanced settings page (WPSSO Core Premium required).
 	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
 * *Bugfixes*
 	* None.
@@ -828,9 +828,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-b.2 =
+= 2.2.0-rc.1 =
 
-(2019/07/04) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
+(2019/07/05) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
 
 = 2.1.0 =
 
