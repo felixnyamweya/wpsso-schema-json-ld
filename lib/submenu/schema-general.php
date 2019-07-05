@@ -52,10 +52,12 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			$metabox_id = 'schema_general';
 
 			$tabs = apply_filters( $this->p->lca . '_' . $metabox_id . '_tabs', array( 
-				'props'           => _x( 'Schema Properties', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'props'           => _x( 'Schema Props', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'types'           => _x( 'Schema Types', 'metabox tab', 'wpsso-schema-json-ld' ),
 				'knowledge_graph' => _x( 'Knowledge Graph', 'metabox tab', 'wpsso-schema-json-ld' ),
-				'meta_defaults'   => _x( 'Custom Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'integration'     => _x( 'Integration', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'custom_meta'     => _x( 'Custom Meta', 'metabox tab', 'wpsso-schema-json-ld' ),
+				'meta_defaults'   => _x( 'Meta Defaults', 'metabox tab', 'wpsso-schema-json-ld' ),
 			) );
 
 			$table_rows = array();
@@ -141,6 +143,52 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				case 'schema_general-knowledge_graph':
 
 					$this->add_schema_knowledge_graph_table_rows( $table_rows );
+
+					break;
+
+				case 'schema_general-integration':
+
+					if ( ! $is_pp = $this->p->check->is_pp() ) {
+						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
+					}
+
+					/**
+					 * Product attribute names.
+					 */
+					foreach ( $this->p->cf[ 'form' ][ 'product_attr_labels' ] as $opt_key => $opt_label ) {
+
+						$table_rows[ $opt_key ] = $this->form->get_th_html( _x( $opt_label, 'option label', 'wpsso' ), '', $opt_key ) . 
+							( $is_pp ? '<td>' . $this->form->get_input( $opt_key ) . '</td>' : '<td class="blank">' .
+								$this->form->get_no_input( $opt_key ) . '</td>' );
+					}
+
+					break;
+
+				case 'schema_general-custom_meta':
+
+					if ( ! $is_pp = $this->p->check->is_pp() ) {
+						$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg' ) . '</td>';
+					}
+
+					/**
+					 * Custom fields.
+					 */
+					$cf_md_keys = (array) apply_filters( $this->p->lca . '_cf_md_keys', $this->p->cf[ 'opt' ][ 'cf_md_key' ] );
+
+					foreach ( $cf_md_keys as $opt_key => $cf_md_key ) {
+
+						if ( ! empty( $this->p->cf[ 'form' ][ 'cf_labels' ][ $opt_key ] ) ) {
+
+							if ( empty( $cf_md_key ) ) {
+								$this->form->options[ $opt_key ] = '';
+							}
+
+							$table_rows[ $opt_key ] = $this->form->get_th_html( _x( $this->p->cf[ 'form' ][ 'cf_labels' ][ $opt_key ],
+								'option label', 'wpsso' ), '', $opt_key ) . ( $is_pp ? '<td>' . $this->form->get_input( $opt_key,
+									'', '', 0, '', ( empty( $cf_md_key ) ? true : false ) ) . '</td>' : '<td class="blank">' .
+										$this->form->get_no_input( $opt_key ) . '</td>' );
+						}
+					}
 
 					break;
 
