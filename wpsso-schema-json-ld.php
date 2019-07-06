@@ -131,6 +131,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-schema-json-ld', false, 'wpsso-schema-json-ld/languages/' );
 		}
 
@@ -160,7 +161,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				return $avail;
 			}
 
-			$avail[ 'p_ext' ][ 'json' ] = true;	// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'json' ] = true;		// Signal that this extension / add-on is available.
 
 			foreach ( array( 'pro', 'std' ) as $lib ) {
 
