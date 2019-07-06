@@ -786,7 +786,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-rc.2 (2019/07/05)**
+**Version 2.2.0 (2019/07/06)**
 
 * *New Features*
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
@@ -813,26 +813,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 2.0.1 (2019/06/24)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Renamed "Pro" distribution to "Premium".
-	* Renamed "Free" distribution to "Standard".
-	* Added a new "Default Family Friendly" option under the SSO &gt; Schema Markup &gt; Meta Defaults tab.
-* *Bugfixes*
-	* Fixed an incorrect filter name in the WpssoJsonProHeadWebpage class (Premium add-on).
-* *Developer Notes*
-	* Maintenance release for WPSSO Core v5.0.0.
-
 == Upgrade Notice ==
 
-= 2.2.0-rc.2 =
+= 2.2.0 =
 
-(2019/07/05) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
-
-= 2.1.0 =
-
-(2019/06/29) Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
+(2019/07/06) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
 
