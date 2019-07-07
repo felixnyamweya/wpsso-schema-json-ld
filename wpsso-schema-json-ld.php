@@ -67,9 +67,15 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
+			/**
+			 * Add WPSSO filter hooks.
+			 */
 			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 20, 2 );	// Checks core version and merges config array.
 			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 20, 1 );
 
+			/**
+			 * Add WPSSO action hooks.
+			 */
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );	// Load the 'wpsso-schema-json-ld' text domain.
 			add_action( 'wpsso_init_options', array( $this, 'wpsso_init_options' ), 100 );	// Sets the $this->p reference variable.
 			add_action( 'wpsso_init_objects', array( $this, 'wpsso_init_objects' ), 100 );
@@ -163,21 +169,32 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$avail[ 'p_ext' ][ 'json' ] = true;		// Signal that this extension / add-on is available.
 
+			$is_admin = is_admin();
+
 			foreach ( array( 'pro', 'std' ) as $lib ) {
 
-				foreach ( array( 'admin', 'head', 'prop' ) as $sub ) {
+				foreach ( array( 'admin', 'head', 'prop' ) as $sub_dir ) {
 
-					if ( ! isset( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] ) ||
-						! is_array( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] ) ) {
+					if ( 'admin' === $sub_dir ) {
+						if ( ! $is_admin ) {	// Load the admin/ sub-folder in the back-end only.
+							continue;
+						}
+					}
 
+					if ( empty( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub_dir ] ) ) {
 						continue;
 					}
 
-					foreach ( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub ] as $id_key => $label ) {
+					$sub_libs = WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub_dir ];
 
-						list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $id_key );
+					foreach ( $sub_libs as $sub_id => $sub_label ) {
 
-						$avail[ $sub ][ $id ] = true;
+						if ( empty( $avail[ $sub_dir ][ $sub_id ] ) ) {	// Optimize.
+
+							list( $id, $stub, $action ) = SucomUtil::get_lib_stub_action( $sub_id );
+
+							$avail[ $sub_dir ][ $id ] = true;
+						}
 					}
 				}
 			}
