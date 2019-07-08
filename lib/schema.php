@@ -897,5 +897,31 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 			return $ppp;
 		}
+
+		/**
+		 * Javascript classes to hide/show rows by selected schema type.
+		 */
+		public static function get_type_tr_class() {
+
+			$wpsso =& Wpsso::get_instance();
+
+			return array(
+				'creative_work'  => $wpsso->schema->get_children_css_class( 'creative.work', 'hide_schema_type' ),
+				'course'         => $wpsso->schema->get_children_css_class( 'course', 'hide_schema_type' ),
+				'event'          => $wpsso->schema->get_children_css_class( 'event', 'hide_schema_type' ),
+				'how_to'         => $wpsso->schema->get_children_css_class( 'how.to', 'hide_schema_type', '/^recipe$/' ),	// Exclude recipe.
+				'job_posting'    => $wpsso->schema->get_children_css_class( 'job.posting', 'hide_schema_type' ),
+				'local_business' => $wpsso->schema->get_children_css_class( 'local.business', 'hide_schema_type' ),
+				'movie'          => $wpsso->schema->get_children_css_class( 'movie', 'hide_schema_type' ),
+				'organization'   => $wpsso->schema->get_children_css_class( 'organization', 'hide_schema_type' ),
+				'person'         => $wpsso->schema->get_children_css_class( 'person', 'hide_schema_type' ),
+				'product'        => $wpsso->schema->get_children_css_class( 'product', 'hide_schema_type' ),
+				'qapage'         => $wpsso->schema->get_children_css_class( 'webpage.qa', 'hide_schema_type' ),
+				'recipe'         => $wpsso->schema->get_children_css_class( 'recipe', 'hide_schema_type' ),
+				'review'         => $wpsso->schema->get_children_css_class( 'review', 'hide_schema_type' ),
+				'review_claim'   => $wpsso->schema->get_children_css_class( 'review.claim', 'hide_schema_type' ),
+				'software_app'   => $wpsso->schema->get_children_css_class( 'software.application', 'hide_schema_type' ),
+			);
+		}
 	}
 }

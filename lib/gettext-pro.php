@@ -11,8 +11,7 @@ __( 'Save a draft version or publish the %s to update this value.', 'wpsso-schem
 _x( 'Schema Type', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Name / Title', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' );
-// translators: Please ignore - translation uses a different text domain.
-_x( 'Description', 'option label', 'wpsso' );
+_x( 'Description', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' );
@@ -67,6 +66,25 @@ _x( 'Organization Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'Organization', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Person Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'Person', 'option label', 'wpsso-schema-json-ld' );
+_x( 'Product Information (Additional)', 'metabox title', 'wpsso-schema-json-ld' );
+_x( 'Product Length', 'option label', 'wpsso-schema-json-ld' );
+__( 'cm', 'wpsso-schema-json-ld' );
+_x( 'Product Width', 'option label', 'wpsso-schema-json-ld' );
+__( 'cm', 'wpsso-schema-json-ld' );
+_x( 'Product Height', 'option label', 'wpsso-schema-json-ld' );
+__( 'cm', 'wpsso-schema-json-ld' );
+_x( 'Product Depth', 'option label', 'wpsso-schema-json-ld' );
+__( 'cm', 'wpsso-schema-json-ld' );
+_x( 'Product Volume', 'option label', 'wpsso-schema-json-ld' );
+__( 'ml', 'wpsso-schema-json-ld' );
+// translators: Please ignore - translation uses a different text domain.
+_x( 'Product GTIN-8', 'option label', 'wpsso' );
+// translators: Please ignore - translation uses a different text domain.
+_x( 'Product GTIN-12', 'option label', 'wpsso' );
+// translators: Please ignore - translation uses a different text domain.
+_x( 'Product GTIN-13', 'option label', 'wpsso' );
+// translators: Please ignore - translation uses a different text domain.
+_x( 'Product GTIN-14', 'option label', 'wpsso' );
 _x( 'QA Page Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'QA Heading', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Recipe Information', 'metabox title', 'wpsso-schema-json-ld' );
