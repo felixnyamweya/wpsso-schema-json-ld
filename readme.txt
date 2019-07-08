@@ -279,6 +279,16 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Organization
 	* Person Information
 		* Person
+	* Product Information (Additional)
+		* Product Length (cm)
+		* Product Width (cm)
+		* Product Height (cm)
+		* Product Depth (cm)
+		* Product Volume (ml)
+		* Product GTIN-8
+		* Product GTIN-12
+		* Product GTIN-13
+		* Product GTIN-14
 	* QA Page Information
 		* QA Heading
 	* Recipe Information
@@ -786,6 +796,26 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.3.0-dev.2 (2019/07/08)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type.
+	* Added new options in the Document SSO metabox:
+		* Product Length
+		* Product Width
+		* Product Height
+		* Product Depth
+		* Product GTIN-8
+		* Product GTIN-12
+		* Product GTIN-13
+		* Product GTIN-14
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 2.2.0 (2019/07/06)**
 
 * *New Features*
@@ -814,6 +844,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 2.3.0-dev.2 =
+
+(2019/07/08) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type.
 
 = 2.2.0 =
 
