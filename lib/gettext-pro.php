@@ -123,6 +123,7 @@ _x( 'from', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'to', 'option comment', 'wpsso-schema-json-ld' );
 _x( 'Review Rating Name', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Review Subject URL', 'option label', 'wpsso-schema-json-ld' );
+_x( 'Review Subject Name', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Claim Review Information', 'metabox title', 'wpsso-schema-json-ld' );
 _x( 'Claim Short Summary', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Claim Made on Date', 'option label', 'wpsso-schema-json-ld' );

@@ -659,6 +659,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_recipe_nutri_unsat_fat'      => '',						// Unsaturated Fat.
 				'schema_recipe_nutri_chol'           => '',						// Cholesterol.
 				'schema_recipe_yield'                => '',						// Recipe Yield.
+				'schema_review_item_name'            => '',						// Review Subject Name.
 				'schema_review_item_url'             => '',						// Review Subject URL.
 				'schema_review_rating'               => '0.0',						// Review Rating.
 				'schema_review_rating_from'          => '1',						// Review Rating (From).
@@ -802,6 +803,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'schema_job_salary_period':
 				case 'schema_movie_prodco_org_id':		// Production Company.
 				case 'schema_review_claim_author_type':		// Claim Author Type.
+				case 'schema_review_item_name':			// Review Subject Name.
 
 					return 'not_blank';
 
@@ -858,7 +860,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'schema_addl_type_url':			// Microdata Type URLs.
 				case 'schema_sameas_url':			// Same-As URLs.
-				case 'schema_review_item_url':
+				case 'schema_review_item_url':			// Review Subject URL.
 				case 'schema_review_claim_author_url':		// Claim Author URL.
 				case 'schema_review_claim_first_url':		// First Appearance URL.
 
@@ -1412,7 +1414,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_review_item_url':
+				case 'tooltip-meta-schema_review_item_name':	// Review Subject Name.
+
+					$text = __( 'A name for the subject being reviewed.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_review_item_url':	// Review Subject URL.
 
 					$text = __( 'A webpage URL for the subject being reviewed.', 'wpsso-schema-json-ld' );
 

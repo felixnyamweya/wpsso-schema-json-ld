@@ -950,6 +950,14 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_review_item_url',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
 				),
+				'schema_review_item_name' => array(
+					'tr_class' => $schema_type_tr_class[ 'review' ],
+					'th_class' => 'medium',
+					'td_class' => 'blank required',
+					'label'    => _x( 'Review Subject Name', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_review_item_name',
+					'content'  => $form->get_no_input_value( '', 'wide' ),
+				),
 
 				/**
 				 * Schema ClaimReview
