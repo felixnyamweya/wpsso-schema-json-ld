@@ -32,11 +32,12 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$dots           = '...';
-			$read_cache     = true;
-			$no_hashtags    = false;
-			$maybe_hashtags = true;
-			$do_encode      = true;
+			$dots               = '...';
+			$read_cache         = true;
+			$no_hashtags        = false;
+			$maybe_hashtags     = true;
+			$do_encode          = true;
+			$schema_desc_md_key = array( 'seo_desc', 'og_desc' );
 
 			/**
 			 * Select option arrays.
@@ -46,34 +47,31 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 			/**
 			 * Maximum option lengths.
 			 */
-			$og_title_max_len = $this->p->options['og_title_max_len'];
+			$og_title_max_len    = $this->p->options['og_title_max_len'];
+			$schema_desc_max_len = $this->p->options[ 'schema_desc_max_len' ];
 
 			/**
 			 * Default option values.
 			 */
 			$def_schema_title     = $this->p->page->get_title( 0, '', $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
 			$def_schema_title_alt = $this->p->page->get_title( $og_title_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, 'og_title' );
+			$def_schema_desc      = $this->p->page->get_description( $schema_desc_max_len, $dots, $mod, $read_cache, $no_hashtags, $do_encode, $schema_desc_md_key );
 
 			/**
-			 * Save and remove specific rows so we can append a whole new set with a different order.
+			 * Remove and re-create.
 			 */
-			$saved_table_rows = array();
-
-			foreach ( array( 'subsection_schema', 'schema_desc' ) as $key ) {
-
-				if ( isset( $table_rows[ $key ] ) ) {
-
-					$saved_table_rows[ $key ] = $table_rows[ $key ];
-
-					unset( $table_rows[ $key ] );
-				}
-			}
+			unset( $table_rows[ 'subsection_schema' ] );
+			unset( $table_rows[ 'schema_desc' ] );
 
 			/**
 			 * Metabox form rows.
 			 */
 			$form_rows = array(
-				'subsection_schema' => '',	// Placeholder.
+				'subsection_schema' => array(
+					'td_class' => 'subsection',
+					'header'   => 'h4',
+					'label'    => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
+				),
 
 				/**
 				 * All Schema Types
@@ -84,6 +82,9 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'tooltip'  => 'meta-schema_type',
 					'content'  => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, false, true, 'on_change_unhide_rows' ),
+				),
+				'wpssojson-pro-feature-msg' => array(
+					'table_row' => '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>',
 				),
 				'schema_title' => array(
 					'th_class' => 'medium',
@@ -100,7 +101,14 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'tooltip'  => 'meta-schema_title_alt',
 					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
-				'schema_desc' => '',	// Placeholder.
+				'schema_desc' => array(
+					'no_auto_draft' => true,
+					'th_class'      => 'medium',
+					'td_class'      => 'blank',
+					'label'         => _x( 'Description', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'       => 'meta-schema_desc',
+					'content'       => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
+				),
 				'schema_addl_type_url' => array(
 					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
 					'th_class' => 'medium',
@@ -119,22 +127,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 				),
 			);
 
-			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
-
-			/**
-			 * Restore the saved rows.
-			 */
-			foreach ( $saved_table_rows as $key => $value ) {
-				$table_rows[ $key ] = $saved_table_rows[ $key ];
-			}
-
-			SucomUtil::add_after_key( $table_rows, 'schema_type', 'wpssojson-pro-feature-msg',
-				'<td colspan="2">' .
-				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) .
-				'</td>'
-			);
-
-			return $table_rows;
+			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 		}
 	}
 }

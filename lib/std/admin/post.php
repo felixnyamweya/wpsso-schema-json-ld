@@ -32,11 +32,12 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$dots           = '...';
-			$read_cache     = true;
-			$no_hashtags    = false;
-			$maybe_hashtags = true;
-			$do_encode      = true;
+			$dots               = '...';
+			$read_cache         = true;
+			$no_hashtags        = false;
+			$maybe_hashtags     = true;
+			$do_encode          = true;
+			$schema_desc_md_key = array( 'seo_desc', 'og_desc' );
 
 			/**
 			 * Select option arrays.
@@ -50,7 +51,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			$og_title_max_len        = $this->p->options[ 'og_title_max_len' ];
 			$schema_headline_max_len = $this->p->cf[ 'head' ][ 'limit_max' ][ 'schema_headline_len' ];
 			$schema_desc_max_len     = $this->p->options[ 'schema_desc_max_len' ];
-			$schema_desc_md_key      = array( 'seo_desc', 'og_desc' );
 			$schema_text_max_len     = $this->p->options[ 'schema_text_max_len' ];
 
 			/**
@@ -100,27 +100,20 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			$schema_type_tr_class = WpssoJsonSchema::get_type_tr_class();
 
 			/**
-			 * Save and remove specific rows so we can append a whole new set with a different order.
+			 * Remove and re-create.
 			 */
-			$saved_table_rows = array();
-
-			foreach ( array( 'subsection_schema' ) as $key ) {
-
-				if ( isset( $table_rows[ $key ] ) ) {
-
-					$saved_table_rows[ $key ] = $table_rows[ $key ];
-
-					unset( $table_rows[ $key ] );
-				}
-			}
-
-			unset( $table_rows[ 'schema_desc' ] );	// Remove and re-create.
+			unset( $table_rows[ 'subsection_schema' ] );
+			unset( $table_rows[ 'schema_desc' ] );
 
 			/**
 			 * Metabox form rows.
 			 */
 			$form_rows = array(
-				'subsection_schema' => '',	// Placeholder.
+				'subsection_schema' => array(
+					'td_class' => 'subsection',
+					'header'   => 'h4',
+					'label'    => _x( 'Structured Data / Schema Markup', 'metabox title', 'wpsso-schema-json-ld' )
+				),
 
 				/**
 				 * All Schema Types
@@ -131,6 +124,9 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tooltip'  => 'meta-schema_type',
 					'content'  => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, false, true, 'on_change_unhide_rows' ),
+				),
+				'wpssojson-pro-feature-msg' => array(
+					'table_row' => '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>',
 				),
 				'schema_title' => array(
 					'no_auto_draft' => true,
@@ -620,7 +616,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Length', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_length_value',
 					'content'  => $form->get_no_input( 'product_length_value', '', '', 0, $placeholder = true ) . ' ' .
-						__( 'cm', 'wpsso-schema-json-ld' ),
+						WpssoSchema::get_data_unitcode_text( 'length' ),
 				),
 				'product_width_value' => array(		// Non-standard / internal meta tag product:width:value.
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -629,7 +625,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Width', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_width_value',
 					'content'  => $form->get_no_input( 'product_width_value', '', '', 0, $placeholder = true ) . ' ' .
-						__( 'cm', 'wpsso-schema-json-ld' ),
+						WpssoSchema::get_data_unitcode_text( 'width' ),
 				),
 				'product_height_value' => array(	// Non-standard / internal meta tag product:height:value.
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -638,7 +634,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Height', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_height_value',
 					'content'  => $form->get_no_input( 'product_height_value', '', '', 0, $placeholder = true ) . ' ' .
-						__( 'cm', 'wpsso-schema-json-ld' ),
+						WpssoSchema::get_data_unitcode_text( 'height' ),
 				),
 				'product_depth_value' => array(		// Non-standard / internal meta tag product:depth:value.
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -647,7 +643,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Depth', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_depth_value',
 					'content'  => $form->get_no_input( 'product_depth_value', '', '', 0, $placeholder = true ) . ' ' .
-						__( 'cm', 'wpsso-schema-json-ld' ),
+						WpssoSchema::get_data_unitcode_text( 'depth' ),
 				),
 				'product_volume_value' => array(	// Non-standard / internal meta tag product:volume:value.
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -656,7 +652,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Volume', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_volume_value',
 					'content'  => $form->get_no_input( 'product_volume_value', '', '', 0, $placeholder = true ) . ' ' .
-						__( 'ml', 'wpsso-schema-json-ld' ),
+						WpssoSchema::get_data_unitcode_text( 'volume' ),
 				),
 				'product_gtin8' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -1032,22 +1028,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				),
 			);
 
-			$table_rows = $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
-
-			/**
-			 * Restore the saved rows.
-			 */
-			foreach ( $saved_table_rows as $key => $value ) {
-				$table_rows[ $key ] = $saved_table_rows[ $key ];
-			}
-
-			SucomUtil::add_after_key( $table_rows, 'schema_type', 'wpssojson-pro-feature-msg',
-				'<td colspan="2">' .
-				$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) .
-				'</td>'
-			);
-
-			return $table_rows;
+			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
 		}
 	}
 }
