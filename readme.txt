@@ -759,6 +759,7 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the [WPSSO Core pl
 		* [All Filters](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/all/)
 		* [Filter Examples](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/)
 			* [Assign a Custom Field Value to a Schema Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/)
+			* [Exclude Schema Markup by Post Type](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/exclude-schema-markup-by-post-type/)
 			* [Modify the aggregateRating Property](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/)
 			* [Modify the VideoObject Name and Description](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/)
 * [Schema Shortcode for Custom Markup](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/schema-shortcode/)

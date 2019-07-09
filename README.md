@@ -1012,6 +1012,7 @@
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/assign-a-custom-field-value-to-a-schema-property/">Assign a Custom Field Value to a Schema Property</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/exclude-schema-markup-by-post-type/">Exclude Schema Markup by Post Type</a></li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-aggregaterating-property/">Modify the aggregateRating Property</a></li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/developer/filters/examples/modify-the-videoobject-name-and-description/">Modify the VideoObject Name and Description</a></li>
 </ul></li>
