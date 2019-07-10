@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			/**
 			 * Organization variables.
 			 */
-			$org_req_msg    = $this->p->admin->get_ext_required_msg( 'org' );
+			$org_req_msg    = $this->p->msgs->maybe_ext_required( 'wpssoorg' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
 			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', $add_none = true );
 
@@ -90,7 +90,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			/**
 			 * Place / Location variables.
 			 */
-			$plm_req_msg     = $this->p->admin->get_ext_required_msg( 'plm' );
+			$plm_req_msg     = $this->p->msgs->maybe_ext_required( 'wpssoplm' );
 			$plm_disable     = empty( $plm_req_msg ) ? false : true;
 			$plm_place_names = $this->p->util->get_form_cache( 'place_names', $add_none = true );
 
@@ -125,8 +125,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'content'  => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, false, true, 'on_change_unhide_rows' ),
 				),
-				'wpssojson-pro-feature-msg' => array(
-					'table_row' => '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>',
+				'wpssojson_pro_feature_msg' => array(
+					'table_row' => '<td colspan="2">' . $this->p->msgs->pro_feature( 'wpssojson' ) . '</td>',
 				),
 				'schema_title' => array(
 					'no_auto_draft' => true,
@@ -609,82 +609,87 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'header'   => 'h5',
 					'label'    => _x( 'Product Information (Additional)', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'product_length_value' => array(	// Non-standard / internal meta tag product:length:value.
+				'schema_product_ecom_msg' => array(
+					'tr_class' => $schema_type_tr_class[ 'product' ],
+					'table_row' => ( empty( $this->p->avail[ 'ecom' ][ 'any' ] ) ? '' :
+						'<td colspan="2">' . $this->p->msgs->get( 'pro-ecom-product-msg' ) . '</td>' ),
+				),
+				'schema_product_length_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product Length', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_length_value',
-					'content'  => $form->get_no_input( 'product_length_value', '', '', 0, $placeholder = true ) . ' ' .
+					'content'  => $form->get_no_input( 'product_length_value', '', '', $placeholder = true ) . ' ' .
 						WpssoSchema::get_data_unitcode_text( 'length' ),
 				),
-				'product_width_value' => array(		// Non-standard / internal meta tag product:width:value.
+				'schema_product_width_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product Width', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_width_value',
-					'content'  => $form->get_no_input( 'product_width_value', '', '', 0, $placeholder = true ) . ' ' .
+					'content'  => $form->get_no_input( 'product_width_value', '', '', $placeholder = true ) . ' ' .
 						WpssoSchema::get_data_unitcode_text( 'width' ),
 				),
-				'product_height_value' => array(	// Non-standard / internal meta tag product:height:value.
+				'schema_product_height_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product Height', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_height_value',
-					'content'  => $form->get_no_input( 'product_height_value', '', '', 0, $placeholder = true ) . ' ' .
+					'content'  => $form->get_no_input( 'product_height_value', '', '', $placeholder = true ) . ' ' .
 						WpssoSchema::get_data_unitcode_text( 'height' ),
 				),
-				'product_depth_value' => array(		// Non-standard / internal meta tag product:depth:value.
+				'schema_product_depth_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product Depth', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_depth_value',
-					'content'  => $form->get_no_input( 'product_depth_value', '', '', 0, $placeholder = true ) . ' ' .
+					'content'  => $form->get_no_input( 'product_depth_value', '', '', $placeholder = true ) . ' ' .
 						WpssoSchema::get_data_unitcode_text( 'depth' ),
 				),
-				'product_volume_value' => array(	// Non-standard / internal meta tag product:volume:value.
+				'schema_product_volume_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product Volume', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_volume_value',
-					'content'  => $form->get_no_input( 'product_volume_value', '', '', 0, $placeholder = true ) . ' ' .
+					'content'  => $form->get_no_input( 'product_volume_value', '', '', $placeholder = true ) . ' ' .
 						WpssoSchema::get_data_unitcode_text( 'volume' ),
 				),
-				'product_gtin8' => array(
+				'schema_product_gtin8' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product GTIN-8', 'option label', 'wpsso' ),
 					'tooltip'  => 'meta-product_gtin8',
-					'content'  => $form->get_no_input( 'product_gtin8', '', '', 0, $placeholder = true ),
+					'content'  => $form->get_no_input( 'product_gtin8', '', '', $placeholder = true ),
 				),
-				'product_gtin12' => array(
+				'schema_product_gtin12' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product GTIN-12', 'option label', 'wpsso' ),
 					'tooltip'  => 'meta-product_gtin12',
-					'content'  => $form->get_no_input( 'product_gtin12', '', '', 0, $placeholder = true ),
+					'content'  => $form->get_no_input( 'product_gtin12', '', '', $placeholder = true ),
 				),
-				'product_gtin13' => array(
+				'schema_product_gtin13' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product GTIN-13', 'option label', 'wpsso' ),
 					'tooltip'  => 'meta-product_gtin13',
-					'content'  => $form->get_no_input( 'product_gtin13', '', '', 0, $placeholder = true ),
+					'content'  => $form->get_no_input( 'product_gtin13', '', '', $placeholder = true ),
 				),
-				'product_gtin14' => array(
+				'schema_product_gtin14' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Product GTIN-14', 'option label', 'wpsso' ),
 					'tooltip'  => 'meta-product_gtin14',
-					'content'  => $form->get_no_input( 'product_gtin14', '', '', 0, $placeholder = true ),
+					'content'  => $form->get_no_input( 'product_gtin14', '', '', $placeholder = true ),
 				),
 
 				/**

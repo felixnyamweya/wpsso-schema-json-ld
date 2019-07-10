@@ -173,7 +173,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			/**
 			 * Organization variables.
 			 */
-			$org_req_msg    = $this->p->admin->get_ext_required_msg( 'org' );
+			$org_req_msg    = $this->p->msgs->maybe_ext_required( 'wpssoorg' );
 			$org_disable    = empty( $org_req_msg ) ? false : true;
 			$org_site_names = $this->p->util->get_form_cache( 'org_site_names', $add_none = true );
 
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 			/**
 			 * Place / Location variables.
 			 */
-			$plm_req_msg     = $this->p->admin->get_ext_required_msg( 'plm' );
+			$plm_req_msg     = $this->p->msgs->maybe_ext_required( 'wpssoplm' );
 			$plm_disable     = empty( $plm_req_msg ) ? false : true;
 			$plm_place_names = $this->p->util->get_form_cache( 'place_names', $add_none = true );
 

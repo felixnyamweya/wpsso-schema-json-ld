@@ -71,8 +71,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminUser' ) ) {
 				/**
 				 * All Schema Types
 				 */
-				'wpssojson-pro-feature-msg' => array(
-					'table_row' => '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>',
+				'wpssojson_pro_feature_msg' => array(
+					'table_row' => '<td colspan="2">' . $this->p->msgs->pro_feature( 'wpssojson' ) . '</td>',
 				),
 				'schema_title' => array(
 					'th_class' => 'medium',

@@ -83,8 +83,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'content'  => $form->get_select( 'schema_type', $schema_types,
 						'schema_type', '', true, false, true, 'on_change_unhide_rows' ),
 				),
-				'wpssojson-pro-feature-msg' => array(
-					'table_row' => '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssojson' ) ) . '</td>',
+				'wpssojson_pro_feature_msg' => array(
+					'table_row' => '<td colspan="2">' . $this->p->msgs->pro_feature( 'wpssojson' ) . '</td>',
 				),
 				'schema_title' => array(
 					'th_class' => 'medium',
