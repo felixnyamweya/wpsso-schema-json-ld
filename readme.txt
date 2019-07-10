@@ -799,9 +799,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 **Version 2.3.0-dev.6 (2019/07/10)**
 
-* *New Features*
+* **New Features**
 	* None.
-* *Improvements*
+* **Improvements**
 	* Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type.
 	* Added new options in the Document SSO metabox:
 		* Review Subject Name
@@ -813,36 +813,36 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Product GTIN-12
 		* Product GTIN-13
 		* Product GTIN-14
-* *Bugfixes*
+* **Bugfixes**
 	* None.
-* *Developer Notes*
+* **Developer Notes**
 	* None.
 
 **Version 2.2.0 (2019/07/06)**
 
-* *New Features*
+* **New Features**
 	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
-* *Improvements*
+* **Improvements**
 	* Added Schema Product markup for length (cm), size, and volume (ml) as an "additionalProperty".
 	* Added a new "Integration" and "Custom Meta" tab with options from the SSO &gt; Advanced settings page (WPSSO Core Premium required).
 	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
-* *Bugfixes*
+* **Bugfixes**
 	* None.
-* *Developer Notes*
+* **Developer Notes**
 	* Refactored several Schema methods for standardization and "@id" optimizations:
 		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 **Version 2.1.0 (2019/06/29)**
 
-* *New Features*
+* **New Features**
 	* None.
-* *Improvements*
+* **Improvements**
 	* Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
 	* Updated the WebSite (Front Page) Knowledge Graph option label and link.
-* *Bugfixes*
+* **Bugfixes**
 	* None.
-* *Developer Notes*
+* **Developer Notes**
 	* None.
 
 == Upgrade Notice ==
