@@ -178,7 +178,6 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOJSON_PLUGINDIR . 'lib/actions.php';
 			require_once WPSSOJSON_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOJSON_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOJSON_PLUGINDIR . 'lib/schema.php';

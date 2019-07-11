@@ -42,7 +42,6 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 		/**
 		 * Library class object variables.
 		 */
-		public $actions;	// WpssoJsonActions
 		public $filters;	// WpssoJsonFilters
 		public $reg;		// WpssoJsonRegister
 		public $schema;		// WpssoJsonSchema
@@ -224,7 +223,6 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 				return;	// stop here
 			}
 
-			$this->actions = new WpssoJsonActions( $this->p );
 			$this->filters = new WpssoJsonFilters( $this->p );
 			$this->schema  = new WpssoJsonSchema( $this->p );
 		}

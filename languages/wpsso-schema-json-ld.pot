@@ -13,31 +13,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/actions.php:55
-msgid "This notice is only shown to users with Administrative privileges."
-msgstr ""
-
-#: lib/actions.php:59
-msgid ""
-"The WPSSO JSON %1$s add-on does not include support for the Schema type <a "
-"href=\"%2$s\">%2$s</a>."
-msgstr ""
-
-#. translators: %1$s is the purchase URL, %2$s is the word "Premium", %3$s is the schema.org type URL.
-#: lib/actions.php:62
-msgid ""
-"The <a href=\"%1$s\">WPSSO JSON %2$s add-on</a> includes an extensive "
-"selection of supported Schema types, including the Schema type <a href=\"%3$s"
-"\">%3$s</a>."
-msgstr ""
-
-#. translators: %1$s is the word "Premium".
-#: lib/actions.php:65
-msgid ""
-"If this Schema type is an important classification for your content, you "
-"should consider purchasing the %1$s add-on."
-msgstr ""
-
 #: lib/filters.php:1027
 msgid ""
 "Select a Schema item type that best describes the main content of this "
@@ -1369,19 +1344,19 @@ msgctxt "metabox title"
 msgid "Schema Shortcode"
 msgstr ""
 
-#: wpsso-schema-json-ld.php:109
+#: wpsso-schema-json-ld.php:108
 msgid ""
 "%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:111
+#: wpsso-schema-json-ld.php:110
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-schema-json-ld.php:250
+#: wpsso-schema-json-ld.php:248
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
