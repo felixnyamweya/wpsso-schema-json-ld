@@ -621,7 +621,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Length', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_length_value',
 					'content'  => $form->get_no_input( 'product_length_value', '', '', $placeholder = true ) .
-						WpssoAdmin::get_option_unit_text( 'product_length_value' ),
+						WpssoAdmin::get_option_unit_comment( 'product_length_value' ),
 				),
 				'schema_product_width_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -630,7 +630,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Width', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_width_value',
 					'content'  => $form->get_no_input( 'product_width_value', '', '', $placeholder = true ) .
-						WpssoAdmin::get_option_unit_text( 'product_width_value' ),
+						WpssoAdmin::get_option_unit_comment( 'product_width_value' ),
 				),
 				'schema_product_height_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -639,7 +639,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Height', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_height_value',
 					'content'  => $form->get_no_input( 'product_height_value', '', '', $placeholder = true ) .
-						WpssoAdmin::get_option_unit_text( 'product_height_value' ),
+						WpssoAdmin::get_option_unit_comment( 'product_height_value' ),
 				),
 				'schema_product_depth_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -648,7 +648,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Depth', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_depth_value',
 					'content'  => $form->get_no_input( 'product_depth_value', '', '', $placeholder = true ) .
-						WpssoAdmin::get_option_unit_text( 'product_depth_value' ),
+						WpssoAdmin::get_option_unit_comment( 'product_depth_value' ),
 				),
 				'schema_product_volume_value' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -657,7 +657,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'label'    => _x( 'Product Volume', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-product_volume_value',
 					'content'  => $form->get_no_input( 'product_volume_value', '', '', $placeholder = true ) .
-						WpssoAdmin::get_option_unit_text( 'product_volume_value' ),
+						WpssoAdmin::get_option_unit_comment( 'product_volume_value' ),
 				),
 				'schema_product_gtin8' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
