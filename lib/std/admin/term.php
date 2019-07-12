@@ -13,6 +13,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 
 	class WpssoJsonStdAdminTerm {
 
+		private $p;
+
 		public function __construct( &$plugin ) {
 
 			$this->p =& $plugin;

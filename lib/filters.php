@@ -13,7 +13,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 	class WpssoJsonFilters {
 
-		protected $p;
+		private $p;
 
 		public function __construct( &$plugin ) {
 
@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'json_data_https_schema_org_blog'         => 5,
 				'json_data_https_schema_org_creativework' => 5,
 				'json_data_https_schema_org_thing'        => 5,
-			), -10000 );	// Make sure we run first.
+			), $prio = -10000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults'        => 2,
@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->util->add_plugin_filters( $this, array(
 					'status_pro_features' => 4,
 					'status_std_features' => 4,
-				), 10, 'wpssojson' );	// Hook to wpssojson filters.
+				), $prio = 10, $ext = 'wpssojson' );	// Hook to wpssojson filters.
 			}
 		}
 
