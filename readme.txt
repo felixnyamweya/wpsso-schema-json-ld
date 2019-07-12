@@ -236,6 +236,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Microdata Type URLs
 		* Same-As URLs
 	* Creative Work Information
+		* Part of URL
 		* Headline
 		* Full Text
 		* Keywords
@@ -804,6 +805,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type.
 	* Added new options in the Document SSO metabox:
+		* Part of URL
 		* Review Subject Name
 		* Product Length
 		* Product Width
