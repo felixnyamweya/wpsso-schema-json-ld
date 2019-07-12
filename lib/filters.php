@@ -121,6 +121,21 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 			/**
 			 * Property:
+			 * 	isPartOf
+			 */
+			if ( ! empty( $mod[ 'obj' ] ) )	{ // Just in case.
+
+				$part_of_url = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_url' );	// Returns null if index key is not found.
+
+				if ( ! empty( $part_of_url ) ) {
+					$ret[ 'isPartOf' ] = WpssoSchema::get_schema_type_context( 'https://schema.org/CreativeWork', array(
+						'url' => $part_of_url,
+					) );
+				}
+			}
+
+			/**
+			 * Property:
 			 * 	headline
 			 */
 			if ( ! empty( $mod[ 'obj' ] ) )	{ // Just in case.
@@ -572,6 +587,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title'                       => '',						// Name / Title.
 				'schema_title_alt'                   => '',						// Alternate Name.
 				'schema_desc'                        => '',						// Description.
+				'schema_part_of_url'                 => '',						// Part of URL.
 				'schema_headline'                    => '',						// Headline.
 				'schema_text'                        => '',						// Full Text.
 				'schema_keywords'                    => '',						// Keywords.
@@ -860,6 +876,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'schema_addl_type_url':			// Microdata Type URLs.
 				case 'schema_sameas_url':			// Same-As URLs.
+				case 'schema_part_of_url':			// Part of URL.
 				case 'schema_review_item_url':			// Review Subject URL.
 				case 'schema_review_claim_author_url':		// Claim Author URL.
 				case 'schema_review_claim_first_url':		// First Appearance URL.
@@ -1055,6 +1072,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				case 'tooltip-meta-schema_sameas_url':		// Same-As URLs
 
 					$text = __( 'Additional (and optional) webpage reference URLs that unambiguously indicate the item\'s identity. For example, the URL of the item\'s Wikipedia page, Wikidata entry, IMDB page, official website, etc.', 'wpsso-schema-json-ld' );
+
+				 	break;
+
+				case 'tooltip-meta-schema_part_of_url':		// Part of URL
+
+					$text = __( 'Another Schema CreativeWork URL that this content is a part of.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

@@ -16,6 +16,7 @@ _x( 'Description', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' );
+_x( 'Part of URL', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Headline', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Full Text', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Keywords', 'option label', 'wpsso-schema-json-ld' );
