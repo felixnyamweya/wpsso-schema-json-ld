@@ -109,7 +109,6 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Color Attribute Name 
 			* Product Condition Attribute Name 
 			* Product MPN Attribute Name 
-			* Product EAN Attribute Name 
 			* Product GTIN Attribute Name 
 			* Product GTIN-8 Attribute Name 
 			* Product GTIN-12 Attribute Name 
@@ -132,7 +131,6 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Color Custom Field 
 			* Product Condition Custom Field 
 			* Product Currency Custom Field
-			* Product EAN Custom Field 
 			* Product GTIN Custom Field 
 			* Product GTIN-8 Custom Field 
 			* Product GTIN-12 Custom Field 
@@ -216,17 +214,17 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 	* Brand
 	* Color
 	* Condition
-	* MPN
-	* EAN
+	* MPN (aka Manufacturer Part Number)
+	* GTIN
 	* GTIN-8
-	* GTIN-12
-	* GTIN-13
+	* GTIN-12/UPC
+	* GTIN-13/EAN
 	* GTIN-14
 	* ISBN
 	* Material
 	* Size
 	* Target Gender
-	* Volume (ml)
+	* Volume (in ml)
 
 * Includes additional customizable option values in the Document SSO metabox, shown based on the selected Schema type:
 
@@ -288,9 +286,10 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Product Height (cm)
 		* Product Depth (cm)
 		* Product Volume (ml)
+		* Product GTIN
 		* Product GTIN-8
-		* Product GTIN-12
-		* Product GTIN-13
+		* Product GTIN-12/UPC
+		* Product GTIN-13/EAN
 		* Product GTIN-14
 	* QA Page Information
 		* QA Heading
@@ -815,8 +814,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Product Depth
 		* Product GTIN
 		* Product GTIN-8
-		* Product GTIN-12
-		* Product GTIN-13
+		* Product GTIN-12/UPC
+		* Product GTIN-13/EAN
 		* Product GTIN-14
 * **Bugfixes**
 	* None.

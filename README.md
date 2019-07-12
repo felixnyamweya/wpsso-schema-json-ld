@@ -121,7 +121,6 @@
 <li>Product Color Attribute Name </li>
 <li>Product Condition Attribute Name </li>
 <li>Product MPN Attribute Name </li>
-<li>Product EAN Attribute Name </li>
 <li>Product GTIN Attribute Name </li>
 <li>Product GTIN-8 Attribute Name </li>
 <li>Product GTIN-12 Attribute Name </li>
@@ -150,7 +149,6 @@
 <li>Product Color Custom Field </li>
 <li>Product Condition Custom Field </li>
 <li>Product Currency Custom Field</li>
-<li>Product EAN Custom Field </li>
 <li>Product GTIN Custom Field </li>
 <li>Product GTIN-8 Custom Field </li>
 <li>Product GTIN-12 Custom Field </li>
@@ -245,17 +243,17 @@
 <li>Brand</li>
 <li>Color</li>
 <li>Condition</li>
-<li>MPN</li>
-<li>EAN</li>
+<li>MPN (aka Manufacturer Part Number)</li>
+<li>GTIN</li>
 <li>GTIN-8</li>
-<li>GTIN-12</li>
-<li>GTIN-13</li>
+<li>GTIN-12/UPC</li>
+<li>GTIN-13/EAN</li>
 <li>GTIN-14</li>
 <li>ISBN</li>
 <li>Material</li>
 <li>Size</li>
 <li>Target Gender</li>
-<li>Volume (ml)</li>
+<li>Volume (in ml)</li>
 </ul></li>
 <li><p>Includes additional customizable option values in the Document SSO metabox, shown based on the selected Schema type:</p>
 
@@ -344,9 +342,10 @@
 <li>Product Height (cm)</li>
 <li>Product Depth (cm)</li>
 <li>Product Volume (ml)</li>
+<li>Product GTIN</li>
 <li>Product GTIN-8</li>
-<li>Product GTIN-12</li>
-<li>Product GTIN-13</li>
+<li>Product GTIN-12/UPC</li>
+<li>Product GTIN-13/EAN</li>
 <li>Product GTIN-14</li>
 </ul></li>
 <li>QA Page Information
