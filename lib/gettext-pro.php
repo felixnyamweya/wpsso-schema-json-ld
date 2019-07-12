@@ -79,9 +79,9 @@ _x( 'Product GTIN', 'option label', 'wpsso' );
 // translators: Please ignore - translation uses a different text domain.
 _x( 'Product GTIN-8', 'option label', 'wpsso' );
 // translators: Please ignore - translation uses a different text domain.
-_x( 'Product GTIN-12', 'option label', 'wpsso' );
+_x( 'Product GTIN-12/UPC', 'option label', 'wpsso' );
 // translators: Please ignore - translation uses a different text domain.
-_x( 'Product GTIN-13', 'option label', 'wpsso' );
+_x( 'Product GTIN-13/EAN', 'option label', 'wpsso' );
 // translators: Please ignore - translation uses a different text domain.
 _x( 'Product GTIN-14', 'option label', 'wpsso' );
 _x( 'QA Page Information', 'metabox title', 'wpsso-schema-json-ld' );

@@ -687,7 +687,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN-12', 'option label', 'wpsso' ),
+					'label'    => _x( 'Product GTIN-12/UPC', 'option label', 'wpsso' ),	// aka Product UPC
 					'tooltip'  => 'meta-product_gtin12',
 					'content'  => $form->get_no_input( 'product_gtin12', '', '', $placeholder = true ),
 				),
@@ -695,7 +695,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN-13', 'option label', 'wpsso' ),
+					'label'    => _x( 'Product GTIN-13/EAN', 'option label', 'wpsso' ),	// aka Product EAN
 					'tooltip'  => 'meta-product_gtin13',
 					'content'  => $form->get_no_input( 'product_gtin13', '', '', $placeholder = true ),
 				),

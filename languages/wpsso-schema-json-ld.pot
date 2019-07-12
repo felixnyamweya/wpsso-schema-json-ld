@@ -907,13 +907,13 @@ msgstr ""
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:82 lib/pro/admin/post.php:661 lib/std/admin/post.php:690
 msgctxt "option label"
-msgid "Product GTIN-12"
+msgid "Product GTIN-12/UPC"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:84 lib/pro/admin/post.php:668 lib/std/admin/post.php:698
 msgctxt "option label"
-msgid "Product GTIN-13"
+msgid "Product GTIN-13/EAN"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
