@@ -667,6 +667,14 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'content'  => $form->get_no_input( 'product_volume_value', '', '', $placeholder = true ) .
 						WpssoAdmin::get_option_unit_comment( 'product_volume_value' ),
 				),
+				'schema_product_gtin' => array(
+					'tr_class' => $schema_type_tr_class[ 'product' ],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Product GTIN', 'option label', 'wpsso' ),
+					'tooltip'  => 'meta-product_gtin',
+					'content'  => $form->get_no_input( 'product_gtin', '', '', $placeholder = true ),
+				),
 				'schema_product_gtin8' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',

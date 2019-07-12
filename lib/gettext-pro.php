@@ -75,6 +75,8 @@ _x( 'Product Height', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Product Depth', 'option label', 'wpsso-schema-json-ld' );
 _x( 'Product Volume', 'option label', 'wpsso-schema-json-ld' );
 // translators: Please ignore - translation uses a different text domain.
+_x( 'Product GTIN', 'option label', 'wpsso' );
+// translators: Please ignore - translation uses a different text domain.
 _x( 'Product GTIN-8', 'option label', 'wpsso' );
 // translators: Please ignore - translation uses a different text domain.
 _x( 'Product GTIN-12', 'option label', 'wpsso' );
