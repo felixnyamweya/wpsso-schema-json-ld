@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:1085
-msgid "Another Schema CreativeWork URL that this content is a part of."
+msgid "The URL to another Schema CreativeWork that this content is a part of."
 msgstr ""
 
 #: lib/filters.php:1091

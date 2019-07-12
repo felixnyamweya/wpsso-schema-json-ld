@@ -1082,7 +1082,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'tooltip-meta-schema_part_of_url':		// Part of URL
 
-					$text = __( 'Another Schema CreativeWork URL that this content is a part of.', 'wpsso-schema-json-ld' );
+					$text = __( 'The URL to another Schema CreativeWork that this content is a part of.', 'wpsso-schema-json-ld' );
 
 				 	break;
 
