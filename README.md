@@ -121,11 +121,11 @@
 <li>Product Color Attribute Name </li>
 <li>Product Condition Attribute Name </li>
 <li>Product MPN Attribute Name </li>
-<li>Product GTIN Attribute Name </li>
-<li>Product GTIN-8 Attribute Name </li>
-<li>Product GTIN-12 Attribute Name </li>
-<li>Product GTIN-13 Attribute Name </li>
 <li>Product GTIN-14 Attribute Name </li>
+<li>Product GTIN-13 Attribute Name </li>
+<li>Product GTIN-12 Attribute Name </li>
+<li>Product GTIN-8 Attribute Name </li>
+<li>Product GTIN Attribute Name </li>
 <li>Product ISBN Attribute Name </li>
 <li>Product Material Attribute Name </li>
 <li>Product Size Attribute Name </li>
@@ -149,11 +149,11 @@
 <li>Product Color Custom Field </li>
 <li>Product Condition Custom Field </li>
 <li>Product Currency Custom Field</li>
-<li>Product GTIN Custom Field </li>
-<li>Product GTIN-8 Custom Field </li>
-<li>Product GTIN-12 Custom Field </li>
-<li>Product GTIN-13 Custom Field </li>
 <li>Product GTIN-14 Custom Field </li>
+<li>Product GTIN-13 Custom Field </li>
+<li>Product GTIN-12 Custom Field </li>
+<li>Product GTIN-8 Custom Field </li>
+<li>Product GTIN Custom Field </li>
 <li>Product ISBN Custom Field </li>
 <li>Product Material Custom Field </li>
 <li>Product MPN Custom Field </li>
@@ -244,11 +244,11 @@
 <li>Color</li>
 <li>Condition</li>
 <li>MPN (aka Manufacturer Part Number)</li>
-<li>GTIN</li>
-<li>GTIN-8</li>
-<li>GTIN-12/UPC</li>
-<li>GTIN-13/EAN</li>
 <li>GTIN-14</li>
+<li>GTIN-13/EAN</li>
+<li>GTIN-12/UPC</li>
+<li>GTIN-8</li>
+<li>GTIN</li>
 <li>ISBN</li>
 <li>Material</li>
 <li>Size</li>
@@ -342,11 +342,11 @@
 <li>Product Height (cm)</li>
 <li>Product Depth (cm)</li>
 <li>Product Volume (ml)</li>
-<li>Product GTIN</li>
-<li>Product GTIN-8</li>
-<li>Product GTIN-12/UPC</li>
-<li>Product GTIN-13/EAN</li>
 <li>Product GTIN-14</li>
+<li>Product GTIN-13/EAN</li>
+<li>Product GTIN-12/UPC</li>
+<li>Product GTIN-8</li>
+<li>Product GTIN</li>
 </ul></li>
 <li>QA Page Information
 

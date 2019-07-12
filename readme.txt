@@ -109,11 +109,11 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Color Attribute Name 
 			* Product Condition Attribute Name 
 			* Product MPN Attribute Name 
-			* Product GTIN Attribute Name 
-			* Product GTIN-8 Attribute Name 
-			* Product GTIN-12 Attribute Name 
-			* Product GTIN-13 Attribute Name 
 			* Product GTIN-14 Attribute Name 
+			* Product GTIN-13 Attribute Name 
+			* Product GTIN-12 Attribute Name 
+			* Product GTIN-8 Attribute Name 
+			* Product GTIN Attribute Name 
 			* Product ISBN Attribute Name 
 			* Product Material Attribute Name 
 			* Product Size Attribute Name 
@@ -131,11 +131,11 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Color Custom Field 
 			* Product Condition Custom Field 
 			* Product Currency Custom Field
-			* Product GTIN Custom Field 
-			* Product GTIN-8 Custom Field 
-			* Product GTIN-12 Custom Field 
-			* Product GTIN-13 Custom Field 
 			* Product GTIN-14 Custom Field 
+			* Product GTIN-13 Custom Field 
+			* Product GTIN-12 Custom Field 
+			* Product GTIN-8 Custom Field 
+			* Product GTIN Custom Field 
 			* Product ISBN Custom Field 
 			* Product Material Custom Field 
 			* Product MPN Custom Field 
@@ -215,11 +215,11 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 	* Color
 	* Condition
 	* MPN (aka Manufacturer Part Number)
-	* GTIN
-	* GTIN-8
-	* GTIN-12/UPC
-	* GTIN-13/EAN
 	* GTIN-14
+	* GTIN-13/EAN
+	* GTIN-12/UPC
+	* GTIN-8
+	* GTIN
 	* ISBN
 	* Material
 	* Size
@@ -286,11 +286,11 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Product Height (cm)
 		* Product Depth (cm)
 		* Product Volume (ml)
-		* Product GTIN
-		* Product GTIN-8
-		* Product GTIN-12/UPC
-		* Product GTIN-13/EAN
 		* Product GTIN-14
+		* Product GTIN-13/EAN
+		* Product GTIN-12/UPC
+		* Product GTIN-8
+		* Product GTIN
 	* QA Page Information
 		* QA Heading
 	* Recipe Information
@@ -799,7 +799,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.0-rc.3 (2019/07/12)**
+**Version 2.3.0-rc.4 (2019/07/12)**
 
 * **New Features**
 	* None.
@@ -812,11 +812,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Product Width
 		* Product Height
 		* Product Depth
-		* Product GTIN
-		* Product GTIN-8
-		* Product GTIN-12/UPC
-		* Product GTIN-13/EAN
 		* Product GTIN-14
+		* Product GTIN-13/EAN
+		* Product GTIN-12/UPC
+		* Product GTIN-8
+		* Product GTIN
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -851,7 +851,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.0-rc.3 =
+= 2.3.0-rc.4 =
 
 (2019/07/12) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
 
