@@ -813,6 +813,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Product Width
 		* Product Height
 		* Product Depth
+		* Product GTIN
 		* Product GTIN-8
 		* Product GTIN-12
 		* Product GTIN-13
