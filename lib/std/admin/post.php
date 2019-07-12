@@ -667,29 +667,13 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'content'  => $form->get_no_input( 'product_volume_value', '', '', $placeholder = true ) .
 						WpssoAdmin::get_option_unit_comment( 'product_volume_value' ),
 				),
-				'schema_product_gtin' => array(
+				'schema_product_gtin14' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN', 'option label', 'wpsso' ),
-					'tooltip'  => 'meta-product_gtin',
-					'content'  => $form->get_no_input( 'product_gtin', '', '', $placeholder = true ),
-				),
-				'schema_product_gtin8' => array(
-					'tr_class' => $schema_type_tr_class[ 'product' ],
-					'th_class' => 'medium',
-					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN-8', 'option label', 'wpsso' ),
-					'tooltip'  => 'meta-product_gtin8',
-					'content'  => $form->get_no_input( 'product_gtin8', '', '', $placeholder = true ),
-				),
-				'schema_product_gtin12' => array(
-					'tr_class' => $schema_type_tr_class[ 'product' ],
-					'th_class' => 'medium',
-					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN-12/UPC', 'option label', 'wpsso' ),	// aka Product UPC
-					'tooltip'  => 'meta-product_gtin12',
-					'content'  => $form->get_no_input( 'product_gtin12', '', '', $placeholder = true ),
+					'label'    => _x( 'Product GTIN-14', 'option label', 'wpsso' ),
+					'tooltip'  => 'meta-product_gtin14',
+					'content'  => $form->get_no_input( 'product_gtin14', '', '', $placeholder = true ),
 				),
 				'schema_product_gtin13' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
@@ -699,13 +683,29 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'tooltip'  => 'meta-product_gtin13',
 					'content'  => $form->get_no_input( 'product_gtin13', '', '', $placeholder = true ),
 				),
-				'schema_product_gtin14' => array(
+				'schema_product_gtin12' => array(
 					'tr_class' => $schema_type_tr_class[ 'product' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
-					'label'    => _x( 'Product GTIN-14', 'option label', 'wpsso' ),
-					'tooltip'  => 'meta-product_gtin14',
-					'content'  => $form->get_no_input( 'product_gtin14', '', '', $placeholder = true ),
+					'label'    => _x( 'Product GTIN-12/UPC', 'option label', 'wpsso' ),	// aka Product UPC
+					'tooltip'  => 'meta-product_gtin12',
+					'content'  => $form->get_no_input( 'product_gtin12', '', '', $placeholder = true ),
+				),
+				'schema_product_gtin8' => array(
+					'tr_class' => $schema_type_tr_class[ 'product' ],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Product GTIN-8', 'option label', 'wpsso' ),
+					'tooltip'  => 'meta-product_gtin8',
+					'content'  => $form->get_no_input( 'product_gtin8', '', '', $placeholder = true ),
+				),
+				'schema_product_gtin' => array(
+					'tr_class' => $schema_type_tr_class[ 'product' ],
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Product GTIN', 'option label', 'wpsso' ),
+					'tooltip'  => 'meta-product_gtin',
+					'content'  => $form->get_no_input( 'product_gtin', '', '', $placeholder = true ),
 				),
 
 				/**

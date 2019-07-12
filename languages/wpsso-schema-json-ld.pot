@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.3.0-rc.3\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.3.0-rc.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -895,13 +895,13 @@ msgstr ""
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:78 lib/pro/admin/post.php:647 lib/std/admin/post.php:674
 msgctxt "option label"
-msgid "Product GTIN"
+msgid "Product GTIN-14"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:80 lib/pro/admin/post.php:654 lib/std/admin/post.php:682
 msgctxt "option label"
-msgid "Product GTIN-8"
+msgid "Product GTIN-13/EAN"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
@@ -913,13 +913,13 @@ msgstr ""
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:84 lib/pro/admin/post.php:668 lib/std/admin/post.php:698
 msgctxt "option label"
-msgid "Product GTIN-13/EAN"
+msgid "Product GTIN-8"
 msgstr ""
 
 #. translators: Please ignore - translation uses a different text domain.
 #: lib/gettext-pro.php:86 lib/pro/admin/post.php:675 lib/std/admin/post.php:706
 msgctxt "option label"
-msgid "Product GTIN-14"
+msgid "Product GTIN"
 msgstr ""
 
 #: lib/gettext-pro.php:87 lib/pro/admin/post.php:687 lib/std/admin/post.php:718
