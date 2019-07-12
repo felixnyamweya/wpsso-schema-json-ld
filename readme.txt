@@ -800,7 +800,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.0-rc.2 (2019/07/12)**
+**Version 2.3.0-rc.3 (2019/07/12)**
 
 * **New Features**
 	* None.
@@ -851,7 +851,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.0-rc.2 =
+= 2.3.0-rc.3 =
 
 (2019/07/12) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
 
