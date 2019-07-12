@@ -125,11 +125,16 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			if ( ! empty( $mod[ 'obj' ] ) )	{ // Just in case.
 
-				$part_of_url = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_url' );	// Returns null if index key is not found.
+				if ( $part_url = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_url' ) ) {
 
-				if ( ! empty( $part_of_url ) ) {
-					$ret[ 'isPartOf' ] = WpssoSchema::get_schema_type_context( 'https://schema.org/CreativeWork', array(
-						'url' => $part_of_url,
+					if ( $part_type_id = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_type' ) ) {
+						$part_type_url = $this->p->schema->get_schema_type_url( $part_type_id );
+					} else {
+						$part_type_url = 'https://schema.org/CreativeWork';
+					}
+					
+					$ret[ 'isPartOf' ] = WpssoSchema::get_schema_type_context( $part_type_url, array(
+						'url' => $part_url,
 					) );
 				}
 			}
