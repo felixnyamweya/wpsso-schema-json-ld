@@ -799,7 +799,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.0-rc.5 (2019/07/13)**
+**Version 2.3.0 (2019/07/13)**
 
 * **New Features**
 	* None.
@@ -852,11 +852,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.0-rc.5 =
+= 2.3.0 =
 
 (2019/07/13) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
-
-= 2.2.0 =
-
-(2019/07/06) Added support for a WooCommerce "Volume" (in milliliters) product attribute.
 
