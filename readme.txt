@@ -799,7 +799,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.0-rc.4 (2019/07/12)**
+**Version 2.3.0-rc.5 (2019/07/13)**
 
 * **New Features**
 	* None.
@@ -817,6 +817,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Product GTIN-12/UPC
 		* Product GTIN-8
 		* Product GTIN
+	* Added a min/max character counter to the Product GTIN input fields.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -851,9 +852,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.0-rc.4 =
+= 2.3.0-rc.5 =
 
-(2019/07/12) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
+(2019/07/13) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
 
 = 2.2.0 =
 
