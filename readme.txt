@@ -799,7 +799,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-dev.3 (2019/07/14)**
+**Version 2.4.0-dev.4 (2019/07/15)**
 
 * **New Features**
 	* None.
@@ -809,7 +809,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Developer Notes**
 	* Maintenance release for WPSSO Core v5.3.0:
-		* Changed `SucomForm::get_date_time_iso()` to `get_date_time_tz_options()`.
+		* Changed `SucomForm::get_date_time_iso()` to `get_date_time_tz()`.
 
 **Version 2.3.0 (2019/07/13)**
 
@@ -864,9 +864,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-dev.3 =
+= 2.4.0-dev.4 =
 
-(2019/07/14) Maintenance release for WPSSO Core v5.3.0.
+(2019/07/15) Maintenance release for WPSSO Core v5.3.0.
 
 = 2.3.0 =
 
