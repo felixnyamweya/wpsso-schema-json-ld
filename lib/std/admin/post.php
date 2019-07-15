@@ -140,7 +140,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				),
 				'schema_title_alt' => array(
 					'no_auto_draft' => true,
-					'tr_class'      => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// Hide if titles are the same.
 					'th_class'      => 'medium',
 					'td_class'      => 'blank',
 					'label'         => _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
@@ -156,7 +155,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'content'       => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
 				'schema_addl_type_url' => array(
-					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
@@ -164,7 +162,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 				'schema_sameas_url' => array(
-					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
@@ -246,8 +243,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_pub_org_id',
-					'content'  => $form->get_no_select( 'schema_pub_org_id',
-						$org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_pub_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 				'schema_prov_org_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'creative_work' ],
@@ -255,8 +252,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Service Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_prov_org_id',
-					'content'  => $form->get_no_select( 'schema_prov_org_id',
-						$org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_prov_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 
 				/**
@@ -282,7 +279,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Organizer Org', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_organizer_org_id',
-					'content'  => $form->get_no_select( 'schema_event_organizer_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_event_organizer_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 				'schema_event_organizer_person_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'event' ],
@@ -290,7 +288,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_organizer_person_id',
-					'content'  => $form->get_no_select( 'schema_event_organizer_person_id', $person_names, 'long_name' ),
+					'content'  => $form->get_no_select( 'schema_event_organizer_person_id', $person_names,
+						$css_class = 'long_name' ),
 				),
 				'schema_event_performer_org_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'event' ],
@@ -298,7 +297,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Performer Org', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_performer_org_id',
-					'content'  => $form->get_no_select( 'schema_event_performer_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_event_performer_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 				'schema_event_performer_person_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'event' ],
@@ -306,7 +306,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Performer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_performer_person_id',
-					'content'  => $form->get_no_select( 'schema_event_performer_person_id', $person_names, 'long_name' ),
+					'content'  => $form->get_no_select( 'schema_event_performer_person_id', $person_names,
+						$css_class = 'long_name' ),
 				),
 				'schema_event_location_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'event' ],
@@ -314,7 +315,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Event Venue', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_event_location_id',
-					'content'  => $form->get_no_select( 'schema_event_location_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
+					'content'  => $form->get_no_select( 'schema_event_location_id', $plm_place_names,
+						$css_class = 'long_name' ) . $plm_req_msg,
 				),
 				'schema_event_start' => array(
 					'tr_class' => $schema_type_tr_class[ 'event' ],
@@ -488,7 +490,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_job_hiring_org_id',
-					'content'  => $form->get_no_select( 'schema_job_hiring_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_job_hiring_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 				'schema_job_location_id' => array(
 					'tr_class' => $schema_type_tr_class[ 'job_posting' ],
@@ -496,7 +499,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_job_location_id',
-					'content'  => $form->get_no_select( 'schema_job_location_id', $plm_place_names, 'long_name' ) . $plm_req_msg,
+					'content'  => $form->get_no_select( 'schema_job_location_id', $plm_place_names,
+						$css_class = 'long_name' ) . $plm_req_msg,
 				),
 				'schema_job_salary' => array(
 					'tr_class' => $schema_type_tr_class[ 'job_posting' ],
@@ -557,7 +561,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Production Company', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_movie_prodco_org_id',
-					'content'  => $form->get_no_select( 'schema_movie_prodco_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_movie_prodco_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 				'schema_movie_duration_time' => array(
 					'tr_class' => $schema_type_tr_class[ 'movie' ],
@@ -585,7 +590,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_organization_org_id',
-					'content'  => $form->get_no_select( 'schema_organization_org_id', $org_site_names, 'long_name' ) . $org_req_msg,
+					'content'  => $form->get_no_select( 'schema_organization_org_id', $org_site_names,
+						$css_class = 'long_name' ) . $org_req_msg,
 				),
 
 				/**
@@ -603,7 +609,8 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_person_id',
-					'content'  => $form->get_no_select( 'schema_person_id', $person_names, 'long_name' ),
+					'content'  => $form->get_no_select( 'schema_person_id', $person_names,
+						$css_class = 'long_name' ),
 				),
 
 				/**

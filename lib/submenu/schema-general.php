@@ -211,14 +211,14 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'schema_def_pub_org_id' => array(
 					'label'    => _x( 'Default Publisher', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_pub_org_id',
-					'content'  => $this->form->get_select( 'schema_def_pub_org_id',
-						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_pub_org_id', $org_site_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_prov_org_id' => array(
 					'label'    => _x( 'Default Service Provider', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_prov_org_id',
-					'content'  => $this->form->get_select( 'schema_def_prov_org_id',
-						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_prov_org_id', $org_site_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $org_disable ) . $org_req_msg,
 				),
 
 				/**
@@ -232,30 +232,32 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'schema_def_event_organizer_org_id' => array(
 					'label'    => _x( 'Default Organizer Org', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_organizer_org_id',
-					'content'  => $this->form->get_select( 'schema_def_event_organizer_org_id',
-						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_event_organizer_org_id', $org_site_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_event_organizer_person_id' => array(
 					'label'    => _x( 'Default Organizer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_organizer_person_id',
-					'content'  => $this->form->get_select( 'schema_def_event_organizer_person_id', $person_names, 'long_name' ),
+					'content'  => $this->form->get_select( 'schema_def_event_organizer_person_id', $person_names,
+						$css_class = 'long_name' ),
 				),
 				'schema_def_event_performer_org_id' => array(
 					'label'    => _x( 'Default Performer Org', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_performer_org_id',
-					'content'  => $this->form->get_select( 'schema_def_event_performer_org_id',
-						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_event_performer_org_id', $org_site_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_event_performer_person_id' => array(
 					'label'    => _x( 'Default Performer Person', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_performer_person_id',
-					'content'  => $this->form->get_select( 'schema_def_event_performer_person_id', $person_names, 'long_name' ),
+					'content'  => $this->form->get_select( 'schema_def_event_performer_person_id', $person_names,
+						$css_class = 'long_name' ),
 				),
 				'schema_def_event_location_id' => array(
 					'label'    => _x( 'Default Event Venue', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_event_location_id',
-					'content'  => $this->form->get_select( 'schema_def_event_location_id',
-						$plm_place_names, 'long_name', '', true, $plm_disable ) . $plm_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_event_location_id', $plm_place_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $plm_disable ) . $plm_req_msg,
 				),
 
 				/**
@@ -269,14 +271,14 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 				'schema_def_job_hiring_org_id' => array(
 					'label'    => _x( 'Default Hiring Organization', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_job_hiring_org_id',
-					'content'  => $this->form->get_select( 'schema_def_job_hiring_org_id',
-						$org_site_names, 'long_name', '', true, $org_disable ) . $org_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_job_hiring_org_id', $org_site_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $org_disable ) . $org_req_msg,
 				),
 				'schema_def_job_location_id' => array(
 					'label'    => _x( 'Default Job Location', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'schema_def_job_location_id',
-					'content'  => $this->form->get_select( 'schema_def_job_location_id',
-						$plm_place_names, 'long_name', '', true, $plm_disable ) . $plm_req_msg,
+					'content'  => $this->form->get_select( 'schema_def_job_location_id', $plm_place_names,
+						$css_class = 'long_name', $css_id = '', $is_assoc = true, $plm_disable ) . $plm_req_msg,
 				),
 			);
 

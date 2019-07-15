@@ -96,7 +96,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'content'  => $form->get_no_input_value( $def_schema_title, 'wide' ),
 				),
 				'schema_title_alt' => array(
-					'tr_class' => $def_schema_title === $def_schema_title_alt ? 'hide_in_basic' : '',	// Hide if titles are the same.
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Alternate Name', 'option label', 'wpsso-schema-json-ld' ),
@@ -112,7 +111,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'content'       => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
 				'schema_addl_type_url' => array(
-					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_addl_type_url' ),
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Microdata Type URLs', 'option label', 'wpsso-schema-json-ld' ),
@@ -120,7 +118,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminTerm' ) ) {
 					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 				'schema_sameas_url' => array(
-					'tr_class' => $form->get_css_class_hide_prefix( 'basic', 'schema_sameas_url' ),
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Same-As URLs', 'option label', 'wpsso-schema-json-ld' ),
