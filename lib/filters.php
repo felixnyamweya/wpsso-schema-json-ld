@@ -71,7 +71,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$ppp = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_BLOG_MAX', 30 );
+			$ppp = SucomUtil::get_const( 'WPSSO_SCHEMA_POSTS_PER_BLOG_MAX', 50 );
 
 			$prop_name_type_ids = array( 'blogPost' => 'blog.posting' );	// Allow only posts of schema blog.posting type to be added.
 

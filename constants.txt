@@ -10,7 +10,7 @@ WPSSOJSON_URLPATH
 WPSSOJSON_VERSION
 
 /**
- * Variable constants. Define in your wp-config.php file to change the default value.
+ * Define in your wp-config.php file to change the default value.
  */
 WPSSOJSON_SCHEMA_SHORTCODE_NAME			= 'schema'
 WPSSOJSON_SCHEMA_SHORTCODE_SEPARATOR		= '_'
