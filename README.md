@@ -122,8 +122,8 @@
 <li>Product Condition Attribute Name </li>
 <li>Product MPN Attribute Name </li>
 <li>Product GTIN-14 Attribute Name </li>
-<li>Product GTIN-13 Attribute Name </li>
-<li>Product GTIN-12 Attribute Name </li>
+<li>Product GTIN-13/EAN Attribute Name </li>
+<li>Product GTIN-12/UPC Attribute Name </li>
 <li>Product GTIN-8 Attribute Name </li>
 <li>Product GTIN Attribute Name </li>
 <li>Product ISBN Attribute Name </li>
@@ -150,8 +150,8 @@
 <li>Product Condition Custom Field </li>
 <li>Product Currency Custom Field</li>
 <li>Product GTIN-14 Custom Field </li>
-<li>Product GTIN-13 Custom Field </li>
-<li>Product GTIN-12 Custom Field </li>
+<li>Product GTIN-13/EAN Custom Field </li>
+<li>Product GTIN-12/UPC Custom Field </li>
 <li>Product GTIN-8 Custom Field </li>
 <li>Product GTIN Custom Field </li>
 <li>Product ISBN Custom Field </li>

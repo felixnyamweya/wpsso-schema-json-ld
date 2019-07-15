@@ -110,8 +110,8 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Condition Attribute Name 
 			* Product MPN Attribute Name 
 			* Product GTIN-14 Attribute Name 
-			* Product GTIN-13 Attribute Name 
-			* Product GTIN-12 Attribute Name 
+			* Product GTIN-13/EAN Attribute Name 
+			* Product GTIN-12/UPC Attribute Name 
 			* Product GTIN-8 Attribute Name 
 			* Product GTIN Attribute Name 
 			* Product ISBN Attribute Name 
@@ -132,8 +132,8 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 			* Product Condition Custom Field 
 			* Product Currency Custom Field
 			* Product GTIN-14 Custom Field 
-			* Product GTIN-13 Custom Field 
-			* Product GTIN-12 Custom Field 
+			* Product GTIN-13/EAN Custom Field 
+			* Product GTIN-12/UPC Custom Field 
 			* Product GTIN-8 Custom Field 
 			* Product GTIN Custom Field 
 			* Product ISBN Custom Field 
