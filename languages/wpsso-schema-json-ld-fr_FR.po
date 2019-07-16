@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD (WPSSO JSON) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.3.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-ld\n"
-"POT-Creation-Date: 2019-07-12 17:20-0700\n"
-"PO-Revision-Date: 2019-07-12 17:21-0700\n"
+"POT-Creation-Date: 2019-07-16 10:09-0700\n"
+"PO-Revision-Date: 2019-07-16 10:09-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -460,108 +460,108 @@ msgid "Name / Title"
 msgstr "Nom / titre"
 
 #: lib/gettext-pro.php:14 lib/gettext-pro.php:142 lib/gettext-pro.php:148
-#: lib/pro/admin/post.php:165 lib/pro/admin/term.php:114
-#: lib/pro/admin/user.php:100 lib/std/admin/post.php:146
-#: lib/std/admin/term.php:102 lib/std/admin/user.php:89
+#: lib/pro/admin/post.php:164 lib/pro/admin/term.php:113
+#: lib/pro/admin/user.php:100 lib/std/admin/post.php:145
+#: lib/std/admin/term.php:101 lib/std/admin/user.php:89
 msgctxt "option label"
 msgid "Alternate Name"
 msgstr "Autre nom"
 
 #: lib/gettext-pro.php:15 lib/gettext-pro.php:143 lib/gettext-pro.php:149
-#: lib/pro/admin/post.php:172 lib/pro/admin/term.php:121
-#: lib/pro/admin/user.php:107 lib/std/admin/post.php:154
-#: lib/std/admin/term.php:110 lib/std/admin/user.php:97
+#: lib/pro/admin/post.php:171 lib/pro/admin/term.php:120
+#: lib/pro/admin/user.php:107 lib/std/admin/post.php:153
+#: lib/std/admin/term.php:109 lib/std/admin/user.php:97
 msgctxt "option label"
 msgid "Description"
 msgstr "Description"
 
-#: lib/gettext-pro.php:16 lib/gettext-pro.php:144 lib/pro/admin/post.php:179
-#: lib/pro/admin/term.php:128 lib/std/admin/post.php:162
-#: lib/std/admin/term.php:118
+#: lib/gettext-pro.php:16 lib/gettext-pro.php:144 lib/pro/admin/post.php:177
+#: lib/pro/admin/term.php:126 lib/std/admin/post.php:160
+#: lib/std/admin/term.php:116
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr "URLs de type microdonnées"
 
-#: lib/gettext-pro.php:17 lib/gettext-pro.php:145 lib/pro/admin/post.php:187
-#: lib/pro/admin/term.php:136 lib/std/admin/post.php:170
-#: lib/std/admin/term.php:126
+#: lib/gettext-pro.php:17 lib/gettext-pro.php:145 lib/pro/admin/post.php:184
+#: lib/pro/admin/term.php:133 lib/std/admin/post.php:167
+#: lib/std/admin/term.php:123
 msgctxt "option label"
 msgid "Same-As URLs"
 msgstr "URLs Same-As"
 
-#: lib/gettext-pro.php:18 lib/pro/admin/post.php:200 lib/std/admin/post.php:182
+#: lib/gettext-pro.php:18 lib/pro/admin/post.php:197 lib/std/admin/post.php:179
 #: lib/submenu/schema-general.php:203
 msgctxt "metabox title"
 msgid "Creative Work Information"
 msgstr "Informations d'oeuvre créative"
 
-#: lib/gettext-pro.php:19 lib/pro/admin/post.php:205 lib/std/admin/post.php:188
+#: lib/gettext-pro.php:19 lib/pro/admin/post.php:202 lib/std/admin/post.php:185
 msgctxt "option label"
 msgid "Part of URL"
 msgstr "Partie de l'URL"
 
-#: lib/gettext-pro.php:20 lib/pro/admin/post.php:213 lib/std/admin/post.php:197
+#: lib/gettext-pro.php:20 lib/pro/admin/post.php:210 lib/std/admin/post.php:194
 msgctxt "option label"
 msgid "Headline"
 msgstr "Manchette"
 
-#: lib/gettext-pro.php:21 lib/pro/admin/post.php:221 lib/std/admin/post.php:206
+#: lib/gettext-pro.php:21 lib/pro/admin/post.php:218 lib/std/admin/post.php:203
 msgctxt "option label"
 msgid "Full Text"
 msgstr "Texte intégral"
 
-#: lib/gettext-pro.php:22 lib/pro/admin/post.php:228 lib/std/admin/post.php:214
+#: lib/gettext-pro.php:22 lib/pro/admin/post.php:225 lib/std/admin/post.php:211
 msgctxt "option label"
 msgid "Keywords"
 msgstr "Mots clés"
 
-#: lib/gettext-pro.php:23 lib/pro/admin/post.php:235 lib/std/admin/post.php:222
+#: lib/gettext-pro.php:23 lib/pro/admin/post.php:232 lib/std/admin/post.php:219
 msgctxt "option label"
 msgid "Language"
 msgstr "Language"
 
-#: lib/gettext-pro.php:24 lib/pro/admin/post.php:242 lib/std/admin/post.php:230
+#: lib/gettext-pro.php:24 lib/pro/admin/post.php:239 lib/std/admin/post.php:227
 msgctxt "option label"
 msgid "Family Friendly"
 msgstr "Favorable à la famille"
 
-#: lib/gettext-pro.php:25 lib/pro/admin/post.php:250 lib/std/admin/post.php:239
+#: lib/gettext-pro.php:25 lib/pro/admin/post.php:247 lib/std/admin/post.php:236
 msgctxt "option label"
 msgid "Copyright Year"
 msgstr "Année du droit d'auteur"
 
-#: lib/gettext-pro.php:26 lib/pro/admin/post.php:257 lib/std/admin/post.php:247
+#: lib/gettext-pro.php:26 lib/pro/admin/post.php:254 lib/std/admin/post.php:244
 msgctxt "option label"
 msgid "Publisher"
 msgstr "Éditeur"
 
-#: lib/gettext-pro.php:27 lib/pro/admin/post.php:265 lib/std/admin/post.php:256
+#: lib/gettext-pro.php:27 lib/pro/admin/post.php:262 lib/std/admin/post.php:253
 msgctxt "option label"
 msgid "Service Provider"
 msgstr "Fournisseur de service"
 
-#: lib/gettext-pro.php:28 lib/pro/admin/post.php:278 lib/std/admin/post.php:269
+#: lib/gettext-pro.php:28 lib/pro/admin/post.php:275 lib/std/admin/post.php:266
 #: lib/submenu/schema-general.php:230
 msgctxt "metabox title"
 msgid "Event Information"
 msgstr "Informations d'événement"
 
-#: lib/gettext-pro.php:29 lib/pro/admin/post.php:283 lib/std/admin/post.php:275
+#: lib/gettext-pro.php:29 lib/pro/admin/post.php:280 lib/std/admin/post.php:272
 msgctxt "option label"
 msgid "Event Language"
 msgstr "Langue de l'événement"
 
-#: lib/gettext-pro.php:30 lib/pro/admin/post.php:290 lib/std/admin/post.php:283
+#: lib/gettext-pro.php:30 lib/pro/admin/post.php:287 lib/std/admin/post.php:280
 msgctxt "option label"
 msgid "Organizer Org"
 msgstr "Org. pour l'organisateur"
 
-#: lib/gettext-pro.php:31 lib/pro/admin/post.php:297 lib/std/admin/post.php:291
+#: lib/gettext-pro.php:31 lib/pro/admin/post.php:295 lib/std/admin/post.php:289
 msgctxt "option label"
 msgid "Organizer Person"
 msgstr "Personne pour l'organisateur"
 
-#: lib/gettext-pro.php:32 lib/pro/admin/post.php:304 lib/std/admin/post.php:299
+#: lib/gettext-pro.php:32 lib/pro/admin/post.php:303 lib/std/admin/post.php:298
 msgctxt "option label"
 msgid "Performer Org"
 msgstr "Org. pour l'interprète"
@@ -571,545 +571,545 @@ msgctxt "option label"
 msgid "Performer Person"
 msgstr "Personne pour l'interprète"
 
-#: lib/gettext-pro.php:34 lib/pro/admin/post.php:318 lib/std/admin/post.php:315
+#: lib/gettext-pro.php:34 lib/pro/admin/post.php:319 lib/std/admin/post.php:316
 msgctxt "option label"
 msgid "Event Venue"
 msgstr "Place pour l'événement"
 
-#: lib/gettext-pro.php:35 lib/pro/admin/post.php:325 lib/std/admin/post.php:323
+#: lib/gettext-pro.php:35 lib/pro/admin/post.php:327 lib/std/admin/post.php:325
 msgctxt "option label"
 msgid "Event Start"
 msgstr "Début de l'événement"
 
-#: lib/gettext-pro.php:36 lib/pro/admin/post.php:332 lib/std/admin/post.php:331
+#: lib/gettext-pro.php:36 lib/pro/admin/post.php:334 lib/std/admin/post.php:333
 msgctxt "option label"
 msgid "Event End"
 msgstr "Fin de l'événement"
 
-#: lib/gettext-pro.php:37 lib/pro/admin/post.php:339 lib/std/admin/post.php:339
+#: lib/gettext-pro.php:37 lib/pro/admin/post.php:341 lib/std/admin/post.php:341
 msgctxt "option label"
 msgid "Offers Start"
 msgstr "Début des offres"
 
-#: lib/gettext-pro.php:38 lib/pro/admin/post.php:346 lib/std/admin/post.php:347
+#: lib/gettext-pro.php:38 lib/pro/admin/post.php:348 lib/std/admin/post.php:349
 msgctxt "option label"
 msgid "Offers End"
 msgstr "Fin des offres"
 
-#: lib/gettext-pro.php:39 lib/pro/admin/post.php:353 lib/std/admin/post.php:355
+#: lib/gettext-pro.php:39 lib/pro/admin/post.php:355 lib/std/admin/post.php:357
 msgctxt "option label"
 msgid "Event Offers"
 msgstr "Offres pour l'événement"
 
-#: lib/gettext-pro.php:40 lib/pro/admin/post.php:357 lib/std/admin/post.php:359
+#: lib/gettext-pro.php:40 lib/pro/admin/post.php:359 lib/std/admin/post.php:361
 msgctxt "option label"
 msgid "Event Offer Name"
 msgstr "Nom de l'offre pour l'événement"
 
-#: lib/gettext-pro.php:41 lib/pro/admin/post.php:362 lib/std/admin/post.php:364
+#: lib/gettext-pro.php:41 lib/pro/admin/post.php:364 lib/std/admin/post.php:366
 msgctxt "option label"
 msgid "Event Offer Price"
 msgstr "Prix de l'offre pour l'événement"
 
-#: lib/gettext-pro.php:42 lib/pro/admin/post.php:367 lib/std/admin/post.php:369
+#: lib/gettext-pro.php:42 lib/pro/admin/post.php:369 lib/std/admin/post.php:371
 msgctxt "option label"
 msgid "Event Offer Currency"
 msgstr "Devise de l'offre pour l'événement"
 
-#: lib/gettext-pro.php:43 lib/pro/admin/post.php:374 lib/std/admin/post.php:376
+#: lib/gettext-pro.php:43 lib/pro/admin/post.php:376 lib/std/admin/post.php:378
 msgctxt "option label"
 msgid "Event Offer Availability"
 msgstr "Disponibilité de l'offre pour l'événement"
 
-#: lib/gettext-pro.php:44 lib/pro/admin/post.php:390 lib/std/admin/post.php:392
+#: lib/gettext-pro.php:44 lib/pro/admin/post.php:392 lib/std/admin/post.php:394
 msgctxt "metabox title"
 msgid "How-To Information"
 msgstr "Informations de How-To"
 
-#: lib/gettext-pro.php:45 lib/pro/admin/post.php:395 lib/std/admin/post.php:398
+#: lib/gettext-pro.php:45 lib/pro/admin/post.php:397 lib/std/admin/post.php:400
 msgctxt "option label"
 msgid "How-To Makes"
 msgstr "Le How-To crée"
 
-#: lib/gettext-pro.php:46 lib/gettext-pro.php:94 lib/pro/admin/post.php:402
-#: lib/pro/admin/post.php:737 lib/std/admin/post.php:406
-#: lib/std/admin/post.php:774
+#: lib/gettext-pro.php:46 lib/gettext-pro.php:94 lib/pro/admin/post.php:404
+#: lib/pro/admin/post.php:744 lib/std/admin/post.php:408
+#: lib/std/admin/post.php:781
 msgctxt "option label"
 msgid "Preparation Time"
 msgstr "Temps de préparation"
 
-#: lib/gettext-pro.php:47 lib/gettext-pro.php:96 lib/pro/admin/post.php:412
-#: lib/pro/admin/post.php:757 lib/std/admin/post.php:417
-#: lib/std/admin/post.php:796
+#: lib/gettext-pro.php:47 lib/gettext-pro.php:96 lib/pro/admin/post.php:414
+#: lib/pro/admin/post.php:764 lib/std/admin/post.php:419
+#: lib/std/admin/post.php:803
 msgctxt "option label"
 msgid "Total Time"
 msgstr "Temps total"
 
-#: lib/gettext-pro.php:48 lib/pro/admin/post.php:422 lib/std/admin/post.php:428
+#: lib/gettext-pro.php:48 lib/pro/admin/post.php:424 lib/std/admin/post.php:430
 msgctxt "option label"
 msgid "How-To Supplies"
 msgstr "Fournitures pour How-To"
 
-#: lib/gettext-pro.php:49 lib/pro/admin/post.php:430 lib/std/admin/post.php:436
+#: lib/gettext-pro.php:49 lib/pro/admin/post.php:432 lib/std/admin/post.php:438
 msgctxt "option label"
 msgid "How-To Tools"
 msgstr "Outils pour How-To"
 
-#: lib/gettext-pro.php:50 lib/pro/admin/post.php:438 lib/std/admin/post.php:444
+#: lib/gettext-pro.php:50 lib/pro/admin/post.php:440 lib/std/admin/post.php:446
 msgctxt "option label"
 msgid "How-To Steps"
 msgstr "Etapes pour How-To"
 
-#: lib/gettext-pro.php:51 lib/pro/admin/post.php:444 lib/std/admin/post.php:450
+#: lib/gettext-pro.php:51 lib/pro/admin/post.php:446 lib/std/admin/post.php:452
 msgctxt "option label"
 msgid "%1$s Step or %2$s Section Information"
 msgstr "Information %1$s d'étape ou %2$s de section"
 
-#: lib/gettext-pro.php:52 lib/pro/admin/post.php:449 lib/std/admin/post.php:455
+#: lib/gettext-pro.php:52 lib/pro/admin/post.php:451 lib/std/admin/post.php:457
 msgctxt "option label"
 msgid "Section Name or Step Name"
 msgstr "Nom de la section ou nom de l'étape"
 
-#: lib/gettext-pro.php:53 lib/pro/admin/post.php:454 lib/std/admin/post.php:460
+#: lib/gettext-pro.php:53 lib/pro/admin/post.php:456 lib/std/admin/post.php:462
 msgctxt "option label"
 msgid "Section Description or Direction Text"
 msgstr "Description de section ou texte de direction"
 
-#: lib/gettext-pro.php:54 lib/pro/admin/post.php:468 lib/std/admin/post.php:474
-#: lib/submenu/schema-general.php:267
+#: lib/gettext-pro.php:54 lib/pro/admin/post.php:470 lib/std/admin/post.php:476
+#: lib/submenu/schema-general.php:269
 msgctxt "metabox title"
 msgid "Job Posting Information"
 msgstr "Informations d'affichage d'emploi"
 
-#: lib/gettext-pro.php:55 lib/gettext-pro.php:152 lib/pro/admin/post.php:474
-#: lib/pro/admin/user.php:129 lib/std/admin/post.php:481
+#: lib/gettext-pro.php:55 lib/gettext-pro.php:152 lib/pro/admin/post.php:476
+#: lib/pro/admin/user.php:129 lib/std/admin/post.php:483
 #: lib/std/admin/user.php:120
 msgctxt "option label"
 msgid "Job Title"
 msgstr "Titre du poste"
 
-#: lib/gettext-pro.php:56 lib/pro/admin/post.php:481 lib/std/admin/post.php:489
+#: lib/gettext-pro.php:56 lib/pro/admin/post.php:483 lib/std/admin/post.php:491
 msgctxt "option label"
 msgid "Hiring Organization"
 msgstr "Organisation d'embauche"
 
-#: lib/gettext-pro.php:57 lib/pro/admin/post.php:488 lib/std/admin/post.php:497
+#: lib/gettext-pro.php:57 lib/pro/admin/post.php:491 lib/std/admin/post.php:500
 msgctxt "option label"
 msgid "Job Location"
 msgstr "Lieu de travail"
 
-#: lib/gettext-pro.php:58 lib/pro/admin/post.php:495 lib/std/admin/post.php:505
+#: lib/gettext-pro.php:58 lib/pro/admin/post.php:499 lib/std/admin/post.php:509
 msgctxt "option label"
 msgid "Base Salary"
 msgstr "Salaire de base"
 
-#: lib/gettext-pro.php:59 lib/pro/admin/post.php:499 lib/std/admin/post.php:509
+#: lib/gettext-pro.php:59 lib/pro/admin/post.php:503 lib/std/admin/post.php:513
 msgctxt "option comment"
 msgid "per"
 msgstr "par"
 
-#: lib/gettext-pro.php:60 lib/pro/admin/post.php:505 lib/std/admin/post.php:516
+#: lib/gettext-pro.php:60 lib/pro/admin/post.php:509 lib/std/admin/post.php:520
 msgctxt "option label"
 msgid "Employment Type"
 msgstr "Type d'emploi"
 
-#: lib/gettext-pro.php:61 lib/pro/admin/post.php:512 lib/std/admin/post.php:524
+#: lib/gettext-pro.php:61 lib/pro/admin/post.php:516 lib/std/admin/post.php:528
 msgctxt "option label"
 msgid "Job Posting Expires"
 msgstr "L'offre d'emploi expire"
 
-#: lib/gettext-pro.php:62 lib/pro/admin/post.php:524 lib/std/admin/post.php:536
+#: lib/gettext-pro.php:62 lib/pro/admin/post.php:528 lib/std/admin/post.php:540
 msgctxt "metabox title"
 msgid "Movie Information"
 msgstr "Informations de film"
 
-#: lib/gettext-pro.php:63 lib/pro/admin/post.php:529 lib/std/admin/post.php:542
+#: lib/gettext-pro.php:63 lib/pro/admin/post.php:533 lib/std/admin/post.php:546
 msgctxt "option label"
 msgid "Cast Names"
 msgstr "Noms de casting"
 
-#: lib/gettext-pro.php:64 lib/pro/admin/post.php:537 lib/std/admin/post.php:550
+#: lib/gettext-pro.php:64 lib/pro/admin/post.php:541 lib/std/admin/post.php:554
 msgctxt "option label"
 msgid "Director Names"
 msgstr "Noms de réalisateur"
 
-#: lib/gettext-pro.php:65 lib/pro/admin/post.php:545 lib/std/admin/post.php:558
+#: lib/gettext-pro.php:65 lib/pro/admin/post.php:549 lib/std/admin/post.php:562
 msgctxt "option label"
 msgid "Production Company"
 msgstr "Société de production"
 
-#: lib/gettext-pro.php:66 lib/pro/admin/post.php:552 lib/std/admin/post.php:566
+#: lib/gettext-pro.php:66 lib/pro/admin/post.php:557 lib/std/admin/post.php:571
 msgctxt "option label"
 msgid "Movie Runtime"
 msgstr "Durée du film"
 
-#: lib/gettext-pro.php:67 lib/pro/admin/post.php:566 lib/std/admin/post.php:580
+#: lib/gettext-pro.php:67 lib/pro/admin/post.php:571 lib/std/admin/post.php:585
 msgctxt "metabox title"
 msgid "Organization Information"
 msgstr "Informations d'organisation"
 
-#: lib/gettext-pro.php:68 lib/pro/admin/post.php:571 lib/std/admin/post.php:586
+#: lib/gettext-pro.php:68 lib/pro/admin/post.php:576 lib/std/admin/post.php:591
 msgctxt "option label"
 msgid "Organization"
 msgstr "Organisation"
 
-#: lib/gettext-pro.php:69 lib/gettext-pro.php:151 lib/pro/admin/post.php:583
-#: lib/pro/admin/user.php:125 lib/std/admin/post.php:598
+#: lib/gettext-pro.php:69 lib/gettext-pro.php:151 lib/pro/admin/post.php:589
+#: lib/pro/admin/user.php:125 lib/std/admin/post.php:604
 #: lib/std/admin/user.php:115
 msgctxt "metabox title"
 msgid "Person Information"
 msgstr "Informations de personne"
 
-#: lib/gettext-pro.php:70 lib/pro/admin/post.php:588 lib/std/admin/post.php:604
+#: lib/gettext-pro.php:70 lib/pro/admin/post.php:594 lib/std/admin/post.php:610
 msgctxt "option label"
 msgid "Person"
 msgstr "Personne"
 
-#: lib/gettext-pro.php:71 lib/pro/admin/post.php:602 lib/std/admin/post.php:618
+#: lib/gettext-pro.php:71 lib/pro/admin/post.php:609 lib/std/admin/post.php:625
 msgctxt "metabox title"
 msgid "Product Information (Additional)"
 msgstr "Informations de produit (supplémentaire)"
 
-#: lib/gettext-pro.php:72 lib/pro/admin/post.php:607 lib/std/admin/post.php:629
+#: lib/gettext-pro.php:72 lib/pro/admin/post.php:614 lib/std/admin/post.php:636
 msgctxt "option label"
 msgid "Product Length"
 msgstr "Longueur du produit"
 
-#: lib/gettext-pro.php:73 lib/pro/admin/post.php:615 lib/std/admin/post.php:638
+#: lib/gettext-pro.php:73 lib/pro/admin/post.php:622 lib/std/admin/post.php:645
 msgctxt "option label"
 msgid "Product Width"
 msgstr "Largeur du produit"
 
-#: lib/gettext-pro.php:74 lib/pro/admin/post.php:623 lib/std/admin/post.php:647
+#: lib/gettext-pro.php:74 lib/pro/admin/post.php:630 lib/std/admin/post.php:654
 msgctxt "option label"
 msgid "Product Height"
 msgstr "Hauteur du produit"
 
-#: lib/gettext-pro.php:75 lib/pro/admin/post.php:631 lib/std/admin/post.php:656
+#: lib/gettext-pro.php:75 lib/pro/admin/post.php:638 lib/std/admin/post.php:663
 msgctxt "option label"
 msgid "Product Depth"
 msgstr "Profondeur du produit"
 
-#: lib/gettext-pro.php:76 lib/pro/admin/post.php:639 lib/std/admin/post.php:665
+#: lib/gettext-pro.php:76 lib/pro/admin/post.php:646 lib/std/admin/post.php:672
 msgctxt "option label"
 msgid "Product Volume"
 msgstr "Volume du produit"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/gettext-pro.php:78 lib/pro/admin/post.php:647 lib/std/admin/post.php:674
+#: lib/gettext-pro.php:78 lib/pro/admin/post.php:654 lib/std/admin/post.php:681
 msgctxt "option label"
 msgid "Product GTIN-14"
 msgstr "GTIN-14 du produit"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/gettext-pro.php:80 lib/pro/admin/post.php:654 lib/std/admin/post.php:682
+#: lib/gettext-pro.php:80 lib/pro/admin/post.php:661 lib/std/admin/post.php:689
 msgctxt "option label"
 msgid "Product GTIN-13/EAN"
 msgstr "GTIN-13/EAN du produit"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/gettext-pro.php:82 lib/pro/admin/post.php:661 lib/std/admin/post.php:690
+#: lib/gettext-pro.php:82 lib/pro/admin/post.php:668 lib/std/admin/post.php:697
 msgctxt "option label"
 msgid "Product GTIN-12/UPC"
 msgstr "GTIN-12/UPC du produit"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/gettext-pro.php:84 lib/pro/admin/post.php:668 lib/std/admin/post.php:698
+#: lib/gettext-pro.php:84 lib/pro/admin/post.php:675 lib/std/admin/post.php:705
 msgctxt "option label"
 msgid "Product GTIN-8"
 msgstr "GTIN-8 du produit"
 
 #. translators: Please ignore - translation uses a different text domain.
-#: lib/gettext-pro.php:86 lib/pro/admin/post.php:675 lib/std/admin/post.php:706
+#: lib/gettext-pro.php:86 lib/pro/admin/post.php:682 lib/std/admin/post.php:713
 msgctxt "option label"
 msgid "Product GTIN"
 msgstr "GTIN du produit"
 
-#: lib/gettext-pro.php:87 lib/pro/admin/post.php:687 lib/std/admin/post.php:718
+#: lib/gettext-pro.php:87 lib/pro/admin/post.php:694 lib/std/admin/post.php:725
 msgctxt "metabox title"
 msgid "QA Page Information"
 msgstr "Informations de page QA"
 
-#: lib/gettext-pro.php:88 lib/pro/admin/post.php:692 lib/std/admin/post.php:724
+#: lib/gettext-pro.php:88 lib/pro/admin/post.php:699 lib/std/admin/post.php:731
 msgctxt "option label"
 msgid "QA Heading"
 msgstr "En-tête QA"
 
-#: lib/gettext-pro.php:89 lib/pro/admin/post.php:704 lib/std/admin/post.php:736
+#: lib/gettext-pro.php:89 lib/pro/admin/post.php:711 lib/std/admin/post.php:743
 msgctxt "metabox title"
 msgid "Recipe Information"
 msgstr "Informations de recette"
 
-#: lib/gettext-pro.php:90 lib/pro/admin/post.php:709 lib/std/admin/post.php:742
+#: lib/gettext-pro.php:90 lib/pro/admin/post.php:716 lib/std/admin/post.php:749
 msgctxt "option label"
 msgid "Recipe Cuisine"
 msgstr "Cuisine de la recette"
 
-#: lib/gettext-pro.php:91 lib/pro/admin/post.php:716 lib/std/admin/post.php:750
+#: lib/gettext-pro.php:91 lib/pro/admin/post.php:723 lib/std/admin/post.php:757
 msgctxt "option label"
 msgid "Recipe Course"
 msgstr "Cours de la recette"
 
-#: lib/gettext-pro.php:92 lib/pro/admin/post.php:723 lib/std/admin/post.php:758
+#: lib/gettext-pro.php:92 lib/pro/admin/post.php:730 lib/std/admin/post.php:765
 msgctxt "option label"
 msgid "Recipe Makes"
 msgstr "La recette crée"
 
-#: lib/gettext-pro.php:93 lib/pro/admin/post.php:730 lib/std/admin/post.php:766
+#: lib/gettext-pro.php:93 lib/pro/admin/post.php:737 lib/std/admin/post.php:773
 msgctxt "option label"
 msgid "Cooking Method"
 msgstr "Méthode de cuisson"
 
-#: lib/gettext-pro.php:95 lib/pro/admin/post.php:747 lib/std/admin/post.php:785
+#: lib/gettext-pro.php:95 lib/pro/admin/post.php:754 lib/std/admin/post.php:792
 msgctxt "option label"
 msgid "Cooking Time"
 msgstr "Temps de cuisson"
 
-#: lib/gettext-pro.php:97 lib/pro/admin/post.php:767 lib/std/admin/post.php:807
+#: lib/gettext-pro.php:97 lib/pro/admin/post.php:774 lib/std/admin/post.php:814
 msgctxt "option label"
 msgid "Recipe Ingredients"
 msgstr "Ingrédients de recette"
 
-#: lib/gettext-pro.php:98 lib/pro/admin/post.php:775 lib/std/admin/post.php:815
+#: lib/gettext-pro.php:98 lib/pro/admin/post.php:782 lib/std/admin/post.php:822
 msgctxt "option label"
 msgid "Recipe Instructions"
 msgstr "Instructions de recette"
 
-#: lib/gettext-pro.php:99 lib/pro/admin/post.php:788 lib/std/admin/post.php:827
+#: lib/gettext-pro.php:99 lib/pro/admin/post.php:795 lib/std/admin/post.php:834
 msgctxt "metabox title"
 msgid "Nutrition Information per Serving"
 msgstr "Informations nutritionnelle par portion"
 
-#: lib/gettext-pro.php:100 lib/pro/admin/post.php:793
-#: lib/std/admin/post.php:833
+#: lib/gettext-pro.php:100 lib/pro/admin/post.php:800
+#: lib/std/admin/post.php:840
 msgctxt "option label"
 msgid "Serving Size"
 msgstr "Taille de portion"
 
-#: lib/gettext-pro.php:101 lib/pro/admin/post.php:800
-#: lib/std/admin/post.php:841
+#: lib/gettext-pro.php:101 lib/pro/admin/post.php:807
+#: lib/std/admin/post.php:848
 msgctxt "option label"
 msgid "Calories"
 msgstr "Calories"
 
-#: lib/gettext-pro.php:102 lib/pro/admin/post.php:803
-#: lib/std/admin/post.php:844
+#: lib/gettext-pro.php:102 lib/pro/admin/post.php:810
+#: lib/std/admin/post.php:851
 msgctxt "option comment"
 msgid "calories"
 msgstr "calories"
 
-#: lib/gettext-pro.php:103 lib/pro/admin/post.php:808
-#: lib/std/admin/post.php:850
+#: lib/gettext-pro.php:103 lib/pro/admin/post.php:815
+#: lib/std/admin/post.php:857
 msgctxt "option label"
 msgid "Protein"
 msgstr "Protéine"
 
-#: lib/gettext-pro.php:104 lib/pro/admin/post.php:811
-#: lib/std/admin/post.php:853
+#: lib/gettext-pro.php:104 lib/pro/admin/post.php:818
+#: lib/std/admin/post.php:860
 msgctxt "option comment"
 msgid "grams of protein"
 msgstr "grammes de protéines"
 
-#: lib/gettext-pro.php:105 lib/pro/admin/post.php:816
-#: lib/std/admin/post.php:859
+#: lib/gettext-pro.php:105 lib/pro/admin/post.php:823
+#: lib/std/admin/post.php:866
 msgctxt "option label"
 msgid "Fiber"
 msgstr "Fibre"
 
-#: lib/gettext-pro.php:106 lib/pro/admin/post.php:819
-#: lib/std/admin/post.php:862
+#: lib/gettext-pro.php:106 lib/pro/admin/post.php:826
+#: lib/std/admin/post.php:869
 msgctxt "option comment"
 msgid "grams of fiber"
 msgstr "grammes de fibres"
 
-#: lib/gettext-pro.php:107 lib/pro/admin/post.php:824
-#: lib/std/admin/post.php:868
+#: lib/gettext-pro.php:107 lib/pro/admin/post.php:831
+#: lib/std/admin/post.php:875
 msgctxt "option label"
 msgid "Carbohydrates"
 msgstr "Glucides"
 
-#: lib/gettext-pro.php:108 lib/pro/admin/post.php:827
-#: lib/std/admin/post.php:871
+#: lib/gettext-pro.php:108 lib/pro/admin/post.php:834
+#: lib/std/admin/post.php:878
 msgctxt "option comment"
 msgid "grams of carbohydrates"
 msgstr "grammes de glucides"
 
-#: lib/gettext-pro.php:109 lib/pro/admin/post.php:832
-#: lib/std/admin/post.php:877
+#: lib/gettext-pro.php:109 lib/pro/admin/post.php:839
+#: lib/std/admin/post.php:884
 msgctxt "option label"
 msgid "Sugar"
 msgstr "Sucre"
 
-#: lib/gettext-pro.php:110 lib/pro/admin/post.php:835
-#: lib/std/admin/post.php:880
+#: lib/gettext-pro.php:110 lib/pro/admin/post.php:842
+#: lib/std/admin/post.php:887
 msgctxt "option comment"
 msgid "grams of sugar"
 msgstr "grammes de sucre"
 
-#: lib/gettext-pro.php:111 lib/pro/admin/post.php:840
-#: lib/std/admin/post.php:886
+#: lib/gettext-pro.php:111 lib/pro/admin/post.php:847
+#: lib/std/admin/post.php:893
 msgctxt "option label"
 msgid "Sodium"
 msgstr "Sodium"
 
-#: lib/gettext-pro.php:112 lib/pro/admin/post.php:843
-#: lib/std/admin/post.php:889
+#: lib/gettext-pro.php:112 lib/pro/admin/post.php:850
+#: lib/std/admin/post.php:896
 msgctxt "option comment"
 msgid "milligrams of sodium"
 msgstr "milligrammes de sodium"
 
-#: lib/gettext-pro.php:113 lib/pro/admin/post.php:848
-#: lib/std/admin/post.php:895
+#: lib/gettext-pro.php:113 lib/pro/admin/post.php:855
+#: lib/std/admin/post.php:902
 msgctxt "option label"
 msgid "Fat"
 msgstr "Gras"
 
-#: lib/gettext-pro.php:114 lib/pro/admin/post.php:851
-#: lib/std/admin/post.php:898
+#: lib/gettext-pro.php:114 lib/pro/admin/post.php:858
+#: lib/std/admin/post.php:905
 msgctxt "option comment"
 msgid "grams of fat"
 msgstr "grammes de matières grasses"
 
-#: lib/gettext-pro.php:115 lib/pro/admin/post.php:856
-#: lib/std/admin/post.php:904
+#: lib/gettext-pro.php:115 lib/pro/admin/post.php:863
+#: lib/std/admin/post.php:911
 msgctxt "option label"
 msgid "Saturated Fat"
 msgstr "Gras saturée"
 
-#: lib/gettext-pro.php:116 lib/pro/admin/post.php:859
-#: lib/std/admin/post.php:907
+#: lib/gettext-pro.php:116 lib/pro/admin/post.php:866
+#: lib/std/admin/post.php:914
 msgctxt "option comment"
 msgid "grams of saturated fat"
 msgstr "grammes de gras saturés"
 
-#: lib/gettext-pro.php:117 lib/pro/admin/post.php:864
-#: lib/std/admin/post.php:913
+#: lib/gettext-pro.php:117 lib/pro/admin/post.php:871
+#: lib/std/admin/post.php:920
 msgctxt "option label"
 msgid "Unsaturated Fat"
 msgstr "Grais insaturées"
 
-#: lib/gettext-pro.php:118 lib/pro/admin/post.php:867
-#: lib/std/admin/post.php:916
+#: lib/gettext-pro.php:118 lib/pro/admin/post.php:874
+#: lib/std/admin/post.php:923
 msgctxt "option comment"
 msgid "grams of unsaturated fat"
 msgstr "grammes de gras insaturés"
 
-#: lib/gettext-pro.php:119 lib/pro/admin/post.php:872
-#: lib/std/admin/post.php:922
+#: lib/gettext-pro.php:119 lib/pro/admin/post.php:879
+#: lib/std/admin/post.php:929
 msgctxt "option label"
 msgid "Trans Fat"
 msgstr "Gras trans"
 
-#: lib/gettext-pro.php:120 lib/pro/admin/post.php:875
-#: lib/std/admin/post.php:925
+#: lib/gettext-pro.php:120 lib/pro/admin/post.php:882
+#: lib/std/admin/post.php:932
 msgctxt "option comment"
 msgid "grams of trans fat"
 msgstr "grammes de gras trans"
 
-#: lib/gettext-pro.php:121 lib/pro/admin/post.php:880
-#: lib/std/admin/post.php:931
+#: lib/gettext-pro.php:121 lib/pro/admin/post.php:887
+#: lib/std/admin/post.php:938
 msgctxt "option label"
 msgid "Cholesterol"
 msgstr "Cholestérol"
 
-#: lib/gettext-pro.php:122 lib/pro/admin/post.php:883
-#: lib/std/admin/post.php:934
+#: lib/gettext-pro.php:122 lib/pro/admin/post.php:890
+#: lib/std/admin/post.php:941
 msgctxt "option comment"
 msgid "milligrams of cholesterol"
 msgstr "milligrammes de cholestérol"
 
-#: lib/gettext-pro.php:123 lib/pro/admin/post.php:893
-#: lib/std/admin/post.php:944
+#: lib/gettext-pro.php:123 lib/pro/admin/post.php:900
+#: lib/std/admin/post.php:951
 msgctxt "metabox title"
 msgid "Review Information"
 msgstr "Informations d'évaluation"
 
-#: lib/gettext-pro.php:124 lib/pro/admin/post.php:898
-#: lib/std/admin/post.php:950
+#: lib/gettext-pro.php:124 lib/pro/admin/post.php:905
+#: lib/std/admin/post.php:957
 msgctxt "option label"
 msgid "Review Rating"
 msgstr "Note de l'évaluation"
 
-#: lib/gettext-pro.php:125 lib/pro/admin/post.php:901
-#: lib/std/admin/post.php:953
+#: lib/gettext-pro.php:125 lib/pro/admin/post.php:908
+#: lib/std/admin/post.php:960
 msgctxt "option comment"
 msgid "from"
 msgstr "de"
 
-#: lib/gettext-pro.php:126 lib/pro/admin/post.php:903
-#: lib/std/admin/post.php:955
+#: lib/gettext-pro.php:126 lib/pro/admin/post.php:910
+#: lib/std/admin/post.php:962
 msgctxt "option comment"
 msgid "to"
 msgstr "à"
 
-#: lib/gettext-pro.php:127 lib/pro/admin/post.php:909
-#: lib/std/admin/post.php:962
+#: lib/gettext-pro.php:127 lib/pro/admin/post.php:916
+#: lib/std/admin/post.php:969
 msgctxt "option label"
 msgid "Review Rating Name"
 msgstr "Un nom pour la note"
 
-#: lib/gettext-pro.php:128 lib/pro/admin/post.php:916
-#: lib/std/admin/post.php:970
+#: lib/gettext-pro.php:128 lib/pro/admin/post.php:923
+#: lib/std/admin/post.php:977
 msgctxt "option label"
 msgid "Review Subject URL"
 msgstr "URL du sujet de l'évaluation"
 
-#: lib/gettext-pro.php:129 lib/pro/admin/post.php:923
-#: lib/std/admin/post.php:978
+#: lib/gettext-pro.php:129 lib/pro/admin/post.php:930
+#: lib/std/admin/post.php:985
 msgctxt "option label"
 msgid "Review Subject Name"
 msgstr "Nom du sujet de l'évaluation"
 
-#: lib/gettext-pro.php:130 lib/pro/admin/post.php:935
-#: lib/std/admin/post.php:990
+#: lib/gettext-pro.php:130 lib/pro/admin/post.php:942
+#: lib/std/admin/post.php:997
 msgctxt "metabox title"
 msgid "Claim Review Information"
 msgstr "Informations d'évaluation de déclaration"
 
-#: lib/gettext-pro.php:131 lib/pro/admin/post.php:940
-#: lib/std/admin/post.php:996
+#: lib/gettext-pro.php:131 lib/pro/admin/post.php:947
+#: lib/std/admin/post.php:1003
 msgctxt "option label"
 msgid "Claim Short Summary"
 msgstr "Bref résumé de la déclaration"
 
-#: lib/gettext-pro.php:132 lib/pro/admin/post.php:947
-#: lib/std/admin/post.php:1004
+#: lib/gettext-pro.php:132 lib/pro/admin/post.php:954
+#: lib/std/admin/post.php:1011
 msgctxt "option label"
 msgid "Claim Made on Date"
 msgstr "Déclaration faite à la date"
 
-#: lib/gettext-pro.php:133 lib/pro/admin/post.php:954
-#: lib/std/admin/post.php:1012
+#: lib/gettext-pro.php:133 lib/pro/admin/post.php:961
+#: lib/std/admin/post.php:1019
 msgctxt "option label"
 msgid "Claim Author Type"
 msgstr "Type d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:134 lib/pro/admin/post.php:961
-#: lib/std/admin/post.php:1020
+#: lib/gettext-pro.php:134 lib/pro/admin/post.php:968
+#: lib/std/admin/post.php:1027
 msgctxt "option label"
 msgid "Claim Author Name"
 msgstr "Nom d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:135 lib/pro/admin/post.php:968
-#: lib/std/admin/post.php:1028
+#: lib/gettext-pro.php:135 lib/pro/admin/post.php:975
+#: lib/std/admin/post.php:1035
 msgctxt "option label"
 msgid "Claim Author URL"
 msgstr "URL d'auteur de la déclaration"
 
-#: lib/gettext-pro.php:136 lib/pro/admin/post.php:975
-#: lib/std/admin/post.php:1036
+#: lib/gettext-pro.php:136 lib/pro/admin/post.php:982
+#: lib/std/admin/post.php:1043
 msgctxt "option label"
 msgid "First Appearance URL"
 msgstr "URL de la première apparence"
 
-#: lib/gettext-pro.php:137 lib/pro/admin/post.php:987
-#: lib/std/admin/post.php:1048
+#: lib/gettext-pro.php:137 lib/pro/admin/post.php:994
+#: lib/std/admin/post.php:1055
 msgctxt "metabox title"
 msgid "Software Application Information"
 msgstr "Informations sur l'application logicielle"
 
-#: lib/gettext-pro.php:138 lib/pro/admin/post.php:992
-#: lib/std/admin/post.php:1054
+#: lib/gettext-pro.php:138 lib/pro/admin/post.php:999
+#: lib/std/admin/post.php:1061
 msgctxt "option label"
 msgid "Operating System"
 msgstr "Système d'exploitation"
@@ -1230,27 +1230,27 @@ msgctxt "option label"
 msgid "Default Organizer Person"
 msgstr "Personne par défaut pour l'organisateur"
 
-#: lib/submenu/schema-general.php:244
+#: lib/submenu/schema-general.php:245
 msgctxt "option label"
 msgid "Default Performer Org"
 msgstr "Org. par défaut pour l'interprète"
 
-#: lib/submenu/schema-general.php:250
+#: lib/submenu/schema-general.php:251
 msgctxt "option label"
 msgid "Default Performer Person"
 msgstr "Personne par défaut pour l'interprète"
 
-#: lib/submenu/schema-general.php:255
+#: lib/submenu/schema-general.php:257
 msgctxt "option label"
 msgid "Default Event Venue"
 msgstr "Place par défaut pour l'événement"
 
-#: lib/submenu/schema-general.php:270
+#: lib/submenu/schema-general.php:272
 msgctxt "option label"
 msgid "Default Hiring Organization"
 msgstr "Organisation d'embauche par défaut"
 
-#: lib/submenu/schema-general.php:276
+#: lib/submenu/schema-general.php:278
 msgctxt "option label"
 msgid "Default Job Location"
 msgstr "Lieu de travail par défaut"
