@@ -799,17 +799,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-dev.5 (2019/07/15)**
+**Version 2.4.0-b.1 (2019/07/16)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Added an '@id' property to the Schema ImageObject and VideoObject markup.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Maintenance release for WPSSO Core v5.3.0:
-		* Changed `SucomForm::get_date_time_iso()` to `get_date_time_tz()`.
+	* Changed `SucomForm::get_date_time_iso()` to `get_date_time_tz()`.
 
 **Version 2.3.0 (2019/07/13)**
 
@@ -864,9 +863,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-dev.5 =
+= 2.4.0-b.1 =
 
-(2019/07/15) Maintenance release for WPSSO Core v5.3.0.
+(2019/07/16) Added an '@id' property to the Schema ImageObject and VideoObject markup.
 
 = 2.3.0 =
 
