@@ -799,12 +799,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-b.1 (2019/07/16)**
+**Version 2.4.0-b.2 (2019/07/17)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* Added an '@id' property to the Schema ImageObject and VideoObject markup.
+	* Optimized the SSO &gt; Schema Markup &gt; Schema Types &gt; Default Schema Types options with jQuery to load the selects as needed.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -863,9 +864,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-b.1 =
+= 2.4.0-b.2 =
 
-(2019/07/16) Added an '@id' property to the Schema ImageObject and VideoObject markup.
+(2019/07/17) Added an '@id' property to the Schema ImageObject and VideoObject markup.
 
 = 2.3.0 =
 
