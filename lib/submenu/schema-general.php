@@ -80,7 +80,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-knowledge_graph':
 
-					$this->add_schema_knowledge_graph_table_rows( $table_rows );
+					$this->add_schema_knowledge_graph_table_rows( $table_rows, $this->form );
 
 					break;
 
@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 						'option label', 'wpsso-schema-json-ld' ), '', 'site_desc', $atts_locale ) . 
 					'<td>' . $this->form->get_textarea( $site_desc_key, '', '', 0, $def_site_desc ) . '</td>';
 
-					$this->add_schema_item_props_table_rows( $table_rows );
+					$this->add_schema_item_props_table_rows( $table_rows, $this->form );
 
 					$table_rows[ 'schema_text_max_len' ] = $this->form->get_tr_hide( 'basic', 'schema_text_max_len' ) . 
 					$this->form->get_th_html( _x( 'Maximum Text Property Length',
@@ -132,7 +132,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-types':
 
-					$this->add_schema_item_types_table_rows( $table_rows, $hide_in_basic = false );
+					$this->add_schema_item_types_table_rows( $table_rows, $this->form, $hide_in_basic = false, $is_top_section = true );
 
 					break;
 
@@ -156,7 +156,7 @@ if ( ! class_exists( 'WpssoJsonSubmenuSchemaGeneral' ) && class_exists( 'WpssoAd
 
 				case 'schema_general-meta_defaults':
 
-					$this->add_schema_meta_defaults_table_rows( $table_rows );
+					$this->add_schema_meta_defaults_table_rows( $table_rows, $this->form );
 
 					break;
 			}
