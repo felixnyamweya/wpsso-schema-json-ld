@@ -62,7 +62,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 								'product'             => '(code) Schema Type Product (schema_type:product)',
 								'profilepage'         => '(code) Schema Type Profile Page (schema_type:webpage.profile)',
 								'qapage'              => '(code) Schema Type QAPage (schema_type:webpage.qa)',
-								'question'            => '(code) Schema Type Question (schema_type:question)',
+								'question'            => '(code) Schema Type Question and Answer (schema_type:question)',
 								'recipe'              => '(code) Schema Type Recipe (schema_type:recipe)',
 								'review'              => '(code) Schema Type Review (schema_type:review)',
 								'searchresultspage'   => '(code) Schema Type Search Results Page (schema_type:webpage.search.results)',
