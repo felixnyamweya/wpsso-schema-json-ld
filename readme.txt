@@ -799,7 +799,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-rc.1 (2019/07/18)**
+**Version 2.4.0 (2019/07/18)**
 
 * **New Features**
 	* None.
@@ -864,11 +864,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-rc.1 =
+= 2.4.0 =
 
 (2019/07/18) Added an '@id' property to the Schema ImageObject and VideoObject markup.
-
-= 2.3.0 =
-
-(2019/07/13) Added an "Product Information (Additional)" subsection in the Document SSO metabox for the Schema Product type. Added new options in the Document SSO metabox.
 
