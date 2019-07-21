@@ -102,7 +102,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Type for Search Results Page
 		* Type for Other Archive Page
 		* Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
-		* Type by Term Taxonomy for Categories, Tags, and custom term taxonomies
+		* Type by Term for Categories, Tags, and custom taxonomy terms
 	* Integration (WPSSO Core Premium required)
 		* Product Attribute Names
 			* Product Brand Attribute Name 
