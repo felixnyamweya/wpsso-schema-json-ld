@@ -753,6 +753,7 @@ WPSSO Schema JSON-LD Markup (aka WPSSO JSON) is an add-on for the [WPSSO Core pl
 <h3 class="top">Frequently Asked Questions</h3>
 
 * [Can I add custom Schema properties to the JSON-LD?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/can-i-add-custom-schema-properties-to-the-json-ld/)
+* [How do I create a Schema FAQPage?](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/faqs/how-do-i-create-a-schema-faqpage/)
 
 <h3>Advanced Documentation and Notes</h3>
 
