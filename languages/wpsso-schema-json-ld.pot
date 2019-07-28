@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Schema JSON-LD Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.4.0\n"
+"Project-Id-Version: WPSSO Schema JSON-LD Markup 2.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-schema-json-"
 "ld\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -565,23 +565,23 @@ msgid "Alternate Name"
 msgstr ""
 
 #: lib/gettext-pro.php:15 lib/gettext-pro.php:143 lib/gettext-pro.php:149
-#: lib/pro/admin/post.php:171 lib/pro/admin/term.php:120
-#: lib/pro/admin/user.php:107 lib/std/admin/post.php:153
-#: lib/std/admin/term.php:109 lib/std/admin/user.php:97
+#: lib/pro/admin/post.php:171 lib/pro/admin/term.php:119
+#: lib/pro/admin/user.php:106 lib/std/admin/post.php:153
+#: lib/std/admin/term.php:108 lib/std/admin/user.php:96
 msgctxt "option label"
 msgid "Description"
 msgstr ""
 
 #: lib/gettext-pro.php:16 lib/gettext-pro.php:144 lib/pro/admin/post.php:177
-#: lib/pro/admin/term.php:126 lib/std/admin/post.php:160
-#: lib/std/admin/term.php:116
+#: lib/pro/admin/term.php:125 lib/std/admin/post.php:160
+#: lib/std/admin/term.php:115
 msgctxt "option label"
 msgid "Microdata Type URLs"
 msgstr ""
 
 #: lib/gettext-pro.php:17 lib/gettext-pro.php:145 lib/pro/admin/post.php:184
-#: lib/pro/admin/term.php:133 lib/std/admin/post.php:167
-#: lib/std/admin/term.php:123
+#: lib/pro/admin/term.php:132 lib/std/admin/post.php:167
+#: lib/std/admin/term.php:122
 msgctxt "option label"
 msgid "Same-As URLs"
 msgstr ""
@@ -779,8 +779,8 @@ msgid "Job Posting Information"
 msgstr ""
 
 #: lib/gettext-pro.php:55 lib/gettext-pro.php:152 lib/pro/admin/post.php:476
-#: lib/pro/admin/user.php:129 lib/std/admin/post.php:483
-#: lib/std/admin/user.php:120
+#: lib/pro/admin/user.php:128 lib/std/admin/post.php:483
+#: lib/std/admin/user.php:119
 msgctxt "option label"
 msgid "Job Title"
 msgstr ""
@@ -851,8 +851,8 @@ msgid "Organization"
 msgstr ""
 
 #: lib/gettext-pro.php:69 lib/gettext-pro.php:151 lib/pro/admin/post.php:589
-#: lib/pro/admin/user.php:125 lib/std/admin/post.php:604
-#: lib/std/admin/user.php:115
+#: lib/pro/admin/user.php:124 lib/std/admin/post.php:604
+#: lib/std/admin/user.php:114
 msgctxt "metabox title"
 msgid "Person Information"
 msgstr ""
@@ -1211,8 +1211,8 @@ msgctxt "option label"
 msgid "Operating System"
 msgstr ""
 
-#: lib/gettext-pro.php:150 lib/pro/admin/user.php:113
-#: lib/std/admin/user.php:104
+#: lib/gettext-pro.php:150 lib/pro/admin/user.php:112
+#: lib/std/admin/user.php:103
 msgctxt "option label"
 msgid "Other Profile Page URLs"
 msgstr ""

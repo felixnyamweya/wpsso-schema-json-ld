@@ -91,12 +91,11 @@ if ( ! class_exists( 'WpssoJsonStdAdminUser' ) ) {
 					'content'  => $form->get_no_input_value( $def_schema_title_alt, 'wide' ),
 				),
 				'schema_desc' => array(
-					'no_auto_draft' => true,
-					'th_class'      => 'medium',
-					'td_class'      => 'blank',
-					'label'         => _x( 'Description', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'       => 'meta-schema_desc',
-					'content'       => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
+					'th_class' => 'medium',
+					'td_class' => 'blank',
+					'label'    => _x( 'Description', 'option label', 'wpsso-schema-json-ld' ),
+					'tooltip'  => 'meta-schema_desc',
+					'content'  => $form->get_no_textarea_value( $def_schema_desc, '', '', $schema_desc_max_len ),
 				),
 				'schema_sameas_url' => array(
 					'th_class' => 'medium',
