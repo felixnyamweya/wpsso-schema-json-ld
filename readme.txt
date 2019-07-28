@@ -800,6 +800,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.4.1 (2019/07/28)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed incorrect "Save draft" messages for the Schema description in the term and user Document SSO metabox.
+* **Developer Notes**
+	* None.
+
 **Version 2.4.0 (2019/07/18)**
 
 * **New Features**
@@ -865,7 +876,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0 =
+= 2.4.1 =
 
-(2019/07/18) Added an '@id' property to the Schema ImageObject and VideoObject markup.
+(2019/07/28) Fixed incorrect "Save draft" messages for the Schema description in the term and user Document SSO metabox.
 
