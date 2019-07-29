@@ -168,6 +168,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 
 * Provides Schema JSON-LD markup (aka Structured Data) for *all Schema types and sub-types*, including [schema.org/ItemList](https://schema.org/ItemList) for [Google's Carousel Rich Results](https://developers.google.com/search/docs/guides/mark-up-listings) feature:
 
+	* [schema.org/Brand](https://schema.org/Brand)
 	* [schema.org/ClaimReview](https://schema.org/ClaimReview)
 	* [schema.org/CollectionPage](https://schema.org/CollectionPage) (includes 3 Schema types)
 	* [schema.org/Course](https://schema.org/Course)
@@ -800,6 +801,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.5.0-dev.2 (2019/07/29)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added support for the Schema Brand type.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 2.4.1 (2019/07/28)**
 
 * **New Features**
@@ -875,6 +887,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 2.5.0-dev.2 =
+
+(2019/07/29) Added support for the Schema Brand type.
 
 = 2.4.1 =
 
