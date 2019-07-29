@@ -13,7 +13,7 @@ Tested Up To: 5.2.2
 WC Tested Up To: 3.6
 Stable Tag: 2.4.1
 
-WPSSO Core add-on offers Schema JSON-LD / Google Rich Results SEO for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
+WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
 == Description ==
 
