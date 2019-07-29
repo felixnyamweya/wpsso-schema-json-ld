@@ -732,11 +732,13 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 
 <h3>Schema JSON-LD Markup Examples</h3>
 
-* [Schema JSON-LD Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, videos, sku, price, condition, availability, ratings, colors, category, width, height, weight, all product variations, and much more.
+* [Markup Example for a FAQ Page](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-faq-page/) on wpsso.com.
 
-* [Schema JSON-LD Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM add-on to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, accepts reservations, etc.).
+* [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM add-on to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, accepts reservations, etc.).
 
-* [Schema JSON-LD Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
+* [Markup Example for a Tech Article](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-tech-article/) published on surniaulula.com.
+
+* [Markup Example for a WooCommerce Product](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/), including its name, description, images, brand, sku, price, availability, ratings, colors, category, width, height, weight, product variations, and much more.
 
 <h3>WPSSO Core Plugin Required</h3>
 
