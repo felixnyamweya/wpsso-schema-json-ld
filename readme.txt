@@ -25,9 +25,9 @@ Including image SEO, video SEO, local business, organization, publisher, person,
 
 **Includes Schema JSON-LD markup for posts, pages, custom post types, terms (category, tags, etc.), custom taxonomies, user profiles, search results, Accelerated Mobile Pages (AMP) pages, etc.**
 
-**Better Schema product markup for WooCommerce:**
+**Better Schema JSON-LD markup for WooCommerce:**
 
-The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) requirements, where-as the **WPSSO Core Premium plugin and its WPSSO JSON Premium add-on provide *complete and correct* Facebook Product meta tags and Schema Product markup for Google's Rich Results**, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more.
+The [WooCommerce plugin by Automattic](https://wordpress.org/plugins/woocommerce/) offers *limited and incomplete* Schema markup for [Google's Product Rich Results](https://developers.google.com/search/docs/data-types/product) -- luckily the WPSSO Core Premium plugin and its WPSSO JSON Premium add-on provide *complete and correct* Facebook Product meta tags and Schema Product markup for Google's Rich Results, including additional product images, product variations, product attributes (brand, color, condition, EAN, dimensions, GTIN-8/12/13/14, ISBN, material, MPN, size, SKU, weight, etc), product reviews, product ratings, sale start / end dates, sale prices, pre-tax prices, VAT prices, and much, much more ([see an example test product](https://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-woocommerce-product/)).
 
 **Fixes ALL Google Search Console / Structured Data Testing Tool errors:**
 
