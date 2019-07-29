@@ -435,7 +435,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 								$this->p->debug->log( 'skipping sameAs url - value is empty' );
 							}
 
-						} elseif ( $ret[ 'url' ] === $url ) {
+						} elseif ( isset( $ret[ 'url' ] ) && $ret[ 'url' ] === $url ) {
 
 							if ( $this->p->debug->enabled ) {
 								$this->p->debug->log( 'skipping sameAs url - value is "url" property (' . $url . ')' );
