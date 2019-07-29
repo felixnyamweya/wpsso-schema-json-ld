@@ -505,8 +505,8 @@ msgstr ""
 #: lib/gettext-config.php:8
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews and many more."
+"WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for "
+"Articles, Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #: lib/gettext-pro.php:6 lib/pro/admin/post.php:96 lib/std/admin/post.php:72
@@ -1390,8 +1390,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Rich Results markup for Articles, "
-"Events, Local Business, Products, Recipes, Reviews and many more."
+"WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for "
+"Articles, Events, Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #. Author of the plugin/theme
