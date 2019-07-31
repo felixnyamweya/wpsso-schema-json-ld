@@ -803,12 +803,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-dev.4 (2019/07/30)**
+**Version 2.5.0-b.1 (2019/07/30)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added support for the Schema Brand type.
+	* Added an integration module for the Schema Brand type.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -890,9 +890,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.0-dev.4 =
+= 2.5.0-b.1 =
 
-(2019/07/30) Added support for the Schema Brand type.
+(2019/07/30) Added an integration module for the Schema Brand type.
 
 = 2.4.1 =
 
