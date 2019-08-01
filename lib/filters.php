@@ -123,20 +123,35 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 * Property:
 			 * 	isPartOf
 			 */
+			$ret[ 'isPartOf' ] = array();
+
 			if ( ! empty( $mod[ 'obj' ] ) )	{ // Just in case.
 
-				if ( $part_url = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_url' ) ) {
+				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
-					if ( $part_type_id = $mod[ 'obj' ]->get_options( $mod[ 'id' ], 'schema_part_of_type' ) ) {
-						$part_type_url = $this->p->schema->get_schema_type_url( $part_type_id );
-					} else {
-						$part_type_url = 'https://schema.org/CreativeWork';
-					}
+				if ( is_array( $mod_opts ) ) {	// Just in case.
+
+					foreach ( SucomUtil::preg_grep_keys( '/^schema_ispartof_url_([0-9]+)$/',
+						$mod_opts, $invert = false, $replace = true ) as $num => $ispartof_url ) {
+
+						if ( empty( $mod_opts[ 'schema_ispartof_type_' . $num ] ) ) {
+							$ispartof_type_url = 'https://schema.org/CreativeWork';
+						} else {
+							$ispartof_type_url = $this->p->schema->get_schema_type_url( $mod_opts[ 'schema_ispartof_type_' . $num ] );
+						}
 					
-					$ret[ 'isPartOf' ] = WpssoSchema::get_schema_type_context( $part_type_url, array(
-						'url' => $part_url,
-					) );
+						$ret[ 'isPartOf' ][] = WpssoSchema::get_schema_type_context( $ispartof_type_url, array(
+							'url' => $ispartof_url,
+						) );
+					}
 				}
+			}
+
+			$ret[ 'isPartOf' ] = (array) apply_filters( $this->p->lca . '_json_prop_https_schema_org_ispartof',
+				$ret[ 'isPartOf' ], $mod, $mt_og, $page_type_id, $is_main );
+
+			if ( empty( $ret[ 'isPartOf' ] ) ) {
+				unset( $ret[ 'isPartOf' ] );
 			}
 
 			/**
@@ -329,12 +344,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret[ 'additionalType' ] = array();
 
-			if ( is_object( $mod[ 'obj' ] ) ) {
+			if ( ! empty( $mod[ 'obj' ] ) ) {
 
 				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
 				if ( is_array( $mod_opts ) ) {	// Just in case.
+
 					foreach ( SucomUtil::preg_grep_keys( '/^schema_addl_type_url_[0-9]+$/', $mod_opts ) as $addl_type_url ) {
+
 						if ( false !== filter_var( $addl_type_url, FILTER_VALIDATE_URL ) ) {	// Just in case.
 							$ret[ 'additionalType' ][] = $addl_type_url;
 						}
@@ -361,7 +378,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			$ret[ 'sameAs' ] = array();
 
-			if ( is_object( $mod[ 'obj' ] ) ) {
+			if ( ! empty( $mod[ 'obj' ] ) ) {
 
 				$mod_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );
 
@@ -592,7 +609,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_title'                       => '',						// Name / Title.
 				'schema_title_alt'                   => '',						// Alternate Name.
 				'schema_desc'                        => '',						// Description.
-				'schema_part_of_url'                 => '',						// Part of URL.
+				'schema_ispartof_url'                => '',						// Part of URL.
 				'schema_headline'                    => '',						// Headline.
 				'schema_text'                        => '',						// Full Text.
 				'schema_keywords'                    => '',						// Keywords.
@@ -697,16 +714,14 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_software_app_os'             => '',						// Operating System.
 			);
 
-			$addl_type_max = SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 );
-
-			foreach ( range( 0, $addl_type_max - 1, 1 ) as $key_num ) {
-				$schema_md_defs[ 'schema_addl_type_url_' . $key_num] = '';
-			}
-
-			$samas_max = SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 );
-
-			foreach ( range( 0, $samas_max - 1, 1 ) as $key_num ) {
-				$schema_md_defs[ 'schema_sameas_url_' . $key_num] = '';
+			foreach ( array(
+				'schema_addl_type_url' => SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 ),
+				'schema_sameas_url'    => SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 ),
+				'schema_ispartof_url'  => SucomUtil::get_const( 'WPSSO_SCHEMA_ISPARTOF_URL_MAX', 5 ),
+			) as $opt_prefix => $max_num ) {
+				foreach ( range( 0, $max_num - 1, 1 ) as $key_num ) {
+					$schema_md_defs[ $opt_prefix . '_' . $key_num] = '';
+				}
 			}
 
 			$md_defs = array_merge( $md_defs, $schema_md_defs );
@@ -750,6 +765,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				),
 				20 => array(
 					'schema_question_desc' => 'schema_qa_desc',
+				),
+				26 => array(
+					'schema_part_of_url' => 'schema_ispartof_url',
 				),
 			);
 
@@ -881,7 +899,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				case 'schema_addl_type_url':			// Microdata Type URLs.
 				case 'schema_sameas_url':			// Same-As URLs.
-				case 'schema_part_of_url':			// Part of URL.
+				case 'schema_ispartof_url':			// Part of URL.
 				case 'schema_review_item_url':			// Review Subject URL.
 				case 'schema_review_claim_author_url':		// Claim Author URL.
 				case 'schema_review_claim_first_url':		// First Appearance URL.
@@ -1080,9 +1098,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 				 	break;
 
-				case 'tooltip-meta-schema_part_of_url':		// Part of URL
+				case 'tooltip-meta-schema_ispartof_url':	// Part of URL
 
-					$text = __( 'The URL to another Schema CreativeWork that this content is a part of.', 'wpsso-schema-json-ld' );
+					$text = __( 'Optional URLs to other Schema CreativeWorks that this content is a part of.', 'wpsso-schema-json-ld' );
 
 				 	break;
 

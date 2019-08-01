@@ -14,7 +14,7 @@
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
  * WC Tested Up To: 3.6
- * Version: 2.5.0-b.1
+ * Version: 2.5.0-b.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -220,7 +220,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				return;	// stop here
+				return;	// Stop here.
 			}
 
 			$this->filters = new WpssoJsonFilters( $this->p );
@@ -237,7 +237,7 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 				$this->min_version_notice();
 
-				return;	// stop here
+				return;	// Stop here.
 			}
 		}
 

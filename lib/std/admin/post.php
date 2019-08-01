@@ -178,13 +178,13 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 					'header'   => 'h5',
 					'label'    => _x( 'Creative Work Information', 'metabox title', 'wpsso-schema-json-ld' ),
 				),
-				'schema_part_of_url' => array(
+				'schema_ispartof_url' => array(
 					'tr_class' => $schema_type_tr_class[ 'creative_work' ],
 					'th_class' => 'medium',
 					'td_class' => 'blank',
 					'label'    => _x( 'Part of URL', 'option label', 'wpsso-schema-json-ld' ),
-					'tooltip'  => 'meta-schema_part_of_url',
-					'content'  => $form->get_no_input_value( '', 'wide' ),
+					'tooltip'  => 'meta-schema_ispartof_url',
+					'content'  => $form->get_no_input_value( '', 'wide', '', '', $repeat = 2 ),
 				),
 				'schema_headline' => array(
 					'no_auto_draft' => true,
