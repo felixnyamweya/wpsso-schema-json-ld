@@ -108,7 +108,7 @@
 <li>Type for User / Author Page</li>
 <li>Type for Search Results Page</li>
 <li>Type for Other Archive Page</li>
-<li>Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types</li>
+<li>Type by Post Type for Posts, Pages, Media, Post Type Archive Page, and custom post types</li>
 <li>Type by Taxonomy for Categories, Tags, and custom taxonomies</li>
 </ul></li>
 <li>Integration (WPSSO Core Premium required)

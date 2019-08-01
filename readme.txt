@@ -101,7 +101,7 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Type for User / Author Page
 		* Type for Search Results Page
 		* Type for Other Archive Page
-		* Type by Post Type for Posts, Pages, Media, (Post Type) Archive Page, and custom post types
+		* Type by Post Type for Posts, Pages, Media, Post Type Archive Page, and custom post types
 		* Type by Taxonomy for Categories, Tags, and custom taxonomies
 	* Integration (WPSSO Core Premium required)
 		* Product Attribute Names
@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-b.1 (2019/07/30)**
+**Version 2.5.0-b.2 (2019/07/31)**
 
 * **New Features**
 	* None.
@@ -890,9 +890,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.0-b.1 =
+= 2.5.0-b.2 =
 
-(2019/07/30) Added an integration module for the Schema Brand type.
+(2019/07/31) Added an integration module for the Schema Brand type.
 
 = 2.4.1 =
 
