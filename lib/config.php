@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssojson' => array(			// Plugin acronym.
-					'version'     => '2.5.0-b.2',	// Plugin version.
+					'version'     => '2.5.0-b.3',	// Plugin version.
 					'opt_version' => '27',		// Increment when changing default option values.
 					'short'       => 'WPSSO JSON',	// Short plugin name.
 					'name'        => 'WPSSO Schema JSON-LD Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '5.4.0-b.2',
+						'min_version' => '5.4.0-b.3',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -40,9 +40,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 					'lib' => array(
 						'pro' => array(
 							'admin' => array(
-								'post' => 'Extend Post Settings',
-								'term' => 'Extend Term Settings',
-								'user' => 'Extend User Settings',
+								'meta-edit' => 'Extend Meta Edit Settings',
 							),
 							'head' => array(
 								'brand'               => '(code) Schema Type Brand (schema_type:brand)',
@@ -73,7 +71,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 							),
 							'prop' => array(
 								'aggregaterating'  => '(plus) Property aggregateRating',
-								'haspart_mentions' => '(plus) Property hasPart and mentions',
+								'haspart-mentions' => '(plus) Property hasPart and mentions',
 								'review'           => '(plus) Property reviews',
 							),
 						),
@@ -82,9 +80,7 @@ if ( ! class_exists( 'WpssoJsonConfig' ) ) {
 						),
 						'std' => array(
 							'admin' => array(
-								'post' => 'Extend Post Settings',
-								'term' => 'Extend Term Settings',
-								'user' => 'Extend User Settings',
+								'meta-edit' => 'Extend Meta Edit Settings',
 							),
 						),
 						'submenu' => array(

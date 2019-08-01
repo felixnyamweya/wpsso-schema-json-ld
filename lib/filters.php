@@ -714,15 +714,17 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'schema_software_app_os'             => '',						// Operating System.
 			);
 
+			/*
 			foreach ( array(
 				'schema_addl_type_url' => SucomUtil::get_const( 'WPSSO_SCHEMA_ADDL_TYPE_URL_MAX', 5 ),
 				'schema_sameas_url'    => SucomUtil::get_const( 'WPSSO_SCHEMA_SAMEAS_URL_MAX', 5 ),
-				'schema_ispartof_url'  => SucomUtil::get_const( 'WPSSO_SCHEMA_ISPARTOF_URL_MAX', 5 ),
+				'schema_ispartof_url'  => SucomUtil::get_const( 'WPSSO_SCHEMA_ISPARTOF_URL_MAX', 20 ),
 			) as $opt_prefix => $max_num ) {
 				foreach ( range( 0, $max_num - 1, 1 ) as $key_num ) {
 					$schema_md_defs[ $opt_prefix . '_' . $key_num] = '';
 				}
 			}
+			*/
 
 			$md_defs = array_merge( $md_defs, $schema_md_defs );
 

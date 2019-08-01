@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
+if ( ! class_exists( 'WpssoJsonStdAdminMetaEdit' ) ) {
 
-	class WpssoJsonStdAdminPost {
+	class WpssoJsonStdAdminMetaEdit {
 
 		private $p;
 
@@ -24,11 +24,15 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'post_edit_rows' => 4,
+				'meta_edit_rows' => array(
+					'post_edit_rows' => 4,
+					'term_edit_rows' => 4,
+					'user_edit_rows' => 4,
+				),
 			) );
 		}
 
-		public function filter_post_edit_rows( $table_rows, $form, $head, $mod ) {
+		public function filter_meta_edit_rows( $table_rows, $form, $head, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
@@ -73,9 +77,6 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 			$hours_sep = ' ' . _x( 'hours', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
 			$mins_sep  = ' ' . _x( 'mins', 'option comment', 'wpsso-schema-json-ld' ) . ', ';
 			$secs_sep  = ' ' . _x( 'secs', 'option comment', 'wpsso-schema-json-ld' );
-
-			$auto_draft_msg = sprintf( __( 'Save a draft version or publish the %s to update this value.', 'wpsso-schema-json-ld' ),
-				SucomUtil::titleize( $mod[ 'post_type' ] ) );
 
 			/**
 			 * Organization variables.
@@ -1064,7 +1065,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminPost' ) ) {
 				),
 			);
 
-			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod, $auto_draft_msg );
+			return $form->get_md_form_rows( $table_rows, $form_rows, $head, $mod );
 		}
 	}
 }
