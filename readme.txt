@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-b.2 (2019/07/31)**
+**Version 2.5.0-b.3 (2019/08/01)**
 
 * **New Features**
 	* None.
@@ -812,7 +812,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Unified the post.php, term.php, and user.php library files under lib/*/admin/ in a single meta-edit.php library file.
 
 **Version 2.4.1 (2019/07/28)**
 
@@ -890,9 +890,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.0-b.2 =
+= 2.5.0-b.3 =
 
-(2019/07/31) Added an integration module for the Schema Brand type.
+(2019/08/01) Added an integration module for the Schema Brand type.
 
 = 2.4.1 =
 
