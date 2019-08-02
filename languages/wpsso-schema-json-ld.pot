@@ -506,8 +506,8 @@ msgstr ""
 #: lib/gettext-config.php:8
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for "
-"Articles, Events, Local Business, Products, Recipes, Reviews and many more."
+"Schema JSON-LD markup and Google SEO Rich Results for Articles, Events, "
+"Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #: lib/gettext-pro.php:6 lib/pro/admin/meta-edit.php:101
