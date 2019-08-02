@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-b.3 (2019/08/01)**
+**Version 2.5.0-b.4 (2019/08/01)**
 
 * **New Features**
 	* None.
@@ -890,7 +890,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.0-b.3 =
+= 2.5.0-b.4 =
 
 (2019/08/01) Added an integration module for the Schema Brand type.
 
