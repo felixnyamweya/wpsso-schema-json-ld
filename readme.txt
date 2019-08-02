@@ -1,4 +1,4 @@
-=== WPSSO Schema JSON-LD Markup ===
+=== Schema JSON-LD Markup | WPSSO Add-on ===
 Plugin Name: WPSSO Schema JSON-LD Markup
 Plugin Slug: wpsso-schema-json-ld
 Text Domain: wpsso-schema-json-ld
@@ -13,7 +13,7 @@ Tested Up To: 5.2.2
 WC Tested Up To: 3.6
 Stable Tag: 2.5.0
 
-WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
+Schema JSON-LD markup and Google SEO Rich Results for Articles, Events, Local Business, Products, Recipes, Reviews and many more (WPSSO Core Add-on).
 
 == Description ==
 
