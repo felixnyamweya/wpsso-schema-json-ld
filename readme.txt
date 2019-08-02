@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.0-rc.1 (2019/08/01)**
+**Version 2.5.0 (2019/08/02)**
 
 * **New Features**
 	* None.
@@ -876,25 +876,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
-**Version 2.1.0 (2019/06/29)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a new "Step or Section Information" option in the Document SSO metabox for Schema How-To markup (Premium add-on).
-	* Updated the WebSite (Front Page) Knowledge Graph option label and link.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
-= 2.5.0-rc.1 =
+= 2.5.0 =
 
-(2019/08/01) Added an integration module for the Schema Brand type.
-
-= 2.4.1 =
-
-(2019/07/28) Fixed incorrect "Save draft" messages for the Schema description in the term and user Document SSO metabox.
+(2019/08/02) Added an integration module for the Schema Brand type.
 
