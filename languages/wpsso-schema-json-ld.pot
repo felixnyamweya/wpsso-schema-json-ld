@@ -1440,8 +1440,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on offers Schema JSON-LD / Google SEO Rich Results for "
-"Articles, Events, Local Business, Products, Recipes, Reviews and many more."
+"Schema JSON-LD markup and Google SEO Rich Results for Articles, Events, "
+"Local Business, Products, Recipes, Reviews and many more."
 msgstr ""
 
 #. Author of the plugin/theme
