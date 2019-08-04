@@ -803,6 +803,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.6.0-dev.4 (2019/08/04)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Removed calls to the WpssoSchemaCache class methods for WPSSO v5.5.0.
+
 **Version 2.5.0 (2019/08/02)**
 
 * **New Features**
@@ -877,6 +888,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 == Upgrade Notice ==
+
+= 2.6.0-dev.4 =
+
+(2019/08/04) Removed calls to the WpssoSchemaCache class methods for WPSSO v5.5.0.
 
 = 2.5.0 =
 
