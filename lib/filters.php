@@ -95,13 +95,13 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 */
 			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'article' ) ) {
 
-				$org_logo_key = 'org_banner_url';
 				$size_name    = $this->p->lca . '-schema-article';
+				$org_logo_key = 'org_banner_url';
 
 			} else {
 
-				$org_logo_key = 'org_logo_url';
 				$size_name    = $this->p->lca . '-schema';
+				$org_logo_key = 'org_logo_url';
 			}
 
 			/**
