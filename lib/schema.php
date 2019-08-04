@@ -191,9 +191,11 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				$json_data[ $prop_name ][] = $post_json_data;	// Add the post data.
 
 				if ( $prop_name_count >= $ppp ) {
+
 					if ( $wpsso->debug->enabled ) {
 						$wpsso->debug->log( 'stopping here: maximum posts per page of ' . $ppp . ' reached' );
 					}
+
 					break;	// Stop here.
 				}
 
@@ -354,6 +356,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 				foreach ( $page_posts_mods as $post_mod ) {
 
 					$add_post_data = false;
+					$post_type_id  = $wpsso->schema->get_mod_schema_type( $post_mod, $get_schema_id = true );
 
 					foreach ( $prop_type_ids as $family_member_id ) {
 
@@ -369,21 +372,16 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						}
 
 						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'getting schema type for post id ' . $post_mod[ 'id' ] );
+							$wpsso->debug->log( 'checking if schema type ' . $post_type_id . ' is child of ' . $family_member_id );
 						}
 
-						$mod_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, true );	// $ret_schema_id = true
-
-						if ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'checking if schema type ' . $mod_type_id . ' is child of ' . $family_member_id );
-						}
-
-						$mod_is_child = $wpsso->schema->is_schema_type_child( $mod_type_id, $family_member_id );
+						$mod_is_child = $wpsso->schema->is_schema_type_child( $post_type_id, $family_member_id );
 
 						if ( $mod_is_child ) {
 
 							if ( $wpsso->debug->enabled ) {
-								$wpsso->debug->log( 'accepting post id ' . $post_mod[ 'id' ] . ': ' . $mod_type_id . ' is child of ' . $family_member_id );
+								$wpsso->debug->log( 'accepting post id ' . $post_mod[ 'id' ] . ': ' .
+									$post_type_id . ' is child of ' . $family_member_id );
 							}
 
 							$add_post_data = true;
@@ -391,7 +389,8 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 							break;	// One positive match is enough.
 
 						} elseif ( $wpsso->debug->enabled ) {
-							$wpsso->debug->log( 'post id ' . $post_mod[ 'id' ] . ' schema type ' . $mod_type_id . ' not a child of ' . $family_member_id );
+							$wpsso->debug->log( 'post id ' . $post_mod[ 'id' ] . ' schema type ' .
+								$post_type_id . ' not a child of ' . $family_member_id );
 						}
 					}
 
@@ -408,7 +407,14 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod[ 'id' ] );
 					}
 
-					$post_json_data = WpssoSchemaCache::get_mod_json_data( $post_mod, false, $page_type_id );	// $mt_og is false.
+					/**
+					 * Get the Open Graph and Schema markup for this $post_mod.
+					 */
+					$post_sharing_url = $wpsso->util->maybe_set_ref( null, $post_mod, __( 'adding schema', 'wpsso' ) );
+					$post_mt_og       = $wpsso->og->get_array( $post_mod, array() );
+					$post_json_data   = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, $post_type_id, $post_is_main = true );
+
+					$wpsso->util->maybe_unset_ref( $post_sharing_url );
 
 					if ( empty( $post_json_data ) ) {	// Prevent null assignment.
 
