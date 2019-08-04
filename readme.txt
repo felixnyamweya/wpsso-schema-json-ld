@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.0-dev.4 (2019/08/04)**
+**Version 2.6.0 (2019/08/04)**
 
 * **New Features**
 	* None.
@@ -812,7 +812,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Removed calls to the WpssoSchemaCache class methods for WPSSO v5.5.0.
+	* Removed call to WpssoSchemaCache::get_mod_json_data() for WPSSO v5.5.0.
 
 **Version 2.5.0 (2019/08/02)**
 
@@ -889,11 +889,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.0-dev.4 =
+= 2.6.0 =
 
-(2019/08/04) Removed calls to the WpssoSchemaCache class methods for WPSSO v5.5.0.
-
-= 2.5.0 =
-
-(2019/08/02) Added an integration module for the Schema Brand type.
+(2019/08/04) Removed call to WpssoSchemaCache::get_mod_json_data() for WPSSO v5.5.0.
 
