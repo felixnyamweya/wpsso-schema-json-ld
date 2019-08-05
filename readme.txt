@@ -803,6 +803,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.6.1-dev.1 (2019/08/05)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Optimized loading of admin library modules for WPSSO Core v5.5.1.
+
 **Version 2.6.0 (2019/08/04)**
 
 * **New Features**
@@ -888,6 +899,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 == Upgrade Notice ==
+
+= 2.6.1-dev.1 =
+
+(2019/08/05) Optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 = 2.6.0 =
 
