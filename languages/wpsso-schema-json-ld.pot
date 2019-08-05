@@ -1267,10 +1267,6 @@ msgctxt "option label"
 msgid "Operating System"
 msgstr ""
 
-#: lib/schema.php:413
-msgid "adding schema"
-msgstr ""
-
 #. translators: %1$s is the short plugin name, %2$s is the shortcode tag, %3$s is the type attribute value
 #: lib/shortcode/schema.php:156
 msgid ""

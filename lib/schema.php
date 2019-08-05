@@ -355,8 +355,9 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 				foreach ( $page_posts_mods as $post_mod ) {
 
+					$post_type_id = $wpsso->schema->get_mod_schema_type( $post_mod, $get_schema_id = true );
+
 					$add_post_data = false;
-					$post_type_id  = $wpsso->schema->get_mod_schema_type( $post_mod, $get_schema_id = true );
 
 					foreach ( $prop_type_ids as $family_member_id ) {
 
@@ -407,14 +408,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 						$wpsso->debug->log( 'getting single mod data for post id ' . $post_mod[ 'id' ] );
 					}
 
-					/**
-					 * Get the Open Graph and Schema markup for this $post_mod.
-					 */
-					$post_sharing_url = $wpsso->util->maybe_set_ref( null, $post_mod, __( 'adding schema', 'wpsso' ) );
-					$post_mt_og       = $wpsso->og->get_array( $post_mod, array() );
-					$post_json_data   = $wpsso->schema->get_json_data( $post_mod, $post_mt_og, $post_type_id, $post_is_main = true );
-
-					$wpsso->util->maybe_unset_ref( $post_sharing_url );
+					$post_json_data = $wpsso->schema->get_mod_json_data( $post_mod );
 
 					if ( empty( $post_json_data ) ) {	// Prevent null assignment.
 
