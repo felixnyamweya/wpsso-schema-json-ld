@@ -14,7 +14,7 @@
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
  * WC Tested Up To: 3.6
- * Version: 2.6.0
+ * Version: 2.6.1-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -169,17 +169,9 @@ if ( ! class_exists( 'WpssoJson' ) ) {
 
 			$avail[ 'p_ext' ][ 'json' ] = true;		// Signal that this extension / add-on is available.
 
-			$is_admin = is_admin();
-
 			foreach ( array( 'pro', 'std' ) as $lib ) {
 
-				foreach ( array( 'admin', 'head', 'prop' ) as $sub_dir ) {
-
-					if ( 'admin' === $sub_dir ) {
-						if ( ! $is_admin ) {	// Load the admin/ sub-folder in the back-end only.
-							continue;
-						}
-					}
+				foreach ( array( 'head', 'prop' ) as $sub_dir ) {
 
 					if ( empty( WpssoJsonConfig::$cf[ 'plugin' ][ 'wpssojson' ][ 'lib' ][ $lib ][ $sub_dir ] ) ) {
 						continue;
