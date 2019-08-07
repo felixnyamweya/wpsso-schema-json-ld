@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.2
 WC Tested Up To: 3.6
-Stable Tag: 2.6.0
+Stable Tag: 2.6.1
 
 Schema JSON-LD markup and Google SEO Rich Results for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
 
