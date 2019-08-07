@@ -803,12 +803,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.1-dev.3 (2019/08/06)**
+**Version 2.6.1-rc.1 (2019/08/07)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Minor update for "fr_FR" translations.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -900,9 +900,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.1-dev.3 =
+= 2.6.1-rc.1 =
 
-(2019/08/06) Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
+(2019/08/07) Minor update for "fr_FR" translations. Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 = 2.6.0 =
 
