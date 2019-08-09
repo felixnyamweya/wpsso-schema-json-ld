@@ -457,7 +457,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminMetaEdit' ) ) {
 						'schema_howto_step' => array(
 							'input_title' => _x( 'Section Name or Step Name', 'option label', 'wpsso-schema-json-ld' ),
 							'input_type'  => 'text',
-							'input_class' => 'wide howto_step_name required',
+							'input_class' => 'wide howto_step_name value_req',
 						),
 						'schema_howto_step_text' => array(
 							'input_title' => _x( 'Section Description or Direction Text', 'option label', 'wpsso-schema-json-ld' ),
@@ -840,7 +840,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminMetaEdit' ) ) {
 					'td_class' => 'blank',
 					'label'    => _x( 'Serving Size', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_recipe_nutri_serv',
-					'content'  => $form->get_no_input_value( '', 'long_name required' ),
+					'content'  => $form->get_no_input_value( '', 'long_name value_req' ),
 				),
 				'schema_recipe_nutri_cal' => array(
 					'tr_class' => $schema_type_tr_class[ 'recipe' ],
@@ -974,7 +974,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminMetaEdit' ) ) {
 				'schema_review_item_url' => array(
 					'tr_class' => $schema_type_tr_class[ 'review' ],
 					'th_class' => 'medium',
-					'td_class' => 'blank required',
+					'td_class' => 'blank value_req',
 					'label'    => _x( 'Review Subject URL', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_review_item_url',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
@@ -982,7 +982,7 @@ if ( ! class_exists( 'WpssoJsonStdAdminMetaEdit' ) ) {
 				'schema_review_item_name' => array(
 					'tr_class' => $schema_type_tr_class[ 'review' ],
 					'th_class' => 'medium',
-					'td_class' => 'blank required',
+					'td_class' => 'blank value_req',
 					'label'    => _x( 'Review Subject Name', 'option label', 'wpsso-schema-json-ld' ),
 					'tooltip'  => 'meta-schema_review_item_name',
 					'content'  => $form->get_no_input_value( '', 'wide' ),
