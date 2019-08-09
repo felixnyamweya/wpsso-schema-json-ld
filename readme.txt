@@ -803,7 +803,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.2-b.1 (2019/08/09)**
+**Version 2.6.2-b.2 (2019/08/09)**
 
 * **New Features**
 	* None.
@@ -911,7 +911,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.2-b.1 =
+= 2.6.2-b.2 =
 
 (2019/08/09) Fixed possible unrelated data in Schema @graph markup when the "Auto-Refresh Cache After Clearing" option is enabled.
 
