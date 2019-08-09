@@ -803,6 +803,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.6.2-dev.3 (2019/08/08)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed possible unrelated data in Schema @graph markup when the "Auto-Refresh Cache After Clearing" option is enabled.
+* **Developer Notes**
+	* None.
+
 **Version 2.6.1 (2019/08/07)**
 
 * **New Features**
@@ -899,6 +910,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 == Upgrade Notice ==
+
+= 2.6.2-dev.3 =
+
+(2019/08/08) Fixed possible unrelated data in Schema @graph markup when the "Auto-Refresh Cache After Clearing" option is enabled.
 
 = 2.6.1 =
 
