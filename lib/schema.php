@@ -13,7 +13,7 @@ if ( ! class_exists( 'WpssoJsonSchema' ) ) {
 
 	class WpssoJsonSchema {
 
-		protected $p;
+		private $p;
 
 		public function __construct( &$plugin ) {
 

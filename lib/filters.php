@@ -554,7 +554,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 					 */
 					if ( has_shortcode( $content, WPSSOJSON_SCHEMA_SHORTCODE_NAME ) ) {
 
-						$content_data = $this->p->sc[ 'schema' ]->get_content_json_data( $content );
+						$content_data = $this->p->sc[ 'schema' ]->content_json_data( $content );
 
 						if ( ! empty( $content_data ) ) {
 							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );

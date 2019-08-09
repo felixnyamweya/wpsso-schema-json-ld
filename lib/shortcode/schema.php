@@ -377,13 +377,13 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					WpssoSchema::add_images_data_mt( $prop_ref[ 'image' ], $og_images );
 				}
 
-				$this->get_content_json_data( $content, $prop_ref, true );
+				$this->content_json_data( $content, $prop_ref, $increment = true );
 			}
 
 			return true;
 		}
 
-		public function get_content_json_data( $content, &$json_data = array(), $increment = false ) {
+		public function content_json_data( $content, &$json_data = array(), $increment = false ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
