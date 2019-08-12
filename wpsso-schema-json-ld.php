@@ -13,7 +13,7 @@
  * Description: Schema JSON-LD markup and Google SEO Rich Results for Articles, Events, Local Business, Products, Recipes, Reviews and many more.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
- * WC Tested Up To: 3.6
+ * WC Tested Up To: 3.7.0
  * Version: 2.6.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
