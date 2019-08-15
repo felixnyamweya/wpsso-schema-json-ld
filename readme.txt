@@ -90,7 +90,12 @@ Additional e-Commerce plugins are also provided with the WPSSO Core Premium plug
 		* Organization Logo URL
 		* Organization Banner URL
 		* Maximum Images to Include
-		* Schema Image Dimensions
+		* Schema Image Size
+		* Schema Article Image Size
+		* Schema Article AMP 1x1 Image Size
+		* Schema Article AMP 4x3 Image Size
+		* Schema Article AMP 16x9 Image Size
+		* Schema Thumbnail Image Size
 		* Maximum Description Length
 		* Maximum Text Property Length
 		* Add CreativeWork Text Property
