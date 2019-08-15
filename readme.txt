@@ -808,6 +808,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.7.0-dev.1 (2019/08/15)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 2.6.2 (2019/08/10)**
 
 * **New Features**
@@ -915,6 +926,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 == Upgrade Notice ==
+
+= 2.7.0-dev.1 =
+
+(2019/08/15) None.
 
 = 2.6.2 =
 
