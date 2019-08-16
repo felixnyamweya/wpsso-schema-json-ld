@@ -808,7 +808,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.7.0-dev.1 (2019/08/15)**
+**Version 2.7.0-dev.2 (2019/08/15)**
 
 * **New Features**
 	* None.
@@ -927,7 +927,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.7.0-dev.1 =
+= 2.7.0-dev.2 =
 
 (2019/08/15) None.
 
