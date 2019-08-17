@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-schema-json-ld/assets/
 Tags: schema.org, rich results, structured data, knowledge graph, rich pins, rich cards, woocommerce, pinterest, local seo, image seo, video seo, news seo, rating, review, recipe, event, product, qapage, howto
 Contributors: jsmoriss
-Requires At Least: 3.8
+Requires At Least: 3.9
 Tested Up To: 5.2.2
 WC Tested Up To: 3.7.0
 Stable Tag: 2.6.2
