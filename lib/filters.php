@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 9000, 2 );
+			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 10000, 2 );
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'add_schema_head_attributes'              => '__return_false',
