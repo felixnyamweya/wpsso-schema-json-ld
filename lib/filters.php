@@ -23,7 +23,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 9000, 2 );
+			add_filter( 'amp_post_template_metadata', array( $this, 'filter_amp_post_template_metadata' ), 10000, 2 );
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'add_schema_head_attributes'              => '__return_false',
@@ -285,7 +285,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *      image as https://schema.org/ImageObject
 			 *      video as https://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name, $add_video = true );
 
 			/**
 			 * Check only published posts or other non-post objects.
