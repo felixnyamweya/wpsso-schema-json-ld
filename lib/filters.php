@@ -285,7 +285,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			 *      image as https://schema.org/ImageObject
 			 *      video as https://schema.org/VideoObject
 			 */
-			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name );
+			WpssoJsonSchema::add_media_data( $ret, $mod, $mt_og, $size_name, $add_video = true );
 
 			/**
 			 * Check only published posts or other non-post objects.
