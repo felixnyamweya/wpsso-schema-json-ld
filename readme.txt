@@ -927,10 +927,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.7.0-dev.1 =
-
-(TBD) None.
-
 = 2.6.2 =
 
 (2019/08/10) Fixed possible unrelated data in Schema @graph markup when the "Auto-Refresh Cache After Clearing" option is enabled.
