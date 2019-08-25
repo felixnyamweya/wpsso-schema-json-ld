@@ -216,8 +216,11 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 					}
 
 					if ( strpos( $value, '+' ) === 0 ) {
+
 						$prop_add = true;
+
 						$value = substr( $value, 1 );
+
 					} else {
 						$prop_add = false; // Merge by default.
 					}
@@ -243,6 +246,10 @@ if ( ! class_exists( 'WpssoJsonShortcodeSchema' ) ) {
 						$type_url = 'https://schema.org/' . $value;
 					} else {
 						$type_url = $this->p->schema->get_schema_type_url( $value );
+
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( '$type_url = ' . $type_url );
+						}
 					}
 
 					if ( empty( $type_url ) ) {

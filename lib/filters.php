@@ -32,6 +32,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'json_data_https_schema_org_blog'         => 5,
 				'json_data_https_schema_org_creativework' => 5,
 				'json_data_https_schema_org_thing'        => 5,
+				'json_single_graph_data'                  => 5,
 			), $prio = -10000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
@@ -89,8 +90,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			$ret = array();
 
 			/**
-			 * The Schema Article type must use a minimum image
-			 * width of 696px and a publisher logo of 600x60px for
+			 * The Schema Article type must use a minimum image width of 696px and a publisher logo of 600x60px for
 			 * Google.
 			 */
 			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'article' ) ) {
@@ -193,8 +193,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( ! empty( $mod[ 'obj' ] ) ) {
 
 				/**
-				 * The meta data key is unique, but the Schema property name may be repeated
-				 * to add more than one value to a property array.
+				 * The meta data key is unique, but the Schema property name may be repeated to add more than one
+				 * value to a property array.
 				 */
 				foreach ( array(
 					'schema_lang'            => 'inLanguage',
@@ -241,8 +241,8 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 			if ( ! empty( $mod[ 'obj' ] ) ) {
 
 				/**
-				 * The meta data key is unique, but the Schema property name may be repeated
-				 * to add more than one value to a property array.
+				 * The meta data key is unique, but the Schema property name may be repeated to add more than one
+				 * value to a property array.
 				 */
 				foreach ( array(
 					'schema_pub_org_id'  => 'publisher',
@@ -322,11 +322,9 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		}
 
 		/**
-		 * Common filter for all Schema types.
-		 *
-		 * Adds the url, name, description, and if true, the main entity property. 
-		 * Does not add images, videos, author or organization markup since this will
-		 * depend on the Schema type (Article, Product, Place, etc.).
+		 * Common filter for all Schema types. Adds the url, name, description, and if true, the main entity property. Does
+		 * not add images, videos, author or organization markup since this will depend on the Schema type (Article,
+		 * Product, Place, etc.).
 		 */
 		public function filter_json_data_https_schema_org_thing( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
@@ -537,6 +535,19 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'checking for schema shortcodes' );
 			}
 
+			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
+		}
+
+		/**
+		 * If the completed json data for a post object is the main entity, then parse the content for any schema
+		 * shortcodes.
+		 */
+		public function filter_json_single_graph_data( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+
+			if ( ! $is_main ) {
+				return $json_data;
+			}
+
 			if ( $mod[ 'is_post' ] ) {
 
 				$content = get_post_field( 'post_content', $mod[ 'id' ] );
@@ -547,7 +558,10 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 						$this->p->debug->log( 'post_content for post id ' . $mod[ 'id' ] . ' is empty' );
 					}
 
-				} elseif ( isset( $this->p->sc[ 'schema' ] ) && is_object( $this->p->sc[ 'schema' ] ) ) {	// Is the schema shortcode class loaded.
+				/**
+				 * Check if the schema shortcode class is loaded.
+				 */
+				} elseif ( isset( $this->p->sc[ 'schema' ] ) && is_object( $this->p->sc[ 'schema' ] ) ) {
 
 					/**
 					 * Check if the shortcode is registered, and that the content has a schema shortcode.
@@ -556,8 +570,12 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 
 						$content_data = $this->p->sc[ 'schema' ]->content_json_data( $content );
 
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log_arr( '$content_data', $content_data );
+						}
+
 						if ( ! empty( $content_data ) ) {
-							$ret = WpssoSchema::return_data_from_filter( $ret, $content_data );
+							$json_data = WpssoSchema::return_data_from_filter( $json_data, $content_data );
 						}
 
 					} elseif ( $this->p->debug->enabled ) {
@@ -572,7 +590,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				$this->p->debug->log( 'schema shortcode skipped - module is not a post object' );
 			}
 
-			return WpssoSchema::return_data_from_filter( $json_data, $ret, $is_main );
+			return $json_data;
 		}
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
