@@ -808,6 +808,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.7.0-rc.2 (2019/08/25)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Moved schema shortcode processing from 'wpsso_json_data_https_schema_org_thing' to the new 'wpsso_json_single_graph_data' filter hook in WPSSO Core v6.1.0.
+
 **Version 2.6.2 (2019/08/10)**
 
 * **New Features**
@@ -915,6 +926,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
 
 == Upgrade Notice ==
+
+= 2.7.0-rc.2 =
+
+(2019/08/25) Moved schema shortcode processing to the new 'wpsso_json_single_graph_data' filter hook in WPSSO Core v6.1.0.
 
 = 2.6.2 =
 
