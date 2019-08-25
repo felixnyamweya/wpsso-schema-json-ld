@@ -817,7 +817,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Moved schema shortcode processing from 'wpsso_json_data_https_schema_org_thing' to the new 'wpsso_json_single_graph_data' filter hook in WPSSO Core v6.1.0.
+	* Moved schema shortcode processing from 'wpsso_json_data_https_schema_org_thing' to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
 
 **Version 2.6.2 (2019/08/10)**
 
@@ -929,7 +929,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.7.0-rc.2 =
 
-(2019/08/25) Moved schema shortcode processing to the new 'wpsso_json_single_graph_data' filter hook in WPSSO Core v6.1.0.
+(2019/08/25) Moved schema shortcode processing to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
 
 = 2.6.2 =
 
