@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 				'json_data_https_schema_org_blog'         => 5,
 				'json_data_https_schema_org_creativework' => 5,
 				'json_data_https_schema_org_thing'        => 5,
-				'json_single_graph_data'                  => 5,
+				'json_data_graph_element'                 => 5,
 			), $prio = -10000 );	// Make sure we run first.
 
 			$this->p->util->add_plugin_filters( $this, array(
@@ -542,7 +542,7 @@ if ( ! class_exists( 'WpssoJsonFilters' ) ) {
 		 * If the completed json data for a post object is the main entity, then parse the content for any schema
 		 * shortcodes.
 		 */
-		public function filter_json_single_graph_data( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
+		public function filter_json_data_graph_element( $json_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( ! $is_main ) {
 				return $json_data;
