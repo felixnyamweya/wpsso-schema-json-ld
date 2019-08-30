@@ -808,7 +808,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.7.0-rc.4 (2019/08/29)**
+**Version 2.7.0-rc.5 (2019/08/30)**
 
 * **New Features**
 	* None.
@@ -927,9 +927,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.7.0-rc.4 =
+= 2.7.0-rc.5 =
 
-(2019/08/29) Moved schema shortcode processing to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
+(2019/08/30) Moved schema shortcode processing to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
 
 = 2.6.2 =
 
