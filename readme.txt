@@ -808,7 +808,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.7.0-rc.5 (2019/08/30)**
+**Version 2.7.0 (2019/09/01)**
 
 * **New Features**
 	* None.
@@ -910,28 +910,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 
-**Version 2.2.0 (2019/07/06)**
-
-* **New Features**
-	* Added support for a WooCommerce "Volume" (in milliliters) product attribute (Premium version).
-* **Improvements**
-	* Added Schema Product markup for length (cm), size, and volume (ml) as an "additionalProperty".
-	* Added a new "Integration" and "Custom Meta" tab with options from the SSO &gt; Advanced settings page (WPSSO Core Premium required).
-	* WooCommerce attributes used for variations (ie. multiple values for a select option) are now excluded from the main Schema Product markup and used in each Schema Offer markup instead (Premium version).
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored several Schema methods for standardization and "@id" optimizations:
-		* Moved WpssoJsonSchema::add_video_list_data() to WpssoSchema::add_videos_data_mt().
-		* Moved WpssoJsonSchema::add_single_video_data() to WpssoSchemaSingle::add_video_data_mt().
-
 == Upgrade Notice ==
 
-= 2.7.0-rc.5 =
+= 2.7.0 =
 
-(2019/08/30) Moved schema shortcode processing to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
-
-= 2.6.2 =
-
-(2019/08/10) Fixed possible unrelated data in Schema @graph markup when the "Auto-Refresh Cache After Clearing" option is enabled.
+(2019/09/01) Moved schema shortcode processing to the new 'wpsso_json_data_graph_element' filter hook in WPSSO Core v6.1.0.
 
